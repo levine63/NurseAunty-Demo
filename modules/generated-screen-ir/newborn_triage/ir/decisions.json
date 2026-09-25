@@ -1,0 +1,75 @@
+{
+  "id": "newborn_triage_prototype_decision",
+  "about": "Prototype DMN-style decision table generated from newborn_triage screen-card clinicalVariableSet. Conservative routing only; not clinically approved.",
+  "hitPolicy": "collect_then_resolve",
+  "tieBreakPolicy": "first-in-table",
+  "outputs": [
+    "classification",
+    "recommendation",
+    "action",
+    "slug",
+    "severity"
+  ],
+  "severityOrder": [
+    "emergency",
+    "urgent_clinic",
+    "routine_clinic",
+    "home_care",
+    "followup"
+  ],
+  "actions": {
+    "REFER_URGENT": "Refer urgently; suppress ordinary home-care or routine task output.",
+    "REFER": "Refer to clinic or health worker; keep audit trail and suppress lower-risk action.",
+    "HOME_CARE_ADVICE": "Show conservative prototype advice and return precautions.",
+    "FOLLOWUP": "Ask caregiver to reassess or seek professional help if concerned."
+  },
+  "rules": [
+    {
+      "id": "R1_general_danger_sign",
+      "when": {
+        "ref": "any_general_danger_sign"
+      },
+      "then": {
+        "classification": "general_danger_sign",
+        "recommendation": "Urgent care now for checked danger sign.",
+        "action": "REFER_URGENT",
+        "slug": "tx.clinical_referral_required",
+        "severity": "emergency"
+      },
+      "note": "Highest-severity screen-card row; multiple lower-risk findings must not hide danger signs."
+    },
+    {
+      "id": "R2_followup_finding",
+      "when": {
+        "ref": "any_followup_finding"
+      },
+      "then": {
+        "classification": "symptom_followup_finding",
+        "recommendation": "Same-day clinic or health-worker care for checked concern.",
+        "action": "REFER",
+        "slug": "tx.clinical_referral_required",
+        "severity": "routine_clinic"
+      }
+    },
+    {
+      "id": "R3_presentation_only",
+      "when": {
+        "ref": "presentation_selected"
+      },
+      "then": {
+        "classification": "presentation_without_checked_danger",
+        "recommendation": "No listed urgent sign was checked; seek professional help if still concerned.",
+        "action": "HOME_CARE_ADVICE",
+        "slug": "tx.followup",
+        "severity": "home_care"
+      }
+    }
+  ],
+  "default": {
+    "classification": "not_assessed",
+    "recommendation": "No presentation selected; reassess or ask a health worker if concerned.",
+    "action": "FOLLOWUP",
+    "slug": "tx.followup",
+    "severity": "followup"
+  }
+}

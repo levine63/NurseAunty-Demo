@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">North India WASH home module draft</title>
+<desc id="desc">A North India home courtyard with hand pump, covered water container, soap, boiling pot, and wait timer.</desc>
+<rect width="640" height="360" fill="#edf7f2"/>
+<rect x="34" y="58" width="572" height="236" rx="8" fill="#fff9ec" stroke="#c9874a" stroke-width="4"/>
+<path d="M34 58h572l-32-30H66z" fill="#c6533a"/>
+<path d="M102 247h110v32H102z" fill="#9e7f55"/>
+<path d="M156 107v140M126 124h85M188 124v46" stroke="#396f84" stroke-width="12" stroke-linecap="round"/>
+<path d="M188 170q38 10 45 34" fill="none" stroke="#6fbad4" stroke-width="8" stroke-linecap="round"/>
+<rect x="274" y="143" width="92" height="110" rx="15" fill="#bfe4ee" stroke="#307a8f" stroke-width="4"/>
+<path d="M288 132h64v25h-64z" fill="#307a8f"/>
+<ellipse cx="320" cy="254" rx="74" ry="18" fill="#8e724c"/>
+<rect x="430" y="172" width="74" height="64" rx="10" fill="#5b6f75"/>
+<path d="M421 172h92" stroke="#2e4147" stroke-width="10" stroke-linecap="round"/>
+<path d="M430 149q38-24 74 0" fill="none" stroke="#2e4147" stroke-width="8" stroke-linecap="round"/>
+<circle cx="536" cy="118" r="24" fill="#f1c95a" stroke="#8b6a1c" stroke-width="4"/>
+<path d="M536 118v-16M536 118h14" stroke="#4e3f15" stroke-width="4" stroke-linecap="round"/>
+<rect x="454" y="248" width="58" height="22" rx="6" fill="#fff" stroke="#2f846d" stroke-width="4"/>
+<circle cx="537" cy="239" r="12" fill="#fff"/>
+<circle cx="557" cy="222" r="9" fill="#fff"/>
+<circle cx="574" cy="246" r="7" fill="#fff"/>
+</svg>

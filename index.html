@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="./apps/pwa-sandbox/">
+<meta name="robots" content="noindex,nofollow">
+<meta name="nurse-aunty-public-demo" content="/nurseaunty/demo/">
+<meta name="nurse-aunty-source-commit" content="60374915e92c59f8ac0d0af6d81de9fb5df0fcb3">
+<meta name="nurse-aunty-source-state" content="clean">
+<meta name="nurse-aunty-build-id" content="60374915e92c-clean">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="nurse-aunty-acceptance-baseline" content="AX-2026-08-06-01" />
+<meta name="nurse-aunty-design-review-baseline" content="DR-2026-08-05-01" />
+<title>NurseAunty(TM) prototype</title>
+<style>
+/* tokens.css
+ * GENERATED FROM DESIGN.md FRONT MATTER -- DO NOT EDIT BY HAND.
+ * Draft artifact for P2-D11. Regenerate with tools/generate-tokens.ts.
+ *
+ * Rule: this is the only file in the UI layer allowed to contain a raw hex value.
+ * index.html, ui-core.js, and every module renderer consume variables only.
+ */
+
+:root {
+  /* ---- colour roles ------------------------------------------------ */
+  /* action: ordinary primary action, selected state, progress */
+  --action: #0b6b5b;
+  --action-soft: #e3f0ec;
+  --action-dark: #0b3d35;
+  --on-action: #ffffff;
+
+  /* aid: the app is helping you -- read-aloud, speech highlight, help,
+     stars, prototype notice. Never severity, never an action. */
+  --aid: #b26b00;
+  --aid-soft: #fdf0d9;
+  --aid-edge: #ebd9b4;
+  --aid-highlight: #ffe9ae;
+  --on-aid: #6b4a00;
+
+  /* motion-cue: descriptive movement only; it is not a clinical severity. */
+  --motion-cue: #1f6fd0;
+
+  /* danger: urgent help, urgent result, destructive confirm. Nothing else. */
+  --danger: #b3261e;
+  --danger-soft: #fbe9e6;
+  --on-danger: #ffffff;
+  --danger-ink: #7a1a14;
+
+  /* paper: warm tonal layers replace the cool blue-grey background */
+  --paper: #f6f2ec;
+  --soft: #fbf7f1;
+  --surface: #ffffff;
+  --strip: #efe7da;
+
+  /* ink */
+  --ink: #22201e;
+  --muted: #5a5750;
+  --line: #e2dad0;
+  --line-strong: #b9b2a6;
+
+  /* ---- compatibility aliases -------------------------------------- */
+  /* Kept so P2-D11 can land as a pure refactor of the existing sheet.
+     Remove after P2-D14 when every selector uses a role name. */
+  --accent: var(--action);
+  --warn: var(--danger);
+  --ok: var(--action);
+  --bg: var(--paper);
+
+  /* ---- type: six steps, caregiver-first --------------------------- */
+  --font: system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, monospace;
+
+  --type-task-size: 28px;
+  --type-task-weight: 800;
+  --type-task-leading: 1.15;
+
+  --type-section-size: 22px;
+  --type-section-weight: 800;
+  --type-section-leading: 1.2;
+
+  --type-body-size: 19px;
+  --type-body-weight: 400;
+  --type-body-leading: 1.5;
+
+  --type-control-size: 18px;
+  --type-control-weight: 700;
+  --type-control-leading: 1.3;
+
+  /* floor for anything a caregiver reads. Metadata only. */
+  --type-support-size: 16px;
+  --type-support-weight: 400;
+  --type-support-leading: 1.4;
+
+  --type-count-size: 64px;
+  --type-count-weight: 800;
+
+  /* ---- space, shape, control size --------------------------------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  --radius-control: 12px;
+  --radius-card: 14px;
+  --radius-frame: 26px;
+  --radius-pill: 999px;
+
+  --touch-min: 48px;
+  --touch-primary: 56px;
+
+  /* two elevation levels, no more */
+  --elev-card: 0 2px 6px rgba(34, 32, 30, 0.05);
+  --elev-float: 0 10px 30px rgba(34, 32, 30, 0.1);
+
+  --focus-ring: 3px solid var(--aid);
+  --focus-offset: 2px;
+}
+
+/* Reviewer mode is the exception, not the base.
+   Caregiver sizes above are the default for every caregiver-facing surface. */
+.reviewer-mode {
+  --type-task-size: 20px;
+  --type-section-size: 16px;
+  --type-body-size: 15px;
+  --type-control-size: 14px;
+  --type-support-size: 13px;
+  --type-count-size: 46px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion: none;
+  }
+}
+
+</style>
+<style>
+  /* This design commits to one light palette and paints its own background, so say so. Without it
+     a dark-mode device paints any control we have not styled from its dark user-agent theme,
+     against our light surfaces. */
+  html { color-scheme: light; }
+  * { box-sizing: border-box; }
+  /* Author CSS must never make an element with the HTML hidden attribute visible. */
+  [hidden] { display: none !important; }
+  body { font-family:var(--font); font-size:var(--type-body-size); line-height:var(--type-body-leading); margin:0; background:var(--paper); color:var(--ink); }
+  .wrap { max-width: none; min-height:100vh; margin: 0; padding: 16px 16px 16px 180px; }
+  .appnav { position:fixed; left:16px; top:16px; bottom:16px; width:146px; z-index:30; display:flex; flex-direction:column; gap:8px; padding:10px; border:1px solid var(--line); border-radius:10px; background:#fff; box-shadow:0 8px 22px rgba(20,28,48,.08); }
+  .navitem { width:100%; min-height:54px; display:flex; align-items:center; gap:9px; justify-content:flex-start; background:#fff; color:var(--ink); border-color:var(--line); border-radius:8px; font-weight:700; }
+  .navitem.active { border-color:var(--accent); background:#e9f4f1; color:#0b3d35; }
+  .navitem.urgent { border-color:var(--warn); color:var(--warn); }
+  .navitem.urgent.active { background:#fdebea; color:#8f1f18; }
+  .navicon { width:28px; height:28px; border-radius:50%; display:inline-grid; place-items:center; border:1px solid currentColor; font-size:var(--type-support-size); line-height:1; flex:0 0 auto; }
+  .navicon svg { width:18px; height:18px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .appmain { max-width: 780px; margin:0 auto; }
+  .screenbar { position:sticky; top:0; z-index:20; display:flex; align-items:center; gap:10px; min-width:0; max-width:100%; padding:8px 0 10px; background:var(--bg); }
+  .screenbar.hidden { display:none; }
+  .screenbar button { flex:0 0 auto; }
+  .screenlabel { min-width:0; font-weight:var(--type-section-weight); font-size:var(--type-control-size); line-height:var(--type-control-leading); overflow-wrap:normal; word-break:normal; hyphens:none; }
+  #slidetitle.duplicate-shell-title { display:none; }
+  .progressstrip { display:flex; gap:6px; flex-wrap:wrap; margin-left:auto; counter-reset: step; }
+  .progressstep { counter-increment: step; border:1px solid var(--line); border-radius:var(--radius-pill); padding:var(--space-1) var(--space-2); background:var(--surface); color:var(--muted); font-size:var(--type-support-size); display:inline-flex; align-items:center; gap:var(--space-1); }
+  .progressstep::before { content: counter(step); width:24px; height:24px; border-radius:50%; display:inline-grid; place-items:center; background:var(--strip); color:var(--muted); font-size:var(--type-support-size); font-weight:var(--type-control-weight); }
+  /* A lone chip that already reads "Step 5 of 7" must not also show the strip's counter, which
+     rendered as "1 Step 5 of 7". */
+  .progressstep-solo::before { content:none; }
+  .progressstep.done { border-color:var(--action-soft); color:var(--action-dark); }
+  .progressstep.done::before { content:"\2713"; background:var(--action-soft); color:var(--action-dark); }
+  .progressstep.skipped { border-style:dashed; color:var(--muted); }
+  .progressstep.skipped::before { content:"\2014"; background:var(--strip); color:var(--muted); }
+  .progressstep.active { border-color:var(--action); background:var(--action-soft); color:var(--action-dark); font-weight:var(--type-control-weight); }
+  .progressstep.active::before { background:var(--action); color:var(--on-action); }
+  /* External review mgilkey B11: the prototype warning "is in a fine-print type, but should be
+     shouted, not subtle". It is the one disclaimer the app is allowed to show, once, in this
+     standard header (UI-STANDARDS 13a), so it carries its weight here instead of being repeated
+     quietly elsewhere. */
+  .banner { display:flex; align-items:baseline; justify-content:space-between; gap:var(--space-3); flex-wrap:wrap; background:var(--danger-soft); border:2px solid var(--danger); border-left-width:8px; border-radius:var(--radius-control); padding:var(--space-3); font-size:var(--type-control-size); font-weight:var(--type-control-weight); letter-spacing:0.01em; color:var(--danger-ink); margin-bottom:var(--space-4); }
+  body.task-active .wrap > h1, body.task-active .wrap > .sub, body.task-active .wrap > .status { display:none; }
+  body.task-active .banner { margin-bottom:var(--space-2); padding:var(--space-1) var(--space-2); }
+  /* The review-build stamp used to float, which collided with the banner text once the disclaimer
+     was given its proper weight (mgilkey B11). The banner is a flex row now, so the stamp sits
+     beside the disclaimer and wraps under it on a narrow screen instead of across it. */
+  /* David, 2026-08-20: the "Review file ..." stamp can be small and faint. It is a build
+     identifier for reviewers, not something a caregiver needs to read, so it stays out of the
+     disclaimer's way entirely. */
+  .review-build { margin-left:auto; font-size:var(--type-caption-size); font-weight:400; letter-spacing:0; white-space:nowrap; color:var(--muted); opacity:.55; }
+  .status { font-size:var(--type-support-size); margin:0 0 var(--space-3); color:var(--muted); }
+  h1 { font-size:var(--type-task-size); line-height:var(--type-task-leading); margin:var(--space-1) 0 2px; }
+  h2 { font-size:var(--type-section-size); line-height:var(--type-section-leading); margin:var(--space-4) 0 var(--space-2); }
+  .sub { color:var(--muted); font-size:var(--type-support-size); margin-bottom:var(--space-4); }
+  .toolbar { display: grid; grid-template-columns: 1fr auto; gap: 8px; margin: 12px 0; }
+  .search { min-height:var(--touch-primary); padding:var(--space-3); border:1px solid var(--line); border-radius:var(--radius-control); font-size:var(--type-control-size); width:100%; background:var(--surface); color:var(--ink); }
+  .tabs, .chips { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0 12px; }
+  #maindoors { display:none; }
+  .chip, .tab { border:1px solid var(--line); background:var(--surface); color:var(--ink); border-radius:var(--radius-pill); padding:var(--space-2) var(--space-3); min-height:var(--touch-min); display:inline-flex; align-items:center; justify-content:center; font-size:var(--type-support-size); }
+  .chip.active, .tab.active { border-color: var(--accent); background: #e9f4f1; color: var(--accent); }
+  .tab.dangerdoor, #showtriage { border-color: var(--warn); background:#fff; color:var(--warn); font-weight:700; }
+  .tab.dangerdoor.active, #showtriage:focus { background:#fdebea; color:#8f1f18; }
+  #showtriage { display:none; }
+  .feature-grid { display: grid; grid-template-columns: 1fr; gap: 8px; margin-bottom: 14px; }
+  .feature { border:1px solid var(--line); border-radius:var(--radius-card); padding:var(--space-3); background:var(--surface); text-align:left; color:var(--ink); }
+  .feature strong { display:block; font-size:var(--type-control-size); line-height:var(--type-control-leading); margin-bottom:var(--space-1); }
+  .feature span { display:inline-block; font-size:var(--type-support-size); color:var(--muted); margin-right:var(--space-2); }
+  .feature .statuspill, .feature .cardmeta { display:none; }
+  /* The sum beside the ORS measuring picture: large, numeric, and unmissable, because it exists to
+     be checked at a glance rather than read (external review mgilkey C5). */
+  /* External review mgilkey D6: "if the user can't read, how do they know which button is the read
+     aloud button?" The Listen control in the chrome already carries an ear glyph; the in-page
+     read-aloud family now carries the same glyph plus a pause and a restart mark, and shares one
+     tint so the three read as a group rather than as three more page buttons (D9). */
+  .audio-ctl { display:inline-flex; align-items:center; gap:var(--space-2); }
+  /* The shared tint applies in the quiet state only. On a screen where read-aloud is the live
+     primary action, the runtime drops .ghost and the action treatment wins - the icon still marks
+     it as read-aloud, which is the part mgilkey D6 asked for. */
+  .audio-ctl.ghost { border-color:var(--aid-edge); background:var(--aid-soft); color:var(--on-aid); }
+  .audio-ctl[disabled] { opacity:.55; }
+  .ctl-icon { width:20px; height:20px; flex:0 0 auto; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .audio-ctl .ctl-icon rect { fill:currentColor; stroke:none; }
+  .measure-sum { margin:var(--space-2) 0 0; text-align:center; font-size:var(--type-section-size); font-weight:var(--type-section-weight); letter-spacing:0.02em; color:var(--action-dark); background:var(--action-soft); border-radius:var(--radius-control); padding:var(--space-2) var(--space-3); }
+  /* External review mgilkey C13: checklist spacing was far wider than necessary, which pushed the
+     questions off screen and cost height budget the clinical gate measures. */
+  .checklist-controls label, .slidecontrols label { padding-top:var(--space-1); padding-bottom:var(--space-1); }
+  .dose-note { font-size:var(--type-support-size); color:var(--ink); background:var(--aid-soft); border-left:4px solid var(--aid-edge); padding:var(--space-2) var(--space-3); margin:var(--space-2) 0 0; border-radius:0 var(--radius-control) var(--radius-control) 0; }
+  .feature .tier-note { display:block; margin-top:var(--space-1); margin-right:0; font-size:var(--type-caption-size); color:var(--muted); font-style:italic; }
+  /* Whole image, never a cropped slice: cropping a clinical thumbnail can cut off the sign it
+     exists to show. What was wrong was the box, not the fit. A fixed 132px height letterboxed
+     everything, so the most extreme portrait thumbnail (364x1004) rendered 48px wide and read as
+     "no image" - David, 2026-08-20: "I do not see any images". The box is now 3:2, which is the
+     ratio 21 of the 26 catalogue thumbnails already are, so those fill it exactly and that same
+     portrait gets 229px of height instead of 132. Still object-fit:contain; nothing is cropped. */
+  .featurethumb { display:block; width:100%; aspect-ratio:3/2; height:auto; object-fit:contain; object-position:center; border-radius:6px; border:1px solid #e4ece8; background:#fff; margin:6px 0 8px; }
+  /* Engines without aspect-ratio keep a fixed height rather than collapsing to nothing. */
+  @supports not (aspect-ratio: 3 / 2) { .featurethumb { height:220px; } }
+  .demo-panel { border:1px solid var(--line); border-radius:8px; padding:12px; background:#fff; margin:0 0 14px; }
+  .demo-head { display:flex; justify-content:space-between; gap:10px; align-items:flex-start; margin-bottom:10px; }
+  .demo-head strong { display:block; font-size:var(--type-control-size); margin-bottom:2px; }
+  .demo-head span { display:block; font-size:var(--type-support-size); color:var(--muted); }
+  .demo-actions { display:grid; grid-template-columns:1fr; gap:8px; }
+  .demo-action { border:1px solid var(--line); border-radius:var(--radius-control); padding:var(--space-3); background:var(--soft); color:var(--ink); text-align:left; }
+  .demo-action strong { display:block; font-size:var(--type-control-size); margin-bottom:3px; }
+  .demo-action span { display:block; font-size:var(--type-support-size); color:var(--muted); }
+  .demo-action.primary { border-color:var(--accent); background:#e9f4f1; }
+  /* External review mgilkey D1: the top-chrome buttons "initially look as though they are
+     integrated into the page, not outside the current page". They are app-wide controls, so they
+     now read as a separate strip - their own surface, a rule beneath it, and a distinct tint -
+     rather than as three more buttons belonging to whatever screen is open. */
+  .profilebar { display:flex; justify-content:space-between; gap:var(--space-2); align-items:center; font-size:var(--type-support-size); color:var(--muted); margin:0 0 var(--space-3); padding:var(--space-2) var(--space-2) var(--space-3); background:var(--strip); border-bottom:3px solid var(--line); border-radius:var(--radius-control) var(--radius-control) 0 0; }
+  .profilebar button { font-size:var(--type-support-size); min-height:var(--touch-min); }
+  /* Chrome buttons that open a panel say so while it is open, rather than leaving the caregiver to
+     infer it (mgilkey A2). */
+  /* External review mgilkey D5: "How to use" is the control a first-time caregiver needs most, so
+     it comes first and is the one chrome button that is not quiet. D2: every chrome button shares
+     one height and alignment, which the Listen button did not. */
+  .profilebar button { display:inline-flex; align-items:center; justify-content:center; gap:var(--space-2); }
+  .profilebar button.chrome-help { border-color:var(--aid); background:var(--aid-soft); color:var(--on-aid); font-weight:var(--type-control-weight); }
+  .profilebar button.chrome-open { border-color:var(--accent); background:#e9f4f1; color:#0b3d35; font-weight:var(--type-control-weight); }
+  .profile-actions { display:flex; flex-wrap:wrap; align-items:stretch; gap:var(--space-2); min-width:0; }
+  .profile-actions > button { display:inline-flex; align-items:center; justify-content:center; }
+  .profilebar select { min-height:48px; padding:8px; border:1px solid var(--line); border-radius:8px; background:#fff; color:var(--ink); }
+  .prefs-head { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; }
+  .today-panel, .prefs-panel { border:1px solid var(--line); border-radius:8px; padding:10px; background:#fff; margin:0 0 14px; }
+  .today-panel { display:grid; gap:10px; }
+  /* The standalone carries every review image inside one file and can take time to start on
+     a low-powered machine.  Until the real app has mounted, never expose the static fallback
+     controls: they look usable but have no handlers, which made the seeded family appear empty
+     and Add a person appear frozen. */
+  body.app-loading .appnav,
+  body.app-loading #appmain { visibility:hidden; pointer-events:none; }
+  body.app-loading .status { display:block; }
+  .today-layout { display:grid; grid-template-columns:1.25fr .85fr; gap:10px; align-items:stretch; }
+  .today-main, .today-side { border:1px solid var(--line); border-radius:8px; background:#fbfbfd; padding:10px; }
+  .today-main { display:grid; grid-template-columns:1fr auto; gap:10px; align-items:center; }
+  .today-family { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+  .today-person { border:1px solid var(--line); border-radius:var(--radius-pill); padding:7px 10px; background:var(--surface); font-weight:var(--type-control-weight); font-size:var(--type-support-size); color:var(--ink); }
+  .today-reminders { display:grid; gap:7px; margin-top:8px; }
+  .today-reminder { border-left:4px solid var(--action); padding:7px 8px; background:var(--surface); border-radius:var(--radius-control); font-size:var(--type-support-size); }
+  .today-reminder strong { font-size:var(--type-support-size); }
+  .home-flow { border-top:1px solid var(--line); padding-top:14px; }
+  .home-actions { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; margin-top:10px; }
+  .home-action { min-height:88px; text-align:left; padding:10px 12px; display:flex; align-items:center; gap:10px; background:var(--action); border-color:var(--action); color:var(--on-action); }
+  .home-action strong { font-size:var(--type-control-size); color:var(--on-action); }
+  .home-action-icon { width:32px; height:32px; flex:0 0 auto; color:var(--on-action); }
+  .home-action-icon svg { width:100%; height:100%; fill:none; stroke:var(--on-action); stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .catalog-step { margin:0 0 12px; }
+  .show-more { width:100%; min-height:48px; margin-top:4px; }
+  .today-panel strong, .prefs-panel strong { display:block; font-size:var(--type-control-size); }
+  .today-panel span, .prefs-panel span { display:block; font-size:var(--type-support-size); color:var(--muted); margin-top:2px; }
+  .prefs-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:10px; }
+  .prefs-grid label { display:block; font-size:var(--type-support-size); color:var(--ink); }
+  .prefs-grid select, .prefs-grid input[type="time"] { width:100%; min-height:var(--touch-primary); margin-top:var(--space-1); padding:var(--space-2); border:1px solid var(--line); border-radius:var(--radius-control); background:var(--surface); color:var(--ink); font-size:var(--type-control-size); }
+  .prefs-checks { display:grid; gap:var(--space-2); margin-top:var(--space-3); font-size:var(--type-support-size); }
+  .prefs-checks label { min-height:var(--touch-min); display:flex; align-items:center; gap:var(--space-2); }
+  .reviewer-settings { margin-top:14px; border:1px solid var(--line); border-radius:8px; background:#f7f8f9; padding:8px 10px; }
+  .reviewer-settings summary { min-height:48px; display:flex; align-items:center; cursor:pointer; font-weight:800; color:#3f4850; }
+  .reviewer-settings .reviewer-note { margin:0 0 8px; color:var(--muted); font-size:var(--type-support-size); }
+  .family-panel { border:1px solid var(--line); border-radius:8px; padding:10px; background:#fff; margin: 0 0 14px; }
+  .family-panel .row { display:grid; grid-template-columns: 1fr 1fr 1fr auto; gap:8px; margin-top:8px; }
+  .family-panel input, .family-panel select { min-width:0; padding:9px; border:1px solid var(--line); border-radius:8px; background:#fff; color:var(--ink); }
+  .family-edit { margin-top:8px; }
+  .family-edit summary { min-height:var(--touch-min); display:flex; align-items:center; color:var(--ink); cursor:pointer; font-size:var(--type-control-size); }
+  .people { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:8px; margin-top:8px; }
+  .person-card { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:6px; min-width:0; }
+  .person { width:100%; border:1px solid var(--line); border-radius:var(--radius-control); padding:var(--space-2) var(--space-3); min-height:var(--touch-primary); background:var(--surface); color:var(--ink); text-align:left; font-size:var(--type-control-size); }
+  .person strong { display:block; }
+  .person span { display:block; margin-top:var(--space-1); color:var(--muted); font-size:var(--type-support-size); font-weight:var(--type-support-weight); }
+  .edit-person { min-width:64px; padding:8px 10px; border-radius:12px; }
+  .person-editor-actions { display:flex; gap:6px; flex-wrap:wrap; }
+  .person-edit-feedback { margin:8px 0 0; border-radius:8px; padding:10px; background:#e9f4f1; color:#173f37; font-weight:750; }
+  .person-edit-feedback:empty { display:none; }
+  @media (max-width:720px) {
+    .family-panel .row { grid-template-columns:minmax(0,1fr); }
+    .person-editor-actions button { flex:1 1 8rem; }
+  }
+  .module-manager { border-top:1px solid var(--line); margin-top:10px; padding-top:10px; }
+  .module-head { display:flex; justify-content:space-between; gap:8px; align-items:center; min-height:var(--touch-min); font-size:var(--type-support-size); color:var(--muted); margin-bottom:8px; }
+  .module-head label { display:flex; align-items:center; gap:6px; min-height:48px; white-space:nowrap; }
+  .module-head input { width:18px; height:18px; min-width:18px; padding:0; }
+  .module-toggles { display:flex; gap:6px; overflow-x:auto; padding-bottom:2px; }
+  .module-toggle { flex:0 0 auto; border-color:var(--line); background:var(--surface); color:var(--ink); border-radius:var(--radius-pill); padding:8px 12px; min-height:var(--touch-min); font-size:var(--type-control-size); }
+  .module-toggle.active { border-color:var(--accent); background:#e9f4f1; color:var(--accent); }
+  .section { margin-bottom: 14px; }
+  fieldset { border: 1px solid var(--line); border-radius: 10px; margin: 0 0 14px; padding: 12px 14px; background: #fff; }
+  legend { font-weight:var(--type-control-weight); font-size:var(--type-control-size); padding:0 var(--space-2); background:var(--surface); }
+  .field label { display:block; font-size:var(--type-support-size); margin-bottom:var(--space-2); color:var(--ink); }
+  input[type="date"], input[type="number"], .field select { min-height:var(--touch-primary); padding:var(--space-3); border:1px solid var(--line); border-radius:var(--radius-control); font-size:var(--type-control-size); width:100%; background:var(--surface); color:var(--ink); }
+  .muted { color:var(--muted); font-size:var(--type-support-size); line-height:var(--type-support-leading); margin-top:var(--space-2); }
+  .sign { display:flex; align-items:center; gap:var(--space-3); padding:var(--space-3) var(--space-4); min-height:var(--touch-primary); border:2px solid var(--line); border-radius:var(--radius-control); background:var(--surface); font-size:var(--type-body-size); line-height:var(--type-body-leading); cursor:pointer; }
+  .sign input { width:28px; height:28px; flex:0 0 auto; accent-color:var(--action); }
+  .sign:has(input:checked) { border-color:var(--action); background:var(--action-soft); color:var(--action-dark); }
+  .rrbox { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .rr-count-panel { flex:1 1 100%; display:grid; gap:var(--space-2); padding:var(--space-3); border:1px solid var(--aid-edge); border-radius:var(--radius-control); background:var(--aid-soft); }
+  .rr-clock { font-size:clamp(2rem,12vw,4rem); line-height:1; font-weight:800; color:var(--on-aid); font-variant-numeric:tabular-nums; }
+  .rr-progress { width:100%; height:12px; overflow:hidden; border-radius:var(--radius-pill); background:var(--surface); border:1px solid var(--aid-edge); }
+  .rr-progress > span { display:block; width:100%; height:100%; background:var(--aid); transition:width .2s linear; }
+  .rr-count-actions { display:flex; gap:var(--space-2); flex:1 1 100%; flex-wrap:wrap; }
+  button { min-width:var(--touch-min); min-height:var(--touch-primary); font-size:var(--type-control-size); padding:var(--space-3) var(--space-4); border-radius:var(--radius-control); border:1px solid var(--action); background:var(--action); color:var(--on-action); cursor:pointer; }
+  button.ghost { background:var(--surface); color:var(--action); }
+  .result-secondary-actions { margin:var(--space-2) 0 0; text-align:left; }
+  .result-secondary-actions button.ghost { min-height:var(--touch-min); padding:var(--space-2) var(--space-3); border-color:transparent; text-decoration:underline; }
+  button:disabled { opacity:.55; cursor:not-allowed; }
+  .visually-hidden { display:none !important; }
+  button.tap { font-size:var(--type-control-size); padding:18px 22px; min-width:160px; }
+  #assess { width:100%; font-size:var(--type-control-size); padding:14px; margin:4px 0 16px; }
+  #assess:disabled { opacity:.5; cursor:default; }
+  .result { border-radius:var(--radius-card); padding:0; margin-bottom:var(--space-4); border:2px solid var(--line); background:var(--surface); overflow:hidden; }
+  .result.refer { border-color:var(--danger); } .result.home { border-color:var(--action); } .result.ask-more { border-color:var(--aid); }
+  .result-band { padding:var(--space-2) var(--space-4); color:var(--on-action); font-weight:var(--type-control-weight); letter-spacing:0; font-size:var(--type-control-size); }
+  .result.refer .result-band { background:var(--danger); color:var(--on-danger); }
+  .result.home .result-band { background:var(--action); }
+  .result.ask-more .result-band { background:var(--aid-soft); color:var(--on-aid); }
+  .result-body { padding:var(--space-4); }
+  .result h2 { margin:0 0 var(--space-2); font-size:var(--type-task-size); line-height:var(--type-task-leading); text-transform:none; }
+  .result-action { border:1px solid var(--line); border-radius:var(--radius-control); padding:var(--space-3); background:var(--soft); margin:var(--space-2) 0 var(--space-3); font-size:var(--type-body-size); }
+  .result-action strong { display:block; margin-bottom:3px; color:#172921; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+  .card { border: 1px solid var(--line); border-radius: 10px; padding: 12px; text-align: center; cursor: pointer; background:#fff; }
+  .card:hover { border-color:var(--action); } .card .vol { font-size:var(--type-support-size); color:var(--muted); }
+  .card.selected { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(0,123,94,.14); background:#f7fffc; }
+  .ors-container-choice { width:100%; color:var(--text); font:inherit; }
+  .result-action-button { margin-top:8px; width:100%; }
+  /* One action per line. A danger-sign list is a list, not a comma chain inside a sentence. */
+  .plain-list { margin:var(--space-2) 0; padding-left:1.35em; }
+  .plain-list li { margin:0 0 var(--space-2); line-height:1.45; }
+  .plain-list li:last-child { margin-bottom:0; }
+  /* The counted-out fills. The row scrolls rather than shrinking the vessels, because a glyph
+     small enough to fit six on a 320px screen is no longer countable. */
+  .ors-arithmetic { margin:var(--space-3) 0; }
+  .ors-arithmetic svg { display:block; width:100%; max-width:340px; height:auto; }
+  .ors-arithmetic figcaption { margin-top:var(--space-2); font-size:var(--type-body-size); font-weight:600; }
+  .ors-arithmetic-source { margin-top:2px; }
+  /* The resolved sachet volume, stated so it can be corrected rather than assumed silently. */
+  .sachet-resolve { margin-bottom:var(--space-3); }
+  .sachet-resolve .sachet-assumed { font-weight:600; margin:0 0 var(--space-2); }
+  .sachet-choice { width:100%; }
+  .request-card { scroll-margin-top:16px; }
+  .request-instruction { font-weight:700; margin-bottom:8px; }
+  /* The message a pharmacist or health worker reads off the caregiver's phone, so it is sized for
+     someone across a counter: it fills most of one screen at the task type size. David, 2026-09-02:
+     "The PLEASE PROVIDE message has to fill almost all of one screen." */
+  .seller-card { display:flex; flex-direction:column; justify-content:center; min-height:70vh; border:3px solid var(--action); border-radius:var(--radius-control); padding:var(--space-5); background:var(--action-soft); font-family:Georgia, "Times New Roman", serif; font-size:var(--type-task-size); line-height:var(--type-task-leading); text-align:center; }
+  .seller-card p { margin:0; }
+  .seller-card strong { display:block; font-family:var(--font); font-size:var(--type-section-size); text-transform:uppercase; letter-spacing:0.04em; color:var(--action-dark); margin-bottom:var(--space-4); }
+  .fineprint { font-size:var(--type-support-size); line-height:var(--type-support-leading); color:var(--muted); border-top:1px solid var(--line); margin-top:10px; padding-top:8px; }
+  .mix-instruction { border:2px solid var(--accent); border-radius:10px; background:#f7fffc; padding:12px; margin-top:12px; }
+  .mix-instruction h3 { margin:0 0 8px; font-size:var(--type-control-size); }
+  .trace { font-family:var(--font-mono); font-size:var(--type-support-size); background:var(--strip); border-radius:var(--radius-control); padding:10px; white-space:pre-wrap; margin-top:12px; color:var(--ink); }
+  .slidebox .trace:not(details) { display:none; }
+  .imgph { border:1px dashed var(--line-strong); border-radius:var(--radius-control); padding:6px 8px; font-size:var(--type-support-size); color:var(--muted); margin:2px 0 4px 30px; background:var(--soft); }
+  .card .imgph { margin:0 0 6px; }
+  .questionasset { margin: 4px 0 10px 30px; max-width: 220px; border: 1px solid #e2ded5; border-radius: 8px; background: #fffaf0; padding: 8px; }
+  .questionasset img { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: contain; border-radius: 6px; background: #faf8f2; }
+  .questionasset figcaption { margin-top:6px; font-size:var(--type-support-size); line-height:var(--type-support-leading); color:var(--muted); }
+  .questionasset details { margin-top:8px; }
+  .questionasset summary { cursor:pointer; color:var(--accent); font-weight:750; min-height:44px; display:flex; align-items:center; }
+  .questionasset details img { margin-top:8px; width:min(82vw, 520px); max-width:none; aspect-ratio:auto; }
+  /* The "Show me" example beside a clinical sign had no rule of its own, so every one of these
+     images rendered at its intrinsic pixel width inside a phone. Measured at 390px on 2026-08-27:
+     the skin-pinch example was 625px and the blood-in-stool example 1024px, both running off the
+     side of the screen with the page scrolling sideways to follow - and the streaks that are the
+     entire point of the blood-in-stool picture sat outside the viewport. The sunken-eyes example
+     fitted only because that file happens to be 242px wide.
+     max-width rather than width: a small example is not upscaled into a blurry one. */
+  /* The "Show me" example beside a clinical sign had no rule of its own, so every one of these
+     images rendered at its intrinsic pixel width inside a phone. Measured at 390px on 2026-08-27:
+     the skin-pinch example was 625px and the blood-in-stool example 1024px, both running off the
+     side of the screen with the page scrolling sideways to follow - and the streaks that are the
+     entire point of the blood-in-stool picture sat outside the viewport. The sunken-eyes example
+     fitted only because that file happens to be 242px wide.
+     max-width rather than width: a small example is not upscaled into a blurry one. */
+  /* The "Show me" example beside a clinical sign had no rule of its own, so every one of these
+     images rendered at its intrinsic pixel width inside a phone. Measured at 320px on 2026-08-27:
+     the skin-pinch example was 625px and the blood-in-stool example 1024px, both running off the
+     side of the screen - and the streaks that are the entire point of the blood-in-stool picture
+     sat outside the viewport. The sunken-eyes example fitted only because that file happens to be
+     242px wide, which is luck rather than layout.
+     max-width rather than width: a small example is not upscaled into a blurry one. */
+  .sign-example img { display:block; max-width:min(100%, 520px); height:auto; margin-top:8px; border-radius:6px; }
+  .questionexamples { margin:8px 0; }
+  .questionexamples > summary { min-height:48px; display:flex; align-items:center; color:var(--accent); font-weight:800; cursor:pointer; }
+  .questionexamples .questionasset { margin-left:0; }
+  .breath-compare { --breath-cycle:3s; margin:var(--space-4) 0 0; padding:var(--space-3); border:1px solid var(--aid-edge); border-radius:var(--radius-card); background:var(--aid-soft); }
+  .breath-compare h3 { margin:0 0 var(--space-2); font-size:var(--type-section-size); line-height:var(--type-section-leading); color:var(--ink); }
+  .breath-compare-lead { margin:0 0 var(--space-3); font-size:var(--type-control-size); line-height:var(--type-control-leading); color:var(--ink); }
+  .breath-pair { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:var(--space-2); }
+  .breath-panel { min-width:0; padding:var(--space-2); border:2px solid var(--line-strong); border-radius:var(--radius-control); background:var(--surface); }
+  .breath-panel.is-normal { border-color:var(--action); }
+  .breath-panel.is-indrawing { border-color:var(--danger); }
+  .breath-panel-head { display:flex; align-items:center; gap:var(--space-1); min-height:24px; margin:0 0 var(--space-2); }
+  .breath-panel .badge { display:grid; place-items:center; width:22px; height:22px; border-radius:50%; color:var(--on-action); font-size:var(--type-support-size); font-weight:var(--type-control-weight); flex:0 0 auto; }
+  .breath-panel.is-normal .badge { background:var(--action); }
+  .breath-panel.is-indrawing .badge { background:var(--danger); color:var(--on-danger); }
+  .breath-panel .name { font-size:var(--type-support-size); line-height:var(--type-support-leading); font-weight:var(--type-control-weight); overflow-wrap:anywhere; }
+  .breath-panel.is-normal .name, .breath-panel.is-normal .breath-caption { color:var(--action-dark); }
+  .breath-panel.is-indrawing .name, .breath-panel.is-indrawing .breath-caption { color:var(--danger-ink); }
+  .breath-stage { position:relative; overflow:hidden; border-radius:var(--radius-control); background:var(--surface); }
+  .breath-stage > img, .breath-frame-in, .breath-frame-in > img { display:block; width:100%; height:auto; }
+  .breath-frame-in { position:absolute; inset:0; animation:breath-frame-in var(--breath-cycle) ease-in-out infinite; }
+  .breath-zone { position:absolute; left:60%; top:48%; width:19%; height:10%; border:3px dashed var(--aid); border-radius:50%; animation:breath-zone-pulse var(--breath-cycle) ease-in-out infinite; }
+  .breath-cue { position:absolute; display:block; width:20px; height:12px; animation:breath-cue-on var(--breath-cycle) ease-in-out infinite; }
+  .breath-cue::before { content:""; position:absolute; top:4px; width:11px; height:4px; background:var(--motion-cue); }
+  .breath-cue::after { content:""; position:absolute; top:0; border-top:6px solid transparent; border-bottom:6px solid transparent; }
+  .breath-cue-out::before { left:0; } .breath-cue-out::after { right:0; border-left:9px solid var(--motion-cue); }
+  .breath-cue-in::before { right:0; background:var(--danger); } .breath-cue-in::after { left:0; border-right:9px solid var(--danger); }
+  .breath-cue-chest { left:80%; top:40%; } .breath-cue-lower { left:80%; top:53%; } .breath-cue-belly { left:80%; top:66%; }
+  .breath-caption { min-height:3.1em; margin:var(--space-2) 0 0; font-size:var(--type-support-size); line-height:var(--type-support-leading); font-weight:var(--type-control-weight); }
+  .breath-motion-control { display:flex; align-items:center; justify-content:space-between; gap:var(--space-2); margin-top:var(--space-3); padding:var(--space-2); border:1px solid var(--aid-edge); border-radius:var(--radius-control); background:var(--surface); color:var(--on-aid); font-size:var(--type-support-size); font-weight:var(--type-control-weight); }
+  .breath-motion-control button { min-height:var(--touch-min); padding:var(--space-2) var(--space-3); border-color:var(--aid); color:var(--on-aid); }
+  .breath-compare.is-paused .breath-frame-in, .breath-compare.is-paused .breath-zone, .breath-compare.is-paused .breath-cue { animation-play-state:paused; }
+  @keyframes breath-frame-in { 0%,8% { opacity:0; } 42%,58% { opacity:1; } 92%,100% { opacity:0; } }
+  @keyframes breath-cue-on { 0%,14% { opacity:0; } 36%,58% { opacity:1; } 78%,100% { opacity:0; } }
+  @keyframes breath-zone-pulse { 0%,20% { box-shadow:0 0 0 0 rgba(178,107,0,0); } 45%,55% { box-shadow:0 0 0 6px rgba(178,107,0,.18); } 80%,100% { box-shadow:0 0 0 0 rgba(178,107,0,0); } }
+  @media (prefers-reduced-motion:reduce) { .breath-compare { --breath-cycle:6s; } .breath-zone { animation:none; } }
+  .visualasset { display:block; width:100%; max-height:210px; object-fit:contain; border-radius:8px; background:#fff; }
+  /* The ORS measuring photograph is that step's only picture, so it takes the room the two drawn
+     copies of the same sum used to take. */
+  #slideimage.ors-measure-photo .visualasset { max-height:60vh; }
+  /* The printed sum under that photograph is one line of digits. At the section size it wrapped
+     "1000 mL" across two lines on a 375px phone, which reads as two numbers. */
+  .visualfallback { display:grid; place-items:center; min-height:150px; border-radius:var(--radius-control); border:1px solid var(--line); background:var(--soft); color:var(--ink); padding:14px; text-align:center; font-size:var(--type-support-size); }
+  .visualfallback strong { display:block; font-size:var(--type-control-size); margin-bottom:4px; color:var(--action-dark); }
+  .imgcredit { display:none; }
+  /* The generated ORS sum. Drawn from the container the caregiver chose, so the number of vessels
+     on screen is the number she should pour - see orsMeasureDiagram in ui-core.js. */
+  .ors-measure-diagram { margin:8px 0 4px; padding:8px 4px 4px; border:1px solid var(--line); border-radius:var(--radius-control); background:var(--surface); }
+  .ors-measure-diagram svg { display:block; max-width:100%; }
+  .ors-measure-diagram .ors-vessel-body { fill:#ffffff; stroke:var(--line-strong); stroke-width:2; }
+  .ors-measure-diagram .ors-vessel-fill { fill:var(--motion-cue); opacity:0.35; }
+  .ors-measure-diagram .ors-vessel-op { fill:var(--ink); font-size:18px; font-weight:700; text-anchor:middle; }
+  .ors-measure-diagram figcaption { margin-top:6px; font-size:var(--type-body-size); line-height:var(--type-body-leading); color:var(--ink); }
+  /* The zinc course on Home: a compact row of days, filled as doses are marked. */
+  .today-reminder.zinc-home { display:flex; flex-wrap:wrap; align-items:center; gap:var(--space-3); }
+  .zinc-dots { display:flex; gap:4px; }
+  .zinc-dots .zinc-dot { width:14px; height:14px; border-radius:4px; border:2px solid var(--line-strong); background:#ffffff; }
+  .zinc-dots .zinc-dot.done { background:var(--action); border-color:var(--action); }
+  .inlinevisual { margin:8px 0 12px; }
+  .inlinevisual .visualasset { max-height:280px; border:1px solid #dde6e1; }
+  .dosegrid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin:0 0 12px; }
+  .dosecard { margin:0; border:1px solid var(--line); border-radius:8px; overflow:hidden; background:#fff; }
+  .dosecard img { display:block; width:100%; aspect-ratio:1 / 1; object-fit:contain; background:#fff; }
+  .dosecard figcaption { padding:8px; font-size:var(--type-support-size); line-height:var(--type-support-leading); color:var(--ink); }
+  @media (max-width:560px) { .dosegrid { grid-template-columns:1fr; } }
+  .slideshow { min-width:0; max-width:100%; border: 1px solid var(--line); border-radius: 8px; padding: 12px; background:#fff; margin-bottom:14px; }
+  .slidebox { min-width:0; max-width:100%; min-height: 120px; border:1px dashed #b9b9c6; border-radius:8px; padding:12px; background:#fbfbfd; overflow-wrap:anywhere; }
+  .slidecontrols { display:flex; justify-content:space-between; gap:8px; margin-top:10px; }
+  .slidecontrols.wrap-controls { flex-wrap:wrap; }
+  .slidecontrols.checklist-controls { display:grid; grid-template-columns:minmax(0,1fr); width:100%; min-width:0; }
+  .slidecontrols label { display:flex; gap:8px; align-items:flex-start; min-height:48px; min-width:0; max-width:100%; margin:7px 0; overflow-wrap:anywhere; }
+  #slidecache { display:block; min-width:0; max-width:100%; }
+  #slidecache > .slidecontrols { flex-wrap:wrap; min-width:0; max-width:100%; }
+  #slidecache > .slidecontrols > label,
+  #slidecache > .slidecontrols > fieldset,
+  #slidecache > .slidecontrols > p { flex:1 1 100%; min-width:0; max-width:100%; }
+  #slidecache > .slidecontrols > button { flex:1 1 14rem; min-width:0; max-width:100%; white-space:normal; overflow-wrap:anywhere; }
+  .symptom-group { border:1px solid var(--line); border-radius:8px; padding:10px; background:#fff; }
+  .symptom-group legend { max-width:100%; font-weight:700; overflow-wrap:anywhere; }
+  .symptom-group label { display:flex; align-items:flex-start; gap:8px; max-width:100%; min-width:0; padding:10px 0; min-height:var(--touch-min); font-size:var(--type-body-size); line-height:var(--type-body-leading); overflow-wrap:anywhere; }
+  /* Layout only. accent-color used to live here; it is inert now that the control is drawn with
+     appearance:none, and leaving it would suggest the browser still picks the colour. */
+  .symptom-group input[type="checkbox"], .symptom-group input[type="radio"] { min-width:28px; margin-top:2px; }
+  .checklist-feedback { margin:0; font-size:var(--type-support-size); color:var(--muted); }
+  .trace summary { cursor:pointer; font-family:system-ui, -apple-system, sans-serif; font-weight:600; }
+  .trace { display:none !important; }
+  .reviewer-mode .trace { display:block !important; }
+  .cardvisual { width:100%; height:82px; object-fit:contain; display:block; margin:0 0 6px; border-radius:6px; background:#fbfbfd; border:1px solid #ececf2; }
+  .containerphoto { height:112px; background:#fff; }
+  .progress-panel { border:1px solid var(--line); border-radius:8px; padding:10px; background:#fbfbfd; margin-bottom:10px; }
+  .progress-row { display:flex; justify-content:space-between; gap:8px; align-items:center; margin-top:6px; font-size:var(--type-support-size); }
+  .feeding-guide { margin:14px 0; }
+  .feeding-guide h3, .feeding-plan-check h3 { margin:0 0 8px; }
+  .feeding-guide-grid { display:grid; grid-template-columns:minmax(0,1fr); gap:10px; }
+  .feeding-guide article { border:1px solid var(--line); border-radius:10px; padding:12px; background:#fff; }
+  .feeding-guide article h4 { margin:0 0 4px; color:var(--primary); }
+  .feeding-guide article p, .feeding-note, .feeding-plan-check > p { margin:0; }
+  .feeding-note { margin-top:10px; padding:10px 12px; border-left:4px solid var(--accent); background:#fff8e1; }
+  .feeding-plan-check { margin-top:16px; border-top:2px solid var(--line); padding-top:14px; }
+  .feeding-plan-check .slidecontrols { margin-top:8px; }
+  .zinc-guide { display:grid; gap:10px; margin:10px 0; }
+  .zinc-guide-card { border:1px solid var(--line); border-radius:var(--radius-control); background:var(--surface); padding:10px; font-size:var(--type-body-size); line-height:var(--type-body-leading); }
+  .zinc-guide-card strong { display:block; color:#0b3d35; margin-bottom:4px; }
+  .zinc-calendar { display:grid; grid-template-columns:repeat(5,minmax(42px,1fr)); gap:8px; margin:10px 0; }
+  .zinc-calendar .zinc-box { min-height:42px; display:grid; place-items:center; border:2px solid var(--accent); border-radius:8px; background:#f7fffc; font-weight:700; color:#0b3d35; }
+  @media (max-width:420px) { .zinc-calendar { grid-template-columns:repeat(2,minmax(42px,1fr)); } }
+  .immun-plan-card { border:2px solid var(--action); border-radius:var(--radius-control); padding:12px; background:var(--action-soft); color:var(--ink); font-size:var(--type-body-size); line-height:var(--type-body-leading); margin-bottom:10px; }
+  .immun-plan-card strong { display:block; font-size:var(--type-control-size); color:var(--action-dark); margin-bottom:4px; }
+  .immun-plan-card p { margin:6px 0; color:var(--ink); }
+  .immun-plan-card ul { margin:6px 0 0 20px; padding:0; }
+  .immun-plan-card li { margin:3px 0; }
+  .timer-panel { display:grid; gap:8px; }
+  .timer-topline { display:flex; justify-content:space-between; gap:10px; align-items:center; font-size:var(--type-support-size); color:var(--muted); }
+  .timer-clock { font-variant-numeric:tabular-nums; font-size:var(--type-count-size); line-height:1; font-weight:var(--type-count-weight); color:var(--action-dark); letter-spacing:0; }
+  .timer-caption { font-size:var(--type-support-size); color:var(--muted); }
+  .timerbar { height:14px; border-radius:999px; overflow:hidden; background:#e4e7eb; border:1px solid #c6ccd2; }
+  .timerbarfill { height:100%; width:100%; background:linear-gradient(90deg, #0b6b5b, #5aa469); transition:width .2s linear; }
+  @media (max-width:520px) { .timer-clock { font-size:var(--type-count-size); } }
+  .stars { font-family:ui-monospace, monospace; font-size:20px; letter-spacing:0; color:#6b4d00; }
+  /* David, 2026-08-25: "Stars are tiny. make stars their own screen". The stars are the whole
+     point of the reward for a child watching over a caregiver's shoulder, so on their own screen
+     they are the largest thing on it, and they scale down rather than overflow a narrow phone. */
+  .reward-panel { text-align:center; padding:18px 12px; border:1px solid var(--line); border-radius:12px; background:#fffdf5; margin:12px 0; }
+  .reward-panel .stars { display:block; font-size:clamp(60px, 24vw, 104px); line-height:1.15; letter-spacing:4px; margin:6px 0 10px; overflow-wrap:normal; }
+  .reward-panel .reward-note { font-weight:700; font-size:var(--type-body-size); line-height:var(--type-body-leading); margin:0 0 4px; }
+  .reward-panel .muted { margin:0 0 12px; }
+  .reward-actions { display:flex; flex-direction:column; gap:10px; align-items:stretch; }
+  .reward-actions button { min-height:var(--touch-primary, 48px); width:100%; }
+  .hidden { display: none; }
+  .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+  .listen-icon { width:22px; height:22px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; flex:0 0 auto; }
+  .listen-button { gap:7px; }
+  .howto-panel { border:2px solid var(--accent); border-radius:12px; padding:16px; background:#fff; margin:0 0 14px; }
+  .howto-panel h2 { font-size:var(--type-section-size); margin:0 0 10px; }
+  .howto-panel p { font-size:var(--type-body-size); line-height:var(--type-body-leading); color:var(--ink); }
+  .howto-actions { display:flex; gap:10px; flex-wrap:wrap; }
+  .multi-select-instruction { margin:0 0 10px; padding:10px 12px; border-left:5px solid var(--action); background:var(--action-soft); color:var(--action-dark); font-size:var(--type-control-size); line-height:var(--type-control-leading); font-weight:var(--type-control-weight); }
+  .is-speaking { outline:var(--focus-ring) !important; outline-offset:var(--focus-offset); background:var(--aid-highlight) !important; color:var(--ink) !important; }
+  #slidetext { font-size:var(--type-body-size); line-height:var(--type-body-leading); color:var(--ink); }
+  #slideheading { margin:var(--space-3) 0 var(--space-2); font-size:var(--type-section-size); line-height:var(--type-section-leading); color:var(--action-dark); }
+  .status.status-ready { display:none; }
+  .clinical-checklist label,
+  .symptom-group label { display:flex; align-items:center; gap:var(--space-3); padding:var(--space-3) var(--space-4); min-height:var(--touch-primary); border:2px solid var(--line); border-radius:var(--radius-control); background:var(--surface); color:var(--ink); font-size:var(--type-body-size); line-height:var(--type-body-leading); }
+  .clinical-checklist label:has(input:checked),
+  .symptom-group label:has(input:checked) { border-color:var(--action); background:var(--action-soft); color:var(--action-dark); }
+  /* Drawn explicitly rather than left to the browser. A native control is painted by the user
+     agent, and on a phone in dark mode the agent paints it dark - so an untouched danger-sign box
+     reads as already ticked. David, 2026-08-20: "Your checkboxes start as dark squares, which look
+     filled in to me." On a list whose options are danger signs, "looks ticked" is a safety problem
+     rather than a cosmetic one, so the empty and filled states are ours to guarantee on every
+     platform instead of the agent's to choose.
+
+     This was originally written as an allowlist: four ancestor classes, checkboxes only. Both
+     halves of that leaked. Radios were never drawn at all, so the single-answer questions - chest
+     indrawing among them - kept the native dark control the whole time. David, 2026-08-25: "chest
+     indrawing still has dark bullets for unchecked... We fixed on diarrhea; why didn't the fix
+     spread to all questions? Generalize solutions to see where else they might apply."
+
+     So it is the default now, not an opt-in: every checkbox and radio in the app is drawn by us,
+     and a new surface inherits the guarantee instead of having to remember a class name. Anything
+     that genuinely needs the native control opts out with data-native-control. */
+  input[type="checkbox"],
+  input[type="radio"] {
+    appearance:none; -webkit-appearance:none;
+    width:28px; height:28px; margin:0; flex:0 0 auto;
+    border:2px solid var(--line-strong); border-radius:6px;
+    background:#ffffff; display:inline-grid; place-content:center; cursor:pointer;
+  }
+  input[type="radio"] { border-radius:50%; }
+  input[type="checkbox"]::before,
+  input[type="radio"]::before {
+    content:""; width:17px; height:17px; transform:scale(0); transform-origin:center;
+    clip-path:polygon(14% 44%, 0 60%, 40% 100%, 100% 22%, 84% 6%, 38% 68%);
+    background:var(--on-action);
+  }
+  /* A radio marks one answer, so it fills as a dot rather than a tick. */
+  input[type="radio"]::before { width:14px; height:14px; clip-path:none; border-radius:50%; }
+  input[type="checkbox"]:checked,
+  input[type="radio"]:checked { background:var(--action); border-color:var(--action); }
+  input[type="checkbox"]:checked::before,
+  input[type="radio"]:checked::before { transform:scale(1); }
+  input[type="checkbox"]:focus-visible,
+  input[type="radio"]:focus-visible { outline:3px solid var(--motion-cue); outline-offset:2px; }
+  input[type="checkbox"]:disabled,
+  input[type="radio"]:disabled { cursor:default; opacity:.55; }
+  input[type="checkbox"][data-native-control],
+  input[type="radio"][data-native-control] { appearance:auto; -webkit-appearance:auto; border:0; background:none; }
+  .clinical-checklist .clinical-option-none { margin-top:var(--space-3); border-style:dashed; border-color:var(--line-strong); }
+  .clinical-checklist .clinical-option-none:has(input:checked) { border-color:var(--aid); background:var(--aid-soft); color:var(--on-aid); }
+  .fineprint,
+  .imgph,
+  .questionasset figcaption,
+  .dosecard figcaption,
+  .progress-row,
+  .timer-caption,
+  .today-person,
+  .today-reminder,
+  .card .vol { font-size:var(--type-support-size); line-height:var(--type-support-leading); }
+  @media (min-width:1180px) {
+    .appmain { max-width:920px; }
+    #featurelist { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    #triagepanel, #slideshow { max-width:760px; margin-left:auto; margin-right:auto; }
+  }
+  @media (max-width:759px) {
+    .wrap { padding: 12px 10px 84px; }
+    .appmain { max-width:none; }
+    .appnav { left:0; right:0; top:auto; bottom:0; width:auto; height:72px; flex-direction:row; border-radius:10px 10px 0 0; padding:7px 8px; gap:6px; }
+    .navitem { min-width:0; min-height:var(--touch-primary); flex:1 1 0; flex-direction:column; justify-content:center; gap:3px; padding:5px 2px; font-size:var(--type-support-size); }
+    .navicon { width:22px; height:22px; font-size:var(--type-support-size); }
+    .screenbar { top:0; display:grid; grid-template-columns:auto minmax(0,1fr); align-items:center; }
+    .screenlabel { grid-column:2; }
+    .progressstrip { grid-column:1 / -1; margin-left:0; }
+    .today-layout, .today-main, .home-actions { grid-template-columns:1fr; }
+  }
+  @media (max-width:260px) {
+    .screenbar { flex-wrap:wrap; align-items:flex-start; }
+    .progressstrip { flex:1 1 100%; width:100%; min-width:0; margin-left:0; }
+  }
+</style>
+</head>
+<body class="app-loading">
+<div class="wrap">
+  <div class="banner"><span data-i18n="tx.shell.prototype_banner">Prototype: Not for real patients</span></div>
+  <h1>NurseAunty&trade;</h1>
+  <div class="sub" data-i18n="tx.shell.home_tagline">Health checks, care steps, and everyday tools for your family.</div>
+  <p class="status" id="status" role="status" data-i18n="tx.shell.loading">Opening NurseAunty...</p>
+  <p class="status" id="filenotice" role="alert" hidden data-i18n="tx.shell.needs_web_address">NurseAunty cannot run from a file on your computer. Open the web link instead.</p>
+  <details class="trace" id="shellprovenance"><summary>Review details</summary><span id="shellprovenancebody"></span></details>
+  <nav class="appnav" id="appnav" data-i18n-aria-label="tx.shell.primary_navigation" aria-label="Primary">
+    <button class="navitem active" id="navhome" data-screen="home" type="button"><span class="navicon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10M9 20v-6h6v6"/></svg></span><span data-i18n="tx.shell.nav_home">Home</span></button>
+    <button class="navitem" id="navpeople" data-screen="people" type="button"><span class="navicon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c.5-4 2.5-6 6-6s5.5 2 6 6M14 15c3-.5 5 1.2 6 4"/></svg></span><span data-i18n="tx.shell.nav_people">People</span></button>
+    <button class="navitem" id="navlearn" data-screen="learn" type="button"><span class="navicon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h6a3 3 0 0 1 3 3v11a3 3 0 0 0-3-3H4z"/><path d="M20 5h-4a3 3 0 0 0-3 3v11a3 3 0 0 1 3-3h4z"/></svg></span><span data-i18n="tx.shell.nav_learn">Learn</span></button>
+    <button class="navitem" id="navtools" data-screen="tools" type="button"><span class="navicon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="7"/><path d="M12 6V3M9 3h6M12 13l3 2"/></svg></span><span data-i18n="tx.shell.nav_tools">Tools</span></button>
+    <button class="navitem urgent" id="navurgent" data-screen="urgent" type="button"><span class="navicon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 2 21h20z"/><path d="M12 9v5M12 18h.01"/></svg></span><span data-i18n="tx.shell.nav_urgent">Urgent</span></button>
+  </nav>
+  <main class="appmain" id="appmain">
+
+  <div class="profilebar">
+    <span class="sr-only" data-i18n="tx.shell.settings_hint">Open Settings to change language, quiet hours, what other people can see, or Demo Mode.</span>
+    <span class="profile-actions">
+      <button class="ghost chrome-help" id="howtobutton" type="button" data-i18n="tx.shell.how_to_use">How to use</button>
+      <button class="ghost" id="showprefs" type="button" data-i18n="tx.shell.settings" data-i18n-aria-label="tx.shell.settings_aria" data-i18n-title="tx.shell.settings_aria" aria-label="Settings and local preferences" title="Settings and local preferences">Settings</button>
+      <button class="ghost listen-button" id="listenbutton" type="button" aria-pressed="false"><svg class="listen-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5.35 10.76a6.65 6.65 0 1 1 13.3 0c0 2.93-2.13 4.12-3.72 5.45-1.33 1.06-1.86 2-1.86 3.46a3.06 3.06 0 0 1-6.12 0c0-3.46-1.6-4.66-1.6-8.91z"></path><path d="M10.94 11.02a2.53 2.53 0 0 1 4.39 1.73c0 1.46-1.33 2.13-2.26 3.06"></path></svg><span id="listenlabel">Listen</span></button>
+    </span>
+  </div>
+  <div class="screenbar hidden" id="screenbar">
+    <button class="ghost" id="screenback" type="button" data-i18n="tx.shell.back">Back</button>
+    <span class="screenlabel" id="screenlabel">Today</span>
+    <div class="progressstrip" id="screenprogress" data-i18n-aria-label="tx.shell.progress" aria-label="Progress"></div>
+  </div>
+
+  <section class="today-panel" id="todaypanel" data-i18n-aria-label="tx.shell.today" aria-label="Today">
+    <div class="today-main">
+      <div>
+        <strong data-i18n="tx.home.brushing_title">Activities today: Toothbrush timer!</strong>
+        <span data-i18n="tx.home.brushing_body">Start the two-minute brushing coach and add a star.</span>
+      </div>
+      <button id="todaybrush" type="button" data-i18n="tx.home.open_timer">Open timer</button>
+    </div>
+    <div id="todayreminders" aria-live="polite"></div>
+    <div class="home-flow" aria-label="Choose an activity">
+      <div class="home-actions">
+        <button class="home-action" id="homecare" type="button"><span class="home-action-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c.5-4 2.5-6 6-6s5.5 2 6 6M14 15c3-.5 5 1.2 6 4"/></svg></span><strong data-i18n="tx.home.care_title">Care</strong></button>
+        <button class="home-action" id="homelearn" type="button"><span class="home-action-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h6a3 3 0 0 1 3 3v11a3 3 0 0 0-3-3H4z"/><path d="M20 5h-4a3 3 0 0 0-3 3v11a3 3 0 0 1 3-3h4z"/></svg></span><strong data-i18n="tx.home.learn_title">Learn</strong></button>
+        <button class="home-action" id="hometools" type="button"><span class="home-action-icon" aria-hidden="true" data-icon="stopwatch"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="7"/><path d="M12 6V3M9 3h6M12 13l3 2"/></svg></span><strong data-i18n="tx.home.tools_title">Tools</strong></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="prefs-panel hidden" id="localprefs">
+    <div class="prefs-head">
+      <div>
+        <strong data-i18n="tx.prefs.title">Local preferences</strong>
+        <span data-i18n="tx.prefs.body">Choose your language, how much this phone shows other people, and quiet hours. Nothing here stores real health data.</span>
+      </div>
+      <button class="ghost" id="closeprefs" type="button" data-i18n="tx.shell.done">Done</button>
+    </div>
+    <div class="prefs-grid">
+      <label><span data-i18n="tx.prefs.language">Language</span>
+        <select id="preflanguage"><option value="en">English</option><option value="fr">Fran&ccedil;ais (brouillon)</option><option value="hi-IN">&#2361;&#2367;&#2344;&#2381;&#2342;&#2368; (&#2350;&#2360;&#2380;&#2342;&#2366;)</option><option value="bn-BD">Bangla (pending)</option></select>
+      </label>
+      <label><span data-i18n="tx.prefs.quiet_starts">Quiet time starts</span>
+        <input id="prefquiet" type="time" value="21:00" />
+      </label>
+      <label><span data-i18n="tx.prefs.quiet_ends">Quiet time ends</span>
+        <input id="prefquietend" type="time" value="07:00" />
+      </label>
+    </div>
+    <div class="prefs-checks">
+      <label><input id="prefprivacy" type="checkbox" /> <span data-i18n="tx.prefs.shared_phone_privacy">Keep information safe on a shared phone: reminders say only that the app needs you, never why</span></label>
+      <label><input id="prefgeneric" type="checkbox" checked /> <span data-i18n="tx.prefs.generic_reminder">Use generic reminder text</span></label>
+      <label><input id="demomodeon" type="checkbox" /> <span data-i18n="tx.prefs.demo_shortcuts">Demo shortcuts: add buttons that jump straight into example flows</span></label>
+    </div>
+    <details class="reviewer-settings hidden" id="reviewersettings">
+      <summary>Reviewer testing controls</summary>
+      <p class="reviewer-note">Hidden internal controls. These are not part of the caregiver app.</p>
+      <div class="prefs-grid">
+        <label>Memory profile
+          <!-- 8 GB is the default. The 1 GB profile deliberately replaces story art with a text
+                 description to spare a low-memory device, which is right for that device and wrong as
+                 the setting everyone lands on: with 1 GB first and unselected, every caregiver and
+                 reviewer opened the app to wordless stories. David, 2026-08-20: "I see no images for
+                 Gerry or for hand is happy." -->
+              <select id="memoryprofile"><option value="standard_8gb" selected>8 GB</option><option value="low_1gb">1 GB</option></select>
+        </label>
+      </div>
+      <div class="prefs-checks">
+        <label><input id="hotspotmode" type="checkbox" /> Show cholera/hotspot support</label>
+        <!-- Deployment setting, not a caregiver preference. It lives here until the NGO/MOH
+             configuration surface exists (docs/product/DASHBOARD_ITEMS.md); the committed default
+             is config/switches.json deployer.muacTapeDistributed. -->
+        <label><input id="muactapedistributed" type="checkbox" /> Deployment gives caregivers an arm tape (Family MUAC programme)</label>
+      </div>
+      <div class="module-manager" id="modulemanager">
+        <div class="module-head">
+          <span id="modulesummary">Modules adjust to this family profile.</span>
+        </div>
+        <div class="module-toggles" id="moduletoggles"></div>
+      </div>
+    </details>
+    <p class="muted" id="prefsummary">Language: English. Privacy: standard prototype mode.</p>
+  </section>
+
+  <section class="howto-panel hidden" id="howtopanel" aria-live="polite" aria-labelledby="howtotitle">
+    <div class="screenlabel" id="howtoprogress" data-i18n-dynamic="tx.howto.step">Step 1 of 3</div>
+    <h2 id="howtotitle" data-i18n-dynamic="tx.howto.hear_title">Hear this screen</h2>
+    <p id="howtotext" data-i18n-dynamic="tx.howto.hear_body">Tap Listen to hear the important words and choices. A yellow outline shows what the app is reading. Tap Stop at any time.</p>
+    <div class="howto-actions"><button class="ghost" id="howtoprev" type="button" data-i18n="tx.shell.back">Back</button><button id="howtonext" type="button" data-i18n="tx.shell.next">Next</button><button class="ghost" id="howtodone" type="button" data-i18n="tx.shell.done">Done</button></div>
+  </section>
+
+  <section class="demo-panel hidden" id="demomode">
+    <div class="demo-head">
+      <div>
+        <strong data-i18n="tx.demo.title">Demo Mode</strong>
+        <span data-i18n="tx.demo.body">Five tested example flows.</span>
+      </div>
+      <button class="ghost" id="resetdemo" type="button" data-i18n="tx.shell.reset">Reset</button>
+    </div>
+    <div class="demo-actions" id="demoactions"></div>
+  </section>
+
+  <section class="section" id="catalogshell">
+    <div class="tabs" id="maindoors"></div>
+    <div class="toolbar" id="catalogtoolbar">
+      <input class="search" id="search" aria-label="Search modules" placeholder="Search modules" />
+      <button class="ghost" id="showtriage" type="button">Something's wrong</button>
+    </div>
+    <div class="family-panel" id="familypanel">
+      <strong>Who?</strong>
+      <span class="muted">Tap a name to show their options below.</span>
+      <div class="people" id="peoplelist"></div>
+      <details class="family-edit" id="personeditor">
+        <summary id="personeditlabel">Add a person</summary>
+        <div class="muted">To change someone, tap Edit next to their name.</div>
+        <div class="row">
+          <input id="personname" aria-label="Name or nickname" placeholder="Name or nickname" />
+          <select id="personrole" aria-label="Family role">
+            <option value="child_under5">Child under 5</option>
+            <option value="newborn_baby">Newborn baby</option>
+            <option value="newborn_mom">Recently gave birth</option>
+            <option value="pregnancy">Pregnant person</option>
+            <option value="school_child">School-age child</option>
+            <option value="household">Household</option>
+          </select>
+          <input id="persondob" type="date" min="1900-01-01" data-max-today="true" aria-label="Date of birth" />
+          <div class="person-editor-actions">
+            <button id="addperson" type="button">Add person</button>
+            <button class="ghost hidden" id="cancelperson" type="button">Cancel</button>
+          </div>
+        </div>
+        <p class="person-edit-feedback" id="personeditfeedback" tabindex="-1" aria-live="polite"></p>
+        <div class="muted">Use made-up names only. This prototype does not protect personal information.</div>
+      </details>
+    </div>
+    <div class="catalog-step" id="catalogstep">
+    <h2 id="filtertitle">Choose a person</h2>
+    <div class="chips" id="filterchips"></div>
+    </div>
+    <div class="feature-grid" id="featurelist"></div>
+  </section>
+
+  <section class="slideshow hidden" id="slideshow" tabindex="-1" aria-live="polite">
+    <h2 id="slidetitle">How to mix ORS</h2>
+    <div class="slidebox">
+      <div class="imgph" id="slideimage">Image placeholder</div>
+      <h3 class="hidden" id="slideheading"></h3>
+      <div id="slidetext"></div>
+      <p class="muted" id="slidecache"></p>
+    </div>
+    <div class="slidecontrols wrap-controls">
+      <button class="ghost audio-ctl" id="slideread" type="button"><svg class="ctl-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5.35 10.76a6.65 6.65 0 1 1 13.3 0c0 2.93-2.13 4.12-3.72 5.45-1.33 1.06-1.86 2-1.86 3.46a3.06 3.06 0 0 1-6.12 0c0-3.46-1.6-4.66-1.6-8.91z"></path><path d="M10.94 11.02a2.53 2.53 0 0 1 4.39 1.73c0 1.46-1.33 2.13-2.26 3.06"></path></svg><span data-i18n="tx.control.read_aloud">Read screen aloud</span></button>
+      <button class="ghost audio-ctl" id="slidepauseaudio" type="button" disabled><svg class="ctl-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="7" y="5" width="3.5" height="14" rx="1"></rect><rect x="13.5" y="5" width="3.5" height="14" rx="1"></rect></svg><span data-i18n="tx.control.pause_reading">Pause reading</span></button>
+      <button class="ghost audio-ctl" id="sliderestartaudio" type="button" disabled><svg class="ctl-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.6-5.9"></path><path d="M20 4v5h-5"></path></svg><span data-i18n="tx.control.restart_reading">Restart reading</span></button>
+      <button class="ghost" id="slideprev" type="button">Prev</button>
+      <button id="slidenext" type="button">Next</button>
+    </div>
+    <!-- Story activities (a coach, a quiz) sit AFTER the controls for reading the story, because
+         reading it is the task and they are what you might do next. Rendered into #slidecache they
+         landed above Read aloud / Prev / Next - David, 2026-08-20: "Open handwashing coach is above
+         the directions for the story: read, previous, next. Confusing." -->
+    <div id="slidestoryactions"></div>
+    <p class="muted" id="globalaudiostatus">Read-aloud ready.</p>
+  </section>
+
+  <section id="triagepanel" class="hidden" tabindex="-1" aria-live="polite">
+  <fieldset id="triagechildgroup">
+    <legend data-i18n="tx.triage.chrome.child_legend">Child</legend>
+    <div class="field"><label for="triagechildselect" data-i18n="tx.triage.chrome.who_sick">Who is sick?</label><select id="triagechildselect" data-i18n-aria-label="tx.triage.chrome.child_select_aria" aria-label="Child for sick-child check"><option value="" data-i18n="tx.triage.chrome.add_unknown_child">Add/unknown child</option></select></div>
+    <div class="field"><label for="dob" data-i18n="tx.triage.chrome.date_of_birth">Date of birth</label><input type="date" id="dob" data-i18n-aria-label="tx.triage.chrome.date_of_birth" min="1900-01-01" data-max-today="true" /></div>
+    <div class="muted" id="age"></div>
+  </fieldset>
+
+  <div class="triage-clinical-block" id="dangergroup">
+    <div class="muted" id="dangerjourney"></div>
+    <h3 data-i18n="tx.triage.chrome.general_danger_heading">General danger signs</h3>
+    <div class="muted" data-i18n="tx.triage.chrome.general_danger_instruction">If any danger sign is happening now, check it. If none are happening, you must check "No danger signs" before continuing.</div>
+    <div id="dangersigns"></div>
+  </div>
+
+  <div id="complaintgroup" class="hidden">
+    <div id="mainsigns"></div>
+  </div>
+
+  <fieldset id="coughgroup" class="hidden">
+    <legend data-i18n="tx.triage.chrome.cough_legend">Check the child's breathing</legend>
+    <div id="coughsigns"></div>
+  </fieldset>
+
+  <fieldset id="rrsection" class="hidden">
+    <legend data-i18n="tx.triage.chrome.breathing_rate_legend">Breathing rate (cough is present)</legend>
+    <div class="rrbox" id="rridle">
+      <button id="rrstart" type="button" data-i18n="tx.triage.chrome.start_count">Start 60-second count</button>
+      <button class="ghost hidden" id="rragain" type="button" data-i18n="tx.triage.chrome.time_again">Time again</button>
+      <button class="ghost hidden" id="rrcancel" type="button" data-i18n="tx.triage.chrome.cancel">Cancel</button>
+      <span id="rrout" class="muted" data-i18n="tx.triage.chrome.not_measured">not measured. When counting starts, tap once for each breath you see.</span>
+    </div>
+    <div class="rrbox hidden" id="rrcounting">
+      <div class="rr-count-panel">
+        <div class="rr-clock" id="rrclock" aria-hidden="true">60s</div>
+        <div class="rr-progress" id="rrprogress" role="progressbar" data-i18n-aria-label="tx.rr.progress_aria" aria-label="Time left in breathing count" aria-valuemin="0" aria-valuemax="60" aria-valuenow="60"><span id="rrbar"></span></div>
+        <span id="rrleft" class="muted" aria-live="off" data-i18n="tx.triage.chrome.tap_instruction">Tap once each time the child breathes in or the chest rises.</span>
+      </div>
+      <button class="tap" id="rrtapbtn" type="button"><span data-i18n="tx.triage.chrome.tap_button">TAP</span><br><small id="tapnum" data-i18n="tx.rr.breath_count">0 breaths</small></button>
+      <div class="rr-count-actions"><button class="ghost" id="rrundo" type="button" disabled data-i18n="tx.rr.undo">Undo last tap</button><button class="ghost" id="rrstop" type="button" data-i18n="tx.rr.stop">Stop count</button></div>
+    </div>
+  </fieldset>
+
+  <fieldset id="diargroup" class="hidden">
+    <legend data-i18n="tx.triage.chrome.diarrhoea_legend">Check diarrhoea</legend>
+    <div id="diarrhoeadurationfields"><div class="field"><label for="diarrhoeadays" data-i18n="tx.triage.chrome.diarrhoea_days">How many days has the child had loose or watery stools?</label><input type="number" id="diarrhoeadays" min="1" max="60" inputmode="numeric" data-i18n-placeholder="tx.triage.chrome.leave_blank" placeholder="Enter the number of days" /></div><div class="slidecontrols wrap-controls"><button class="ghost" id="diarrhoeadaysnotsure" type="button" data-i18n="tx.diarrhoea_duration.not_sure">Not sure</button><button id="triagediarrhoeadayscontinue" type="button" disabled data-i18n="tx.clinical_screen.under5.continue">Continue</button></div><p class="checklist-feedback" id="diarrhoeadaysfeedback" aria-live="polite"></p></div>
+    <div id="diarrhoeastoolfields" class="hidden"><div id="diarrhoeastoolsigns"></div></div>
+    <div id="diarrhoeadehydrationsigns" class="hidden"></div>
+  </fieldset>
+
+  <fieldset id="fevergroup" class="hidden">
+    <legend data-i18n="tx.triage.chrome.fever_legend">Because of fever - also tell us</legend>
+    <div id="fevercoursefields">
+      <div class="field"><label for="feverdays" data-i18n="tx.triage.chrome.fever_days">How many days has the fever or unusually hot feeling lasted?</label><input type="number" id="feverdays" min="1" max="60" data-i18n-placeholder="tx.triage.chrome.leave_blank" placeholder="Leave blank if you are not sure" /></div>
+      <div id="fevercoursesigns"></div>
+    </div>
+    <div id="fevermeasurementfields" class="hidden">
+      <p class="muted" data-i18n="tx.triage.chrome.thermometer_not_required">A thermometer or malaria test is not required. Do not delay urgent care to take a reading or get a test.</p>
+      <div class="field"><label for="feverrdt" data-i18n="tx.triage.chrome.malaria_test_result">If malaria testing applies, what is the current test result?</label><select id="feverrdt"><option value="not_done" data-i18n="tx.triage.chrome.not_done">Not done</option><option value="positive" data-i18n="tx.triage.chrome.positive">Positive</option><option value="negative" data-i18n="tx.triage.chrome.negative">Negative</option><option value="invalid" data-i18n="tx.triage.chrome.invalid">Invalid</option><option value="unknown" data-i18n="tx.triage.chrome.not_sure">Not sure</option></select></div>
+      <div class="field"><label for="fevertempvalue" data-i18n="tx.triage.chrome.optional_temperature">Optional thermometer reading</label><input type="number" step="0.1" inputmode="decimal" id="fevertempvalue" data-i18n-placeholder="tx.triage.chrome.skip_thermometer" placeholder="Skip if there is no thermometer" /></div>
+      <div class="field"><label for="fevertempunit" data-i18n="tx.triage.chrome.temperature_unit">Temperature unit</label><select id="fevertempunit"><option value="unknown" data-i18n="tx.triage.chrome.choose_unit">Choose unit</option><option value="C" data-i18n="tx.triage.chrome.celsius">Celsius</option><option value="F" data-i18n="tx.triage.chrome.fahrenheit">Fahrenheit</option></select></div>
+      <div class="field"><label for="fevertempsite" data-i18n="tx.triage.chrome.temperature_site">Where was it taken?</label><select id="fevertempsite"><option value="unknown" data-i18n="tx.triage.chrome.choose_place">Choose place</option><option value="axillary" data-i18n="tx.triage.chrome.armpit">Armpit</option><option value="oral" data-i18n="tx.triage.chrome.mouth">Mouth</option><option value="rectal" data-i18n="tx.triage.chrome.rectum">Rectum</option><option value="tympanic" data-i18n="tx.triage.chrome.ear">Ear</option><option value="temporal" data-i18n="tx.triage.chrome.forehead">Forehead</option></select></div>
+      <p class="muted" data-i18n="tx.triage.chrome.temperature_cutoff_note">Take the reading under the arm.</p>
+      <div id="fevermeasurementsigns"></div>
+    </div>
+  </fieldset>
+
+  <fieldset id="eargroup" class="hidden">
+    <legend data-i18n="tx.triage.chrome.ear_legend">Because of ear problem - also check</legend>
+    <div id="earsigns"></div>
+  </fieldset>
+
+  <fieldset id="dentalgroup" class="hidden">
+    <legend data-i18n="tx.triage.chrome.dental_legend">Because of tooth or mouth problem - also check</legend>
+    <div id="dentalsigns"></div>
+  </fieldset>
+
+  <fieldset id="measlesgroup" class="hidden">
+    <legend data-i18n="tx.triage.chrome.measles_legend">Fever with a spreading rash: also check.</legend>
+    <div id="measlessigns"></div>
+  </fieldset>
+
+  <button id="assess" class="hidden" type="button" data-i18n="tx.triage.chrome.assess">Assess</button>
+  <div id="out"></div>
+</section>
+</main>
+</div>
+<script>
+  // Opened as a file rather than served, this build hangs on "Opening NurseAunty..." forever: the
+  // browser blocks <script type="module"> across the file: origin, so nothing mounts and the shell
+  // stays hidden - a dead page with no explanation. David hit exactly that opening the published
+  // copy from the mapped drive instead of the URL, 2026-08-26.
+  //
+  // Three conditions, all of them necessary. The protocol, because a served page has no problem.
+  // The delay plus the still-loading check, because standalone.html reuses this markup and DOES run
+  // from a file: it mounts synchronously, so by the time this fires the shell is ready and the
+  // notice stays hidden. The shell itself stays hidden either way - revealing a non-interactive
+  // home screen would be a worse lie than the wait.
+  (function () {
+    if (location.protocol !== "file:") return;
+    setTimeout(function () {
+      if (!document.body.classList.contains("app-loading")) return;
+      var status = document.getElementById("status");
+      var notice = document.getElementById("filenotice");
+      if (status) status.hidden = true;
+      if (notice) notice.removeAttribute("hidden");
+    }, 2500);
+  })();
+  (function () {
+    var today = new Date().toISOString().slice(0, 10);
+    ["persondob", "dob"].forEach(function (id) {
+      var input = document.getElementById(id);
+      if (!input) return;
+      input.min = input.min || "1900-01-01";
+      input.max = today;
+    });
+  })();
+</script>
+<script type="module" src="./app.js"></script>
+</body>
+</html>

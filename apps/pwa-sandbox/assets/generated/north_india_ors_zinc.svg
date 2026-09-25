@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">North India ORS and zinc guide draft</title>
+<desc id="desc">A North India kitchen table with a caregiver, clean water container, cup, spoon, and review-safe packet placeholders.</desc>
+<rect width="640" height="360" fill="#eef6f0"/>
+<rect x="0" y="232" width="640" height="128" fill="#d8b66a"/>
+<rect x="52" y="38" width="536" height="210" rx="8" fill="#fff7e6" stroke="#c78f51" stroke-width="4"/>
+<path d="M52 75h536" stroke="#e3c995" stroke-width="8"/>
+<circle cx="150" cy="130" r="30" fill="#7a4a30"/>
+<path d="M111 175q39-48 78 0v76h-78z" fill="#b94045"/>
+<path d="M105 176q45 24 91 0" fill="none" stroke="#f0c36b" stroke-width="12"/>
+<rect x="252" y="114" width="94" height="136" rx="15" fill="#cae9f2" stroke="#36808b" stroke-width="4"/>
+<path d="M261 152h76M261 198h76" stroke="#36808b" stroke-width="4"/>
+<ellipse cx="299" cy="250" rx="72" ry="18" fill="#9b7841"/>
+<rect x="398" y="134" width="74" height="92" rx="8" fill="#fff" stroke="#3d775e" stroke-width="4"/>
+<rect x="414" y="152" width="42" height="12" fill="#3d775e"/>
+<circle cx="438" cy="197" r="18" fill="#f1c860"/>
+<rect x="502" y="147" width="50" height="76" rx="6" fill="#fff" stroke="#8050a0" stroke-width="4"/>
+<path d="M512 168h30M512 186h30M512 204h30" stroke="#8050a0" stroke-width="4"/>
+<path d="M352 218q24 22 54 4" fill="none" stroke="#765337" stroke-width="8" stroke-linecap="round"/>
+<circle cx="286" cy="275" r="11" fill="#fff"/>
+<circle cx="322" cy="275" r="11" fill="#fff"/>
+<circle cx="358" cy="275" r="11" fill="#fff"/>
+</svg>

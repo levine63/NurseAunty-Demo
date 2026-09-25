@@ -1,0 +1,288 @@
+{
+  "about": "Prototype predicate table generated from pnc_lactation screen-card clinicalVariableSet.",
+  "guidelineVersionExpected": "prototype-screen-card",
+  "inputs": {
+    "postpartum_newborn_danger_concern": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "postpartum newborn danger concern"
+      },
+      "subjectScopes": [
+        "postpartum_mother",
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "presenting_symptom"
+      ],
+      "prototypeAssignment": "Codex-generated prototype IR from screen-card clinicalVariableSet; replace with formal clinical pipeline output."
+    },
+    "pnc_lactation_pncbleeding": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_maternal_bleeding"
+      },
+      "subjectScopes": [
+        "postpartum_mother",
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "pnc_lactation_pncbreathing": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_trouble_breathing"
+      },
+      "subjectScopes": [
+        "postpartum_mother",
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "pnc_lactation_pncheadvision": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_severe_headache_vision"
+      },
+      "subjectScopes": [
+        "postpartum_mother",
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "pnc_lactation_pncfeverbreast": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_breast_red_pain"
+      },
+      "subjectScopes": [
+        "postpartum_mother",
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "postpartum_newborn_danger_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "pnc_lactation_pncbabyfeeding": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_baby_poor_feeding"
+      },
+      "subjectScopes": [
+        "postpartum_mother",
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "pnc_lactation_pncprivate": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_pnc_lactation_body"
+      },
+      "subjectScopes": [
+        "postpartum_mother",
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "postpartum_newborn_danger_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "pnc_lactation_pnccoughfeverdiarrhea": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_pnc_lactation_body"
+      },
+      "subjectScopes": [
+        "postpartum_mother",
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "presenting_symptom"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "pnc_lactation_pncharm": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_harming_thoughts"
+      },
+      "subjectScopes": [
+        "postpartum_mother",
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "pnc_lactation_pncother": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_pnc.other"
+      },
+      "subjectScopes": [
+        "postpartum_mother",
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup"
+      ],
+      "followupFor": [
+        "postpartum_newborn_danger_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "pnc_lactation_pncnone": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_pnc.none_checked"
+      },
+      "subjectScopes": [
+        "postpartum_mother",
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "safety_gate"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    }
+  },
+  "predicates": [
+    {
+      "id": "presentation_selected",
+      "label": {
+        "en": "Presentation selected"
+      },
+      "source": "Screen-card presentation metadata",
+      "var": "postpartum_newborn_danger_concern",
+      "is": true
+    },
+    {
+      "id": "any_general_danger_sign",
+      "label": {
+        "en": "Any subject-specific general danger sign"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged general_danger_sign",
+      "anyOf": [
+        {
+          "var": "pnc_lactation_pncbleeding",
+          "is": true
+        },
+        {
+          "var": "pnc_lactation_pncbreathing",
+          "is": true
+        },
+        {
+          "var": "pnc_lactation_pncheadvision",
+          "is": true
+        },
+        {
+          "var": "pnc_lactation_pncbabyfeeding",
+          "is": true
+        },
+        {
+          "var": "pnc_lactation_pncharm",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_followup_finding",
+      "label": {
+        "en": "Any symptom-specific follow-up finding"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged symptom_followup or clinical_finding",
+      "anyOf": [
+        {
+          "var": "pnc_lactation_pncbleeding",
+          "is": true
+        },
+        {
+          "var": "pnc_lactation_pncbreathing",
+          "is": true
+        },
+        {
+          "var": "pnc_lactation_pncheadvision",
+          "is": true
+        },
+        {
+          "var": "pnc_lactation_pncfeverbreast",
+          "is": true
+        },
+        {
+          "var": "pnc_lactation_pncbabyfeeding",
+          "is": true
+        },
+        {
+          "var": "pnc_lactation_pncprivate",
+          "is": true
+        },
+        {
+          "var": "pnc_lactation_pncharm",
+          "is": true
+        },
+        {
+          "var": "pnc_lactation_pncother",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_safety_gate",
+      "label": {
+        "en": "Any safety gate"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged safety_gate",
+      "anyOf": [
+        {
+          "var": "pnc_lactation_pncnone",
+          "is": true
+        }
+      ]
+    }
+  ]
+}

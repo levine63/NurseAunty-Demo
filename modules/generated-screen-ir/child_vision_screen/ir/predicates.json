@@ -1,0 +1,172 @@
+{
+  "about": "Prototype predicate table generated from child_vision_screen screen-card clinicalVariableSet.",
+  "guidelineVersionExpected": "prototype-screen-card",
+  "inputs": {
+    "vision_concern": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "vision concern"
+      },
+      "subjectScopes": [
+        "school_child",
+        "child_under5"
+      ],
+      "clinicalVariableRoles": [
+        "presenting_symptom"
+      ],
+      "prototypeAssignment": "Codex-generated prototype IR from screen-card clinicalVariableSet; replace with formal clinical pipeline output."
+    },
+    "child_vision_screen_visionsquint": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_squinting"
+      },
+      "subjectScopes": [
+        "school_child",
+        "child_under5"
+      ],
+      "clinicalVariableRoles": [
+        "presenting_symptom",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_vision_screen_visionrub": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_eye_rubbing"
+      },
+      "subjectScopes": [
+        "school_child",
+        "child_under5"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "vision_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_vision_screen_visionheadache": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_headaches_schoolwork"
+      },
+      "subjectScopes": [
+        "school_child",
+        "child_under5"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "vision_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_vision_screen_visionurgent": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_eye_exam_needed"
+      },
+      "subjectScopes": [
+        "school_child",
+        "child_under5"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_vision_screen_visionteacher": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_vision_body"
+      },
+      "subjectScopes": [
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "vision_concern"
+      ],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    }
+  },
+  "predicates": [
+    {
+      "id": "presentation_selected",
+      "label": {
+        "en": "Presentation selected"
+      },
+      "source": "Screen-card presentation metadata",
+      "var": "vision_concern",
+      "is": true
+    },
+    {
+      "id": "any_general_danger_sign",
+      "label": {
+        "en": "Any subject-specific general danger sign"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged general_danger_sign",
+      "anyOf": [
+        {
+          "var": "child_vision_screen_visionurgent",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_followup_finding",
+      "label": {
+        "en": "Any symptom-specific follow-up finding"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged symptom_followup or clinical_finding",
+      "anyOf": [
+        {
+          "var": "child_vision_screen_visionsquint",
+          "is": true
+        },
+        {
+          "var": "child_vision_screen_visionrub",
+          "is": true
+        },
+        {
+          "var": "child_vision_screen_visionheadache",
+          "is": true
+        },
+        {
+          "var": "child_vision_screen_visionurgent",
+          "is": true
+        },
+        {
+          "var": "child_vision_screen_visionteacher",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_safety_gate",
+      "label": {
+        "en": "Any safety gate"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged safety_gate",
+      "anyOf": []
+    }
+  ]
+}

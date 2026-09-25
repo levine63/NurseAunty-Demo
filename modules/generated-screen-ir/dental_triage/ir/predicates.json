@@ -1,0 +1,196 @@
+{
+  "about": "Prototype predicate table generated from dental_triage screen-card clinicalVariableSet.",
+  "guidelineVersionExpected": "prototype-screen-card",
+  "inputs": {
+    "tooth_mouth": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tooth mouth"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "presenting_symptom"
+      ],
+      "prototypeAssignment": "Codex-generated prototype IR from screen-card clinicalVariableSet; replace with formal clinical pipeline output."
+    },
+    "dental_triage_dentalbreathing": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.dental_triage.emergency"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "dental_triage_dentalswelling": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.dental_triage.same_day"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "tooth_mouth"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "dental_triage_dentalfever": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_fever_cold"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "tooth_mouth"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "dental_triage_dentalinjury": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_injury_body"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "tooth_mouth"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "dental_triage_dentalpain": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.dental_triage.pain"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "presenting_symptom",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "dental_triage_dentalbleeding": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_bleeding_burn"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "tooth_mouth"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    }
+  },
+  "predicates": [
+    {
+      "id": "presentation_selected",
+      "label": {
+        "en": "Presentation selected"
+      },
+      "source": "Screen-card presentation metadata",
+      "var": "tooth_mouth",
+      "is": true
+    },
+    {
+      "id": "any_general_danger_sign",
+      "label": {
+        "en": "Any subject-specific general danger sign"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged general_danger_sign",
+      "anyOf": [
+        {
+          "var": "dental_triage_dentalbreathing",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_followup_finding",
+      "label": {
+        "en": "Any symptom-specific follow-up finding"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged symptom_followup or clinical_finding",
+      "anyOf": [
+        {
+          "var": "dental_triage_dentalbreathing",
+          "is": true
+        },
+        {
+          "var": "dental_triage_dentalswelling",
+          "is": true
+        },
+        {
+          "var": "dental_triage_dentalfever",
+          "is": true
+        },
+        {
+          "var": "dental_triage_dentalinjury",
+          "is": true
+        },
+        {
+          "var": "dental_triage_dentalpain",
+          "is": true
+        },
+        {
+          "var": "dental_triage_dentalbleeding",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_safety_gate",
+      "label": {
+        "en": "Any safety gate"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged safety_gate",
+      "anyOf": []
+    }
+  ]
+}

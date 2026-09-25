@@ -1,0 +1,483 @@
+{
+  "about": "Generated runtime launch registry. Source of truth is packages/core/src/moduleRegistry.ts plus content manifests.",
+  "schemaVersion": "0.1",
+  "diagnostics": [],
+  "modules": [
+    {
+      "featureId": "u5_triage",
+      "launch": "triage.under5",
+      "renderer": {
+        "kind": "triage",
+        "featureId": "u5_triage",
+        "launch": "triage.under5",
+        "dataSource": "feature_catalog"
+      }
+    },
+    {
+      "featureId": "ors_voucher",
+      "launch": "ors.voucher",
+      "renderer": {
+        "kind": "ors.voucher",
+        "featureId": "ors_voucher",
+        "launch": "ors.voucher",
+        "dataSource": "feature_catalog"
+      }
+    },
+    {
+      "featureId": "ors_slideshow",
+      "launch": "seq.ors_mixing",
+      "renderer": {
+        "kind": "sequence.deck",
+        "featureId": "ors_slideshow",
+        "launch": "seq.ors_mixing",
+        "dataSource": "player_decks"
+      }
+    },
+    {
+      "featureId": "zinc_tracker",
+      "launch": "tool.zinc_tracker",
+      "renderer": {
+        "kind": "tool.tracker",
+        "featureId": "zinc_tracker",
+        "launch": "tool.zinc_tracker",
+        "dataSource": "tool_cards",
+        "cardKind": "tracker"
+      }
+    },
+    {
+      "featureId": "dental_brushing",
+      "launch": "dental.brushing",
+      "renderer": {
+        "kind": "legacy.special",
+        "featureId": "dental_brushing",
+        "launch": "dental.brushing",
+        "dataSource": "legacy_ui_core",
+        "legacyReason": "Direct PWA branch preserved until reference migration."
+      }
+    },
+    {
+      "featureId": "dental_triage",
+      "launch": "dental.triage",
+      "renderer": {
+        "kind": "legacy.special",
+        "featureId": "dental_triage",
+        "launch": "dental.triage",
+        "dataSource": "legacy_ui_core",
+        "legacyReason": "Direct PWA branch preserved until reference migration."
+      }
+    },
+    {
+      "featureId": "immunization_reminders",
+      "launch": "tool.immunization_reminders",
+      "renderer": {
+        "kind": "tool.checklist",
+        "featureId": "immunization_reminders",
+        "launch": "tool.immunization_reminders",
+        "dataSource": "tool_cards",
+        "cardKind": "checklist"
+      }
+    },
+    {
+      "featureId": "anc_birth_plan",
+      "launch": "tool.anc_birth_plan",
+      "renderer": {
+        "kind": "tool.checklist",
+        "featureId": "anc_birth_plan",
+        "launch": "tool.anc_birth_plan",
+        "dataSource": "tool_cards",
+        "cardKind": "checklist"
+      }
+    },
+    {
+      "featureId": "pnc_lactation",
+      "launch": "screen.pnc_lactation",
+      "renderer": {
+        "kind": "screen.checklist",
+        "featureId": "pnc_lactation",
+        "launch": "screen.pnc_lactation",
+        "dataSource": "screen_cards"
+      }
+    },
+    {
+      "featureId": "breastfeeding_aid_triage",
+      "launch": "screen.breastfeeding_aid_triage",
+      "renderer": {
+        "kind": "screen.checklist",
+        "featureId": "breastfeeding_aid_triage",
+        "launch": "screen.breastfeeding_aid_triage",
+        "dataSource": "screen_cards"
+      }
+    },
+    {
+      "featureId": "hh_handwashing_story",
+      "launch": "story.hh_handwashing_story",
+      "renderer": {
+        "kind": "story.deck",
+        "featureId": "hh_handwashing_story",
+        "launch": "story.hh_handwashing_story",
+        "dataSource": "story_cards"
+      }
+    },
+    {
+      "featureId": "hh_safe_water_story",
+      "launch": "story.hh_safe_water_story",
+      "renderer": {
+        "kind": "story.deck",
+        "featureId": "hh_safe_water_story",
+        "launch": "story.hh_safe_water_story",
+        "dataSource": "story_cards"
+      }
+    },
+    {
+      "featureId": "hh_dental_story",
+      "launch": "story.hh_dental_story",
+      "renderer": {
+        "kind": "story.deck",
+        "featureId": "hh_dental_story",
+        "launch": "story.hh_dental_story",
+        "dataSource": "story_cards"
+      }
+    },
+    {
+      "featureId": "gerry_the_germ",
+      "launch": "story.gerry_the_germ",
+      "renderer": {
+        "kind": "story.deck",
+        "featureId": "gerry_the_germ",
+        "launch": "story.gerry_the_germ",
+        "dataSource": "story_cards"
+      }
+    },
+    {
+      "featureId": "hh_cold_flu_story",
+      "launch": "story.hh_cold_flu_story",
+      "renderer": {
+        "kind": "story.deck",
+        "featureId": "hh_cold_flu_story",
+        "launch": "story.hh_cold_flu_story",
+        "dataSource": "story_cards"
+      }
+    },
+    {
+      "featureId": "kmc_timer",
+      "launch": "tool.kmc_timer",
+      "renderer": {
+        "kind": "tool.tracker",
+        "featureId": "kmc_timer",
+        "launch": "tool.kmc_timer",
+        "dataSource": "tool_cards",
+        "cardKind": "tracker"
+      }
+    },
+    {
+      "featureId": "newborn_triage",
+      "launch": "screen.newborn_triage",
+      "renderer": {
+        "kind": "screen.checklist",
+        "featureId": "newborn_triage",
+        "launch": "screen.newborn_triage",
+        "dataSource": "screen_cards"
+      }
+    },
+    {
+      "featureId": "pnc_reminders",
+      "launch": "tool.pnc_reminders",
+      "renderer": {
+        "kind": "tool.checklist",
+        "featureId": "pnc_reminders",
+        "launch": "tool.pnc_reminders",
+        "dataSource": "tool_cards",
+        "cardKind": "checklist"
+      }
+    },
+    {
+      "featureId": "breastfeeding_audio",
+      "launch": "tool.breastfeeding_audio",
+      "renderer": {
+        "kind": "tool.audio",
+        "featureId": "breastfeeding_audio",
+        "launch": "tool.breastfeeding_audio",
+        "dataSource": "tool_cards",
+        "cardKind": "audio"
+      }
+    },
+    {
+      "featureId": "anc_triage",
+      "launch": "screen.anc_triage",
+      "renderer": {
+        "kind": "screen.checklist",
+        "featureId": "anc_triage",
+        "launch": "screen.anc_triage",
+        "dataSource": "screen_cards"
+      }
+    },
+    {
+      "featureId": "chlorine_contact_timer",
+      "launch": "tool.chlorine_contact_timer",
+      "renderer": {
+        "kind": "tool.timer",
+        "featureId": "chlorine_contact_timer",
+        "launch": "tool.chlorine_contact_timer",
+        "dataSource": "tool_cards",
+        "cardKind": "timer"
+      }
+    },
+    {
+      "featureId": "boil_water_timer",
+      "launch": "tool.boil_water_timer",
+      "renderer": {
+        "kind": "tool.timer",
+        "featureId": "boil_water_timer",
+        "launch": "tool.boil_water_timer",
+        "dataSource": "tool_cards",
+        "cardKind": "timer"
+      }
+    },
+    {
+      "featureId": "cholera_hotspot_alert",
+      "launch": "tool.cholera_hotspot_alert",
+      "renderer": {
+        "kind": "tool.checklist",
+        "featureId": "cholera_hotspot_alert",
+        "launch": "tool.cholera_hotspot_alert",
+        "dataSource": "tool_cards",
+        "cardKind": "checklist"
+      }
+    },
+    {
+      "featureId": "handwashing_timer",
+      "launch": "tool.handwashing_timer",
+      "renderer": {
+        "kind": "tool.timer",
+        "featureId": "handwashing_timer",
+        "launch": "tool.handwashing_timer",
+        "dataSource": "tool_cards",
+        "cardKind": "timer"
+      }
+    },
+    {
+      "featureId": "kohl_lead_screen",
+      "launch": "screen.kohl_lead_screen",
+      "renderer": {
+        "kind": "screen.checklist",
+        "featureId": "kohl_lead_screen",
+        "launch": "screen.kohl_lead_screen",
+        "dataSource": "screen_cards"
+      }
+    },
+    {
+      "featureId": "child_vision_screen",
+      "launch": "screen.child_vision_screen",
+      "renderer": {
+        "kind": "screen.checklist",
+        "featureId": "child_vision_screen",
+        "launch": "screen.child_vision_screen",
+        "dataSource": "screen_cards"
+      }
+    },
+    {
+      "featureId": "child_hearing_screen",
+      "launch": "screen.child_hearing_screen",
+      "renderer": {
+        "kind": "screen.checklist",
+        "featureId": "child_hearing_screen",
+        "launch": "screen.child_hearing_screen",
+        "dataSource": "screen_cards"
+      }
+    },
+    {
+      "featureId": "child_ear_check",
+      "launch": "screen.child_ear_check",
+      "renderer": {
+        "kind": "screen.checklist",
+        "featureId": "child_ear_check",
+        "launch": "screen.child_ear_check",
+        "dataSource": "screen_cards"
+      }
+    },
+    {
+      "featureId": "child_measles_rash_check",
+      "launch": "screen.child_measles_rash_check",
+      "renderer": {
+        "kind": "screen.checklist",
+        "featureId": "child_measles_rash_check",
+        "launch": "screen.child_measles_rash_check",
+        "dataSource": "screen_cards"
+      }
+    },
+    {
+      "featureId": "child_muac_malnutrition_screen",
+      "launch": "screen.child_muac_malnutrition_screen",
+      "renderer": {
+        "kind": "screen.checklist",
+        "featureId": "child_muac_malnutrition_screen",
+        "launch": "screen.child_muac_malnutrition_screen",
+        "dataSource": "screen_cards"
+      }
+    },
+    {
+      "featureId": "child_injury_first_aid_check",
+      "launch": "screen.child_injury_first_aid_check",
+      "renderer": {
+        "kind": "screen.checklist",
+        "featureId": "child_injury_first_aid_check",
+        "launch": "screen.child_injury_first_aid_check",
+        "dataSource": "screen_cards"
+      }
+    },
+    {
+      "featureId": "family_preparedness",
+      "launch": "tool.family_preparedness",
+      "renderer": {
+        "kind": "tool.checklist",
+        "featureId": "family_preparedness",
+        "launch": "tool.family_preparedness",
+        "dataSource": "tool_cards",
+        "cardKind": "checklist"
+      }
+    },
+    {
+      "featureId": "chronic_refill_tracker",
+      "launch": "tool.chronic_refill_tracker",
+      "renderer": {
+        "kind": "tool.tracker",
+        "featureId": "chronic_refill_tracker",
+        "launch": "tool.chronic_refill_tracker",
+        "dataSource": "tool_cards",
+        "cardKind": "tracker"
+      }
+    },
+    {
+      "featureId": "labor_clock",
+      "launch": "tool.labor_clock",
+      "renderer": {
+        "kind": "tool.timer",
+        "featureId": "labor_clock",
+        "launch": "tool.labor_clock",
+        "dataSource": "tool_cards",
+        "cardKind": "timer"
+      }
+    },
+    {
+      "featureId": "bednet_hanging_reminder",
+      "launch": "tool.bednet_hanging_reminder",
+      "renderer": {
+        "kind": "tool.checklist",
+        "featureId": "bednet_hanging_reminder",
+        "launch": "tool.bednet_hanging_reminder",
+        "dataSource": "tool_cards",
+        "cardKind": "checklist"
+      }
+    },
+    {
+      "featureId": "dehydration_visual_guide",
+      "launch": "tool.dehydration_visual_guide",
+      "renderer": {
+        "kind": "tool.checklist",
+        "featureId": "dehydration_visual_guide",
+        "launch": "tool.dehydration_visual_guide",
+        "dataSource": "tool_cards",
+        "cardKind": "checklist"
+      }
+    },
+    {
+      "featureId": "complementary_feeding_card",
+      "launch": "tool.complementary_feeding_card",
+      "renderer": {
+        "kind": "tool.checklist",
+        "featureId": "complementary_feeding_card",
+        "launch": "tool.complementary_feeding_card",
+        "dataSource": "tool_cards",
+        "cardKind": "checklist"
+      }
+    },
+    {
+      "featureId": "chlorine_dose_helper",
+      "launch": "tool.chlorine_dose_helper",
+      "renderer": {
+        "kind": "tool.calculator",
+        "featureId": "chlorine_dose_helper",
+        "launch": "tool.chlorine_dose_helper",
+        "dataSource": "tool_cards",
+        "cardKind": "calculator"
+      }
+    },
+    {
+      "featureId": "sanitation_checklist",
+      "launch": "tool.sanitation_checklist",
+      "renderer": {
+        "kind": "tool.checklist",
+        "featureId": "sanitation_checklist",
+        "launch": "tool.sanitation_checklist",
+        "dataSource": "tool_cards",
+        "cardKind": "checklist"
+      }
+    },
+    {
+      "featureId": "channel_twins_preview",
+      "launch": "tool.channel_twins_preview",
+      "renderer": {
+        "kind": "tool.console",
+        "featureId": "channel_twins_preview",
+        "launch": "tool.channel_twins_preview",
+        "dataSource": "tool_cards",
+        "cardKind": "console"
+      }
+    },
+    {
+      "featureId": "referral_followup_queue",
+      "launch": "tool.referral_followup_queue",
+      "renderer": {
+        "kind": "tool.tracker",
+        "featureId": "referral_followup_queue",
+        "launch": "tool.referral_followup_queue",
+        "dataSource": "tool_cards",
+        "cardKind": "tracker"
+      }
+    },
+    {
+      "featureId": "shared_phone_privacy_mode",
+      "launch": "tool.shared_phone_privacy_mode",
+      "renderer": {
+        "kind": "tool.checklist",
+        "featureId": "shared_phone_privacy_mode",
+        "launch": "tool.shared_phone_privacy_mode",
+        "dataSource": "tool_cards",
+        "cardKind": "checklist"
+      }
+    },
+    {
+      "featureId": "partner_service_dashboard",
+      "launch": "tool.partner_service_dashboard",
+      "renderer": {
+        "kind": "tool.console",
+        "featureId": "partner_service_dashboard",
+        "launch": "tool.partner_service_dashboard",
+        "dataSource": "tool_cards",
+        "cardKind": "console"
+      }
+    },
+    {
+      "featureId": "research_engagement",
+      "launch": "tool.research_engagement",
+      "renderer": {
+        "kind": "tool.console",
+        "featureId": "research_engagement",
+        "launch": "tool.research_engagement",
+        "dataSource": "tool_cards",
+        "cardKind": "console"
+      }
+    },
+    {
+      "featureId": "localizer_quality_console",
+      "launch": "tool.localizer_quality_console",
+      "renderer": {
+        "kind": "tool.console",
+        "featureId": "localizer_quality_console",
+        "launch": "tool.localizer_quality_console",
+        "dataSource": "tool_cards",
+        "cardKind": "console"
+      }
+    }
+  ]
+}

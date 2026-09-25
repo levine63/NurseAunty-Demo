@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 260" role="img" aria-labelledby="title desc">
+  <title id="title">Prototype worried toddler figure</title>
+  <desc id="desc">Reusable prototype worried toddler portrait for non-diagnostic screens, not approved for field use.</desc>
+  <rect width="220" height="260" rx="18" fill="#fffdf7"/>
+  <ellipse cx="111" cy="114" rx="55" ry="62" fill="#a96b43"/>
+  <circle cx="92" cy="107" r="5" fill="#1d1d1b"/>
+  <circle cx="131" cy="107" r="5" fill="#1d1d1b"/>
+  <path d="M88 145c16-14 43-14 59 0" fill="none" stroke="#1d1d1b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M68 76c19-38 75-39 93 0" fill="#2b201c"/>
+  <path d="M65 220c24-32 74-34 105 0" fill="#ca6556"/>
+  <text x="45" y="248" font-family="Arial, sans-serif" font-size="14" fill="#5e5146">prototype - local review needed</text>
+</svg>

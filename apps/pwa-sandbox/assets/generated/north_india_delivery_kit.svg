@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">North India delivery kit checklist draft</title>
+<desc id="desc">A North India birth preparedness kit with clean cloths, documents, phone contact, money pouch, and transport cue.</desc>
+<rect width="640" height="360" fill="#f6efe2"/>
+<rect x="52" y="62" width="536" height="224" rx="8" fill="#fffaf1" stroke="#ad8155" stroke-width="4"/>
+<rect x="86" y="112" width="180" height="124" rx="12" fill="#c64d48"/>
+<path d="M118 112v-22h116v22" fill="none" stroke="#8d3533" stroke-width="8"/>
+<path d="M110 150h132M110 184h132M110 218h132" stroke="#f5d5a1" stroke-width="8" stroke-linecap="round"/>
+<rect x="316" y="106" width="88" height="116" rx="8" fill="#fff" stroke="#4d7f98" stroke-width="4"/>
+<path d="M332 136h56M332 162h56M332 188h34" stroke="#4d7f98" stroke-width="6" stroke-linecap="round"/>
+<rect x="438" y="126" width="76" height="96" rx="10" fill="#efe3c8" stroke="#9d7d4d" stroke-width="4"/>
+<path d="M452 152h48M452 178h48" stroke="#9d7d4d" stroke-width="6" stroke-linecap="round"/>
+<path d="M304 248h220" stroke="#7fa08d" stroke-width="14" stroke-linecap="round"/>
+<circle cx="338" cy="263" r="15" fill="#263238"/>
+<circle cx="490" cy="263" r="15" fill="#263238"/>
+<rect x="424" y="238" width="64" height="28" rx="8" fill="#7fa08d"/>
+<circle cx="558" cy="94" r="20" fill="#f1c85e" stroke="#896c25" stroke-width="4"/>
+<path d="M558 94v-12M558 94h12" stroke="#4b3c16" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,455 @@
+{
+  "langs": [
+    "en"
+  ],
+  "items": [
+    {
+      "lang": "en",
+      "page": 1,
+      "sentence": 1,
+      "text": "Cory COVID is the meanest germ in the world.",
+      "wav": "en/p01_s01.wav"
+    },
+    {
+      "lang": "en",
+      "page": 1,
+      "sentence": 2,
+      "text": "He loves making people sick.",
+      "wav": "en/p01_s02.wav"
+    },
+    {
+      "lang": "en",
+      "page": 1,
+      "sentence": 3,
+      "text": "He is too small to see, so he is hard to stop.",
+      "wav": "en/p01_s03.wav"
+    },
+    {
+      "lang": "en",
+      "page": 2,
+      "sentence": 1,
+      "text": "Natasha and Anika are sisters.",
+      "wav": "en/p02_s01.wav"
+    },
+    {
+      "lang": "en",
+      "page": 2,
+      "sentence": 2,
+      "text": "They wash their hands with soap when they come home, after the toilet, and before they eat.",
+      "wav": "en/p02_s02.wav"
+    },
+    {
+      "lang": "en",
+      "page": 2,
+      "sentence": 3,
+      "text": "Germs hardly ever make them sick.",
+      "wav": "en/p02_s03.wav"
+    },
+    {
+      "lang": "en",
+      "page": 2,
+      "sentence": 4,
+      "text": "Cory wants to change that.",
+      "wav": "en/p02_s04.wav"
+    },
+    {
+      "lang": "en",
+      "page": 3,
+      "sentence": 1,
+      "text": "Cory made a plan.",
+      "wav": "en/p03_s01.wav"
+    },
+    {
+      "lang": "en",
+      "page": 3,
+      "sentence": 2,
+      "text": "Auntie planned to visit in a few days, so Cory hid inside her.",
+      "wav": "en/p03_s02.wav"
+    },
+    {
+      "lang": "en",
+      "page": 3,
+      "sentence": 3,
+      "text": "At first she could not even tell.",
+      "wav": "en/p03_s03.wav"
+    },
+    {
+      "lang": "en",
+      "page": 3,
+      "sentence": 4,
+      "text": "Now Cory could travel everywhere Auntie went.",
+      "wav": "en/p03_s04.wav"
+    },
+    {
+      "lang": "en",
+      "page": 4,
+      "sentence": 1,
+      "text": "Auntie arrived at the house.",
+      "wav": "en/p04_s01.wav"
+    },
+    {
+      "lang": "en",
+      "page": 4,
+      "sentence": 2,
+      "text": "The girls welcomed her inside.",
+      "wav": "en/p04_s02.wav"
+    },
+    {
+      "lang": "en",
+      "page": 4,
+      "sentence": 3,
+      "text": "Cory came in too.",
+      "wav": "en/p04_s03.wav"
+    },
+    {
+      "lang": "en",
+      "page": 5,
+      "sentence": 1,
+      "text": "Cory made Auntie cough.",
+      "wav": "en/p05_s01.wav"
+    },
+    {
+      "lang": "en",
+      "page": 5,
+      "sentence": 2,
+      "text": "A cough can travel 100 kilometres an hour, ten times faster than you can run.",
+      "wav": "en/p05_s02.wav"
+    },
+    {
+      "lang": "en",
+      "page": 5,
+      "sentence": 3,
+      "text": "Now Cory floated in the air and waited for the girls to breathe him in.",
+      "wav": "en/p05_s03.wav"
+    },
+    {
+      "lang": "en",
+      "page": 6,
+      "sentence": 1,
+      "text": "Natasha stayed two metres away from Auntie until the family knew that nobody was ill.",
+      "wav": "en/p06_s01.wav"
+    },
+    {
+      "lang": "en",
+      "page": 6,
+      "sentence": 2,
+      "text": "Cory could not reach her.",
+      "wav": "en/p06_s02.wav"
+    },
+    {
+      "lang": "en",
+      "page": 7,
+      "sentence": 1,
+      "text": "Auntie coughed and sneezed again.",
+      "wav": "en/p07_s01.wav"
+    },
+    {
+      "lang": "en",
+      "page": 7,
+      "sentence": 2,
+      "text": "Natasha asked her to cover her mouth and nose with her elbow, so fewer germs would reach the family.",
+      "wav": "en/p07_s02.wav"
+    },
+    {
+      "lang": "en",
+      "page": 8,
+      "sentence": 1,
+      "text": "Cory hoped Auntie would spread him from her hands.",
+      "wav": "en/p08_s01.wav"
+    },
+    {
+      "lang": "en",
+      "page": 8,
+      "sentence": 2,
+      "text": "Natasha was watching carefully.",
+      "wav": "en/p08_s02.wav"
+    },
+    {
+      "lang": "en",
+      "page": 8,
+      "sentence": 3,
+      "text": "She asked Auntie to wash her hands with soap.",
+      "wav": "en/p08_s03.wav"
+    },
+    {
+      "lang": "en",
+      "page": 9,
+      "sentence": 1,
+      "text": "Soap kills COVID germs.",
+      "wav": "en/p09_s01.wav"
+    },
+    {
+      "lang": "en",
+      "page": 9,
+      "sentence": 2,
+      "text": "Auntie washed her hands for 20 seconds, and Cory lost again.",
+      "wav": "en/p09_s02.wav"
+    },
+    {
+      "lang": "en",
+      "page": 9,
+      "sentence": 3,
+      "text": "Germs like Cory hate soap.",
+      "wav": "en/p09_s03.wav"
+    },
+    {
+      "lang": "en",
+      "page": 10,
+      "sentence": 1,
+      "text": "Later Auntie coughed into her hand again.",
+      "wav": "en/p10_s01.wav"
+    },
+    {
+      "lang": "en",
+      "page": 10,
+      "sentence": 2,
+      "text": "The girls reminded her to cough into her elbow.",
+      "wav": "en/p10_s02.wav"
+    },
+    {
+      "lang": "en",
+      "page": 10,
+      "sentence": 3,
+      "text": "When Auntie covered her cough with her elbow, Cory could not fly.",
+      "wav": "en/p10_s03.wav"
+    },
+    {
+      "lang": "en",
+      "page": 11,
+      "sentence": 1,
+      "text": "After lunch Auntie felt unwell.",
+      "wav": "en/p11_s01.wav"
+    },
+    {
+      "lang": "en",
+      "page": 11,
+      "sentence": 2,
+      "text": "She wanted to shop for dinner before she felt worse.",
+      "wav": "en/p11_s02.wav"
+    },
+    {
+      "lang": "en",
+      "page": 11,
+      "sentence": 3,
+      "text": "Cory hoped a crowd would help him reach more people.",
+      "wav": "en/p11_s03.wav"
+    },
+    {
+      "lang": "en",
+      "page": 12,
+      "sentence": 1,
+      "text": "Natasha asked Auntie to stay home while she felt ill.",
+      "wav": "en/p12_s01.wav"
+    },
+    {
+      "lang": "en",
+      "page": 12,
+      "sentence": 2,
+      "text": "She and Anika would take care of Auntie themselves.",
+      "wav": "en/p12_s02.wav"
+    },
+    {
+      "lang": "en",
+      "page": 13,
+      "sentence": 1,
+      "text": "Anika brought Auntie a mask.",
+      "wav": "en/p13_s01.wav"
+    },
+    {
+      "lang": "en",
+      "page": 13,
+      "sentence": 2,
+      "text": "Auntie wore it so she would keep everyone else well.",
+      "wav": "en/p13_s02.wav"
+    },
+    {
+      "lang": "en",
+      "page": 13,
+      "sentence": 3,
+      "text": "Masks stop Cory from flying.",
+      "wav": "en/p13_s03.wav"
+    },
+    {
+      "lang": "en",
+      "page": 14,
+      "sentence": 1,
+      "text": "The next day Auntie felt worse.",
+      "wav": "en/p14_s01.wav"
+    },
+    {
+      "lang": "en",
+      "page": 14,
+      "sentence": 2,
+      "text": "She thought she might have COVID, and she wanted to see a doctor.",
+      "wav": "en/p14_s02.wav"
+    },
+    {
+      "lang": "en",
+      "page": 15,
+      "sentence": 1,
+      "text": "Anika had already called the doctor's office.",
+      "wav": "en/p15_s01.wav"
+    },
+    {
+      "lang": "en",
+      "page": 15,
+      "sentence": 2,
+      "text": "They asked what Auntie felt, and they told the family when to bring her in.",
+      "wav": "en/p15_s02.wav"
+    },
+    {
+      "lang": "en",
+      "page": 16,
+      "sentence": 1,
+      "text": "A clinic can be crowded when many people are ill.",
+      "wav": "en/p16_s01.wav"
+    },
+    {
+      "lang": "en",
+      "page": 16,
+      "sentence": 2,
+      "text": "Call the clinic first and ask when to come, so you wait outside instead of in the waiting room.",
+      "wav": "en/p16_s02.wav"
+    },
+    {
+      "lang": "en",
+      "page": 16,
+      "sentence": 3,
+      "text": "Never wait at home when a child struggles to breathe.",
+      "wav": "en/p16_s03.wav"
+    },
+    {
+      "lang": "en",
+      "page": 16,
+      "sentence": 4,
+      "text": "Take the child for care straight away.",
+      "wav": "en/p16_s04.wav"
+    },
+    {
+      "lang": "en",
+      "page": 17,
+      "sentence": 1,
+      "text": "If Auntie became seriously ill, or had trouble breathing, the family would call again.",
+      "wav": "en/p17_s01.wav"
+    },
+    {
+      "lang": "en",
+      "page": 17,
+      "sentence": 2,
+      "text": "Then the office would send them to the right clinic.",
+      "wav": "en/p17_s02.wav"
+    },
+    {
+      "lang": "en",
+      "page": 17,
+      "sentence": 3,
+      "text": "If a child struggles to breathe, call for help right away.",
+      "wav": "en/p17_s03.wav"
+    },
+    {
+      "lang": "en",
+      "page": 17,
+      "sentence": 4,
+      "text": "If nobody answers, go to the clinic.",
+      "wav": "en/p17_s04.wav"
+    },
+    {
+      "lang": "en",
+      "page": 18,
+      "sentence": 1,
+      "text": "The two girls took good care of their aunt for a week.",
+      "wav": "en/p18_s01.wav"
+    },
+    {
+      "lang": "en",
+      "page": 18,
+      "sentence": 2,
+      "text": "Soon Auntie felt better.",
+      "wav": "en/p18_s02.wav"
+    },
+    {
+      "lang": "en",
+      "page": 19,
+      "sentence": 1,
+      "text": "Cory COVID was all gone.",
+      "wav": "en/p19_s01.wav"
+    },
+    {
+      "lang": "en",
+      "page": 19,
+      "sentence": 2,
+      "text": "He never made anyone sick again.",
+      "wav": "en/p19_s02.wav"
+    },
+    {
+      "lang": "en",
+      "page": 19,
+      "sentence": 3,
+      "text": "Cory calls it the saddest story ever.",
+      "wav": "en/p19_s03.wav"
+    },
+    {
+      "lang": "en",
+      "page": 20,
+      "sentence": 1,
+      "text": "Remember Cory's lessons.",
+      "wav": "en/p20_s01.wav"
+    },
+    {
+      "lang": "en",
+      "page": 20,
+      "sentence": 2,
+      "text": "COVID spreads when an ill person coughs or sneezes.",
+      "wav": "en/p20_s02.wav"
+    },
+    {
+      "lang": "en",
+      "page": 20,
+      "sentence": 3,
+      "text": "Stay two metres from other people outside your home.",
+      "wav": "en/p20_s03.wav"
+    },
+    {
+      "lang": "en",
+      "page": 20,
+      "sentence": 4,
+      "text": "Cough and sneeze into your elbow.",
+      "wav": "en/p20_s04.wav"
+    },
+    {
+      "lang": "en",
+      "page": 20,
+      "sentence": 5,
+      "text": "Wash your hands with soap and water for 20 seconds.",
+      "wav": "en/p20_s05.wav"
+    },
+    {
+      "lang": "en",
+      "page": 20,
+      "sentence": 6,
+      "text": "Wear a mask when you go outside.",
+      "wav": "en/p20_s06.wav"
+    },
+    {
+      "lang": "en",
+      "page": 20,
+      "sentence": 7,
+      "text": "Stay home if you feel ill.",
+      "wav": "en/p20_s07.wav"
+    },
+    {
+      "lang": "en",
+      "page": 20,
+      "sentence": 8,
+      "text": "If you have trouble breathing, call the doctor right away.",
+      "wav": "en/p20_s08.wav"
+    },
+    {
+      "lang": "en",
+      "page": 20,
+      "sentence": 9,
+      "text": "Do not wait at home.",
+      "wav": "en/p20_s09.wav"
+    }
+  ]
+}

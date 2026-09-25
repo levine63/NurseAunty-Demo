@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Pregnancy danger screen illustration</title>
+  <desc id="desc">Pregnancy warning check with clinic referral symbols.</desc>
+  <rect width="640" height="360" fill="#f7f5ef"/>
+  <circle cx="178" cy="98" r="44" fill="#8b5a3c"/>
+  <path d="M122 276c10-92 42-138 94-138s86 46 96 138z" fill="#b8ddd6" stroke="#0b6b5b" stroke-width="9"/>
+  <circle cx="226" cy="224" r="42" fill="#eff8f4" stroke="#0b6b5b" stroke-width="8"/>
+  <rect x="392" y="78" width="130" height="118" rx="18" fill="#ffffff" stroke="#d9d9e3" stroke-width="8"/>
+  <path d="M457 104v66M424 137h66" stroke="#b3261e" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="408" cy="246" r="24" fill="#fff4e5" stroke="#b26a00" stroke-width="8"/>
+  <circle cx="476" cy="246" r="24" fill="#fff4e5" stroke="#b26a00" stroke-width="8"/>
+  <circle cx="544" cy="246" r="24" fill="#fff4e5" stroke="#b26a00" stroke-width="8"/>
+  <path d="M92 310h456" stroke="#e1d6c0" stroke-width="18" stroke-linecap="round"/>
+</svg>

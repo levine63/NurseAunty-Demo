@@ -1,0 +1,2553 @@
+{
+  "about": "Complete reviewer-only story bundles recovered from stale PR #28. Preserved but not loaded by runtime because activating them makes standalone.html exceed the 95 MiB safety budget.",
+  "schemaVersion": "0.1",
+  "sourcePr": 28,
+  "runtimeActivation": "blocked_on_standalone_size",
+  "features": [
+    {
+      "id": "hh_covid_cory_story",
+      "titleSlug": "tx.feature_hh_covid_cory_story",
+      "summarySlug": "tx.feature_hh_covid_cory_story_summary",
+      "thumbnailAssetId": "img.story.hh_covid_cory_01",
+      "subject": [
+        "child_under5",
+        "school_child",
+        "household"
+      ],
+      "type": [
+        "story",
+        "howto"
+      ],
+      "topic": [
+        "cold_flu",
+        "handwashing",
+        "child_health"
+      ],
+      "status": "prototype",
+      "dangerEligible": false,
+      "launch": "story.hh_covid_cory_story",
+      "memoryProfile": [
+        "low_1gb",
+        "standard_8gb"
+      ],
+      "source": "https://hygieneheroes.berkeley.edu/curriculum/stories/cory.pdf",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "audience": "reviewer"
+    },
+    {
+      "id": "hh_covid_juan_day_story",
+      "titleSlug": "tx.feature_hh_covid_juan_day_story",
+      "summarySlug": "tx.feature_hh_covid_juan_day_story_summary",
+      "thumbnailAssetId": "img.story.hh_covid_juan_01",
+      "subject": [
+        "school_child",
+        "household"
+      ],
+      "type": [
+        "story",
+        "howto"
+      ],
+      "topic": [
+        "cold_flu",
+        "handwashing"
+      ],
+      "status": "prototype",
+      "dangerEligible": false,
+      "launch": "story.hh_covid_juan_day_story",
+      "memoryProfile": [
+        "low_1gb",
+        "standard_8gb"
+      ],
+      "source": "https://drive.google.com/file/d/1O7-3NOJEnJ7pcCqjKQppn_TJ7E1QmDSu/view",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "audience": "reviewer"
+    },
+    {
+      "id": "hh_covid_connie_story",
+      "titleSlug": "tx.feature_hh_covid_connie_story",
+      "summarySlug": "tx.feature_hh_covid_connie_story_summary",
+      "thumbnailAssetId": "img.story.hh_covid_connie_germ",
+      "subject": [
+        "school_child",
+        "household"
+      ],
+      "type": [
+        "story",
+        "howto"
+      ],
+      "topic": [
+        "cold_flu",
+        "handwashing"
+      ],
+      "status": "prototype",
+      "dangerEligible": false,
+      "launch": "story.hh_covid_connie_story",
+      "memoryProfile": [
+        "low_1gb",
+        "standard_8gb"
+      ],
+      "source": "https://hygieneheroes.berkeley.edu/curriculum/stories/connie.pdf",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "audience": "reviewer"
+    },
+    {
+      "id": "anc_womb_nutrition_story",
+      "titleSlug": "tx.feature_anc_womb_nutrition_story",
+      "summarySlug": "tx.feature_anc_womb_nutrition_story_summary",
+      "thumbnailAssetId": "img.story.anc_womb_nutrition_01",
+      "subject": [
+        "pregnancy"
+      ],
+      "type": [
+        "story",
+        "howto"
+      ],
+      "topic": [
+        "anc_birth"
+      ],
+      "status": "prototype",
+      "dangerEligible": false,
+      "launch": "story.anc_womb_nutrition_story",
+      "memoryProfile": [
+        "low_1gb",
+        "standard_8gb"
+      ],
+      "source": "ANC Comics Womb with a View.10 (David I. Levine, 2016), unpublished",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "audience": "reviewer"
+    },
+    {
+      "id": "anc_womb_deworming_story",
+      "titleSlug": "tx.feature_anc_womb_deworming_story",
+      "summarySlug": "tx.feature_anc_womb_deworming_story_summary",
+      "thumbnailAssetId": "img.story.anc_womb_deworming_01",
+      "subject": [
+        "pregnancy"
+      ],
+      "type": [
+        "story",
+        "howto"
+      ],
+      "topic": [
+        "anc_birth"
+      ],
+      "status": "prototype",
+      "dangerEligible": false,
+      "launch": "story.anc_womb_deworming_story",
+      "memoryProfile": [
+        "low_1gb",
+        "standard_8gb"
+      ],
+      "source": "ANC Comics Womb with a View.10 (David I. Levine, 2016), unpublished",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "audience": "reviewer"
+    }
+  ],
+  "storyCards": [
+    {
+      "featureId": "hh_covid_cory_story",
+      "titleSlug": "tx.feature_hh_covid_cory_story",
+      "source": "https://hygieneheroes.berkeley.edu/curriculum/stories/cory.pdf",
+      "sourceName": "Hygiene Heroes: Cory the COVID",
+      "imageDesc": "Two sisters and their aunt keeping a boastful germ character away with soap, elbows, distance, and a mask.",
+      "frames": [
+        {
+          "bodySlug": "tx.story_hh_covid_cory_01",
+          "imageDesc": "A large grinning cartoon germ beside a blank green speech bubble.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_cory_01"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_cory_02",
+          "imageDesc": "Two sisters standing side by side while a grinning germ watches from across the page, a blank speech bubble beside it.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_cory_02"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_cory_03",
+          "imageDesc": "An aunt standing while a grinning germ, joined to her face by thin lines, speaks from a blank bubble.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_cory_03"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_cory_04",
+          "imageDesc": "An aunt and a girl at the picket fence of a house, with a small grinning germ beside the aunt.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_cory_04"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_cory_05",
+          "imageDesc": "An aunt coughing a puff of air that carries small germs across the page toward a large grinning germ.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_cory_05"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_cory_06",
+          "imageDesc": "An aunt and a girl standing apart in a lamplit room, with a double-headed arrow measuring the gap between them and a downcast germ on the floor.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_cory_06"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_cory_07",
+          "imageDesc": "A girl standing beside a coughing aunt, next to a large close-up of a palm covered in germs.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_cory_07"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_cory_08",
+          "imageDesc": "An aunt reaching toward a table of cups and a potted flower with a germ on her hand, while a girl watches.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_cory_08"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_cory_09",
+          "imageDesc": "A girl beside a picture of hands being rubbed together, a clock, and a stack of soap bars, with a downcast germ.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_cory_09"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_cory_10",
+          "imageDesc": "An aunt coughing into her bent elbow while a girl watches, beside a close-up of a germ-covered palm and a downcast germ.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_cory_10"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_cory_11",
+          "imageDesc": "An aunt with a fever, sweat and red heat lines beside a thermometer, while a grinning germ gloats.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_cory_11"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_cory_12",
+          "imageDesc": "A girl facing a downcast germ, each with a blank speech bubble.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_cory_12"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_cory_13",
+          "imageDesc": "A girl holding out a face mask to an aunt while a downcast germ watches, with several blank speech bubbles between them.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_cory_13"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_cory_14",
+          "imageDesc": "An aunt wearing a mask with red fever lines and a thermometer, a thought cloud showing a hospital, and a grinning germ.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_cory_14"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_cory_15",
+          "imageDesc": "A hospital building joined by a dotted line to a mobile phone, with a girl beside it and a grinning germ at the edge.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_cory_15"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_cory_16",
+          "imageDesc": "An aunt wearing a mask with a small grinning germ at her face, and a girl standing nearby.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_cory_16"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_cory_17",
+          "imageDesc": "A hospital building beside an aunt in a mask and a girl listening to her.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_cory_17"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_cory_18",
+          "imageDesc": "An aunt stirring a bowl at a table with two girls standing beside her.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_cory_18"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_cory_19",
+          "imageDesc": "A framed picture of a tearful, defeated germ, with a blank speech bubble beside it.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_cory_19"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_cory_20",
+          "imageDesc": "A grinning germ off to one side of an otherwise empty page, beside a large blank speech bubble.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_cory_20"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "storycovidcorywash",
+          "labelSlug": "tx.story_action_handwashing_coach",
+          "launch": "tool.handwashing_timer"
+        },
+        {
+          "id": "storycovidcoryquiz",
+          "labelSlug": "tx.story_action_quiz",
+          "launch": "tool.quiz_runner",
+          "quizFeatureId": "hh_covid_cory_story",
+          "style": "ghost"
+        },
+        {
+          "id": "storycovidcorysick",
+          "labelSlug": "tx.story_action_sick_child_check",
+          "launch": "triage.cough",
+          "style": "ghost"
+        }
+      ],
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "hh_covid_juan_day_story",
+      "titleSlug": "tx.feature_hh_covid_juan_day_story",
+      "source": "https://drive.google.com/file/d/1O7-3NOJEnJ7pcCqjKQppn_TJ7E1QmDSu/view",
+      "sourceName": "Hygiene Heroes Philippines: Interactive Story (English)",
+      "imageDesc": "A nine-year-old boy choosing the safer habit at each point of his day.",
+      "frames": [
+        {
+          "bodySlug": "tx.story_hh_covid_juan_01",
+          "imageDesc": "A boy in an orange shirt standing beside a large blank speech bubble.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_juan_01"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_juan_02",
+          "imageDesc": "A boy asleep in bed with a small sleep bubble, a wall clock, and a window with the sun outside.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_juan_02"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_juan_03",
+          "imageDesc": "A soapy hand holding a bar of soap, with a bubble showing three germs, the last one breaking apart.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_juan_03"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_juan_04",
+          "imageDesc": "A boy standing beside a closed door, with a wall clock on the wall.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_juan_04"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_juan_05",
+          "imageDesc": "A soapy hand holding a bar of soap, with a bubble showing three germs, the last one breaking apart.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_juan_05"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_juan_06",
+          "imageDesc": "A boy sneezing into his bent elbow beside a waste bin, with a wall clock.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_juan_06"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_juan_07",
+          "imageDesc": "A boy sneezing into his bent elbow.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_juan_07"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_juan_08",
+          "imageDesc": "A wall clock and a small neighbourhood market stall with a vendor at the counter.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_juan_08"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_juan_09",
+          "imageDesc": "A girl and a boy in face masks, the girl also wearing a clear face shield, with red germ shapes floating around them.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_juan_09"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_juan_10",
+          "imageDesc": "A crowd of masked shoppers waiting at a small market stall, with a wall clock.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_juan_10"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_juan_11",
+          "imageDesc": "Two children's faces set far apart with a long double-headed arrow measuring the gap between them.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_juan_11"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_juan_12",
+          "imageDesc": "A child standing with stacked boxes outside an orange house, with a wall clock.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_juan_12"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_juan_13",
+          "imageDesc": "A soapy hand with a bar of soap and a bubble of germs, beside a boy bathing in a tub under a tap.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_juan_13"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_juan_14",
+          "imageDesc": "Two people on a red sofa watching a television, with a night window showing a moon and a wall clock.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_juan_14"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_juan_15",
+          "imageDesc": "A boy asleep in bed with a sleep bubble, a night window showing a moon, and a wall clock.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_juan_15"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "storycovidjuanwash",
+          "labelSlug": "tx.story_action_handwashing_coach",
+          "launch": "tool.handwashing_timer"
+        },
+        {
+          "id": "storycovidjuanquiz",
+          "labelSlug": "tx.story_action_quiz",
+          "launch": "tool.quiz_runner",
+          "quizFeatureId": "hh_covid_juan_day_story",
+          "style": "ghost"
+        },
+        {
+          "id": "storycovidjuansick",
+          "labelSlug": "tx.story_action_sick_child_check",
+          "launch": "triage.cough",
+          "style": "ghost"
+        }
+      ],
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "hh_covid_connie_story",
+      "titleSlug": "tx.feature_hh_covid_connie_story",
+      "source": "https://hygieneheroes.berkeley.edu/curriculum/stories/connie.pdf",
+      "sourceName": "Hygiene Heroes: Connie the COVID participation story",
+      "imageDesc": "Read-aloud cue icons for a participation story about a germ that soap and elbows defeat.",
+      "frames": [
+        {
+          "bodySlug": "tx.story_hh_covid_connie_01",
+          "imageDesc": "A grinning cartoon germ, used as a read-aloud cue.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_connie_germ"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_connie_02",
+          "imageDesc": "A grinning cartoon germ, used as a read-aloud cue.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_connie_germ"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_connie_03",
+          "imageDesc": "A bar of soap with bubbles, used as a read-aloud cue.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_connie_soap"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_connie_04",
+          "imageDesc": "A grinning cartoon germ, used as a read-aloud cue.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_connie_germ"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_connie_05",
+          "imageDesc": "A grinning cartoon germ, used as a read-aloud cue.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_connie_germ"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_connie_06",
+          "imageDesc": "A bar of soap with bubbles, used as a read-aloud cue.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_connie_soap"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_connie_07",
+          "imageDesc": "A bar of soap with bubbles, used as a read-aloud cue.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_connie_soap"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_covid_connie_08",
+          "imageDesc": "A bar of soap with bubbles, used as a read-aloud cue.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_covid_connie_soap"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "storycovidconniewash",
+          "labelSlug": "tx.story_action_handwashing_coach",
+          "launch": "tool.handwashing_timer"
+        },
+        {
+          "id": "storycovidconniesick",
+          "labelSlug": "tx.story_action_sick_child_check",
+          "launch": "triage.cough",
+          "style": "ghost"
+        }
+      ],
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "anc_womb_nutrition_story",
+      "titleSlug": "tx.feature_anc_womb_nutrition_story",
+      "source": "ANC Comics Womb with a View.10 (David I. Levine, 2016), unpublished",
+      "sourceName": "Womb with a View",
+      "imageDesc": "A baby inside the womb asking for more food, with the umbilical cord curling away.",
+      "frames": [
+        {
+          "bodySlug": "tx.story_anc_womb_nutrition_01",
+          "imageDesc": "A baby sitting inside the womb, one hand raised, looking out.",
+          "assetIds": {
+            "standard_8gb": "img.story.anc_womb_nutrition_01"
+          }
+        },
+        {
+          "bodySlug": "tx.story_anc_womb_nutrition_02",
+          "imageDesc": "The same baby holding a small mobile phone to its ear.",
+          "assetIds": {
+            "standard_8gb": "img.story.anc_womb_nutrition_02"
+          }
+        },
+        {
+          "bodySlug": "tx.story_anc_womb_nutrition_03",
+          "imageDesc": "The baby smiling, settled in the womb with the cord beside it.",
+          "assetIds": {
+            "standard_8gb": "img.story.anc_womb_nutrition_03"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "storynutritionanc",
+          "labelSlug": "tx.story_action_quiz",
+          "launch": "tool.quiz_runner",
+          "quizFeatureId": "anc_womb_nutrition_story",
+          "style": "ghost"
+        }
+      ],
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "anc_womb_deworming_story",
+      "titleSlug": "tx.feature_anc_womb_deworming_story",
+      "source": "ANC Comics Womb with a View.10 (David I. Levine, 2016), unpublished",
+      "sourceName": "Womb with a View",
+      "imageDesc": "A pale blue worm reaching into the womb from outside while the baby looks at it.",
+      "frames": [
+        {
+          "bodySlug": "tx.story_anc_womb_deworming_01",
+          "imageDesc": "A slim pale blue worm reaching in through the womb wall, face to face with the baby.",
+          "assetIds": {
+            "standard_8gb": "img.story.anc_womb_deworming_01"
+          }
+        },
+        {
+          "bodySlug": "tx.story_anc_womb_deworming_02",
+          "imageDesc": "The worm further inside the womb while the baby holds a mobile phone to its ear.",
+          "assetIds": {
+            "standard_8gb": "img.story.anc_womb_deworming_02"
+          }
+        },
+        {
+          "bodySlug": "tx.story_anc_womb_deworming_03",
+          "imageDesc": "The baby smiling alone in the womb, with no worm anywhere in the picture.",
+          "assetIds": {
+            "standard_8gb": "img.story.anc_womb_deworming_03"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "storydeworminganc",
+          "labelSlug": "tx.story_action_quiz",
+          "launch": "tool.quiz_runner",
+          "quizFeatureId": "anc_womb_deworming_story",
+          "style": "ghost"
+        }
+      ],
+      "governanceStatus": "CODEX Decision - needs approval"
+    }
+  ],
+  "moduleContracts": [
+    {
+      "featureId": "hh_covid_cory_story",
+      "reads": [
+        "PhraseBank",
+        "StoryCard",
+        "GuidanceComparison",
+        "AssetManifest"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "player",
+        "i18n",
+        "audit"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Hygiene Heroes COVID slideshow story. Slide text resolves per locale from the phrase bank; slide art carries no words. Read-only content feature that records nothing about the child."
+    },
+    {
+      "featureId": "hh_covid_juan_day_story",
+      "reads": [
+        "PhraseBank",
+        "StoryCard",
+        "GuidanceComparison",
+        "AssetManifest"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "player",
+        "i18n",
+        "audit"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Hygiene Heroes COVID slideshow story. Slide text resolves per locale from the phrase bank; slide art carries no words. Read-only content feature that records nothing about the child."
+    },
+    {
+      "featureId": "hh_covid_connie_story",
+      "reads": [
+        "PhraseBank",
+        "StoryCard",
+        "GuidanceComparison",
+        "AssetManifest"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "player",
+        "i18n",
+        "audit"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Hygiene Heroes COVID slideshow story. Slide text resolves per locale from the phrase bank; slide art carries no words. Read-only content feature that records nothing about the child."
+    },
+    {
+      "featureId": "anc_womb_nutrition_story",
+      "reads": [
+        "PhraseBank",
+        "StoryCard",
+        "GuidanceComparison",
+        "AssetManifest"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "player",
+        "i18n",
+        "audit"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Womb with a View ANC slideshow. Slide text resolves per locale from the phrase bank; slide art carries no words. Read-only content feature that records nothing about the pregnancy."
+    },
+    {
+      "featureId": "anc_womb_deworming_story",
+      "reads": [
+        "PhraseBank",
+        "StoryCard",
+        "GuidanceComparison",
+        "AssetManifest"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "player",
+        "i18n",
+        "audit"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Womb with a View ANC slideshow. Slide text resolves per locale from the phrase bank; slide art carries no words. Read-only content feature that records nothing about the pregnancy."
+    }
+  ],
+  "guidanceSources": [
+    {
+      "id": "src.hh.womb_with_a_view",
+      "title": "ANC Comics: Womb with a View (unpublished draft, v.10)",
+      "url": "Dropbox: Development & Art/Fiction/Website/ANC Comics Womb with a View.10.docx",
+      "publisher": "David I. Levine",
+      "status": "source_identified",
+      "accessed": "2026-08-07"
+    },
+    {
+      "id": "src.hh.covid",
+      "title": "Hygiene Heroes COVID-19 curriculum and stories",
+      "url": "https://hygieneheroes.berkeley.edu/covid.html",
+      "publisher": "UC Berkeley Hygiene Heroes",
+      "status": "source_identified",
+      "accessed": "2026-08-06"
+    }
+  ],
+  "guidanceComparisons": [
+    {
+      "featureId": "hh_covid_cory_story",
+      "sourceIds": [
+        "src.hh.covid",
+        "src.cdc.respiratory_hygiene",
+        "src.cdc.clean_hands"
+      ],
+      "claim": "A 20-slide story teaches four prevention habits: cover coughs with the elbow, wash hands with soap and water, keep distance from people outside the home, and stay home when ill. It bridges into the handwashing coach and the cough check.",
+      "status": "source_identified_needs_adaptation",
+      "codexDecision": "CODEX Decision - needs approval: the source book is CC0 and the narrative moved to the phrase bank unchanged in meaning, but it carries 2020 pandemic-era advice, including the two-metre rule. A clinical reviewer must confirm the prevention wording against current local guidance, and the story must never route a danger sign."
+    },
+    {
+      "featureId": "hh_covid_juan_day_story",
+      "sourceIds": [
+        "src.hh.covid",
+        "src.cdc.respiratory_hygiene",
+        "src.cdc.clean_hands"
+      ],
+      "claim": "A 16-slide day-in-the-life story poses a habit choice at six points and then shows the safer answer: soap before eating, soap after the toilet, sneeze into the elbow, mask before going out, distance at the shop, and handwashing on returning home.",
+      "status": "source_identified_needs_adaptation",
+      "codexDecision": "CODEX Decision - needs approval: the source is a Philippines classroom deck whose licence line is absent, so a rights reviewer must clear reuse before release. The branching source became a linear slideshow; face shields and the two-metre rule need a clinical reviewer against current local guidance."
+    },
+    {
+      "featureId": "hh_covid_connie_story",
+      "sourceIds": [
+        "src.hh.covid",
+        "src.cdc.clean_hands"
+      ],
+      "claim": "An eight-beat read-aloud participation story where children act out the cues, reinforcing handwashing with soap on returning home and before eating, and coughing into the elbow.",
+      "status": "source_identified_needs_adaptation",
+      "codexDecision": "CODEX Decision - needs approval: a read-aloud script with no clinical claim beyond soap and elbow habits. A local reviewer should confirm the participation cues suit the setting, and a rights reviewer should confirm the licence line."
+    },
+    {
+      "featureId": "anc_womb_nutrition_story",
+      "sourceIds": [
+        "src.hh.womb_with_a_view",
+        "src.who.anc_positive_pregnancy"
+      ],
+      "claim": "A three-frame comic in which the baby asks for more beans and vegetables, used to prompt an antenatal nutrition conversation at a scheduled visit.",
+      "status": "source_identified_needs_adaptation",
+      "codexDecision": "CODEX Decision - needs approval: the closing line, that mother eats for both of us, is faithful to the author's script but is not how current antenatal nutrition guidance is framed - the recommendation is an adequate diet with iron and folate supplementation, and \"eating for two\" is commonly cited as encouraging excess intake. A clinician must decide whether the line ships as written, reworded, or the frame is dropped. The source art is the author's own placeholder, which his first page asks to have redrawn, and reuse terms inside NurseAunty are unconfirmed. Held out of the caregiver catalogue meanwhile. See docs/reviews/APPROVAL-NOTES.md."
+    },
+    {
+      "featureId": "anc_womb_deworming_story",
+      "sourceIds": [
+        "src.hh.womb_with_a_view",
+        "src.who.anc_positive_pregnancy"
+      ],
+      "claim": "A three-frame comic in which a worm arrives to share the baby's food and the baby asks mother to collect deworming tablets at the clinic.",
+      "status": "source_identified_needs_adaptation",
+      "codexDecision": "CODEX Decision - needs approval: the story routes to a clinic and names no drug, dose or schedule, which matches the project's classify-and-route rule. But preventive deworming in pregnancy is trimester-dependent and endemicity-dependent, so the referral is not universally appropriate and a clinician must confirm it for the target settings, including whether the copy needs a trimester condition. The worm illustration is redrawn for this adaptation; the rest of the art is the author's placeholder. Held out of the caregiver catalogue meanwhile. See docs/reviews/APPROVAL-NOTES.md."
+    }
+  ],
+  "assets": [
+    {
+      "assetId": "img.story.hh_covid_cory_01",
+      "featureIds": [
+        "hh_covid_cory_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Cory the COVID, page 2. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "CC0 1.0 Universal, stated on the final page of the source book. Attribution to hygieneheroes.berkeley.edu requested, not required.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/cory/cory_01.webp",
+      "altText": "A large grinning cartoon germ beside a blank green speech bubble.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_cory_02",
+      "featureIds": [
+        "hh_covid_cory_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Cory the COVID, page 3. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "CC0 1.0 Universal, stated on the final page of the source book. Attribution to hygieneheroes.berkeley.edu requested, not required.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/cory/cory_02.webp",
+      "altText": "Two sisters standing side by side while a grinning germ watches from across the page, a blank speech bubble beside it.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_cory_03",
+      "featureIds": [
+        "hh_covid_cory_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Cory the COVID, page 4. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "CC0 1.0 Universal, stated on the final page of the source book. Attribution to hygieneheroes.berkeley.edu requested, not required.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/cory/cory_03.webp",
+      "altText": "An aunt standing while a grinning germ, joined to her face by thin lines, speaks from a blank bubble.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_cory_04",
+      "featureIds": [
+        "hh_covid_cory_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Cory the COVID, page 5. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "CC0 1.0 Universal, stated on the final page of the source book. Attribution to hygieneheroes.berkeley.edu requested, not required.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/cory/cory_04.webp",
+      "altText": "An aunt and a girl at the picket fence of a house, with a small grinning germ beside the aunt.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_cory_05",
+      "featureIds": [
+        "hh_covid_cory_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Cory the COVID, page 6. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "CC0 1.0 Universal, stated on the final page of the source book. Attribution to hygieneheroes.berkeley.edu requested, not required.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/cory/cory_05.webp",
+      "altText": "An aunt coughing a puff of air that carries small germs across the page toward a large grinning germ.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_cory_06",
+      "featureIds": [
+        "hh_covid_cory_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Cory the COVID, page 7. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "CC0 1.0 Universal, stated on the final page of the source book. Attribution to hygieneheroes.berkeley.edu requested, not required.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/cory/cory_06.webp",
+      "altText": "An aunt and a girl standing apart in a lamplit room, with a double-headed arrow measuring the gap between them and a downcast germ on the floor.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_cory_07",
+      "featureIds": [
+        "hh_covid_cory_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Cory the COVID, page 8. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "CC0 1.0 Universal, stated on the final page of the source book. Attribution to hygieneheroes.berkeley.edu requested, not required.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/cory/cory_07.webp",
+      "altText": "A girl standing beside a coughing aunt, next to a large close-up of a palm covered in germs.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_cory_08",
+      "featureIds": [
+        "hh_covid_cory_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Cory the COVID, page 9. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "CC0 1.0 Universal, stated on the final page of the source book. Attribution to hygieneheroes.berkeley.edu requested, not required.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/cory/cory_08.webp",
+      "altText": "An aunt reaching toward a table of cups and a potted flower with a germ on her hand, while a girl watches.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_cory_09",
+      "featureIds": [
+        "hh_covid_cory_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Cory the COVID, page 10. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "CC0 1.0 Universal, stated on the final page of the source book. Attribution to hygieneheroes.berkeley.edu requested, not required.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/cory/cory_09.webp",
+      "altText": "A girl beside a picture of hands being rubbed together, a clock, and a stack of soap bars, with a downcast germ.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_cory_10",
+      "featureIds": [
+        "hh_covid_cory_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Cory the COVID, page 11. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "CC0 1.0 Universal, stated on the final page of the source book. Attribution to hygieneheroes.berkeley.edu requested, not required.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/cory/cory_10.webp",
+      "altText": "An aunt coughing into her bent elbow while a girl watches, beside a close-up of a germ-covered palm and a downcast germ.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_cory_11",
+      "featureIds": [
+        "hh_covid_cory_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Cory the COVID, page 12. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "CC0 1.0 Universal, stated on the final page of the source book. Attribution to hygieneheroes.berkeley.edu requested, not required.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/cory/cory_11.webp",
+      "altText": "An aunt with a fever, sweat and red heat lines beside a thermometer, while a grinning germ gloats.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_cory_12",
+      "featureIds": [
+        "hh_covid_cory_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Cory the COVID, page 13. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "CC0 1.0 Universal, stated on the final page of the source book. Attribution to hygieneheroes.berkeley.edu requested, not required.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/cory/cory_12.webp",
+      "altText": "A girl facing a downcast germ, each with a blank speech bubble.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_cory_13",
+      "featureIds": [
+        "hh_covid_cory_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Cory the COVID, page 14. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "CC0 1.0 Universal, stated on the final page of the source book. Attribution to hygieneheroes.berkeley.edu requested, not required.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/cory/cory_13.webp",
+      "altText": "A girl holding out a face mask to an aunt while a downcast germ watches, with several blank speech bubbles between them.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_cory_14",
+      "featureIds": [
+        "hh_covid_cory_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Cory the COVID, page 15. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "CC0 1.0 Universal, stated on the final page of the source book. Attribution to hygieneheroes.berkeley.edu requested, not required.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/cory/cory_14.webp",
+      "altText": "An aunt wearing a mask with red fever lines and a thermometer, a thought cloud showing a hospital, and a grinning germ.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_cory_15",
+      "featureIds": [
+        "hh_covid_cory_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Cory the COVID, page 16. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "CC0 1.0 Universal, stated on the final page of the source book. Attribution to hygieneheroes.berkeley.edu requested, not required.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/cory/cory_15.webp",
+      "altText": "A hospital building joined by a dotted line to a mobile phone, with a girl beside it and a grinning germ at the edge.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_cory_16",
+      "featureIds": [
+        "hh_covid_cory_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Cory the COVID, page 17. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "CC0 1.0 Universal, stated on the final page of the source book. Attribution to hygieneheroes.berkeley.edu requested, not required.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/cory/cory_16.webp",
+      "altText": "An aunt wearing a mask with a small grinning germ at her face, and a girl standing nearby.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_cory_17",
+      "featureIds": [
+        "hh_covid_cory_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Cory the COVID, page 18. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "CC0 1.0 Universal, stated on the final page of the source book. Attribution to hygieneheroes.berkeley.edu requested, not required.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/cory/cory_17.webp",
+      "altText": "A hospital building beside an aunt in a mask and a girl listening to her.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_cory_18",
+      "featureIds": [
+        "hh_covid_cory_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Cory the COVID, page 19. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "CC0 1.0 Universal, stated on the final page of the source book. Attribution to hygieneheroes.berkeley.edu requested, not required.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/cory/cory_18.webp",
+      "altText": "An aunt stirring a bowl at a table with two girls standing beside her.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_cory_19",
+      "featureIds": [
+        "hh_covid_cory_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Cory the COVID, page 20. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "CC0 1.0 Universal, stated on the final page of the source book. Attribution to hygieneheroes.berkeley.edu requested, not required.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/cory/cory_19.webp",
+      "altText": "A framed picture of a tearful, defeated germ, with a blank speech bubble beside it.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_cory_20",
+      "featureIds": [
+        "hh_covid_cory_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Cory the COVID, page 21. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "CC0 1.0 Universal, stated on the final page of the source book. Attribution to hygieneheroes.berkeley.edu requested, not required.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/cory/cory_20.webp",
+      "altText": "A grinning germ off to one side of an otherwise empty page, beside a large blank speech bubble.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_juan_01",
+      "featureIds": [
+        "hh_covid_juan_day_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes Philippines: Interactive Story (English), page 2. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "Hygiene Heroes Philippines curriculum. Licence not stated in the file; a rights reviewer must confirm reuse terms before release.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/juan/juan_01.webp",
+      "altText": "A boy in an orange shirt standing beside a large blank speech bubble.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_juan_02",
+      "featureIds": [
+        "hh_covid_juan_day_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes Philippines: Interactive Story (English), page 3. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "Hygiene Heroes Philippines curriculum. Licence not stated in the file; a rights reviewer must confirm reuse terms before release.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/juan/juan_02.webp",
+      "altText": "A boy asleep in bed with a small sleep bubble, a wall clock, and a window with the sun outside.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_juan_03",
+      "featureIds": [
+        "hh_covid_juan_day_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes Philippines: Interactive Story (English), page 5. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "Hygiene Heroes Philippines curriculum. Licence not stated in the file; a rights reviewer must confirm reuse terms before release.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/juan/juan_03.webp",
+      "altText": "A soapy hand holding a bar of soap, with a bubble showing three germs, the last one breaking apart.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_juan_04",
+      "featureIds": [
+        "hh_covid_juan_day_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes Philippines: Interactive Story (English), page 6. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "Hygiene Heroes Philippines curriculum. Licence not stated in the file; a rights reviewer must confirm reuse terms before release.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/juan/juan_04.webp",
+      "altText": "A boy standing beside a closed door, with a wall clock on the wall.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_juan_05",
+      "featureIds": [
+        "hh_covid_juan_day_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes Philippines: Interactive Story (English), page 9. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "Hygiene Heroes Philippines curriculum. Licence not stated in the file; a rights reviewer must confirm reuse terms before release.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/juan/juan_05.webp",
+      "altText": "A soapy hand holding a bar of soap, with a bubble showing three germs, the last one breaking apart.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_juan_06",
+      "featureIds": [
+        "hh_covid_juan_day_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes Philippines: Interactive Story (English), page 10. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "Hygiene Heroes Philippines curriculum. Licence not stated in the file; a rights reviewer must confirm reuse terms before release.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/juan/juan_06.webp",
+      "altText": "A boy sneezing into his bent elbow beside a waste bin, with a wall clock.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_juan_07",
+      "featureIds": [
+        "hh_covid_juan_day_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes Philippines: Interactive Story (English), page 13. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "Hygiene Heroes Philippines curriculum. Licence not stated in the file; a rights reviewer must confirm reuse terms before release.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/juan/juan_07.webp",
+      "altText": "A boy sneezing into his bent elbow.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_juan_08",
+      "featureIds": [
+        "hh_covid_juan_day_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes Philippines: Interactive Story (English), page 14. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "Hygiene Heroes Philippines curriculum. Licence not stated in the file; a rights reviewer must confirm reuse terms before release.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/juan/juan_08.webp",
+      "altText": "A wall clock and a small neighbourhood market stall with a vendor at the counter.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_juan_09",
+      "featureIds": [
+        "hh_covid_juan_day_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes Philippines: Interactive Story (English), page 17. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "Hygiene Heroes Philippines curriculum. Licence not stated in the file; a rights reviewer must confirm reuse terms before release.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/juan/juan_09.webp",
+      "altText": "A girl and a boy in face masks, the girl also wearing a clear face shield, with red germ shapes floating around them.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_juan_10",
+      "featureIds": [
+        "hh_covid_juan_day_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes Philippines: Interactive Story (English), page 18. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "Hygiene Heroes Philippines curriculum. Licence not stated in the file; a rights reviewer must confirm reuse terms before release.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/juan/juan_10.webp",
+      "altText": "A crowd of masked shoppers waiting at a small market stall, with a wall clock.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_juan_11",
+      "featureIds": [
+        "hh_covid_juan_day_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes Philippines: Interactive Story (English), page 21. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "Hygiene Heroes Philippines curriculum. Licence not stated in the file; a rights reviewer must confirm reuse terms before release.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/juan/juan_11.webp",
+      "altText": "Two children's faces set far apart with a long double-headed arrow measuring the gap between them.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_juan_12",
+      "featureIds": [
+        "hh_covid_juan_day_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes Philippines: Interactive Story (English), page 22. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "Hygiene Heroes Philippines curriculum. Licence not stated in the file; a rights reviewer must confirm reuse terms before release.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/juan/juan_12.webp",
+      "altText": "A child standing with stacked boxes outside an orange house, with a wall clock.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_juan_13",
+      "featureIds": [
+        "hh_covid_juan_day_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes Philippines: Interactive Story (English), page 24. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "Hygiene Heroes Philippines curriculum. Licence not stated in the file; a rights reviewer must confirm reuse terms before release.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/juan/juan_13.webp",
+      "altText": "A soapy hand with a bar of soap and a bubble of germs, beside a boy bathing in a tub under a tap.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_juan_14",
+      "featureIds": [
+        "hh_covid_juan_day_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes Philippines: Interactive Story (English), page 26. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "Hygiene Heroes Philippines curriculum. Licence not stated in the file; a rights reviewer must confirm reuse terms before release.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/juan/juan_14.webp",
+      "altText": "Two people on a red sofa watching a television, with a night window showing a moon and a wall clock.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_juan_15",
+      "featureIds": [
+        "hh_covid_juan_day_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes Philippines: Interactive Story (English), page 27. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "Hygiene Heroes Philippines curriculum. Licence not stated in the file; a rights reviewer must confirm reuse terms before release.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/juan/juan_15.webp",
+      "altText": "A boy asleep in bed with a sleep bubble, a night window showing a moon, and a wall clock.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_connie_germ",
+      "featureIds": [
+        "hh_covid_connie_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Connie the COVID participation story, inline cue icon. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "Hygiene Heroes COVID curriculum, published for free classroom use. A rights reviewer should confirm the licence line before release.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/connie/connie_germ.webp",
+      "altText": "A grinning cartoon germ, used as a read-aloud cue.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.hh_covid_connie_soap",
+      "featureIds": [
+        "hh_covid_connie_story"
+      ],
+      "module": "Hygiene Heroes COVID stories",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Hygiene Heroes: Connie the COVID participation story, inline cue icon. Rendered by tools/extract-story-slides.py with the English text layer removed.",
+      "license": "Hygiene Heroes COVID curriculum, published for free classroom use. A rights reviewer should confirm the licence line before release.",
+      "costUsd": 0,
+      "regionFocus": "Source artwork is Philippines and South Asia facing; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/hh_covid/connie/connie_soap.webp",
+      "altText": "A bar of soap with bubbles, used as a read-aloud cue.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-06"
+    },
+    {
+      "assetId": "img.story.anc_womb_nutrition_01",
+      "featureIds": [
+        "anc_womb_nutrition_story"
+      ],
+      "module": "ANC Womb with a View",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View, panel art by the author. Used as drawn.",
+      "license": "Author's own unpublished work (David I. Levine). Reuse terms inside NurseAunty need the author's explicit confirmation.",
+      "costUsd": 0,
+      "regionFocus": "Placeholder art the author asked to have redrawn; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/anc_womb/nutrition/nutrition_f1.webp",
+      "altText": "A baby sitting inside the womb, one hand raised, looking out.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-07"
+    },
+    {
+      "assetId": "img.story.anc_womb_nutrition_02",
+      "featureIds": [
+        "anc_womb_nutrition_story"
+      ],
+      "module": "ANC Womb with a View",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View, panel art by the author. Used as drawn.",
+      "license": "Author's own unpublished work (David I. Levine). Reuse terms inside NurseAunty need the author's explicit confirmation.",
+      "costUsd": 0,
+      "regionFocus": "Placeholder art the author asked to have redrawn; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/anc_womb/nutrition/nutrition_f2.webp",
+      "altText": "The same baby holding a small mobile phone to its ear.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-07"
+    },
+    {
+      "assetId": "img.story.anc_womb_nutrition_03",
+      "featureIds": [
+        "anc_womb_nutrition_story"
+      ],
+      "module": "ANC Womb with a View",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View, panel art by the author. Used as drawn.",
+      "license": "Author's own unpublished work (David I. Levine). Reuse terms inside NurseAunty need the author's explicit confirmation.",
+      "costUsd": 0,
+      "regionFocus": "Placeholder art the author asked to have redrawn; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/anc_womb/nutrition/nutrition_f3.webp",
+      "altText": "The baby smiling, settled in the womb with the cord beside it.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-07"
+    },
+    {
+      "assetId": "img.story.anc_womb_deworming_01",
+      "featureIds": [
+        "anc_womb_deworming_story"
+      ],
+      "module": "ANC Womb with a View",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View, panel art by the author. The worm is redrawn by tools/make-womb-worm.py; the source worm was a bare hook shape.",
+      "license": "Author's own unpublished work (David I. Levine). Reuse terms inside NurseAunty need the author's explicit confirmation.",
+      "costUsd": 0,
+      "regionFocus": "Placeholder art the author asked to have redrawn; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/anc_womb/deworming/worm_f1.webp",
+      "altText": "A slim pale blue worm reaching in through the womb wall, face to face with the baby.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-07"
+    },
+    {
+      "assetId": "img.story.anc_womb_deworming_02",
+      "featureIds": [
+        "anc_womb_deworming_story"
+      ],
+      "module": "ANC Womb with a View",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View, panel art by the author. The worm is redrawn by tools/make-womb-worm.py; the source worm was a bare hook shape.",
+      "license": "Author's own unpublished work (David I. Levine). Reuse terms inside NurseAunty need the author's explicit confirmation.",
+      "costUsd": 0,
+      "regionFocus": "Placeholder art the author asked to have redrawn; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/anc_womb/deworming/worm_f2.webp",
+      "altText": "The worm further inside the womb while the baby holds a mobile phone to its ear.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-07"
+    },
+    {
+      "assetId": "img.story.anc_womb_deworming_03",
+      "featureIds": [
+        "anc_womb_deworming_story"
+      ],
+      "module": "ANC Womb with a View",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View, panel art by the author. Used as drawn.",
+      "license": "Author's own unpublished work (David I. Levine). Reuse terms inside NurseAunty need the author's explicit confirmation.",
+      "costUsd": 0,
+      "regionFocus": "Placeholder art the author asked to have redrawn; a local reviewer should confirm fit before release.",
+      "targetPath": "assets/stories/anc_womb/deworming/worm_f3.webp",
+      "altText": "The baby smiling alone in the womb, with no worm anywhere in the picture.",
+      "clinicalReviewStatus": "Not clinical content",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "CODEX Decision - needs approval",
+      "date_accessed_or_captured": "2026-08-07"
+    }
+  ],
+  "phrases": {
+    "tx.feature_hh_covid_cory_story": {
+      "en": {
+        "text": "Cory the COVID: a story"
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Cory COVID : une histoire"
+      },
+      "hi-IN": {
+        "text": "कीटू कोविड की कहानी"
+      }
+    },
+    "tx.feature_hh_covid_cory_story_summary": {
+      "en": {
+        "text": "Follow two sisters who stop a boastful germ with soap, elbows, distance, and masks."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Suivez deux sœurs qui arrêtent un microbe vantard grâce au savon, au coude, à la distance et au masque."
+      },
+      "hi-IN": {
+        "text": "दो बहनों की कहानी देखें। वे साबुन, कोहनी, दूरी और मास्क से एक घमंडी कीटाणु को हरा देती हैं।"
+      }
+    },
+    "tx.story_hh_covid_cory_01": {
+      "en": {
+        "text": "Cory COVID is the meanest germ in the world. He loves making people sick. He is too small to see, so he is hard to stop."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Cory COVID est le microbe le plus méchant du monde. Il adore rendre les gens malades. On ne peut pas le voir, il est bien trop petit. C'est pour ça qu'il est difficile à arrêter."
+      },
+      "hi-IN": {
+        "text": "कीटू कोविड दुनिया का सबसे बुरा कीटाणु है। उसे लोगों को बीमार करना अच्छा लगता है। वह इतना छोटा है कि नज़र ही नहीं आता, इसलिए उसे रोकना मुश्किल है।"
+      }
+    },
+    "tx.story_hh_covid_cory_02": {
+      "en": {
+        "text": "Natasha and Anika are sisters. They wash their hands with soap when they come home, after the toilet, and before they eat. Germs hardly ever make them sick. Cory wants to change that."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Natasha et Anika sont sœurs. Elles se lavent les mains avec du savon en rentrant à la maison, après être allées aux toilettes et avant de manger. Les microbes les rendent très rarement malades. Cory veut changer cela."
+      },
+      "hi-IN": {
+        "text": "नताशा और अनिका बहनें हैं। वे घर आने के बाद, शौचालय जाने के बाद और खाने से पहले साबुन से हाथ धोती हैं। कीटाणु उन्हें बहुत कम ही बीमार करते हैं। कीटू यही बदलना चाहता है।"
+      }
+    },
+    "tx.story_hh_covid_cory_03": {
+      "en": {
+        "text": "Cory made a plan. Auntie planned to visit in a few days, so Cory hid inside her. At first she could not even tell. Now Cory could travel everywhere Auntie went."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Cory a fait un plan. Leur tante devait venir dans quelques jours, alors Cory s'est caché dans son corps. Au début, elle ne s'est doutée de rien. Cory pouvait maintenant aller partout où leur tante allait."
+      },
+      "hi-IN": {
+        "text": "कीटू ने एक योजना बनाई। मौसी कुछ दिनों में मिलने आने वाली थीं, तो कीटू उनके शरीर में छिप गया। पहले तो उन्हें पता भी नहीं चला। अब कीटू मौसी के साथ हर जगह जा सकता था।"
+      }
+    },
+    "tx.story_hh_covid_cory_04": {
+      "en": {
+        "text": "Auntie arrived at the house. The girls welcomed her inside. Cory came in too."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Leur tante est arrivée à la maison. Les filles l'ont accueillie et l'ont fait entrer. Cory est entré, lui aussi."
+      },
+      "hi-IN": {
+        "text": "मौसी घर पहुँचीं। बच्चियों ने उनका स्वागत किया और उन्हें अंदर बुलाया। कीटू भी साथ आ गया।"
+      }
+    },
+    "tx.story_hh_covid_cory_05": {
+      "en": {
+        "text": "Cory made Auntie cough. A cough can travel 100 kilometres an hour, ten times faster than you can run. Now Cory floated in the air and waited for the girls to breathe him in."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Cory a fait tousser leur tante. Une toux peut aller à 100 kilomètres à l'heure. C'est dix fois plus vite qu'un enfant qui court. Cory flottait maintenant dans l'air. Il attendait que les filles le respirent."
+      },
+      "hi-IN": {
+        "text": "कीटू की वजह से मौसी को खाँसी आ गई। खाँसी एक घंटे में 100 किलोमीटर तक जा सकती है। आप जितनी तेज़ी से दौड़ते हैं, यह उससे दस गुना तेज़ है। अब कीटू हवा में तैर रहा था। वह इंतज़ार कर रहा था कि बच्चियाँ साँस के साथ उसे अंदर खींच लें।"
+      }
+    },
+    "tx.story_hh_covid_cory_06": {
+      "en": {
+        "text": "Natasha stayed two metres away from Auntie until the family knew that nobody was ill. Cory could not reach her."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Natasha est restée à deux mètres de leur tante. Elle est restée à distance jusqu'à ce que la famille sache que personne n'était malade. Cory n'a pas pu atteindre Natasha."
+      },
+      "hi-IN": {
+        "text": "नताशा मौसी से दो मीटर दूर रही। जब तक परिवार को यक़ीन नहीं हुआ कि सब ठीक हैं, तब तक वह दूर ही रही। कीटू नताशा तक नहीं पहुँच सका।"
+      }
+    },
+    "tx.story_hh_covid_cory_07": {
+      "en": {
+        "text": "Auntie coughed and sneezed again. Natasha asked her to cover her mouth and nose with her elbow, so fewer germs would reach the family."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Leur tante a encore toussé et éternué. Natasha lui a demandé de se couvrir la bouche et le nez avec son coude. Comme ça, moins de microbes atteignent la famille."
+      },
+      "hi-IN": {
+        "text": "मौसी फिर खाँसीं और छींकीं। नताशा ने उनसे कहा कि खाँसते और छींकते समय कोहनी से मुँह और नाक ढक लें। ऐसा करने से कीटाणु कम फैलते हैं।"
+      }
+    },
+    "tx.story_hh_covid_cory_08": {
+      "en": {
+        "text": "Cory hoped Auntie would spread him from her hands. Natasha was watching carefully. She asked Auntie to wash her hands with soap."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Cory espérait que leur tante allait le transporter sur ses mains. Natasha regardait attentivement. Elle a demandé à leur tante de se laver les mains avec du savon."
+      },
+      "hi-IN": {
+        "text": "कीटू को उम्मीद थी कि मौसी अपने हाथों से उसे फैलाएँगी। नताशा ध्यान से देख रही थी। उसने कहा कि मौसी साबुन से हाथ धो लें।"
+      }
+    },
+    "tx.story_hh_covid_cory_09": {
+      "en": {
+        "text": "Soap kills COVID germs. Auntie washed her hands for 20 seconds, and Cory lost again. Germs like Cory hate soap."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Le savon tue les microbes du COVID. Leur tante s'est lavé les mains pendant 20 secondes. Cory a encore perdu. Les microbes comme Cory détestent le savon."
+      },
+      "hi-IN": {
+        "text": "साबुन कोविड के कीटाणुओं को मार देता है। मौसी ने 20 सेकंड तक हाथ धोए। कीटू फिर हार गया। कीटू जैसे कीटाणु साबुन से नफ़रत करते हैं।"
+      }
+    },
+    "tx.story_hh_covid_cory_10": {
+      "en": {
+        "text": "Later Auntie coughed into her hand again. The girls reminded her to cough into her elbow. When Auntie covered her cough with her elbow, Cory could not fly."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Plus tard, leur tante a encore toussé dans sa main. Les filles lui ont rappelé de tousser dans son coude. Quand leur tante a toussé dans son coude, Cory n'a pas pu s'envoler."
+      },
+      "hi-IN": {
+        "text": "बाद में मौसी फिर हाथ में खाँसीं। बच्चियों ने उन्हें कोहनी में खाँसने की याद दिलाई। जब मौसी कोहनी में खाँसीं, तो कीटू उड़ नहीं सका।"
+      }
+    },
+    "tx.story_hh_covid_cory_11": {
+      "en": {
+        "text": "After lunch Auntie felt unwell. She wanted to shop for dinner before she felt worse. Cory hoped a crowd would help him reach more people."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Après le repas de midi, leur tante ne se sentait pas bien. Elle voulait faire les courses pour le repas du soir avant d'aller plus mal. Cory espérait qu'une foule l'aiderait à atteindre plus de gens."
+      },
+      "hi-IN": {
+        "text": "दोपहर के खाने के बाद मौसी की तबीयत ठीक नहीं थी। तबीयत और ज़्यादा बिगड़ने से पहले, वे रात के खाने का सामान लाना चाहती थीं। कीटू को उम्मीद थी कि भीड़ में वह और भी लोगों तक पहुँच जाएगा।"
+      }
+    },
+    "tx.story_hh_covid_cory_12": {
+      "en": {
+        "text": "Natasha asked Auntie to stay home while she felt ill. She and Anika would take care of Auntie themselves."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Leur tante était malade, alors Natasha lui a demandé de rester à la maison. Anika et Natasha allaient s'occuper d'elle toutes les deux."
+      },
+      "hi-IN": {
+        "text": "नताशा ने मौसी से कहा कि जब तक तबीयत ठीक न हो, तब तक वे घर पर ही रहें। वह और अनिका ख़ुद मौसी की देखभाल करेंगी।"
+      }
+    },
+    "tx.story_hh_covid_cory_13": {
+      "en": {
+        "text": "Anika brought Auntie a mask. Auntie wore it so she would keep everyone else well. Masks stop Cory from flying."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Anika a apporté un masque à leur tante. Leur tante l'a mis tout de suite, pour que personne d'autre ne tombe malade. Les masques empêchent Cory de s'envoler."
+      },
+      "hi-IN": {
+        "text": "अनिका मौसी के लिए मास्क लाई। मौसी ने मास्क पहन लिया, ताकि बाक़ी सब ठीक रहें। मास्क कीटू को उड़ने से रोकता है।"
+      }
+    },
+    "tx.story_hh_covid_cory_14": {
+      "en": {
+        "text": "The next day Auntie felt worse. She thought she might have COVID, and she wanted to see a doctor."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Le lendemain, leur tante se sentait encore plus malade. Elle pensait qu'elle avait le COVID et elle voulait voir un médecin."
+      },
+      "hi-IN": {
+        "text": "अगले दिन मौसी की तबीयत और ज़्यादा बिगड़ गई। उन्हें लगा कि शायद उन्हें कोविड है। वे डॉक्टर को दिखाना चाहती थीं।"
+      }
+    },
+    "tx.story_hh_covid_cory_15": {
+      "en": {
+        "text": "Anika had already called the doctor's office. They asked what Auntie felt, and they told the family when to bring her in."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Anika avait déjà appelé le cabinet du médecin. Là-bas, on a demandé comment leur tante allait, et on a dit à la famille quand l'amener."
+      },
+      "hi-IN": {
+        "text": "अनिका पहले ही डॉक्टर के यहाँ फ़ोन कर चुकी थी। वहाँ के लोगों ने पूछा कि मौसी को क्या तकलीफ़ है। फिर उन्होंने बताया कि मौसी को कब लेकर आना है।"
+      }
+    },
+    "tx.story_hh_covid_cory_16": {
+      "en": {
+        "text": "A clinic can be crowded when many people are ill. Call the clinic first and ask when to come, so you wait outside instead of in the waiting room. Never wait at home when a child struggles to breathe. Take the child for care straight away."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Une clinique peut être pleine quand beaucoup de gens sont malades. Appelez d'abord la clinique pour savoir quand venir, et attendez dehors plutôt que dans la salle d'attente. N'attendez jamais à la maison quand un enfant a du mal à respirer. Emmenez-le tout de suite."
+      },
+      "hi-IN": {
+        "text": "जब बहुत लोग बीमार हों, तो क्लिनिक में भीड़ हो सकती है। पहले क्लिनिक में फ़ोन करके पूछें कि कब आना है। क्लिनिक के अंदर वाले कमरे में नहीं, बाहर इंतज़ार करें। बच्चे को साँस लेने में तकलीफ़ हो, तो घर पर इंतज़ार न करें। उसे तुरंत क्लिनिक ले जाएँ।"
+      }
+    },
+    "tx.story_hh_covid_cory_17": {
+      "en": {
+        "text": "If Auntie became seriously ill, or had trouble breathing, the family would call again. Then the office would send them to the right clinic. If a child struggles to breathe, call for help right away. If nobody answers, go to the clinic."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Si leur tante devenait gravement malade, ou si elle avait du mal à respirer, la famille rappellerait le cabinet. On les enverrait alors à la clinique qu'il faut. Si un enfant a du mal à respirer, appelez le médecin tout de suite. Si personne ne répond, allez à la clinique."
+      },
+      "hi-IN": {
+        "text": "मौसी की हालत ज़्यादा बिगड़ती या साँस लेने में तकलीफ़ होती, तो परिवार फिर फ़ोन करता। तब वहाँ के लोग उन्हें सही क्लिनिक भेज देते। बच्चे को साँस लेने में तकलीफ़ हो, तो तुरंत डॉक्टर को फ़ोन करें। फ़ोन न लगे, तो उसे तुरंत क्लिनिक ले जाएँ।"
+      }
+    },
+    "tx.story_hh_covid_cory_18": {
+      "en": {
+        "text": "The two girls took good care of their aunt for a week. Soon Auntie felt better."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Les deux filles se sont bien occupées de leur tante pendant une semaine. Leur tante s'est vite sentie mieux."
+      },
+      "hi-IN": {
+        "text": "दोनों बच्चियों ने एक हफ़्ते तक अपनी मौसी की अच्छी देखभाल की। जल्द ही मौसी की तबीयत सुधरने लगी।"
+      }
+    },
+    "tx.story_hh_covid_cory_19": {
+      "en": {
+        "text": "Cory COVID was all gone. He never made anyone sick again. Cory calls it the saddest story ever."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Cory COVID a complètement disparu. Il n'a plus jamais rendu personne malade. Cory dit que c'est l'histoire la plus triste du monde."
+      },
+      "hi-IN": {
+        "text": "कीटू पूरी तरह ख़त्म हो गया। उसने फिर कभी किसी को बीमार नहीं किया। कीटू कहता है कि यह दुनिया की सबसे दुख भरी कहानी है।"
+      }
+    },
+    "tx.story_hh_covid_cory_20": {
+      "en": {
+        "text": "Remember Cory's lessons. COVID spreads when an ill person coughs or sneezes. Stay two metres from other people outside your home. Cough and sneeze into your elbow. Wash your hands with soap and water for 20 seconds. Wear a mask when you go outside. Stay home if you feel ill. If you have trouble breathing, call the doctor right away. Do not wait at home."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "N'oubliez pas ce que Cory nous a appris. Le COVID se transmet quand une personne malade tousse ou éternue. Quand vous êtes dehors, restez à deux mètres des autres. Toussez et éternuez dans votre coude. Lavez-vous les mains avec du savon et de l'eau pendant 20 secondes. Portez un masque quand vous sortez. Restez à la maison si vous vous sentez malade. Si vous avez du mal à respirer, appelez le médecin tout de suite. N'attendez pas à la maison."
+      },
+      "hi-IN": {
+        "text": "कीटू ने जो सिखाया, वह याद रखें। जब कोई बीमार व्यक्ति खाँसता या छींकता है, तब कोविड फैलता है। घर के बाहर दूसरे लोगों से दो मीटर दूर रहें। कोहनी में खाँसें और छींकें। साबुन और पानी से 20 सेकंड तक हाथ धोएँ। बाहर जाते समय मास्क पहनें। तबीयत ठीक न लगे तो घर पर रहें। साँस लेने में तकलीफ़ हो तो तुरंत डॉक्टर को फ़ोन करें। घर पर इंतज़ार न करें।"
+      }
+    },
+    "tx.feature_hh_covid_juan_day_story": {
+      "en": {
+        "text": "A day with Juan"
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Une journée avec Juan"
+      },
+      "hi-IN": {
+        "text": "हुआन के साथ एक दिन"
+      }
+    },
+    "tx.feature_hh_covid_juan_day_story_summary": {
+      "en": {
+        "text": "Walk through one boy's day and choose the safer habit at each moment."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Suivez la journée d'un garçon et choisissez l'habitude la plus sûre à chaque étape."
+      },
+      "hi-IN": {
+        "text": "एक लड़के के साथ पूरा दिन बिताएँ और हर बार ज़्यादा सुरक्षित आदत चुनें।"
+      }
+    },
+    "tx.story_hh_covid_juan_01": {
+      "en": {
+        "text": "Meet Juan de la Cruz. He is nine years old and goes to school in Metro Manila. Join him for one day."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Voici Juan de la Cruz. Il a neuf ans et il va à l'école à Manille. Accompagnez-le pendant une journée."
+      },
+      "hi-IN": {
+        "text": "यह है हुआन दे ला क्रूज़। वह नौ साल का है और मनीला में स्कूल जाता है। एक दिन उसके साथ चलिए।"
+      }
+    },
+    "tx.story_hh_covid_juan_02": {
+      "en": {
+        "text": "Juan wakes up to his alarm. His mother calls him for breakfast. Before he eats, what should Juan do?"
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Le réveil sonne et Juan se lève. Sa mère l'appelle pour le petit-déjeuner. Avant de manger, que devrait faire Juan ?"
+      },
+      "hi-IN": {
+        "text": "हुआन अलार्म की आवाज़ से उठता है। उसकी माँ उसे नाश्ते के लिए बुलाती हैं। खाने से पहले हुआन को क्या करना चाहिए?"
+      }
+    },
+    "tx.story_hh_covid_juan_03": {
+      "en": {
+        "text": "Juan washes his hands with soap and water first. Always wash your hands with soap before you eat. Now Juan enjoys his breakfast."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Juan se lave d'abord les mains avec du savon et de l'eau. Lavez-vous toujours les mains avec du savon avant de manger. Maintenant, Juan peut manger tranquillement son petit-déjeuner."
+      },
+      "hi-IN": {
+        "text": "हुआन पहले साबुन और पानी से हाथ धोता है। खाने से पहले हमेशा साबुन से हाथ धोएँ। अब हुआन मज़े से नाश्ता करता है।"
+      }
+    },
+    "tx.story_hh_covid_juan_04": {
+      "en": {
+        "text": "After breakfast Juan goes to the toilet. When he finishes, what should Juan do?"
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Après le petit-déjeuner, Juan va aux toilettes. Quand il a fini, que devrait faire Juan ?"
+      },
+      "hi-IN": {
+        "text": "नाश्ते के बाद हुआन शौचालय जाता है। बाहर आने पर हुआन को क्या करना चाहिए?"
+      }
+    },
+    "tx.story_hh_covid_juan_05": {
+      "en": {
+        "text": "Juan washes his hands with soap and water. Wash your hands with soap after you use the toilet. Water alone leaves germs on your hands, and a towel alone spreads them."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Juan se lave les mains avec du savon et de l'eau. Lavez-vous les mains avec du savon quand vous sortez des toilettes. L'eau toute seule laisse des microbes sur vos mains. Si vous vous essuyez avec une serviette sans savon, vous les étalez partout."
+      },
+      "hi-IN": {
+        "text": "हुआन साबुन और पानी से हाथ धोता है। शौचालय जाने के बाद साबुन से हाथ धोएँ। सिर्फ़ पानी से धोने पर हाथों पर कीटाणु रह जाते हैं। सिर्फ़ तौलिये से पोंछने पर वे फैल जाते हैं।"
+      }
+    },
+    "tx.story_hh_covid_juan_06": {
+      "en": {
+        "text": "Juan helps his mother clean the house. The dust makes him sneeze. What should Juan do?"
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Juan aide sa mère à nettoyer la maison. La poussière le fait éternuer. Que devrait faire Juan ?"
+      },
+      "hi-IN": {
+        "text": "हुआन घर की सफ़ाई में अपनी माँ की मदद करता है। धूल से उसे छींक आती है। हुआन को क्या करना चाहिए?"
+      }
+    },
+    "tx.story_hh_covid_juan_07": {
+      "en": {
+        "text": "Juan sneezes into his elbow. Sneezing into your elbow helps stop COVID germs from spreading. Sneezing into your hands spreads germs, and so does a tissue that falls on the floor."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Juan éternue dans son coude. Éternuer dans le coude aide à empêcher les microbes du COVID de se répandre. Éternuer dans vos mains répand les microbes. Un mouchoir qui tombe par terre les répand aussi."
+      },
+      "hi-IN": {
+        "text": "हुआन अपनी कोहनी में छींकता है। कोहनी में छींकने से कोविड के कीटाणु कम फैलते हैं। हाथों में छींकने से कीटाणु फैलते हैं, और ज़मीन पर गिरे टिशू से भी फैलते हैं।"
+      }
+    },
+    "tx.story_hh_covid_juan_08": {
+      "en": {
+        "text": "Juan's mother asks him to buy rice and fruit. Before he leaves the house, what should Juan do?"
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "La mère de Juan lui demande d'acheter du riz et des fruits. Avant de quitter la maison, que devrait faire Juan ?"
+      },
+      "hi-IN": {
+        "text": "हुआन की माँ उससे चावल और फल लाने को कहती हैं। घर से निकलने से पहले हुआन को क्या करना चाहिए?"
+      }
+    },
+    "tx.story_hh_covid_juan_09": {
+      "en": {
+        "text": "Juan puts on a face mask before he goes outside. The mask covers his nose and mouth, and it does the work of stopping germs. His face shield protects his eyes, but it does not stop germs. Wear a shield as well as a mask. Never wear a shield instead of a mask."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Juan met un masque avant de sortir. Le masque couvre son nez et sa bouche, et c'est le masque qui arrête les microbes. Sa visière protège ses yeux, mais elle n'arrête pas les microbes. Portez une visière en plus du masque. Ne portez jamais une visière à la place du masque."
+      },
+      "hi-IN": {
+        "text": "बाहर जाने से पहले हुआन मास्क पहनता है। मास्क नाक और मुँह को ढकता है, और कीटाणुओं को यही रोकता है। फ़ेस शील्ड आँखों को बचाती है, लेकिन कीटाणुओं को रोक नहीं पाती। फ़ेस शील्ड मास्क के साथ पहनें। मास्क की जगह कभी न पहनें।"
+      }
+    },
+    "tx.story_hh_covid_juan_10": {
+      "en": {
+        "text": "Other people shop at the store too. What should Juan do near them?"
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "D'autres personnes font aussi leurs courses au magasin. Que devrait faire Juan près des autres clients ?"
+      },
+      "hi-IN": {
+        "text": "दुकान पर दूसरे लोग भी सामान ख़रीद रहे हैं। उन लोगों के पास हुआन को क्या करना चाहिए?"
+      }
+    },
+    "tx.story_hh_covid_juan_11": {
+      "en": {
+        "text": "Juan keeps two metres away from other shoppers. Keep two metres apart to keep yourself and other people safe. Touch only the food you will buy."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Juan reste à deux mètres des autres clients. Gardez deux mètres de distance pour vous protéger et protéger les autres. Touchez seulement les aliments que vous allez acheter."
+      },
+      "hi-IN": {
+        "text": "हुआन दूसरे ग्राहकों से दो मीटर दूर रहता है। दो मीटर की दूरी रखें, ताकि आप भी बचे रहें और दूसरे भी। जो खाने का सामान आप ख़रीदने वाले हैं, सिर्फ़ उसी को छुएँ।"
+      }
+    },
+    "tx.story_hh_covid_juan_12": {
+      "en": {
+        "text": "Juan comes home with the groceries and wants to rest. What should Juan do first?"
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Juan rentre à la maison avec les courses et il veut se reposer. Que devrait faire Juan d'abord ?"
+      },
+      "hi-IN": {
+        "text": "हुआन सामान लेकर घर लौटता है और आराम करना चाहता है। हुआन को पहले क्या करना चाहिए?"
+      }
+    },
+    "tx.story_hh_covid_juan_13": {
+      "en": {
+        "text": "Juan washes his hands with soap before he rests. Wash your hands with soap when you come home."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Juan se lave les mains avec du savon avant de se reposer. Lavez-vous les mains avec du savon en rentrant à la maison."
+      },
+      "hi-IN": {
+        "text": "आराम करने से पहले हुआन साबुन से हाथ धोता है। घर लौटने पर साबुन से हाथ धोएँ।"
+      }
+    },
+    "tx.story_hh_covid_juan_14": {
+      "en": {
+        "text": "At half past six in the evening Juan eats dinner with his whole family. Afterwards they talk about their day and rest together."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "À six heures et demie, Juan mange le repas du soir avec toute sa famille. Ensuite, ils parlent de leur journée et ils se reposent ensemble."
+      },
+      "hi-IN": {
+        "text": "शाम को साढ़े छह बजे, हुआन अपने पूरे परिवार के साथ रात का खाना खाता है। उसके बाद सब मिलकर दिन भर की बातें करते हैं और आराम करते हैं।"
+      }
+    },
+    "tx.story_hh_covid_juan_15": {
+      "en": {
+        "text": "At nine o'clock Juan goes to bed. He followed the safety steps all day, and that makes him feel good."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "À neuf heures, Juan va se coucher. Il a suivi les gestes de sécurité toute la journée, et il est content."
+      },
+      "hi-IN": {
+        "text": "नौ बजे हुआन सोने चला जाता है। उसने पूरे दिन अपना और सबका ख़याल रखा। इससे उसे बहुत अच्छा लगता है।"
+      }
+    },
+    "tx.feature_hh_covid_connie_story": {
+      "en": {
+        "text": "Connie the COVID: a read-aloud story"
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Connie COVID : une histoire à lire à voix haute"
+      },
+      "hi-IN": {
+        "text": "कोनी कोविड, पढ़कर सुनाने वाली कहानी"
+      }
+    },
+    "tx.feature_hh_covid_connie_story_summary": {
+      "en": {
+        "text": "Read this story aloud and let children growl, scrub, and cough into their elbows."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Lisez cette histoire à voix haute et laissez les enfants grogner, se frotter les mains et tousser dans leur coude."
+      },
+      "hi-IN": {
+        "text": "यह कहानी पढ़कर सुनाएँ। बच्चों से कहें कि वे गुर्राएँ, हाथ रगड़ें और कोहनी में खाँसें।"
+      }
+    },
+    "tx.story_hh_covid_connie_01": {
+      "en": {
+        "text": "Readers, ask the children to growl and make claws when Connie speaks. Ask them to scrub their hands when you say soap. Ask them to cough into their elbow. Ask them to smile at the end."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Pour la personne qui lit : demandez aux enfants de grogner et de faire des griffes quand Connie parle. Demandez-leur de se frotter les mains quand vous parlez du savon. Demandez-leur de tousser dans leur coude, et de sourire à la fin."
+      },
+      "hi-IN": {
+        "text": "यह बात पढ़कर सुनाने वालों के लिए है। जब कोनी बोले, तब बच्चों से कहें कि वे गुर्राएँ और पंजे बनाएँ। जब साबुन की बात आए, तब वे हाथ रगड़ें। फिर वे कोहनी में खाँसें। और आख़िर में मुस्कुराएँ।"
+      }
+    },
+    "tx.story_hh_covid_connie_02": {
+      "en": {
+        "text": "I am Connie COVID, the meanest germ in the world. I feel happy when I make people sick and sad."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Je suis Connie COVID, le microbe le plus méchant du monde. Je suis contente quand je rends les gens malades et tristes."
+      },
+      "hi-IN": {
+        "text": "मैं हूँ कोनी कोविड, दुनिया का सबसे बुरा कीटाणु। जब मैं लोगों को बीमार और उदास करती हूँ, तब मुझे ख़ुशी होती है।"
+      }
+    },
+    "tx.story_hh_covid_connie_03": {
+      "en": {
+        "text": "But one family hardly ever gets sick. The mother reminds the children to wash their hands with soap when they come home and before they eat. The father reminds them to cough into their elbow. That family makes me sad."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Mais il y a une famille qui tombe très rarement malade. La mère rappelle aux enfants de se laver les mains avec du savon en rentrant et avant de manger. Le père leur rappelle de tousser dans leur coude. Cette famille me rend triste."
+      },
+      "hi-IN": {
+        "text": "लेकिन एक परिवार ऐसा है जो बहुत कम ही बीमार पड़ता है। माँ बच्चों को याद दिलाती हैं कि घर आने के बाद और खाने से पहले साबुन से हाथ धोएँ। पापा उन्हें कोहनी में खाँसने की याद दिलाते हैं। वह परिवार मुझे उदास कर देता है।"
+      }
+    },
+    "tx.story_hh_covid_connie_04": {
+      "en": {
+        "text": "Natasha, Jai, and their little sister Anika go to school. The boy next to Natasha already felt sick. He coughed into his hands and forgot to wash them with soap. Then he touched the desk, the pencils, and an eraser."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Natasha, Jai et leur petite sœur Anika vont à l'école. Le garçon assis à côté de Natasha se sentait déjà malade. Il a toussé dans ses mains et il a oublié de les laver avec du savon. Ensuite, il a touché le bureau, les crayons et une gomme."
+      },
+      "hi-IN": {
+        "text": "नताशा, जय और उनकी छोटी बहन अनिका स्कूल जाते हैं। नताशा के बगल में बैठा लड़का पहले से बीमार था। वह हाथों में खाँसा। फिर वह साबुन से हाथ धोना भूल गया। उसके बाद उसने डेस्क, पेंसिल और रबर को छू लिया।"
+      }
+    },
+    "tx.story_hh_covid_connie_05": {
+      "en": {
+        "text": "I stuck to everything. When Natasha touched the desk, I stuck to her hand. When she scratched her cheek, I got in. Soon Natasha felt sick and sad, and I felt happy."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Je me suis collée à tout. Quand Natasha a touché le bureau, je me suis collée à sa main. Quand elle s'est gratté la joue, je suis entrée dans son corps. Très vite, Natasha s'est sentie malade et triste, et moi, j'étais contente."
+      },
+      "hi-IN": {
+        "text": "मैं हर चीज़ पर चिपक गई। जब नताशा ने डेस्क को छुआ, तो मैं उसके हाथ पर चिपक गई। जब उसने अपना गाल खुजाया, तो मैं उसके अंदर चली गई। जल्द ही नताशा बीमार और उदास हो गई, और मैं ख़ुश हो गई।"
+      }
+    },
+    "tx.story_hh_covid_connie_06": {
+      "en": {
+        "text": "Jai knew he had to take care. He washed his hands with soap when he got home. But he felt hungry before lunch, so he only rinsed them with water. Always wash with soap before you eat. I jumped right into him."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Jai savait qu'il devait faire attention. Il s'est lavé les mains avec du savon en rentrant. Mais il avait tellement faim avant le repas de midi qu'il les a seulement rincées à l'eau. Lavez-vous toujours les mains avec du savon avant de manger. J'ai sauté droit dans son corps."
+      },
+      "hi-IN": {
+        "text": "जय जानता था कि उसे सावधान रहना है। घर आकर उसने साबुन से हाथ धोए। लेकिन दोपहर के खाने से पहले उसे इतनी भूख लगी कि उसने सिर्फ़ पानी से हाथ धो लिए। खाने से पहले हमेशा साबुन से हाथ धोएँ। मैं सीधे उसके अंदर कूद गई।"
+      }
+    },
+    "tx.story_hh_covid_connie_07": {
+      "en": {
+        "text": "Only little Anika remained. Anika was mean to me. She always washed with soap when she came home and before she ate. She reminded her brother to cough into his elbow. I could not get into her."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Il ne restait plus que la petite Anika. Anika était méchante avec moi. Elle se lavait toujours les mains avec du savon en rentrant et avant de manger. Elle rappelait à son frère de tousser dans son coude. Je n'ai pas pu entrer dans son corps."
+      },
+      "hi-IN": {
+        "text": "अब सिर्फ़ छोटी अनिका बची थी। अनिका मेरे साथ बहुत सख़्ती करती थी। वह घर आने के बाद और खाने से पहले हमेशा साबुन से हाथ धोती थी। वह अपने भाई को कोहनी में खाँसने की याद दिलाती थी। मैं उसके अंदर नहीं जा सकी।"
+      }
+    },
+    "tx.story_hh_covid_connie_08": {
+      "en": {
+        "text": "Now I, Connie COVID, feel very sick and sad. And little Anika? Anika feels very, very happy."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from the Hygiene Heroes COVID story set (CC0). Narrative text moved out of the artwork so the app can serve it per locale. French and Hindi are machine-assisted drafts pending named human review.",
+      "fr": {
+        "text": "Maintenant, moi, Connie COVID, je me sens très malade et très triste. Et la petite Anika ? Anika est très, très contente."
+      },
+      "hi-IN": {
+        "text": "अब मैं, कोनी कोविड, बहुत बीमार और उदास हूँ। और छोटी अनिका? अनिका बहुत-बहुत ख़ुश है।"
+      }
+    },
+    "tx.feature_anc_womb_nutrition_story": {
+      "en": {
+        "text": "Womb with a view: I am hungry"
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from 'ANC Comics Womb with a View.10' (David I. Levine, 2016), an unpublished pitch document. French and Hindi are machine-assisted drafts pending named human review. The nutrition strip's 'eating for two' framing and the deworming strip's clinic referral both need a clinician.",
+      "fr": {
+        "text": "La vie vue du ventre : j'ai faim"
+      },
+      "hi-IN": {
+        "text": "पेट से एक झलक: मुझे भूख लगी है"
+      }
+    },
+    "tx.feature_anc_womb_nutrition_story_summary": {
+      "en": {
+        "text": "The baby asks for more beans and vegetables, and reminds mum she eats for two."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from 'ANC Comics Womb with a View.10' (David I. Levine, 2016), an unpublished pitch document. French and Hindi are machine-assisted drafts pending named human review. The nutrition strip's 'eating for two' framing and the deworming strip's clinic referral both need a clinician.",
+      "fr": {
+        "text": "Le bébé réclame plus de haricots et de légumes, et rappelle à maman qu'elle mange pour deux."
+      },
+      "hi-IN": {
+        "text": "बच्चा और दाल-सब्ज़ी माँगता है, और माँ को याद दिलाता है कि वे दो लोगों के लिए खाती हैं।"
+      }
+    },
+    "tx.story_anc_womb_nutrition_01": {
+      "en": {
+        "text": "I am hungry in here."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from 'ANC Comics Womb with a View.10' (David I. Levine, 2016), an unpublished pitch document. French and Hindi are machine-assisted drafts pending named human review. The nutrition strip's 'eating for two' framing and the deworming strip's clinic referral both need a clinician.",
+      "fr": {
+        "text": "J'ai faim, ici."
+      },
+      "hi-IN": {
+        "text": "मुझे यहाँ भूख लगी है।"
+      }
+    },
+    "tx.story_anc_womb_nutrition_02": {
+      "en": {
+        "text": "Mummy, please send down more beans and vegetables. I need a meal too."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from 'ANC Comics Womb with a View.10' (David I. Levine, 2016), an unpublished pitch document. French and Hindi are machine-assisted drafts pending named human review. The nutrition strip's 'eating for two' framing and the deworming strip's clinic referral both need a clinician.",
+      "fr": {
+        "text": "Maman, envoie-moi plus de haricots et de légumes, s'il te plaît. Moi aussi, j'ai besoin d'un repas."
+      },
+      "hi-IN": {
+        "text": "माँ, थोड़ी और दाल और सब्ज़ी भेज दो। मुझे भी खाना चाहिए।"
+      }
+    },
+    "tx.story_anc_womb_nutrition_03": {
+      "en": {
+        "text": "Sometimes I remind her that she eats for both of us."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from 'ANC Comics Womb with a View.10' (David I. Levine, 2016), an unpublished pitch document. French and Hindi are machine-assisted drafts pending named human review. The nutrition strip's 'eating for two' framing and the deworming strip's clinic referral both need a clinician.",
+      "fr": {
+        "text": "Parfois, je lui rappelle qu'elle mange pour nous deux."
+      },
+      "hi-IN": {
+        "text": "कभी-कभी मैं उन्हें याद दिलाता हूँ कि वे हम दोनों के लिए खाती हैं।"
+      }
+    },
+    "tx.feature_anc_womb_deworming_story": {
+      "en": {
+        "text": "Womb with a view: the uninvited guest"
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from 'ANC Comics Womb with a View.10' (David I. Levine, 2016), an unpublished pitch document. French and Hindi are machine-assisted drafts pending named human review. The nutrition strip's 'eating for two' framing and the deworming strip's clinic referral both need a clinician.",
+      "fr": {
+        "text": "La vie vue du ventre : l'invité surprise"
+      },
+      "hi-IN": {
+        "text": "पेट से एक झलक: बिन बुलाया मेहमान"
+      }
+    },
+    "tx.feature_anc_womb_deworming_story_summary": {
+      "en": {
+        "text": "A worm turns up for a meal, and the baby asks mum to collect deworming tablets."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from 'ANC Comics Womb with a View.10' (David I. Levine, 2016), an unpublished pitch document. French and Hindi are machine-assisted drafts pending named human review. The nutrition strip's 'eating for two' framing and the deworming strip's clinic referral both need a clinician.",
+      "fr": {
+        "text": "Un ver s'invite à table, et le bébé demande à maman d'aller chercher les comprimés vermifuges."
+      },
+      "hi-IN": {
+        "text": "एक कीड़ा खाने के लिए आ जाता है, और बच्चा माँ से कीड़े की दवा लाने को कहता है।"
+      }
+    },
+    "tx.story_anc_womb_deworming_01": {
+      "en": {
+        "text": "Hello. I eat your food in here too."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from 'ANC Comics Womb with a View.10' (David I. Levine, 2016), an unpublished pitch document. French and Hindi are machine-assisted drafts pending named human review. The nutrition strip's 'eating for two' framing and the deworming strip's clinic referral both need a clinician.",
+      "fr": {
+        "text": "Bonjour. Moi aussi, je mange ta nourriture ici."
+      },
+      "hi-IN": {
+        "text": "नमस्ते। मैं भी यहाँ तुम्हारा खाना खाता हूँ।"
+      }
+    },
+    "tx.story_anc_womb_deworming_02": {
+      "en": {
+        "text": "Mummy, please go to the clinic for the deworming tablets."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from 'ANC Comics Womb with a View.10' (David I. Levine, 2016), an unpublished pitch document. French and Hindi are machine-assisted drafts pending named human review. The nutrition strip's 'eating for two' framing and the deworming strip's clinic referral both need a clinician.",
+      "fr": {
+        "text": "Maman, va à la clinique chercher les comprimés vermifuges, s'il te plaît."
+      },
+      "hi-IN": {
+        "text": "माँ, क्लिनिक जाकर कीड़े की दवा ले आओ।"
+      }
+    },
+    "tx.story_anc_womb_deworming_03": {
+      "en": {
+        "text": "I am the only guest Mummy invited."
+      },
+      "bn-BD": {
+        "text": ""
+      },
+      "_codex_decision": "Adapted from 'ANC Comics Womb with a View.10' (David I. Levine, 2016), an unpublished pitch document. French and Hindi are machine-assisted drafts pending named human review. The nutrition strip's 'eating for two' framing and the deworming strip's clinic referral both need a clinician.",
+      "fr": {
+        "text": "Je suis le seul invité de maman."
+      },
+      "hi-IN": {
+        "text": "माँ ने सिर्फ़ मुझे बुलाया है।"
+      }
+    }
+  },
+  "withheld": [
+    {
+      "featureId": "hh_covid_cory_story",
+      "reason": "Parked, not abandoned. The story, its French and Hindi text, its manifest and its slide art are complete and tested; what is missing is human sign-off. The translations are machine-assisted drafts with no named reviewer, the 2020-era prevention advice needs a clinician, and the care-seeking pages deliberately diverge from the source book. The adapted artwork is also below picture-book quality: the words were removed from clip-art, so several frames are a small motif on an empty field. To return it to the catalogue, delete the audience field on hh_covid_cory_story in content/feature_catalog.json and move this record back into features. Open questions are indexed in docs/reviews/APPROVAL-NOTES.md.",
+      "parkedDisposition": {
+        "featureId": "hh_covid_cory_story",
+        "valueType": "story",
+        "promise": "Follow two sisters keeping a germ away with soap, elbows, distance, and a mask.",
+        "firstUsefulOutcome": "The caregiver sees four prevention habits modelled in a household she recognises, can play it aloud, and can move straight into the handwashing coach or the sick-child check.",
+        "primaryAction": "Next",
+        "questionPurpose": "none"
+      }
+    },
+    {
+      "featureId": "hh_covid_juan_day_story",
+      "reason": "Parked, not abandoned. Complete and tested, but held back for the same reasons as the other COVID stories: unreviewed French and Hindi, 2020-era guidance awaiting a clinician, and adapted artwork that is thin once the narration is taken out of the picture. Its clocks lost their numerals and its two-metre labels were removed with the text layer, so several frames no longer show what their captions describe. To return it, delete the audience field on hh_covid_juan_day_story in content/feature_catalog.json and move this record back into features. Open questions are indexed in docs/reviews/APPROVAL-NOTES.md.",
+      "parkedDisposition": {
+        "featureId": "hh_covid_juan_day_story",
+        "valueType": "story",
+        "promise": "Walk through one boy's day and show the safer habit at each moment.",
+        "firstUsefulOutcome": "The caregiver sees six everyday moments where a habit choice matters, each answered on the next page, and can move into the handwashing coach or the sick-child check.",
+        "primaryAction": "Next",
+        "questionPurpose": "none"
+      }
+    },
+    {
+      "featureId": "hh_covid_connie_story",
+      "reason": "Parked, not abandoned. The read-aloud script and its translations are complete and tested. It is held back with the other COVID stories pending named human review of the French and Hindi and a clinician pass on the 2020-era advice. It is also the weakest visually: eight beats share two cue icons, and one of those still carries the English word soap baked into the artwork. To return it, delete the audience field on hh_covid_connie_story in content/feature_catalog.json and move this record back into features. Open questions are indexed in docs/reviews/APPROVAL-NOTES.md.",
+      "parkedDisposition": {
+        "featureId": "hh_covid_connie_story",
+        "valueType": "story",
+        "promise": "Read a short story aloud and let children act out washing with soap and coughing into an elbow.",
+        "firstUsefulOutcome": "The caregiver has a script to read aloud, with a cue on each beat telling children when to scrub and when to cough into the elbow, and a bridge into the handwashing coach.",
+        "primaryAction": "Next",
+        "questionPurpose": "none"
+      }
+    },
+    {
+      "featureId": "anc_womb_nutrition_story",
+      "reason": "Parked for review. The story and author-owned placeholder art are preserved, but the “eating for two” framing needs clinical/content review and the art was explicitly marked for redraw before caregiver release."
+    },
+    {
+      "featureId": "anc_womb_deworming_story",
+      "reason": "Parked for review. The story and author-owned placeholder art are preserved, but preventive deworming in pregnancy is trimester- and setting-dependent, so clinical review must define where and when this story is appropriate."
+    }
+  ]
+}

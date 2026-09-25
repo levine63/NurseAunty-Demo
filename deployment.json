@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0",
+  "publicUrl": "https://hygieneheroes.berkeley.edu/nurseaunty/demo/",
+  "canonicalApp": "apps/pwa-sandbox",
+  "standaloneIncluded": false,
+  "demoStoryPacks": [
+    "recovered-pr28-v0.1"
+  ],
+  "sourceCommit": "60374915e92c59f8ac0d0af6d81de9fb5df0fcb3",
+  "sourceState": "clean",
+  "buildId": "60374915e92c-clean"
+}

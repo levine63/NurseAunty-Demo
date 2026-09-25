@@ -1,0 +1,153 @@
+{
+  "about": "Prototype predicate table generated from kohl_lead_screen screen-card clinicalVariableSet.",
+  "guidelineVersionExpected": "prototype-screen-card",
+  "inputs": {
+    "lead_exposure_concern": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "lead exposure concern"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child",
+        "pregnant_woman",
+        "household"
+      ],
+      "clinicalVariableRoles": [
+        "presenting_symptom"
+      ],
+      "prototypeAssignment": "Codex-generated prototype IR from screen-card clinicalVariableSet; replace with formal clinical pipeline output."
+    },
+    "kohl_lead_screen_kohlchild": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_kohl_used_child"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child",
+        "pregnant_woman",
+        "household"
+      ],
+      "clinicalVariableRoles": [
+        "presenting_symptom",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "kohl_lead_screen_kohlpregnant": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_kohl_used_pregnant"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child",
+        "pregnant_woman",
+        "household"
+      ],
+      "clinicalVariableRoles": [
+        "presenting_symptom",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "kohl_lead_screen_kohlunknown": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_product_unknown"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child",
+        "pregnant_woman",
+        "household"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "lead_exposure_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "kohl_lead_screen_kohlaccess": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_keep_away_children"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child",
+        "pregnant_woman",
+        "household"
+      ],
+      "clinicalVariableRoles": [
+        "safety_gate"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    }
+  },
+  "predicates": [
+    {
+      "id": "presentation_selected",
+      "label": {
+        "en": "Presentation selected"
+      },
+      "source": "Screen-card presentation metadata",
+      "var": "lead_exposure_concern",
+      "is": true
+    },
+    {
+      "id": "any_general_danger_sign",
+      "label": {
+        "en": "Any subject-specific general danger sign"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged general_danger_sign",
+      "anyOf": []
+    },
+    {
+      "id": "any_followup_finding",
+      "label": {
+        "en": "Any symptom-specific follow-up finding"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged symptom_followup or clinical_finding",
+      "anyOf": [
+        {
+          "var": "kohl_lead_screen_kohlchild",
+          "is": true
+        },
+        {
+          "var": "kohl_lead_screen_kohlpregnant",
+          "is": true
+        },
+        {
+          "var": "kohl_lead_screen_kohlunknown",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_safety_gate",
+      "label": {
+        "en": "Any safety gate"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged safety_gate",
+      "anyOf": [
+        {
+          "var": "kohl_lead_screen_kohlaccess",
+          "is": true
+        }
+      ]
+    }
+  ]
+}

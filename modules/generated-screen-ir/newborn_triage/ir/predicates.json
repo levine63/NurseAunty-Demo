@@ -1,0 +1,220 @@
+{
+  "about": "Prototype predicate table generated from newborn_triage screen-card clinicalVariableSet.",
+  "guidelineVersionExpected": "prototype-screen-card",
+  "inputs": {
+    "newborn_danger_concern": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "newborn danger concern"
+      },
+      "subjectScopes": [
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "presenting_symptom"
+      ],
+      "prototypeAssignment": "Codex-generated prototype IR from screen-card clinicalVariableSet; replace with formal clinical pipeline output."
+    },
+    "newborn_triage_newbornfeeding": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_poor_feeding"
+      },
+      "subjectScopes": [
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "newborn_triage_newbornbreathing": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_breathing_problem"
+      },
+      "subjectScopes": [
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "newborn_triage_newborntemp": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_fever_cold"
+      },
+      "subjectScopes": [
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "newborn_triage_newbornmovement": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_convulsions"
+      },
+      "subjectScopes": [
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "newborn_triage_newbornjaundice": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_jaundice"
+      },
+      "subjectScopes": [
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "newborn_triage_newbornsmall": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_newborn.small"
+      },
+      "subjectScopes": [
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "newborn_danger_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "newborn_triage_newbornother": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_newborn.other"
+      },
+      "subjectScopes": [
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup"
+      ],
+      "followupFor": [
+        "newborn_danger_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    }
+  },
+  "predicates": [
+    {
+      "id": "presentation_selected",
+      "label": {
+        "en": "Presentation selected"
+      },
+      "source": "Screen-card presentation metadata",
+      "var": "newborn_danger_concern",
+      "is": true
+    },
+    {
+      "id": "any_general_danger_sign",
+      "label": {
+        "en": "Any subject-specific general danger sign"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged general_danger_sign",
+      "anyOf": [
+        {
+          "var": "newborn_triage_newbornfeeding",
+          "is": true
+        },
+        {
+          "var": "newborn_triage_newbornbreathing",
+          "is": true
+        },
+        {
+          "var": "newborn_triage_newborntemp",
+          "is": true
+        },
+        {
+          "var": "newborn_triage_newbornmovement",
+          "is": true
+        },
+        {
+          "var": "newborn_triage_newbornjaundice",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_followup_finding",
+      "label": {
+        "en": "Any symptom-specific follow-up finding"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged symptom_followup or clinical_finding",
+      "anyOf": [
+        {
+          "var": "newborn_triage_newbornfeeding",
+          "is": true
+        },
+        {
+          "var": "newborn_triage_newbornbreathing",
+          "is": true
+        },
+        {
+          "var": "newborn_triage_newborntemp",
+          "is": true
+        },
+        {
+          "var": "newborn_triage_newbornmovement",
+          "is": true
+        },
+        {
+          "var": "newborn_triage_newbornjaundice",
+          "is": true
+        },
+        {
+          "var": "newborn_triage_newbornsmall",
+          "is": true
+        },
+        {
+          "var": "newborn_triage_newbornother",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_safety_gate",
+      "label": {
+        "en": "Any safety gate"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged safety_gate",
+      "anyOf": []
+    }
+  ]
+}

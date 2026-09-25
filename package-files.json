@@ -1,0 +1,1588 @@
+{
+  "schemaVersion": "1.0",
+  "sourceCommit": "60374915e92c59f8ac0d0af6d81de9fb5df0fcb3",
+  "sourceState": "clean",
+  "buildId": "60374915e92c-clean",
+  "files": [
+    {
+      "path": ".htaccess",
+      "bytes": 758,
+      "servedOverHttp": false
+    },
+    {
+      "path": ".nurseaunty-demo-root",
+      "bytes": 87,
+      "servedOverHttp": false
+    },
+    {
+      "path": "apps/pwa-sandbox/app.js",
+      "bytes": 5590,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/audio/breastfeeding/positioning_draft_01.txt",
+      "bytes": 231,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/audio/clinical/stridor_np_ogg_2_cc_by_sa_3.ogg",
+      "bytes": 89575,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/audio/prototype/handwashing_children_summer_loop_muza_jamendo481924.mp3",
+      "bytes": 218189,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/audio/prototype/toothbrushing_happy_ukulele_yurasoop_jamendo616446.mp3",
+      "bytes": 1581177,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/display-derivatives.json",
+      "bytes": 331,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/anc_danger_screen.svg",
+      "bytes": 1091,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/annotated_chest_indrawing_v1.png",
+      "bytes": 46688,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/annotated_skin_pinch_dehydration_v1.png",
+      "bytes": 281359,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/annotated_sunken_eyes_dehydration_v1.png",
+      "bytes": 143039,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/chest_indrawing_breath_in_indrawing_v2-display.webp",
+      "bytes": 15334,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/chest_indrawing_breath_in_normal_v2-display.webp",
+      "bytes": 14990,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/chest_indrawing_rest_v2-display.webp",
+      "bytes": 15064,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/child_vision_screen.svg",
+      "bytes": 836,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/cholera_hotspot_alert.svg",
+      "bytes": 954,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/demo_v2_anc_birth_plan-display.webp",
+      "bytes": 53646,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/demo_v2_bednet_reminder-display.webp",
+      "bytes": 42428,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/demo_v2_child_triage_support-display.webp",
+      "bytes": 45332,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/demo_v2_complementary_feeding-display.webp",
+      "bytes": 55750,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/demo_v2_home_today_toothbrush-display.webp",
+      "bytes": 50512,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/demo_v2_newborn_kmc-display.webp",
+      "bytes": 43422,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/demo_v2_ors_mixing_scale-display.webp",
+      "bytes": 44442,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/demo_v2_partner_dashboard-display.webp",
+      "bytes": 49870,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/demo_v2_postpartum_new_mother-display.webp",
+      "bytes": 45376,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/demo_v2_referral_followup-display.webp",
+      "bytes": 47582,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/demo_v2_toothbrushing_timer-display.webp",
+      "bytes": 45010,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/demo_v2_wash_safe_water-display.webp",
+      "bytes": 60300,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_bednet_evening_v1-display.webp",
+      "bytes": 72140,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_blood_stool_sample_v1.png",
+      "bytes": 40931,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_breastfeeding_after_feed_v1-display.webp",
+      "bytes": 131892,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_caregiver_child_brushing_story_v1-display.webp",
+      "bytes": 70538,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_child_ear_concern_v1-display.webp",
+      "bytes": 70814,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_child_tooth_pain_v1-display.webp",
+      "bytes": 68178,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_chlorine_jerrycan_20l_v1-display.webp",
+      "bytes": 46476,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_handwashing_child_sink_v1-display.webp",
+      "bytes": 97560,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_immunization_visit_v1-display.webp",
+      "bytes": 78996,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_kmc_session_timer_v1-display.webp",
+      "bytes": 80890,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_lina_fever_triage_v2-display.webp",
+      "bytes": 123694,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_meena_postpartum_support_v2-display.webp",
+      "bytes": 120770,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_newborn_feeding_support_v1-display.webp",
+      "bytes": 101494,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_newborn_urgent_check_v1-display.webp",
+      "bytes": 83330,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_noor_newborn_urgent_v2-display.webp",
+      "bytes": 110712,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_ors_1l_marked_container_v3-display.webp",
+      "bytes": 38572,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_ors_1l_mix_instruction_v2-display.webp",
+      "bytes": 62286,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_ors_add_full_sachet_v2-display.webp",
+      "bytes": 58720,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_ors_choose_container_v1-display.webp",
+      "bytes": 38878,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_ors_container_bottle_1500ml_1l_line_v1-display.webp",
+      "bytes": 30904,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_ors_container_bottle_500ml_v1-display.webp",
+      "bytes": 35080,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_ors_container_cup_200ml_v1-display.webp",
+      "bytes": 28232,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_ors_container_mug_300ml_v1-display.webp",
+      "bytes": 28976,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_ors_cover_same_day_v1-display.webp",
+      "bytes": 65026,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_ors_cup_200ml_measure_v1-display.webp",
+      "bytes": 54684,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_ors_cup_200ml_measure_v2.webp",
+      "bytes": 23824,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_ors_measure_question_v3-display.webp",
+      "bytes": 29114,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_ors_mix_well_v2-display.webp",
+      "bytes": 59524,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_ors_mixing_table_v1-display.webp",
+      "bytes": 74188,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_ors_mug_300ml_measure_v1-display.webp",
+      "bytes": 57580,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_ors_wash_hands_v1-display.webp",
+      "bytes": 76510,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_pea_size_toothpaste_photo_v1-display.webp",
+      "bytes": 27684,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_postpartum_support_v1-display.webp",
+      "bytes": 76230,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_pregnancy_birth_plan_v1-display.webp",
+      "bytes": 93372,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_rice_grain_toothpaste_photo_v1-display.webp",
+      "bytes": 25484,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_rina_pregnancy_plan_v2-display.webp",
+      "bytes": 142432,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_safe_water_chlorine_v1-display.webp",
+      "bytes": 86168,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_sick_toddler_home_triage_v1-display.webp",
+      "bytes": 67582,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_zinc_give_toddler_v1-display.webp",
+      "bytes": 48834,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_zinc_prepare_dispersible_v1-display.webp",
+      "bytes": 37546,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/generated_zinc_prepare_dispersible_v2-display.webp",
+      "bytes": 36166,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/gerry_the_germ/frame_01.webp",
+      "bytes": 36336,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/gerry_the_germ/frame_02-display.webp",
+      "bytes": 41848,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/gerry_the_germ/frame_03.webp",
+      "bytes": 12604,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/gerry_the_germ/frame_04.webp",
+      "bytes": 25992,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/gerry_the_germ/frame_05.webp",
+      "bytes": 29204,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/gerry_the_germ/frame_06.webp",
+      "bytes": 44632,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/gerry_the_germ/frame_07.webp",
+      "bytes": 22764,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/gerry_the_germ/frame_08.webp",
+      "bytes": 37618,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/gerry_the_germ/frame_09.webp",
+      "bytes": 44784,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/gerry_the_germ/frame_10.webp",
+      "bytes": 30330,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/gerry_the_germ/frame_11.webp",
+      "bytes": 22906,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/gerry_the_germ/frame_12.webp",
+      "bytes": 29424,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/gerry_the_germ/frame_13.webp",
+      "bytes": 44608,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/gerry_the_germ/frame_15.webp",
+      "bytes": 32620,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/hh_cold_flu_story.svg",
+      "bytes": 1691,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/hh_dental_story.svg",
+      "bytes": 1863,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/hh_dental_story/frame_01.webp",
+      "bytes": 15024,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/hh_dental_story/frame_02.webp",
+      "bytes": 25678,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/hh_dental_story/frame_03.webp",
+      "bytes": 21386,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/hh_dental_story/frame_04.webp",
+      "bytes": 16050,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/hh_dental_story/frame_05.webp",
+      "bytes": 7118,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/hh_handwashing_story.svg",
+      "bytes": 1344,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/hh_handwashing_story/frame_02.webp",
+      "bytes": 52994,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/hh_handwashing_story/frame_03.webp",
+      "bytes": 36304,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/hh_handwashing_story/frame_04.webp",
+      "bytes": 22662,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/hh_handwashing_story/frame_05.webp",
+      "bytes": 48714,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/hh_handwashing_story/frame_06.webp",
+      "bytes": 24258,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/hh_safe_water_story.svg",
+      "bytes": 1241,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/kmc_skin_to_skin.svg",
+      "bytes": 1563,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/localizer_quality_console.svg",
+      "bytes": 1317,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/newborn_danger_screen.svg",
+      "bytes": 1079,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/north_india_child_breathing_check_v1-display.webp",
+      "bytes": 101390,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/north_india_child_triage_rr.svg",
+      "bytes": 1620,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/north_india_delivery_kit.svg",
+      "bytes": 1546,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/north_india_dental.svg",
+      "bytes": 1514,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/north_india_handwashing_safe_water_v1-display.webp",
+      "bytes": 109550,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/north_india_hearing_school.svg",
+      "bytes": 1427,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/north_india_household_checklist.svg",
+      "bytes": 1680,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/north_india_maternal_newborn_care_v1-display.webp",
+      "bytes": 99472,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/north_india_maternal_visits.svg",
+      "bytes": 1483,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/north_india_ors_mixing_v1-display.webp",
+      "bytes": 74708,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/north_india_ors_zinc.svg",
+      "bytes": 1636,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/north_india_pilot_module_sheet_v1-display.webp",
+      "bytes": 112934,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/north_india_reference_style_board_v1-display.webp",
+      "bytes": 102644,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/north_india_wash_home.svg",
+      "bytes": 1635,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_anc_birth_plan_checklist_v1.svg",
+      "bytes": 1511,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_bednet_reminder_v1.svg",
+      "bytes": 1526,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_bednet_scene_v1-display.webp",
+      "bytes": 23592,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_channel_twins_preview_v1.svg",
+      "bytes": 1545,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_child_ear_check_v1.svg",
+      "bytes": 1532,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_child_ear_scene_v1-display.webp",
+      "bytes": 22022,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_child_hearing_screen_v1.svg",
+      "bytes": 1541,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_child_injury_check_v1.svg",
+      "bytes": 1548,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_child_injury_scene_v1-display.webp",
+      "bytes": 32302,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_child_measles_rash_check_v1.svg",
+      "bytes": 1543,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_child_muac_nutrition_check_v1.svg",
+      "bytes": 1545,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_chlorine_dose_helper_v1.svg",
+      "bytes": 1540,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_chlorine_dose_scene_v1-display.webp",
+      "bytes": 20192,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_chlorine_product_sample_v1.svg",
+      "bytes": 1550,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_chronic_refill_tracker_v1.svg",
+      "bytes": 1698,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_clinic_today_icon_v1.svg",
+      "bytes": 1531,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_complementary_feeding_card_v1.svg",
+      "bytes": 1547,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_complementary_feeding_scene_v1-display.webp",
+      "bytes": 32834,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_dehydration_guide_card_v1.svg",
+      "bytes": 1544,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_dehydration_signs_v1.svg",
+      "bytes": 2163,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_dental_swelling_v1.svg",
+      "bytes": 1829,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_family_preparedness_checklist_v1.svg",
+      "bytes": 1521,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_immunization_card_sample_v1.svg",
+      "bytes": 1556,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_kohl_product_sample_v1.svg",
+      "bytes": 1619,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_labor_clock_v1.svg",
+      "bytes": 1738,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_measles_rash_v1.svg",
+      "bytes": 2858,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_muac_swelling_v1.svg",
+      "bytes": 1901,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_newborn_jaundice_v1.svg",
+      "bytes": 1817,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_ors_sachet_sample_v1.svg",
+      "bytes": 1550,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_partner_dashboard_scene_v1-display.webp",
+      "bytes": 22564,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_partner_dashboard_v1.svg",
+      "bytes": 1552,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_pnc_visit_reminder_v1.svg",
+      "bytes": 1536,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_referral_followup_queue_v1.svg",
+      "bytes": 1545,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_research_learning_signals_v1.svg",
+      "bytes": 1531,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_respiratory_distress_v1.svg",
+      "bytes": 1901,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_rice_grain_toothpaste_v1.svg",
+      "bytes": 1535,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_sanitation_checklist_v1.svg",
+      "bytes": 2137,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_shared_phone_privacy_v1.svg",
+      "bytes": 1684,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_zinc_pack_sample_v1.svg",
+      "bytes": 1550,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/prototype_zinc_spoon_child_v1-display.webp",
+      "bytes": 75536,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/reusable_bednet_layer_v1.svg",
+      "bytes": 1115,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/reusable_bottle_1l_mark_v1.svg",
+      "bytes": 838,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/reusable_caregiver_v1.svg",
+      "bytes": 854,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/reusable_child_neutral_v1.svg",
+      "bytes": 1170,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/reusable_clinic_background_v1.svg",
+      "bytes": 1103,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/reusable_family_art_sheet_v1.svg",
+      "bytes": 4772,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/reusable_food_bowl_v1.svg",
+      "bytes": 909,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/reusable_happy_baby_v1.svg",
+      "bytes": 845,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/reusable_health_worker_v1.svg",
+      "bytes": 1018,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/reusable_home_background_v1.svg",
+      "bytes": 1844,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/reusable_mug_200ml_v1.svg",
+      "bytes": 852,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/reusable_ors_sachet_v1.svg",
+      "bytes": 851,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/reusable_private_corner_background_v1.svg",
+      "bytes": 1041,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/reusable_sad_toddler_v1.svg",
+      "bytes": 857,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/reusable_soap_chlorine_bottle_v1.svg",
+      "bytes": 1147,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/reusable_wash_background_v1.svg",
+      "bytes": 1307,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/user_supplied_blood_stool_sample_v2-display.webp",
+      "bytes": 68116,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/user_supplied_breastfeeding_latch_v1.png",
+      "bytes": 226889,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/generated/user_supplied_ors_give_child_cup_v1.webp",
+      "bytes": 109222,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/prompts/demo_v2_child_home_ors_sheet.txt",
+      "bytes": 353,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/prompts/demo_v2_maternal_newborn_sheet.txt",
+      "bytes": 338,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/prompts/demo_v2_wash_bednet_feeding_dashboard_sheet.txt",
+      "bytes": 309,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/prompts/north_india_child_breathing_check_v1.txt",
+      "bytes": 424,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/prompts/north_india_handwashing_safe_water_v1.txt",
+      "bytes": 419,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/prompts/north_india_maternal_newborn_care_v1.txt",
+      "bytes": 419,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/prompts/north_india_ors_mixing_v1.txt",
+      "bytes": 441,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/prompts/north_india_pilot_module_sheet_v1.txt",
+      "bytes": 444,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/prompts/north_india_reference_style_board_v1.txt",
+      "bytes": 584,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/assets/prompts/prototype_scene_sheet_v1.txt",
+      "bytes": 955,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/caregiver-clarity.js",
+      "bytes": 5360,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/demo-story-packs.js",
+      "bytes": 4815,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/index.html",
+      "bytes": 78395,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/nudge-coordinator-runtime.js",
+      "bytes": 15048,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/tokens.css",
+      "bytes": 3302,
+      "servedOverHttp": true
+    },
+    {
+      "path": "apps/pwa-sandbox/ui-core.js",
+      "bytes": 515909,
+      "servedOverHttp": true
+    },
+    {
+      "path": "check.html",
+      "bytes": 7365,
+      "servedOverHttp": true
+    },
+    {
+      "path": "config/containers.json",
+      "bytes": 4164,
+      "servedOverHttp": true
+    },
+    {
+      "path": "config/immunization-schedule.json",
+      "bytes": 4811,
+      "servedOverHttp": true
+    },
+    {
+      "path": "config/ors-measurement-methods.json",
+      "bytes": 4353,
+      "servedOverHttp": true
+    },
+    {
+      "path": "config/sachets.json",
+      "bytes": 4155,
+      "servedOverHttp": true
+    },
+    {
+      "path": "config/switches.json",
+      "bytes": 7438,
+      "servedOverHttp": true
+    },
+    {
+      "path": "content/anc_comic_schedule.json",
+      "bytes": 1891,
+      "servedOverHttp": true
+    },
+    {
+      "path": "content/asset_approval_register.json",
+      "bytes": 43303,
+      "servedOverHttp": true
+    },
+    {
+      "path": "content/asset_manifest.json",
+      "bytes": 355360,
+      "servedOverHttp": true
+    },
+    {
+      "path": "content/chw_quality_standards.json",
+      "bytes": 4638,
+      "servedOverHttp": true
+    },
+    {
+      "path": "content/clinical_screens.json",
+      "bytes": 85489,
+      "servedOverHttp": true
+    },
+    {
+      "path": "content/feature_catalog.json",
+      "bytes": 33801,
+      "servedOverHttp": true
+    },
+    {
+      "path": "content/guidance_comparisons.json",
+      "bytes": 46099,
+      "servedOverHttp": true
+    },
+    {
+      "path": "content/media_packs/north_india_prototype.json",
+      "bytes": 22538,
+      "servedOverHttp": true
+    },
+    {
+      "path": "content/module_contracts.json",
+      "bytes": 36249,
+      "servedOverHttp": true
+    },
+    {
+      "path": "content/module_registry.json",
+      "bytes": 13892,
+      "servedOverHttp": true
+    },
+    {
+      "path": "content/player_decks.json",
+      "bytes": 2697,
+      "servedOverHttp": true
+    },
+    {
+      "path": "content/progress_trackers.json",
+      "bytes": 6179,
+      "servedOverHttp": true
+    },
+    {
+      "path": "content/screen_cards.json",
+      "bytes": 56981,
+      "servedOverHttp": true
+    },
+    {
+      "path": "content/story_cards.json",
+      "bytes": 12535,
+      "servedOverHttp": true
+    },
+    {
+      "path": "content/tool_cards.json",
+      "bytes": 17245,
+      "servedOverHttp": true
+    },
+    {
+      "path": "deployment.json",
+      "bytes": 344,
+      "servedOverHttp": true
+    },
+    {
+      "path": "guidelines/bd-2012.json",
+      "bytes": 6153,
+      "servedOverHttp": true
+    },
+    {
+      "path": "i18n/phrase_bank.json",
+      "bytes": 889981,
+      "servedOverHttp": true
+    },
+    {
+      "path": "index.html",
+      "bytes": 78543,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/anc_triage/ir/decisions.json",
+      "bytes": 2419,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/anc_triage/ir/predicates.json",
+      "bytes": 6008,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/breastfeeding_aid_triage/ir/decisions.json",
+      "bytes": 2447,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/breastfeeding_aid_triage/ir/predicates.json",
+      "bytes": 18379,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/child_ear_check/ir/decisions.json",
+      "bytes": 2429,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/child_ear_check/ir/predicates.json",
+      "bytes": 4026,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/child_hearing_screen/ir/decisions.json",
+      "bytes": 2439,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/child_hearing_screen/ir/predicates.json",
+      "bytes": 4712,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/child_injury_first_aid_check/ir/decisions.json",
+      "bytes": 2455,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/child_injury_first_aid_check/ir/predicates.json",
+      "bytes": 5090,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/child_measles_rash_check/ir/decisions.json",
+      "bytes": 2447,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/child_measles_rash_check/ir/predicates.json",
+      "bytes": 4900,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/child_muac_malnutrition_screen/ir/decisions.json",
+      "bytes": 2459,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/child_muac_malnutrition_screen/ir/predicates.json",
+      "bytes": 4875,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/child_vision_screen/ir/decisions.json",
+      "bytes": 2437,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/child_vision_screen/ir/predicates.json",
+      "bytes": 4691,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/dental_triage/ir/decisions.json",
+      "bytes": 2425,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/dental_triage/ir/predicates.json",
+      "bytes": 5232,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/kohl_lead_screen/ir/decisions.json",
+      "bytes": 2431,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/kohl_lead_screen/ir/predicates.json",
+      "bytes": 4175,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/newborn_triage/ir/decisions.json",
+      "bytes": 2427,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/newborn_triage/ir/predicates.json",
+      "bytes": 5963,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/pnc_lactation/ir/decisions.json",
+      "bytes": 2425,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/generated-screen-ir/pnc_lactation/ir/predicates.json",
+      "bytes": 7863,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/ors-voucher/generated/rules.gen.js",
+      "bytes": 1727,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/triage/generated/calc.gen.js",
+      "bytes": 1482,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/triage/generated/rules.gen.js",
+      "bytes": 12679,
+      "servedOverHttp": true
+    },
+    {
+      "path": "modules/triage/ir/predicates.json",
+      "bytes": 20418,
+      "servedOverHttp": true
+    },
+    {
+      "path": "packages/core/src/ancComicSchedule.js",
+      "bytes": 4527,
+      "servedOverHttp": true
+    },
+    {
+      "path": "packages/core/src/orsMeasurePlan.js",
+      "bytes": 6259,
+      "servedOverHttp": true
+    },
+    {
+      "path": "packages/core/src/orsSachetResolution.js",
+      "bytes": 9417,
+      "servedOverHttp": true
+    },
+    {
+      "path": "packages/core/src/personAge.js",
+      "bytes": 5913,
+      "servedOverHttp": true
+    },
+    {
+      "path": "packages/core/src/triageJourney.js",
+      "bytes": 5297,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/anc_womb/deworming/worm_f1.webp",
+      "bytes": 27252,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/anc_womb/deworming/worm_f2.webp",
+      "bytes": 26598,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/anc_womb/deworming/worm_f3.webp",
+      "bytes": 23338,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/anc_womb/nutrition/nutrition_f1.webp",
+      "bytes": 19746,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/anc_womb/nutrition/nutrition_f2.webp",
+      "bytes": 19140,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/anc_womb/nutrition/nutrition_f3.webp",
+      "bytes": 23338,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/connie/connie_germ.webp",
+      "bytes": 23946,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/connie/connie_soap.webp",
+      "bytes": 5776,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/cory/cory_01.webp",
+      "bytes": 18676,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/cory/cory_02.webp",
+      "bytes": 28868,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/cory/cory_03.webp",
+      "bytes": 15886,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/cory/cory_04.webp",
+      "bytes": 23272,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/cory/cory_05.webp",
+      "bytes": 25182,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/cory/cory_06.webp",
+      "bytes": 27282,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/cory/cory_07.webp",
+      "bytes": 34524,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/cory/cory_08.webp",
+      "bytes": 18584,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/cory/cory_09.webp",
+      "bytes": 27502,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/cory/cory_10.webp",
+      "bytes": 33258,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/cory/cory_11.webp",
+      "bytes": 26584,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/cory/cory_12.webp",
+      "bytes": 19712,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/cory/cory_13.webp",
+      "bytes": 29180,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/cory/cory_14.webp",
+      "bytes": 29754,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/cory/cory_15.webp",
+      "bytes": 34624,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/cory/cory_16.webp",
+      "bytes": 24126,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/cory/cory_17.webp",
+      "bytes": 26542,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/cory/cory_18.webp",
+      "bytes": 21928,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/cory/cory_19.webp",
+      "bytes": 12794,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/cory/cory_20.webp",
+      "bytes": 10690,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/juan/juan_01.webp",
+      "bytes": 12068,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/juan/juan_02.webp",
+      "bytes": 11922,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/juan/juan_03.webp",
+      "bytes": 18980,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/juan/juan_04.webp",
+      "bytes": 9260,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/juan/juan_05.webp",
+      "bytes": 18958,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/juan/juan_06.webp",
+      "bytes": 12156,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/juan/juan_07.webp",
+      "bytes": 7312,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/juan/juan_08.webp",
+      "bytes": 11758,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/juan/juan_09.webp",
+      "bytes": 18618,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/juan/juan_10.webp",
+      "bytes": 18382,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/juan/juan_11.webp",
+      "bytes": 10036,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/juan/juan_12.webp",
+      "bytes": 12018,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/juan/juan_13.webp",
+      "bytes": 21990,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/juan/juan_14.webp",
+      "bytes": 35104,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/assets/stories/hh_covid/juan/juan_15.webp",
+      "bytes": 14420,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/manifest.json",
+      "bytes": 5904,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/page_01.m4a",
+      "bytes": 71114,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/page_02.m4a",
+      "bytes": 101894,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/page_03.m4a",
+      "bytes": 97241,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/page_04.m4a",
+      "bytes": 44366,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/page_05.m4a",
+      "bytes": 98878,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/page_06.m4a",
+      "bytes": 59317,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/page_07.m4a",
+      "bytes": 72307,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/page_08.m4a",
+      "bytes": 69678,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/page_09.m4a",
+      "bytes": 76497,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/page_10.m4a",
+      "bytes": 80618,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/page_11.m4a",
+      "bytes": 77679,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/page_12.m4a",
+      "bytes": 57174,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/page_13.m4a",
+      "bytes": 67615,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/page_14.m4a",
+      "bytes": 51434,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/page_15.m4a",
+      "bytes": 62798,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/page_16.m4a",
+      "bytes": 124962,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/page_17.m4a",
+      "bytes": 128566,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/page_18.m4a",
+      "bytes": 41152,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/page_19.m4a",
+      "bytes": 57604,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/en/page_20.m4a",
+      "bytes": 205668,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/audio/plan.json",
+      "bytes": 10579,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/bundle.json",
+      "bytes": 142628,
+      "servedOverHttp": true
+    },
+    {
+      "path": "story-packs/recovered-pr28-v0.1/manifest.json",
+      "bytes": 2730,
+      "servedOverHttp": true
+    },
+    {
+      "path": "web.config",
+      "bytes": 1657,
+      "servedOverHttp": false
+    }
+  ]
+}

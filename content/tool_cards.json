@@ -1,0 +1,389 @@
+{
+  "about": "Prototype module panels rendered by the PWA shell. These are Localizer draft cards, not clinical approval.",
+  "schemaVersion": "0.1",
+  "cards": [
+    {
+      "featureId": "handwashing_timer",
+      "kind": "timer",
+      "titleSlug": "tx.feature_handwashing_timer",
+      "bodySlug": "tx.tool_handwashing_timer_body",
+      "durationSeconds": 20,
+      "imageDesc": "Hands under clean running water with soap bubbles and a simple 20-second clock.",
+      "cacheNote": "Timer card is tiny enough for 1 GB devices; no background alert is assumed. Nudge timing is brokered centrally; this card declares intent only.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "nudgeIntent": {
+        "signal": "nudge.requested",
+        "topic": "handwashing",
+        "urgencyTier": "adherence_habit",
+        "privacyClass": "generic_ok",
+        "phraseFamily": "tx.nudge.encouragement",
+        "bundleKey": "daily-habits",
+        "cooldownCategory": "handwashing-practice",
+        "defaultWindow": {
+          "start": "06:00",
+          "end": "21:00"
+        },
+        "channelsAllowed": [
+          "local"
+        ],
+        "prototypeOnly": true
+      }
+    },
+    {
+      "featureId": "zinc_tracker",
+      "kind": "tracker",
+      "titleSlug": "tx.feature_zinc_tracker",
+      "bodySlug": "tx.tool_zinc_tracker_body",
+      "courseDays": 10,
+      "imageDesc": "Caregiver marking day boxes beside a zinc blister pack and ORS cup.",
+      "cacheNote": "10-day course tracker is prototype-only and must match local zinc product guidance. Nudge timing is brokered centrally; this card declares intent only.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "nudgeIntent": {
+        "signal": "nudge.requested",
+        "topic": "diarrhoea_ors",
+        "urgencyTier": "adherence_habit",
+        "privacyClass": "generic_ok",
+        "phraseFamily": "tx.nudge.encouragement",
+        "bundleKey": "evening-care",
+        "cooldownCategory": "zinc-course",
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "channelsAllowed": [
+          "local"
+        ],
+        "prototypeOnly": true
+      }
+    },
+    {
+      "featureId": "dental_brushing",
+      "kind": "timer",
+      "titleSlug": "tx.feature_dental_brushing",
+      "bodySlug": "tx.tool_dental_brushing_body",
+      "durationSeconds": 120,
+      "imageDesc": "Child and caregiver with toothbrush, small toothpaste cue, two-minute timer, morning/night stars, and tune button.",
+      "cacheNote": "Reference toothbrushing slice: foreground timer, synthetic star chart, and prototype tune control. Nudge timing is brokered centrally; this card declares intent only.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "nudgeIntent": {
+        "signal": "nudge.requested",
+        "topic": "dental",
+        "urgencyTier": "adherence_habit",
+        "privacyClass": "generic_ok",
+        "phraseFamily": "tx.nudge.encouragement",
+        "bundleKey": "daily-habits",
+        "cooldownCategory": "dental-brushing",
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "channelsAllowed": [
+          "local"
+        ],
+        "prototypeOnly": true
+      }
+    },
+    {
+      "featureId": "chlorine_contact_timer",
+      "kind": "timer",
+      "titleSlug": "tx.feature_chlorine_contact_timer",
+      "bodySlug": "tx.tool_chlorine_timer_body",
+      "durationMinutes": 30,
+      "imageDesc": "Covered water container with a chlorine bottle, marked dose, and 30-minute wait clock.",
+      "cacheNote": "Dose text is intentionally omitted until local chlorine product instructions are approved.",
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "boil_water_timer",
+      "kind": "timer",
+      "titleSlug": "tx.feature_boil_water_timer",
+      "bodySlug": "tx.tool_boil_water_timer_body",
+      "durationMinutes": 1,
+      "imageDesc": "Covered pot at a rolling boil beside a one-minute clock.",
+      "cacheNote": "Prototype uses conservative education language; altitude/local guidance needs review.",
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "kmc_timer",
+      "kind": "tracker",
+      "titleSlug": "tx.feature_kmc_timer",
+      "bodySlug": "tx.tool_kmc_timer_body",
+      "imageDesc": "Caregiver holding a newborn skin-to-skin under a wrap, with a gentle session timer.",
+      "cacheNote": "Supportive timer only; newborn danger signs and health-worker guidance override.",
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "family_preparedness",
+      "kind": "checklist",
+      "titleSlug": "tx.feature_family_preparedness",
+      "bodySlug": "tx.tool_family_preparedness_body",
+      "imageDesc": "Household checklist with water, ORS, phone/clinic contact, and transport symbols.",
+      "cacheNote": "Checklist is non-clinical preparedness support and can run fully offline.",
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "breastfeeding_audio",
+      "kind": "audio",
+      "titleSlug": "tx.feature_breastfeeding_audio",
+      "bodySlug": "tx.tool_breastfeeding_audio_body",
+      "imageDesc": "New mother seated comfortably with baby positioned close, plus audio and CHW support icons.",
+      "cacheNote": "Prototype read-aloud script with breastfeeding difficulty plus danger signs routed to health-worker support.",
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "cholera_hotspot_alert",
+      "kind": "checklist",
+      "titleSlug": "tx.feature_cholera_hotspot_alert",
+      "bodySlug": "tx.tool_cholera_hotspot_alert_body",
+      "imageDesc": "Household water alert with safe water, handwashing, latrine, ORS, and clinic referral icons.",
+      "cacheNote": "Prototype alert is local-only; background phone alerts may not work while asleep. Nudge timing is brokered centrally; this card declares intent only.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "nudgeIntent": {
+        "signal": "nudge.requested",
+        "topic": "safe_water",
+        "urgencyTier": "informational_encouragement",
+        "privacyClass": "generic_ok",
+        "phraseFamily": "tx.nudge.encouragement",
+        "bundleKey": "wash-safety",
+        "cooldownCategory": "cholera-hotspot-readiness",
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "channelsAllowed": [
+          "local"
+        ],
+        "prototypeOnly": true
+      }
+    },
+    {
+      "featureId": "research_engagement",
+      "kind": "console",
+      "titleSlug": "tx.feature_research_engagement",
+      "bodySlug": "tx.tool_research_engagement_body",
+      "imageDesc": "Consent-aware learning dashboard with opt-in, no real names, and review-board check icons.",
+      "cacheNote": "Synthetic-data prototype only; no real research data collection until ethics and security approvals exist.",
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "localizer_quality_console",
+      "kind": "console",
+      "titleSlug": "tx.feature_localizer_quality_console",
+      "bodySlug": "tx.tool_localizer_quality_body",
+      "imageDesc": "Quality dashboard with source, comparison, and approval columns.",
+      "cacheNote": "8 GB profile only for now because it will later load richer comparison tables and review artifacts.",
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "anc_birth_plan",
+      "kind": "checklist",
+      "titleSlug": "tx.feature_anc_birth_plan",
+      "bodySlug": "tx.tool_anc_birth_plan_body",
+      "imageDesc": "Pregnant person reviewing visit dates, transport plan, facility contact, and birth companion options.",
+      "cacheNote": "No clinical visit schedule is generated until local ANC schedule is approved. Nudge timing is brokered centrally; this card declares intent only.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "nudgeIntent": {
+        "signal": "nudge.requested",
+        "topic": "anc_birth",
+        "urgencyTier": "adherence_habit",
+        "privacyClass": "generic_ok",
+        "phraseFamily": "tx.nudge.encouragement",
+        "bundleKey": "care-planning",
+        "cooldownCategory": "anc-birth-plan",
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "channelsAllowed": [
+          "local"
+        ],
+        "prototypeOnly": true
+      }
+    },
+    {
+      "featureId": "immunization_reminders",
+      "kind": "checklist",
+      "titleSlug": "tx.feature_immunization_reminders",
+      "bodySlug": "tx.tool_immunization_reminders_body",
+      "imageDesc": "Caregiver holding a child vaccination card beside a calendar.",
+      "cacheNote": "WHO-style prototype date calculation; exact local dates must be confirmed against the child vaccine card and approved local EPI schedule. Nudge timing is brokered centrally; this card declares intent only.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "nudgeIntent": {
+        "signal": "nudge.requested",
+        "topic": "immunization",
+        "urgencyTier": "adherence_habit",
+        "privacyClass": "generic_ok",
+        "phraseFamily": "tx.nudge.encouragement",
+        "bundleKey": "care-planning",
+        "cooldownCategory": "immunization-card",
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "channelsAllowed": [
+          "local"
+        ],
+        "prototypeOnly": true
+      }
+    },
+    {
+      "featureId": "pnc_reminders",
+      "kind": "checklist",
+      "titleSlug": "tx.feature_pnc_reminders",
+      "bodySlug": "tx.tool_pnc_reminders_body",
+      "imageDesc": "New mother and baby visit checklist with CHW/clinic contact and danger-sign reminder.",
+      "cacheNote": "Routine postnatal reminders need local schedule and newborn/maternal review. Nudge timing is brokered centrally; this card declares intent only.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "nudgeIntent": {
+        "signal": "nudge.requested",
+        "topic": "pnc_breastfeeding",
+        "urgencyTier": "adherence_habit",
+        "privacyClass": "generic_ok",
+        "phraseFamily": "tx.nudge.encouragement",
+        "bundleKey": "care-planning",
+        "cooldownCategory": "pnc-visits",
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "channelsAllowed": [
+          "local"
+        ],
+        "prototypeOnly": true
+      }
+    },
+    {
+      "featureId": "chronic_refill_tracker",
+      "kind": "tracker",
+      "titleSlug": "tx.feature_chronic_refill_tracker",
+      "bodySlug": "tx.tool_chronic_refill_body_v2",
+      "imageDesc": "Medicine refill calendar with an optional photo of a medicine box, prescription, or bottle.",
+      "cacheNote": "Non-dosing calendar reminder only; medicine changes require clinician/pharmacist advice. An optional reference photo is held only for the current app session and is not shown on Home. The PWA sends a private in-app request through the shared Nudge Coordinator.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "nudgeIntent": {
+        "signal": "nudge.requested",
+        "topic": "chronic_meds",
+        "urgencyTier": "adherence_habit",
+        "privacyClass": "sensitive_topic",
+        "phraseFamily": "tx.nudge.encouragement",
+        "bundleKey": "private-care",
+        "cooldownCategory": "chronic-refill",
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "channelsAllowed": [
+          "local"
+        ],
+        "prototypeOnly": true
+      }
+    },
+    {
+      "featureId": "labor_clock",
+      "kind": "timer",
+      "titleSlug": "tx.feature_labor_clock",
+      "bodySlug": "tx.tool_labor_clock_body",
+      "imageDesc": "Labor timing support visual with a foreground clock, clinic arrow, local threshold, transport buffer, and danger override.",
+      "cacheNote": "Life-critical feature; native validation and SMS reliability required before real use.",
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "bednet_hanging_reminder",
+      "kind": "checklist",
+      "titleSlug": "tx.feature_bednet_hanging_reminder",
+      "bodySlug": "tx.tool_bednet_body",
+      "imageDesc": "Caregiver tucking a bednet around a sleeping area with a repair reminder and malaria-prevention cue.",
+      "cacheNote": "Prevention reminder only; fever/malaria care follows local guidance. Nudge timing is brokered centrally; this card declares intent only.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "nudgeIntent": {
+        "signal": "nudge.requested",
+        "topic": "malaria",
+        "urgencyTier": "adherence_habit",
+        "privacyClass": "generic_ok",
+        "phraseFamily": "tx.nudge.encouragement",
+        "bundleKey": "evening-care",
+        "cooldownCategory": "bednet-hanging",
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "channelsAllowed": [
+          "local"
+        ],
+        "prototypeOnly": true
+      }
+    },
+    {
+      "featureId": "dehydration_visual_guide",
+      "kind": "checklist",
+      "titleSlug": "tx.feature_dehydration_visual_guide",
+      "bodySlug": "tx.tool_dehydration_guide_body",
+      "imageDesc": "Caregiver watching a tired child with cup, water bottle, and dehydration concern cues; not a diagnosis image.",
+      "cacheNote": "Danger signs first; no diagnosis or dehydration classification in this prototype card.",
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "complementary_feeding_card",
+      "kind": "checklist",
+      "titleSlug": "tx.feature_complementary_feeding_card",
+      "bodySlug": "tx.tool_complementary_feeding_body",
+      "imageDesc": "Caregiver feeding a young child from a bowl with varied foods, cup, and handwashing cue.",
+      "cacheNote": "Nutrition counseling support only; local growth and feeding protocols control.",
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "chlorine_dose_helper",
+      "kind": "calculator",
+      "titleSlug": "tx.feature_chlorine_dose_helper",
+      "bodySlug": "tx.tool_chlorine_dose_helper_body",
+      "imageDesc": "Covered water container and unbranded chlorine product beside a local-table checklist; no generic dose.",
+      "cacheNote": "Uses only user-entered local table or label values; does not invent dose.",
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "sanitation_checklist",
+      "kind": "checklist",
+      "titleSlug": "tx.feature_sanitation_checklist",
+      "bodySlug": "tx.tool_sanitation_body",
+      "imageDesc": "Household WASH scene with latrine, handwashing, and child-stool disposal cues.",
+      "cacheNote": "WASH checklist only; local sanitation program guidance controls.",
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "channel_twins_preview",
+      "kind": "console",
+      "titleSlug": "tx.feature_channel_twins_preview",
+      "bodySlug": "tx.tool_channel_twins_body",
+      "imageDesc": "Message examples for app card, SMS, IVR, WhatsApp, and CHW script variants from one approved content object.",
+      "cacheNote": "No live SMS, IVR, WhatsApp, or outbound messaging in the prototype.",
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "referral_followup_queue",
+      "kind": "tracker",
+      "titleSlug": "tx.feature_referral_followup_queue",
+      "bodySlug": "tx.tool_referral_followup_body",
+      "imageDesc": "Caregiver and health worker at a clinic doorway with contact card, phone, saved status, retry, and closure cues.",
+      "cacheNote": "Synthetic local queue only; no live messaging, call center, or facility feedback loop.",
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "shared_phone_privacy_mode",
+      "kind": "checklist",
+      "titleSlug": "tx.feature_shared_phone_privacy_mode",
+      "bodySlug": "tx.tool_shared_phone_privacy_body",
+      "imageDesc": "Shared phone with shield, quick-hide cue, neutral notification, private labels, opt-out, export, and delete choices.",
+      "cacheNote": "Prototype does not secure real sensitive data; production needs secure Device storage and consent controls.",
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "partner_service_dashboard",
+      "kind": "console",
+      "titleSlug": "tx.feature_partner_service_dashboard",
+      "bodySlug": "tx.tool_partner_dashboard_body",
+      "imageDesc": "Health worker and supervisor reviewing privacy-safe aggregate charts for source status, language readiness, referral closure, and service quality.",
+      "cacheNote": "Aggregate synthetic dashboard only; no individual surveillance or production analytics.",
+      "governanceStatus": "CODEX Decision - needs approval"
+    }
+  ]
+}
