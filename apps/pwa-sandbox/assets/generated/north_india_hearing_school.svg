@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">North India child hearing screen draft</title>
+<desc id="desc">A North India school room with a child, caregiver, ear icon, soft sound cue, and referral card.</desc>
+<rect width="640" height="360" fill="#eef3f6"/>
+<rect x="48" y="50" width="544" height="252" rx="8" fill="#fffbf1" stroke="#7091aa" stroke-width="4"/>
+<rect x="86" y="86" width="190" height="106" rx="6" fill="#dcefe6"/>
+<path d="M116 130h118M116 158h78" stroke="#4c846e" stroke-width="6" stroke-linecap="round"/>
+<circle cx="353" cy="141" r="30" fill="#74492f"/>
+<path d="M316 184q37-43 74 0v75h-74z" fill="#edb94e"/>
+<path d="M405 137q46 22 72 0" fill="none" stroke="#4c846e" stroke-width="10" stroke-linecap="round"/>
+<path d="M430 156q29 15 46 0" fill="none" stroke="#4c846e" stroke-width="7" stroke-linecap="round"/>
+<path d="M305 140q17-16 32 0q-12 9-6 25q-15-3-20-13" fill="none" stroke="#5b3825" stroke-width="6" stroke-linecap="round"/>
+<circle cx="500" cy="205" r="34" fill="#fff" stroke="#7091aa" stroke-width="5"/>
+<path d="M487 201q12-18 28 0q-10 12-5 24q-16 0-21-10" fill="none" stroke="#7091aa" stroke-width="5" stroke-linecap="round"/>
+<rect x="112" y="222" width="104" height="48" rx="8" fill="#fff" stroke="#c85b4c" stroke-width="4"/>
+<path d="M132 246h64" stroke="#c85b4c" stroke-width="6" stroke-linecap="round"/>
+</svg>

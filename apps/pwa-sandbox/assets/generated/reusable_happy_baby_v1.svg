@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 260" role="img" aria-labelledby="title desc">
+  <title id="title">Prototype happy baby figure</title>
+  <desc id="desc">Reusable prototype happy baby portrait, not a clinical image and not approved for field use.</desc>
+  <rect width="220" height="260" rx="18" fill="#fffdf7"/>
+  <ellipse cx="111" cy="119" rx="56" ry="66" fill="#b97349"/>
+  <circle cx="90" cy="109" r="5" fill="#1d1d1b"/>
+  <circle cx="130" cy="109" r="5" fill="#1d1d1b"/>
+  <path d="M87 134c17 20 47 20 63 0" fill="none" stroke="#1d1d1b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M68 76c25-31 65-34 91 0" fill="#33231d"/>
+  <path d="M65 218c22-29 71-36 101 0" fill="#f2b75b"/>
+  <text x="45" y="248" font-family="Arial, sans-serif" font-size="14" fill="#5e5146">prototype - local review needed</text>
+</svg>

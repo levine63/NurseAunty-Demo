@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Localizer quality dashboard illustration</title>
+  <desc id="desc">A quality console with checklist rows and review status panels.</desc>
+  <rect width="640" height="360" fill="#f4f5fb"/>
+  <rect x="64" y="54" width="512" height="252" rx="24" fill="#ffffff" stroke="#d9d9e3" stroke-width="8"/>
+  <rect x="64" y="54" width="512" height="54" rx="24" fill="#0b6b5b"/>
+  <circle cx="104" cy="82" r="10" fill="#eff8f4"/>
+  <circle cx="134" cy="82" r="10" fill="#eff8f4"/>
+  <circle cx="164" cy="82" r="10" fill="#eff8f4"/>
+  <rect x="104" y="140" width="180" height="22" rx="11" fill="#7ed6c4"/>
+  <rect x="104" y="186" width="228" height="22" rx="11" fill="#f0c36d"/>
+  <rect x="104" y="232" width="156" height="22" rx="11" fill="#b8ddd6"/>
+  <rect x="382" y="136" width="118" height="34" rx="17" fill="#e9f4f1" stroke="#0b6b5b" stroke-width="5"/>
+  <rect x="382" y="184" width="118" height="34" rx="17" fill="#fff4e5" stroke="#b26a00" stroke-width="5"/>
+  <rect x="382" y="232" width="118" height="34" rx="17" fill="#f7e8e8" stroke="#b3261e" stroke-width="5"/>
+  <path d="M522 142l18 18 34-42" fill="none" stroke="#0b6b5b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

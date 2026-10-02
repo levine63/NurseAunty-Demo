@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Shared phone privacy controls</title>
+  <desc id="desc">A shared phone is protected by a shield, a hidden-eye symbol, and a neutral notification dot.</desc>
+  <rect width="640" height="360" rx="24" fill="#f5f0ff"/>
+  <rect x="24" y="24" width="592" height="312" rx="22" fill="#fff" stroke="#a993da" stroke-width="4"/>
+  <g transform="translate(70 48)">
+    <rect x="0" y="0" width="176" height="264" rx="27" fill="#4e466d"/>
+    <rect x="16" y="24" width="144" height="202" rx="12" fill="#f4f2f8"/>
+    <circle cx="88" cy="245" r="9" fill="#c9c2de"/>
+    <rect x="38" y="62" width="100" height="28" rx="14" fill="#d9d5e5"/>
+    <circle cx="126" cy="49" r="11" fill="#d77a65"/>
+    <rect x="38" y="111" width="72" height="18" rx="9" fill="#c9c2de"/>
+    <rect x="38" y="146" width="94" height="18" rx="9" fill="#c9c2de"/>
+  </g>
+  <g transform="translate(278 72)">
+    <path d="M94 0l82 32v69c0 57-33 103-82 126-49-23-82-69-82-126V32z" fill="#d8f0e8" stroke="#397b6b" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M49 103c25-31 65-31 90 0-25 31-65 31-90 0z" fill="#fff" stroke="#51407a" stroke-width="8"/>
+    <circle cx="94" cy="103" r="18" fill="#51407a"/>
+    <path d="M44 154L145 51" stroke="#bc5c58" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(492 118)">
+    <circle cx="56" cy="56" r="48" fill="#f1eff6" stroke="#8c82ad" stroke-width="8"/>
+    <circle cx="56" cy="56" r="13" fill="#8c82ad"/>
+    <circle cx="56" cy="56" r="28" fill="none" stroke="#8c82ad" stroke-width="6" stroke-dasharray="6 10"/>
+  </g>
+</svg>

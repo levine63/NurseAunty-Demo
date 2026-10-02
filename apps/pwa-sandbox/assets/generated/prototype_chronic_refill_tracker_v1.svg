@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Medicine refill reminder</title>
+  <desc id="desc">An unbranded medicine box and bottle sit beside a calendar reminder and an optional camera-photo symbol.</desc>
+  <rect width="640" height="360" rx="24" fill="#fff5ec"/>
+  <rect x="24" y="24" width="592" height="312" rx="22" fill="#fff" stroke="#e5a267" stroke-width="4"/>
+  <g transform="translate(58 100)">
+    <rect x="0" y="35" width="126" height="134" rx="14" fill="#f3c57f" stroke="#8a572d" stroke-width="7"/>
+    <path d="M63 68v68M29 102h68" stroke="#fff" stroke-width="15" stroke-linecap="round"/>
+    <rect x="146" y="55" width="76" height="114" rx="16" fill="#e7efe9" stroke="#537267" stroke-width="7"/>
+    <rect x="160" y="31" width="48" height="32" rx="7" fill="#537267"/>
+    <rect x="158" y="93" width="52" height="36" rx="5" fill="#fff"/>
+  </g>
+  <g transform="translate(326 70)">
+    <rect x="0" y="28" width="194" height="170" rx="15" fill="#f8fbfa" stroke="#397a70" stroke-width="8"/>
+    <rect x="0" y="28" width="194" height="42" rx="12" fill="#63a69c"/>
+    <path d="M45 8v42M149 8v42" stroke="#397a70" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="97" cy="133" r="35" fill="#fde7c7" stroke="#d88339" stroke-width="7"/>
+    <path d="M97 111v25l20 13" fill="none" stroke="#8a572d" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(516 218)">
+    <rect x="0" y="16" width="76" height="58" rx="11" fill="#5f7184"/>
+    <path d="M18 16l10-15h22l10 15" fill="#5f7184"/>
+    <circle cx="38" cy="45" r="16" fill="#dce9ef" stroke="#fff" stroke-width="5"/>
+  </g>
+</svg>

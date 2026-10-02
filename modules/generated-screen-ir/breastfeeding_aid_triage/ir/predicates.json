@@ -1,0 +1,652 @@
+{
+  "about": "Prototype predicate table generated from breastfeeding_aid_triage screen-card clinicalVariableSet.",
+  "guidelineVersionExpected": "prototype-screen-card",
+  "inputs": {
+    "breastfeeding_aid_concern": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "breastfeeding aid concern"
+      },
+      "subjectScopes": [
+        "postpartum_mother",
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "presenting_symptom"
+      ],
+      "prototypeAssignment": "Codex-generated prototype IR from screen-card clinicalVariableSet; replace with formal clinical pipeline output."
+    },
+    "breastfeeding_aid_triage_bfaidinfantcannotfeed": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.infant_cannot_feed"
+      },
+      "subjectScopes": [
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidinfanthardtowake": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.infant_hard_to_wake"
+      },
+      "subjectScopes": [
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidinfantbreathing": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.infant_breathing"
+      },
+      "subjectScopes": [
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidinfantconvulsions": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.infant_convulsions"
+      },
+      "subjectScopes": [
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidinfantveryhotcold": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.infant_temp"
+      },
+      "subjectScopes": [
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidinfantyellowpalms": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.yellow_palms"
+      },
+      "subjectScopes": [
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidmotherbleeding": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.mother_bleeding"
+      },
+      "subjectScopes": [
+        "postpartum_mother"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidmotherfaint": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.mother_faint"
+      },
+      "subjectScopes": [
+        "postpartum_mother"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidmotherbreathless": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.mother_breathless"
+      },
+      "subjectScopes": [
+        "postpartum_mother"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidmotherconvulsions": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.mother_fits"
+      },
+      "subjectScopes": [
+        "postpartum_mother"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidmotherheadache": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.mother_headache"
+      },
+      "subjectScopes": [
+        "postpartum_mother"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidmotherupperbelly": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.mother_upper_belly"
+      },
+      "subjectScopes": [
+        "postpartum_mother"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidmotherfever": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.mother_fever"
+      },
+      "subjectScopes": [
+        "postpartum_mother"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "breastfeeding_aid_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidsmelldischarge": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.mother_discharge"
+      },
+      "subjectScopes": [
+        "postpartum_mother"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "breastfeeding_aid_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidbreastred": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.breast_red"
+      },
+      "subjectScopes": [
+        "postpartum_mother"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "breastfeeding_aid_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidbreastswelling": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.breast_swelling"
+      },
+      "subjectScopes": [
+        "postpartum_mother"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "breastfeeding_aid_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidfeedsfew": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.feeds_few"
+      },
+      "subjectScopes": [
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "breastfeeding_aid_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidwetfew": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.wet_few"
+      },
+      "subjectScopes": [
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "breastfeeding_aid_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidswallowing": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.no_swallowing"
+      },
+      "subjectScopes": [
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "breastfeeding_aid_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidpainfeed": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.pain_feed"
+      },
+      "subjectScopes": [
+        "postpartum_mother",
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "breastfeeding_aid_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidslipoff": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.slips_off"
+      },
+      "subjectScopes": [
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "breastfeeding_aid_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidcracked": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.cracked"
+      },
+      "subjectScopes": [
+        "postpartum_mother"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "breastfeeding_aid_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidwater": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.water"
+      },
+      "subjectScopes": [
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup"
+      ],
+      "followupFor": [
+        "breastfeeding_aid_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidcolostrum": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.bf.q.colostrum"
+      },
+      "subjectScopes": [
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup"
+      ],
+      "followupFor": [
+        "breastfeeding_aid_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidother": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_pnc.other"
+      },
+      "subjectScopes": [
+        "postpartum_mother",
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup"
+      ],
+      "followupFor": [
+        "breastfeeding_aid_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    },
+    "breastfeeding_aid_triage_bfaidnone": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_pnc.none_checked"
+      },
+      "subjectScopes": [
+        "postpartum_mother",
+        "newborn"
+      ],
+      "clinicalVariableRoles": [
+        "safety_gate"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+    }
+  },
+  "predicates": [
+    {
+      "id": "presentation_selected",
+      "label": {
+        "en": "Presentation selected"
+      },
+      "source": "Screen-card presentation metadata",
+      "var": "breastfeeding_aid_concern",
+      "is": true
+    },
+    {
+      "id": "any_general_danger_sign",
+      "label": {
+        "en": "Any subject-specific general danger sign"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged general_danger_sign",
+      "anyOf": [
+        {
+          "var": "breastfeeding_aid_triage_bfaidinfantcannotfeed",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidinfanthardtowake",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidinfantbreathing",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidinfantconvulsions",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidinfantveryhotcold",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidinfantyellowpalms",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidmotherbleeding",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidmotherfaint",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidmotherbreathless",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidmotherconvulsions",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidmotherheadache",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidmotherupperbelly",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_followup_finding",
+      "label": {
+        "en": "Any symptom-specific follow-up finding"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged symptom_followup or clinical_finding",
+      "anyOf": [
+        {
+          "var": "breastfeeding_aid_triage_bfaidinfantcannotfeed",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidinfanthardtowake",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidinfantbreathing",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidinfantconvulsions",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidinfantveryhotcold",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidinfantyellowpalms",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidmotherbleeding",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidmotherfaint",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidmotherbreathless",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidmotherconvulsions",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidmotherheadache",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidmotherupperbelly",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidmotherfever",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidsmelldischarge",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidbreastred",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidbreastswelling",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidfeedsfew",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidwetfew",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidswallowing",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidpainfeed",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidslipoff",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidcracked",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidwater",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidcolostrum",
+          "is": true
+        },
+        {
+          "var": "breastfeeding_aid_triage_bfaidother",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_safety_gate",
+      "label": {
+        "en": "Any safety gate"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged safety_gate",
+      "anyOf": [
+        {
+          "var": "breastfeeding_aid_triage_bfaidnone",
+          "is": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">North India child triage and breathing count draft</title>
+<desc id="desc">A North India clinic courtyard with a caregiver, child, CHW, phone timer, and non-diagnostic warning icons.</desc>
+<rect width="640" height="360" fill="#f7f1e6"/>
+<rect x="32" y="54" width="576" height="250" rx="8" fill="#fffaf0" stroke="#c7a76b" stroke-width="4"/>
+<path d="M64 54h512l-28-28H92z" fill="#c85a3a"/>
+<rect x="78" y="94" width="132" height="150" rx="6" fill="#e6f0ec" stroke="#7aa196" stroke-width="3"/>
+<path d="M96 94q48-52 96 0" fill="#fffaf0" stroke="#7aa196" stroke-width="3"/>
+<circle cx="264" cy="142" r="30" fill="#8b4d32"/>
+<path d="M230 185q34-44 68 0v82h-68z" fill="#1f7a76"/>
+<path d="M221 185q42 28 86 0" fill="none" stroke="#eab56f" stroke-width="14"/>
+<circle cx="378" cy="158" r="22" fill="#7a4b32"/>
+<path d="M354 191q24-34 49 0v62h-49z" fill="#f2c261"/>
+<circle cx="472" cy="139" r="28" fill="#7b4d34"/>
+<path d="M437 181q35-42 70 0v74h-70z" fill="#fff" stroke="#356b62" stroke-width="4"/>
+<rect x="455" y="205" width="46" height="70" rx="8" fill="#263238"/>
+<circle cx="478" cy="240" r="18" fill="#d7f4ee"/>
+<path d="M478 240v-13M478 240h12" stroke="#0b6b5b" stroke-width="4" stroke-linecap="round"/>
+<g fill="#d95757"><circle cx="126" cy="275" r="16"/><circle cx="164" cy="275" r="16"/><circle cx="202" cy="275" r="16"/></g>
+<path d="M112 275h28M150 275h28M188 275h28" stroke="#fff" stroke-width="4"/>
+<path d="M80 310h480" stroke="#d7c6a0" stroke-width="4" stroke-linecap="round"/>
+</svg>

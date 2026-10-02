@@ -1,0 +1,93 @@
+{
+  "$schema": "https://open-nurture.local/schemas/container-measurement-methods.schema.json",
+  "about": "Prototype additive overlay for exact ORS water measurement. It does not replace config/containers.json; each existing ORS container must appear here even when no exact method is approved. visualShowsFills says whether a method's visualAssetRef depicts the fills themselves (five cups leading to a jug, a line to fill to). Only then is the picture the measuring step's whole illustration; otherwise the app draws the sum from the row.",
+  "schemaVersion": "0.1",
+  "catalogVersion": "0.1.0",
+  "releaseStatus": "prototype_only",
+  "verified": false,
+  "reviewStatus": "CODEX Decision - arithmetic checked; clinical, local, phrase, and media review pending",
+  "containers": [
+    {
+      "containerId": "marked_container_1000",
+      "measurementMethods": [
+        {
+          "methodId": "marked_container_verified_1000ml_line",
+          "kind": "marked_line",
+          "targetVolumeMl": 1000,
+          "useMode": "fill_and_mix_in_same_container",
+          "instructionSlug": "tx.ors_marked_container_1000",
+          "visualAssetRef": "img.generated.ors_1l_marked_container_v3",
+          "sourceRef": "source.owner_design.simple_diarrhoea.2026_08_11",
+          "approvalStatus": "unreviewed",
+          "lineVolumeMl": 1000,
+          "lineLabelSlug": "tx.ors_marked_container_1000",
+          "notes": "The marked line is exact for the current 1000 mL sachet volume. Product, clinical, and local review remain required.",
+          "visualShowsFills": true
+        }
+      ]
+    },
+    {
+      "containerId": "small_tea_cup",
+      "measurementMethods": [
+        {
+          "methodId": "small_tea_cup_200ml_five_fills_to_1000ml",
+          "kind": "whole_fills",
+          "targetVolumeMl": 1000,
+          "useMode": "measure_into_separate_vessel",
+          "instructionSlug": "tx.ors.mix.measured_repeats",
+          "visualAssetRef": "img.generated.ors_cup_200ml_measure_v2",
+          "sourceRef": "source.owner_design.simple_diarrhoea.2026_08_11",
+          "approvalStatus": "unreviewed",
+          "fillVolumeMl": 200,
+          "fillCount": 5,
+          "notes": "Arithmetic is exact. Local review must confirm that the pictured cup is a reliably standardized 200 mL measure.",
+          "visualShowsFills": true
+        }
+      ]
+    },
+    {
+      "containerId": "ceramic_mug",
+      "measurementMethods": [],
+      "notes": "A nominal 300 mL mug has no exact whole-fill method for a 1000 mL packet. Do not offer a fractional-fill instruction or infer a fill line."
+    },
+    {
+      "containerId": "water_bottle_500",
+      "measurementMethods": [
+        {
+          "methodId": "water_bottle_500ml_two_fills_to_1000ml",
+          "kind": "whole_fills",
+          "targetVolumeMl": 1000,
+          "useMode": "measure_into_separate_vessel",
+          "instructionSlug": "tx.ors.mix.measured_repeats",
+          "visualAssetRef": "img.generated.ors_container_bottle_500ml_v1",
+          "sourceRef": "source.owner_design.simple_diarrhoea.2026_08_11",
+          "approvalStatus": "unreviewed",
+          "fillVolumeMl": 500,
+          "fillCount": 2,
+          "notes": "Arithmetic is exact. Local review must confirm that the supported bottle is reliably 500 mL when filled as pictured.",
+          "visualShowsFills": false,
+          "visualShowsFillsNote": "The picture is one bottle beside a sachet for scale, not the two fills. Until a photograph of two bottles exists the app draws the sum."
+        }
+      ]
+    },
+    {
+      "containerId": "soda_bottle_1500",
+      "measurementMethods": [
+        {
+          "methodId": "soda_bottle_verified_1000ml_line",
+          "kind": "marked_line",
+          "targetVolumeMl": 1000,
+          "useMode": "fill_and_mix_in_same_container",
+          "instructionSlug": "tx.ors.mix.marked_bottle",
+          "visualAssetRef": "img.generated.ors_container_bottle_1500ml_1l_line_v1",
+          "sourceRef": "source.owner_design.simple_diarrhoea.2026_08_11",
+          "approvalStatus": "unreviewed",
+          "lineVolumeMl": 1000,
+          "lineLabelSlug": "tx.ors_soda_bottle_1500",
+          "notes": "Only a verified visible 1000 mL line is eligible. An unmarked 1500 mL bottle is not an exact measure.",
+          "visualShowsFills": true
+        }
+      ]
+    }
+  ]
+}

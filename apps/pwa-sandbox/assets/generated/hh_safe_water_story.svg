@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Safe water story illustration</title>
+  <desc id="desc">Covered water container, cup, and simple water treatment timer.</desc>
+  <rect width="640" height="360" fill="#eef7fb"/>
+  <rect x="78" y="82" width="178" height="208" rx="38" fill="#8ed0e6" stroke="#176b83" stroke-width="10"/>
+  <path d="M106 86h122l-18-36h-86z" fill="#176b83"/>
+  <rect x="118" y="132" width="98" height="90" rx="24" fill="#d7f1ff"/>
+  <path d="M112 260h110" stroke="#176b83" stroke-width="12" stroke-linecap="round"/>
+  <rect x="328" y="164" width="92" height="112" rx="24" fill="#ffffff" stroke="#0b6b5b" stroke-width="9"/>
+  <path d="M334 214h80" stroke="#7ed6c4" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="514" cy="178" r="64" fill="#ffffff" stroke="#0b6b5b" stroke-width="10"/>
+  <path d="M514 132v48l34 22" fill="none" stroke="#0b6b5b" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="452" cy="84" r="18" fill="#65c4df"/>
+  <circle cx="492" cy="74" r="12" fill="#65c4df"/>
+  <circle cx="532" cy="92" r="20" fill="#65c4df"/>
+  <path d="M92 312h470" stroke="#b8ddd6" stroke-width="20" stroke-linecap="round"/>
+</svg>
