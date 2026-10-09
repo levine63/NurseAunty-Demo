@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Newborn danger screen illustration</title>
+  <desc id="desc">Caregiver holding a newborn with simple warning check icons.</desc>
+  <rect width="640" height="360" fill="#f4f8f5"/>
+  <circle cx="188" cy="102" r="44" fill="#a46442"/>
+  <rect x="136" y="146" width="112" height="150" rx="48" fill="#247a6b"/>
+  <ellipse cx="278" cy="204" rx="94" ry="58" fill="#f7c77f" stroke="#a46442" stroke-width="8"/>
+  <circle cx="240" cy="190" r="8" fill="#1a1a2e"/>
+  <circle cx="286" cy="190" r="8" fill="#1a1a2e"/>
+  <path d="M430 92h92M430 152h92M430 212h92" stroke="#0b6b5b" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="392" cy="92" r="20" fill="#fff4e5" stroke="#b26a00" stroke-width="8"/>
+  <circle cx="392" cy="152" r="20" fill="#fff4e5" stroke="#b26a00" stroke-width="8"/>
+  <circle cx="392" cy="212" r="20" fill="#fff4e5" stroke="#b26a00" stroke-width="8"/>
+  <path d="M92 308h454" stroke="#b8ddd6" stroke-width="18" stroke-linecap="round"/>
+</svg>

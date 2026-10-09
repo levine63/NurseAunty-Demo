@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">Prototype MUAC and swelling sample</title>
+  <desc id="desc">Prototype nutrition visual cue with MUAC tape colors and bilateral foot swelling icon; not a diagnostic reference image.</desc>
+  <rect width="720" height="420" rx="24" fill="#fffdf7"/>
+  <rect x="28" y="28" width="664" height="364" rx="22" fill="#eaf4f2" stroke="#d6d0c3" stroke-width="4"/>
+  <text x="52" y="72" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#24302f">Prototype sample: nutrition concern</text>
+  <text x="52" y="103" font-family="Arial, sans-serif" font-size="15" fill="#5e5146">Illustration only - use local MUAC tape and checklist.</text>
+  <g transform="translate(96 148)">
+    <path d="M78 20c68 12 112 54 140 126" fill="none" stroke="#a96b43" stroke-width="42" stroke-linecap="round"/>
+    <path d="M82 39c54 11 91 48 116 110" fill="none" stroke="#f7f0de" stroke-width="18" stroke-linecap="round"/>
+    <rect x="28" y="0" width="84" height="54" rx="8" fill="#b3261e"/>
+    <rect x="112" y="0" width="84" height="54" fill="#d4a447"/>
+    <rect x="196" y="0" width="84" height="54" rx="8" fill="#287a78"/>
+    <text x="37" y="36" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#fff">RED</text>
+  </g>
+  <g transform="translate(452 162)">
+    <ellipse cx="54" cy="112" rx="52" ry="24" fill="#d7edf2" stroke="#53636a" stroke-width="6"/>
+    <ellipse cx="154" cy="112" rx="52" ry="24" fill="#d7edf2" stroke="#53636a" stroke-width="6"/>
+    <path d="M54 38v60M154 38v60" stroke="#a96b43" stroke-width="28" stroke-linecap="round"/>
+    <path d="M20 148h170" stroke="#b3261e" stroke-width="8" stroke-linecap="round"/>
+    <text x="0" y="188" font-family="Arial, sans-serif" font-size="18" fill="#24302f">Check both feet if worried.</text>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Check an unbranded eye cosmetic before use</title>
+  <desc id="desc">An unbranded kohl or kajal container is examined with a magnifying glass beside an eye and a caution symbol.</desc>
+  <rect width="640" height="360" rx="24" fill="#f6f3ee"/>
+  <rect x="24" y="24" width="592" height="312" rx="22" fill="#fff" stroke="#aaa198" stroke-width="4"/>
+  <g transform="translate(70 84)">
+    <ellipse cx="95" cy="136" rx="70" ry="22" fill="#d8c6a8"/>
+    <rect x="50" y="64" width="90" height="78" rx="18" fill="#333" stroke="#171717" stroke-width="7"/>
+    <ellipse cx="95" cy="64" rx="45" ry="13" fill="#161616"/>
+    <path d="M88 18h14v48H88z" fill="#4d4d4d"/>
+    <path d="M78 18h34" stroke="#171717" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(252 78)">
+    <circle cx="74" cy="76" r="62" fill="none" stroke="#36736c" stroke-width="12"/>
+    <path d="M118 120l67 67" stroke="#36736c" stroke-width="18" stroke-linecap="round"/>
+    <path d="M42 75c19-25 45-25 64 0-19 25-45 25-64 0z" fill="#fff" stroke="#56483f" stroke-width="7"/>
+    <circle cx="74" cy="75" r="13" fill="#2a2521"/>
+  </g>
+  <g transform="translate(478 92)">
+    <path d="M62 5l56 104H6z" fill="#f6c453" stroke="#8a6418" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M62 40v34" stroke="#65470f" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="62" cy="91" r="6" fill="#65470f"/>
+    <path d="M14 170h104" stroke="#bc4b45" stroke-width="14" stroke-linecap="round"/>
+  </g>
+</svg>

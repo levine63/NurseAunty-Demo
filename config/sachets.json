@@ -1,0 +1,77 @@
+{
+  "about": "MOH/NGO-editable catalogue of the ORS sachet sizes THIS deployment stocks. A sachet is a product; a container is a vessel. They live in separate files so one can never be offered in place of the other (MEMO_ORS_SACHET_RESOLUTION section 11.4).\n\nThe app never invents a sachet volume. This prototype stocks exactly one, so the app resolves it and asks the caregiver nothing - it only shows one correctable line, because a deployment can stock one SKU while a caregiver holds a packet from a different shop. A deployment that stocks several lists them all here and the caregiver picks the one printed on her packet. If nothing resolves, the app falls back to the packet's own instruction, which is always correct and never stale.\n\nAdding a second row here changes the flow for every caregiver in an emergency: it turns a zero-question path into a one-question path. That is the right trade only where more than one size is genuinely on the shelf.",
+  "version": "sachets-2026-08-25",
+  "schemaVersion": "0.1",
+  "releaseStatus": "prototype_only",
+  "verified": false,
+  "reviewStatus": "CODEX Decision - volumes and copy drafted; clinical, local, phrase, and media review pending",
+  "resolution": {
+    "order": [
+      "read_the_packet",
+      "what_to_look_for",
+      "photos",
+      "ask_a_health_worker"
+    ],
+    "about": "David, 2026-08-20: 'offer packet first and only do fancy stuff if they need help.' Each step is a smaller ask than the one before it. Naming the text to look for beats a photo grid: printed volume survives repackaging, is not defeated by look-alike foil, and works for SKUs this catalogue has never heard of."
+  },
+  "roundingPolicy": {
+    "value": "exact_only",
+    "allowed": [
+      "exact_only",
+      "round_up_to_next_whole_fill",
+      "approved_part_fill"
+    ],
+    "about": "Deliberately one-directional. There is no option that rounds DOWN: fewer fills than the sachet needs concentrates the salt and carries a hypernatraemia risk, while extra water is merely less effective. Three 300 mL mugs into a 1 L sachet is about 11 percent over-concentrated - the case CMD-002 examined. 'approved_part_fill' additionally requires a clinician-approved part-fill row in config/ors-measurement-methods.json; a deployment cannot enable it for a vessel nobody has approved.",
+    "setBy": "prototype default",
+    "clinicalReview": "pending"
+  },
+  "sachets": [
+    {
+      "id": "sachet_1000",
+      "volumeMl": 1000,
+      "slug": "tx.ors.sachet.volume_1000",
+      "packetTextExamples": [
+        "1 litre",
+        "1 L",
+        "1000 ml"
+      ],
+      "labels": {
+        "en": "1 litre (1000 mL)",
+        "fr": "1 litre (1000 mL)",
+        "hi-IN": "1 लीटर (1000 mL)",
+        "bn-BD": ""
+      },
+      "approvalStatus": "unreviewed",
+      "notes": "The WHO/UNICEF low-osmolarity 1 L sachet. This is the only volume with a full set of measuring methods in config/ors-measurement-methods.json today."
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "sachet-750",
+      "question": "Should 750 mL be offered at all? It divides into no vessel in the current catalogue: 3.75 x 200 mL cups, 1.5 x 500 mL bottles, and no marked line. Options are to leave it unconfigured in locales with no 750-compatible vessel, add a 250 mL vessel so it becomes 3 fills, or accept that it always routes to the packet instruction.",
+      "decidedBy": "David Levine or a localizer, with clinical review",
+      "status": "open",
+      "source": "MEMO_ORS_SACHET_RESOLUTION section 4 and section 11.1"
+    }
+  ],
+  "examplesNotStocked": [
+    {
+      "id": "sachet_500",
+      "volumeMl": 500,
+      "slug": "tx.ors.sachet.volume_500",
+      "packetTextExamples": [
+        "500 ml",
+        "0.5 litre",
+        "half litre"
+      ],
+      "labels": {
+        "en": "500 mL (half a litre)",
+        "fr": "500 mL (un demi-litre)",
+        "hi-IN": "500 mL (आधा लीटर)",
+        "bn-BD": ""
+      },
+      "approvalStatus": "unreviewed",
+      "notes": "Not stocked by this deployment. Kept as a worked example for a localizer adding a second size. The app ignores this list entirely."
+    }
+  ]
+}

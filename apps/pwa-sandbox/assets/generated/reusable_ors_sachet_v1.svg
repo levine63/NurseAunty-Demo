@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 220" role="img" aria-labelledby="title desc">
+  <title id="title">Prototype ORS sachet placeholder</title>
+  <desc id="desc">Unbranded ORS sachet placeholder for prototype scale only; not a real product label.</desc>
+  <rect width="180" height="220" rx="14" fill="#fffdf7"/>
+  <rect x="48" y="36" width="84" height="140" rx="8" fill="#fff" stroke="#66716d" stroke-width="4"/>
+  <path d="M48 70h84" stroke="#d4a447" stroke-width="10"/>
+  <text x="60" y="118" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#287a78">ORS</text>
+  <text x="52" y="154" font-family="Arial, sans-serif" font-size="13" fill="#5e5146">unbranded sample</text>
+  <text x="20" y="205" font-family="Arial, sans-serif" font-size="12" fill="#5e5146">prototype - replace with local photo</text>
+</svg>

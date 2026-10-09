@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="Reusable prototype child neutral pose">
+  <rect width="1000" height="1000" fill="none"/>
+  <ellipse cx="500" cy="905" rx="185" ry="38" fill="#2e3b41" opacity="0.14"/>
+  <path d="M395 410c-48 42-75 119-62 200l42 265h86l11-206h56l11 206h86l42-265c13-81-14-158-62-200-38-34-84-50-125-50s-87 16-125 50Z" fill="#55a6a2" stroke="#24595b" stroke-width="10"/>
+  <path d="M375 466c-72 44-116 96-132 164" fill="none" stroke="#8a5839" stroke-width="38" stroke-linecap="round"/>
+  <path d="M625 466c72 44 116 96 132 164" fill="none" stroke="#8a5839" stroke-width="38" stroke-linecap="round"/>
+  <circle cx="500" cy="263" r="118" fill="#9b6543" stroke="#6b3d2b" stroke-width="10"/>
+  <path d="M382 236c18-95 82-145 150-130 58 13 98 59 106 125-76-37-160-31-256 5Z" fill="#2f2520"/>
+  <circle cx="462" cy="266" r="10" fill="#1f1b18"/>
+  <circle cx="538" cy="266" r="10" fill="#1f1b18"/>
+  <path d="M462 317c26 23 52 23 78 0" fill="none" stroke="#5b3327" stroke-width="9" stroke-linecap="round"/>
+  <path d="M430 875h75M495 875h75" stroke="#2d3638" stroke-width="18" stroke-linecap="round"/>
+</svg>

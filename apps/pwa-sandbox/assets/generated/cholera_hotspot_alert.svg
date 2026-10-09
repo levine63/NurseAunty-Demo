@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Water safety alert illustration</title>
+  <desc id="desc">WASH hotspot alert with water, handwashing, ORS, and clinic symbols.</desc>
+  <rect width="640" height="360" fill="#f7fbf9"/>
+  <path d="M320 54l238 230H82z" fill="#fff4e5" stroke="#b26a00" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M320 132v76" stroke="#b26a00" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="320" cy="244" r="12" fill="#b26a00"/>
+  <rect x="118" y="248" width="88" height="52" rx="20" fill="#8ed0e6" stroke="#176b83" stroke-width="8"/>
+  <circle cx="450" cy="272" r="34" fill="#eff8f4" stroke="#0b6b5b" stroke-width="8"/>
+  <path d="M432 272h36M450 254v36" stroke="#0b6b5b" stroke-width="8" stroke-linecap="round"/>
+  <path d="M242 278c28 18 58 18 86 0" fill="none" stroke="#0b6b5b" stroke-width="12" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,2843 @@
+{
+  "about": "Registry of every caregiver-facing clinical or safety-relevant checklist surface. Registered gates render through the shared clinical checklist component; unchecked controls never imply a negative answer.",
+  "schemaVersion": "0.1",
+  "screens": [
+    {
+      "id": "under5.general_danger",
+      "featureId": "u5_triage",
+      "entry": {
+        "kind": "under5_urgent",
+        "subject": "child_under5",
+        "view": "danger"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_dynamic_gate",
+      "dynamicOptionSource": "triage.generalDangerSigns",
+      "actionId": "triagedangercontinue",
+      "actionSlug": "tx.clinical_screen.under5.continue",
+      "feedbackId": "dangerack",
+      "noneId": "s_no_danger_signs",
+      "noneSlug": "tx.clinical_screen.under5.none",
+      "requiresOther": false,
+      "otherException": "This bounded general-danger gate is followed immediately by a complaint picker with an explicit Other child problem route.",
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "none"
+      ],
+      "renderFunction": "renderUnder5DangerGate",
+      "browserCoverage": true
+    },
+    {
+      "id": "under5.presenting_complaints",
+      "featureId": "u5_triage",
+      "entry": {
+        "kind": "under5_urgent",
+        "subject": "child_under5",
+        "view": "complaints"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "under5_complaints",
+          "legendSlug": "tx.clinical_screen.under5.complaints_legend",
+          "optionIds": [
+            "s_cough",
+            "s_diarrhoea",
+            "s_fever",
+            "s_ear_problem",
+            "s_tooth_mouth",
+            "s_other_problem",
+            "s_no_main_problem"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "s_cough",
+          "labelSlug": "tx.q_cough",
+          "kind": "positive"
+        },
+        {
+          "id": "s_diarrhoea",
+          "labelSlug": "tx.q_diarrhoea",
+          "kind": "positive"
+        },
+        {
+          "id": "s_fever",
+          "labelSlug": "tx.q_fever",
+          "kind": "positive"
+        },
+        {
+          "id": "s_ear_problem",
+          "labelSlug": "tx.q_ear_problem",
+          "kind": "positive"
+        },
+        {
+          "id": "s_tooth_mouth",
+          "labelSlug": "tx.q_tooth_mouth",
+          "kind": "positive"
+        },
+        {
+          "id": "s_other_problem",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "s_no_main_problem",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "triagecomplaintscontinue",
+      "actionSlug": "tx.clinical_screen.under5.continue",
+      "feedbackId": "complaintsfeedback",
+      "otherId": "s_other_problem",
+      "noneId": "s_no_main_problem",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderUnder5ComplaintGate",
+      "browserCoverage": true
+    },
+    {
+      "id": "under5.followup.cough_chest",
+      "featureId": "u5_triage",
+      "entry": {
+        "kind": "under5_urgent",
+        "subject": "child_under5",
+        "view": "cough_chest"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_single_choice",
+      "introSlug": "tx.cough.chest.title",
+      "groups": [
+        {
+          "id": "under5_cough_chest",
+          "legendSlug": "tx.cough.chest.question",
+          "optionIds": [
+            "s_chest_indrawing",
+            "s_cough_chest_unsure",
+            "s_cough_chest_none"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "s_chest_indrawing",
+          "labelSlug": "tx.cough.chest.yes",
+          "kind": "positive"
+        },
+        {
+          "id": "s_cough_chest_unsure",
+          "labelSlug": "tx.cough.not_sure",
+          "kind": "other"
+        },
+        {
+          "id": "s_cough_chest_none",
+          "labelSlug": "tx.cough.chest.no",
+          "kind": "none"
+        }
+      ],
+      "actionId": "coughchestcontinue",
+      "actionSlug": "tx.clinical_screen.under5.continue",
+      "feedbackId": "coughchestfeedback",
+      "noneId": "s_cough_chest_none",
+      "requiresOther": false,
+      "otherException": "This bounded one-observation question uses a Not sure answer; the final symptom question carries the open other-concern route.",
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderUnder5CoughChestGate",
+      "browserCoverage": true
+    },
+    {
+      "id": "under5.followup.cough_sound",
+      "featureId": "u5_triage",
+      "entry": {
+        "kind": "under5_urgent",
+        "subject": "child_under5",
+        "view": "cough_sound"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_single_choice",
+      "introSlug": "tx.cough.sound.title",
+      "groups": [
+        {
+          "id": "under5_cough_sound",
+          "legendSlug": "tx.cough.sound.question",
+          "optionIds": [
+            "s_stridor_calm",
+            "s_cough_sound_unsure",
+            "s_cough_sound_none"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "s_stridor_calm",
+          "labelSlug": "tx.cough.sound.yes",
+          "kind": "positive"
+        },
+        {
+          "id": "s_cough_sound_unsure",
+          "labelSlug": "tx.cough.not_sure",
+          "kind": "other"
+        },
+        {
+          "id": "s_cough_sound_none",
+          "labelSlug": "tx.cough.sound.no",
+          "kind": "none"
+        }
+      ],
+      "actionId": "coughsoundcontinue",
+      "actionSlug": "tx.clinical_screen.under5.continue",
+      "feedbackId": "coughsoundfeedback",
+      "noneId": "s_cough_sound_none",
+      "requiresOther": false,
+      "otherException": "This bounded one-observation question uses a Not sure answer; the final symptom question carries the open other-concern route.",
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderUnder5CoughSoundGate",
+      "browserCoverage": true
+    },
+    {
+      "id": "under5.followup.diarrhoea_stool",
+      "featureId": "u5_triage",
+      "entry": {
+        "kind": "under5_urgent",
+        "subject": "child_under5",
+        "view": "diarrhoea_stool"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "under5_diarrhoea_stool",
+          "legendSlug": "tx.clinical_screen.under5.diarrhoea_stool_legend",
+          "optionIds": [
+            "s_bloody_stool",
+            "s_diarrhoea_stool_none"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "s_bloody_stool",
+          "labelSlug": "tx.q_bloody_stool",
+          "kind": "positive"
+        },
+        {
+          "id": "s_diarrhoea_stool_none",
+          "labelSlug": "tx.clinical_screen.under5.diarrhoea_stool_none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "triagediarrhoeastoolcontinue",
+      "actionSlug": "tx.clinical_screen.under5.diarrhoea_stool_continue",
+      "requiredSlug": "tx.clinical_screen.under5.diarrhoea_stool_answer_required",
+      "feedbackId": "diarrhoeastoolfeedback",
+      "noneId": "s_diarrhoea_stool_none",
+      "requiresOther": false,
+      "otherException": "This is a single bounded stool observation; an open other-concern answer appears in the final dehydration symptom question.",
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "none"
+      ],
+      "renderFunction": "renderUnder5DiarrhoeaStoolGate",
+      "browserCoverage": true
+    },
+    {
+      "id": "under5.followup.diarrhoea_dehydration",
+      "featureId": "u5_triage",
+      "entry": {
+        "kind": "under5_urgent",
+        "subject": "child_under5",
+        "view": "diarrhoea_dehydration"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "under5_diarrhoea_dehydration",
+          "legendSlug": "tx.clinical_screen.under5.diarrhoea_dehydration_legend",
+          "optionIds": [
+            "s_sunken_eyes",
+            "s_skin_pinch_slow",
+            "s_restless_irritable",
+            "s_drinks_eagerly",
+            "s_diarrhoea_dehydration_other",
+            "s_diarrhoea_dehydration_none"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "s_sunken_eyes",
+          "labelSlug": "tx.q_sunken_eyes",
+          "kind": "positive"
+        },
+        {
+          "id": "s_skin_pinch_slow",
+          "labelSlug": "tx.q_skin_pinch_slow",
+          "kind": "positive"
+        },
+        {
+          "id": "s_restless_irritable",
+          "labelSlug": "tx.q_restless_irritable",
+          "kind": "positive"
+        },
+        {
+          "id": "s_drinks_eagerly",
+          "labelSlug": "tx.q_drinks_eagerly",
+          "kind": "positive"
+        },
+        {
+          "id": "s_diarrhoea_dehydration_other",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "s_diarrhoea_dehydration_none",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "triagediarrhoeadehydrationcontinue",
+      "actionSlug": "tx.clinical_screen.under5.continue",
+      "feedbackId": "diarrhoeadehydrationfeedback",
+      "otherId": "s_diarrhoea_dehydration_other",
+      "noneId": "s_diarrhoea_dehydration_none",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderUnder5DiarrhoeaDehydrationGate",
+      "browserCoverage": true
+    },
+    {
+      "id": "under5.followup.fever_course",
+      "featureId": "u5_triage",
+      "entry": {
+        "kind": "under5_urgent",
+        "subject": "child_under5",
+        "view": "fever_course"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "under5_fever_course",
+          "legendSlug": "tx.clinical_screen.under5.fever_course_legend",
+          "optionIds": [
+            "s_measles_rash",
+            "fevernotimproving",
+            "s_fever_other",
+            "s_fever_none"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "s_measles_rash",
+          "labelSlug": "tx.screen_sign_measles_rash",
+          "kind": "positive"
+        },
+        {
+          "id": "fevernotimproving",
+          "labelSlug": "tx.clinical_screen.under5.fever_not_improving",
+          "kind": "positive"
+        },
+        {
+          "id": "s_fever_other",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "s_fever_none",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "triagefevercoursecontinue",
+      "actionSlug": "tx.clinical_screen.under5.continue",
+      "feedbackId": "fevercoursefeedback",
+      "otherId": "s_fever_other",
+      "noneId": "s_fever_none",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderUnder5FeverCourseGate",
+      "browserCoverage": true
+    },
+    {
+      "id": "under5.followup.fever_measurement",
+      "featureId": "u5_triage",
+      "entry": {
+        "kind": "under5_urgent",
+        "subject": "child_under5",
+        "view": "fever_measurement"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "under5_fever_measurement",
+          "legendSlug": "tx.clinical_screen.under5.fever_measurement_legend",
+          "optionIds": [
+            "s_fever_measurement_other",
+            "s_fever_measurement_none"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "s_fever_measurement_other",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "s_fever_measurement_none",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "triagefevermeasurementcontinue",
+      "actionSlug": "tx.clinical_screen.under5.continue",
+      "feedbackId": "fevermeasurementfeedback",
+      "otherId": "s_fever_measurement_other",
+      "noneId": "s_fever_measurement_none",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderUnder5FeverMeasurementGate",
+      "browserCoverage": true
+    },
+    {
+      "id": "under5.followup.ear",
+      "featureId": "u5_triage",
+      "entry": {
+        "kind": "under5_urgent",
+        "subject": "child_under5",
+        "view": "ear"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "under5_ear",
+          "legendSlug": "tx.clinical_screen.under5.ear_legend",
+          "optionIds": [
+            "s_ear_discharge",
+            "s_ear_swelling_behind",
+            "s_ear_other",
+            "s_ear_none"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "s_ear_discharge",
+          "labelSlug": "tx.q_ear_discharge",
+          "kind": "positive"
+        },
+        {
+          "id": "s_ear_swelling_behind",
+          "labelSlug": "tx.q_ear_swelling_behind",
+          "kind": "positive"
+        },
+        {
+          "id": "s_ear_other",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "s_ear_none",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "triageearcontinue",
+      "actionSlug": "tx.clinical_screen.under5.continue",
+      "feedbackId": "under5earfeedback",
+      "otherId": "s_ear_other",
+      "noneId": "s_ear_none",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderUnder5EarGate",
+      "browserCoverage": true
+    },
+    {
+      "id": "under5.followup.tooth_mouth",
+      "featureId": "u5_triage",
+      "entry": {
+        "kind": "under5_urgent",
+        "subject": "child_under5",
+        "view": "tooth_mouth"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "under5_tooth_mouth",
+          "legendSlug": "tx.clinical_screen.under5.tooth_legend",
+          "optionIds": [
+            "s_tooth_severe_pain",
+            "s_mouth_face_swelling",
+            "s_mouth_injury_bleeding",
+            "s_mouth_breathing_swallowing",
+            "s_tooth_mouth_other",
+            "s_tooth_mouth_none"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "s_tooth_severe_pain",
+          "labelSlug": "tx.q_tooth_severe_pain",
+          "kind": "positive"
+        },
+        {
+          "id": "s_mouth_face_swelling",
+          "labelSlug": "tx.q_mouth_face_swelling",
+          "kind": "positive"
+        },
+        {
+          "id": "s_mouth_injury_bleeding",
+          "labelSlug": "tx.q_mouth_injury_bleeding",
+          "kind": "positive"
+        },
+        {
+          "id": "s_mouth_breathing_swallowing",
+          "labelSlug": "tx.q_mouth_breathing_swallowing",
+          "kind": "positive"
+        },
+        {
+          "id": "s_tooth_mouth_other",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "s_tooth_mouth_none",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "triagetoothcontinue",
+      "actionSlug": "tx.clinical_screen.under5.continue",
+      "feedbackId": "under5toothfeedback",
+      "otherId": "s_tooth_mouth_other",
+      "noneId": "s_tooth_mouth_none",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderUnder5ToothMouthGate",
+      "browserCoverage": true
+    },
+    {
+      "id": "under5.followup.measles",
+      "featureId": "u5_triage",
+      "entry": {
+        "kind": "under5_urgent",
+        "subject": "child_under5",
+        "view": "measles"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "under5_measles",
+          "legendSlug": "tx.clinical_screen.what_happening",
+          "optionIds": [
+            "s_measles_cough",
+            "s_measles_eyes",
+            "s_measles_mouth",
+            "s_measles_breathing",
+            "s_measles_other",
+            "s_measles_none"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "s_measles_cough",
+          "labelSlug": "tx.clinical_screen.measles.cough",
+          "kind": "positive"
+        },
+        {
+          "id": "s_measles_eyes",
+          "labelSlug": "tx.clinical_screen.measles.eyes",
+          "kind": "positive"
+        },
+        {
+          "id": "s_measles_mouth",
+          "labelSlug": "tx.clinical_screen.measles.mouth",
+          "kind": "positive"
+        },
+        {
+          "id": "s_measles_breathing",
+          "labelSlug": "tx.clinical_screen.measles.breathing",
+          "kind": "positive"
+        },
+        {
+          "id": "s_measles_other",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "s_measles_none",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "triagemeaslescontinue",
+      "actionSlug": "tx.clinical_screen.under5.continue",
+      "feedbackId": "under5measlesfeedback",
+      "otherId": "s_measles_other",
+      "noneId": "s_measles_none",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderUnder5MeaslesGate",
+      "browserCoverage": true
+    },
+    {
+      "id": "dental_triage.main",
+      "featureId": "dental_triage",
+      "entry": {
+        "kind": "catalog",
+        "launch": "dental.triage"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "dental_signs",
+          "legendSlug": "tx.clinical_screen.dental.legend",
+          "optionIds": [
+            "dentalbreathing",
+            "dentalswelling",
+            "dentalfever",
+            "dentalinjury",
+            "dentalpain",
+            "dentalbleeding",
+            "dentalother",
+            "dentalnone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "dentalbreathing",
+          "labelSlug": "tx.clinical_screen.dental.breathing",
+          "kind": "positive"
+        },
+        {
+          "id": "dentalswelling",
+          "labelSlug": "tx.clinical_screen.dental.swelling",
+          "kind": "positive"
+        },
+        {
+          "id": "dentalfever",
+          "labelSlug": "tx.clinical_screen.dental.fever",
+          "kind": "positive"
+        },
+        {
+          "id": "dentalinjury",
+          "labelSlug": "tx.clinical_screen.dental.injury",
+          "kind": "positive"
+        },
+        {
+          "id": "dentalpain",
+          "labelSlug": "tx.clinical_screen.dental.pain",
+          "kind": "positive"
+        },
+        {
+          "id": "dentalbleeding",
+          "labelSlug": "tx.clinical_screen.dental.bleeding",
+          "kind": "positive"
+        },
+        {
+          "id": "dentalother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "dentalnone",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "dentalreview",
+      "actionSlug": "tx.danger_checklist.review_action",
+      "feedbackId": "dentalfeedback",
+      "otherId": "dentalother",
+      "noneId": "dentalnone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderDentalTriageChecklist",
+      "browserCoverage": true
+    },
+    {
+      "id": "breastfeeding_aid.baby_urgent",
+      "featureId": "breastfeeding_aid_triage",
+      "entry": {
+        "kind": "progressive",
+        "launch": "screen.breastfeeding_aid_triage",
+        "intent": "urgent_check",
+        "view": "baby_urgent"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "bf_baby",
+          "legendSlug": "tx.clinical_screen.bf.baby_legend",
+          "optionIds": [
+            "bfaidinfantcannotfeed",
+            "bfaidinfanthardtowake",
+            "bfaidinfantbreathing",
+            "bfaidinfantconvulsions",
+            "bfaidinfantveryhotcold",
+            "bfaidinfantyellowpalms",
+            "bfaidbabyother",
+            "bfaidbabynone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "bfaidinfantcannotfeed",
+          "labelSlug": "tx.bf.q.infant_cannot_feed",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidinfanthardtowake",
+          "labelSlug": "tx.bf.q.infant_hard_to_wake",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidinfantbreathing",
+          "labelSlug": "tx.bf.q.infant_breathing",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidinfantconvulsions",
+          "labelSlug": "tx.bf.q.infant_convulsions",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidinfantveryhotcold",
+          "labelSlug": "tx.bf.q.infant_temp",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidinfantyellowpalms",
+          "labelSlug": "tx.bf.q.yellow_palms",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidbabyother",
+          "stateId": "bfaidother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "bfaidbabynone",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "bfaidbabyreview",
+      "actionSlug": "tx.clinical_screen.bf.action",
+      "feedbackId": "bfaidbabyfeedback",
+      "otherId": "bfaidbabyother",
+      "noneId": "bfaidbabynone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderBreastfeedingAidTriage",
+      "browserCoverage": true
+    },
+    {
+      "id": "breastfeeding_aid.mother_urgent",
+      "featureId": "breastfeeding_aid_triage",
+      "entry": {
+        "kind": "progressive",
+        "launch": "screen.breastfeeding_aid_triage",
+        "intent": "urgent_check",
+        "view": "mother_urgent"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "bf_mother",
+          "legendSlug": "tx.clinical_screen.bf.mother_legend",
+          "optionIds": [
+            "bfaidmotherbleeding",
+            "bfaidmotherfaint",
+            "bfaidmotherbreathless",
+            "bfaidmotherconvulsions",
+            "bfaidmotherheadache",
+            "bfaidmotherupperbelly",
+            "bfaidmotherfever",
+            "bfaidsmelldischarge",
+            "bfaidmotherother",
+            "bfaidmothernone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "bfaidmotherbleeding",
+          "labelSlug": "tx.bf.q.mother_bleeding",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidmotherfaint",
+          "labelSlug": "tx.bf.q.mother_faint",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidmotherbreathless",
+          "labelSlug": "tx.bf.q.mother_breathless",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidmotherconvulsions",
+          "labelSlug": "tx.bf.q.mother_fits",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidmotherheadache",
+          "labelSlug": "tx.bf.q.mother_headache",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidmotherupperbelly",
+          "labelSlug": "tx.bf.q.mother_upper_belly",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidmotherfever",
+          "labelSlug": "tx.bf.q.mother_fever",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidsmelldischarge",
+          "labelSlug": "tx.bf.q.mother_discharge",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidmotherother",
+          "stateId": "bfaidother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "bfaidmothernone",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "bfaidmotherreview",
+      "actionSlug": "tx.clinical_screen.bf.action",
+      "feedbackId": "bfaidmotherfeedback",
+      "otherId": "bfaidmotherother",
+      "noneId": "bfaidmothernone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderBreastfeedingAidTriage",
+      "browserCoverage": true
+    },
+    {
+      "id": "breastfeeding_aid.feeding",
+      "featureId": "breastfeeding_aid_triage",
+      "entry": {
+        "kind": "progressive",
+        "launch": "screen.breastfeeding_aid_triage",
+        "intent": "urgent_check",
+        "view": "feeding"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "bf_feeding",
+          "legendSlug": "tx.clinical_screen.bf.feeding_legend",
+          "optionIds": [
+            "bfaidfeedsfew",
+            "bfaidwetfew",
+            "bfaidswallowing",
+            "bfaidfeedingother",
+            "bfaidfeedingnone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "bfaidfeedsfew",
+          "labelSlug": "tx.bf.q.feeds_few",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidwetfew",
+          "labelSlug": "tx.bf.q.wet_few",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidswallowing",
+          "labelSlug": "tx.bf.q.no_swallowing",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidfeedingother",
+          "stateId": "bfaidother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "bfaidfeedingnone",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "bfaidfeedingreview",
+      "actionSlug": "tx.clinical_screen.bf.action",
+      "feedbackId": "bfaidfeedingfeedback",
+      "otherId": "bfaidfeedingother",
+      "noneId": "bfaidfeedingnone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderBreastfeedingAidTriage",
+      "browserCoverage": true
+    },
+    {
+      "id": "breastfeeding_aid.breast",
+      "featureId": "breastfeeding_aid_triage",
+      "entry": {
+        "kind": "progressive",
+        "launch": "screen.breastfeeding_aid_triage",
+        "intent": "urgent_check",
+        "view": "breast"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "bf_breast",
+          "legendSlug": "tx.clinical_screen.bf.feeding_legend",
+          "optionIds": [
+            "bfaidbreastred",
+            "bfaidbreastswelling",
+            "bfaidbreastother",
+            "bfaidbreastnone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "bfaidbreastred",
+          "labelSlug": "tx.bf.q.breast_red",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidbreastswelling",
+          "labelSlug": "tx.bf.q.breast_swelling",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidbreastother",
+          "stateId": "bfaidother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "bfaidbreastnone",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "bfaidbreastreview",
+      "actionSlug": "tx.clinical_screen.bf.action",
+      "feedbackId": "bfaidbreastfeedback",
+      "otherId": "bfaidbreastother",
+      "noneId": "bfaidbreastnone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderBreastfeedingAidTriage",
+      "browserCoverage": true
+    },
+    {
+      "id": "breastfeeding_aid.attachment",
+      "featureId": "breastfeeding_aid_triage",
+      "entry": {
+        "kind": "progressive",
+        "launch": "screen.breastfeeding_aid_triage",
+        "intent": "urgent_check",
+        "view": "attachment"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "bf_attachment",
+          "legendSlug": "tx.clinical_screen.bf.attachment_legend",
+          "optionIds": [
+            "bfaidpainfeed",
+            "bfaidslipoff",
+            "bfaidcracked",
+            "bfaidwater",
+            "bfaidcolostrum",
+            "bfaidattachmentother",
+            "bfaidattachmentnone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "bfaidpainfeed",
+          "labelSlug": "tx.bf.q.pain_feed",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidslipoff",
+          "labelSlug": "tx.bf.q.slips_off",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidcracked",
+          "labelSlug": "tx.bf.q.cracked",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidwater",
+          "labelSlug": "tx.bf.q.water",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidcolostrum",
+          "labelSlug": "tx.bf.q.colostrum",
+          "kind": "positive"
+        },
+        {
+          "id": "bfaidattachmentother",
+          "stateId": "bfaidother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "bfaidattachmentnone",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "bfaidattachmentreview",
+      "actionSlug": "tx.clinical_screen.bf.action",
+      "feedbackId": "bfaidattachmentfeedback",
+      "otherId": "bfaidattachmentother",
+      "noneId": "bfaidattachmentnone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderBreastfeedingAidTriage",
+      "browserCoverage": true
+    },
+    {
+      "id": "kohl_lead.main",
+      "featureId": "kohl_lead_screen",
+      "entry": {
+        "kind": "catalog",
+        "launch": "screen.kohl_lead_screen"
+      },
+      "riskTier": "safety_relevant",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "kohl",
+          "legendSlug": "tx.clinical_screen.what_happening",
+          "optionIds": [
+            "kohlchild",
+            "kohlpregnant",
+            "kohlunknown",
+            "kohlaway",
+            "kohlother",
+            "kohlnone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "kohlchild",
+          "labelSlug": "tx.screen_sign_kohl_used_child",
+          "kind": "positive"
+        },
+        {
+          "id": "kohlpregnant",
+          "labelSlug": "tx.screen_sign_kohl_used_pregnant",
+          "kind": "positive"
+        },
+        {
+          "id": "kohlunknown",
+          "labelSlug": "tx.screen_sign_product_unknown",
+          "kind": "positive"
+        },
+        {
+          "id": "kohlaway",
+          "labelSlug": "tx.clinical_screen.kohl.away",
+          "kind": "positive"
+        },
+        {
+          "id": "kohlother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "kohlnone",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "kohlreview",
+      "actionSlug": "tx.danger_checklist.review_action",
+      "feedbackId": "kohlfeedback",
+      "otherId": "kohlother",
+      "noneId": "kohlnone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderKohlLeadChecklist",
+      "resultPlan": {
+        "about": "Template T3 data: what this screen calls each option in a sentence, and which result each answer produces. Rules are first-match-wins in this order, which is the order the hand-written renderer used.",
+        "reviewNote": "Kohl lead exposure checklist. Exposure education only.",
+        "againId": "kohlcheckagain",
+        "bodySlug": "tx.screen_kohl_body",
+        "excludeFromDecision": [
+          "kohlnone"
+        ],
+        "optionNames": {
+          "kohlchild": "child use",
+          "kohlpregnant": "pregnancy or nursing use",
+          "kohlunknown": "unknown or imported product",
+          "kohlaway": "product kept away from children",
+          "kohlother": "another concern"
+        },
+        "rules": [
+          {
+            "whenOnlyChecked": "kohlother",
+            "kind": "refer",
+            "careRoute": "professional",
+            "severity": "routine_clinic",
+            "titleFrom": "friendlyOther",
+            "bodyFrom": "friendlyOther"
+          },
+          {
+            "whenSeverity": "routine_clinic",
+            "whenAnyChecked": [
+              "kohlchild",
+              "kohlpregnant",
+              "kohlunknown"
+            ],
+            "kind": "refer",
+            "careRoute": "child_clinic",
+            "titleSlug": "tx.feature_kohl_lead_screen",
+            "bodySlug": "tx.screen_kohl.exposure"
+          },
+          {
+            "whenChecked": "kohlaway",
+            "kind": "home",
+            "titleSlug": "tx.feature_kohl_lead_screen",
+            "bodySlug": "tx.screen_kohl.away"
+          },
+          {
+            "kind": "home",
+            "titleSlug": "tx.feature_kohl_lead_screen",
+            "bodySlug": "tx.danger_checklist.none_result"
+          }
+        ]
+      },
+      "browserCoverage": true
+    },
+    {
+      "id": "child_vision.main",
+      "featureId": "child_vision_screen",
+      "entry": {
+        "kind": "catalog",
+        "launch": "screen.child_vision_screen"
+      },
+      "riskTier": "safety_relevant",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "vision",
+          "legendSlug": "tx.clinical_screen.what_happening",
+          "optionIds": [
+            "visionsquint",
+            "visionrub",
+            "visionheadache",
+            "visionurgent",
+            "visionteacher",
+            "visionother",
+            "visionnone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "visionsquint",
+          "labelSlug": "tx.screen_sign_squinting",
+          "kind": "positive"
+        },
+        {
+          "id": "visionrub",
+          "labelSlug": "tx.screen_sign_eye_rubbing",
+          "kind": "positive"
+        },
+        {
+          "id": "visionheadache",
+          "labelSlug": "tx.screen_sign_headaches_schoolwork",
+          "kind": "positive"
+        },
+        {
+          "id": "visionurgent",
+          "labelSlug": "tx.clinical_screen.vision.urgent",
+          "kind": "positive"
+        },
+        {
+          "id": "visionteacher",
+          "labelSlug": "tx.clinical_screen.vision.teacher",
+          "kind": "positive"
+        },
+        {
+          "id": "visionother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "visionnone",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "visionreview",
+      "actionSlug": "tx.danger_checklist.review_action",
+      "feedbackId": "visionfeedback",
+      "otherId": "visionother",
+      "noneId": "visionnone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "resultPlan": {
+        "about": "Template T3 data. Rules are first-match-wins in this order, transcribed from the render function this replaced.",
+        "reviewStyle": "review",
+        "reviewNote": "Child vision referral checklist. Referral support only; not a vision test.",
+        "againId": "visioncheckagain",
+        "bodySlug": "tx.screen_vision_body",
+        "titleSlug": "tx.feature_child_vision_screen",
+        "excludeNoneFromDecision": true,
+        "optionNames": {
+          "visionsquint": "squinting",
+          "visionrub": "eye rubbing or discomfort",
+          "visionheadache": "headaches or trouble after reading/schoolwork",
+          "visionteacher": "caregiver/teacher concern",
+          "visionurgent": "sudden vision change, eye injury, or severe eye pain",
+          "visionother": "another vision concern"
+        },
+        "rules": [
+          {
+            "whenOnlyChecked": "visionother",
+            "kind": "refer",
+            "careRoute": "professional",
+            "severity": "routine_clinic",
+            "titleFrom": "friendlyOther",
+            "bodyFrom": "friendlyOther"
+          },
+          {
+            "whenSeverity": "emergency",
+            "kind": "refer",
+            "careRoute": "child_clinic",
+            "titleSlug": "tx.feature_child_vision_screen",
+            "bodySlug": "tx.screen_vision.urgent"
+          },
+          {
+            "whenSeverity": "routine_clinic",
+            "kind": "refer",
+            "careRoute": "child_clinic",
+            "titleSlug": "tx.feature_child_vision_screen",
+            "bodySlug": "tx.screen_vision.concerns"
+          },
+          {
+            "kind": "home",
+            "titleSlug": "tx.feature_child_vision_screen",
+            "bodySlug": "tx.danger_checklist.none_result"
+          }
+        ]
+      },
+      "renderFunction": "renderChildVisionChecklist",
+      "browserCoverage": true
+    },
+    {
+      "id": "child_hearing.main",
+      "featureId": "child_hearing_screen",
+      "entry": {
+        "kind": "catalog",
+        "launch": "screen.child_hearing_screen"
+      },
+      "riskTier": "safety_relevant",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "hearing",
+          "legendSlug": "tx.clinical_screen.what_happening",
+          "optionIds": [
+            "hearingconcern",
+            "hearingspeech",
+            "hearingfailed",
+            "hearingspecialist",
+            "hearinginfant",
+            "hearingother",
+            "hearingnone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "hearingconcern",
+          "labelSlug": "tx.screen_sign_hearing_concern",
+          "kind": "positive"
+        },
+        {
+          "id": "hearingspeech",
+          "labelSlug": "tx.screen_sign_speech_delay",
+          "kind": "positive"
+        },
+        {
+          "id": "hearingfailed",
+          "labelSlug": "tx.screen_sign_failed_hearing_screen",
+          "kind": "positive"
+        },
+        {
+          "id": "hearingspecialist",
+          "labelSlug": "tx.screen_sign_hearing_specialist",
+          "kind": "positive"
+        },
+        {
+          "id": "hearinginfant",
+          "labelSlug": "tx.clinical_screen.hearing.infant",
+          "kind": "positive"
+        },
+        {
+          "id": "hearingother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "hearingnone",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "hearingreview",
+      "actionSlug": "tx.danger_checklist.review_action",
+      "feedbackId": "hearingfeedback",
+      "otherId": "hearingother",
+      "noneId": "hearingnone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "resultPlan": {
+        "about": "Template T3 data. Rules are first-match-wins in this order, transcribed from the render function this replaced.",
+        "reviewStyle": "review",
+        "reviewNote": "Child hearing referral checklist. Referral support only; not a hearing test.",
+        "againId": "hearingcheckagain",
+        "bodySlug": "tx.screen_hearing_body",
+        "titleSlug": "tx.feature_child_hearing_screen",
+        "excludeNoneFromDecision": true,
+        "optionNames": {
+          "hearingconcern": "caregiver concern",
+          "hearingspeech": "speech or language concern",
+          "hearingfailed": "failed or missed hearing screening follow-up",
+          "hearingspecialist": "hearing specialist follow-up",
+          "hearinginfant": "infant 1-3-6 follow-up timing",
+          "hearingother": "another hearing concern"
+        },
+        "rules": [
+          {
+            "whenOnlyChecked": "hearingother",
+            "kind": "refer",
+            "careRoute": "professional",
+            "severity": "routine_clinic",
+            "titleFrom": "friendlyOther",
+            "bodyFrom": "friendlyOther"
+          },
+          {
+            "whenSeverity": "routine_clinic",
+            "whenChecked": "hearinginfant",
+            "kind": "refer",
+            "careRoute": "child_clinic",
+            "titleSlug": "tx.feature_child_hearing_screen",
+            "bodySlug": "tx.screen_hearing.infant_pathway"
+          },
+          {
+            "whenSeverity": "routine_clinic",
+            "whenChecked": "hearingfailed",
+            "kind": "refer",
+            "careRoute": "child_clinic",
+            "titleSlug": "tx.feature_child_hearing_screen",
+            "bodySlug": "tx.screen_hearing.failed_screen"
+          },
+          {
+            "whenSeverity": "routine_clinic",
+            "kind": "refer",
+            "careRoute": "child_clinic",
+            "titleSlug": "tx.feature_child_hearing_screen",
+            "bodySlug": "tx.screen_hearing.concerns"
+          },
+          {
+            "kind": "home",
+            "titleSlug": "tx.feature_child_hearing_screen",
+            "bodySlug": "tx.danger_checklist.none_result"
+          }
+        ]
+      },
+      "renderFunction": "renderChildHearingChecklist",
+      "browserCoverage": true
+    },
+    {
+      "id": "pregnancy.urgent",
+      "featureId": "anc_triage",
+      "entry": {
+        "kind": "person_urgent",
+        "subject": "pregnancy"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "pregnancy_urgent",
+          "legendSlug": "tx.urgent_pregnancy.title",
+          "optionIds": [
+            "urgent_preg_bleeding",
+            "urgent_preg_headvision",
+            "urgent_preg_breathing",
+            "urgent_preg_painfever",
+            "urgent_preg_movement",
+            "urgent_labor_contractions",
+            "urgent_preg_unsafe",
+            "urgent_preg_other",
+            "urgent_preg_none"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "urgent_preg_bleeding",
+          "labelSlug": "tx.clinical_screen.pregnancy.bleeding",
+          "kind": "positive"
+        },
+        {
+          "id": "urgent_preg_headvision",
+          "labelSlug": "tx.clinical_screen.pregnancy.headvision",
+          "kind": "positive"
+        },
+        {
+          "id": "urgent_preg_breathing",
+          "labelSlug": "tx.clinical_screen.pregnancy.breathing",
+          "kind": "positive"
+        },
+        {
+          "id": "urgent_preg_painfever",
+          "labelSlug": "tx.clinical_screen.pregnancy.painfever",
+          "kind": "positive"
+        },
+        {
+          "id": "urgent_preg_movement",
+          "labelSlug": "tx.clinical_screen.pregnancy.movement",
+          "kind": "positive"
+        },
+        {
+          "id": "urgent_labor_contractions",
+          "labelSlug": "tx.clinical_screen.pregnancy.labor",
+          "kind": "positive"
+        },
+        {
+          "id": "urgent_preg_unsafe",
+          "labelSlug": "tx.clinical_screen.pregnancy.unsafe",
+          "kind": "positive"
+        },
+        {
+          "id": "urgent_preg_other",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "urgent_preg_none",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "urgentpregreview",
+      "actionSlug": "tx.danger_checklist.review_action",
+      "feedbackId": "urgentpregfeedback",
+      "otherId": "urgent_preg_other",
+      "noneId": "urgent_preg_none",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderPregnancyUrgentIntake",
+      "resultPlan": {
+        "about": "Template T3 data. First-match-wins in the hand-written order: the explicit negative first, then a bare Other concern, then a labor concern on its own, then everything else as an urgent pregnancy result. This screen pools two features, so its reviewer disclosure is the combined one, and it addresses a named person.",
+        "reviewStyle": "combined",
+        "reviewNote": "Pregnancy urgent intake. Pooled danger signs and presenting concerns.",
+        "featureIds": [
+          "anc_triage",
+          "labor_clock"
+        ],
+        "personNamePlaceholder": "personName",
+        "againId": "urgentpregcheckagain",
+        "againSlug": "tx.pregnancy_check.check_again",
+        "bodySlug": "tx.urgent_pregnancy.intro",
+        "excludeFromDecision": [
+          "urgent_preg_none"
+        ],
+        "optionNames": {
+          "urgent_preg_bleeding": "bleeding, fluid leaking, or bad-smelling discharge",
+          "urgent_preg_headvision": "severe headache, vision change, dizziness, fainting, or face/hand swelling",
+          "urgent_preg_breathing": "trouble breathing, chest pain, or fast heartbeat",
+          "urgent_preg_painfever": "severe belly pain, fever, or severe vomiting/unable to drink",
+          "urgent_preg_movement": "baby movement stopped or slowed",
+          "urgent_labor_contractions": "regular contractions, waters breaking, or labor concern",
+          "urgent_preg_unsafe": "thoughts of harm or feeling unsafe",
+          "urgent_preg_other": "other pregnancy concern not listed",
+          "urgent_preg_none": "none of these"
+        },
+        "rules": [
+          {
+            "whenChecked": "urgent_preg_none",
+            "kind": "home",
+            "screenId": "pregnancy.urgent.result.none",
+            "titleSlug": "tx.screen_anc.none_title",
+            "bodySlug": "tx.danger_checklist.none_result",
+            "nextActionSlug": "tx.result.action_watch_safety"
+          },
+          {
+            "whenOnlyChecked": "urgent_preg_other",
+            "kind": "refer",
+            "screenId": "pregnancy.urgent.result.other",
+            "careRoute": "maternity_clinic",
+            "severity": "routine_clinic",
+            "titleFrom": "friendlyOther",
+            "bodyFrom": "pregnancyOther"
+          },
+          {
+            "whenOnlyChecked": "urgent_labor_contractions",
+            "kind": "refer",
+            "screenId": "pregnancy.urgent.result.labor",
+            "careRoute": "maternity_clinic",
+            "severityFrom": "decision",
+            "titleSlug": "tx.urgent_pregnancy.labor_title",
+            "bodySlug": "tx.urgent_pregnancy.labor"
+          },
+          {
+            "kind": "refer",
+            "screenId": "pregnancy.urgent.result.urgent",
+            "careRoute": "maternity_clinic",
+            "severityFrom": "decision",
+            "titleSlug": "tx.screen_anc.urgent_title",
+            "bodySlug": "tx.urgent_pregnancy.urgent"
+          }
+        ]
+      },
+      "browserCoverage": true
+    },
+    {
+      "id": "pregnancy.catalog",
+      "featureId": "anc_triage",
+      "entry": {
+        "kind": "catalog",
+        "launch": "screen.anc_triage"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "pregnancy",
+          "legendSlug": "tx.feature_anc_triage",
+          "optionIds": [
+            "pregbleeding",
+            "pregheadvision",
+            "pregbreathing",
+            "pregpainfever",
+            "pregmovement",
+            "pregharming",
+            "pregother",
+            "pregnone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "pregbleeding",
+          "labelSlug": "tx.clinical_screen.pregnancy.catalog_bleeding",
+          "kind": "positive"
+        },
+        {
+          "id": "pregheadvision",
+          "labelSlug": "tx.clinical_screen.pregnancy.catalog_headvision",
+          "kind": "positive"
+        },
+        {
+          "id": "pregbreathing",
+          "labelSlug": "tx.clinical_screen.pregnancy.catalog_breathing",
+          "kind": "positive"
+        },
+        {
+          "id": "pregpainfever",
+          "labelSlug": "tx.clinical_screen.pregnancy.catalog_painfever",
+          "kind": "positive"
+        },
+        {
+          "id": "pregmovement",
+          "labelSlug": "tx.clinical_screen.pregnancy.catalog_movement",
+          "kind": "positive"
+        },
+        {
+          "id": "pregharming",
+          "labelSlug": "tx.clinical_screen.pregnancy.catalog_unsafe",
+          "kind": "positive"
+        },
+        {
+          "id": "pregother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "pregnone",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "pregreview",
+      "actionSlug": "tx.danger_checklist.review_action",
+      "feedbackId": "pregfeedback",
+      "otherId": "pregother",
+      "noneId": "pregnone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderPregnancyDangerChecklist",
+      "resultPlan": {
+        "about": "Template T3 data. First-match-wins in the hand-written order: the explicit negative is answered first, then a bare Other concern, then an emergency severity, and anything else falls through to the same Other-concern wording.",
+        "reviewNote": "Pregnancy danger checklist. Conservative urgent-routing support only.",
+        "againId": "pregcheckagain",
+        "againSlug": "tx.pregnancy_check.check_again",
+        "bodySlug": "tx.screen_anc_body",
+        "excludeFromDecision": [
+          "pregnone"
+        ],
+        "optionNames": {
+          "pregbleeding": "bleeding, fluid leaking, or bad-smelling discharge",
+          "pregheadvision": "severe headache, vision changes, dizziness, fainting, or extreme face/hand swelling",
+          "pregbreathing": "trouble breathing, chest pain, or fast-beating heart",
+          "pregpainfever": "severe belly pain, fever, or severe vomiting/unable to drink",
+          "pregmovement": "baby movement stopping or slowing",
+          "pregharming": "thoughts of harming self or baby, or feeling unsafe",
+          "pregother": "another pregnancy concern"
+        },
+        "rules": [
+          {
+            "whenChecked": "pregnone",
+            "kind": "home",
+            "titleSlug": "tx.screen_anc.none_title",
+            "bodySlug": "tx.danger_checklist.none_result",
+            "nextActionSlug": "tx.result.action_watch_safety"
+          },
+          {
+            "whenOnlyChecked": "pregother",
+            "kind": "refer",
+            "screenId": "pregnancy.catalog.result.other",
+            "careRoute": "maternity_clinic",
+            "severityFrom": "decision",
+            "titleSlug": "tx.screen_anc.other_title",
+            "bodyFrom": "pregnancyOther"
+          },
+          {
+            "whenSeverity": "emergency",
+            "kind": "refer",
+            "careRoute": "maternity_clinic",
+            "titleSlug": "tx.screen_anc.urgent_title",
+            "bodySlug": "tx.screen_anc.urgent"
+          },
+          {
+            "kind": "refer",
+            "careRoute": "maternity_clinic",
+            "severityFrom": "decision",
+            "titleSlug": "tx.screen_anc.other_title",
+            "bodyFrom": "pregnancyOther"
+          }
+        ]
+      },
+      "browserCoverage": true
+    },
+    {
+      "id": "postpartum.acute",
+      "featureId": "pnc_lactation",
+      "entry": {
+        "kind": "progressive",
+        "launch": "screen.pnc_lactation",
+        "view": "acute"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "introSlug": "tx.clinical_screen.pnc.acute_intro",
+      "groups": [
+        {
+          "id": "pnc_acute",
+          "legendSlug": "tx.clinical_screen.pnc.acute_legend",
+          "optionIds": [
+            "pncbleeding",
+            "pncclots",
+            "pncplacenta",
+            "pncbreathing",
+            "pncchestpain",
+            "pncdizzyfaint",
+            "pncother",
+            "pncacutenone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "pncbleeding",
+          "labelSlug": "tx.clinical_screen.pnc.bleeding",
+          "kind": "positive"
+        },
+        {
+          "id": "pncclots",
+          "labelSlug": "tx.clinical_screen.pnc.clots",
+          "kind": "positive"
+        },
+        {
+          "id": "pncplacenta",
+          "labelSlug": "tx.clinical_screen.pnc.placenta",
+          "kind": "positive"
+        },
+        {
+          "id": "pncbreathing",
+          "labelSlug": "tx.clinical_screen.pnc.breathing",
+          "kind": "positive"
+        },
+        {
+          "id": "pncchestpain",
+          "labelSlug": "tx.clinical_screen.pnc.chestpain",
+          "kind": "positive"
+        },
+        {
+          "id": "pncdizzyfaint",
+          "labelSlug": "tx.clinical_screen.pnc.dizzy",
+          "kind": "positive"
+        },
+        {
+          "id": "pncother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "pncacutenone",
+          "labelSlug": "tx.clinical_screen.pnc.no_immediate",
+          "kind": "none"
+        }
+      ],
+      "actionId": "pncacutecontinue",
+      "actionSlug": "tx.clinical_screen.under5.continue",
+      "feedbackId": "pncacuteack",
+      "otherId": "pncother",
+      "noneId": "pncacutenone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderPncLactationDangerChecklist",
+      "browserCoverage": true
+    },
+    {
+      "id": "postpartum.acute_more",
+      "featureId": "pnc_lactation",
+      "entry": {
+        "kind": "progressive",
+        "launch": "screen.pnc_lactation",
+        "view": "acute_more"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "introSlug": "tx.clinical_screen.pnc.acute_more_intro",
+      "groups": [
+        {
+          "id": "pnc_acute_more",
+          "legendSlug": "tx.clinical_screen.pnc.acute_more_legend",
+          "optionIds": [
+            "pncsmelldischarge",
+            "pncfastheart",
+            "pncheadvision",
+            "pncbellypain",
+            "pncswelling",
+            "pncacuteother",
+            "pncacutemorenone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "pncsmelldischarge",
+          "labelSlug": "tx.clinical_screen.pnc.discharge",
+          "kind": "positive"
+        },
+        {
+          "id": "pncfastheart",
+          "labelSlug": "tx.clinical_screen.pnc.fastheart",
+          "kind": "positive"
+        },
+        {
+          "id": "pncheadvision",
+          "labelSlug": "tx.clinical_screen.pnc.headvision",
+          "kind": "positive"
+        },
+        {
+          "id": "pncbellypain",
+          "labelSlug": "tx.clinical_screen.pnc.bellypain",
+          "kind": "positive"
+        },
+        {
+          "id": "pncswelling",
+          "labelSlug": "tx.clinical_screen.pnc.swelling",
+          "kind": "positive"
+        },
+        {
+          "id": "pncacuteother",
+          "stateId": "pncother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "pncacutemorenone",
+          "labelSlug": "tx.clinical_screen.pnc.no_more_acute",
+          "kind": "none"
+        }
+      ],
+      "actionId": "pncreview",
+      "actionSlug": "tx.clinical_screen.pnc.action",
+      "feedbackId": "pncacutemoreack",
+      "otherId": "pncacuteother",
+      "noneId": "pncacutemorenone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderPncLactationDangerChecklist",
+      "browserCoverage": true
+    },
+    {
+      "id": "postpartum.private",
+      "featureId": "pnc_lactation",
+      "entry": {
+        "kind": "progressive",
+        "launch": "screen.pnc_lactation",
+        "view": "private"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "introSlug": "tx.clinical_screen.pnc.private_intro",
+      "groups": [
+        {
+          "id": "pnc_private",
+          "legendSlug": "tx.clinical_screen.pnc.private_legend",
+          "optionIds": [
+            "pncprivate",
+            "pncprivateother",
+            "pncprivatenone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "pncprivate",
+          "labelSlug": "tx.clinical_screen.pnc.private",
+          "kind": "positive"
+        },
+        {
+          "id": "pncprivateother",
+          "stateId": "pncother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "pncprivatenone",
+          "stateId": "pncnone",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "pncprivatereview",
+      "actionSlug": "tx.clinical_screen.pnc.action",
+      "feedbackId": "pncprivatefeedback",
+      "otherId": "pncprivateother",
+      "noneId": "pncprivatenone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderPncLactationDangerChecklist",
+      "browserCoverage": true
+    },
+    {
+      "id": "postpartum.illness",
+      "featureId": "pnc_lactation",
+      "entry": {
+        "kind": "progressive",
+        "launch": "screen.pnc_lactation",
+        "view": "illness"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "introSlug": "tx.clinical_screen.pnc.illness_intro",
+      "groups": [
+        {
+          "id": "pnc_illness",
+          "legendSlug": "tx.clinical_screen.pnc.illness_legend",
+          "optionIds": [
+            "pnccoughfeverdiarrhea",
+            "pncillnessother",
+            "pncillnessnone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "pnccoughfeverdiarrhea",
+          "labelSlug": "tx.clinical_screen.pnc.illness",
+          "kind": "positive"
+        },
+        {
+          "id": "pncillnessother",
+          "stateId": "pncother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "pncillnessnone",
+          "stateId": "pncnone",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "pncillnessreview",
+      "actionSlug": "tx.clinical_screen.pnc.action",
+      "feedbackId": "pncillnessfeedback",
+      "otherId": "pncillnessother",
+      "noneId": "pncillnessnone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderPncLactationDangerChecklist",
+      "browserCoverage": true
+    },
+    {
+      "id": "postpartum.mood",
+      "featureId": "pnc_lactation",
+      "entry": {
+        "kind": "progressive",
+        "launch": "screen.pnc_lactation",
+        "view": "mood"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "introSlug": "tx.clinical_screen.pnc.mood_intro",
+      "groups": [
+        {
+          "id": "pnc_mood",
+          "legendSlug": "tx.clinical_screen.pnc.mood_legend",
+          "optionIds": [
+            "pncharm",
+            "pncmoodother",
+            "pncmoodnone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "pncharm",
+          "labelSlug": "tx.clinical_screen.pnc.harm",
+          "kind": "positive"
+        },
+        {
+          "id": "pncmoodother",
+          "stateId": "pncother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "pncmoodnone",
+          "stateId": "pncnone",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "pncmoodreview",
+      "actionSlug": "tx.clinical_screen.pnc.action",
+      "feedbackId": "pncmoodfeedback",
+      "otherId": "pncmoodother",
+      "noneId": "pncmoodnone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderPncLactationDangerChecklist",
+      "browserCoverage": true
+    },
+    {
+      "id": "postpartum.other",
+      "featureId": "pnc_lactation",
+      "entry": {
+        "kind": "progressive",
+        "launch": "screen.pnc_lactation",
+        "view": "other"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "introSlug": "tx.clinical_screen.pnc.other_intro",
+      "groups": [
+        {
+          "id": "pnc_other",
+          "legendSlug": "tx.clinical_screen.pnc.other_legend",
+          "optionIds": [
+            "pncotherconcern",
+            "pncothernone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "pncotherconcern",
+          "stateId": "pncother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "pncothernone",
+          "stateId": "pncnone",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "pncotherreview",
+      "actionSlug": "tx.clinical_screen.pnc.action",
+      "feedbackId": "pncotherfeedback",
+      "otherId": "pncotherconcern",
+      "noneId": "pncothernone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderPncLactationDangerChecklist",
+      "browserCoverage": true
+    },
+    {
+      "id": "newborn.main",
+      "featureId": "newborn_triage",
+      "entry": {
+        "kind": "catalog_or_person_urgent",
+        "launch": "screen.newborn_triage",
+        "subject": "newborn_baby"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "newborn_danger",
+          "legendSlug": "tx.screen_newborn.group_danger",
+          "optionIds": [
+            "newbornfeeding",
+            "newbornbreathing",
+            "newborntemp",
+            "newbornmovement",
+            "newbornjaundice"
+          ]
+        },
+        {
+          "id": "newborn_other",
+          "legendSlug": "tx.screen_newborn.group_other",
+          "optionIds": [
+            "newbornsmall",
+            "newbornother",
+            "newbornnone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "newbornfeeding",
+          "labelSlug": "tx.screen_newborn.sign_feeding",
+          "kind": "positive"
+        },
+        {
+          "id": "newbornbreathing",
+          "labelSlug": "tx.screen_newborn.sign_breathing",
+          "kind": "positive"
+        },
+        {
+          "id": "newborntemp",
+          "labelSlug": "tx.screen_newborn.sign_temp",
+          "kind": "positive"
+        },
+        {
+          "id": "newbornmovement",
+          "labelSlug": "tx.screen_newborn.sign_movement",
+          "kind": "positive"
+        },
+        {
+          "id": "newbornjaundice",
+          "labelSlug": "tx.screen_newborn.sign_jaundice",
+          "kind": "positive"
+        },
+        {
+          "id": "newbornsmall",
+          "labelSlug": "tx.screen_newborn.sign_small",
+          "kind": "positive"
+        },
+        {
+          "id": "newbornother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "newbornnone",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "newbornreview",
+      "actionSlug": "tx.danger_checklist.review_action",
+      "feedbackId": "newbornfeedback",
+      "otherId": "newbornother",
+      "noneId": "newbornnone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderNewbornDangerChecklist",
+      "browserCoverage": true
+    },
+    {
+      "id": "child_ear.main",
+      "featureId": "child_ear_check",
+      "entry": {
+        "kind": "catalog",
+        "launch": "screen.child_ear_check"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "ear",
+          "legendSlug": "tx.clinical_screen.what_happening",
+          "optionIds": [
+            "earpain",
+            "eardischarge",
+            "eardischargeold",
+            "earbehind",
+            "earother",
+            "earnone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "earpain",
+          "labelSlug": "tx.screen_sign_ear_pain",
+          "kind": "positive"
+        },
+        {
+          "id": "eardischarge",
+          "labelSlug": "tx.screen_sign_ear_discharge",
+          "kind": "positive"
+        },
+        {
+          "id": "eardischargeold",
+          "labelSlug": "tx.clinical_screen.ear.discharge_old",
+          "kind": "positive"
+        },
+        {
+          "id": "earbehind",
+          "labelSlug": "tx.screen_sign_swelling_behind_ear",
+          "kind": "positive"
+        },
+        {
+          "id": "earother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "earnone",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "earreview",
+      "actionSlug": "tx.danger_checklist.review_action",
+      "feedbackId": "earfeedback",
+      "otherId": "earother",
+      "noneId": "earnone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "resultPlan": {
+        "about": "Template T3 data: what this screen calls each option in a sentence, and which result each severity produces. Rules are first-match-wins in this order, which is the order the hand-written renderer used.",
+        "reviewStyle": "trace",
+        "reviewNote": "Child ear check - prototype referral support only. No antibiotic, ear-drop, ear-cleaning, or diagnosis advice. CODEX Decision - needs approval.",
+        "againId": "earcheckagain",
+        "againSlug": "tx.ear_check.check_again",
+        "bodySlug": "tx.screen_ear_body",
+        "noSelectionName": "no ear concern selected",
+        "optionNames": {
+          "earpain": "ear pain",
+          "eardischarge": "ear discharge",
+          "eardischargeold": "long-lasting or uncertain discharge duration",
+          "earbehind": "tender swelling behind the ear",
+          "earother": "other ear concern",
+          "earnone": "none of these"
+        },
+        "rules": [
+          {
+            "whenSeverity": "emergency",
+            "kind": "refer",
+            "careRoute": "child_clinic",
+            "titleSlug": "tx.screen_ear.urgent_title",
+            "bodySlug": "tx.screen_ear.urgent"
+          },
+          {
+            "whenSeverity": "routine_clinic",
+            "kind": "refer",
+            "careRoute": "child_clinic",
+            "titleSlug": "tx.screen_ear.same_day_title",
+            "bodySlug": "tx.screen_ear.same_day"
+          },
+          {
+            "whenChecked": "earother",
+            "kind": "refer",
+            "careRoute": "professional",
+            "severity": "routine_clinic",
+            "titleSlug": "tx.screen_ear.other_title",
+            "bodyFrom": "friendlyOther"
+          },
+          {
+            "kind": "home",
+            "titleSlug": "tx.screen_ear.no_urgent_title",
+            "bodySlug": "tx.screen_ear.no_urgent",
+            "nextActionSlug": "tx.result.action_watch_safety"
+          }
+        ]
+      },
+      "renderFunction": "renderChildEarChecklist",
+      "browserCoverage": true
+    },
+    {
+      "id": "child_measles.main",
+      "featureId": "child_measles_rash_check",
+      "entry": {
+        "kind": "catalog",
+        "launch": "screen.child_measles_rash_check"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "measles",
+          "legendSlug": "tx.clinical_screen.what_happening",
+          "optionIds": [
+            "measlesrash",
+            "measlescough",
+            "measleseyes",
+            "measlesmouth",
+            "measlesbreathing",
+            "measlesother",
+            "measlesnone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "measlesrash",
+          "labelSlug": "tx.clinical_screen.measles.rash",
+          "kind": "positive"
+        },
+        {
+          "id": "measlescough",
+          "labelSlug": "tx.clinical_screen.measles.cough",
+          "kind": "positive"
+        },
+        {
+          "id": "measleseyes",
+          "labelSlug": "tx.clinical_screen.measles.eyes",
+          "kind": "positive"
+        },
+        {
+          "id": "measlesmouth",
+          "labelSlug": "tx.clinical_screen.measles.mouth",
+          "kind": "positive"
+        },
+        {
+          "id": "measlesbreathing",
+          "labelSlug": "tx.clinical_screen.measles.breathing",
+          "kind": "positive"
+        },
+        {
+          "id": "measlesother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "measlesnone",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "measlesreview",
+      "actionSlug": "tx.danger_checklist.review_action",
+      "feedbackId": "measlesfeedback",
+      "otherId": "measlesother",
+      "noneId": "measlesnone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderChildMeaslesChecklist",
+      "resultPlan": {
+        "about": "Template T3 data. Rules are first-match-wins in this order, which is the order the hand-written renderer used. Order is load-bearing: a bare Other concern is answered before severity, and fever-with-rash plus a respiratory sign is answered before rash alone.",
+        "reviewNote": "Fever and rash check. Same-day or urgent-care routing.",
+        "againId": "measlescheckagain",
+        "bodySlug": "tx.screen_measles_body",
+        "excludeFromDecision": [
+          "measlesnone"
+        ],
+        "optionNames": {
+          "measlesrash": "spreading rash",
+          "measlescough": "cough or runny nose",
+          "measleseyes": "red or watery eyes",
+          "measlesmouth": "mouth sores",
+          "measlesbreathing": "trouble breathing",
+          "measlesother": "another concern"
+        },
+        "rules": [
+          {
+            "whenOnlyChecked": "measlesother",
+            "kind": "refer",
+            "careRoute": "professional",
+            "severity": "routine_clinic",
+            "titleFrom": "friendlyOther",
+            "bodyFrom": "friendlyOther"
+          },
+          {
+            "whenSeverity": "emergency",
+            "kind": "refer",
+            "careRoute": "child_clinic",
+            "titleSlug": "tx.feature_child_measles_rash_check",
+            "bodySlug": "tx.screen_measles.urgent"
+          },
+          {
+            "whenChecked": "measlesrash",
+            "whenAnyChecked": [
+              "measlescough",
+              "measleseyes"
+            ],
+            "kind": "refer",
+            "careRoute": "child_clinic",
+            "severity": "routine_clinic",
+            "titleSlug": "tx.feature_child_measles_rash_check",
+            "bodySlug": "tx.screen_measles.same_day"
+          },
+          {
+            "whenChecked": "measlesrash",
+            "kind": "refer",
+            "careRoute": "child_clinic",
+            "severity": "routine_clinic",
+            "titleSlug": "tx.feature_child_measles_rash_check",
+            "bodySlug": "tx.screen_measles.rash_only"
+          },
+          {
+            "kind": "home",
+            "titleSlug": "tx.feature_child_measles_rash_check",
+            "bodySlug": "tx.danger_checklist.none_result"
+          }
+        ]
+      },
+      "browserCoverage": true
+    },
+    {
+      "id": "child_muac.main",
+      "featureId": "child_muac_malnutrition_screen",
+      "entry": {
+        "kind": "catalog",
+        "launch": "screen.child_muac_malnutrition_screen"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "muac",
+          "legendSlug": "tx.clinical_screen.what_happening",
+          "optionIds": [
+            "muacswelling",
+            "muacweightloss",
+            "muacsick",
+            "muacred",
+            "muacyellow",
+            "muacother",
+            "muacnone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "muacswelling",
+          "labelSlug": "tx.screen_sign_bilateral_foot_swelling",
+          "kind": "positive"
+        },
+        {
+          "id": "muacweightloss",
+          "labelSlug": "tx.screen_sign_weight_loss",
+          "kind": "positive"
+        },
+        {
+          "id": "muacsick",
+          "labelSlug": "tx.clinical_screen.muac.sick",
+          "kind": "positive"
+        },
+        {
+          "id": "muacred",
+          "labelSlug": "tx.screen_sign_muac_red",
+          "kind": "positive",
+          "requiresDeployerSwitch": "muacTapeDistributed"
+        },
+        {
+          "id": "muacyellow",
+          "labelSlug": "tx.screen_sign_muac_yellow",
+          "kind": "positive",
+          "requiresDeployerSwitch": "muacTapeDistributed"
+        },
+        {
+          "id": "muacother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "muacnone",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "muacreview",
+      "actionSlug": "tx.danger_checklist.review_action",
+      "feedbackId": "muacfeedback",
+      "otherId": "muacother",
+      "noneId": "muacnone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderChildMuacChecklist",
+      "browserCoverage": true
+    },
+    {
+      "id": "child_injury.main",
+      "featureId": "child_injury_first_aid_check",
+      "entry": {
+        "kind": "catalog",
+        "launch": "screen.child_injury_first_aid_check"
+      },
+      "riskTier": "clinical_safety",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "injury",
+          "legendSlug": "tx.clinical_screen.what_happening",
+          "optionIds": [
+            "injuryunconscious",
+            "injurybleeding",
+            "injuryburn",
+            "injuryhead",
+            "injurybone",
+            "injuryother",
+            "injurynone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "injuryunconscious",
+          "labelSlug": "tx.clinical_screen.injury.unconscious",
+          "kind": "positive"
+        },
+        {
+          "id": "injurybleeding",
+          "labelSlug": "tx.clinical_screen.injury.bleeding",
+          "kind": "positive"
+        },
+        {
+          "id": "injuryburn",
+          "labelSlug": "tx.clinical_screen.injury.burn",
+          "kind": "positive"
+        },
+        {
+          "id": "injuryhead",
+          "labelSlug": "tx.clinical_screen.injury.head",
+          "kind": "positive"
+        },
+        {
+          "id": "injurybone",
+          "labelSlug": "tx.clinical_screen.injury.other_danger",
+          "kind": "positive"
+        },
+        {
+          "id": "injuryother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "injurynone",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "injuryreview",
+      "actionSlug": "tx.danger_checklist.review_action",
+      "feedbackId": "injuryfeedback",
+      "otherId": "injuryother",
+      "noneId": "injurynone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderChildInjuryChecklist",
+      "resultPlan": {
+        "about": "Template T3 data. First-match-wins in the hand-written order. Unconsciousness with an emergency severity is answered before the general emergency route, because it names emergency services rather than urgent care.",
+        "reviewNote": "Child injury first-aid check. Emergency routing only.",
+        "againId": "injurycheckagain",
+        "bodySlug": "tx.screen_injury_body",
+        "excludeFromDecision": [
+          "injurynone"
+        ],
+        "nameOptions": [
+          "injurybleeding",
+          "injuryburn",
+          "injuryhead",
+          "injurybone"
+        ],
+        "optionNames": {
+          "injurybleeding": "bleeding or deep wound",
+          "injuryburn": "burn",
+          "injuryhead": "head injury warning signs",
+          "injurybone": "broken bone, poisoning, drowning, electrocution, severe pain, or unsafe situation"
+        },
+        "rules": [
+          {
+            "whenSeverity": "emergency",
+            "whenChecked": "injuryunconscious",
+            "kind": "refer",
+            "careRoute": "child_clinic",
+            "titleSlug": "tx.feature_child_injury_first_aid_check",
+            "bodySlug": "tx.screen_injury.emergency"
+          },
+          {
+            "whenSeverityIn": [
+              "emergency",
+              "routine_clinic"
+            ],
+            "kind": "refer",
+            "careRoute": "child_clinic",
+            "titleSlug": "tx.feature_child_injury_first_aid_check",
+            "bodySlug": "tx.screen_injury.urgent"
+          },
+          {
+            "whenChecked": "injuryother",
+            "kind": "refer",
+            "careRoute": "professional",
+            "severity": "routine_clinic",
+            "titleSlug": "tx.feature_child_injury_first_aid_check",
+            "bodyFrom": "friendlyOther"
+          },
+          {
+            "kind": "home",
+            "titleSlug": "tx.feature_child_injury_first_aid_check",
+            "bodySlug": "tx.danger_checklist.none_result",
+            "nextActionSlug": "tx.result.action_watch_safety"
+          }
+        ]
+      },
+      "browserCoverage": true
+    },
+    {
+      "id": "dehydration_guide.main",
+      "featureId": "dehydration_visual_guide",
+      "entry": {
+        "kind": "catalog",
+        "launch": "tool.dehydration_visual_guide"
+      },
+      "riskTier": "safety_relevant",
+      "templateId": "T3",
+      "renderer": "shared_clinical_checklist",
+      "groups": [
+        {
+          "id": "dehydration",
+          "legendSlug": "tx.clinical_screen.dehydration.legend",
+          "optionIds": [
+            "dehydunable",
+            "dehydsunken",
+            "dehydlethargy",
+            "dehydblood",
+            "dehydother",
+            "dehydnone"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "dehydunable",
+          "labelSlug": "tx.clinical_screen.dehydration.unable",
+          "kind": "positive"
+        },
+        {
+          "id": "dehydsunken",
+          "labelSlug": "tx.clinical_screen.dehydration.sunken",
+          "kind": "positive"
+        },
+        {
+          "id": "dehydlethargy",
+          "labelSlug": "tx.clinical_screen.dehydration.lethargy",
+          "kind": "positive"
+        },
+        {
+          "id": "dehydblood",
+          "labelSlug": "tx.clinical_screen.dehydration.blood",
+          "kind": "positive"
+        },
+        {
+          "id": "dehydother",
+          "labelSlug": "tx.danger_checklist.other",
+          "kind": "other"
+        },
+        {
+          "id": "dehydnone",
+          "labelSlug": "tx.danger_checklist.none",
+          "kind": "none"
+        }
+      ],
+      "actionId": "dehydreview",
+      "actionSlug": "tx.danger_checklist.review_action",
+      "feedbackId": "dehydfeedback",
+      "otherId": "dehydother",
+      "noneId": "dehydnone",
+      "requiresOther": true,
+      "requiresExplicitNegative": true,
+      "outcomes": [
+        "positive",
+        "other",
+        "none"
+      ],
+      "renderFunction": "renderDehydrationGuide",
+      "resultPlan": {
+        "about": "Template T3 data. This screen routes purely on which danger signs are ticked and never consults the decision engine, so skipDecision keeps it from being handed a severity it never had. Its reviewer disclosure sits above the questions, which is caregiver-visible layout and is preserved.",
+        "reviewNote": "Dehydration guide. Danger signs first; not a diagnosis.",
+        "againId": "dehydcheckagain",
+        "bodySlug": "tx.tool_dehydration_guide_body",
+        "detailsPosition": "before",
+        "skipDecision": true,
+        "excludeFromDecision": [
+          "dehydother",
+          "dehydnone"
+        ],
+        "optionNames": {
+          "dehydunable": "unable to drink",
+          "dehydsunken": "sunken eyes",
+          "dehydlethargy": "lethargy",
+          "dehydblood": "blood in stool/worse"
+        },
+        "rules": [
+          {
+            "whenCheckedWithNoDecisionSigns": "dehydother",
+            "kind": "refer",
+            "careRoute": "professional",
+            "severity": "routine_clinic",
+            "titleFrom": "friendlyOther",
+            "bodyFrom": "friendlyOther"
+          },
+          {
+            "whenAnyDecisionSign": true,
+            "kind": "refer",
+            "careRoute": "child_clinic",
+            "severity": "urgent_clinic",
+            "titleSlug": "tx.feature_dehydration_visual_guide",
+            "bodySlug": "tx.tool_dehydration_guide.urgent"
+          },
+          {
+            "kind": "home",
+            "titleSlug": "tx.feature_dehydration_visual_guide",
+            "bodySlug": "tx.tool_dehydration_guide.no_urgent"
+          }
+        ]
+      },
+      "browserCoverage": true
+    }
+  ]
+}

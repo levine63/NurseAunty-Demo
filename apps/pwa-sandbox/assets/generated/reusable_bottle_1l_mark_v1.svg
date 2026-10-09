@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-labelledby="title desc">
+  <title id="title">Prototype bottle with one litre mark</title>
+  <desc id="desc">Reusable prototype bottle with a one litre mark for ORS mixing instructions.</desc>
+  <rect width="220" height="220" rx="16" fill="#fffdf7"/>
+  <path d="M78 187h64v-96c0-20-14-36-32-36s-32 16-32 36z" fill="#d7edf2" stroke="#53636a" stroke-width="5"/>
+  <path d="M92 55v-24h36v24" fill="none" stroke="#53636a" stroke-width="7" stroke-linecap="round"/>
+  <path d="M78 116h64" stroke="#b3261e" stroke-width="7"/>
+  <text x="148" y="122" font-family="Arial, sans-serif" font-size="18" fill="#b3261e">1 L</text>
+  <text x="23" y="207" font-family="Arial, sans-serif" font-size="12" fill="#5e5146">prototype mark - local container photo needed</text>
+</svg>

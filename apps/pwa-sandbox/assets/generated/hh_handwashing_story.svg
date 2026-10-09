@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Handwashing story illustration</title>
+  <desc id="desc">A child washing hands with soap near clean water bubbles.</desc>
+  <rect width="640" height="360" fill="#eff8f4"/>
+  <circle cx="104" cy="80" r="52" fill="#f7c77f"/>
+  <rect x="66" y="126" width="88" height="110" rx="34" fill="#247a6b"/>
+  <circle cx="88" cy="70" r="12" fill="#1a1a2e"/>
+  <circle cx="122" cy="70" r="12" fill="#1a1a2e"/>
+  <path d="M88 100q18 18 38 0" fill="none" stroke="#1a1a2e" stroke-width="8" stroke-linecap="round"/>
+  <rect x="214" y="184" width="250" height="58" rx="28" fill="#7ed6c4"/>
+  <rect x="236" y="154" width="74" height="42" rx="18" fill="#ffffff" stroke="#0b6b5b" stroke-width="8"/>
+  <circle cx="350" cy="128" r="22" fill="#9ce4f5"/>
+  <circle cx="404" cy="106" r="16" fill="#9ce4f5"/>
+  <circle cx="444" cy="138" r="24" fill="#9ce4f5"/>
+  <circle cx="502" cy="84" r="34" fill="#d7f1ff" stroke="#0b6b5b" stroke-width="6"/>
+  <path d="M185 198c58 36 132 36 194 0" fill="none" stroke="#0b6b5b" stroke-width="18" stroke-linecap="round"/>
+  <path d="M190 226c62 34 132 34 194 0" fill="none" stroke="#0b6b5b" stroke-width="18" stroke-linecap="round"/>
+  <rect x="74" y="242" width="482" height="34" rx="17" fill="#b8ddd6"/>
+</svg>

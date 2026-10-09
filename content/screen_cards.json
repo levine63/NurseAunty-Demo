@@ -1,0 +1,1560 @@
+{
+  "about": "Prototype screening and danger-sign cards. These are conservative referral-support cards, not diagnostic algorithms.",
+  "schemaVersion": "0.1",
+  "cards": [
+    {
+      "featureId": "newborn_triage",
+      "titleSlug": "tx.feature_newborn_triage",
+      "bodySlug": "tx.screen_newborn_body",
+      "signSlugs": [
+        "tx.screen_sign_poor_feeding",
+        "tx.screen_sign_breathing_problem",
+        "tx.screen_sign_fever_cold",
+        "tx.screen_sign_convulsions",
+        "tx.screen_sign_jaundice"
+      ],
+      "actionSlug": "tx.screen_action_go_now",
+      "source": "https://www.who.int/publications/i/item/9789240045989",
+      "sourceName": "WHO postnatal maternal and newborn care",
+      "imageDesc": "Newborn wrapped beside caregiver and CHW, with simple icons for feeding, breathing, temperature, and jaundice.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "clinicalVariableSet": {
+        "subjectScopes": [
+          "newborn"
+        ],
+        "presentation": "newborn_danger_concern",
+        "prototypeOnly": true,
+        "reviewStatus": "CODEX Decision - provisional screen variable set pending formal clinical pipeline review",
+        "variables": [
+          {
+            "id": "newbornfeeding",
+            "labelSlug": "tx.screen_sign_poor_feeding",
+            "subjectScopes": [
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "newbornbreathing",
+            "labelSlug": "tx.screen_sign_breathing_problem",
+            "subjectScopes": [
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "newborntemp",
+            "labelSlug": "tx.screen_sign_fever_cold",
+            "subjectScopes": [
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "newbornmovement",
+            "labelSlug": "tx.screen_sign_convulsions",
+            "subjectScopes": [
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "newbornjaundice",
+            "labelSlug": "tx.screen_sign_jaundice",
+            "subjectScopes": [
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "newbornsmall",
+            "labelSlug": "tx.screen_newborn.small",
+            "subjectScopes": [
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "newborn_danger_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "newbornother",
+            "labelSlug": "tx.screen_newborn.other",
+            "subjectScopes": [
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup"
+            ],
+            "followupFor": [
+              "newborn_danger_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          }
+        ]
+      }
+    },
+    {
+      "featureId": "anc_triage",
+      "titleSlug": "tx.feature_anc_triage",
+      "bodySlug": "tx.screen_anc_body",
+      "signSlugs": [
+        "tx.screen_sign_preg_bleeding",
+        "tx.screen_sign_severe_headache_vision",
+        "tx.screen_sign_trouble_breathing",
+        "tx.screen_sign_severe_belly_pain",
+        "tx.screen_sign_baby_movement_change"
+      ],
+      "actionSlug": "tx.screen_action_go_now",
+      "source": "https://www.cdc.gov/hearher/maternal-warning-signs/index.html",
+      "sourceName": "CDC urgent maternal warning signs",
+      "imageDesc": "Pregnant person holding a phone and clinic card, with urgent icons for bleeding, headache/vision, breathing, pain, and movement.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "clinicalVariableSet": {
+        "subjectScopes": [
+          "pregnant_woman"
+        ],
+        "presentation": "pregnancy_danger_concern",
+        "prototypeOnly": true,
+        "reviewStatus": "CODEX Decision - provisional screen variable set pending formal clinical pipeline review",
+        "variables": [
+          {
+            "id": "ancbleeding",
+            "labelSlug": "tx.screen_sign_preg_bleeding",
+            "subjectScopes": [
+              "pregnant_woman"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "ancheadvision",
+            "labelSlug": "tx.screen_sign_severe_headache_vision",
+            "subjectScopes": [
+              "pregnant_woman"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "ancbreathing",
+            "labelSlug": "tx.screen_sign_trouble_breathing",
+            "subjectScopes": [
+              "pregnant_woman"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "ancpainfever",
+            "labelSlug": "tx.screen_sign_severe_belly_pain",
+            "subjectScopes": [
+              "pregnant_woman"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "ancmovement",
+            "labelSlug": "tx.screen_sign_baby_movement_change",
+            "subjectScopes": [
+              "pregnant_woman"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "ancother",
+            "labelSlug": "tx.screen_anc_body",
+            "subjectScopes": [
+              "pregnant_woman"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup"
+            ],
+            "followupFor": [
+              "pregnancy_danger_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "pregharming",
+            "labelSlug": "tx.screen_anc_body",
+            "subjectScopes": [
+              "pregnant_woman"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "pregnancy_danger_concern"
+            ],
+            "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+          }
+        ]
+      }
+    },
+    {
+      "featureId": "pnc_lactation",
+      "titleSlug": "tx.feature_pnc_lactation",
+      "bodySlug": "tx.screen_pnc_lactation_body",
+      "signSlugs": [
+        "tx.screen_sign_maternal_fever",
+        "tx.screen_sign_breast_red_pain",
+        "tx.screen_sign_baby_poor_feeding",
+        "tx.screen_sign_maternal_bleeding",
+        "tx.screen_sign_harming_thoughts"
+      ],
+      "actionSlug": "tx.screen_action_contact_chw",
+      "source": "https://www.cdc.gov/hearher/maternal-warning-signs/index.html",
+      "sourceName": "CDC urgent maternal warning signs",
+      "imageDesc": "New mother feeding baby with CHW support icon and warning symbols for fever, breast pain, bleeding, and mood crisis.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "clinicalVariableSet": {
+        "subjectScopes": [
+          "postpartum_mother",
+          "newborn"
+        ],
+        "presentation": "postpartum_newborn_danger_concern",
+        "prototypeOnly": true,
+        "reviewStatus": "CODEX Decision - provisional screen variable set pending formal clinical pipeline review",
+        "variables": [
+          {
+            "id": "pncbleeding",
+            "labelSlug": "tx.screen_sign_maternal_bleeding",
+            "subjectScopes": [
+              "postpartum_mother",
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "pncbreathing",
+            "labelSlug": "tx.screen_sign_trouble_breathing",
+            "subjectScopes": [
+              "postpartum_mother",
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "pncheadvision",
+            "labelSlug": "tx.screen_sign_severe_headache_vision",
+            "subjectScopes": [
+              "postpartum_mother",
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "pncfeverbreast",
+            "labelSlug": "tx.screen_sign_breast_red_pain",
+            "subjectScopes": [
+              "postpartum_mother",
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "postpartum_newborn_danger_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "pncbabyfeeding",
+            "labelSlug": "tx.screen_sign_baby_poor_feeding",
+            "subjectScopes": [
+              "postpartum_mother",
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "pncprivate",
+            "labelSlug": "tx.screen_pnc_lactation_body",
+            "subjectScopes": [
+              "postpartum_mother",
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "postpartum_newborn_danger_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "pnccoughfeverdiarrhea",
+            "labelSlug": "tx.screen_pnc_lactation_body",
+            "subjectScopes": [
+              "postpartum_mother",
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "presenting_symptom"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "pncharm",
+            "labelSlug": "tx.screen_sign_harming_thoughts",
+            "subjectScopes": [
+              "postpartum_mother",
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "pncother",
+            "labelSlug": "tx.screen_pnc.other",
+            "subjectScopes": [
+              "postpartum_mother",
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup"
+            ],
+            "followupFor": [
+              "postpartum_newborn_danger_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "pncnone",
+            "labelSlug": "tx.screen_pnc.none_checked",
+            "subjectScopes": [
+              "postpartum_mother",
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "safety_gate"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          }
+        ]
+      }
+    },
+    {
+      "featureId": "breastfeeding_aid_triage",
+      "titleSlug": "tx.feature_breastfeeding_aid_triage",
+      "bodySlug": "tx.screen_bf_aid_body",
+      "signSlugs": [
+        "tx.bf.q.infant_cannot_feed",
+        "tx.bf.q.infant_hard_to_wake",
+        "tx.bf.q.infant_breathing",
+        "tx.bf.q.mother_bleeding",
+        "tx.bf.q.feeds_few",
+        "tx.bf.q.pain_feed"
+      ],
+      "actionSlug": "tx.screen_action_contact_chw",
+      "source": "https://www.who.int/publications/i/item/9789240045989",
+      "sourceName": "WHO postnatal maternal and newborn care; WHO/UNICEF breastfeeding counselling source material",
+      "imageDesc": "New mother holding a newborn while a caregiver supports breastfeeding positioning and clinic contact if danger signs appear.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "clinicalVariableSet": {
+        "subjectScopes": [
+          "postpartum_mother",
+          "newborn"
+        ],
+        "presentation": "breastfeeding_aid_concern",
+        "prototypeOnly": true,
+        "reviewStatus": "CODEX Decision - prototype import from breastfeeding lessons zip; replace with formal lactation clinical pipeline output.",
+        "variables": [
+          {
+            "id": "bfaidinfantcannotfeed",
+            "labelSlug": "tx.bf.q.infant_cannot_feed",
+            "subjectScopes": [
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidinfanthardtowake",
+            "labelSlug": "tx.bf.q.infant_hard_to_wake",
+            "subjectScopes": [
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidinfantbreathing",
+            "labelSlug": "tx.bf.q.infant_breathing",
+            "subjectScopes": [
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidinfantconvulsions",
+            "labelSlug": "tx.bf.q.infant_convulsions",
+            "subjectScopes": [
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidinfantveryhotcold",
+            "labelSlug": "tx.bf.q.infant_temp",
+            "subjectScopes": [
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidinfantyellowpalms",
+            "labelSlug": "tx.bf.q.yellow_palms",
+            "subjectScopes": [
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidmotherbleeding",
+            "labelSlug": "tx.bf.q.mother_bleeding",
+            "subjectScopes": [
+              "postpartum_mother"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidmotherfaint",
+            "labelSlug": "tx.bf.q.mother_faint",
+            "subjectScopes": [
+              "postpartum_mother"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidmotherbreathless",
+            "labelSlug": "tx.bf.q.mother_breathless",
+            "subjectScopes": [
+              "postpartum_mother"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidmotherconvulsions",
+            "labelSlug": "tx.bf.q.mother_fits",
+            "subjectScopes": [
+              "postpartum_mother"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidmotherheadache",
+            "labelSlug": "tx.bf.q.mother_headache",
+            "subjectScopes": [
+              "postpartum_mother"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidmotherupperbelly",
+            "labelSlug": "tx.bf.q.mother_upper_belly",
+            "subjectScopes": [
+              "postpartum_mother"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidmotherfever",
+            "labelSlug": "tx.bf.q.mother_fever",
+            "subjectScopes": [
+              "postpartum_mother"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "breastfeeding_aid_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidsmelldischarge",
+            "labelSlug": "tx.bf.q.mother_discharge",
+            "subjectScopes": [
+              "postpartum_mother"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "breastfeeding_aid_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidbreastred",
+            "labelSlug": "tx.bf.q.breast_red",
+            "subjectScopes": [
+              "postpartum_mother"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "breastfeeding_aid_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidbreastswelling",
+            "labelSlug": "tx.bf.q.breast_swelling",
+            "subjectScopes": [
+              "postpartum_mother"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "breastfeeding_aid_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidfeedsfew",
+            "labelSlug": "tx.bf.q.feeds_few",
+            "subjectScopes": [
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "breastfeeding_aid_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidwetfew",
+            "labelSlug": "tx.bf.q.wet_few",
+            "subjectScopes": [
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "breastfeeding_aid_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidswallowing",
+            "labelSlug": "tx.bf.q.no_swallowing",
+            "subjectScopes": [
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "breastfeeding_aid_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidpainfeed",
+            "labelSlug": "tx.bf.q.pain_feed",
+            "subjectScopes": [
+              "postpartum_mother",
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "breastfeeding_aid_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidslipoff",
+            "labelSlug": "tx.bf.q.slips_off",
+            "subjectScopes": [
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "breastfeeding_aid_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidcracked",
+            "labelSlug": "tx.bf.q.cracked",
+            "subjectScopes": [
+              "postpartum_mother"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "breastfeeding_aid_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidwater",
+            "labelSlug": "tx.bf.q.water",
+            "subjectScopes": [
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup"
+            ],
+            "followupFor": [
+              "breastfeeding_aid_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidcolostrum",
+            "labelSlug": "tx.bf.q.colostrum",
+            "subjectScopes": [
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup"
+            ],
+            "followupFor": [
+              "breastfeeding_aid_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidother",
+            "labelSlug": "tx.screen_pnc.other",
+            "subjectScopes": [
+              "postpartum_mother",
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup"
+            ],
+            "followupFor": [
+              "breastfeeding_aid_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          },
+          {
+            "id": "bfaidnone",
+            "labelSlug": "tx.screen_pnc.none_checked",
+            "subjectScopes": [
+              "postpartum_mother",
+              "newborn"
+            ],
+            "clinicalVariableRoles": [
+              "safety_gate"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag adapted from breastfeeding lessons zip."
+          }
+        ]
+      }
+    },
+    {
+      "featureId": "kohl_lead_screen",
+      "titleSlug": "tx.feature_kohl_lead_screen",
+      "bodySlug": "tx.screen_kohl_body",
+      "signSlugs": [
+        "tx.screen_sign_kohl_used_child",
+        "tx.screen_sign_kohl_used_pregnant",
+        "tx.screen_sign_product_unknown",
+        "tx.screen_sign_keep_away_children"
+      ],
+      "actionSlug": "tx.screen_action_lead_test",
+      "source": "https://www.fda.gov/cosmetics/cosmetic-products/kohl-kajal-al-kahal-surma-tiro-tozali-or-kwalli-any-name-beware-lead-poisoning",
+      "sourceName": "FDA kohl/kajal lead warning",
+      "imageDesc": "Kohl or kajal container marked as a lead-risk item, kept away from children.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "clinicalVariableSet": {
+        "subjectScopes": [
+          "child_under5",
+          "school_child",
+          "pregnant_woman",
+          "household"
+        ],
+        "presentation": "lead_exposure_concern",
+        "prototypeOnly": true,
+        "reviewStatus": "CODEX Decision - provisional screen variable set pending formal clinical pipeline review",
+        "variables": [
+          {
+            "id": "kohlchild",
+            "labelSlug": "tx.screen_sign_kohl_used_child",
+            "subjectScopes": [
+              "child_under5",
+              "school_child",
+              "pregnant_woman",
+              "household"
+            ],
+            "clinicalVariableRoles": [
+              "presenting_symptom",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "kohlpregnant",
+            "labelSlug": "tx.screen_sign_kohl_used_pregnant",
+            "subjectScopes": [
+              "child_under5",
+              "school_child",
+              "pregnant_woman",
+              "household"
+            ],
+            "clinicalVariableRoles": [
+              "presenting_symptom",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "kohlunknown",
+            "labelSlug": "tx.screen_sign_product_unknown",
+            "subjectScopes": [
+              "child_under5",
+              "school_child",
+              "pregnant_woman",
+              "household"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "lead_exposure_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "kohlaccess",
+            "labelSlug": "tx.screen_sign_keep_away_children",
+            "subjectScopes": [
+              "child_under5",
+              "school_child",
+              "pregnant_woman",
+              "household"
+            ],
+            "clinicalVariableRoles": [
+              "safety_gate"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          }
+        ]
+      }
+    },
+    {
+      "featureId": "child_vision_screen",
+      "titleSlug": "tx.feature_child_vision_screen",
+      "bodySlug": "tx.screen_vision_body",
+      "signSlugs": [
+        "tx.screen_sign_squinting",
+        "tx.screen_sign_eye_rubbing",
+        "tx.screen_sign_headaches_schoolwork",
+        "tx.screen_sign_eye_exam_needed"
+      ],
+      "actionSlug": "tx.screen_action_eye_check",
+      "source": "https://www.cdc.gov/vision-health/prevention/youth-vision-problems.html",
+      "sourceName": "CDC child vision health",
+      "imageDesc": "School-age child looking at a board with eye-check and clinic icons.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "clinicalVariableSet": {
+        "subjectScopes": [
+          "school_child",
+          "child_under5"
+        ],
+        "presentation": "vision_concern",
+        "prototypeOnly": true,
+        "reviewStatus": "CODEX Decision - provisional screen variable set pending formal clinical pipeline review",
+        "variables": [
+          {
+            "id": "visionsquint",
+            "labelSlug": "tx.screen_sign_squinting",
+            "subjectScopes": [
+              "school_child",
+              "child_under5"
+            ],
+            "clinicalVariableRoles": [
+              "presenting_symptom",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "visionrub",
+            "labelSlug": "tx.screen_sign_eye_rubbing",
+            "subjectScopes": [
+              "school_child",
+              "child_under5"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "vision_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "visionheadache",
+            "labelSlug": "tx.screen_sign_headaches_schoolwork",
+            "subjectScopes": [
+              "school_child",
+              "child_under5"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "vision_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "visionurgent",
+            "labelSlug": "tx.screen_sign_eye_exam_needed",
+            "subjectScopes": [
+              "school_child",
+              "child_under5"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "visionteacher",
+            "labelSlug": "tx.screen_vision_body",
+            "subjectScopes": [
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "vision_concern"
+            ],
+            "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+          }
+        ]
+      }
+    },
+    {
+      "featureId": "child_hearing_screen",
+      "titleSlug": "tx.feature_child_hearing_screen",
+      "bodySlug": "tx.screen_hearing_body",
+      "signSlugs": [
+        "tx.screen_sign_hearing_concern",
+        "tx.screen_sign_speech_delay",
+        "tx.screen_sign_failed_hearing_screen",
+        "tx.screen_sign_hearing_specialist"
+      ],
+      "actionSlug": "tx.screen_action_hearing_check",
+      "source": "https://www.cdc.gov/hearing-loss-children/articles/baby-hearing-screening-infographic.html",
+      "sourceName": "CDC EHDI 1-3-6 hearing benchmarks",
+      "imageDesc": "Child listening to a soft sound with hearing-screen and specialist icons.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "clinicalVariableSet": {
+        "subjectScopes": [
+          "school_child",
+          "child_under5"
+        ],
+        "presentation": "hearing_concern",
+        "prototypeOnly": true,
+        "reviewStatus": "CODEX Decision - provisional screen variable set pending formal clinical pipeline review",
+        "variables": [
+          {
+            "id": "hearingconcern",
+            "labelSlug": "tx.screen_sign_hearing_concern",
+            "subjectScopes": [
+              "school_child",
+              "child_under5"
+            ],
+            "clinicalVariableRoles": [
+              "presenting_symptom",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "hearingspeech",
+            "labelSlug": "tx.screen_sign_speech_delay",
+            "subjectScopes": [
+              "school_child",
+              "child_under5"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "hearing_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "hearingfailed",
+            "labelSlug": "tx.screen_sign_failed_hearing_screen",
+            "subjectScopes": [
+              "school_child",
+              "child_under5"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "hearing_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "hearingspecialist",
+            "labelSlug": "tx.screen_sign_hearing_specialist",
+            "subjectScopes": [
+              "school_child",
+              "child_under5"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "hearing_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "hearinginfant",
+            "labelSlug": "tx.screen_hearing_body",
+            "subjectScopes": [
+              "newborn",
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "hearing_concern"
+            ],
+            "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+          }
+        ]
+      }
+    },
+    {
+      "featureId": "child_ear_check",
+      "titleSlug": "tx.feature_child_ear_check",
+      "bodySlug": "tx.screen_ear_body",
+      "signSlugs": [
+        "tx.screen_sign_ear_pain",
+        "tx.screen_sign_ear_discharge",
+        "tx.screen_sign_swelling_behind_ear"
+      ],
+      "actionSlug": "tx.screen_action_clinic_today",
+      "source": "https://cdn.who.int/media/docs/default-source/mca-documents/child/imci-integrated-management-of-childhood-illness/imci-in-service-training/imci-chart-booklet.pdf?sfvrsn=f63af425_1",
+      "sourceName": "WHO IMCI chart booklet",
+      "imageDesc": "Child holding one ear beside a caregiver with ear pain, discharge, swelling-behind-ear, and clinic-arrow cues.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "clinicalVariableSet": {
+        "subjectScopes": [
+          "child_under5",
+          "school_child"
+        ],
+        "presentation": "ear_problem",
+        "prototypeOnly": true,
+        "reviewStatus": "CODEX Decision - provisional screen variable set pending formal clinical pipeline review",
+        "variables": [
+          {
+            "id": "earpain",
+            "labelSlug": "tx.screen_sign_ear_pain",
+            "subjectScopes": [
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "presenting_symptom",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "eardischarge",
+            "labelSlug": "tx.screen_sign_ear_discharge",
+            "subjectScopes": [
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "ear_problem"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "eardischargeold",
+            "labelSlug": "tx.screen_sign_ear_discharge",
+            "subjectScopes": [
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "measurement"
+            ],
+            "followupFor": [
+              "ear_problem"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "earbehind",
+            "labelSlug": "tx.screen_sign_swelling_behind_ear",
+            "subjectScopes": [
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          }
+        ]
+      }
+    },
+    {
+      "featureId": "child_measles_rash_check",
+      "titleSlug": "tx.feature_child_measles_rash_check",
+      "bodySlug": "tx.screen_measles_body",
+      "signSlugs": [
+        "tx.screen_sign_measles_rash",
+        "tx.screen_sign_cough_runny_eyes",
+        "tx.screen_sign_eye_mouth_complication"
+      ],
+      "actionSlug": "tx.screen_action_clinic_today",
+      "source": "https://www.cdc.gov/measles/about/index.html",
+      "sourceName": "CDC measles signs and symptoms",
+      "imageDesc": "Child with fever-and-rash concern, cough/runny-eye symbols, separation cue, and clinic arrow; not a diagnostic rash image.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "clinicalVariableSet": {
+        "subjectScopes": [
+          "child_under5",
+          "school_child"
+        ],
+        "presentation": "rash_fever_concern",
+        "prototypeOnly": true,
+        "reviewStatus": "CODEX Decision - provisional screen variable set pending formal clinical pipeline review",
+        "variables": [
+          {
+            "id": "measlesrash",
+            "labelSlug": "tx.screen_sign_measles_rash",
+            "subjectScopes": [
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "presenting_symptom",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "measlescough",
+            "labelSlug": "tx.screen_sign_cough_runny_eyes",
+            "subjectScopes": [
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "rash_fever_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "measleseyes",
+            "labelSlug": "tx.screen_sign_cough_runny_eyes",
+            "subjectScopes": [
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "rash_fever_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "measlesmouth",
+            "labelSlug": "tx.screen_sign_eye_mouth_complication",
+            "subjectScopes": [
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "measlesbreathing",
+            "labelSlug": "tx.screen_sign_breathing_problem",
+            "subjectScopes": [
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          }
+        ]
+      }
+    },
+    {
+      "featureId": "child_muac_malnutrition_screen",
+      "titleSlug": "tx.feature_child_muac_malnutrition_screen",
+      "bodySlug": "tx.screen_muac_body",
+      "signSlugs": [
+        "tx.screen_sign_muac_red",
+        "tx.screen_sign_muac_yellow",
+        "tx.screen_sign_bilateral_foot_swelling",
+        "tx.screen_sign_weight_loss"
+      ],
+      "actionSlug": "tx.screen_action_clinic_today",
+      "source": "https://www.unicef.org/nutrition/child-wasting",
+      "sourceName": "UNICEF child wasting",
+      "imageDesc": "Caregiver using a MUAC tape with color bands, food bowl, and bilateral foot-swelling cue; not a diagnosis image.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "clinicalVariableSet": {
+        "subjectScopes": [
+          "child_under5"
+        ],
+        "presentation": "nutrition_concern",
+        "prototypeOnly": true,
+        "reviewStatus": "CODEX Decision - provisional screen variable set pending formal clinical pipeline review",
+        "variables": [
+          {
+            "id": "muacred",
+            "labelSlug": "tx.screen_sign_muac_red",
+            "subjectScopes": [
+              "child_under5"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "muacyellow",
+            "labelSlug": "tx.screen_sign_muac_yellow",
+            "subjectScopes": [
+              "child_under5"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "nutrition_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "muacswelling",
+            "labelSlug": "tx.screen_sign_bilateral_foot_swelling",
+            "subjectScopes": [
+              "child_under5"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "muacweightloss",
+            "labelSlug": "tx.screen_sign_weight_loss",
+            "subjectScopes": [
+              "child_under5"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "nutrition_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "muacsick",
+            "labelSlug": "tx.screen_muac_body",
+            "subjectScopes": [
+              "child_under5"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          }
+        ]
+      }
+    },
+    {
+      "featureId": "child_injury_first_aid_check",
+      "titleSlug": "tx.feature_child_injury_first_aid_check",
+      "bodySlug": "tx.screen_injury_body",
+      "signSlugs": [
+        "tx.screen_sign_unconscious_breathing",
+        "tx.screen_sign_bleeding_burn",
+        "tx.screen_sign_head_injury"
+      ],
+      "actionSlug": "tx.screen_action_go_now",
+      "source": "https://www.cdc.gov/heads-up/signs-symptoms/index.html",
+      "sourceName": "CDC HEADS UP concussion danger signs",
+      "imageDesc": "Caregiver beside a child with first-aid kit, bandage, burn/bleeding symbols, and urgent-care arrow without gore.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "clinicalVariableSet": {
+        "subjectScopes": [
+          "child_under5",
+          "school_child"
+        ],
+        "presentation": "injury_concern",
+        "prototypeOnly": true,
+        "reviewStatus": "CODEX Decision - provisional screen variable set pending formal clinical pipeline review",
+        "variables": [
+          {
+            "id": "injuryunconscious",
+            "labelSlug": "tx.screen_sign_unconscious_breathing",
+            "subjectScopes": [
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "injurybleeding",
+            "labelSlug": "tx.screen_sign_bleeding_burn",
+            "subjectScopes": [
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "injuryburn",
+            "labelSlug": "tx.screen_sign_bleeding_burn",
+            "subjectScopes": [
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "injuryhead",
+            "labelSlug": "tx.screen_sign_head_injury",
+            "subjectScopes": [
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "injurybone",
+            "labelSlug": "tx.screen_injury_body",
+            "subjectScopes": [
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "injury_concern"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          }
+        ]
+      }
+    },
+    {
+      "featureId": "dental_triage",
+      "titleSlug": "tx.feature_dental_triage",
+      "bodySlug": "tx.dental_triage_intro",
+      "signSlugs": [
+        "tx.dental_triage.emergency",
+        "tx.dental_triage.same_day",
+        "tx.dental_triage.pain"
+      ],
+      "actionSlug": "tx.screen_action_clinic_today",
+      "source": "https://www.who.int/news-room/fact-sheets/detail/oral-health",
+      "sourceName": "WHO oral health fact sheet; CDC oral health emergency guidance draft",
+      "imageDesc": "Child holding cheek with warning symbols for swelling, fever, injury, bleeding, pain, and breathing trouble.",
+      "governanceStatus": "CODEX Decision - needs approval",
+      "clinicalVariableSet": {
+        "subjectScopes": [
+          "child_under5",
+          "school_child"
+        ],
+        "presentation": "tooth_mouth",
+        "prototypeOnly": true,
+        "reviewStatus": "CODEX Decision - provisional screen variable set pending formal clinical pipeline review",
+        "variables": [
+          {
+            "id": "dentalbreathing",
+            "labelSlug": "tx.dental_triage.emergency",
+            "subjectScopes": [
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "general_danger_sign",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "dentalswelling",
+            "labelSlug": "tx.dental_triage.same_day",
+            "subjectScopes": [
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "tooth_mouth"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "dentalfever",
+            "labelSlug": "tx.screen_sign_fever_cold",
+            "subjectScopes": [
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "tooth_mouth"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "dentalinjury",
+            "labelSlug": "tx.screen_injury_body",
+            "subjectScopes": [
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "tooth_mouth"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "dentalpain",
+            "labelSlug": "tx.dental_triage.pain",
+            "subjectScopes": [
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "presenting_symptom",
+              "clinical_finding"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          },
+          {
+            "id": "dentalbleeding",
+            "labelSlug": "tx.screen_sign_bleeding_burn",
+            "subjectScopes": [
+              "child_under5",
+              "school_child"
+            ],
+            "clinicalVariableRoles": [
+              "symptom_followup",
+              "clinical_finding"
+            ],
+            "followupFor": [
+              "tooth_mouth"
+            ],
+            "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+          }
+        ]
+      }
+    }
+  ]
+}

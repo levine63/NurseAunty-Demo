@@ -1,0 +1,16 @@
+{
+  "generatedFor": [
+    "apps/pwa-sandbox/assets"
+  ],
+  "budget": {
+    "maxDimensionPx": 1024,
+    "maxFileBytes": 307200
+  },
+  "masters": 97,
+  "derivativesWritten": 69,
+  "alreadyWithinBudget": 28,
+  "masterBytes": 103574132,
+  "derivativeBytes": 4206018,
+  "registeredInAssetManifest": 69,
+  "filedInApprovalRegister": 8
+}
