@@ -1,0 +1,143 @@
+{
+  "version": "bd-2012.0-draft",
+  "verified": false,
+  "_status": "DRAFT. Every value must be clinician-verified against the cited source before entering a build. Fields marked _verify:true are not yet confirmed.",
+  "prototype": {
+    "allowUnverifiedClinicalPack": true,
+    "label": "PROTOTYPE ONLY - unverified clinical guideline pack may execute only in explicitly labelled prototype builds."
+  },
+  "source": "WHO/UNICEF 2012 pneumonia/diarrhoea materials; WHO/UNICEF 2004 acute-diarrhoea statement; WHO 2019 sick-young-infant chart booklet and participant manual; WHO IMCI fever module; Bangladesh EPI (DGHS).",
+  "locales": [
+    "bn-BD",
+    "en"
+  ],
+  "ari": {
+    "_note": "IMCI fast-breathing thresholds drive the Respiration Timer's rate check.",
+    "fastBreathing": {
+      "age2to11moBpm": 50,
+      "age12to59moBpm": 40,
+      "_source": "WHO IMCI chart booklet",
+      "_verify": true
+    },
+    "respiratoryRate": {
+      "minPlausibleBpm": 10,
+      "_note": "A counted rate below this is treated as a failed count, not as a reading, and the caregiver is asked to count again. There is deliberately no maximum: refusing a high count could hide the fast-breathing sign.",
+      "_source": "prototype safety floor; not an IMCI threshold",
+      "_verify": true
+    },
+    "dangerSigns": [
+      "chest indrawing",
+      "stridor in a calm child",
+      "unable to drink/breastfeed",
+      "convulsions",
+      "lethargic/unconscious"
+    ],
+    "_verify": true
+  },
+  "diarrhoea": {
+    "persistent_min_days": 14,
+    "persistent_refer_under_months": 6,
+    "persistent_followup_days": 5,
+    "persistent_verify": false,
+    "persistent_source": "WHO IMCI: diarrhoea lasting 14 days or more is PERSISTENT DIARRHOEA. With dehydration it is SEVERE PERSISTENT DIARRHOEA and is referred. Without dehydration it still needs facility assessment, feeding counselling, and follow-up in 5 days, and a child under 6 months is referred.",
+    "persistent_provenance": "Added 2026-08-25. The app already asked how many days the diarrhoea had lasted and passed diarrhoea_days into the engine, but no predicate or rule read it, so the answer changed nothing. David, 2026-08-25: 'does the IMCI who guidelines say long diarrhea goes to clinic? If so, add to our rules.'",
+    "ors": {
+      "type": "low-osmolarity",
+      "sachetVolumeMl": 1000,
+      "sachetVolumeMl_verify": true,
+      "_source": "WHO/UNICEF",
+      "perLooseStool": {
+        "ageBandCutoffMonths": 24,
+        "underCutoffMlMin": 50,
+        "underCutoffMlMax": 100,
+        "atOrOverCutoffMlMin": 100,
+        "atOrOverCutoffMlMax": 200,
+        "_verify": true,
+        "_source": "WHO/UNICEF: after each loose stool give 50-100 mL to a child under 2 years and 100-200 mL to a child aged 2 years or more",
+        "_provenance": "These amounts and the 24-month cut-off were hardcoded in apps/pwa-sandbox/ui-core.js until 2026-08-20. Moved here so the band a caregiver is shown is a governed number rather than a literal in a render function."
+      }
+    },
+    "zinc": {
+      "under6moMgPerDay": 10,
+      "from6moMgPerDay": 20,
+      "durationDaysMin": 10,
+      "durationDaysMax": 14,
+      "_source": "WHO/UNICEF joint statement 2004; reaffirmed UNICEF 2012 report",
+      "_verify": false
+    },
+    "dangerSigns": [
+      "blood in stool (dysentery)",
+      "lethargy or unconsciousness",
+      "unable to drink or breastfeed",
+      "repeated vomiting",
+      "sunken eyes / signs of severe dehydration"
+    ],
+    "antibiotics": {
+      "indicatedForWateryDiarrhoea": false,
+      "indicatedForDysentery": true,
+      "_note": "The 'no antibiotics' voucher renders ONLY when there is no blood in stool AND no danger sign."
+    },
+    "voucher": {
+      "en": "MOH guidance: my child needs ORS and zinc. No antibiotics needed.",
+      "bn": "__TRANSLATE + DGHS/clinician-approve before use__",
+      "_verify": true
+    }
+  },
+  "immunization": {
+    "_note": "Bangladesh EPI schedule. Populate + verify against DGHS/EPI Bangladesh and WHO-UNICEF coverage estimates.",
+    "epiSchedule": [
+      {
+        "vaccine": "__e.g. BCG__",
+        "ageDaysFromBirth": null,
+        "_verify": true
+      }
+    ],
+    "_source": "Bangladesh EPI (DGHS)",
+    "_verify": true
+  },
+  "malaria": {
+    "region": false,
+    "testing_relevant": false,
+    "rdt_result_valid_within_hours": null,
+    "_verify": true,
+    "note": "Country/localizer policy controls whether malaria testing is relevant. Test validity is deliberately unresolved until the national protocol is approved.",
+    "_source": "WHO IMCI fever pathway; national malaria protocol required",
+    "_provenance": "Prototype configuration; no medicine selection"
+  },
+  "fever": {
+    "entry_min_C_axillary": 37.5,
+    "refer_on_height_min_C_axillary": null,
+    "urgent_on_height_min_C_axillary": null,
+    "prolonged_min_days": 7,
+    "persistent_no_improvement_min_days": 2,
+    "_verify": true,
+    "_source": "WHO IMCI fever module; persistent-no-improvement timing is prototype product policy pending review",
+    "_provenance": "Axillary site only; no offset is inferred for oral, rectal, ear, or forehead readings"
+  },
+  "young_infant": {
+    "max_age_days_completed": 59,
+    "fever_min_C_axillary": 37.5,
+    "fast_breathing_min_bpm": 60,
+    "hypothermia_max_C_axillary": null,
+    "_verify": true,
+    "_source": "WHO 2019 sick young infant chart booklet and participant manual",
+    "_provenance": "Clinical young-infant band is 0-59 completed days; this does not redefine the app newborn persona"
+  },
+  "anc": {
+    "contact_weeks": [
+      12,
+      20,
+      26,
+      30,
+      34,
+      36,
+      38,
+      40
+    ],
+    "total_contacts": 8,
+    "gestation_weeks_full_term": 40,
+    "_verify": true,
+    "_source": "WHO 2016 recommendations on antenatal care for a positive pregnancy experience: eight contacts at 12, 20, 26, 30, 34, 36, 38 and 40 weeks",
+    "_provenance": "Used only to pace the antenatal comic series and to say which contact a mother is near. No clinical advice is derived from these weeks; the schedule a mother should follow is whatever her local programme runs."
+  }
+}

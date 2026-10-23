@@ -1,0 +1,38 @@
+{
+  "about": "Serialised delivery of the Womb with a View antenatal comic series: one comic per antenatal contact, or one per month of pregnancy, whichever cadence the programme runs. David Levine, 2026-08-20: 'prioritize toothbrushing, handwashing, and Womb with a View -- one comic / month or per ANC visit.'",
+  "schemaVersion": "1.0",
+  "seriesName": "Womb with a View",
+  "seriesSource": "ANC Comics Womb with a View.10 (David I. Levine, 2016), unpublished",
+  "cadenceSwitch": "ancComicCadence",
+  "policy": {
+    "oneComicPerMilestone": true,
+    "showsEarlierComicsAsAlreadyRead": true,
+    "neverShowsAComicBeforeItsMilestone": false,
+    "neverShowsAComicBeforeItsMilestoneNote": "A caregiver may always read ahead. The schedule decides what is offered first, not what is permitted - withholding a mother's own health information to enforce a drip feed would be the wrong trade."
+  },
+  "comics": [
+    {
+      "order": 1,
+      "featureId": "anc_womb_nutrition_story",
+      "packId": "recovered-pr28",
+      "ancContact": 1,
+      "gestationMonth": 3,
+      "topicSlug": "tx.anc_comic_nutrition_topic",
+      "availability": "in_this_build"
+    },
+    {
+      "order": 2,
+      "featureId": "anc_womb_deworming_story",
+      "packId": "recovered-pr28",
+      "ancContact": 2,
+      "gestationMonth": 5,
+      "topicSlug": "tx.anc_comic_deworming_topic",
+      "availability": "in_this_build"
+    }
+  ],
+  "notYetRecovered": {
+    "note": "The source file is named 'Womb with a View.10', so the series is longer than the two comics recovered from pull request #28. The rest are not in this build. The app says so on the antenatal screen rather than showing an empty slot or silently repeating a comic, because a caregiver who is told 'the next one comes at your next visit' and then finds nothing has been lied to.",
+    "recoveredComics": 2,
+    "seriesLengthKnown": false
+  }
+}

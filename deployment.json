@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0",
+  "publicUrl": "https://hygieneheroes.berkeley.edu/nurseaunty/demo/",
+  "canonicalApp": "apps/pwa-sandbox",
+  "standaloneIncluded": false,
+  "orsSlice": {
+    "path": "ors/",
+    "url": "https://hygieneheroes.berkeley.edu/nurseaunty/demo/ors/",
+    "build": "73b7f9c26c"
+  },
+  "demoStoryPacks": [
+    "recovered-pr28-v0.1"
+  ],
+  "sourceCommit": "0ca4ef119deadb1cf596c92bb90746b45dce8e78",
+  "sourceState": "clean",
+  "buildId": "0ca4ef119dea-clean"
+}

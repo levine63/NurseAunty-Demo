@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Child vision screen illustration</title>
+  <desc id="desc">Child eye check with school board and referral symbols.</desc>
+  <rect width="640" height="360" fill="#f1f6fb"/>
+  <circle cx="156" cy="116" r="48" fill="#9f6a45"/>
+  <rect x="104" y="166" width="110" height="126" rx="38" fill="#2d6cdf"/>
+  <path d="M302 176c54-64 134-64 188 0-54 64-134 64-188 0z" fill="#ffffff" stroke="#176b83" stroke-width="12"/>
+  <circle cx="396" cy="176" r="36" fill="#8ed0e6" stroke="#176b83" stroke-width="10"/>
+  <circle cx="396" cy="176" r="14" fill="#1a1a2e"/>
+  <rect x="290" y="260" width="220" height="34" rx="17" fill="#d7f1ff"/>
+  <path d="M292 92h220" stroke="#b8ddd6" stroke-width="20" stroke-linecap="round"/>
+</svg>

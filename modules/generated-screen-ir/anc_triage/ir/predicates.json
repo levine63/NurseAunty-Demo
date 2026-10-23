@@ -1,0 +1,224 @@
+{
+  "about": "Prototype predicate table generated from anc_triage screen-card clinicalVariableSet.",
+  "guidelineVersionExpected": "prototype-screen-card",
+  "inputs": {
+    "pregnancy_danger_concern": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "pregnancy danger concern"
+      },
+      "subjectScopes": [
+        "pregnant_woman"
+      ],
+      "clinicalVariableRoles": [
+        "presenting_symptom"
+      ],
+      "prototypeAssignment": "Codex-generated prototype IR from screen-card clinicalVariableSet; replace with formal clinical pipeline output."
+    },
+    "anc_triage_ancbleeding": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_preg_bleeding"
+      },
+      "subjectScopes": [
+        "pregnant_woman"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "anc_triage_ancheadvision": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_severe_headache_vision"
+      },
+      "subjectScopes": [
+        "pregnant_woman"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "anc_triage_ancbreathing": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_trouble_breathing"
+      },
+      "subjectScopes": [
+        "pregnant_woman"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "anc_triage_ancpainfever": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_severe_belly_pain"
+      },
+      "subjectScopes": [
+        "pregnant_woman"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "anc_triage_ancmovement": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_baby_movement_change"
+      },
+      "subjectScopes": [
+        "pregnant_woman"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "anc_triage_ancother": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_anc_body"
+      },
+      "subjectScopes": [
+        "pregnant_woman"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup"
+      ],
+      "followupFor": [
+        "pregnancy_danger_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "anc_triage_pregharming": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_anc_body"
+      },
+      "subjectScopes": [
+        "pregnant_woman"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "pregnancy_danger_concern"
+      ],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    }
+  },
+  "predicates": [
+    {
+      "id": "presentation_selected",
+      "label": {
+        "en": "Presentation selected"
+      },
+      "source": "Screen-card presentation metadata",
+      "var": "pregnancy_danger_concern",
+      "is": true
+    },
+    {
+      "id": "any_general_danger_sign",
+      "label": {
+        "en": "Any subject-specific general danger sign"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged general_danger_sign",
+      "anyOf": [
+        {
+          "var": "anc_triage_ancbleeding",
+          "is": true
+        },
+        {
+          "var": "anc_triage_ancheadvision",
+          "is": true
+        },
+        {
+          "var": "anc_triage_ancbreathing",
+          "is": true
+        },
+        {
+          "var": "anc_triage_ancpainfever",
+          "is": true
+        },
+        {
+          "var": "anc_triage_ancmovement",
+          "is": true
+        },
+        {
+          "var": "anc_triage_pregharming",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_followup_finding",
+      "label": {
+        "en": "Any symptom-specific follow-up finding"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged symptom_followup or clinical_finding",
+      "anyOf": [
+        {
+          "var": "anc_triage_ancbleeding",
+          "is": true
+        },
+        {
+          "var": "anc_triage_ancheadvision",
+          "is": true
+        },
+        {
+          "var": "anc_triage_ancbreathing",
+          "is": true
+        },
+        {
+          "var": "anc_triage_ancpainfever",
+          "is": true
+        },
+        {
+          "var": "anc_triage_ancmovement",
+          "is": true
+        },
+        {
+          "var": "anc_triage_ancother",
+          "is": true
+        },
+        {
+          "var": "anc_triage_pregharming",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_safety_gate",
+      "label": {
+        "en": "Any safety gate"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged safety_gate",
+      "anyOf": []
+    }
+  ]
+}

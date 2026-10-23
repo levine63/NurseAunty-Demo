@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Toothbrushing story illustration</title>
+  <desc id="desc">Child smiling with toothbrush, clean tooth icons, timer, and clinic check cue.</desc>
+  <rect width="640" height="360" fill="#fffaf0"/>
+  <circle cx="150" cy="116" r="54" fill="#ffd9b0"/>
+  <path d="M100 112c12-48 82-68 114-18 8 12 10 27 6 42-28-20-66-24-120-24z" fill="#24324a"/>
+  <path d="M104 198c20-48 100-50 124 0l18 102H86l18-102z" fill="#2f8f83"/>
+  <circle cx="130" cy="112" r="6" fill="#1a1a2e"/>
+  <circle cx="170" cy="112" r="6" fill="#1a1a2e"/>
+  <path d="M130 142q20 16 42 0" fill="none" stroke="#1a1a2e" stroke-width="7" stroke-linecap="round"/>
+  <path d="M220 196c44-18 84-28 126-34" fill="none" stroke="#2f8f83" stroke-width="22" stroke-linecap="round"/>
+  <path d="M332 160l116-42" stroke="#0b6b5b" stroke-width="18" stroke-linecap="round"/>
+  <rect x="438" y="102" width="54" height="24" rx="12" fill="#ffffff" stroke="#0b6b5b" stroke-width="6"/>
+  <path d="M454 110v-28m16 28v-28m16 28v-28" stroke="#dceef3" stroke-width="6" stroke-linecap="round"/>
+  <path d="M378 206c-20-40 10-80 50-70 38 10 56 53 32 91l-27 48c-5 9-18 9-23 0l-32-69z" fill="#ffffff" stroke="#0b6b5b" stroke-width="8"/>
+  <path d="M421 171c18 12 30 12 48 0" fill="none" stroke="#9ed9c8" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="548" cy="232" r="42" fill="#ffffff" stroke="#2f8f83" stroke-width="8"/>
+  <path d="M548 206v28l18 14" fill="none" stroke="#2f8f83" stroke-width="8" stroke-linecap="round"/>
+  <rect x="82" y="302" width="480" height="28" rx="14" fill="#e1f2ee"/>
+  <rect x="500" y="72" width="66" height="48" rx="8" fill="#ffffff" stroke="#2f8f83" stroke-width="7"/>
+  <path d="M533 84v24m-12-12h24" stroke="#2f8f83" stroke-width="7" stroke-linecap="round"/>
+</svg>

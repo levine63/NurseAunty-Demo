@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">Dehydration concern and care</title>
+  <desc id="desc">A caregiver watches a tired child with low-tear and dry-mouth cues, with an ORS cup and a clinic destination.</desc>
+  <rect width="720" height="420" rx="24" fill="#fffdf7"/>
+  <rect x="24" y="24" width="672" height="372" rx="24" fill="#f7f0de" stroke="#d6d0c3" stroke-width="4"/>
+  <g transform="translate(58 72)">
+    <circle cx="78" cy="67" r="42" fill="#9d633f"/>
+    <path d="M40 53c17-35 65-42 81-4" fill="#2d211c"/>
+    <path d="M24 252c7-89 36-140 93-140s85 51 92 140z" fill="#4d8e83"/>
+    <path d="M120 158l83 35" stroke="#9d633f" stroke-width="22" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(242 66)">
+    <ellipse cx="94" cy="92" rx="67" ry="75" fill="#a96b43"/>
+    <path d="M38 58c26-43 88-48 113 4" fill="#2b201c"/>
+    <path d="M58 91q16-9 30 0M103 91q16-9 30 0" fill="none" stroke="#1d1d1b" stroke-width="6" stroke-linecap="round"/>
+    <path d="M68 135c17-10 37-10 53 0" fill="none" stroke="#1d1d1b" stroke-width="6" stroke-linecap="round"/>
+    <path d="M134 101c10 16 3 28-6 33" fill="none" stroke="#4c9289" stroke-width="5" stroke-linecap="round" stroke-dasharray="5 8"/>
+    <path d="M31 274c8-77 32-119 73-119 40 0 65 42 73 119z" fill="#d49a55"/>
+  </g>
+  <g transform="translate(446 166)">
+    <path d="M15 118h92V39c0-22-16-36-39-36h-14C31 3 15 17 15 39z" fill="#d7edf2" stroke="#53636a" stroke-width="7"/>
+    <path d="M15 66h92" stroke="#287a78" stroke-width="9"/>
+    <rect x="135" y="44" width="72" height="74" rx="9" fill="#f4efe3" stroke="#6f776f" stroke-width="7"/>
+    <path d="M207 61c26 0 26 40 0 40" fill="none" stroke="#6f776f" stroke-width="7"/>
+  </g>
+  <path d="M550 116h53m-17-18 20 18-20 18" fill="none" stroke="#bd5b48" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(611 70)">
+    <rect x="0" y="0" width="64" height="73" rx="9" fill="#fff" stroke="#587871" stroke-width="6"/>
+    <path d="M32 17v39M13 36h38" stroke="#b8443f" stroke-width="9" stroke-linecap="round"/>
+  </g>
+</svg>

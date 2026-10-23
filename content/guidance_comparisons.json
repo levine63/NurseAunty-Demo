@@ -1,0 +1,899 @@
+{
+  "about": "Prototype quality-control map: feature/module claims compared against external guidance. This is not clinical approval; it records what must be reviewed.",
+  "schemaVersion": "0.1",
+  "sources": [
+    {
+      "id": "src.who.anc_positive_pregnancy",
+      "title": "WHO recommendations on antenatal care for a positive pregnancy experience",
+      "url": "https://www.who.int/publications/i/item/9789241549912",
+      "publisher": "WHO",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.who.birth_preparedness_plan",
+      "title": "Making plans for childbirth when pregnant",
+      "url": "https://www.who.int/tools/your-life-your-health/life-phase/pregnancy--birth-and-after-childbirth/making-plans-for-childbirth-when-pregnant",
+      "publisher": "WHO",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.who.pnc_positive_postnatal",
+      "title": "WHO recommendations on maternal and newborn care for a positive postnatal experience",
+      "url": "https://www.who.int/publications/i/item/9789240045989",
+      "publisher": "WHO",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.unicef.newborn_care_data",
+      "title": "Newborn care",
+      "url": "https://data.unicef.org/topic/maternal-health/newborn-care/",
+      "publisher": "UNICEF",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.who.kmc_guide",
+      "title": "Kangaroo mother care: a clinical practice guide",
+      "url": "https://www.who.int/publications/m/item/kangaroo-mother-care--a-clinical-practice-guide",
+      "publisher": "WHO",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.who.bangladesh_immunization",
+      "title": "Immunization in Bangladesh",
+      "url": "https://www.who.int/bangladesh/health-topics/immunization",
+      "publisher": "WHO Bangladesh",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.who.bangladesh_epi_factsheet_2024",
+      "title": "Expanded programme on Immunization (EPI) factsheet 2024: Bangladesh",
+      "url": "https://www.who.int/publications/i/item/bangladesh-epi-factsheet-2024",
+      "publisher": "WHO",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.unicef.diarrhoeal_disease",
+      "title": "Diarrhoeal disease",
+      "url": "https://data.unicef.org/topic/child-health/diarrhoeal-disease/",
+      "publisher": "UNICEF Data",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.who.unicef.diarrhoea_zinc_ors",
+      "title": "Existing WHO guidelines for preventing and treating diarrhoea in children",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK305340/",
+      "publisher": "WHO / NCBI Bookshelf mirror",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.who.zinc_diarrhoea",
+      "title": "Zinc supplementation in the management of diarrhoea",
+      "url": "https://www.who.int/tools/elena/interventions/zinc-diarrhoea",
+      "publisher": "WHO",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.unicef.ors_zinc_supply",
+      "title": "Oral rehydration salts (ORS) and zinc",
+      "url": "https://www.unicef.org/supply/oral-rehydration-salts-ors-and-zinc",
+      "publisher": "UNICEF",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.cdc.clean_hands",
+      "title": "About Handwashing",
+      "url": "https://www.cdc.gov/clean-hands/about/index.html",
+      "publisher": "CDC",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.cdc.respiratory_hygiene",
+      "title": "Hygiene and Respiratory Viruses Prevention",
+      "url": "https://www.cdc.gov/respiratory-viruses/prevention/hygiene.html",
+      "publisher": "CDC",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.cdc.make_water_safe",
+      "title": "How to Make Water Safe in an Emergency",
+      "url": "https://www.cdc.gov/water-emergency/about/index.html",
+      "publisher": "CDC",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.cdc.cholera_prevention",
+      "title": "How to Prevent Cholera",
+      "url": "https://www.cdc.gov/cholera/prevention/index.html",
+      "publisher": "CDC",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.cdc.emergency_kit_pregnant_infants_children",
+      "title": "Emergency Kit Checklist: Pregnant Women, Infants, and Children",
+      "url": "https://www.cdc.gov/children-and-school-preparedness/resources/emergency-kit-checklist-pregnant-women-infants-and-children.html",
+      "publisher": "CDC",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.cdc.medication_safety",
+      "title": "Medication Safety and Your Health",
+      "url": "https://www.cdc.gov/medication-safety/about/index.html",
+      "publisher": "CDC",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.fda.medication_list",
+      "title": "Create and Keep a Medication List for Your Health",
+      "url": "https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health",
+      "publisher": "FDA",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.who.breastfeeding",
+      "title": "Breastfeeding",
+      "url": "https://www.who.int/health-topics/breastfeeding",
+      "publisher": "WHO",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.who.research_ethics_review",
+      "title": "Standards and operational guidance for ethics review of health-related research with human participants",
+      "url": "https://www.who.int/publications/i/item/9789241502948",
+      "publisher": "WHO",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.cdc.oral_health",
+      "title": "About Oral Health",
+      "url": "https://www.cdc.gov/oral-health/about/index.html",
+      "publisher": "CDC",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.who.oral_health",
+      "title": "Oral health",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/oral-health",
+      "publisher": "WHO",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.cdc.maternal_warning_signs",
+      "title": "Urgent Maternal Warning Signs and Symptoms",
+      "url": "https://www.cdc.gov/hearher/maternal-warning-signs/index.html",
+      "publisher": "CDC Hear Her Campaign",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.fda.kohl_lead_warning",
+      "title": "Kohl, Kajal, Al-Kahal, Surma, Tiro, Tozali, or Kwalli: Beware Lead Poisoning",
+      "url": "https://www.fda.gov/cosmetics/cosmetic-products/kohl-kajal-al-kahal-surma-tiro-tozali-or-kwalli-any-name-beware-lead-poisoning",
+      "publisher": "FDA",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.cdc.lead_foods_cosmetics_medicines",
+      "title": "About Lead in Foods, Cosmetics, and Medicines",
+      "url": "https://www.cdc.gov/lead-prevention/prevention/foods-cosmetics-medicines.html",
+      "publisher": "CDC",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.cdc.child_vision",
+      "title": "Keep an Eye on Your Child's Vision",
+      "url": "https://www.cdc.gov/vision-health/prevention/youth-vision-problems.html",
+      "publisher": "CDC",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.cdc.hearing_screening_children",
+      "title": "Screening for Hearing Loss",
+      "url": "https://www.cdc.gov/hearing-loss-children/screening/index.html",
+      "publisher": "CDC",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.cdc.toothpaste_children",
+      "title": "Use of Toothpaste and Toothbrushing Patterns Among Children and Adolescents",
+      "url": "https://www.cdc.gov/mmwr/volumes/68/wr/mm6804a3.htm",
+      "publisher": "CDC MMWR",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.cdc.malaria_testing",
+      "title": "Malaria - Yellow Book",
+      "url": "https://www.cdc.gov/yellow-book/hcp/travel-associated-infections-diseases/malaria.html",
+      "publisher": "CDC",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.cdc.malaria_bednets",
+      "title": "Insecticide-Treated Nets",
+      "url": "https://www.cdc.gov/malaria/php/public-health-strategy/insecticide-treated-nets.html",
+      "publisher": "CDC",
+      "status": "source_identified",
+      "accessed": "2026-07-06"
+    },
+    {
+      "id": "src.who.infant_young_child_feeding",
+      "title": "Infant and young child feeding",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/infant-and-young-child-feeding",
+      "publisher": "WHO",
+      "status": "source_identified",
+      "accessed": "2026-08-07"
+    },
+    {
+      "id": "src.unicef.feeding_6_12_months",
+      "title": "Feeding your baby: 6–12 months",
+      "url": "https://www.unicef.org/parenting/food-nutrition/feeding-your-baby-6-12-months",
+      "publisher": "UNICEF",
+      "status": "source_identified",
+      "accessed": "2026-08-07"
+    },
+    {
+      "id": "src.cdc.sanitation_hygiene",
+      "title": "About Global WASH",
+      "url": "https://www.cdc.gov/global-water-sanitation-hygiene/about/index.html",
+      "publisher": "CDC",
+      "status": "source_identified",
+      "accessed": "2026-07-06"
+    },
+    {
+      "id": "src.who.imci_chart_booklet",
+      "title": "Integrated Management of Childhood Illness chart booklet",
+      "url": "https://cdn.who.int/media/docs/default-source/mca-documents/child/imci-integrated-management-of-childhood-illness/imci-in-service-training/imci-chart-booklet.pdf?sfvrsn=f63af425_1",
+      "publisher": "WHO",
+      "status": "source_identified",
+      "accessed": "2026-07-06"
+    },
+    {
+      "id": "src.cdc.measles_about",
+      "title": "About Measles",
+      "url": "https://www.cdc.gov/measles/about/index.html",
+      "publisher": "CDC",
+      "status": "source_identified",
+      "accessed": "2026-07-06"
+    },
+    {
+      "id": "src.unicef.child_wasting",
+      "title": "Nutrition and care for children with wasting",
+      "url": "https://www.unicef.org/nutrition/child-wasting",
+      "publisher": "UNICEF",
+      "status": "source_identified",
+      "accessed": "2026-07-06"
+    },
+    {
+      "id": "src.cdc.heads_up_concussion",
+      "title": "Signs and Symptoms of Concussion",
+      "url": "https://www.cdc.gov/heads-up/signs-symptoms/index.html",
+      "publisher": "CDC HEADS UP",
+      "status": "source_identified",
+      "accessed": "2026-07-06"
+    },
+    {
+      "id": "src.nhs.first_aid",
+      "title": "First aid",
+      "url": "https://www.nhs.uk/tests-and-treatments/first-aid/",
+      "publisher": "NHS",
+      "status": "source_identified",
+      "accessed": "2026-07-06"
+    },
+    {
+      "id": "src.who.digital_interventions_2019",
+      "title": "Recommendations on digital interventions for health system strengthening",
+      "url": "https://www.who.int/publications/i/item/9789241550505",
+      "publisher": "WHO",
+      "status": "source_identified",
+      "accessed": "2026-07-06"
+    },
+    {
+      "id": "src.who.cdisah_2023",
+      "title": "Classification of digital interventions, services and applications in health, 2nd edition",
+      "url": "https://www.who.int/publications/i/item/9789240081949",
+      "publisher": "WHO",
+      "status": "source_identified",
+      "accessed": "2026-07-06"
+    },
+    {
+      "id": "src.who.digital_health_me_2016",
+      "title": "Monitoring and evaluating digital health interventions",
+      "url": "https://www.who.int/publications/i/item/9789241511766",
+      "publisher": "WHO",
+      "status": "source_identified",
+      "accessed": "2026-07-06"
+    },
+    {
+      "id": "src.unicef.rd4c",
+      "title": "Responsible Data for Children",
+      "url": "https://rd4c.org/",
+      "publisher": "UNICEF / The GovLab",
+      "status": "source_identified",
+      "accessed": "2026-07-06"
+    },
+    {
+      "id": "src.hh.home",
+      "title": "Hygiene Heroes",
+      "url": "https://hygieneheroes.berkeley.edu/",
+      "publisher": "UC Berkeley Hygiene Heroes",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.hh.handwashing",
+      "title": "Hygiene Heroes Handwashing",
+      "url": "https://hygieneheroes.berkeley.edu/handwashing.html",
+      "publisher": "UC Berkeley Hygiene Heroes",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.hh.safe_water",
+      "title": "Hygiene Heroes Safe Water",
+      "url": "https://hygieneheroes.berkeley.edu/safewater.html",
+      "publisher": "UC Berkeley Hygiene Heroes",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.hh.dental",
+      "title": "Hygiene Heroes Dental",
+      "url": "https://hygieneheroes.berkeley.edu/dental.html",
+      "publisher": "UC Berkeley Hygiene Heroes",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.story.hh_handwashing_story",
+      "title": "Happy Hands / Hand is Sad",
+      "url": "Owned source document Hand Washing Early Reader.pptx; SHA-256 66d1caacadf68fa5d3cde10af65191b773d962e5f0729bc4309c1a957c069771. Published wording reference: https://hygieneheroes.berkeley.edu/curriculum/stories/sad_hand.pdf; downloaded SHA-256 4d071ab3cd395a1be0ad4601ae2302523acc0bc484d17697983c5ca5ca99e66a.",
+      "publisher": "Hygiene Heroes; written by David Levine; rights confirmed by David Levine on 2026-08-07",
+      "status": "source_identified_content_and_translation_review_pending",
+      "accessed": "2026-08-07"
+    },
+    {
+      "id": "src.story.hh_dental_story",
+      "title": "The Sad Tooth",
+      "url": "Owned source document The sad tooth.docx; SHA-256 71c12967ae2b0b9d87c24ebf46c91fae5986133d06d2702ac67e19dcbaeaac5f. Published wording reference: https://hygieneheroes.berkeley.edu/curriculum/stories/the_sad_tooth.pdf; downloaded SHA-256 5eb5b522a98c7288cd8ee319730740badfe0e380fd7e401998e5e64553839101.",
+      "publisher": "Hygiene Heroes; written by David I. Levine; illustrations credited to Bernadette Justine McVerry; rights confirmed by David Levine on 2026-08-07",
+      "status": "source_identified_content_and_translation_review_pending",
+      "accessed": "2026-08-07"
+    },
+    {
+      "id": "src.story.gerry_the_germ",
+      "title": "Gerry the Germ Fable.13b.docx",
+      "url": "Owned source document Gerry the Germ Fable.13b.docx; SHA-256 3a029db84f4f7ef583e8f0028d3c6c77b4f2017f283d0c49b9157c61b8c29fd9.",
+      "publisher": "Source credits Benji and David Levine as authors and Jennifer Kotler as illustrator; rights confirmed by David Levine on 2026-08-07",
+      "status": "source_identified_content_and_translation_review_pending",
+      "accessed": "2026-08-07"
+    },
+    {
+      "id": "src.hh.cold_flu",
+      "title": "Hygiene Heroes Cold and Flu",
+      "url": "https://hygieneheroes.berkeley.edu/coldandflu.html",
+      "publisher": "UC Berkeley Hygiene Heroes",
+      "status": "source_identified",
+      "accessed": "2026-07-03"
+    },
+    {
+      "id": "src.who.sick_young_infant_2019",
+      "title": "Managing possible serious bacterial infection in young infants 0-59 days old: chart booklet",
+      "url": "https://www.who.int/publications/i/item/9789241516365",
+      "publisher": "WHO",
+      "status": "source_identified",
+      "accessed": "2026-07-19"
+    },
+    {
+      "id": "src.who.imci_fever_module",
+      "title": "Integrated Management of Childhood Illness: Fever module",
+      "url": "https://www.who.int/publications/i/item/9789241506823",
+      "publisher": "WHO",
+      "status": "source_identified",
+      "accessed": "2026-07-19"
+    },
+    {
+      "id": "src.mamma.localizer_governance",
+      "title": "Mamma App Localizer Governance Decisions",
+      "url": "docs/decisions/GOVERNANCE-DECISIONS.md",
+      "publisher": "Mamma prototype",
+      "status": "local_prototype_record",
+      "accessed": "2026-07-03"
+    }
+  ],
+  "comparisons": [
+    {
+      "featureId": "u5_triage",
+      "sourceIds": [
+        "src.who.unicef.diarrhoea_zinc_ors",
+        "src.cdc.malaria_testing",
+        "src.who.imci_chart_booklet",
+        "src.who.sick_young_infant_2019",
+        "src.who.imci_fever_module"
+      ],
+      "claim": "Classify and route under-5 cough, diarrhoea, and fever; danger signs first; possible fever at 0-59 completed days routes urgently; malaria-relevant fever uses explicit test state without medicine selection.",
+      "status": "partial_match_needs_local_clinician_review",
+      "codexDecision": "Existing IR remains authoritative for prototype; clinician sign-off still required."
+    },
+    {
+      "featureId": "ors_voucher",
+      "sourceIds": [
+        "src.unicef.diarrhoeal_disease",
+        "src.who.unicef.diarrhoea_zinc_ors"
+      ],
+      "claim": "Simple watery diarrhoea can unlock ORS/zinc support; dysentery/danger signs suppress voucher; caregiver education shows ORS after each loose stool by age group and ORS until diarrhoea stops.",
+      "status": "partial_match_needs_local_clinician_review",
+      "codexDecision": "Voucher wording is a prototype behavior-change tool and needs MOH approval."
+    },
+    {
+      "featureId": "ors_slideshow",
+      "sourceIds": [
+        "src.who.unicef.diarrhoea_zinc_ors"
+      ],
+      "claim": "Show clean-water, correct-volume, stir/use-same-day ORS preparation steps.",
+      "status": "source_identified_needs_exact_local_product_review",
+      "codexDecision": "Use placeholders until local ORS sachet/container photos are captured."
+    },
+    {
+      "featureId": "dental_brushing",
+      "sourceIds": [
+        "src.cdc.oral_health",
+        "src.cdc.toothpaste_children",
+        "src.hh.dental"
+      ],
+      "claim": "Brushing timer/tracker supports twice-daily fluoride toothbrushing; child amount guidance needs age/local approval.",
+      "status": "partial_match_needs_dental_review",
+      "codexDecision": "Prototype says 'small amount' and routes detailed dosing language to review."
+    },
+    {
+      "featureId": "dental_triage",
+      "sourceIds": [
+        "src.cdc.oral_health",
+        "src.who.oral_health"
+      ],
+      "claim": "Tooth pain, swelling, fever, bleeding, injury, and breathing/swallowing concerns route conservatively to dental/clinic/urgent care without diagnosis or treatment advice.",
+      "status": "conservative_routing_needs_dental_review",
+      "codexDecision": "CODEX Decision - needs approval: checklist uses conservative Localizer routing for dental warning signs; no antibiotics, pain medicines, extraction advice, or dental diagnosis."
+    },
+    {
+      "featureId": "hh_handwashing_story",
+      "sourceIds": [
+        "src.story.hh_handwashing_story",
+        "src.cdc.clean_hands",
+        "src.hh.handwashing"
+      ],
+      "claim": "The recovered five-frame early reader shows dirty, sad hands seeing soap, being washed, and becoming happy, then bridges into the foreground handwashing coach.",
+      "status": "source_identified_content_and_translation_review_pending",
+      "codexDecision": "David approved restoration to the internal prototype and confirmed rights on 2026-08-07. Exact source hash, frame order, and artwork are preserved; content/local and translation review remain pending, and this is not field-use approval."
+    },
+    {
+      "featureId": "hh_safe_water_story",
+      "sourceIds": [
+        "src.hh.safe_water",
+        "src.cdc.make_water_safe",
+        "src.cdc.cholera_prevention"
+      ],
+      "claim": "Safe-water stories support water treatment behavior and source-safety awareness, then bridge into the safe-water checker, boil-water timer, and local cholera alert tools.",
+      "status": "source_identified_needs_wash_review",
+      "codexDecision": "CODEX Decision - needs approval: story summary is adapted, not copied; action buttons are education-to-tool navigation only and local WASH wording/assets are required."
+    },
+    {
+      "featureId": "hh_dental_story",
+      "sourceIds": [
+        "src.story.hh_dental_story",
+        "src.hh.dental",
+        "src.cdc.oral_health"
+      ],
+      "claim": "The recovered five-frame early reader shows a sad tooth finding a toothbrush, being brushed, and becoming happy, then bridges into the brushing coach and tooth-pain check.",
+      "status": "source_identified_content_and_translation_review_pending",
+      "codexDecision": "David approved restoration to the internal prototype and confirmed rights on 2026-08-07. Exact source hash, frame order, and artwork are preserved; content/local and translation review remain pending, and this is not field-use approval."
+    },
+    {
+      "featureId": "gerry_the_germ",
+      "sourceIds": [
+        "src.story.gerry_the_germ"
+      ],
+      "claim": "A fictional story about diarrhoeal germs spreading through unsafe water, contaminated hands, food, flies, and open defecation, and WASH practices presented as prevention lessons.",
+      "status": "source_identified_content_and_translation_review_pending",
+      "codexDecision": "David approved restoration to the internal prototype and confirmed rights on 2026-08-07. Content/local review is required for chlorine, boiling, filtering, sanitation, and diarrhoeal-prevention wording; translation review also remains pending. This is not field-use approval."
+    },
+    {
+      "featureId": "hh_cold_flu_story",
+      "sourceIds": [
+        "src.hh.cold_flu",
+        "src.cdc.clean_hands",
+        "src.cdc.respiratory_hygiene"
+      ],
+      "claim": "Cold and flu stories reinforce handwashing and cough-covering habits, then bridge into handwashing practice and the under-5 sick-child cough check without replacing clinical fever/ARI triage.",
+      "status": "source_identified_needs_adaptation",
+      "codexDecision": "CODEX Decision - needs approval: story summary is adapted, not copied; action buttons are education-to-tool navigation only. Cough preselection opens relevant triage questions but does not evaluate, diagnose, or imply flu."
+    },
+    {
+      "featureId": "anc_birth_plan",
+      "sourceIds": [
+        "src.who.anc_positive_pregnancy",
+        "src.who.birth_preparedness_plan"
+      ],
+      "claim": "ANC reminders and birth plan support timely pregnancy care and preparedness.",
+      "status": "source_identified_needs_local_schedule",
+      "codexDecision": "CODEX Decision - needs approval: prototype supports birth preparedness checklist items but generates no clinical schedule until local ANC schedule is approved."
+    },
+    {
+      "featureId": "pnc_lactation",
+      "sourceIds": [
+        "src.who.pnc_positive_postnatal",
+        "src.cdc.maternal_warning_signs"
+      ],
+      "claim": "Postpartum and lactation danger checklist conservatively routes separate caregiver-visible danger findings such as heavy bleeding, large clots, placenta or membrane pieces after birth, bad-smelling discharge, breathing or chest symptoms, severe headache or vision changes, severe belly pain, severe swelling of face/hands/legs, newborn poor feeding, and thoughts of harm or feeling unsafe to urgent care, urgent newborn care, or trusted emergency/crisis support.",
+      "status": "conservative_routing_needs_postnatal_lactation_and_safeguarding_review",
+      "codexDecision": "CODEX Decision - needs approval: CDC Hear Her and WHO postnatal guidance are adapted into postpartum/lactation referral support; local maternity, newborn, lactation, safeguarding, and crisis pathways must replace draft wording before release."
+    },
+    {
+      "featureId": "breastfeeding_aid_triage",
+      "sourceIds": [
+        "src.who.breastfeeding",
+        "src.who.pnc_positive_postnatal",
+        "src.who.imci_chart_booklet"
+      ],
+      "claim": "Breastfeeding aid and triage combines newborn danger screening, maternal postpartum danger screening, feeding-intake concerns, attachment pain concerns, and exclusive-breastfeeding counselling into one prototype aid surface, adapted from the breastfeeding lessons zip and routed conservatively through the existing screen-card clinical IR.",
+      "status": "prototype_import_needs_lactation_newborn_maternal_review",
+      "codexDecision": "CODEX Decision - needs approval: the zip's useful questions and counselling are adapted for an internal prototype only. Contract extensions, dyad storage, validated thresholds, translations, and local lactation pathways remain unresolved."
+    },
+    {
+      "featureId": "breastfeeding_audio",
+      "sourceIds": [
+        "src.who.breastfeeding",
+        "src.who.pnc_positive_postnatal"
+      ],
+      "claim": "Breastfeeding audio help supports positioning, attachment/latch support, feeding cues, on demand feeding, and referral for difficulty or danger signs.",
+      "status": "source_identified_needs_lactation_review",
+      "codexDecision": "CODEX Decision - needs approval: audio helper scripts are placeholders and must be reviewed by local lactation/newborn clinicians."
+    },
+    {
+      "featureId": "immunization_reminders",
+      "sourceIds": [
+        "src.who.bangladesh_immunization",
+        "src.who.bangladesh_epi_factsheet_2024"
+      ],
+      "claim": "Prototype vaccine reminders may calculate the next WHO-style routine visit from a child's birth date, but real reminders must follow the approved local EPI schedule and the child's vaccine card/clinic record.",
+      "status": "source_identified_needs_exact_epi_table",
+      "codexDecision": "CODEX Decision - needs approval: WHO-style prototype date calculation is allowed for demo; exact local EPI table, clinic record, and vaccine card must control field use."
+    },
+    {
+      "featureId": "zinc_tracker",
+      "sourceIds": [
+        "src.who.zinc_diarrhoea",
+        "src.unicef.ors_zinc_supply",
+        "src.who.unicef.diarrhoea_zinc_ors"
+      ],
+      "claim": "Zinc course tracker supports remembering a 10-day prototype course alongside ORS/fluids for childhood diarrhoea, shows WHO-style age quantities, and explains dissolving a local dispersible zinc dose in clean water or breastmilk.",
+      "status": "prototype_needs_local_product_and_clinician_review",
+      "codexDecision": "CODEX Decision - needs approval: 10-day synthetic tracker and WHO-style prototype quantities only; local zinc product/clinician instructions control dose form and duration, and diarrhoea danger signs override."
+    },
+    {
+      "featureId": "handwashing_timer",
+      "sourceIds": [
+        "src.cdc.clean_hands",
+        "src.hh.handwashing"
+      ],
+      "claim": "Handwashing timer supports a 20-second soap-and-water habit with story/game reinforcement.",
+      "status": "source_identified_needs_local_wash_review",
+      "codexDecision": "CODEX Decision - needs approval: coach provides foreground 20-second behavior support for soap, lathering all hand surfaces, rinsing, and drying; no sleeping-phone reminder reliability is assumed."
+    },
+    {
+      "featureId": "chlorine_contact_timer",
+      "sourceIds": [
+        "src.cdc.make_water_safe"
+      ],
+      "claim": "Chlorine-treated water should stand before use; dosage must come from product/local guidance.",
+      "status": "source_identified_needs_local_product_review",
+      "codexDecision": "CODEX Decision - needs approval: timer shows foreground wait concept and intentionally omits dose until local chlorine table is approved; no sleeping-phone alert is assumed."
+    },
+    {
+      "featureId": "boil_water_timer",
+      "sourceIds": [
+        "src.cdc.make_water_safe"
+      ],
+      "claim": "Boiling water panel supports rolling-boil timing and clean covered storage education.",
+      "status": "partial_match_needs_local_wash_review",
+      "codexDecision": "CODEX Decision - needs approval: prototype uses a foreground 1-minute rolling-boil helper, names the 3-minute high-elevation exception, and defers to local public-health advisories."
+    },
+    {
+      "featureId": "cholera_hotspot_alert",
+      "sourceIds": [
+        "src.cdc.cholera_prevention",
+        "src.cdc.make_water_safe",
+        "src.cdc.clean_hands"
+      ],
+      "claim": "Hotspot alert prioritizes safe water, handwashing, sanitation, ORS readiness, and urgent care for dehydration during cholera/diarrhoea risk.",
+      "status": "source_identified_needs_local_outbreak_review",
+      "codexDecision": "CODEX Decision - needs approval: alert checklist covers WASH, ORS readiness, clinic contact, and urgent dehydration care; local outbreak authority controls timing and wording, and WAP background alerts are not assumed."
+    },
+    {
+      "featureId": "kmc_timer",
+      "sourceIds": [
+        "src.who.kmc_guide"
+      ],
+      "claim": "KMC tracker supports skin-to-skin session tracking for preterm/low-birth-weight babies under health-worker guidance.",
+      "status": "source_identified_needs_newborn_review",
+      "codexDecision": "CODEX Decision - needs approval: KMC timer records synthetic skin-to-skin minutes only; health-worker guidance, newborn danger signs, and facility care override the timer."
+    },
+    {
+      "featureId": "newborn_triage",
+      "sourceIds": [
+        "src.who.pnc_positive_postnatal",
+        "src.unicef.newborn_care_data"
+      ],
+      "claim": "Newborn danger checklist conservatively routes not feeding/poor feeding, difficult or fast breathing/chest indrawing, fever/too hot/too cold, no movement/reduced activity/floppy or convulsions, and yellow palms/soles or worsening jaundice concern to urgent newborn care now; small or early baby concerns route to same-day health-worker or facility support.",
+      "status": "conservative_routing_needs_newborn_review",
+      "codexDecision": "CODEX Decision - needs approval: WHO and UNICEF newborn danger-sign language is adapted into referral support only; local newborn clinicians must approve wording, thresholds, and referral pathways before release."
+    },
+    {
+      "featureId": "anc_triage",
+      "sourceIds": [
+        "src.who.anc_positive_pregnancy",
+        "src.cdc.maternal_warning_signs"
+      ],
+      "claim": "Pregnancy danger checklist conservatively routes bleeding or fluid leaking, severe headache/vision change, dizziness/fainting/swelling, trouble breathing/chest pain/fast heartbeat, severe belly pain, fever, severe vomiting/unable to drink, baby movement stopping or slowing, and thoughts of harm or feeling unsafe to urgent care or trusted emergency support.",
+      "status": "conservative_routing_needs_anc_review",
+      "codexDecision": "CODEX Decision - needs approval: CDC Hear Her and WHO ANC danger-sign phrasing are adapted into an urgent-routing checklist; local maternity, emergency, safeguarding, and crisis-support pathways must replace draft wording before release."
+    },
+    {
+      "featureId": "kohl_lead_screen",
+      "sourceIds": [
+        "src.fda.kohl_lead_warning",
+        "src.cdc.lead_foods_cosmetics_medicines"
+      ],
+      "claim": "Kohl/kajal screen flags child, pregnancy/nursing, and unknown/imported product exposure; advises stopping use, keeping products from children, and asking a healthcare provider about blood lead testing.",
+      "status": "source_identified_needs_local_product_review",
+      "codexDecision": "CODEX Decision - needs approval: FDA and CDC lead-exposure guidance is used as a prototype safety screen pending local toxicology/public-health review; the app does not identify safe products or diagnose lead poisoning."
+    },
+    {
+      "featureId": "child_vision_screen",
+      "sourceIds": [
+        "src.cdc.child_vision"
+      ],
+      "claim": "Vision screen points caregivers toward a screening or eye exam when a child has repeated seeing concerns such as squinting, eye rubbing/discomfort, headaches or trouble after reading/schoolwork, or caregiver/teacher concern; sudden vision change, eye injury, or severe eye pain route to urgent care.",
+      "status": "source_identified_needs_local_referral_review",
+      "codexDecision": "CODEX Decision - needs approval: this is a referral-support checklist, not a vision test or diagnosis; urgent-eye wording and local eye-care pathways need local review."
+    },
+    {
+      "featureId": "child_hearing_screen",
+      "sourceIds": [
+        "src.cdc.hearing_screening_children"
+      ],
+      "claim": "Hearing screen supports referral after caregiver/teacher/child concern, speech or language concern, failed hearing screen, or missing follow-up; infant follow-up preserves CDC EHDI 1-3-6 benchmarks.",
+      "status": "source_identified_needs_local_referral_review",
+      "codexDecision": "CODEX Decision - needs approval: this is a referral-support checklist, not a hearing test or diagnosis; local hearing-screening/audiology pathways and infant follow-up wording need review."
+    },
+    {
+      "featureId": "family_preparedness",
+      "sourceIds": [
+        "src.cdc.emergency_kit_pregnant_infants_children",
+        "src.mamma.localizer_governance"
+      ],
+      "claim": "Household preparedness checklist supports clinic contact, transport, ORS, safe water, and medicine refill planning.",
+      "status": "prototype_needs_local_program_review",
+      "codexDecision": "CODEX Decision - needs approval: offline non-clinical readiness checklist for water/ORS, clinic and emergency contacts, transport, documents, medicines/refills, and family meet-up plan; local emergency/referral pathways must replace draft wording."
+    },
+    {
+      "featureId": "localizer_quality_console",
+      "sourceIds": [
+        "src.mamma.localizer_governance"
+      ],
+      "claim": "Quality console surfaces source coverage, prototype status, memory profile, and CODEX Decision items for review.",
+      "status": "internal_quality_control_prototype",
+      "codexDecision": "Console is an internal review tool and not caregiver content."
+    },
+    {
+      "featureId": "research_engagement",
+      "sourceIds": [
+        "src.who.research_ethics_review",
+        "src.mamma.localizer_governance"
+      ],
+      "claim": "Learning-signals dashboard is ethics-gated and synthetic-only until review, consent, security, and export governance are approved.",
+      "status": "prototype_ethics_and_security_blocked_for_real_data",
+      "codexDecision": "CODEX Decision - needs approval: no real research participant data can be collected in this prototype."
+    },
+    {
+      "featureId": "pnc_reminders",
+      "sourceIds": [
+        "src.who.pnc_positive_postnatal"
+      ],
+      "claim": "Routine postnatal reminders should use an approved local schedule and point urgent concerns to danger checks.",
+      "status": "source_identified_needs_local_schedule",
+      "codexDecision": "CODEX Decision - needs approval: prototype plans mother/newborn follow-up readiness but calculates no visit dates until an exact local PNC schedule is approved."
+    },
+    {
+      "featureId": "chronic_refill_tracker",
+      "sourceIds": [
+        "src.cdc.medication_safety",
+        "src.fda.medication_list",
+        "src.mamma.localizer_governance"
+      ],
+      "claim": "Medicine refill tracker supports a private calendar reminder and an optional session-only reference photo of a medicine box, prescription, or bottle, without dose advice or medicine changes.",
+      "status": "prototype_needs_pharmacy_clinical_review",
+      "codexDecision": "CODEX Decision - needs approval: calendar reminder and optional session-only reference photo only; it does not calculate doses, start/stop/split/change medicines, judge adherence, retain a medicine list, or replace clinician/pharmacist review."
+    },
+    {
+      "featureId": "labor_clock",
+      "sourceIds": [
+        "src.who.birth_preparedness_plan",
+        "src.who.anc_positive_pregnancy",
+        "src.mamma.localizer_governance"
+      ],
+      "claim": "Labor clock records locally approved timing threshold and transport buffer only; pregnancy danger signs override planned timing.",
+      "status": "prototype_life_critical_native_validation_required",
+      "codexDecision": "CODEX Decision - needs approval: local threshold, native alarm reliability, SMS fallback, and maternity referral pathway are required before real use."
+    },
+    {
+      "featureId": "bednet_hanging_reminder",
+      "sourceIds": [
+        "src.cdc.malaria_bednets",
+        "src.cdc.malaria_testing",
+        "src.mamma.localizer_governance"
+      ],
+      "claim": "Bednet reminder supports hanging, checking, repairing, and prioritizing insecticide-treated nets for pregnant people and children where malaria risk exists.",
+      "status": "prototype_needs_local_malaria_program_review",
+      "codexDecision": "CODEX Decision - needs approval: prevention reminder only; fever or suspected malaria must follow local malaria testing and treatment guidance."
+    },
+    {
+      "featureId": "dehydration_visual_guide",
+      "sourceIds": [
+        "src.unicef.diarrhoeal_disease",
+        "src.who.unicef.diarrhoea_zinc_ors",
+        "src.mamma.localizer_governance"
+      ],
+      "claim": "Dehydration guide starts with danger signs and routes inability to drink, sunken eyes, lethargy, repeated vomiting, or worsening illness to urgent care; ORS support remains only when the child can drink.",
+      "status": "prototype_needs_child_health_review",
+      "codexDecision": "CODEX Decision - needs approval: text-only guide pending image work; it is not a diagnosis or dehydration classification."
+    },
+    {
+      "featureId": "complementary_feeding_card",
+      "sourceIds": [
+        "src.who.infant_young_child_feeding",
+        "src.who.breastfeeding",
+        "src.unicef.feeding_6_12_months",
+        "src.mamma.localizer_governance"
+      ],
+      "claim": "Plain-language first-foods guide explains that at about 6 months breastfed children keep breastfeeding while adding 2 or 3 spoonfuls of thick, soft food twice a day, then adding varied safe local foods over time; it also covers patient, non-forcing feeding and clean hands, water, bowl, and spoon.",
+      "status": "prototype_needs_local_nutrition_review",
+      "codexDecision": "CODEX Decision - needs approval: guidance-first education followed by an optional plan; local nutrition counseling, food availability, translation, and growth-faltering protocols control."
+    },
+    {
+      "featureId": "chlorine_dose_helper",
+      "sourceIds": [
+        "src.cdc.make_water_safe",
+        "src.cdc.cholera_prevention",
+        "src.mamma.localizer_governance"
+      ],
+      "claim": "Chlorine dose helper echoes user-entered local product/table dose and water volume; it does not generate a dose from generic constants.",
+      "status": "prototype_needs_local_product_review",
+      "codexDecision": "CODEX Decision - needs approval: local table required; helper does not invent, interpolate, or endorse a chlorine dose."
+    },
+    {
+      "featureId": "sanitation_checklist",
+      "sourceIds": [
+        "src.cdc.sanitation_hygiene",
+        "src.cdc.cholera_prevention",
+        "src.mamma.localizer_governance"
+      ],
+      "claim": "Sanitation checklist supports latrine use, handwashing access, child feces disposal, cleaning supplies, and local WASH contact while keeping diarrhoea danger routing visible.",
+      "status": "prototype_needs_local_wash_review",
+      "codexDecision": "CODEX Decision - needs approval: WASH checklist only; local sanitation program guidance and diarrhoea danger signs override."
+    },
+    {
+      "featureId": "child_ear_check",
+      "sourceIds": [
+        "src.who.imci_chart_booklet",
+        "src.mamma.localizer_governance"
+      ],
+      "claim": "Ear problem check asks about ear pain, ear discharge, and tender swelling behind the ear; swelling behind the ear routes urgently and pain/discharge route to same-day clinic or health-worker care without antibiotics, ear drops, or diagnosis.",
+      "status": "prototype_needs_child_health_review",
+      "codexDecision": "CODEX Decision - needs approval: WHO IMCI ear-problem structure is adapted into referral support only; local child-health clinicians must approve wording, thresholds, and care pathway."
+    },
+    {
+      "featureId": "child_measles_rash_check",
+      "sourceIds": [
+        "src.who.imci_chart_booklet",
+        "src.cdc.measles_about",
+        "src.mamma.localizer_governance"
+      ],
+      "claim": "Measles rash check asks about fever/spreading rash with cough, runny nose, or red watery eyes, and routes suspected signs to clinic or health worker today; eye or mouth complications, danger signs, or breathing concern route urgently.",
+      "status": "prototype_needs_child_health_and_outbreak_review",
+      "codexDecision": "CODEX Decision - needs approval: CDC measles signs and WHO IMCI measles complication framing are adapted into conservative routing; local outbreak notification, immunization, isolation, and referral wording must replace draft copy."
+    },
+    {
+      "featureId": "child_muac_malnutrition_screen",
+      "sourceIds": [
+        "src.who.imci_chart_booklet",
+        "src.unicef.child_wasting",
+        "src.mamma.localizer_governance"
+      ],
+      "claim": "MUAC nutrition screen uses local MUAC tape red/yellow color flags, bilateral foot swelling, visible wasting/weight loss, and appetite concern to route children to nutrition or clinic care without calculating malnutrition or giving feeding treatment.",
+      "status": "prototype_needs_nutrition_review",
+      "codexDecision": "CODEX Decision - needs approval: UNICEF child-wasting and WHO IMCI nutrition classification concepts are adapted into referral support; local nutrition program thresholds, RUTF/feeding protocols, and growth-monitoring workflows control."
+    },
+    {
+      "featureId": "child_injury_first_aid_check",
+      "sourceIds": [
+        "src.cdc.heads_up_concussion",
+        "src.nhs.first_aid",
+        "src.mamma.localizer_governance"
+      ],
+      "claim": "Child injury first-aid check routes unconsciousness, breathing trouble, seizure, serious bleeding, serious burn, broken-bone concern, severe head-injury symptoms, poisoning, drowning, or electrocution to urgent or emergency help without teaching treatment steps.",
+      "status": "prototype_needs_emergency_and_first_aid_review",
+      "codexDecision": "CODEX Decision - needs approval: CDC HEADS UP and NHS first aid are used only for emergency-sign routing; local emergency numbers, first-aid training, transport pathways, and safeguarding rules must replace draft copy."
+    },
+    {
+      "featureId": "channel_twins_preview",
+      "sourceIds": [
+        "src.who.digital_interventions_2019",
+        "src.who.cdisah_2023",
+        "src.mamma.localizer_governance"
+      ],
+      "claim": "Channel twins preview shows how one approved module message could render as app card, SMS, IVR, WhatsApp, and CHW script variants while keeping sensitive-content and privacy review visible.",
+      "status": "prototype_service_feature_no_live_channel",
+      "codexDecision": "CODEX Decision - needs approval: WHO digital interventions support targeted client communication only under implementation, privacy, and health-system capacity conditions; this prototype creates no live SMS, IVR, WhatsApp, or CHW outbound message."
+    },
+    {
+      "featureId": "referral_followup_queue",
+      "sourceIds": [
+        "src.who.digital_interventions_2019",
+        "src.who.digital_health_me_2016",
+        "src.mamma.localizer_governance"
+      ],
+      "claim": "Referral follow-up queue models a closed-loop service task for danger screens, ORS voucher support, contact attempt, unresolved status, and closure notes using synthetic data only.",
+      "status": "prototype_service_feature_needs_partner_operations",
+      "codexDecision": "CODEX Decision - needs approval: closed-loop referral follow-up requires defined CHW scope, call/visit scripts, supervisor escalation, facility feedback, and data-sharing agreements before real use."
+    },
+    {
+      "featureId": "shared_phone_privacy_mode",
+      "sourceIds": [
+        "src.unicef.rd4c",
+        "src.who.digital_interventions_2019",
+        "src.mamma.localizer_governance"
+      ],
+      "claim": "Shared phone privacy mode prepares quick hide, private labels, notification wording, opt-out, local-only storage, and user-owned export checks before sensitive module expansion.",
+      "status": "prototype_privacy_and_security_blocked_for_real_data",
+      "codexDecision": "CODEX Decision - needs approval: UNICEF Responsible Data for Children principles are adapted as design prompts only; no hidden sync, real sensitive storage, or production notification behavior is approved."
+    },
+    {
+      "featureId": "partner_service_dashboard",
+      "sourceIds": [
+        "src.who.cdisah_2023",
+        "src.who.digital_health_me_2016",
+        "src.mamma.localizer_governance"
+      ],
+      "claim": "Partner service dashboard summarizes aggregate synthetic source approval, language readiness, unresolved referral, channel performance, and service feedback indicators.",
+      "status": "prototype_aggregate_dashboard_only",
+      "codexDecision": "CODEX Decision - needs approval: aggregate only; no individual surveillance dashboard, production analytics, role-based access, or partner reporting without server, security, governance, and data-sharing review."
+    }
+  ]
+}

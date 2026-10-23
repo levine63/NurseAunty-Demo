@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Kangaroo mother care session illustration</title>
+  <desc id="desc">Caregiver holding a newborn skin-to-skin with wrap, timer, and health-worker check cues.</desc>
+  <rect width="640" height="360" fill="#f9fbf4"/>
+  <circle cx="244" cy="108" r="58" fill="#ffd7ad"/>
+  <path d="M184 112c14-54 94-74 124-20 9 17 8 36-2 56-34-24-76-27-122-36z" fill="#29364f"/>
+  <path d="M170 210c26-62 120-74 158-7l34 96H136l34-89z" fill="#6f8f64"/>
+  <path d="M168 226c44 54 156 54 204 2" fill="none" stroke="#405f54" stroke-width="34" stroke-linecap="round"/>
+  <circle cx="286" cy="214" r="34" fill="#ffd9b0"/>
+  <path d="M256 214c8-27 48-34 65-9-18-8-40-8-65 9z" fill="#29364f"/>
+  <path d="M240 250c18-32 72-33 94 0l16 42H222l18-42z" fill="#f0b27a"/>
+  <path d="M188 274c48 42 134 46 194 4" fill="none" stroke="#8fb996" stroke-width="30" stroke-linecap="round"/>
+  <circle cx="464" cy="136" r="48" fill="#ffffff" stroke="#557b6f" stroke-width="8"/>
+  <path d="M464 104v34l24 16" fill="none" stroke="#557b6f" stroke-width="9" stroke-linecap="round"/>
+  <rect x="420" y="222" width="116" height="76" rx="14" fill="#ffffff" stroke="#557b6f" stroke-width="8"/>
+  <path d="M478 242v36m-18-18h36" stroke="#557b6f" stroke-width="9" stroke-linecap="round"/>
+  <path d="M112 304h420" stroke="#d7e6d0" stroke-width="24" stroke-linecap="round"/>
+  <path d="M376 176c20 10 39 27 54 48" fill="none" stroke="#c8d8c0" stroke-width="14" stroke-linecap="round"/>
+</svg>
