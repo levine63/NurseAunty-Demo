@@ -1,0 +1,1406 @@
+{
+  "about": "Prototype module read/write/capability contracts. These are Localizer draft contracts for review; production enforcement belongs behind the future Device layer and secure Store.",
+  "schemaVersion": "0.1",
+  "securityPosture": "prototype_insecure_synthetic_only",
+  "reviewStatus": "CODEX Decision - needs approval",
+  "contracts": [
+    {
+      "featureId": "u5_triage",
+      "reads": [
+        "Patient",
+        "GuidelinePack",
+        "PhraseBank",
+        "FeatureCatalog"
+      ],
+      "writes": [
+        "QuestionnaireResponse",
+        "Observation",
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "guidelines",
+        "player",
+        "timer",
+        "store",
+        "audit",
+        "navigator",
+        "clock"
+      ],
+      "fhirResources": [
+        "Patient",
+        "QuestionnaireResponse",
+        "Observation",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "clinical_rules_draft_verified_by_tests_needs_clinician_approval",
+      "notes": "Live state remains flat; export maps answers to QuestionnaireResponse, respiratory rate to Observation, and urgent referral to Task. Fever includes a completed-day 0-59 young-infant gate, explicit duration/improvement and malaria-test state, and optional unit/site-aware temperature input. Temperature Observation persistence remains follow-up work."
+    },
+    {
+      "featureId": "ors_voucher",
+      "reads": [
+        "Patient",
+        "GuidelinePack",
+        "QuestionnaireResponse",
+        "PhraseBank",
+        "ContainerCatalog"
+      ],
+      "writes": [
+        "Communication",
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "guidelines",
+        "player",
+        "messaging",
+        "store",
+        "audit",
+        "navigator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "QuestionnaireResponse",
+        "Communication",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Voucher message and any follow-up task are prototype-only until local program approval."
+    },
+    {
+      "featureId": "ors_slideshow",
+      "reads": [
+        "FeatureCatalog",
+        "PhraseBank",
+        "AssetManifest",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "player",
+        "i18n",
+        "audit"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Educational slideshow; no PHI writes beyond optional synthetic audit signal."
+    },
+    {
+      "featureId": "zinc_tracker",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "player",
+        "store",
+        "audit",
+        "clock",
+        "nudgeCoordinator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Ten-day course tracking is a reminder contract, not dosing authority. Ordinary user-facing reminders route through the prototype Nudge Coordinator.",
+      "nudgeIntent": {
+        "signal": "nudge.requested",
+        "topic": "diarrhoea_ors",
+        "urgencyTier": "adherence_habit",
+        "privacyClass": "generic_ok",
+        "phraseFamily": "tx.nudge.encouragement",
+        "bundleKey": "evening-care",
+        "cooldownCategory": "zinc-course",
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "channelsAllowed": [
+          "local"
+        ],
+        "prototypeOnly": true
+      }
+    },
+    {
+      "featureId": "dental_brushing",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison",
+        "AssetManifest"
+      ],
+      "writes": [
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "player",
+        "store",
+        "audit",
+        "clock",
+        "nudgeCoordinator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Brushing reminders and habit tracking only. Ordinary user-facing reminders route through the prototype Nudge Coordinator.",
+      "nudgeIntent": {
+        "signal": "nudge.requested",
+        "topic": "dental",
+        "urgencyTier": "adherence_habit",
+        "privacyClass": "generic_ok",
+        "phraseFamily": "tx.nudge.encouragement",
+        "bundleKey": "daily-habits",
+        "cooldownCategory": "dental-brushing",
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "channelsAllowed": [
+          "local"
+        ],
+        "prototypeOnly": true
+      }
+    },
+    {
+      "featureId": "dental_triage",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "player",
+        "store",
+        "audit",
+        "navigator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Conservative referral prompts only; no dental diagnosis."
+    },
+    {
+      "featureId": "immunization_reminders",
+      "reads": [
+        "Patient",
+        "Immunization",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "store",
+        "player",
+        "audit",
+        "clock",
+        "nudgeCoordinator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "Immunization",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "WHO-style prototype date calculation is allowed for demo. Schedule must be localized to Bangladesh EPI or local authority before use. Ordinary user-facing reminders route through the prototype Nudge Coordinator.",
+      "nudgeIntent": {
+        "signal": "nudge.requested",
+        "topic": "immunization",
+        "urgencyTier": "adherence_habit",
+        "privacyClass": "generic_ok",
+        "phraseFamily": "tx.nudge.encouragement",
+        "bundleKey": "care-planning",
+        "cooldownCategory": "immunization-card",
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "channelsAllowed": [
+          "local"
+        ],
+        "prototypeOnly": true
+      }
+    },
+    {
+      "featureId": "anc_birth_plan",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "CarePlan",
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "player",
+        "store",
+        "audit",
+        "clock",
+        "nudgeCoordinator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "CarePlan",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Birth-plan and visit reminders require local schedule sign-off. Ordinary user-facing reminders route through the prototype Nudge Coordinator.",
+      "nudgeIntent": {
+        "signal": "nudge.requested",
+        "topic": "anc_birth",
+        "urgencyTier": "adherence_habit",
+        "privacyClass": "generic_ok",
+        "phraseFamily": "tx.nudge.encouragement",
+        "bundleKey": "care-planning",
+        "cooldownCategory": "anc-birth-plan",
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "channelsAllowed": [
+          "local"
+        ],
+        "prototypeOnly": true
+      }
+    },
+    {
+      "featureId": "pnc_lactation",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "player",
+        "store",
+        "audit",
+        "navigator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Referral support for breastfeeding danger concerns; not diagnostic."
+    },
+    {
+      "featureId": "breastfeeding_aid_triage",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison",
+        "AssetManifest"
+      ],
+      "writes": [
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "player",
+        "media",
+        "store",
+        "audit",
+        "navigator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Prototype-only breastfeeding aid and triage screen adapted from breastfeeding lessons zip. It routes danger signs conservatively and gives supportive aid; it is not a diagnosis, not mastitis treatment, not formula advice, and not approved clinical guidance."
+    },
+    {
+      "featureId": "hh_handwashing_story",
+      "reads": [
+        "PhraseBank",
+        "StoryCard",
+        "GuidanceComparison",
+        "AssetManifest"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "player",
+        "i18n",
+        "audit"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Recovered owner-supplied five-frame story; rights confirmed 2026-08-07. Content/local and translation review remain pending."
+    },
+    {
+      "featureId": "hh_safe_water_story",
+      "reads": [
+        "PhraseBank",
+        "StoryCard",
+        "GuidanceComparison",
+        "AssetManifest"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "player",
+        "i18n",
+        "audit"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Hygiene Heroes adapted summary; editable source review pending."
+    },
+    {
+      "featureId": "hh_dental_story",
+      "reads": [
+        "PhraseBank",
+        "StoryCard",
+        "GuidanceComparison",
+        "AssetManifest"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "player",
+        "i18n",
+        "audit"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Recovered owner-supplied five-frame story; rights confirmed 2026-08-07. Content/local and translation review remain pending."
+    },
+    {
+      "featureId": "gerry_the_germ",
+      "reads": [
+        "PhraseBank",
+        "StoryCard",
+        "GuidanceComparison",
+        "AssetManifest"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "player",
+        "i18n",
+        "audit"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Recovered owner-supplied educational story; rights confirmed 2026-08-07. WASH content/local and translation review remain pending."
+    },
+    {
+      "featureId": "hh_cold_flu_story",
+      "reads": [
+        "PhraseBank",
+        "StoryCard",
+        "GuidanceComparison",
+        "AssetManifest"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "player",
+        "i18n",
+        "audit"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Hygiene Heroes adapted summary; editable source review pending."
+    },
+    {
+      "featureId": "kmc_timer",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "timer",
+        "scheduler",
+        "player",
+        "store",
+        "audit",
+        "clock"
+      ],
+      "fhirResources": [
+        "Patient",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Kangaroo mother care timer only; clinical thresholds need approval."
+    },
+    {
+      "featureId": "newborn_triage",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "player",
+        "store",
+        "audit",
+        "navigator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Conservative newborn danger screen, not a full algorithm."
+    },
+    {
+      "featureId": "pnc_reminders",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "player",
+        "store",
+        "audit",
+        "clock",
+        "nudgeCoordinator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Postnatal contact reminders need local schedule sign-off. Ordinary user-facing reminders route through the prototype Nudge Coordinator.",
+      "nudgeIntent": {
+        "signal": "nudge.requested",
+        "topic": "pnc_breastfeeding",
+        "urgencyTier": "adherence_habit",
+        "privacyClass": "generic_ok",
+        "phraseFamily": "tx.nudge.encouragement",
+        "bundleKey": "care-planning",
+        "cooldownCategory": "pnc-visits",
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "channelsAllowed": [
+          "local"
+        ],
+        "prototypeOnly": true
+      }
+    },
+    {
+      "featureId": "breastfeeding_audio",
+      "reads": [
+        "PhraseBank",
+        "GuidanceComparison",
+        "AssetManifest"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "player",
+        "media",
+        "i18n",
+        "audit"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Audio script placeholder only."
+    },
+    {
+      "featureId": "anc_triage",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "player",
+        "store",
+        "audit",
+        "navigator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Pregnancy danger screen adapted for conservative referral."
+    },
+    {
+      "featureId": "chlorine_contact_timer",
+      "reads": [
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "timer",
+        "player",
+        "audit",
+        "clock"
+      ],
+      "fhirResources": [
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Timer only; local product instructions govern duration."
+    },
+    {
+      "featureId": "boil_water_timer",
+      "reads": [
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "timer",
+        "player",
+        "audit",
+        "clock"
+      ],
+      "fhirResources": [
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Timer only; local public-health instructions govern details."
+    },
+    {
+      "featureId": "cholera_hotspot_alert",
+      "reads": [
+        "PhraseBank",
+        "GuidanceComparison",
+        "FeatureCatalog"
+      ],
+      "writes": [
+        "Communication",
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "config",
+        "store",
+        "audit",
+        "navigator",
+        "nudgeCoordinator"
+      ],
+      "fhirResources": [
+        "Communication",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Local-only alert; sleeping-phone reliability is not assumed. Ordinary user-facing reminders route through the prototype Nudge Coordinator.",
+      "nudgeIntent": {
+        "signal": "nudge.requested",
+        "topic": "safe_water",
+        "urgencyTier": "informational_encouragement",
+        "privacyClass": "generic_ok",
+        "phraseFamily": "tx.nudge.encouragement",
+        "bundleKey": "wash-safety",
+        "cooldownCategory": "cholera-hotspot-readiness",
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "channelsAllowed": [
+          "local"
+        ],
+        "prototypeOnly": true
+      }
+    },
+    {
+      "featureId": "handwashing_timer",
+      "reads": [
+        "PhraseBank",
+        "GuidanceComparison",
+        "AssetManifest"
+      ],
+      "writes": [
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "timer",
+        "player",
+        "audit",
+        "clock",
+        "nudgeCoordinator"
+      ],
+      "fhirResources": [
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Behavior timer and reminder only. Ordinary user-facing reminders route through the prototype Nudge Coordinator.",
+      "nudgeIntent": {
+        "signal": "nudge.requested",
+        "topic": "handwashing",
+        "urgencyTier": "adherence_habit",
+        "privacyClass": "generic_ok",
+        "phraseFamily": "tx.nudge.encouragement",
+        "bundleKey": "daily-habits",
+        "cooldownCategory": "handwashing-practice",
+        "defaultWindow": {
+          "start": "06:00",
+          "end": "21:00"
+        },
+        "channelsAllowed": [
+          "local"
+        ],
+        "prototypeOnly": true
+      }
+    },
+    {
+      "featureId": "kohl_lead_screen",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "player",
+        "store",
+        "audit",
+        "navigator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Toxicology hazard referral support; no lead-poisoning diagnosis."
+    },
+    {
+      "featureId": "child_vision_screen",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "player",
+        "store",
+        "audit",
+        "navigator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Referral support only; not a diagnostic acuity test."
+    },
+    {
+      "featureId": "child_hearing_screen",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "player",
+        "store",
+        "audit",
+        "navigator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Referral support only; not an audiology screen."
+    },
+    {
+      "featureId": "child_ear_check",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "player",
+        "store",
+        "audit",
+        "navigator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Ear problem referral support only; no antibiotic, ear-drop, or diagnosis writes."
+    },
+    {
+      "featureId": "child_measles_rash_check",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "player",
+        "store",
+        "audit",
+        "navigator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Rash/measles referral support only; local outbreak notification and immunization workflow are not implemented."
+    },
+    {
+      "featureId": "child_muac_malnutrition_screen",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "QuestionnaireResponse",
+        "Observation",
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "player",
+        "store",
+        "audit",
+        "navigator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "QuestionnaireResponse",
+        "Observation",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "MUAC color and nutrition referral support only; no malnutrition diagnosis or treatment protocol."
+    },
+    {
+      "featureId": "child_injury_first_aid_check",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "player",
+        "store",
+        "audit",
+        "navigator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Emergency referral support only; not first-aid training, diagnosis, or treatment."
+    },
+    {
+      "featureId": "family_preparedness",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "CarePlan",
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "scheduler",
+        "player",
+        "store",
+        "audit"
+      ],
+      "fhirResources": [
+        "Patient",
+        "CarePlan",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Household preparedness checklist."
+    },
+    {
+      "featureId": "chronic_refill_tracker",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "player",
+        "store",
+        "audit",
+        "clock",
+        "nudgeCoordinator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Refill reminder only; no medication reconciliation. Ordinary user-facing reminders route through the prototype Nudge Coordinator.",
+      "nudgeIntent": {
+        "signal": "nudge.requested",
+        "topic": "chronic_meds",
+        "urgencyTier": "adherence_habit",
+        "privacyClass": "sensitive_topic",
+        "phraseFamily": "tx.nudge.encouragement",
+        "bundleKey": "private-care",
+        "cooldownCategory": "chronic-refill",
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "channelsAllowed": [
+          "local"
+        ],
+        "prototypeOnly": true
+      }
+    },
+    {
+      "featureId": "labor_clock",
+      "reads": [
+        "Patient",
+        "CarePlan",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "CarePlan",
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "scheduler",
+        "notifier",
+        "messaging",
+        "timer",
+        "store",
+        "audit",
+        "clock"
+      ],
+      "fhirResources": [
+        "Patient",
+        "CarePlan",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Life-critical timing shell only; native validation and SMS fallback required before real use."
+    },
+    {
+      "featureId": "bednet_hanging_reminder",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "player",
+        "store",
+        "audit",
+        "clock",
+        "nudgeCoordinator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Malaria prevention reminder only; fever care follows local guidance. Ordinary user-facing reminders route through the prototype Nudge Coordinator.",
+      "nudgeIntent": {
+        "signal": "nudge.requested",
+        "topic": "malaria",
+        "urgencyTier": "adherence_habit",
+        "privacyClass": "generic_ok",
+        "phraseFamily": "tx.nudge.encouragement",
+        "bundleKey": "evening-care",
+        "cooldownCategory": "bednet-hanging",
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "channelsAllowed": [
+          "local"
+        ],
+        "prototypeOnly": true
+      }
+    },
+    {
+      "featureId": "dehydration_visual_guide",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "player",
+        "store",
+        "audit",
+        "navigator"
+      ],
+      "fhirResources": [
+        "Patient",
+        "QuestionnaireResponse",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Caregiver-facing danger-sign guide with prototype visual support; no diagnostic dehydration classification."
+    },
+    {
+      "featureId": "complementary_feeding_card",
+      "reads": [
+        "Patient",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "CarePlan",
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "scheduler",
+        "player",
+        "store",
+        "audit"
+      ],
+      "fhirResources": [
+        "Patient",
+        "CarePlan",
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Nutrition education checklist only; local nutrition protocol controls counseling."
+    },
+    {
+      "featureId": "chlorine_dose_helper",
+      "reads": [
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "player",
+        "audit",
+        "config"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Echoes user-entered local table values; does not generate dose."
+    },
+    {
+      "featureId": "sanitation_checklist",
+      "reads": [
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "Task",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "scheduler",
+        "player",
+        "store",
+        "audit"
+      ],
+      "fhirResources": [
+        "Task",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Household WASH checklist only; local sanitation program guidance controls."
+    },
+    {
+      "featureId": "channel_twins_preview",
+      "reads": [
+        "FeatureCatalog",
+        "PhraseBank",
+        "GuidanceComparison",
+        "ModuleContract"
+      ],
+      "writes": [
+        "Communication",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "messaging",
+        "player",
+        "i18n",
+        "audit",
+        "config"
+      ],
+      "fhirResources": [
+        "Communication",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Template preview only; no live SMS, IVR, WhatsApp, or CHW outbound message."
+    },
+    {
+      "featureId": "referral_followup_queue",
+      "reads": [
+        "Task",
+        "ServiceRequest",
+        "QuestionnaireResponse",
+        "Communication",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "Task",
+        "ServiceRequest",
+        "Communication",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "scheduler",
+        "messaging",
+        "store",
+        "player",
+        "audit",
+        "clock"
+      ],
+      "fhirResources": [
+        "Task",
+        "ServiceRequest",
+        "Communication",
+        "AuditEvent",
+        "QuestionnaireResponse"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Closed-loop referral model is synthetic only; partner operations and data sharing are required before real use."
+    },
+    {
+      "featureId": "shared_phone_privacy_mode",
+      "reads": [
+        "Patient",
+        "Consent",
+        "FeatureCatalog",
+        "PhraseBank",
+        "GuidanceComparison"
+      ],
+      "writes": [
+        "Consent",
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "identity",
+        "store",
+        "notifier",
+        "i18n",
+        "audit",
+        "config"
+      ],
+      "fhirResources": [
+        "Patient",
+        "Consent",
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Privacy checklist only; secure real sensitive data waits for Device storage, auth, and consent controls."
+    },
+    {
+      "featureId": "partner_service_dashboard",
+      "reads": [
+        "AuditEvent",
+        "Task",
+        "Communication",
+        "GuidanceComparison",
+        "FeatureCatalog",
+        "ModuleContract"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "audit",
+        "player",
+        "config"
+      ],
+      "fhirResources": [
+        "AuditEvent",
+        "Task",
+        "Communication"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Aggregate synthetic dashboard only; no individual surveillance, production analytics, or role-based reporting."
+    },
+    {
+      "featureId": "research_engagement",
+      "reads": [
+        "AuditEvent",
+        "GuidanceComparison",
+        "FeatureCatalog"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "audit",
+        "player",
+        "config"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Synthetic learning signals only until ethics, consent, and security exist."
+    },
+    {
+      "featureId": "localizer_quality_console",
+      "reads": [
+        "FeatureCatalog",
+        "GuidanceComparison",
+        "AssetManifest",
+        "CHWQualityStandard",
+        "PhraseBank",
+        "ModuleContract"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "player",
+        "i18n",
+        "audit",
+        "config"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "CODEX Decision - needs approval",
+      "notes": "Review console summarizes governance, source coverage, assets, localization, and module contracts."
+    }
+  ]
+}

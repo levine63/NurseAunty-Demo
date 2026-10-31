@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">Fever and spreading rash concern</title>
+  <desc id="desc">A caregiver contacts a clinic while keeping a child with fever and a non-diagnostic rash cue apart from other people.</desc>
+  <rect width="720" height="420" rx="24" fill="#fffdf7"/>
+  <rect x="24" y="24" width="672" height="372" rx="24" fill="#f8f1e5" stroke="#d8cdbd" stroke-width="4"/>
+
+  <!-- Caregiver contacting a clinic -->
+  <g transform="translate(48 72)">
+    <circle cx="96" cy="74" r="43" fill="#9c633f"/>
+    <path d="M57 60c13-38 67-49 84-7-21-7-61-1-84 7z" fill="#2f241f"/>
+    <path d="M43 244c5-83 34-126 88-126 53 0 80 43 85 126z" fill="#2f846d"/>
+    <path d="M130 150l64-38" stroke="#9c633f" stroke-width="22" stroke-linecap="round"/>
+    <rect x="177" y="72" width="42" height="70" rx="7" fill="#fff" stroke="#315e68" stroke-width="6"/>
+    <circle cx="198" cy="128" r="3" fill="#315e68"/>
+  </g>
+
+  <!-- Child with simple fever/rash concern cues, not a diagnostic example -->
+  <g transform="translate(258 94)">
+    <circle cx="82" cy="72" r="48" fill="#aa6d45"/>
+    <path d="M39 55c20-39 72-40 91-2" fill="#30231e"/>
+    <circle cx="66" cy="74" r="4" fill="#24211e"/>
+    <circle cx="99" cy="74" r="4" fill="#24211e"/>
+    <path d="M66 105c10-7 25-7 35 0" fill="none" stroke="#24211e" stroke-width="5" stroke-linecap="round"/>
+    <path d="M28 242c8-73 31-112 64-112s57 39 65 112z" fill="#efb95e"/>
+    <g fill="#bd5148" opacity=".72">
+      <circle cx="46" cy="151" r="6"/><circle cx="73" cy="162" r="5"/><circle cx="102" cy="151" r="6"/>
+      <circle cx="122" cy="179" r="5"/><circle cx="58" cy="195" r="5"/>
+    </g>
+    <path d="M136 40v71" stroke="#c34943" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="136" cy="116" r="13" fill="#c34943"/>
+    <path d="M136 51h18M136 73h13" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Visible space between the child and other household members -->
+  <path d="M438 84v246" stroke="#c98550" stroke-width="5" stroke-dasharray="12 12"/>
+  <path d="M454 190h52m-42-18-18 18 18 18m32-36 18 18-18 18" fill="none" stroke="#c98550" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(526 118)" opacity=".58">
+    <circle cx="48" cy="50" r="31" fill="#7b6658"/>
+    <path d="M16 181c5-64 21-98 51-98 29 0 45 34 50 98z" fill="#91a89d"/>
+    <circle cx="128" cy="74" r="25" fill="#8c6a54"/>
+    <path d="M105 181c4-49 17-77 42-77s38 28 42 77z" fill="#aebc78"/>
+  </g>
+
+  <!-- Clinic destination -->
+  <g transform="translate(520 52)">
+    <rect x="0" y="0" width="118" height="62" rx="12" fill="#fff" stroke="#557a75" stroke-width="5"/>
+    <path d="M59 15v32M43 31h32" stroke="#b33e39" stroke-width="9" stroke-linecap="round"/>
+  </g>
+</svg>

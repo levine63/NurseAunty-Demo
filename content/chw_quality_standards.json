@@ -1,0 +1,123 @@
+{
+  "about": "Prototype quality standards checklist adapted for Localizer review from CHW AIM. This is program-quality scaffolding, not clinical guidance.",
+  "schemaVersion": "0.1",
+  "reviewStatus": "CODEX Decision - program-quality scaffolding adapted from CHW AIM for Localizer review; not clinical guidance; pending owner review",
+  "source": {
+    "id": "src.chw_aim.functionality_matrix",
+    "title": "CHW AIM: Updated Program Functionality Matrix for Optimizing Community Health Programs",
+    "publisher": "UNICEF / USAID / Community Health Impact Coalition / Initiatives Inc.",
+    "url": "https://www.unicef.org/media/58176/file",
+    "status": "source_identified_needs_local_program_review",
+    "accessed": "2026-07-03"
+  },
+  "components": [
+    {
+      "id": "role_recruitment",
+      "label": "Role and recruitment",
+      "prototypeCheck": "Each module names the intended caregiver/CHW role and avoids implying professional scope beyond referral, reminder, coaching, or checklist support.",
+      "reviewStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "id": "training",
+      "label": "Training",
+      "prototypeCheck": "Every new workflow needs a short CHW training note, plain-language script, or demo path before field use.",
+      "reviewStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "id": "accreditation",
+      "label": "Accreditation",
+      "prototypeCheck": "The prototype must not claim certification, credentialing, or formal competency validation.",
+      "reviewStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "id": "equipment_supplies",
+      "label": "Equipment and supplies",
+      "prototypeCheck": "Modules that depend on product packages, ORS/zinc, chlorine, phones, timers, or referral cards must show asset and supply provenance.",
+      "reviewStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "id": "supervision",
+      "label": "Supervision",
+      "prototypeCheck": "High-risk content must remain in the approval queue until a supervising clinical/local reviewer signs it off.",
+      "reviewStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "id": "incentives",
+      "label": "Incentives",
+      "prototypeCheck": "Do not create performance incentives from prototype learning signals; keep dashboards synthetic until governance exists.",
+      "reviewStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "id": "community_involvement",
+      "label": "Community involvement",
+      "prototypeCheck": "Story, image, and localization choices require local review for respect, dignity, and cultural fit.",
+      "reviewStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "id": "advancement",
+      "label": "Opportunity for advancement",
+      "prototypeCheck": "Training/readiness outputs are placeholders and must not be represented as career advancement or formal assessment.",
+      "reviewStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "id": "data",
+      "label": "Data",
+      "prototypeCheck": "Real data is blocked in this PWA; only synthetic family records, synthetic signals, and export demos are allowed.",
+      "reviewStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "id": "health_system_linkages",
+      "label": "Linkages to the health system",
+      "prototypeCheck": "Referral and reminder modules must preserve local clinic/CHW linkage placeholders and avoid pretending alerts are reliable when the phone sleeps.",
+      "reviewStatus": "CODEX Decision - needs approval"
+    }
+  ],
+  "featureMappings": [
+    {
+      "featureId": "localizer_quality_console",
+      "componentIds": [
+        "supervision",
+        "data",
+        "community_involvement",
+        "health_system_linkages"
+      ],
+      "status": "prototype_quality_console"
+    },
+    {
+      "featureId": "research_engagement",
+      "componentIds": [
+        "data",
+        "incentives",
+        "supervision"
+      ],
+      "status": "synthetic_only"
+    },
+    {
+      "featureId": "family_preparedness",
+      "componentIds": [
+        "role_recruitment",
+        "equipment_supplies",
+        "health_system_linkages"
+      ],
+      "status": "prototype_checklist"
+    },
+    {
+      "featureId": "u5_triage",
+      "componentIds": [
+        "training",
+        "supervision",
+        "health_system_linkages"
+      ],
+      "status": "clinical_review_required"
+    },
+    {
+      "featureId": "chlorine_contact_timer",
+      "componentIds": [
+        "equipment_supplies",
+        "training",
+        "community_involvement"
+      ],
+      "status": "product_review_required"
+    }
+  ]
+}

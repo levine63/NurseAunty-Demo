@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">North India dental module draft</title>
+<desc id="desc">A North India school-age child with a caregiver, toothbrush, small toothpaste cue, timer, and clinic referral icon.</desc>
+<rect width="640" height="360" fill="#f5f7ea"/>
+<rect x="52" y="52" width="536" height="250" rx="8" fill="#fffdf2" stroke="#7e9b83" stroke-width="4"/>
+<rect x="84" y="80" width="160" height="104" rx="6" fill="#d9efe7"/>
+<path d="M116 132h96M116 154h70" stroke="#4e8572" stroke-width="6" stroke-linecap="round"/>
+<circle cx="330" cy="137" r="31" fill="#77492f"/>
+<path d="M292 181q38-46 76 0v78h-76z" fill="#326aa3"/>
+<path d="M310 146q20 22 41 0" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+<path d="M403 226l98-56" stroke="#277a90" stroke-width="12" stroke-linecap="round"/>
+<path d="M494 160l34-18" stroke="#f2c24b" stroke-width="16" stroke-linecap="round"/>
+<circle cx="216" cy="246" r="35" fill="#fff" stroke="#83a888" stroke-width="5"/>
+<path d="M202 232q14 22 29 0M199 256h35" stroke="#83a888" stroke-width="4" stroke-linecap="round"/>
+<rect x="472" y="220" width="58" height="58" rx="10" fill="#263238"/>
+<circle cx="501" cy="249" r="19" fill="#ecfaf6"/>
+<path d="M501 249v-14M501 249h12" stroke="#0b6b5b" stroke-width="4" stroke-linecap="round"/>
+<path d="M97 257h58l-12-35h-34z" fill="#d95b5b"/>
+<path d="M106 234h40" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+</svg>

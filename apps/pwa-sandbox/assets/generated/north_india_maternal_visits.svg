@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">North India maternal and newborn visits draft</title>
+<desc id="desc">A North India clinic doorway with a pregnant or postpartum person, newborn wrap, CHW, calendar, and contact card.</desc>
+<rect width="640" height="360" fill="#f4efe8"/>
+<rect x="44" y="46" width="552" height="258" rx="8" fill="#fff9ef" stroke="#b98558" stroke-width="4"/>
+<path d="M92 46h456l-34-30H126z" fill="#b64d3d"/>
+<path d="M94 99q70-76 140 0v190H94z" fill="#e8f2ee" stroke="#6d9b88" stroke-width="4"/>
+<circle cx="314" cy="129" r="31" fill="#7b4b32"/>
+<path d="M275 174q39-46 78 0v90h-78z" fill="#9c4e8a"/>
+<path d="M268 175q45 30 92 0" fill="none" stroke="#f0c778" stroke-width="14"/>
+<path d="M306 206q28-24 56 0v43h-56z" fill="#d7eef1" stroke="#5b97a0" stroke-width="4"/>
+<circle cx="352" cy="199" r="11" fill="#7b4b32"/>
+<circle cx="459" cy="134" r="27" fill="#71472f"/>
+<path d="M426 175q33-39 66 0v82h-66z" fill="#fff" stroke="#27685f" stroke-width="4"/>
+<rect x="468" y="198" width="54" height="70" rx="7" fill="#263238"/>
+<rect x="112" y="185" width="88" height="66" rx="6" fill="#fff" stroke="#cc6b4e" stroke-width="4"/>
+<path d="M112 206h88M134 185v66M166 185v66" stroke="#cc6b4e" stroke-width="4"/>
+<circle cx="134" cy="226" r="6" fill="#6d9b88"/>
+<circle cx="166" cy="226" r="6" fill="#6d9b88"/>
+<rect x="423" y="266" width="98" height="22" rx="6" fill="#f2cf74"/>
+</svg>

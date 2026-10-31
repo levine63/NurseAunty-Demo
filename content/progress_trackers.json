@@ -1,0 +1,220 @@
+{
+  "about": "Prototype ProgressTracker definitions for reusable completion, course, private-log, duration, and milestone tracking. These are tool contracts, not clinical approval.",
+  "schemaVersion": "0.1",
+  "trackers": [
+    {
+      "trackerId": "toothbrushing-daily",
+      "moduleId": "dental_brushing",
+      "mode": "daily_target",
+      "renderer": "stars",
+      "titleSlug": "tx.feature_dental_brushing",
+      "targetCount": 2,
+      "privacyClass": "neutral",
+      "subjectRequired": false,
+      "prototypeOnly": true,
+      "nudge": {
+        "enabled": true,
+        "urgencyTier": "encouragement",
+        "phraseFamily": "tx.nudge.encouragement",
+        "channelsAllowed": [
+          "in_app",
+          "local"
+        ],
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "cooldownCategory": "daily-habit",
+        "bundleKey": "daily-habits"
+      }
+    },
+    {
+      "trackerId": "zinc-course",
+      "moduleId": "zinc_tracker",
+      "mode": "finite_course",
+      "renderer": "course_calendar",
+      "titleSlug": "tx.feature_zinc_tracker",
+      "courseLength": 10,
+      "privacyClass": "private",
+      "subjectRequired": true,
+      "prototypeOnly": true,
+      "nudge": {
+        "enabled": true,
+        "urgencyTier": "time_sensitive",
+        "phraseFamily": "tx.nudge.encouragement",
+        "channelsAllowed": [
+          "in_app",
+          "local"
+        ],
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "cooldownCategory": "zinc-course",
+        "bundleKey": "evening-care"
+      }
+    },
+    {
+      "trackerId": "handwashing-practice",
+      "moduleId": "handwashing_timer",
+      "mode": "daily_target",
+      "renderer": "plain_checkoff",
+      "titleSlug": "tx.feature_handwashing_timer",
+      "targetCount": 1,
+      "privacyClass": "neutral",
+      "subjectRequired": false,
+      "prototypeOnly": true,
+      "nudge": {
+        "enabled": true,
+        "urgencyTier": "encouragement",
+        "phraseFamily": "tx.nudge.encouragement",
+        "channelsAllowed": [
+          "in_app",
+          "local"
+        ],
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "cooldownCategory": "daily-habit",
+        "bundleKey": "daily-habits"
+      }
+    },
+    {
+      "trackerId": "kmc-session-history",
+      "moduleId": "kmc_timer",
+      "mode": "duration_log",
+      "renderer": "session_history",
+      "titleSlug": "tx.feature_kmc_timer",
+      "unitSlug": "tx.unit_minutes",
+      "privacyClass": "private",
+      "subjectRequired": true,
+      "prototypeOnly": true
+    },
+    {
+      "trackerId": "anc-visit-milestones",
+      "moduleId": "anc_birth_plan",
+      "mode": "milestone_sequence",
+      "renderer": "milestone_timeline",
+      "titleSlug": "tx.feature_anc_birth_plan",
+      "privacyClass": "private",
+      "subjectRequired": true,
+      "prototypeOnly": true,
+      "nudge": {
+        "enabled": true,
+        "urgencyTier": "routine",
+        "phraseFamily": "tx.nudge.encouragement",
+        "channelsAllowed": [
+          "in_app",
+          "local"
+        ],
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "cooldownCategory": "anc-birth-plan",
+        "bundleKey": "care-planning"
+      }
+    },
+    {
+      "trackerId": "pnc-visit-milestones",
+      "moduleId": "pnc_reminders",
+      "mode": "milestone_sequence",
+      "renderer": "milestone_timeline",
+      "titleSlug": "tx.feature_pnc_reminders",
+      "privacyClass": "private",
+      "subjectRequired": true,
+      "prototypeOnly": true,
+      "nudge": {
+        "enabled": true,
+        "urgencyTier": "routine",
+        "phraseFamily": "tx.nudge.encouragement",
+        "channelsAllowed": [
+          "in_app",
+          "local"
+        ],
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "cooldownCategory": "pnc-visits",
+        "bundleKey": "care-planning"
+      }
+    },
+    {
+      "trackerId": "bednet-hanging",
+      "moduleId": "bednet_hanging_reminder",
+      "mode": "milestone_sequence",
+      "renderer": "plain_checkoff",
+      "titleSlug": "tx.feature_bednet_hanging_reminder",
+      "privacyClass": "neutral",
+      "subjectRequired": false,
+      "prototypeOnly": true,
+      "nudge": {
+        "enabled": true,
+        "urgencyTier": "routine",
+        "phraseFamily": "tx.nudge.encouragement",
+        "channelsAllowed": [
+          "in_app",
+          "local"
+        ],
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "cooldownCategory": "bednet-hanging",
+        "bundleKey": "evening-care"
+      }
+    },
+    {
+      "trackerId": "immunization-card",
+      "moduleId": "immunization_reminders",
+      "mode": "milestone_sequence",
+      "renderer": "milestone_timeline",
+      "titleSlug": "tx.feature_immunization_reminders",
+      "privacyClass": "private",
+      "subjectRequired": true,
+      "prototypeOnly": true,
+      "nudge": {
+        "enabled": true,
+        "urgencyTier": "routine",
+        "phraseFamily": "tx.nudge.encouragement",
+        "channelsAllowed": [
+          "in_app",
+          "local"
+        ],
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "cooldownCategory": "immunization-card",
+        "bundleKey": "care-planning"
+      }
+    },
+    {
+      "trackerId": "medicine-refill",
+      "moduleId": "chronic_refill_tracker",
+      "mode": "event_log",
+      "renderer": "plain_checkoff",
+      "titleSlug": "tx.feature_chronic_refill_tracker",
+      "privacyClass": "highly_sensitive",
+      "subjectRequired": true,
+      "prototypeOnly": true,
+      "nudge": {
+        "enabled": true,
+        "urgencyTier": "routine",
+        "phraseFamily": "tx.nudge.encouragement",
+        "channelsAllowed": [
+          "in_app",
+          "local"
+        ],
+        "defaultWindow": {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        "cooldownCategory": "chronic-refill",
+        "bundleKey": "private-care"
+      }
+    }
+  ]
+}

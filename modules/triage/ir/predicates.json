@@ -1,0 +1,610 @@
+{
+  "$schema": "../ir/README.md",
+  "about": "Predicate table for under-5 sick-child triage. Closed grammar: atom | allOf | anyOf | not | atLeast | ref. `kind` tags inputs for the review convention (m.=measure q.=question). age_mo is produced by the calculation layer (calc.gen.ts), not measured directly.",
+  "guidelineVersionExpected": "bd-2012.0-draft",
+  "inputs": {
+    "age_mo": {
+      "type": "number",
+      "kind": "measure",
+      "label": {
+        "en": "Age in months (derived)"
+      },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["derived", "modifier"],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    },
+    "age_days_completed": {
+      "type": "number",
+      "kind": "measure",
+      "label": { "en": "Age in completed days (derived)" },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["derived", "modifier"],
+      "prototypeAssignment": "Derived by the governed calculation layer so the 59/60-day boundary is not inferred from display age."
+    },
+    "respiratory_rate": {
+      "type": "number",
+      "kind": "measure",
+      "label": {
+        "en": "Breaths per minute"
+      },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["measurement", "symptom_followup"],
+      "followupFor": ["cough"],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    },
+    "key_data_missing": {
+      "type": "boolean",
+      "label": {
+        "en": "A required measurement/answer is unavailable"
+      },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["derived", "safety_gate"],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    },
+    "cough": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "Cough or difficult breathing"
+      },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["presenting_symptom"],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    },
+    "diarrhoea": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "Diarrhoea"
+      },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["presenting_symptom"],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    },
+    "bloody_stool": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "Blood in the stool"
+      },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["symptom_followup", "clinical_finding"],
+      "followupFor": ["diarrhoea"],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    },
+    "unable_to_drink": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "Not able to drink or breastfeed"
+      },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["general_danger_sign", "clinical_finding"],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    },
+    "vomits_everything": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "Vomits everything"
+      },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["general_danger_sign", "clinical_finding"],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    },
+    "convulsions": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "Convulsions this illness"
+      },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["general_danger_sign", "clinical_finding"],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    },
+    "lethargic_unconscious": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "Lethargic or unconscious"
+      },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["general_danger_sign", "clinical_finding"],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    },
+    "chest_indrawing": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "Chest indrawing"
+      },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["symptom_followup", "clinical_finding"],
+      "followupFor": ["cough"],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    },
+    "stridor_calm": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "Stridor when calm"
+      },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["symptom_followup", "clinical_finding"],
+      "followupFor": ["cough"],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    },
+    "sunken_eyes": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "Sunken eyes"
+      },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["symptom_followup", "clinical_finding"],
+      "followupFor": ["diarrhoea"],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    },
+    "skin_pinch_slow": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "Skin pinch goes back slowly"
+      },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["symptom_followup", "clinical_finding"],
+      "followupFor": ["diarrhoea"],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    },
+    "restless_irritable": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "Restless or irritable"
+      },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["symptom_followup", "clinical_finding"],
+      "followupFor": ["diarrhoea"],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    },
+    "drinks_eagerly": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "Drinks eagerly / thirsty"
+      },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["symptom_followup", "clinical_finding"],
+      "followupFor": ["diarrhoea"],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    },
+    "fever": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "Fever (body feels hot)"
+      },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["presenting_symptom"],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    },
+    "measles_rash": {
+      "type": "boolean",
+      "kind": "question",
+      "label": { "en": "Fever with a spreading rash" },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["symptom_followup", "clinical_finding"],
+      "followupFor": ["fever"],
+      "prototypeAssignment": "Caregiver-facing follow-up beneath Fever; its downstream screening remains based on WHO IMCI fever assessment and needs local outbreak-protocol review."
+    },
+    "measles_cough": {
+      "type": "boolean",
+      "kind": "question",
+      "label": { "en": "Cough or runny nose with fever and rash" },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["symptom_followup", "clinical_finding"],
+      "followupFor": ["measles_rash"],
+      "prototypeAssignment": "WHO IMCI measles-pattern follow-up; local outbreak protocol review required."
+    },
+    "measles_eyes": {
+      "type": "boolean",
+      "kind": "question",
+      "label": { "en": "Red or watery eyes with fever and rash" },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["symptom_followup", "clinical_finding"],
+      "followupFor": ["measles_rash"],
+      "prototypeAssignment": "WHO IMCI measles-pattern follow-up; local outbreak protocol review required."
+    },
+    "malaria_region": {
+      "type": "boolean",
+      "label": {
+        "en": "Config: district is malaria-endemic (Localizer switch)"
+      },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["modifier"],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    },
+    "diarrhoea_days": {
+      "type": "number",
+      "kind": "question",
+      "label": {
+        "en": "Days the diarrhoea has lasted"
+      },
+      "subjectScopes": [
+        "child_under5"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "measurement"
+      ],
+      "followupFor": [
+        "diarrhoea"
+      ],
+      "prototypeAssignment": "Collected by the under-five diarrhoea duration stage since before 2026-08; declared here on 2026-08-25 when a rule first read it."
+    },
+    "diarrhoea_duration_known": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "Caregiver can give a diarrhoea duration"
+      },
+      "subjectScopes": [
+        "child_under5"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "safety_gate"
+      ],
+      "followupFor": [
+        "diarrhoea"
+      ],
+      "prototypeAssignment": "Explicit missingness flag; zero days must not stand in for an unanswered duration."
+    },
+    "fever_days": {
+      "type": "number",
+      "kind": "question",
+      "label": {
+        "en": "Days the fever has lasted"
+      },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["symptom_followup", "measurement"],
+      "followupFor": ["fever"],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    },
+    "fever_duration_known": {
+      "type": "boolean",
+      "kind": "question",
+      "label": { "en": "Caregiver can give a fever duration" },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["symptom_followup", "safety_gate"],
+      "followupFor": ["fever"],
+      "prototypeAssignment": "Explicit missingness flag; zero days must not stand in for an unanswered duration."
+    },
+    "fever_not_improving": {
+      "type": "boolean",
+      "kind": "question",
+      "label": { "en": "Fever is not improving" },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["symptom_followup", "clinical_finding"],
+      "followupFor": ["fever"],
+      "prototypeAssignment": "Prototype product-policy escalation pending clinical review."
+    },
+    "rdt_state": {
+      "type": "string",
+      "kind": "question",
+      "enum": ["not_done", "positive", "negative", "invalid", "unknown"],
+      "label": { "en": "Malaria rapid-test state" },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["symptom_followup", "modifier", "safety_gate"],
+      "followupFor": ["fever"],
+      "prototypeAssignment": "Closed test-state vocabulary; no treatment selection."
+    },
+    "temp_c_axillary": {
+      "type": "number",
+      "kind": "measure",
+      "label": { "en": "Axillary temperature in Celsius" },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["measurement", "symptom_followup"],
+      "followupFor": ["fever"],
+      "prototypeAssignment": "Exact C value or exact F-to-C conversion; no body-site offset."
+    },
+    "temp_c_axillary_valid": {
+      "type": "boolean",
+      "kind": "derived",
+      "label": { "en": "An axillary temperature value is available" },
+      "subjectScopes": ["child_under5"],
+      "clinicalVariableRoles": ["derived", "safety_gate"],
+      "followupFor": ["fever"],
+      "prototypeAssignment": "True only when a numeric armpit reading with a known unit was entered."
+    }
+  },
+  "predicates": [
+    {
+      "id": "age_out_of_scope",
+      "label": {
+        "en": "Outside 2-59 month sick-child scope"
+      },
+      "source": "IMCI sick-child scope guard",
+      "anyOf": [
+        {
+          "var": "age_mo",
+          "op": "<",
+          "value": 2
+        },
+        {
+          "var": "age_mo",
+          "op": ">=",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "id": "fast_breathing",
+      "label": {
+        "en": "Fast breathing (age-adjusted)"
+      },
+      "source": "guidelines: ari.fastBreathing (IMCI)",
+      "anyOf": [
+        {
+          "allOf": [
+            {
+              "var": "age_mo",
+              "op": ">=",
+              "value": 2
+            },
+            {
+              "var": "age_mo",
+              "op": "<",
+              "value": 12
+            },
+            {
+              "var": "respiratory_rate",
+              "op": ">=",
+              "guideline": "ari.fastBreathing.age2to11moBpm"
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {
+              "var": "age_mo",
+              "op": ">=",
+              "value": 12
+            },
+            {
+              "var": "age_mo",
+              "op": "<",
+              "value": 60
+            },
+            {
+              "var": "respiratory_rate",
+              "op": ">=",
+              "guideline": "ari.fastBreathing.age12to59moBpm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "any_general_danger_sign",
+      "label": {
+        "en": "General danger sign present"
+      },
+      "source": "IMCI general danger signs",
+      "anyOf": [
+        {
+          "var": "unable_to_drink",
+          "is": true
+        },
+        {
+          "var": "vomits_everything",
+          "is": true
+        },
+        {
+          "var": "convulsions",
+          "is": true
+        },
+        {
+          "var": "lethargic_unconscious",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "severe_dehydration",
+      "label": {
+        "en": "Severe dehydration (>= 2 signs)"
+      },
+      "source": "IMCI Plan C",
+      "atLeast": 2,
+      "of": [
+        {
+          "var": "lethargic_unconscious",
+          "is": true
+        },
+        {
+          "var": "sunken_eyes",
+          "is": true
+        },
+        {
+          "var": "skin_pinch_slow",
+          "is": true
+        },
+        {
+          "var": "unable_to_drink",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "some_dehydration",
+      "label": {
+        "en": "Some dehydration (>= 2 signs)"
+      },
+      "source": "IMCI Plan B",
+      "allOf": [
+        {
+          "not": {
+            "ref": "severe_dehydration"
+          }
+        },
+        {
+          "atLeast": 2,
+          "of": [
+            {
+              "var": "restless_irritable",
+              "is": true
+            },
+            {
+              "var": "sunken_eyes",
+              "is": true
+            },
+            {
+              "var": "drinks_eagerly",
+              "is": true
+            },
+            {
+              "var": "skin_pinch_slow",
+              "is": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pneumonia_signs",
+      "label": {
+        "en": "Cough + fast breathing"
+      },
+      "source": "IMCI ARI",
+      "allOf": [
+        {
+          "var": "cough",
+          "is": true
+        },
+        {
+          "ref": "fast_breathing"
+        }
+      ]
+    },
+    {
+      "id": "severe_respiratory",
+      "label": {
+        "en": "Severe respiratory sign"
+      },
+      "source": "IMCI severe/very severe",
+      "anyOf": [
+        {
+          "var": "chest_indrawing",
+          "is": true
+        },
+        {
+          "var": "stridor_calm",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "measured_fever_axillary",
+      "label": { "en": "Measured axillary fever" },
+      "source": "guidelines: fever.entry_min_C_axillary",
+      "allOf": [
+        { "var": "temp_c_axillary_valid", "is": true },
+        { "var": "temp_c_axillary", "op": ">=", "guideline": "fever.entry_min_C_axillary" }
+      ]
+    },
+    {
+      "id": "fever_present",
+      "label": { "en": "Possible fever by caregiver report, feeling hot, or axillary measurement" },
+      "source": "WHO IMCI fever entry; thermometer not required",
+      "anyOf": [
+        { "var": "fever", "is": true },
+        { "ref": "measured_fever_axillary" }
+      ]
+    },
+    {
+      "id": "possible_measles_pattern",
+      "label": { "en": "Possible measles pattern: fever, generalized rash, and cough/runny nose or red/watery eyes" },
+      "source": "WHO IMCI fever assessment; CDC measles signs. Routing only, not a diagnosis.",
+      "allOf": [
+        { "ref": "fever_present" },
+        { "var": "measles_rash", "is": true },
+        { "anyOf": [
+          { "var": "measles_cough", "is": true },
+          { "var": "measles_eyes", "is": true }
+        ] }
+      ]
+    },
+    {
+      "id": "young_infant_0_59d_or_age_unknown",
+      "label": { "en": "Age 0-59 completed days or age unavailable" },
+      "source": "WHO 2019 sick young infant chart booklet",
+      "anyOf": [
+        { "var": "key_data_missing", "is": true },
+        { "var": "age_days_completed", "op": "<=", "guideline": "young_infant.max_age_days_completed" }
+      ]
+    },
+    {
+      "id": "young_infant_fast_breathing",
+      "label": { "en": "Baby under 2 months breathing at or above the young-infant fast-breathing threshold" },
+      "source": "WHO 2019 sick young infant chart booklet: fast breathing in a young infant is a sign of possible serious bacterial infection",
+      "allOf": [
+        { "var": "key_data_missing", "is": false },
+        { "var": "age_days_completed", "op": "<=", "guideline": "young_infant.max_age_days_completed" },
+        { "var": "respiratory_rate", "op": ">=", "guideline": "young_infant.fast_breathing_min_bpm" }
+      ]
+    },
+    {
+      "id": "diarrhoea_persistent",
+      "label": {
+        "en": "Diarrhoea has lasted the persistent-diarrhoea threshold"
+      },
+      "source": "guidelines: diarrhoea.persistent_min_days (WHO IMCI persistent diarrhoea)",
+      "allOf": [
+        { "var": "diarrhoea", "is": true },
+        { "var": "diarrhoea_duration_known", "is": true },
+        { "var": "diarrhoea_days", "op": ">=", "guideline": "diarrhoea.persistent_min_days" }
+      ]
+    },
+    {
+      "id": "diarrhoea_persistent_young_infant",
+      "label": {
+        "en": "Persistent diarrhoea in an infant below the referral age"
+      },
+      "source": "guidelines: diarrhoea.persistent_refer_under_months (WHO IMCI refers persistent diarrhoea under 6 months)",
+      "allOf": [
+        { "ref": "diarrhoea_persistent" },
+        { "var": "age_mo", "op": "<", "guideline": "diarrhoea.persistent_refer_under_months" }
+      ]
+    },
+    {
+      "id": "fever_prolonged",
+      "label": { "en": "Fever duration reaches the prolonged-fever threshold" },
+      "source": "guidelines: fever.prolonged_min_days",
+      "allOf": [
+        { "var": "fever_duration_known", "is": true },
+        { "var": "fever_days", "op": ">=", "guideline": "fever.prolonged_min_days" }
+      ]
+    },
+    {
+      "id": "fever_persistent_not_improving",
+      "label": { "en": "Fever has continued without improvement" },
+      "source": "prototype product-policy escalation; clinical review required",
+      "allOf": [
+        { "var": "fever_duration_known", "is": true },
+        { "var": "fever_days", "op": ">=", "guideline": "fever.persistent_no_improvement_min_days" },
+        { "var": "fever_not_improving", "is": true }
+      ]
+    },
+    {
+      "id": "rdt_missing_invalid_or_unknown",
+      "label": { "en": "Malaria test was not done, invalid, or unclear" },
+      "source": "closed test-state safety gate",
+      "anyOf": [
+        { "var": "rdt_state", "equals": "not_done" },
+        { "var": "rdt_state", "equals": "invalid" },
+        { "var": "rdt_state", "equals": "unknown" }
+      ]
+    }
+  ]
+}

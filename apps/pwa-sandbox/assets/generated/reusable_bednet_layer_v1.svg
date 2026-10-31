@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="Reusable prototype bednet layer">
+  <defs>
+    <linearGradient id="netShade" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#e7f8ff" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#b7d9e4" stop-opacity="0.78"/>
+    </linearGradient>
+    <pattern id="mesh" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M0 0H42M0 0V42" fill="none" stroke="#5d8f9a" stroke-width="2" opacity="0.28"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="1000" fill="none"/>
+  <path d="M500 70 175 235v545c0 76 650 76 650 0V235Z" fill="url(#netShade)" stroke="#497982" stroke-width="12"/>
+  <path d="M500 70 175 235v545c0 76 650 76 650 0V235Z" fill="url(#mesh)" opacity="0.75"/>
+  <path d="M175 235c120 66 529 66 650 0" fill="none" stroke="#497982" stroke-width="10"/>
+  <path d="M500 70v820M285 180c-16 169-19 512-5 678M715 180c16 169 19 512 5 678" fill="none" stroke="#5d8f9a" stroke-width="7" opacity="0.72"/>
+  <ellipse cx="500" cy="860" rx="320" ry="44" fill="#3b6b73" opacity="0.16"/>
+</svg>
