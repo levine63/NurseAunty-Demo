@@ -1,0 +1,80 @@
+{
+  "$schema": "../../content/schemas/story-pack.schema.json",
+  "schemaVersion": "0.1",
+  "packId": "pregnancy-by-month",
+  "version": "0.1.0",
+  "title": "UNREVIEWED PROTOTYPE - Pregnancy month by month (Rwanda draft screens)",
+  "status": "demo_unreviewed",
+  "source": {
+    "kind": "authored",
+    "documents": [
+      {
+        "title": "Nurse Aunty - Rwanda pregnancy (ANC): features and screens",
+        "url": "https://docs.google.com/document/d/14d6_GUsZW4IWMVai04VSFhVNwtEWVTuomsCCvxJuOgQ/edit"
+      }
+    ],
+    "contentRecord": "story-packs/pregnancy-by-month-v0.1/governance.json",
+    "authoredOn": "2026-11-04"
+  },
+  "canonicality": {
+    "canonicalApplication": "apps/pwa-sandbox",
+    "isApplication": false,
+    "runtimeContentOnly": true,
+    "legacySourceRuntimeEligible": false
+  },
+  "content": {
+    "bundlePath": "bundle.json",
+    "featureIds": [
+      "preg_bymonth_am_i_pregnant",
+      "preg_bymonth_unsure",
+      "preg_bymonth_m1_3",
+      "preg_bymonth_m4",
+      "preg_bymonth_m5",
+      "preg_bymonth_m6",
+      "preg_bymonth_m7",
+      "preg_bymonth_m8",
+      "preg_bymonth_m9"
+    ],
+    "locales": [
+      "en",
+      "fr",
+      "fr-RW",
+      "hi-IN",
+      "rw-RW"
+    ],
+    "storyCount": 9,
+    "frameCount": 184,
+    "assetRoot": "assets",
+    "assetFileCount": 0,
+    "assetBytes": 0
+  },
+  "delivery": {
+    "coreStandalonePolicy": "exclude",
+    "coreCatalogPolicy": "served_runtime_optional",
+    "reviewOutput": "dist/story-packs/pregnancy-by-month-v0.1",
+    "previewCommand": "node tools/build-story-pack-review.mjs pregnancy-by-month-v0.1",
+    "futureDemoMode": "trusted_player_loads_versioned_pack"
+  },
+  "governance": {
+    "fieldUseApproved": false,
+    "clinicalReview": "unreviewed",
+    "rightsReview": "unreviewed",
+    "localReview": "unreviewed",
+    "localizationReview": "unreviewed",
+    "mediaReview": "unreviewed"
+  },
+  "activation": {
+    "state": "demo_active",
+    "runbook": "docs/runbooks/INTEGRATE_STORY_PACKS_INTO_DEMO.md",
+    "blockers": [],
+    "fieldUseRequirements": [
+      "Before field use, a clinician checks every card against Rwanda ANC 2020 and the cited WHO source (clinicalReviewRequired; the source line for each card is in governance.json).",
+      "Before field use, RHIYW confirms the draft month-to-week table and how women and the antenatal card count months.",
+      "Before field use, content is written for the sections marked content needed in governance.json (What is my baby like? in months 1-4; Changes in my body in every month; Caring for yourself in month 4).",
+      "Before field use, an illustrator draws every picture from its description in governance.json; the decks show text placeholders today.",
+      "Before field use, named local speakers review the French, Hindi and Kinyarwanda drafts (round PBM1); none is checked by a local speaker.",
+      "Before field use, decide how malaria-area cards reach malaria districts only, then add them.",
+      "Before field use, a legal review covers the WHO sources marked All rights reserved (the cards are our own summaries, with citations)."
+    ]
+  }
+}

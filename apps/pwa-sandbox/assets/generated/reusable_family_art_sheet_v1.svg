@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Reusable prototype family art sheet</title>
+  <desc id="desc">Prototype-only reusable character and object art: caregiver, health worker, happy baby, sad toddler, mug, ORS sachet, and one litre bottle mark.</desc>
+  <rect width="1200" height="720" fill="#f7f3ea"/>
+  <g font-family="Arial, sans-serif" font-size="24" fill="#24302f">
+    <text x="40" y="56" font-weight="700">Reusable prototype art sheet - not approved for field use</text>
+  </g>
+  <g transform="translate(58 118)">
+    <rect x="0" y="0" width="170" height="230" rx="18" fill="#fffdf7" stroke="#d6d0c3" stroke-width="3"/>
+    <circle cx="85" cy="66" r="42" fill="#9b5f3c"/>
+    <path d="M45 56c12-38 68-48 88-10 8 14 5 30 1 42-16-16-41-20-74-10-5-6-12-13-15-22z" fill="#2f2520"/>
+    <circle cx="71" cy="68" r="4" fill="#1d1d1b"/>
+    <circle cx="99" cy="68" r="4" fill="#1d1d1b"/>
+    <path d="M72 91c15 10 31 8 43-2" fill="none" stroke="#1d1d1b" stroke-width="4" stroke-linecap="round"/>
+    <path d="M38 198c10-58 82-88 119 0" fill="#287a78"/>
+    <text x="31" y="258">caregiver</text>
+  </g>
+  <g transform="translate(258 118)">
+    <rect x="0" y="0" width="170" height="230" rx="18" fill="#fffdf7" stroke="#d6d0c3" stroke-width="3"/>
+    <circle cx="85" cy="66" r="40" fill="#a96b43"/>
+    <path d="M51 47c17-28 64-31 85 2-9-5-24-5-39 0-19 6-35 4-46-2z" fill="#1f2d2d"/>
+    <circle cx="72" cy="67" r="4" fill="#1d1d1b"/>
+    <circle cx="101" cy="67" r="4" fill="#1d1d1b"/>
+    <path d="M73 91c14 7 29 7 43 0" fill="none" stroke="#1d1d1b" stroke-width="4" stroke-linecap="round"/>
+    <path d="M37 198c8-53 35-82 87-80 18 19 30 45 37 80" fill="#f2f5f0"/>
+    <path d="M47 129h76" stroke="#4c9289" stroke-width="9" stroke-linecap="round"/>
+    <text x="31" y="258">health worker</text>
+  </g>
+  <g transform="translate(458 118)">
+    <rect x="0" y="0" width="170" height="230" rx="18" fill="#fffdf7" stroke="#d6d0c3" stroke-width="3"/>
+    <ellipse cx="86" cy="118" rx="56" ry="66" fill="#b97349"/>
+    <circle cx="65" cy="108" r="5" fill="#1d1d1b"/>
+    <circle cx="105" cy="108" r="5" fill="#1d1d1b"/>
+    <path d="M62 133c17 20 47 20 63 0" fill="none" stroke="#1d1d1b" stroke-width="5" stroke-linecap="round"/>
+    <path d="M43 75c25-31 65-34 91 0" fill="#33231d"/>
+    <path d="M39 191c22-29 71-36 101 0" fill="#f2b75b"/>
+    <text x="31" y="258">happy baby</text>
+  </g>
+  <g transform="translate(658 118)">
+    <rect x="0" y="0" width="170" height="230" rx="18" fill="#fffdf7" stroke="#d6d0c3" stroke-width="3"/>
+    <ellipse cx="86" cy="111" rx="55" ry="62" fill="#a96b43"/>
+    <circle cx="67" cy="104" r="5" fill="#1d1d1b"/>
+    <circle cx="106" cy="104" r="5" fill="#1d1d1b"/>
+    <path d="M63 142c16-14 43-14 59 0" fill="none" stroke="#1d1d1b" stroke-width="5" stroke-linecap="round"/>
+    <path d="M43 73c19-38 75-39 93 0" fill="#2b201c"/>
+    <path d="M40 193c24-32 74-34 105 0" fill="#ca6556"/>
+    <text x="34" y="258">sad toddler</text>
+  </g>
+  <g transform="translate(858 118)">
+    <rect x="0" y="0" width="250" height="230" rx="18" fill="#fffdf7" stroke="#d6d0c3" stroke-width="3"/>
+    <path d="M39 75h82v85c0 28-18 46-41 46s-41-18-41-46z" fill="#f4efe3" stroke="#6f776f" stroke-width="5"/>
+    <path d="M121 103c38 0 38 52 0 52" fill="none" stroke="#6f776f" stroke-width="8"/>
+    <text x="48" y="51" font-family="Arial, sans-serif" font-size="18" fill="#24302f">200 mL mug</text>
+    <rect x="154" y="70" width="58" height="106" rx="8" fill="#fff" stroke="#66716d" stroke-width="4"/>
+    <text x="162" y="128" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#287a78">ORS</text>
+    <text x="153" y="51" font-family="Arial, sans-serif" font-size="18" fill="#24302f">sachet</text>
+    <text x="39" y="258" font-family="Arial, sans-serif" font-size="24" fill="#24302f">scale objects</text>
+  </g>
+  <g transform="translate(78 430)">
+    <rect x="0" y="0" width="1030" height="210" rx="18" fill="#fffdf7" stroke="#d6d0c3" stroke-width="3"/>
+    <path d="M53 151h75v-85c0-20-16-36-36-36h-4c-20 0-35 16-35 36z" fill="#d7edf2" stroke="#53636a" stroke-width="5"/>
+    <path d="M53 94h75" stroke="#287a78" stroke-width="8"/>
+    <text x="142" y="101" font-family="Arial, sans-serif" font-size="24" fill="#24302f">1 L mark on larger bottle</text>
+    <path d="M415 38h520" stroke="#d4a447" stroke-width="16" stroke-linecap="round"/>
+    <path d="M415 83h420" stroke="#4c9289" stroke-width="16" stroke-linecap="round"/>
+    <path d="M415 128h470" stroke="#ca6556" stroke-width="16" stroke-linecap="round"/>
+    <text x="415" y="176" font-family="Arial, sans-serif" font-size="24" fill="#24302f">shared calm color accents</text>
+  </g>
+</svg>

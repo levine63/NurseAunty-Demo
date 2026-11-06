@@ -1,0 +1,173 @@
+{
+  "about": "Prototype predicate table generated from child_muac_malnutrition_screen screen-card clinicalVariableSet.",
+  "guidelineVersionExpected": "prototype-screen-card",
+  "inputs": {
+    "nutrition_concern": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "nutrition concern"
+      },
+      "subjectScopes": [
+        "child_under5"
+      ],
+      "clinicalVariableRoles": [
+        "presenting_symptom"
+      ],
+      "prototypeAssignment": "Codex-generated prototype IR from screen-card clinicalVariableSet; replace with formal clinical pipeline output."
+    },
+    "child_muac_malnutrition_screen_muacred": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_muac_red"
+      },
+      "subjectScopes": [
+        "child_under5"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_muac_malnutrition_screen_muacyellow": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_muac_yellow"
+      },
+      "subjectScopes": [
+        "child_under5"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "nutrition_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_muac_malnutrition_screen_muacswelling": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_bilateral_foot_swelling"
+      },
+      "subjectScopes": [
+        "child_under5"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_muac_malnutrition_screen_muacweightloss": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_weight_loss"
+      },
+      "subjectScopes": [
+        "child_under5"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "nutrition_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_muac_malnutrition_screen_muacsick": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_muac_body"
+      },
+      "subjectScopes": [
+        "child_under5"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    }
+  },
+  "predicates": [
+    {
+      "id": "presentation_selected",
+      "label": {
+        "en": "Presentation selected"
+      },
+      "source": "Screen-card presentation metadata",
+      "var": "nutrition_concern",
+      "is": true
+    },
+    {
+      "id": "any_general_danger_sign",
+      "label": {
+        "en": "Any subject-specific general danger sign"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged general_danger_sign",
+      "anyOf": [
+        {
+          "var": "child_muac_malnutrition_screen_muacred",
+          "is": true
+        },
+        {
+          "var": "child_muac_malnutrition_screen_muacswelling",
+          "is": true
+        },
+        {
+          "var": "child_muac_malnutrition_screen_muacsick",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_followup_finding",
+      "label": {
+        "en": "Any symptom-specific follow-up finding"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged symptom_followup or clinical_finding",
+      "anyOf": [
+        {
+          "var": "child_muac_malnutrition_screen_muacred",
+          "is": true
+        },
+        {
+          "var": "child_muac_malnutrition_screen_muacyellow",
+          "is": true
+        },
+        {
+          "var": "child_muac_malnutrition_screen_muacswelling",
+          "is": true
+        },
+        {
+          "var": "child_muac_malnutrition_screen_muacweightloss",
+          "is": true
+        },
+        {
+          "var": "child_muac_malnutrition_screen_muacsick",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_safety_gate",
+      "label": {
+        "en": "Any safety gate"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged safety_gate",
+      "anyOf": []
+    }
+  ]
+}

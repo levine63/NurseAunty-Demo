@@ -1,0 +1,121 @@
+/* tokens.css
+ * GENERATED FROM DESIGN.md FRONT MATTER -- DO NOT EDIT BY HAND.
+ * Draft artifact for P2-D11. Regenerate with tools/generate-tokens.ts.
+ *
+ * Rule: this is the only file in the UI layer allowed to contain a raw hex value.
+ * index.html, ui-core.js, and every module renderer consume variables only.
+ */
+
+:root {
+  /* ---- colour roles ------------------------------------------------ */
+  /* action: ordinary primary action, selected state, progress */
+  --action: #0b6b5b;
+  --action-soft: #e3f0ec;
+  --action-dark: #0b3d35;
+  --on-action: #ffffff;
+
+  /* aid: the app is helping you -- read-aloud, speech highlight, help,
+     stars, prototype notice. Never severity, never an action. */
+  --aid: #b26b00;
+  --aid-soft: #fdf0d9;
+  --aid-edge: #ebd9b4;
+  --aid-highlight: #ffe9ae;
+  --on-aid: #6b4a00;
+
+  /* motion-cue: descriptive movement only; it is not a clinical severity. */
+  --motion-cue: #1f6fd0;
+
+  /* danger: urgent help, urgent result, destructive confirm. Nothing else. */
+  --danger: #b3261e;
+  --danger-soft: #fbe9e6;
+  --on-danger: #ffffff;
+  --danger-ink: #7a1a14;
+
+  /* paper: warm tonal layers replace the cool blue-grey background */
+  --paper: #f6f2ec;
+  --soft: #fbf7f1;
+  --surface: #ffffff;
+  --strip: #efe7da;
+
+  /* ink */
+  --ink: #22201e;
+  --muted: #5a5750;
+  --line: #e2dad0;
+  --line-strong: #b9b2a6;
+
+  /* ---- compatibility aliases -------------------------------------- */
+  /* Kept so P2-D11 can land as a pure refactor of the existing sheet.
+     Remove after P2-D14 when every selector uses a role name. */
+  --accent: var(--action);
+  --warn: var(--danger);
+  --ok: var(--action);
+  --bg: var(--paper);
+
+  /* ---- type: six steps, caregiver-first --------------------------- */
+  --font: system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, monospace;
+
+  --type-task-size: 28px;
+  --type-task-weight: 800;
+  --type-task-leading: 1.15;
+
+  --type-section-size: 22px;
+  --type-section-weight: 800;
+  --type-section-leading: 1.2;
+
+  --type-body-size: 19px;
+  --type-body-weight: 400;
+  --type-body-leading: 1.5;
+
+  --type-control-size: 18px;
+  --type-control-weight: 700;
+  --type-control-leading: 1.3;
+
+  /* floor for anything a caregiver reads. Metadata only. */
+  --type-support-size: 16px;
+  --type-support-weight: 400;
+  --type-support-leading: 1.4;
+
+  --type-count-size: 64px;
+  --type-count-weight: 800;
+
+  /* ---- space, shape, control size --------------------------------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  --radius-control: 12px;
+  --radius-card: 14px;
+  --radius-frame: 26px;
+  --radius-pill: 999px;
+
+  --touch-min: 48px;
+  --touch-primary: 56px;
+
+  /* two elevation levels, no more */
+  --elev-card: 0 2px 6px rgba(34, 32, 30, 0.05);
+  --elev-float: 0 10px 30px rgba(34, 32, 30, 0.1);
+
+  --focus-ring: 3px solid var(--aid);
+  --focus-offset: 2px;
+}
+
+/* Reviewer mode is the exception, not the base.
+   Caregiver sizes above are the default for every caregiver-facing surface. */
+.reviewer-mode {
+  --type-task-size: 20px;
+  --type-section-size: 16px;
+  --type-body-size: 15px;
+  --type-control-size: 14px;
+  --type-support-size: 13px;
+  --type-count-size: 46px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion: none;
+  }
+}

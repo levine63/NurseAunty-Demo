@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Reusable prototype home background</title>
+  <desc id="desc">Warm household courtyard background for prototype modules, with handwashing station, doorway, and shaded wall.</desc>
+  <rect width="1200" height="720" fill="#edf4ef"/>
+  <rect x="0" y="468" width="1200" height="252" fill="#d9c9ab"/>
+  <rect x="76" y="106" width="1048" height="410" rx="18" fill="#f7f0de"/>
+  <rect x="148" y="190" width="180" height="326" rx="8" fill="#8f5940"/>
+  <rect x="742" y="160" width="238" height="168" rx="8" fill="#cfe7ea" stroke="#4b686f" stroke-width="6"/>
+  <path d="M742 222h238M861 160v168" stroke="#4b686f" stroke-width="5"/>
+  <path d="M74 112c133-68 288-79 465-32 165 44 319 39 586-17v72H74z" fill="#287a78"/>
+  <g transform="translate(904 407)">
+    <rect x="0" y="48" width="94" height="94" rx="12" fill="#cfd8d3" stroke="#52625d" stroke-width="5"/>
+    <path d="M24 48V13h46v35" fill="none" stroke="#52625d" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="47" cy="95" r="18" fill="#4c9289"/>
+  </g>
+  <g transform="translate(431 404)">
+    <rect x="0" y="90" width="260" height="24" rx="12" fill="#a66b48"/>
+    <rect x="22" y="18" width="78" height="98" rx="9" fill="#d7edf2" stroke="#53636a" stroke-width="5"/>
+    <rect x="139" y="60" width="77" height="56" rx="8" fill="#f4efe3" stroke="#6f776f" stroke-width="5"/>
+    <path d="M216 77c27 0 27 34 0 34" fill="none" stroke="#6f776f" stroke-width="7"/>
+    <circle cx="69" cy="48" r="9" fill="#287a78"/>
+    <path d="M48 73h44" stroke="#287a78" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <text x="76" y="654" font-family="Arial, sans-serif" font-size="28" fill="#24302f">Prototype background - replace or local-review before field use</text>
+</svg>

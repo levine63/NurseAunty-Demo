@@ -1,0 +1,90 @@
+{
+  "$schema": "../schemas/validation/switches.schema.json",
+  "schemaVersion": "1.0.0",
+  "about": "Three tiers of configuration, highest authority first. A lower tier may only narrow what a higher tier allows; it may never widen it. User preferences are declared here but their values live on the device, never in this repository.",
+  "designer": {
+    "about": "Set by the product owner, in the repository, at commit time. Nobody downstream can change these.",
+    "owner": "David Levine",
+    "switches": {
+      "phase": {
+        "value": "prototype",
+        "allowed": ["prototype", "pilot", "field"],
+        "setBy": "David Levine",
+        "setOn": "2026-08-15",
+        "about": "What the project is currently for. This replaces every calendar deadline that previously governed the same question. It has no expiry: it changes when the owner changes it."
+      },
+      "unreviewedContentBlocksInclusion": {
+        "value": false,
+        "about": "Whether missing clinical, localization, media, or rights review blocks including content in the build. False while the phase is prototype. It never affects labelling, and it never permits field use.",
+        "forcedTrueInPhases": ["field"]
+      },
+      "allowUnverifiedClinicalPack": {
+        "value": true,
+        "about": "Whether a guideline pack with verified=false may execute. Mirrors guidelines/*.json prototype.allowUnverifiedClinicalPack, which stays the per-pack record.",
+        "forcedFalseInPhases": ["field"]
+      },
+      "requireVisibleUnreviewedLabel": {
+        "value": true,
+        "about": "Unreviewed material always carries a visible UNREVIEWED PROTOTYPE label. No tier and no phase may turn this off; it is listed so the obligation is machine-readable rather than only written down.",
+        "immutable": true
+      }
+    }
+  },
+  "deployer": {
+    "about": "Set by the deploying organisation - an NGO, a ministry of health, or a research partner - for one deployment. A deployment chooses within what the designer tier allows and can always be more conservative.",
+    "organisation": null,
+    "switches": {
+      "orsAllowApproximateFractions": {
+        "value": true,
+        "about": "Whether a caregiver may be shown a part-container pour, such as three mugs plus one third of a mug, when her container does not divide the sachet exactly. David, 2026-08-20: 'I will let clinicians approve: \"3 mugs of water plus one third of a mug (a bit less than half)\" ... 3% error. Requires local MD approval, but I will not ban before the MDs decide.' Off means such a container is reported as unusable instead of approximated. The 3% ceiling is enforced in packages/core/src/orsMeasurePlan.js and is not configurable here.",
+        "consumedBy": ["packages/core/src/orsMeasurePlan.js", "apps/pwa-sandbox/ui-core.js#orsMeasurePlanForDeck"]
+      },
+      "ancComicCadence": {
+        "value": "per_anc_contact",
+        "allowed": ["per_anc_contact", "per_month"],
+        "about": "How the Womb with a View comic series is paced. 'per_anc_contact' releases one comic at each antenatal contact, which suits a programme whose mothers attend on the eight-contact schedule. 'per_month' releases one per month of pregnancy, which suits a programme that reaches mothers between visits. Neither setting withholds a comic a caregiver asks for; it decides which one is offered first.",
+        "consumedBy": ["content/anc_comic_schedule.json", "apps/pwa-sandbox/ui-core.js#renderAncComicSeries"]
+      },
+      "malariaEndemicRegion": {
+        "value": false,
+        "about": "Whether the district is malaria-endemic. Drives fever routing. Currently also carried at runtime as the engine input malaria_region; this entry is the declared home for it.",
+        "consumedBy": ["modules/triage"]
+      },
+      "activeLocales": {
+        "value": ["en"],
+        "about": "Locales this deployment serves. English remains the fallback. A locale may be listed only when its phrase-bank entries exist."
+      },
+      "guidelinePackId": {
+        "value": "bd-2012",
+        "about": "Which guideline pack this deployment runs. The pack owns clinical constants; this switch only selects between packs."
+      },
+      "zincCourseDays": {
+        "value": 10,
+        "about": "How many days of zinc this deployment gives for a diarrhoea episode. The guideline pack owns the clinically permitted range (diarrhoea.zinc.durationDaysMin..durationDaysMax); this switch picks one number inside it, because 'how long to treat' is a local programme decision within that range, not a fact the app may invent. Null means no deployment has chosen: the app then shows no day count at all and tells the caregiver to follow the product instruction and the health worker, which is always correct and never stale. Before 2026-08-28 the app hard-coded 10 days in its calendar, its copy and its reminder while the pack said 10 to 14 - a clinical number living in the UI, which CONTRACTS.md 3a forbids. David, 2026-08-28: 'Zinc duration should be a parameter locally set as a #.' This prototype sets 10, which is exactly what the code used to assert, so no caregiver-visible behaviour changes with the move - the number is now governed data a deployment can change and validation can check, rather than a literal in four loops and ten sentences. 10 is not a recommendation over 14; a real deployment chooses with its clinical adviser.",
+        "consumedBy": ["packages/core/src/orsSachetResolution.js#zincCourseDays", "apps/pwa-sandbox/ui-core.js"],
+        "mustBeWithin": "guidelines/<pack>.json diarrhoea.zinc.durationDaysMin..durationDaysMax"
+      },
+      "muacTapeDistributed": {
+        "value": false,
+        "about": "Whether this deployment gives caregivers a colour-banded arm tape (a Family MUAC programme) and trains them to read it. Default false: most caregivers have no tape, so the nutrition check must not open with two questions they cannot answer. When true, the arm-tape band questions appear on the nutrition check; when false, the check still asks the signs that need no equipment - swelling of both feet, visible thinness, and the child being ill or unable to feed. Set by David 2026-08-20 in answer to REVIEW_REQUIRED C-002b. It belongs on the NGO/MOH configuration surface once that exists (docs/product/DASHBOARD_ITEMS.md); until then it is set in the reviewer panel inside Settings.",
+        "consumedBy": [
+          "content/clinical_screens.json#child_muac.main"
+        ]
+      },
+      "referralContactsConfigured": {
+        "value": false,
+        "about": "Whether local clinic, emergency, and CHW contact details have been supplied. Referral copy must not promise a contact route that has not been configured."
+      }
+    }
+  },
+  "user": {
+    "about": "Chosen by the person holding the phone. Declared here so the tier is reviewable; the values are per-device and are never stored in this repository.",
+    "valuesStoredInRepo": false,
+    "switches": {
+      "language": { "about": "Caregiver display language, chosen from the deployment's activeLocales." },
+      "quietHoursStart": { "about": "When the device should stop showing non-urgent nudges. Life-critical alerts ignore it." },
+      "extraPrivacy": { "about": "Shared-phone privacy mode: neutral labels and generic notification wording." },
+      "genericReminderWording": { "about": "Whether reminders name their subject or stay generic on a shared phone." }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Cold and flu prevention story</title>
+  <desc id="desc">Child covering a cough, handwashing bubbles, and a clinic check icon.</desc>
+  <rect width="640" height="360" fill="#f7fbff"/>
+  <circle cx="148" cy="126" r="54" fill="#ffd9b0"/>
+  <path d="M108 126c16-44 74-62 108-20 8 10 11 23 9 36-28-19-65-17-117-16z" fill="#24324a"/>
+  <path d="M104 208c18-48 102-50 126 0l18 98H86l18-98z" fill="#7fb3d5"/>
+  <path d="M204 182c31 8 62 28 86 56" fill="none" stroke="#7fb3d5" stroke-width="28" stroke-linecap="round"/>
+  <path d="M264 226c18 6 37 8 56 4" fill="none" stroke="#ffd9b0" stroke-width="22" stroke-linecap="round"/>
+  <path d="M92 184c-24 10-44 27-56 50" fill="none" stroke="#7fb3d5" stroke-width="26" stroke-linecap="round"/>
+  <path d="M68 234c16 8 34 12 52 12" fill="none" stroke="#ffd9b0" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="414" cy="108" r="18" fill="#a6d8ff"/>
+  <circle cx="462" cy="144" r="13" fill="#a6d8ff"/>
+  <circle cx="404" cy="176" r="11" fill="#a6d8ff"/>
+  <path d="M370 242c35-20 93-20 128 0" fill="none" stroke="#0b6b5b" stroke-width="20" stroke-linecap="round"/>
+  <path d="M389 228l-30 44m71-50l-7 54m48-47l30 43" fill="none" stroke="#0b6b5b" stroke-width="14" stroke-linecap="round"/>
+  <rect x="470" y="216" width="96" height="86" rx="14" fill="#fff" stroke="#0b6b5b" stroke-width="8"/>
+  <path d="M518 238v42m-21-21h42" stroke="#0b6b5b" stroke-width="10" stroke-linecap="round"/>
+  <path d="M330 98c18 10 32 25 40 44m-68-22c12 6 22 16 28 29" fill="none" stroke="#9aa8b5" stroke-width="10" stroke-linecap="round"/>
+</svg>

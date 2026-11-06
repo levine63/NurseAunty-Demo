@@ -1,0 +1,150 @@
+{
+  "about": "Prototype predicate table generated from child_ear_check screen-card clinicalVariableSet.",
+  "guidelineVersionExpected": "prototype-screen-card",
+  "inputs": {
+    "ear_problem": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "ear problem"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "presenting_symptom"
+      ],
+      "prototypeAssignment": "Codex-generated prototype IR from screen-card clinicalVariableSet; replace with formal clinical pipeline output."
+    },
+    "child_ear_check_earpain": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_ear_pain"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "presenting_symptom",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_ear_check_eardischarge": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_ear_discharge"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "ear_problem"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_ear_check_eardischargeold": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_ear_discharge"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "measurement"
+      ],
+      "followupFor": [
+        "ear_problem"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_ear_check_earbehind": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_swelling_behind_ear"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    }
+  },
+  "predicates": [
+    {
+      "id": "presentation_selected",
+      "label": {
+        "en": "Presentation selected"
+      },
+      "source": "Screen-card presentation metadata",
+      "var": "ear_problem",
+      "is": true
+    },
+    {
+      "id": "any_general_danger_sign",
+      "label": {
+        "en": "Any subject-specific general danger sign"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged general_danger_sign",
+      "anyOf": [
+        {
+          "var": "child_ear_check_earbehind",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_followup_finding",
+      "label": {
+        "en": "Any symptom-specific follow-up finding"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged symptom_followup or clinical_finding",
+      "anyOf": [
+        {
+          "var": "child_ear_check_earpain",
+          "is": true
+        },
+        {
+          "var": "child_ear_check_eardischarge",
+          "is": true
+        },
+        {
+          "var": "child_ear_check_eardischargeold",
+          "is": true
+        },
+        {
+          "var": "child_ear_check_earbehind",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_safety_gate",
+      "label": {
+        "en": "Any safety gate"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged safety_gate",
+      "anyOf": []
+    }
+  ]
+}

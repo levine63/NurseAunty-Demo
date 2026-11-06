@@ -1,0 +1,10 @@
+Create a clean, flat, non-photorealistic prototype health-app visual asset sheet for a South Asian / North India-style family health app. Six separate square panels, no text or letters inside the image.
+
+Panel 1: child ear concern, child holding ear with caregiver and clinic arrow.
+Panel 2: child injury concern, caregiver beside child with bandage kit and emergency arrow, no gore.
+Panel 3: bednet at night over sleeping mat with caregiver checking tucked edges.
+Panel 4: complementary feeding, caregiver offering a small bowl and spoon to a toddler with safe food variety.
+Panel 5: chlorine dose helper, covered water container and product-label checklist without readable text.
+Panel 6: service dashboard, health worker looking at aggregate chart cards, no patient data.
+
+Warm but restrained colors, simple shapes, culturally neutral clothing, prototype illustration, medical review needed, no diagnosis labels, no brand logos, no readable packaging.

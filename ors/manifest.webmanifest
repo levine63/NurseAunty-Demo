@@ -1,0 +1,8 @@
+{
+  "name": "Diarrhoea and ORS",
+  "short_name": "ORS",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f1ea",
+  "theme_color": "#2f6f5e"
+}
