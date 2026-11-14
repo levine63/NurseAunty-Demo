@@ -1,0 +1,326 @@
+{
+  "about": "Adapted educational story cards. These are short prototype summaries with provenance; editable source decks/docs should replace them before approval.",
+  "schemaVersion": "0.1",
+  "cards": [
+    {
+      "featureId": "hh_handwashing_story",
+      "titleSlug": "tx.feature_hh_handwashing_story",
+      "source": "Owned source document Hand Washing Early Reader.pptx; SHA-256 66d1caacadf68fa5d3cde10af65191b773d962e5f0729bc4309c1a957c069771. Published wording reference: https://hygieneheroes.berkeley.edu/curriculum/stories/sad_hand.pdf; downloaded SHA-256 4d071ab3cd395a1be0ad4601ae2302523acc0bc484d17697983c5ca5ca99e66a.",
+      "sourceName": "Happy Hands / Hand is Sad",
+      "imageDesc": "Two cartoon hands look dirty and unhappy while colorful germs cling to their fingers.",
+      "frames": [
+        {
+          "bodySlug": "tx.story_hh_handwashing_story_01",
+          "imageDesc": "Two cartoon hands look dirty and unhappy while colorful germs cling to their fingers.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_handwashing_story.frame_01"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_handwashing_story_02",
+          "imageDesc": "Two dirty cartoon hands cry while colorful germs remain on and around them.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_handwashing_story.frame_02"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_handwashing_story_03",
+          "imageDesc": "One cartoon hand smiles after seeing a pink bar of soap, while a few germs remain on its fingers.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_handwashing_story.frame_03"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_handwashing_story_04",
+          "imageDesc": "Two cartoon hands wash with pink soap under running water from a tap.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_handwashing_story.frame_04"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_handwashing_story_05",
+          "imageDesc": "Two clean cartoon hands smile with soap bubbles around them.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_handwashing_story.frame_05"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "storyhandwash",
+          "labelSlug": "tx.story_action_handwashing_coach",
+          "launch": "tool.handwashing_timer"
+        },
+        {
+          "id": "storyhandwashquiz",
+          "labelSlug": "tx.story_action_quiz",
+          "launch": "tool.quiz_runner",
+          "quizFeatureId": "hh_handwashing_story",
+          "style": "ghost"
+        }
+      ],
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "hh_safe_water_story",
+      "titleSlug": "tx.feature_hh_safe_water_story",
+      "source": "https://hygieneheroes.berkeley.edu/safewater.html",
+      "sourceName": "Hygiene Heroes safe water",
+      "imageDesc": "Family choosing covered clean water while a story character points to unsafe water.",
+      "frames": [
+        "tx.story_hh_safe_water_1",
+        "tx.story_hh_safe_water_2",
+        "tx.story_hh_safe_water_3"
+      ],
+      "actions": [
+        {
+          "id": "storysafecheck",
+          "labelSlug": "tx.story_action_safe_water_checker",
+          "launch": "tool.chlorine_contact_timer"
+        },
+        {
+          "id": "storysafequiz",
+          "labelSlug": "tx.story_action_quiz",
+          "launch": "tool.quiz_runner",
+          "quizFeatureId": "hh_safe_water_story",
+          "style": "ghost"
+        },
+        {
+          "id": "storyboil",
+          "labelSlug": "tx.story_action_boil_water_timer",
+          "launch": "tool.boil_water_timer",
+          "style": "ghost"
+        },
+        {
+          "id": "storycholera",
+          "labelSlug": "tx.story_action_cholera_alert",
+          "launch": "tool.cholera_hotspot_alert",
+          "style": "ghost"
+        }
+      ],
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "hh_dental_story",
+      "titleSlug": "tx.feature_hh_dental_story",
+      "source": "Owned source document The sad tooth.docx; SHA-256 71c12967ae2b0b9d87c24ebf46c91fae5986133d06d2702ac67e19dcbaeaac5f. Published wording reference: https://hygieneheroes.berkeley.edu/curriculum/stories/the_sad_tooth.pdf; downloaded SHA-256 5eb5b522a98c7288cd8ee319730740badfe0e380fd7e401998e5e64553839101.",
+      "sourceName": "The Sad Tooth",
+      "imageDesc": "A large sad tooth stands alone while groups of smaller smiling teeth stand in the distance.",
+      "frames": [
+        {
+          "bodySlug": "tx.story_hh_dental_story_01",
+          "imageDesc": "A large sad tooth stands alone while groups of smaller smiling teeth stand in the distance.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_dental_story.frame_01"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_dental_story_02",
+          "imageDesc": "The sad tooth imagines a toothbrush cleaning a happy tooth.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_dental_story.frame_02"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_dental_story_03",
+          "imageDesc": "A smiling toothbrush approaches the tooth, which imagines being brushed clean.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_dental_story.frame_03"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_dental_story_04",
+          "imageDesc": "A toothbrush scrubs a smiling tooth with blue toothpaste bubbles.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_dental_story.frame_04"
+          }
+        },
+        {
+          "bodySlug": "tx.story_hh_dental_story_05",
+          "imageDesc": "The tooth smiles happily against a purple background.",
+          "assetIds": {
+            "standard_8gb": "img.story.hh_dental_story.frame_05"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "storybrush",
+          "labelSlug": "tx.story_action_brushing_coach",
+          "launch": "dental.brushing"
+        },
+        {
+          "id": "storydentalquiz",
+          "labelSlug": "tx.story_action_quiz",
+          "launch": "tool.quiz_runner",
+          "quizFeatureId": "hh_dental_story",
+          "style": "ghost"
+        },
+        {
+          "id": "storytoothpain",
+          "labelSlug": "tx.story_action_tooth_pain_check",
+          "launch": "dental.triage",
+          "style": "ghost"
+        }
+      ],
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "hh_cold_flu_story",
+      "titleSlug": "tx.feature_hh_cold_flu_story",
+      "source": "https://hygieneheroes.berkeley.edu/coldandflu.html",
+      "sourceName": "Hygiene Heroes cold and flu",
+      "imageDesc": "Child covering cough with elbow, then washing hands before joining friends.",
+      "frames": [
+        "tx.story_hh_cold_flu_1",
+        "tx.story_hh_cold_flu_2",
+        "tx.story_hh_cold_flu_3"
+      ],
+      "actions": [
+        {
+          "id": "storycoldwash",
+          "labelSlug": "tx.story_action_handwashing_coach",
+          "launch": "tool.handwashing_timer"
+        },
+        {
+          "id": "storycoldquiz",
+          "labelSlug": "tx.story_action_quiz",
+          "launch": "tool.quiz_runner",
+          "quizFeatureId": "hh_cold_flu_story",
+          "style": "ghost"
+        },
+        {
+          "id": "storycoldsickcheck",
+          "labelSlug": "tx.story_action_sick_child_check",
+          "launch": "triage.cough",
+          "style": "ghost"
+        },
+        {
+          "id": "storycoldgerry",
+          "labelSlug": "tx.story_action_gerry_the_germ",
+          "launch": "story.gerry_the_germ",
+          "style": "ghost"
+        },
+        {
+          "id": "storycoldhappyhands",
+          "labelSlug": "tx.story_action_happy_hands",
+          "launch": "story.hh_handwashing_story",
+          "style": "ghost"
+        }
+      ],
+      "governanceStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "featureId": "gerry_the_germ",
+      "titleSlug": "tx.feature_gerry_the_germ",
+      "source": "Owned source document Gerry the Germ Fable.13b.docx; SHA-256 3a029db84f4f7ef583e8f0028d3c6c77b4f2017f283d0c49b9157c61b8c29fd9.",
+      "sourceName": "Gerry the Germ",
+      "imageDesc": "A many-armed green cartoon germ character named Gerry.",
+      "frames": [
+        {
+          "bodySlug": "tx.story_gerry_the_germ_01",
+          "imageDesc": "A many-armed green cartoon germ character named Gerry.",
+          "assetIds": {
+            "standard_8gb": "img.story.gerry_the_germ.frame_01"
+          }
+        },
+        {
+          "bodySlug": "tx.story_gerry_the_germ_02",
+          "imageDesc": "Four featureless boy silhouettes stand from tallest to shortest with their arms around one another.",
+          "assetIds": {
+            "standard_8gb": "img.story.gerry_the_germ.frame_02"
+          }
+        },
+        {
+          "headingSlug": "tx.story_gerry_the_germ_03_heading",
+          "bodySlug": "tx.story_gerry_the_germ_03",
+          "imageDesc": "A pile of poop in grass with flies nearby.",
+          "assetIds": {
+            "standard_8gb": "img.story.gerry_the_germ.frame_03"
+          }
+        },
+        {
+          "bodySlug": "tx.story_gerry_the_germ_04",
+          "imageDesc": "Gerry the Germ and a smiling pile of poop float together in river water.",
+          "assetIds": {
+            "standard_8gb": "img.story.gerry_the_germ.frame_04"
+          }
+        },
+        {
+          "headingSlug": "tx.story_gerry_the_germ_05_heading",
+          "bodySlug": "tx.story_gerry_the_germ_05",
+          "imageDesc": "Water-treatment liquid is poured into a bucket while a magnified view shows germs being killed.",
+          "assetIds": {
+            "standard_8gb": "img.story.gerry_the_germ.frame_05"
+          }
+        },
+        {
+          "bodySlug": "tx.story_gerry_the_germ_06",
+          "imageDesc": "A dirty hand carries several Gerry germs, shown in a magnified view.",
+          "assetIds": {
+            "standard_8gb": "img.story.gerry_the_germ.frame_06"
+          }
+        },
+        {
+          "headingSlug": "tx.story_gerry_the_germ_07_heading",
+          "bodySlug": "tx.story_gerry_the_germ_07",
+          "imageDesc": "A green cartoon germ character grins.",
+          "assetIds": {
+            "standard_8gb": "img.story.gerry_the_germ.frame_07"
+          }
+        },
+        {
+          "bodySlug": "tx.story_gerry_the_germ_08",
+          "imageDesc": "Water boils over a flame while a magnified view shows Gerry germs in the water.",
+          "assetIds": {
+            "standard_8gb": "img.story.gerry_the_germ.frame_08"
+          }
+        },
+        {
+          "bodySlug": "tx.story_gerry_the_germ_09",
+          "imageDesc": "Gerry the Germ rides on the back of a fly.",
+          "assetIds": {
+            "standard_8gb": "img.story.gerry_the_germ.frame_09"
+          }
+        },
+        {
+          "bodySlug": "tx.story_gerry_the_germ_10",
+          "imageDesc": "A fly carrying Gerry the Germ lands on a plate of food.",
+          "assetIds": {
+            "standard_8gb": "img.story.gerry_the_germ.frame_10"
+          }
+        },
+        {
+          "headingSlug": "tx.story_gerry_the_germ_11_heading",
+          "bodySlug": "tx.story_gerry_the_germ_11",
+          "imageDesc": "Two hands are rubbed together with soap and water.",
+          "assetIds": {
+            "standard_8gb": "img.story.gerry_the_germ.frame_11"
+          }
+        },
+        {
+          "bodySlug": "tx.story_gerry_the_germ_12",
+          "imageDesc": "A water filter traps Gerry germs while clean water passes through.",
+          "assetIds": {
+            "standard_8gb": "img.story.gerry_the_germ.frame_12"
+          }
+        },
+        {
+          "bodySlug": "tx.story_gerry_the_germ_13",
+          "imageDesc": "A person uses a deep-pit latrine while a sad pile of poop remains trapped below.",
+          "assetIds": {
+            "standard_8gb": "img.story.gerry_the_germ.frame_13"
+          }
+        },
+        {
+          "bodySlug": "tx.story_gerry_the_germ_14",
+          "imageDesc": "Four illustrations show Gerry the Germ, a latrine, boiled water, and hands being washed with soap.",
+          "assetIds": {
+            "standard_8gb": "img.story.gerry_the_germ.frame_14"
+          }
+        }
+      ],
+      "governanceStatus": "CODEX Decision - needs approval"
+    }
+  ]
+}

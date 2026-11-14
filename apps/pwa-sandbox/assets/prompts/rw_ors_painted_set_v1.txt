@@ -1,0 +1,117 @@
+Painted ORS set for Rwanda, version 1 - how the 24 pictures were asked for
+
+Made 2026-11-11 with Google's Gemini picture model (gemini-nano-banana-2.1), by the method in
+ADR-075 (docs/decisions/DECISION_LOG.md):
+
+- Every request carried the master pictures named below as reference pictures: the mother, her
+  son, the household things, and for some scenes the community health worker or the father.
+- The people were drawn alone on a flat magenta background, cut out, and laid over one stored
+  picture of the room, so the room is identical in every picture.
+- The finished pictures are 1024 pixels square. The app keeps them as WebP files named
+  generated_rw_ors_<number>_<name>_v1.webp in apps/pwa-sandbox/assets/generated/.
+
+Changed 2026-11-12 (ADR-081): pictures 06, 07 and 13 of this set (pour sachet, shake, cover it) showed a
+plain water bottle and are no longer in the app. They were redrawn with a jug; the wording for those
+three is in rw_ors_mixing_jug_v2.txt. The wording below is kept as it was sent.
+
+They are prototype drafts. Rwandan reviewers check each one (ADR-077): does it look like Rwanda,
+and does it show the right action and amount. Known already: the generator drew the boy into
+picture 04 although it was asked for the mother alone, and the bottle's one-litre line is not
+clearly visible in the mixing pictures.
+
+Wording sent with every request
+-------------------------------
+Mother: Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby.
+
+Boy: Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist.
+
+Things: Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones.
+
+Group: Draw ONLY the people and the things they are touching or using, complete from head to feet, small enough to leave a clear margin on every side. The background must be one completely flat, plain, bright magenta colour (pure #FF00FF) everywhere: no room, no floor, no wall, no ground line, no shadow, no gradient. Use no pink or purple anywhere on the people or the things. Same warm, clean illustration style and line quality as the reference pictures. No words, letters or numbers anywhere. Square picture.
+
+Used where the scene needs them
+-------------------------------
+Bright: The boy's eyes are fully open and bright.
+
+Unwell: The boy looks tired and unwell only through his posture and his mouth: shoulders dropped, mouth turned down. His eyes are fully open and looking at his mother, with no dark rings, no sunken eyes and no tears.
+
+Worker: Reference picture D is the COMMUNITY HEALTH WORKER: keep her face, head wrap, blue vest, white top, patterned skirt and shoes exactly.
+
+Father: Reference picture D is the FATHER: keep his face, hair, shirt, trousers and sandals exactly.
+
+The 24 scenes
+-------------
+Each line: picture name; share of the picture's height the people fill; reference pictures; the request.
+The request below is printed in full, including the shared wording above where it was used.
+
+01_notice_unwell; 0.58; mother, boy, things
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. The boy sits on a low wooden stool. The boy looks tired and unwell only through his posture and his mouth: shoulders dropped, mouth turned down. His eyes are fully open and looking at his mother, with no dark rings, no sunken eyes and no tears. His mother crouches beside him with one hand on his shoulder, looking at his face with calm concern.
+
+02_wash_hands; 0.74; mother, boy, things
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. The mother stands washing her hands with the bar of soap over the blue basin, which stands on the low wooden table. The boy stands beside her watching. The boy's eyes are fully open and bright.
+
+03_things_ready; 0.74; mother, boy, things
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. Only the mother, no child. She stands behind the low wooden table. On the table, in a row: the clear one-litre bottle filled with clean water to its marked line, the cup, the teaspoon and one unopened sachet. She points to them with an open hand.
+
+04_fill_bottle; 0.74; mother, boy, things
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. Only the mother, no child. She stands at the low wooden table pouring clean water from the yellow jerrycan into the clear one-litre bottle. The water has reached the marked line exactly.
+
+05_open_sachet; 0.74; mother, boy, things
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. Only the mother, no child. She stands at the low table tearing open the top of one sachet with both hands. The bottle of clean water, filled to its marked line, stands open on the table in front of her.
+
+06_pour_sachet; 0.74; mother, boy, things
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. Only the mother, no child. She stands at the low table tipping the one opened sachet fully upside down over the open bottle, so that all of the white powder falls into the water. Only one sachet in the picture. Her other hand steadies the bottle.
+
+07_shake; 0.74; mother, boy, things
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. Only the mother, no child. She stands holding the one-litre bottle, its cap screwed on, in both hands and shaking it. The water inside is clear, with no powder left at the bottom.
+
+08_pour_cup; 0.74; mother, boy, things
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. Only the mother, no child. She stands at the low table pouring from the one-litre bottle into the small metal cup.
+
+09_give_cup; 0.58; mother, boy, things
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. The mother sits on a low wooden stool holding the small cup to her son's lips with one hand. He sits beside her on the second stool taking a small sip. The boy's eyes are fully open and bright.
+
+10_give_spoon; 0.58; mother, boy, things
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. The mother sits on a low stool, her son on the second stool beside her. She gives him a teaspoonful from the cup she holds in her other hand. The boy's eyes are fully open and bright.
+
+11_drinks_himself; 0.58; mother, boy, things
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. The boy sits on a low stool holding the small cup in both hands and drinking by himself. His mother sits on the stool beside him, smiling at him.
+
+12_rest_then_go_on; 0.58; mother, boy, things
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. The mother sits on a low stool with her son resting on her lap, leaning against her. She gently wipes his mouth with the folded white cloth. The cup stands on the low table beside them, set down for a while. The boy looks tired and unwell only through his posture and his mouth: shoulders dropped, mouth turned down. His eyes are fully open and looking at his mother, with no dark rings, no sunken eyes and no tears.
+
+13_cover_it; 0.74; mother, boy, things
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. Only the mother, no child. She stands at the low table screwing the cap onto the one-litre bottle, with the clean folded cloth laid over the cup beside it.
+
+14_zinc_in_spoon; 0.58; mother, boy, things
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. Only the mother, no child. She sits on a low stool at the low table, dropping one small round white tablet from the foil strip into the teaspoon, which holds a little clean water.
+
+15_zinc_give; 0.58; mother, boy, things
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. The mother sits on a low stool giving her son, on the stool beside her, the teaspoon in which a tablet has dissolved in a little water. The boy's eyes are fully open and bright.
+
+16_keep_feeding; 0.58; mother, boy, things
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. The mother sits on a low stool feeding her son, on the stool beside her, a spoonful of soft food from the white enamel bowl. The boy's eyes are fully open and bright.
+
+17_worker_explains; 0.74; mother, boy, things, worker
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. Reference picture D is the COMMUNITY HEALTH WORKER: keep her face, head wrap, blue vest, white top, patterned skirt and shoes exactly. The health worker stands holding up one sachet in one hand and the one-litre bottle in the other, explaining to the mother, who stands listening and holding her son's hand. The boy's eyes are fully open and bright.
+
+18_worker_gives; 0.74; mother, boy, things, worker
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. Reference picture D is the COMMUNITY HEALTH WORKER: keep her face, head wrap, blue vest, white top, patterned skirt and shoes exactly. The health worker stands handing two sachets and the foil strip of tablets to the mother, who receives them with both hands. The boy stands beside his mother. The boy's eyes are fully open and bright.
+
+19_go_for_help; 0.74; mother, boy, things
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. The mother walks quickly and purposefully, seen from the side, carrying her son on her hip with both arms. The boy looks tired and unwell only through his posture and his mouth: shoulders dropped, mouth turned down. His eyes are fully open and looking at his mother, with no dark rings, no sunken eyes and no tears.
+
+20_well_again; 0.74; mother, boy, things
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. The boy, well again, runs and laughs, chasing a small ball. His mother stands behind him clapping and smiling.
+
+21_wash_his_hands; 0.74; mother, boy, things
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. The mother stands bent forward helping her son wash his hands with the bar of soap over the blue basin on the low table. The boy's eyes are fully open and bright.
+
+22_father_gives_cup; 0.58; father, boy, things
+  Reference picture A is the FATHER: keep his face, hair, shirt, trousers and sandals exactly. Reference picture B is his SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than his waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. Only the father and the boy. The father sits on a low wooden stool holding the small cup to his son's lips; the boy sits on the second stool beside him taking a small sip. The boy's eyes are fully open and bright.
+
+23_both_parents; 0.74; mother, boy, things, father
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby. Reference picture B is her SON, about four years old: keep his face, hair, skin tone, green T-shirt, blue shorts and sandals exactly, and keep him clearly small beside an adult: standing, the top of his head is no higher than her waist. Reference picture C shows the family's HOUSEHOLD THINGS: use these exact things wherever the scene needs them and do not invent different ones. Reference picture D is the FATHER: keep his face, hair, shirt, trousers and sandals exactly. The father stands pouring from the one-litre bottle into the small cup, while the mother sits on a low stool with her son on her lap. The boy's eyes are fully open and bright.
+
+24_breastfeed; 0.58; mother, things
+  Reference picture A is the MOTHER with her BABY: keep her face, skin tone, green patterned head wrap, teal top and patterned wrapper skirt exactly, and keep the same baby. Reference picture B shows the family's household things. Only the mother and her baby. She sits on a low wooden stool breastfeeding the baby, who is held close across her chest and mostly covered by a clean cloth draped from her shoulder; calm, modest and ordinary.

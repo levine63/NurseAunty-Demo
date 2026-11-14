@@ -1,0 +1,175 @@
+{
+  "about": "Prototype predicate table generated from child_measles_rash_check screen-card clinicalVariableSet.",
+  "guidelineVersionExpected": "prototype-screen-card",
+  "inputs": {
+    "rash_fever_concern": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "rash fever concern"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "presenting_symptom"
+      ],
+      "prototypeAssignment": "Codex-generated prototype IR from screen-card clinicalVariableSet; replace with formal clinical pipeline output."
+    },
+    "child_measles_rash_check_measlesrash": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_measles_rash"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "presenting_symptom",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_measles_rash_check_measlescough": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_cough_runny_eyes"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "rash_fever_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_measles_rash_check_measleseyes": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_cough_runny_eyes"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "rash_fever_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_measles_rash_check_measlesmouth": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_eye_mouth_complication"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_measles_rash_check_measlesbreathing": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_breathing_problem"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    }
+  },
+  "predicates": [
+    {
+      "id": "presentation_selected",
+      "label": {
+        "en": "Presentation selected"
+      },
+      "source": "Screen-card presentation metadata",
+      "var": "rash_fever_concern",
+      "is": true
+    },
+    {
+      "id": "any_general_danger_sign",
+      "label": {
+        "en": "Any subject-specific general danger sign"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged general_danger_sign",
+      "anyOf": [
+        {
+          "var": "child_measles_rash_check_measlesmouth",
+          "is": true
+        },
+        {
+          "var": "child_measles_rash_check_measlesbreathing",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_followup_finding",
+      "label": {
+        "en": "Any symptom-specific follow-up finding"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged symptom_followup or clinical_finding",
+      "anyOf": [
+        {
+          "var": "child_measles_rash_check_measlesrash",
+          "is": true
+        },
+        {
+          "var": "child_measles_rash_check_measlescough",
+          "is": true
+        },
+        {
+          "var": "child_measles_rash_check_measleseyes",
+          "is": true
+        },
+        {
+          "var": "child_measles_rash_check_measlesmouth",
+          "is": true
+        },
+        {
+          "var": "child_measles_rash_check_measlesbreathing",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_safety_gate",
+      "label": {
+        "en": "Any safety gate"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged safety_gate",
+      "anyOf": []
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "$schema": "../schemas/validation/immunization-schedule.schema.json",
+  "schemaVersion": "1.0.0",
+  "about": "A WHO-style prototype immunization schedule, as data. It lived in apps/pwa-sandbox/ui-core.js as a JavaScript constant until 2026-08-27, where npm run validate could not see it, no clinician reading the governed data files would ever have found it, and its visit and vaccine names rendered in English for every locale. Day offsets are days after birth.",
+  "clinicalReview": "none",
+  "notForFieldUse": "Not approved by any clinician. The app states next to every plan that the child's own vaccine card and the local EPI schedule decide the real dates; this schedule only proposes one to check against.",
+  "authority": "The local EPI schedule and the child's vaccine card always win. A deployment that stocks a different schedule replaces this file; nothing in code assumes these particular days.",
+  "visits": [
+    {
+      "id": "birth_vaccines",
+      "dayAfterBirth": 0,
+      "slug": "tx.immunization.visit.birth_vaccines",
+      "vaccines": [
+        {
+          "id": "bcg",
+          "slug": "tx.immunization.vaccine.bcg"
+        },
+        {
+          "id": "hepatitis_b_birth_dose",
+          "slug": "tx.immunization.vaccine.hepatitis_b_birth_dose"
+        },
+        {
+          "id": "polio_birth_dose",
+          "slug": "tx.immunization.vaccine.polio_birth_dose"
+        }
+      ]
+    },
+    {
+      "id": "6_week_vaccine_visit",
+      "dayAfterBirth": 42,
+      "slug": "tx.immunization.visit.6_week_vaccine_visit",
+      "vaccines": [
+        {
+          "id": "dtp_containing_vaccine_dose_1",
+          "slug": "tx.immunization.vaccine.dtp_containing_vaccine_dose_1"
+        },
+        {
+          "id": "polio_dose_1",
+          "slug": "tx.immunization.vaccine.polio_dose_1"
+        },
+        {
+          "id": "pcv_dose_1",
+          "slug": "tx.immunization.vaccine.pcv_dose_1"
+        },
+        {
+          "id": "rotavirus_dose_1",
+          "slug": "tx.immunization.vaccine.rotavirus_dose_1"
+        }
+      ]
+    },
+    {
+      "id": "10_week_vaccine_visit",
+      "dayAfterBirth": 70,
+      "slug": "tx.immunization.visit.10_week_vaccine_visit",
+      "vaccines": [
+        {
+          "id": "dtp_containing_vaccine_dose_2",
+          "slug": "tx.immunization.vaccine.dtp_containing_vaccine_dose_2"
+        },
+        {
+          "id": "polio_dose_2",
+          "slug": "tx.immunization.vaccine.polio_dose_2"
+        },
+        {
+          "id": "pcv_dose_2",
+          "slug": "tx.immunization.vaccine.pcv_dose_2"
+        },
+        {
+          "id": "rotavirus_dose_2",
+          "slug": "tx.immunization.vaccine.rotavirus_dose_2"
+        }
+      ]
+    },
+    {
+      "id": "14_week_vaccine_visit",
+      "dayAfterBirth": 98,
+      "slug": "tx.immunization.visit.14_week_vaccine_visit",
+      "vaccines": [
+        {
+          "id": "dtp_containing_vaccine_dose_3",
+          "slug": "tx.immunization.vaccine.dtp_containing_vaccine_dose_3"
+        },
+        {
+          "id": "polio_dose_3",
+          "slug": "tx.immunization.vaccine.polio_dose_3"
+        },
+        {
+          "id": "pcv_dose_3",
+          "slug": "tx.immunization.vaccine.pcv_dose_3"
+        },
+        {
+          "id": "ipv_dose_1",
+          "slug": "tx.immunization.vaccine.ipv_dose_1"
+        }
+      ]
+    },
+    {
+      "id": "9_month_measles_visit",
+      "dayAfterBirth": 274,
+      "slug": "tx.immunization.visit.9_month_measles_visit",
+      "vaccines": [
+        {
+          "id": "measles_containing_vaccine_dose_1",
+          "slug": "tx.immunization.vaccine.measles_containing_vaccine_dose_1"
+        }
+      ]
+    },
+    {
+      "id": "12_month_mmr_visit",
+      "dayAfterBirth": 365,
+      "slug": "tx.immunization.visit.12_month_mmr_visit",
+      "vaccines": [
+        {
+          "id": "measles_mumps_and_rubella_vaccine",
+          "slug": "tx.immunization.vaccine.measles_mumps_and_rubella_vaccine"
+        }
+      ]
+    },
+    {
+      "id": "18_month_mmr_follow_up",
+      "dayAfterBirth": 548,
+      "slug": "tx.immunization.visit.18_month_mmr_follow_up",
+      "vaccines": [
+        {
+          "id": "measles_mumps_and_rubella_follow_up_dose",
+          "slug": "tx.immunization.vaccine.measles_mumps_and_rubella_follow_up_dose"
+        }
+      ]
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "schedule-source",
+      "question": "Which schedule should a deployment ship by default? These days follow a common WHO-style pattern, but national EPI schedules differ, and the app should not propose a date a local clinic would not recognise. Options are to ship no default and require a deployment to supply one, or to keep a labelled prototype default as now.",
+      "decidedBy": "David Levine with clinical and local EPI review",
+      "status": "open"
+    }
+  ]
+}

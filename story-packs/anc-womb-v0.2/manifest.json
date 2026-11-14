@@ -1,0 +1,73 @@
+{
+  "$schema": "../../content/schemas/story-pack.schema.json",
+  "schemaVersion": "0.1",
+  "packId": "anc-womb",
+  "version": "0.2.0",
+  "title": "UNREVIEWED PROTOTYPE - Womb with a View ANC comic panels",
+  "status": "demo_unreviewed",
+  "source": {
+    "kind": "authored",
+    "documents": [
+      {
+        "title": "Womb with a view",
+        "url": "https://docs.google.com/document/d/1h4a4rTmIuyqCvO0OVqu4WrisYmj-XfR9n5P7cht7ado/edit"
+      }
+    ],
+    "contentRecord": "story-packs/anc-womb-v0.2/governance.json",
+    "authoredOn": "2026-11-09"
+  },
+  "canonicality": {
+    "canonicalApplication": "apps/pwa-sandbox",
+    "isApplication": false,
+    "runtimeContentOnly": true,
+    "legacySourceRuntimeEligible": false
+  },
+  "content": {
+    "bundlePath": "bundle.json",
+    "featureIds": [
+      "anc_womb_visits_story",
+      "anc_womb_protect_story",
+      "anc_womb_eating_story",
+      "anc_womb_danger_story",
+      "anc_womb_birth_story",
+      "anc_womb_after_birth_story"
+    ],
+    "locales": [
+      "en",
+      "rw-RW"
+    ],
+    "storyCount": 6,
+    "frameCount": 16,
+    "assetRoot": "assets",
+    "assetFileCount": 18,
+    "assetBytes": 1804012
+  },
+  "delivery": {
+    "coreStandalonePolicy": "exclude",
+    "coreCatalogPolicy": "served_runtime_optional",
+    "reviewOutput": "dist/story-packs/anc-womb-v0.2",
+    "previewCommand": "node tools/build-story-pack-review.mjs anc-womb-v0.2",
+    "futureDemoMode": "trusted_player_loads_versioned_pack"
+  },
+  "governance": {
+    "fieldUseApproved": false,
+    "clinicalReview": "unreviewed",
+    "rightsReview": "unreviewed",
+    "localReview": "unreviewed",
+    "localizationReview": "unreviewed",
+    "mediaReview": "unreviewed"
+  },
+  "activation": {
+    "state": "demo_active",
+    "runbook": "docs/runbooks/INTEGRATE_STORY_PACKS_INTO_DEMO.md",
+    "blockers": [],
+    "fieldUseRequirements": [
+      "Before field use, an illustrator draws every panel from its visual brief in governance.json. No artwork exists; every frame shows a text placeholder today.",
+      "Before field use, a clinician checks every caption. Several captions in the source document are marked (verify) by the author, and two versions of some disagree; governance.json records which wording was taken and which was left out.",
+      "Before field use, the four panels whose subject is a governed danger-sign list or visit schedule stay pointers to the governed screen. Restoring the source document's own wording would create a second clinical source, and it already differs from the app's: it omits convulsions, which RW-G05 in docs/localization/RWANDA-LOCALIZATION.md flags as a gap in the governed screen itself.",
+      "Before field use, the whole pack is translated and read by named local speakers. English only today; Kinyarwanda is the next round.",
+      "Before field use, pretest the birth-spacing panel with women and husbands; the author notes it can touch religious and family sensitivities.",
+      "Before field use, confirm the first-hour breastfeeding and daily-supplement panels against the Rwanda ANC guideline: RW-G11 records that the bank has no such teaching today, so these panels would be the first and have no governed twin to agree with."
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">Prototype dental swelling sample</title>
+  <desc id="desc">Prototype mouth and cheek swelling visual cue for dental referral screen; not a diagnostic reference image.</desc>
+  <rect width="720" height="420" rx="24" fill="#fffdf7"/>
+  <rect x="28" y="28" width="664" height="364" rx="22" fill="#f7f0de" stroke="#d6d0c3" stroke-width="4"/>
+  <text x="52" y="72" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#24302f">Prototype sample: mouth or face swelling</text>
+  <text x="52" y="103" font-family="Arial, sans-serif" font-size="15" fill="#5e5146">Illustration only - urgent breathing/swallowing signs override.</text>
+  <g transform="translate(118 118)">
+    <ellipse cx="130" cy="110" rx="72" ry="80" fill="#a96b43"/>
+    <path d="M78 70c24-42 92-42 116 0" fill="#2b201c"/>
+    <circle cx="106" cy="102" r="5" fill="#1d1d1b"/>
+    <circle cx="154" cy="102" r="5" fill="#1d1d1b"/>
+    <path d="M110 140c14-8 38-8 52 0" fill="none" stroke="#1d1d1b" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="180" cy="134" rx="32" ry="38" fill="#ca6556" opacity=".55"/>
+    <path d="M80 236c22-40 104-52 150 0" fill="#f2b75b"/>
+  </g>
+  <g transform="translate(440 132)">
+    <rect x="22" y="0" width="96" height="170" rx="44" fill="#fff" stroke="#6f776f" stroke-width="6"/>
+    <path d="M70 170v-68" stroke="#6f776f" stroke-width="7" stroke-linecap="round"/>
+    <path d="M70 28c-14 26-10 60 0 74 10-14 14-48 0-74z" fill="#f4efe3" stroke="#6f776f" stroke-width="4"/>
+    <circle cx="134" cy="62" r="22" fill="#ca6556" opacity=".65"/>
+    <text x="-10" y="220" font-family="Arial, sans-serif" font-size="18" fill="#24302f">Use dental/clinic referral checklist.</text>
+  </g>
+</svg>

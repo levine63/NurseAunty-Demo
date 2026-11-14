@@ -1,0 +1,79 @@
+{
+  "$schema": "../../content/schemas/story-pack.schema.json",
+  "schemaVersion": "0.1",
+  "packId": "recovered-pr28",
+  "version": "0.1.0",
+  "title": "Recovered story treasures from PR #28",
+  "status": "demo_unreviewed",
+  "source": {
+    "pullRequests": [28, 34],
+    "sourceHeads": [
+      "2e44ef9fcb1f60b87d3b6b51afbbc64245f41cdb",
+      "6efe656cfe1ebf34aeeb5a89d332f98d5d75e92a"
+    ],
+    "recoveryAudit": "docs/reviews/PR28_STORY_TREASURE_AUDIT_2026-08-12.md"
+  },
+  "canonicality": {
+    "canonicalApplication": "apps/pwa-sandbox",
+    "isApplication": false,
+    "runtimeContentOnly": true,
+    "legacySourcePath": "archive/recovered-pr28-story-player-source",
+    "legacySourceRuntimeEligible": false
+  },
+  "content": {
+    "bundlePath": "bundle.json",
+    "featureIds": [
+      "hh_covid_cory_story",
+      "hh_covid_juan_day_story",
+      "hh_covid_connie_story",
+      "anc_womb_nutrition_story",
+      "anc_womb_deworming_story"
+    ],
+    "locales": ["en", "fr", "hi-IN"],
+    "storyCount": 5,
+    "frameCount": 49,
+    "assetRoot": "assets",
+    "assetFileCount": 43,
+    "assetBytes": 891084,
+    "audio": {
+      "storyId": "hh_covid_cory_story",
+      "language": "en",
+      "path": "audio/en",
+      "planPath": "audio/plan.json",
+      "voice": "generated",
+      "reviewOnly": true,
+      "approvedNarration": false,
+      "pageCount": 20,
+      "fileCountIncludingManifests": 22,
+      "bytesIncludingManifests": 1663045
+    }
+  },
+  "delivery": {
+    "coreStandalonePolicy": "exclude",
+    "coreCatalogPolicy": "served_runtime_optional",
+    "reviewOutput": "dist/story-packs/recovered-pr28-v0.1",
+    "previewCommand": "node tools/build-story-pack-review.mjs recovered-pr28-v0.1",
+    "futureDemoMode": "trusted_player_loads_versioned_pack"
+  },
+  "governance": {
+    "fieldUseApproved": false,
+    "clinicalReview": "unreviewed",
+    "rightsReview": "unreviewed",
+    "localReview": "unreviewed",
+    "localizationReview": "unreviewed",
+    "mediaReview": "unreviewed"
+  },
+  "activation": {
+    "state": "demo_active",
+    "runbook": "docs/runbooks/INTEGRATE_STORY_PACKS_INTO_DEMO.md",
+    "blockers": [],
+    "fieldUseRequirements": [
+      "Before field use, review and update 2020-era COVID advice.",
+      "Before field use, confirm reuse rights for Juan and Connie source materials.",
+      "Before field use, review pregnancy nutrition wording and redraw placeholder art if desired.",
+      "Before field use, review pregnancy deworming content for setting and trimester and redraw placeholder art if desired.",
+      "Before field use, obtain named human review of French and Hindi drafts.",
+      "Before field use, replace, approve, or omit machine-generated Cory narration."
+    ]
+  }
+}

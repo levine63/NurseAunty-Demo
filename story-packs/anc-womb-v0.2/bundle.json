@@ -1,0 +1,1781 @@
+{
+  "about": "Womb with a View comic panels, from David Levine's panel script. Every line of dialogue and every caption is a slug: the dialogue is drawn in a text box OVER the picture, never inside the artwork, so a translation reaches it. No artwork exists yet; each frame carries its visual brief and shows a text placeholder until an illustrator draws it.",
+  "schemaVersion": "0.1",
+  "runtimeActivation": "served_runtime_active_unreviewed",
+  "features": [
+    {
+      "id": "anc_womb_visits_story",
+      "titleSlug": "tx.feature_anc_womb_visits_story",
+      "summarySlug": "tx.feature_anc_womb_visits_story_summary",
+      "subject": [
+        "pregnancy"
+      ],
+      "type": [
+        "story",
+        "howto"
+      ],
+      "topic": [
+        "anc_birth"
+      ],
+      "status": "prototype",
+      "dangerEligible": false,
+      "launch": "story.anc_womb_visits_story",
+      "memoryProfile": [
+        "low_1gb",
+        "standard_8gb"
+      ],
+      "source": "https://docs.google.com/document/d/1h4a4rTmIuyqCvO0OVqu4WrisYmj-XfR9n5P7cht7ado/edit",
+      "governanceStatus": "UNREVIEWED PROTOTYPE - demo only; not approved for field use",
+      "audience": "caregiver"
+    },
+    {
+      "id": "anc_womb_protect_story",
+      "titleSlug": "tx.feature_anc_womb_protect_story",
+      "summarySlug": "tx.feature_anc_womb_protect_story_summary",
+      "subject": [
+        "pregnancy"
+      ],
+      "type": [
+        "story",
+        "howto"
+      ],
+      "topic": [
+        "anc_birth"
+      ],
+      "status": "prototype",
+      "dangerEligible": false,
+      "launch": "story.anc_womb_protect_story",
+      "memoryProfile": [
+        "low_1gb",
+        "standard_8gb"
+      ],
+      "source": "https://docs.google.com/document/d/1h4a4rTmIuyqCvO0OVqu4WrisYmj-XfR9n5P7cht7ado/edit",
+      "governanceStatus": "UNREVIEWED PROTOTYPE - demo only; not approved for field use",
+      "audience": "caregiver"
+    },
+    {
+      "id": "anc_womb_eating_story",
+      "titleSlug": "tx.feature_anc_womb_eating_story",
+      "summarySlug": "tx.feature_anc_womb_eating_story_summary",
+      "subject": [
+        "pregnancy"
+      ],
+      "type": [
+        "story",
+        "howto"
+      ],
+      "topic": [
+        "anc_birth"
+      ],
+      "status": "prototype",
+      "dangerEligible": false,
+      "launch": "story.anc_womb_eating_story",
+      "memoryProfile": [
+        "low_1gb",
+        "standard_8gb"
+      ],
+      "source": "https://docs.google.com/document/d/1h4a4rTmIuyqCvO0OVqu4WrisYmj-XfR9n5P7cht7ado/edit",
+      "governanceStatus": "UNREVIEWED PROTOTYPE - demo only; not approved for field use",
+      "audience": "caregiver"
+    },
+    {
+      "id": "anc_womb_danger_story",
+      "titleSlug": "tx.feature_anc_womb_danger_story",
+      "summarySlug": "tx.feature_anc_womb_danger_story_summary",
+      "subject": [
+        "pregnancy"
+      ],
+      "type": [
+        "story",
+        "howto"
+      ],
+      "topic": [
+        "anc_birth"
+      ],
+      "status": "prototype",
+      "dangerEligible": false,
+      "launch": "story.anc_womb_danger_story",
+      "memoryProfile": [
+        "low_1gb",
+        "standard_8gb"
+      ],
+      "source": "https://docs.google.com/document/d/1h4a4rTmIuyqCvO0OVqu4WrisYmj-XfR9n5P7cht7ado/edit",
+      "governanceStatus": "UNREVIEWED PROTOTYPE - demo only; not approved for field use",
+      "audience": "caregiver"
+    },
+    {
+      "id": "anc_womb_birth_story",
+      "titleSlug": "tx.feature_anc_womb_birth_story",
+      "summarySlug": "tx.feature_anc_womb_birth_story_summary",
+      "subject": [
+        "pregnancy"
+      ],
+      "type": [
+        "story",
+        "howto"
+      ],
+      "topic": [
+        "anc_birth"
+      ],
+      "status": "prototype",
+      "dangerEligible": false,
+      "launch": "story.anc_womb_birth_story",
+      "memoryProfile": [
+        "low_1gb",
+        "standard_8gb"
+      ],
+      "source": "https://docs.google.com/document/d/1h4a4rTmIuyqCvO0OVqu4WrisYmj-XfR9n5P7cht7ado/edit",
+      "governanceStatus": "UNREVIEWED PROTOTYPE - demo only; not approved for field use",
+      "audience": "caregiver"
+    },
+    {
+      "id": "anc_womb_after_birth_story",
+      "titleSlug": "tx.feature_anc_womb_after_birth_story",
+      "summarySlug": "tx.feature_anc_womb_after_birth_story_summary",
+      "subject": [
+        "newborn_mom"
+      ],
+      "type": [
+        "story",
+        "howto"
+      ],
+      "topic": [
+        "anc_birth"
+      ],
+      "status": "prototype",
+      "dangerEligible": false,
+      "launch": "story.anc_womb_after_birth_story",
+      "memoryProfile": [
+        "low_1gb",
+        "standard_8gb"
+      ],
+      "source": "https://docs.google.com/document/d/1h4a4rTmIuyqCvO0OVqu4WrisYmj-XfR9n5P7cht7ado/edit",
+      "governanceStatus": "UNREVIEWED PROTOTYPE - demo only; not approved for field use",
+      "audience": "caregiver"
+    }
+  ],
+  "storyCards": [
+    {
+      "featureId": "anc_womb_visits_story",
+      "titleSlug": "tx.feature_anc_womb_visits_story",
+      "source": "https://docs.google.com/document/d/1h4a4rTmIuyqCvO0OVqu4WrisYmj-XfR9n5P7cht7ado/edit",
+      "sourceName": "Womb with a View (David I. Levine), panel script read 2026-11-09",
+      "imageDesc": "The baby marks off a tiny calendar inside the womb with a pencil. Visits 1 to 8 carry happy star stickers. The baby is on the phone, pointing at the calendar.",
+      "frames": [
+        {
+          "bodySlug": "tx.womb.anc_visits.caption",
+          "speechSlug": "tx.womb.anc_visits.say",
+          "imageDesc": "The baby marks off a tiny calendar inside the womb with a pencil. Visits 1 to 8 carry happy star stickers. The baby is on the phone, pointing at the calendar.",
+          "assetIds": {
+            "standard_8gb": "img.womb.anc_visits"
+          },
+          "imageSize": {
+            "w": 752,
+            "h": 928
+          },
+          "textMasks": [
+            {
+              "role": "title",
+              "top": 0,
+              "left": 0,
+              "width": 100,
+              "height": 10
+            },
+            {
+              "role": "speech",
+              "top": 7,
+              "left": 40,
+              "width": 60,
+              "height": 38
+            },
+            {
+              "role": "chart",
+              "top": 20,
+              "left": 8,
+              "width": 38,
+              "height": 47,
+              "cells": 8
+            },
+            {
+              "role": "caption",
+              "top": 88,
+              "left": 0,
+              "width": 100,
+              "height": 12
+            }
+          ]
+        },
+        {
+          "bodySlug": "tx.womb.blood_tests.caption",
+          "speechSlug": "tx.womb.blood_tests.say",
+          "imageDesc": "The baby stands beside a tiny pipe labelled 'Mommy's blood' and inspects the flow with a magnifying glass.",
+          "assetIds": {
+            "standard_8gb": "img.womb.blood_tests"
+          },
+          "imageSize": {
+            "w": 768,
+            "h": 928
+          },
+          "textMasks": [
+            {
+              "role": "title",
+              "top": 0,
+              "left": 0,
+              "width": 100,
+              "height": 10
+            },
+            {
+              "role": "speech",
+              "top": 6,
+              "left": 38,
+              "width": 62,
+              "height": 41
+            },
+            {
+              "role": "caption",
+              "top": 88,
+              "left": 0,
+              "width": 100,
+              "height": 12
+            }
+          ]
+        },
+        {
+          "bodySlug": "tx.womb.tetanus.caption",
+          "speechSlug": "tx.womb.tetanus.say",
+          "imageDesc": "The baby wears tiny knight's armour. A glowing shield appears as a nurse outside gives Mommy an injection in the arm.",
+          "assetIds": {
+            "standard_8gb": "img.womb.tetanus"
+          },
+          "imageSize": {
+            "w": 752,
+            "h": 928
+          },
+          "textMasks": [
+            {
+              "role": "title",
+              "top": 0,
+              "left": 0,
+              "width": 100,
+              "height": 10
+            },
+            {
+              "role": "speech",
+              "top": 7,
+              "left": 42,
+              "width": 58,
+              "height": 36
+            },
+            {
+              "role": "caption",
+              "top": 88,
+              "left": 0,
+              "width": 100,
+              "height": 12
+            }
+          ]
+        },
+        {
+          "bodySlug": "tx.womb.mms.caption",
+          "speechSlug": "tx.womb.mms.say",
+          "imageDesc": "The baby in a tiny yellow hard hat holds a clipboard beside a stack of glowing MMS bricks.",
+          "assetIds": {
+            "standard_8gb": "img.womb.mms"
+          },
+          "imageSize": {
+            "w": 752,
+            "h": 928
+          },
+          "textMasks": [
+            {
+              "role": "title",
+              "top": 0,
+              "left": 0,
+              "width": 100,
+              "height": 10
+            },
+            {
+              "role": "speech",
+              "top": 7,
+              "left": 12,
+              "width": 84,
+              "height": 46
+            },
+            {
+              "role": "blank",
+              "top": 58,
+              "left": 9,
+              "width": 34,
+              "height": 10
+            },
+            {
+              "role": "caption",
+              "top": 88,
+              "left": 0,
+              "width": 100,
+              "height": 12
+            }
+          ]
+        }
+      ],
+      "governanceStatus": "UNREVIEWED PROTOTYPE - demo only; not approved for field use"
+    },
+    {
+      "featureId": "anc_womb_protect_story",
+      "titleSlug": "tx.feature_anc_womb_protect_story",
+      "source": "https://docs.google.com/document/d/1h4a4rTmIuyqCvO0OVqu4WrisYmj-XfR9n5P7cht7ado/edit",
+      "sourceName": "Womb with a View (David I. Levine), panel script read 2026-11-09",
+      "imageDesc": "A frustrated mosquito has its stinger comically bent sideways against a glowing grid - the bed net - over Mom's bed. Doc image note: bend the mosquito's nose; can the baby be under the net?",
+      "frames": [
+        {
+          "bodySlug": "tx.womb.bednet.caption",
+          "speechSlug": "tx.womb.bednet.say",
+          "imageDesc": "A frustrated mosquito has its stinger comically bent sideways against a glowing grid - the bed net - over Mom's bed. Doc image note: bend the mosquito's nose; can the baby be under the net?",
+          "assetIds": {
+            "standard_8gb": "img.womb.bednet"
+          },
+          "imageSize": {
+            "w": 780,
+            "h": 928
+          },
+          "textMasks": [
+            {
+              "role": "title",
+              "top": 0,
+              "left": 0,
+              "width": 100,
+              "height": 10
+            },
+            {
+              "role": "speech",
+              "top": 26,
+              "left": 4,
+              "width": 50,
+              "height": 34
+            },
+            {
+              "role": "caption",
+              "top": 84,
+              "left": 0,
+              "width": 100,
+              "height": 16
+            }
+          ]
+        },
+        {
+          "bodySlug": "tx.womb.no_smoking.caption",
+          "speechSlug": "tx.womb.no_smoking.say",
+          "imageDesc": "The baby holds its nose and gestures with the phone at a no-smoke sign on the womb wall. Faint dark fumes try to seep in from outside and are blocked.",
+          "assetIds": {
+            "standard_8gb": "img.womb.no_smoking"
+          },
+          "imageSize": {
+            "w": 752,
+            "h": 928
+          },
+          "textMasks": [
+            {
+              "role": "title",
+              "top": 0,
+              "left": 0,
+              "width": 100,
+              "height": 10
+            },
+            {
+              "role": "speech",
+              "top": 7,
+              "left": 7,
+              "width": 71,
+              "height": 41
+            },
+            {
+              "role": "caption",
+              "top": 88,
+              "left": 0,
+              "width": 100,
+              "height": 12
+            }
+          ]
+        },
+        {
+          "bodySlug": "tx.womb.rest.caption",
+          "speechSlug": "tx.womb.rest.say",
+          "imageDesc": "The baby is tossed about inside the womb, clinging to a tiny phone, motion blur all around. Outside, Mommy carries a very big jug of water.",
+          "assetIds": {
+            "standard_8gb": "img.womb.rest"
+          },
+          "imageSize": {
+            "w": 930,
+            "h": 897
+          },
+          "textMasks": [
+            {
+              "role": "speech",
+              "top": 16,
+              "left": 0,
+              "width": 42,
+              "height": 50
+            }
+          ]
+        },
+        {
+          "bodySlug": "tx.womb.partner_support.caption",
+          "speechSlug": "tx.womb.partner_support.say",
+          "imageDesc": "The baby in a tiny general's hat points to a to-do list on the womb wall - wash dishes, fetch water, cook dinner - with a big tick beside a picture of Dad, not Mom. Doc image note: add the umbilical cord; the checklist is unclear, decide which items are ticked.",
+          "assetIds": {
+            "standard_8gb": "img.womb.partner_support"
+          },
+          "imageSize": {
+            "w": 768,
+            "h": 928
+          },
+          "textMasks": [
+            {
+              "role": "title",
+              "top": 0,
+              "left": 0,
+              "width": 100,
+              "height": 10
+            },
+            {
+              "role": "speech",
+              "top": 7,
+              "left": 33,
+              "width": 67,
+              "height": 35
+            },
+            {
+              "role": "blank",
+              "top": 25,
+              "left": 3,
+              "width": 39,
+              "height": 39
+            },
+            {
+              "role": "caption",
+              "top": 88,
+              "left": 0,
+              "width": 100,
+              "height": 12
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "wombbednet",
+          "labelSlug": "tx.feature_bednet_hanging_reminder",
+          "launch": "tool.bednet_hanging_reminder",
+          "style": "ghost"
+        }
+      ],
+      "governanceStatus": "UNREVIEWED PROTOTYPE - demo only; not approved for field use"
+    },
+    {
+      "featureId": "anc_womb_eating_story",
+      "titleSlug": "tx.feature_anc_womb_eating_story",
+      "source": "https://docs.google.com/document/d/1h4a4rTmIuyqCvO0OVqu4WrisYmj-XfR9n5P7cht7ado/edit",
+      "sourceName": "Womb with a View (David I. Levine), panel script read 2026-11-09",
+      "imageDesc": "The baby holds up an empty plate and taps it with a spoon while talking on the phone.",
+      "frames": [
+        {
+          "bodySlug": "tx.womb.one_more_plate.caption",
+          "speechSlug": "tx.womb.one_more_plate.say",
+          "imageDesc": "The baby holds up an empty plate and taps it with a spoon while talking on the phone.",
+          "assetIds": {
+            "standard_8gb": "img.womb.one_more_plate"
+          },
+          "imageSize": {
+            "w": 768,
+            "h": 928
+          },
+          "textMasks": [
+            {
+              "role": "title",
+              "top": 0,
+              "left": 0,
+              "width": 100,
+              "height": 10
+            },
+            {
+              "role": "speech",
+              "top": 9,
+              "left": 8,
+              "width": 59,
+              "height": 42
+            },
+            {
+              "role": "caption",
+              "top": 88,
+              "left": 0,
+              "width": 100,
+              "height": 12
+            }
+          ]
+        }
+      ],
+      "governanceStatus": "UNREVIEWED PROTOTYPE - demo only; not approved for field use"
+    },
+    {
+      "featureId": "anc_womb_danger_story",
+      "titleSlug": "tx.feature_anc_womb_danger_story",
+      "source": "https://docs.google.com/document/d/1h4a4rTmIuyqCvO0OVqu4WrisYmj-XfR9n5P7cht7ado/edit",
+      "sourceName": "Womb with a View (David I. Levine), panel script read 2026-11-09",
+      "imageDesc": "The baby in a doctor's outfit holds a phone with an alarmed expression. Beside it a tiny glowing red warning siren and a checklist: bleeding? severe headache? fever? Doc image note: the cord should go into the uterine wall, not the bed or the siren.",
+      "frames": [
+        {
+          "bodySlug": "tx.womb.danger_signs.caption",
+          "speechSlug": "tx.womb.danger_signs.say",
+          "imageDesc": "The baby in a doctor's outfit holds a phone with an alarmed expression. Beside it a tiny glowing red warning siren and a checklist: bleeding? severe headache? fever? Doc image note: the cord should go into the uterine wall, not the bed or the siren.",
+          "assetIds": {
+            "standard_8gb": "img.womb.danger_signs"
+          },
+          "imageSize": {
+            "w": 748,
+            "h": 928
+          },
+          "textMasks": [
+            {
+              "role": "title",
+              "top": 0,
+              "left": 0,
+              "width": 100,
+              "height": 10
+            },
+            {
+              "role": "speech",
+              "top": 8,
+              "left": 28,
+              "width": 72,
+              "height": 41
+            },
+            {
+              "role": "blank",
+              "top": 37,
+              "left": 6,
+              "width": 36,
+              "height": 26
+            },
+            {
+              "role": "caption",
+              "top": 85,
+              "left": 0,
+              "width": 100,
+              "height": 15
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "wombdanger_signs",
+          "labelSlug": "tx.feature_anc_triage",
+          "launch": "screen.anc_triage",
+          "style": "ghost"
+        }
+      ],
+      "governanceStatus": "UNREVIEWED PROTOTYPE - demo only; not approved for field use"
+    },
+    {
+      "featureId": "anc_womb_birth_story",
+      "titleSlug": "tx.feature_anc_womb_birth_story",
+      "source": "https://docs.google.com/document/d/1h4a4rTmIuyqCvO0OVqu4WrisYmj-XfR9n5P7cht7ado/edit",
+      "sourceName": "Womb with a View (David I. Levine), panel script read 2026-11-09",
+      "imageDesc": "The baby peers through a tiny magnifying glass at a birth-kit bag labelled MONEY, CLOTHES packed inside the womb, phone in hand, looking satisfied.",
+      "frames": [
+        {
+          "bodySlug": "tx.womb.birth_kit.caption",
+          "speechSlug": "tx.womb.birth_kit.say",
+          "imageDesc": "The baby peers through a tiny magnifying glass at a birth-kit bag labelled MONEY, CLOTHES packed inside the womb, phone in hand, looking satisfied.",
+          "assetIds": {
+            "standard_8gb": "img.womb.birth_kit"
+          },
+          "imageSize": {
+            "w": 768,
+            "h": 928
+          },
+          "textMasks": [
+            {
+              "role": "title",
+              "top": 0,
+              "left": 0,
+              "width": 100,
+              "height": 10
+            },
+            {
+              "role": "speech",
+              "top": 7,
+              "left": 14,
+              "width": 68,
+              "height": 41
+            },
+            {
+              "role": "blank",
+              "top": 26,
+              "left": 76,
+              "width": 24,
+              "height": 15
+            },
+            {
+              "role": "caption",
+              "top": 88,
+              "left": 0,
+              "width": 100,
+              "height": 12
+            }
+          ]
+        },
+        {
+          "bodySlug": "tx.womb.first_feed.caption",
+          "speechSlug": "tx.womb.first_feed.say",
+          "imageDesc": "The baby in a tiny chef's hat points at a feeding plan on the wall and a sign reading 'Golden milk (colostrum) - first hour!'",
+          "assetIds": {
+            "standard_8gb": "img.womb.first_feed"
+          },
+          "imageSize": {
+            "w": 820,
+            "h": 897
+          },
+          "textMasks": [
+            {
+              "role": "speech",
+              "top": 1,
+              "left": 0,
+              "width": 100,
+              "height": 36
+            },
+            {
+              "role": "blank",
+              "top": 36,
+              "left": 35,
+              "width": 65,
+              "height": 7
+            },
+            {
+              "role": "blank",
+              "top": 38,
+              "left": 42,
+              "width": 20,
+              "height": 12
+            },
+            {
+              "role": "blank",
+              "top": 67,
+              "left": 56,
+              "width": 27,
+              "height": 13
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "wombbirth_kit",
+          "labelSlug": "tx.feature_anc_birth_plan",
+          "launch": "tool.anc_birth_plan",
+          "style": "ghost"
+        }
+      ],
+      "governanceStatus": "UNREVIEWED PROTOTYPE - demo only; not approved for field use"
+    },
+    {
+      "featureId": "anc_womb_after_birth_story",
+      "titleSlug": "tx.feature_anc_womb_after_birth_story",
+      "source": "https://docs.google.com/document/d/1h4a4rTmIuyqCvO0OVqu4WrisYmj-XfR9n5P7cht7ado/edit",
+      "sourceName": "Womb with a View (David I. Levine), panel script read 2026-11-09",
+      "imageDesc": "The baby sits swaddled beside a moving box marked WOMB, phone in hand, with a calendar showing check-up stickers.",
+      "frames": [
+        {
+          "bodySlug": "tx.womb.moved_out.caption",
+          "speechSlug": "tx.womb.moved_out.say",
+          "imageDesc": "The baby sits swaddled beside a moving box marked WOMB, phone in hand, with a calendar showing check-up stickers.",
+          "assetIds": {
+            "standard_8gb": "img.womb.moved_out"
+          },
+          "imageSize": {
+            "w": 752,
+            "h": 928
+          },
+          "textMasks": [
+            {
+              "role": "title",
+              "top": 0,
+              "left": 0,
+              "width": 100,
+              "height": 10
+            },
+            {
+              "role": "speech",
+              "top": 9,
+              "left": 34,
+              "width": 63,
+              "height": 48
+            },
+            {
+              "role": "blank",
+              "top": 18,
+              "left": 13,
+              "width": 23,
+              "height": 12
+            },
+            {
+              "role": "blank",
+              "top": 51,
+              "left": 66,
+              "width": 24,
+              "height": 11
+            },
+            {
+              "role": "caption",
+              "top": 88,
+              "left": 0,
+              "width": 100,
+              "height": 12
+            }
+          ]
+        },
+        {
+          "bodySlug": "tx.womb.mothers_alarm.caption",
+          "speechSlug": "tx.womb.mothers_alarm.say",
+          "imageDesc": "A sequel to the danger-signals panel, reusing its red siren. The baby sounds the alarm while Mommy rests.",
+          "assetIds": {
+            "standard_8gb": "img.womb.mothers_alarm"
+          },
+          "imageSize": {
+            "w": 768,
+            "h": 928
+          },
+          "textMasks": [
+            {
+              "role": "title",
+              "top": 0,
+              "left": 0,
+              "width": 100,
+              "height": 10
+            },
+            {
+              "role": "speech",
+              "top": 7,
+              "left": 13,
+              "width": 75,
+              "height": 48
+            },
+            {
+              "role": "blank",
+              "top": 26,
+              "left": 84,
+              "width": 16,
+              "height": 14
+            },
+            {
+              "role": "caption",
+              "top": 88,
+              "left": 0,
+              "width": 100,
+              "height": 12
+            }
+          ]
+        },
+        {
+          "bodySlug": "tx.womb.my_own_alarm.caption",
+          "speechSlug": "tx.womb.my_own_alarm.say",
+          "imageDesc": "The baby holds the phone awkwardly and points at a checklist about itself.",
+          "assetIds": {
+            "standard_8gb": "img.womb.my_own_alarm"
+          },
+          "imageSize": {
+            "w": 752,
+            "h": 928
+          },
+          "textMasks": [
+            {
+              "role": "title",
+              "top": 0,
+              "left": 0,
+              "width": 100,
+              "height": 11
+            },
+            {
+              "role": "speech",
+              "top": 7,
+              "left": 42,
+              "width": 58,
+              "height": 42
+            },
+            {
+              "role": "blank",
+              "top": 16,
+              "left": 10,
+              "width": 33,
+              "height": 15
+            },
+            {
+              "role": "blank",
+              "top": 35,
+              "left": 14,
+              "width": 11,
+              "height": 10
+            },
+            {
+              "role": "blank",
+              "top": 55,
+              "left": 10,
+              "width": 37,
+              "height": 33
+            },
+            {
+              "role": "caption",
+              "top": 88,
+              "left": 0,
+              "width": 100,
+              "height": 12
+            }
+          ]
+        },
+        {
+          "bodySlug": "tx.womb.spacing.caption",
+          "speechSlug": "tx.womb.spacing.say",
+          "imageDesc": "The newborn hangs a sign on the womb door reading 'Renovating: closed 2 years'.",
+          "assetIds": {
+            "standard_8gb": "img.womb.spacing"
+          },
+          "imageSize": {
+            "w": 847,
+            "h": 1024
+          },
+          "textMasks": [
+            {
+              "role": "speech",
+              "top": 4,
+              "left": 2,
+              "width": 48,
+              "height": 52
+            },
+            {
+              "role": "blank",
+              "top": 9,
+              "left": 53,
+              "width": 33,
+              "height": 10
+            },
+            {
+              "role": "blank",
+              "top": 24,
+              "left": 56,
+              "width": 27,
+              "height": 10
+            },
+            {
+              "role": "blank",
+              "top": 46,
+              "left": 53,
+              "width": 25,
+              "height": 17
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "wombmoved_out",
+          "labelSlug": "tx.feature_pnc_reminders",
+          "launch": "tool.pnc_reminders",
+          "style": "ghost"
+        },
+        {
+          "id": "wombmothers_alarm",
+          "labelSlug": "tx.feature_pnc_lactation",
+          "launch": "screen.pnc_lactation",
+          "style": "ghost"
+        },
+        {
+          "id": "wombmy_own_alarm",
+          "labelSlug": "tx.feature_newborn_triage",
+          "launch": "screen.newborn_triage",
+          "style": "ghost"
+        }
+      ],
+      "governanceStatus": "UNREVIEWED PROTOTYPE - demo only; not approved for field use"
+    }
+  ],
+  "moduleContracts": [
+    {
+      "featureId": "anc_womb_visits_story",
+      "reads": [
+        "FeatureCatalog",
+        "PhraseBank",
+        "StoryCard",
+        "AssetManifest"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "player",
+        "i18n",
+        "audit"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "UNREVIEWED PROTOTYPE - demo only; not approved for field use",
+      "notes": "Comic panels. No clinical decision, no record, no reminder. Where a panel's subject is governed elsewhere, it carries a pointer and an action to that screen instead of a second copy of the advice."
+    },
+    {
+      "featureId": "anc_womb_protect_story",
+      "reads": [
+        "FeatureCatalog",
+        "PhraseBank",
+        "StoryCard",
+        "AssetManifest"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "player",
+        "i18n",
+        "audit"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "UNREVIEWED PROTOTYPE - demo only; not approved for field use",
+      "notes": "Comic panels. No clinical decision, no record, no reminder. Where a panel's subject is governed elsewhere, it carries a pointer and an action to that screen instead of a second copy of the advice."
+    },
+    {
+      "featureId": "anc_womb_eating_story",
+      "reads": [
+        "FeatureCatalog",
+        "PhraseBank",
+        "StoryCard",
+        "AssetManifest"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "player",
+        "i18n",
+        "audit"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "UNREVIEWED PROTOTYPE - demo only; not approved for field use",
+      "notes": "Comic panels. No clinical decision, no record, no reminder. Where a panel's subject is governed elsewhere, it carries a pointer and an action to that screen instead of a second copy of the advice."
+    },
+    {
+      "featureId": "anc_womb_danger_story",
+      "reads": [
+        "FeatureCatalog",
+        "PhraseBank",
+        "StoryCard",
+        "AssetManifest"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "player",
+        "i18n",
+        "audit"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "UNREVIEWED PROTOTYPE - demo only; not approved for field use",
+      "notes": "Comic panels. No clinical decision, no record, no reminder. Where a panel's subject is governed elsewhere, it carries a pointer and an action to that screen instead of a second copy of the advice."
+    },
+    {
+      "featureId": "anc_womb_birth_story",
+      "reads": [
+        "FeatureCatalog",
+        "PhraseBank",
+        "StoryCard",
+        "AssetManifest"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "player",
+        "i18n",
+        "audit"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "UNREVIEWED PROTOTYPE - demo only; not approved for field use",
+      "notes": "Comic panels. No clinical decision, no record, no reminder. Where a panel's subject is governed elsewhere, it carries a pointer and an action to that screen instead of a second copy of the advice."
+    },
+    {
+      "featureId": "anc_womb_after_birth_story",
+      "reads": [
+        "FeatureCatalog",
+        "PhraseBank",
+        "StoryCard",
+        "AssetManifest"
+      ],
+      "writes": [
+        "AuditEvent"
+      ],
+      "capabilities": [
+        "player",
+        "i18n",
+        "audit"
+      ],
+      "fhirResources": [
+        "AuditEvent"
+      ],
+      "securityPosture": "prototype_insecure_synthetic_only",
+      "reviewStatus": "UNREVIEWED PROTOTYPE - demo only; not approved for field use",
+      "notes": "Comic panels. No clinical decision, no record, no reminder. Where a panel's subject is governed elsewhere, it carries a pointer and an action to that screen instead of a second copy of the advice."
+    }
+  ],
+  "guidanceSources": [
+    {
+      "id": "src.womb.panel_script",
+      "title": "Womb with a View panel script (David I. Levine)",
+      "url": "https://docs.google.com/document/d/1h4a4rTmIuyqCvO0OVqu4WrisYmj-XfR9n5P7cht7ado/edit",
+      "note": "Unpublished working document. The clinical lines in it are the author's drafts and carry no sign-off."
+    }
+  ],
+  "guidanceComparisons": [
+    {
+      "featureId": "anc_womb_visits_story",
+      "sourceIds": [
+        "src.womb.panel_script"
+      ],
+      "claim": "Comic panels adapted from the author's own panel script. Each panel carries one message; where that message is a danger-sign list or a schedule the app already governs, the panel points at the governed screen rather than restating it.",
+      "status": "author_draft_needs_clinical_review",
+      "codexDecision": "No clinical sign-off. Several captions in the source are marked (verify) by the author; those are recorded in governance.json and are not shipped as advice."
+    },
+    {
+      "featureId": "anc_womb_protect_story",
+      "sourceIds": [
+        "src.womb.panel_script"
+      ],
+      "claim": "Comic panels adapted from the author's own panel script. Each panel carries one message; where that message is a danger-sign list or a schedule the app already governs, the panel points at the governed screen rather than restating it.",
+      "status": "author_draft_needs_clinical_review",
+      "codexDecision": "No clinical sign-off. Several captions in the source are marked (verify) by the author; those are recorded in governance.json and are not shipped as advice."
+    },
+    {
+      "featureId": "anc_womb_eating_story",
+      "sourceIds": [
+        "src.womb.panel_script"
+      ],
+      "claim": "Comic panels adapted from the author's own panel script. Each panel carries one message; where that message is a danger-sign list or a schedule the app already governs, the panel points at the governed screen rather than restating it.",
+      "status": "author_draft_needs_clinical_review",
+      "codexDecision": "No clinical sign-off. Several captions in the source are marked (verify) by the author; those are recorded in governance.json and are not shipped as advice."
+    },
+    {
+      "featureId": "anc_womb_danger_story",
+      "sourceIds": [
+        "src.womb.panel_script"
+      ],
+      "claim": "Comic panels adapted from the author's own panel script. Each panel carries one message; where that message is a danger-sign list or a schedule the app already governs, the panel points at the governed screen rather than restating it.",
+      "status": "author_draft_needs_clinical_review",
+      "codexDecision": "No clinical sign-off. Several captions in the source are marked (verify) by the author; those are recorded in governance.json and are not shipped as advice."
+    },
+    {
+      "featureId": "anc_womb_birth_story",
+      "sourceIds": [
+        "src.womb.panel_script"
+      ],
+      "claim": "Comic panels adapted from the author's own panel script. Each panel carries one message; where that message is a danger-sign list or a schedule the app already governs, the panel points at the governed screen rather than restating it.",
+      "status": "author_draft_needs_clinical_review",
+      "codexDecision": "No clinical sign-off. Several captions in the source are marked (verify) by the author; those are recorded in governance.json and are not shipped as advice."
+    },
+    {
+      "featureId": "anc_womb_after_birth_story",
+      "sourceIds": [
+        "src.womb.panel_script"
+      ],
+      "claim": "Comic panels adapted from the author's own panel script. Each panel carries one message; where that message is a danger-sign list or a schedule the app already governs, the panel points at the governed screen rather than restating it.",
+      "status": "author_draft_needs_clinical_review",
+      "codexDecision": "No clinical sign-off. Several captions in the source are marked (verify) by the author; those are recorded in governance.json and are not shipped as advice."
+    }
+  ],
+  "assets": [
+    {
+      "assetId": "img.womb.anc_visits",
+      "featureIds": [
+        "anc_womb_visits_story"
+      ],
+      "module": "Womb with a View ANC comics",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View panel art (David I. Levine), from the source document, 2026-11-09",
+      "license": "David I. Levine's own work, used with his instruction to bring it into the app. No third-party rights cleared.",
+      "costUsd": 0,
+      "regionFocus": "Drawn for a general audience; a Rwandan reviewer should confirm the figures, clothing and the health-facility signage before release.",
+      "targetPath": "assets/stories/womb/anc_visits.webp",
+      "altText": "The baby inside the womb, telephone in one hand, marking off a wall chart of clinic visits.",
+      "clinicalReviewStatus": "Clinical review needed - English clinical content is lettered into this artwork and the number contract cannot see it",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "UNREVIEWED PROTOTYPE - demo only",
+      "date_accessed_or_captured": "2026-11-09",
+      "textLetteredIn": true
+    },
+    {
+      "assetId": "img.womb.blood_tests",
+      "featureIds": [
+        "anc_womb_visits_story"
+      ],
+      "module": "Womb with a View ANC comics",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View panel art (David I. Levine), from the source document, 2026-11-09",
+      "license": "David I. Levine's own work, used with his instruction to bring it into the app. No third-party rights cleared.",
+      "costUsd": 0,
+      "regionFocus": "Drawn for a general audience; a Rwandan reviewer should confirm the figures, clothing and the health-facility signage before release.",
+      "targetPath": "assets/stories/womb/blood_tests.webp",
+      "altText": "A nurse takes blood from the mother's arm while the baby looks on through a magnifying glass.",
+      "clinicalReviewStatus": "Clinical review needed - English clinical content is lettered into this artwork and the number contract cannot see it",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "UNREVIEWED PROTOTYPE - demo only",
+      "date_accessed_or_captured": "2026-11-09",
+      "textLetteredIn": true
+    },
+    {
+      "assetId": "img.womb.tetanus",
+      "featureIds": [
+        "anc_womb_visits_story"
+      ],
+      "module": "Womb with a View ANC comics",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View panel art (David I. Levine), from the source document, 2026-11-09",
+      "license": "David I. Levine's own work, used with his instruction to bring it into the app. No third-party rights cleared.",
+      "costUsd": 0,
+      "regionFocus": "Drawn for a general audience; a Rwandan reviewer should confirm the figures, clothing and the health-facility signage before release.",
+      "targetPath": "assets/stories/womb/tetanus.webp",
+      "altText": "A nurse gives the mother an injection in the arm. Above, the baby wears a helmet and holds a shield.",
+      "clinicalReviewStatus": "Clinical review needed - English clinical content is lettered into this artwork and the number contract cannot see it",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "UNREVIEWED PROTOTYPE - demo only",
+      "date_accessed_or_captured": "2026-11-09",
+      "textLetteredIn": true
+    },
+    {
+      "assetId": "img.womb.mms",
+      "featureIds": [
+        "anc_womb_visits_story"
+      ],
+      "module": "Womb with a View ANC comics",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View panel art (David I. Levine), from the source document, 2026-11-09",
+      "license": "David I. Levine's own work, used with his instruction to bring it into the app. No third-party rights cleared.",
+      "costUsd": 0,
+      "regionFocus": "Drawn for a general audience; a Rwandan reviewer should confirm the figures, clothing and the health-facility signage before release.",
+      "targetPath": "assets/stories/womb/mms.webp",
+      "altText": "The baby in a builder's hard hat ticks off a list beside a stack of building blocks.",
+      "clinicalReviewStatus": "Clinical review needed - English clinical content is lettered into this artwork and the number contract cannot see it",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "UNREVIEWED PROTOTYPE - demo only",
+      "date_accessed_or_captured": "2026-11-09",
+      "textLetteredIn": true
+    },
+    {
+      "assetId": "img.womb.bednet",
+      "featureIds": [
+        "anc_womb_protect_story"
+      ],
+      "module": "Womb with a View ANC comics",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View panel art (David I. Levine), from the source document, 2026-11-09",
+      "license": "David I. Levine's own work, used with his instruction to bring it into the app. No third-party rights cleared.",
+      "costUsd": 0,
+      "regionFocus": "Drawn for a general audience; a Rwandan reviewer should confirm the figures, clothing and the health-facility signage before release.",
+      "targetPath": "assets/stories/womb/bednet.webp",
+      "altText": "A mosquito bounces off the bed net over the sleeping mother. The baby waves from inside the womb.",
+      "clinicalReviewStatus": "Clinical review needed - English clinical content is lettered into this artwork and the number contract cannot see it",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "UNREVIEWED PROTOTYPE - demo only",
+      "date_accessed_or_captured": "2026-11-09",
+      "textLetteredIn": true
+    },
+    {
+      "assetId": "img.womb.no_smoking",
+      "featureIds": [
+        "anc_womb_protect_story"
+      ],
+      "module": "Womb with a View ANC comics",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View panel art (David I. Levine), from the source document, 2026-11-09",
+      "license": "David I. Levine's own work, used with his instruction to bring it into the app. No third-party rights cleared.",
+      "costUsd": 0,
+      "regionFocus": "Drawn for a general audience; a Rwandan reviewer should confirm the figures, clothing and the health-facility signage before release.",
+      "targetPath": "assets/stories/womb/no_smoking.webp",
+      "altText": "The mother holds up a hand to a man smoking in the yard. Inside the womb the baby pinches its nose.",
+      "clinicalReviewStatus": "Clinical review needed - English clinical content is lettered into this artwork and the number contract cannot see it",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "UNREVIEWED PROTOTYPE - demo only",
+      "date_accessed_or_captured": "2026-11-09",
+      "textLetteredIn": true
+    },
+    {
+      "assetId": "img.womb.rest",
+      "featureIds": [
+        "anc_womb_protect_story"
+      ],
+      "module": "Womb with a View ANC comics",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View panel art (David I. Levine), from the source document, 2026-11-09",
+      "license": "David I. Levine's own work, used with his instruction to bring it into the app. No third-party rights cleared.",
+      "costUsd": 0,
+      "regionFocus": "Drawn for a general audience; a Rwandan reviewer should confirm the figures, clothing and the health-facility signage before release.",
+      "targetPath": "assets/stories/womb/rest.webp",
+      "altText": "The father takes a heavy water container from the pregnant mother outside their house.",
+      "clinicalReviewStatus": "Clinical review needed - English clinical content is lettered into this artwork and the number contract cannot see it",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "UNREVIEWED PROTOTYPE - demo only",
+      "date_accessed_or_captured": "2026-11-09",
+      "textLetteredIn": true
+    },
+    {
+      "assetId": "img.womb.partner_support",
+      "featureIds": [
+        "anc_womb_protect_story"
+      ],
+      "module": "Womb with a View ANC comics",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View panel art (David I. Levine), from the source document, 2026-11-09",
+      "license": "David I. Levine's own work, used with his instruction to bring it into the app. No third-party rights cleared.",
+      "costUsd": 0,
+      "regionFocus": "Drawn for a general audience; a Rwandan reviewer should confirm the figures, clothing and the health-facility signage before release.",
+      "targetPath": "assets/stories/womb/partner_support.webp",
+      "altText": "The father cooks at the stove while the baby points from inside the womb.",
+      "clinicalReviewStatus": "Clinical review needed - English clinical content is lettered into this artwork and the number contract cannot see it",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "UNREVIEWED PROTOTYPE - demo only",
+      "date_accessed_or_captured": "2026-11-09",
+      "textLetteredIn": true
+    },
+    {
+      "assetId": "img.womb.one_more_plate",
+      "featureIds": [
+        "anc_womb_eating_story"
+      ],
+      "module": "Womb with a View ANC comics",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View panel art (David I. Levine), from the source document, 2026-11-09",
+      "license": "David I. Levine's own work, used with his instruction to bring it into the app. No third-party rights cleared.",
+      "costUsd": 0,
+      "regionFocus": "Drawn for a general audience; a Rwandan reviewer should confirm the figures, clothing and the health-facility signage before release.",
+      "targetPath": "assets/stories/womb/one_more_plate.webp",
+      "altText": "The mother eats a meal of beans, rice, greens and fruit while the baby holds up a small bowl.",
+      "clinicalReviewStatus": "Clinical review needed - English clinical content is lettered into this artwork and the number contract cannot see it",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "UNREVIEWED PROTOTYPE - demo only",
+      "date_accessed_or_captured": "2026-11-09",
+      "textLetteredIn": true
+    },
+    {
+      "assetId": "img.womb.danger_signs",
+      "featureIds": [
+        "anc_womb_danger_story"
+      ],
+      "module": "Womb with a View ANC comics",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View panel art (David I. Levine), from the source document, 2026-11-09",
+      "license": "David I. Levine's own work, used with his instruction to bring it into the app. No third-party rights cleared.",
+      "costUsd": 0,
+      "regionFocus": "Drawn for a general audience; a Rwandan reviewer should confirm the figures, clothing and the health-facility signage before release.",
+      "targetPath": "assets/stories/womb/danger_signs.webp",
+      "altText": "The baby in a doctor's coat points at a warning sign while a red emergency light flashes.",
+      "clinicalReviewStatus": "Clinical review needed - English clinical content is lettered into this artwork and the number contract cannot see it",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "UNREVIEWED PROTOTYPE - demo only",
+      "date_accessed_or_captured": "2026-11-09",
+      "textLetteredIn": true
+    },
+    {
+      "assetId": "img.womb.birth_kit",
+      "featureIds": [
+        "anc_womb_birth_story"
+      ],
+      "module": "Womb with a View ANC comics",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View panel art (David I. Levine), from the source document, 2026-11-09",
+      "license": "David I. Levine's own work, used with his instruction to bring it into the app. No third-party rights cleared.",
+      "costUsd": 0,
+      "regionFocus": "Drawn for a general audience; a Rwandan reviewer should confirm the figures, clothing and the health-facility signage before release.",
+      "targetPath": "assets/stories/womb/birth_kit.webp",
+      "altText": "The parents pack a bag outside the health centre while the baby checks a packed basket.",
+      "clinicalReviewStatus": "Clinical review needed - English clinical content is lettered into this artwork and the number contract cannot see it",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "UNREVIEWED PROTOTYPE - demo only",
+      "date_accessed_or_captured": "2026-11-09",
+      "textLetteredIn": true
+    },
+    {
+      "assetId": "img.womb.first_feed",
+      "featureIds": [
+        "anc_womb_birth_story"
+      ],
+      "module": "Womb with a View ANC comics",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View panel art (David I. Levine), from the source document, 2026-11-09",
+      "license": "David I. Levine's own work, used with his instruction to bring it into the app. No third-party rights cleared.",
+      "costUsd": 0,
+      "regionFocus": "Drawn for a general audience; a Rwandan reviewer should confirm the figures, clothing and the health-facility signage before release.",
+      "targetPath": "assets/stories/womb/first_feed.webp",
+      "altText": "The baby in a cook's hat points at a picture of a golden drop of milk beside a clock.",
+      "clinicalReviewStatus": "Clinical review needed - English clinical content is lettered into this artwork and the number contract cannot see it",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "UNREVIEWED PROTOTYPE - demo only",
+      "date_accessed_or_captured": "2026-11-09",
+      "textLetteredIn": true
+    },
+    {
+      "assetId": "img.womb.moved_out",
+      "featureIds": [
+        "anc_womb_after_birth_story"
+      ],
+      "module": "Womb with a View ANC comics",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View panel art (David I. Levine), from the source document, 2026-11-09",
+      "license": "David I. Levine's own work, used with his instruction to bring it into the app. No third-party rights cleared.",
+      "costUsd": 0,
+      "regionFocus": "Drawn for a general audience; a Rwandan reviewer should confirm the figures, clothing and the health-facility signage before release.",
+      "targetPath": "assets/stories/womb/moved_out.webp",
+      "altText": "The mother leans over her newborn in its cot. The baby holds a telephone.",
+      "clinicalReviewStatus": "Clinical review needed - English clinical content is lettered into this artwork and the number contract cannot see it",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "UNREVIEWED PROTOTYPE - demo only",
+      "date_accessed_or_captured": "2026-11-09",
+      "textLetteredIn": true
+    },
+    {
+      "assetId": "img.womb.mothers_alarm",
+      "featureIds": [
+        "anc_womb_after_birth_story"
+      ],
+      "module": "Womb with a View ANC comics",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View panel art (David I. Levine), from the source document, 2026-11-09",
+      "license": "David I. Levine's own work, used with his instruction to bring it into the app. No third-party rights cleared.",
+      "costUsd": 0,
+      "regionFocus": "Drawn for a general audience; a Rwandan reviewer should confirm the figures, clothing and the health-facility signage before release.",
+      "targetPath": "assets/stories/womb/mothers_alarm.webp",
+      "altText": "The mother sits unwell holding her head while the father carries the newborn and a bag to the health centre.",
+      "clinicalReviewStatus": "Clinical review needed - English clinical content is lettered into this artwork and the number contract cannot see it",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "UNREVIEWED PROTOTYPE - demo only",
+      "date_accessed_or_captured": "2026-11-09",
+      "textLetteredIn": true
+    },
+    {
+      "assetId": "img.womb.my_own_alarm",
+      "featureIds": [
+        "anc_womb_after_birth_story"
+      ],
+      "module": "Womb with a View ANC comics",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View panel art (David I. Levine), from the source document, 2026-11-09",
+      "license": "David I. Levine's own work, used with his instruction to bring it into the app. No third-party rights cleared.",
+      "costUsd": 0,
+      "regionFocus": "Drawn for a general audience; a Rwandan reviewer should confirm the figures, clothing and the health-facility signage before release.",
+      "targetPath": "assets/stories/womb/my_own_alarm.webp",
+      "altText": "The mother stands outside the health centre holding her newborn and a warning sign.",
+      "clinicalReviewStatus": "Clinical review needed - English clinical content is lettered into this artwork and the number contract cannot see it",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "UNREVIEWED PROTOTYPE - demo only",
+      "date_accessed_or_captured": "2026-11-09",
+      "textLetteredIn": true
+    },
+    {
+      "assetId": "img.womb.spacing",
+      "featureIds": [
+        "anc_womb_after_birth_story"
+      ],
+      "module": "Womb with a View ANC comics",
+      "assetType": "imported_story_scene",
+      "sourceType": "user_story_import_draft",
+      "source": "Womb with a View panel art (David I. Levine), from the source document, 2026-11-09",
+      "license": "David I. Levine's own work, used with his instruction to bring it into the app. No third-party rights cleared.",
+      "costUsd": 0,
+      "regionFocus": "Drawn for a general audience; a Rwandan reviewer should confirm the figures, clothing and the health-facility signage before release.",
+      "targetPath": "assets/stories/womb/spacing.webp",
+      "altText": "A nurse points at a calendar while the mother holds her newborn. Beside them, a room being repainted.",
+      "clinicalReviewStatus": "Clinical review needed - English clinical content is lettered into this artwork and the number contract cannot see it",
+      "localReviewStatus": "Local Review Needed",
+      "approvalStatus": "UNREVIEWED PROTOTYPE - demo only",
+      "date_accessed_or_captured": "2026-11-09",
+      "textLetteredIn": true
+    }
+  ],
+  "phrases": {
+    "tx.feature_anc_womb_visits_story": {
+      "en": {
+        "text": "Womb with a view: at the clinic"
+      },
+      "rw-RW": {
+        "text": "Womb with a View: ku ivuriro"
+      }
+    },
+    "tx.feature_anc_womb_visits_story_summary": {
+      "en": {
+        "text": "The baby checks the visits, the tests, the injection and the daily pill."
+      },
+      "rw-RW": {
+        "text": "Umwana areba isura, ibipimo, urushinge n'ikinini cya buri munsi."
+      }
+    },
+    "tx.womb.anc_visits.say": {
+      "en": {
+        "text": "Another check-up, Mommy. Ask if I am growing properly. We already know I am adorable."
+      },
+      "rw-RW": {
+        "text": "Irindi sura, Mama. Baza niba ndimo gukura neza. Ko tuzi ko ndi mwiza!"
+      }
+    },
+    "tx.womb.anc_visits.caption": {
+      "en": {
+        "text": "Go to all your antenatal visits - at least eight - so the nurse can check you and the baby."
+      },
+      "rw-RW": {
+        "text": "Jya mu masura yose yo gusuzumisha inda - nibura umunani - kugira ngo umukozi w'ubuzima akurebe wowe n'umwana."
+      }
+    },
+    "tx.womb.blood_tests.say": {
+      "en": {
+        "text": "Everything I get comes through your blood, Mommy. Let the nurse check it is good!"
+      },
+      "rw-RW": {
+        "text": "Ibyo mpabwa byose binyura mu maraso yawe, Mama. Reka umukozi w'ubuzima arebe ko ameze neza!"
+      }
+    },
+    "tx.womb.blood_tests.caption": {
+      "en": {
+        "text": "Some infections and low blood have no signs. Get tested at your first visit."
+      },
+      "rw-RW": {
+        "text": "Zimwe mu ndwara n'amaraso make ntibigaragaza ibimenyetso. Ipimishe ku isura ryawe rya mbere."
+      }
+    },
+    "tx.womb.tetanus.say": {
+      "en": {
+        "text": "Tetanus? Not today. Mommy's injection is my shield."
+      },
+      "rw-RW": {
+        "text": "Tetanosi? Si uyu munsi. Urushinge rwa Mama ni ingabo yanjye."
+      }
+    },
+    "tx.womb.tetanus.caption": {
+      "en": {
+        "text": "The tetanus injection is safe in pregnancy and protects you and the new baby. Bring your card and ask which doses you need."
+      },
+      "rw-RW": {
+        "text": "Urushinge rwa tetanosi nta kibazo rutera ku batwite kandi rurinda wowe n'uruhinja. Zana ikarita yawe ubaze inshinge ukeneye."
+      }
+    },
+    "tx.womb.mms.say": {
+      "en": {
+        "text": "Do you take the pill the nurse gave you every day, Mommy? These fine toes do not build themselves."
+      },
+      "rw-RW": {
+        "text": "Ese ufata ikinini umukozi w'ubuzima yaguhaye buri munsi, Mama? Sinshobora kwiyubaka njyenyine."
+      }
+    },
+    "tx.womb.mms.caption": {
+      "en": {
+        "text": "Take one supplement pill every day. If it upsets your stomach, take it with the evening meal. Do not stop without asking the nurse."
+      },
+      "rw-RW": {
+        "text": "Fata ikinini kimwe cy'inyongera buri munsi. Niba gitera kubabara mu nda, gifate ku mafunguro ya nimugoroba. Ntugahagarike utabajije umukozi w'ubuzima."
+      }
+    },
+    "tx.feature_anc_womb_protect_story": {
+      "en": {
+        "text": "Womb with a view: keeping my room safe"
+      },
+      "rw-RW": {
+        "text": "Womb with a View: kurinda icyumba cyanjye"
+      }
+    },
+    "tx.feature_anc_womb_protect_story_summary": {
+      "en": {
+        "text": "Bed nets, smoke, heavy loads, and who else can do the chores."
+      },
+      "rw-RW": {
+        "text": "Inzitiramubu, umwotsi, imizigo iremereye, n'abandi bashobora gukora imirimo yo mu rugo."
+      }
+    },
+    "tx.womb.bednet.say": {
+      "en": {
+        "text": "Sorry, mosquito. This room is occupied. No visitors!"
+      },
+      "rw-RW": {
+        "text": "Mbabarira, mubu. Iki cyumba kirimo umuntu. Nta bashyitsi!"
+      }
+    },
+    "tx.womb.bednet.caption": {
+      "en": {
+        "text": "Sleep under a treated bed net every night."
+      },
+      "rw-RW": {
+        "text": "Ryama mu nzitiramubu ifite umuti buri joro."
+      }
+    },
+    "tx.womb.no_smoking.say": {
+      "en": {
+        "text": "Cough, cough! Mommy, somebody is smoking. Tell them my room has a strict no-smoking rule!"
+      },
+      "rw-RW": {
+        "text": "Inkorora, inkorora! Mama, hari unywa itabi. Babwire ko mu cyumba cyanjye bibujijwe kunywa itabi!"
+      }
+    },
+    "tx.womb.no_smoking.caption": {
+      "en": {
+        "text": "Keep away from tobacco smoke, alcohol and cooking smoke."
+      },
+      "rw-RW": {
+        "text": "Irinde umwotsi w'itabi, umwotsi wo guteka, n'inzoga."
+      }
+    },
+    "tx.womb.rest.say": {
+      "en": {
+        "text": "Hello Daddy! Could you carry that? Mommy is already carrying me."
+      },
+      "rw-RW": {
+        "text": "Muraho Papa! Ese wowe wagitwara? Mama asanzwe antwaye."
+      }
+    },
+    "tx.womb.rest.caption": {
+      "en": {
+        "text": "Rest, and let someone else lift the heavy things."
+      },
+      "rw-RW": {
+        "text": "Ruhuka, kandi ureke undi muntu aterure ibiremereye."
+      }
+    },
+    "tx.womb.partner_support.say": {
+      "en": {
+        "text": "Hi Daddy. Mommy is making a whole person. You can make dinner."
+      },
+      "rw-RW": {
+        "text": "Muraho Papa. Mama ari gukora umuntu wuzuye. Wowe ushobora guteka ifunguro rya nimugoroba."
+      }
+    },
+    "tx.womb.partner_support.caption": {
+      "en": {
+        "text": "Ask your partner and family to take the heavy chores so you can rest."
+      },
+      "rw-RW": {
+        "text": "Saba uwo mubana n'umuryango gukora imirimo iremereye kugira ngo uruhuke."
+      }
+    },
+    "tx.feature_anc_womb_eating_story": {
+      "en": {
+        "text": "Womb with a view: one more plate"
+      },
+      "rw-RW": {
+        "text": "Womb with a View: indi sahani"
+      }
+    },
+    "tx.feature_anc_womb_eating_story_summary": {
+      "en": {
+        "text": "The baby asks for one extra meal a day."
+      },
+      "rw-RW": {
+        "text": "Umwana asaba irindi funguro rimwe ku munsi."
+      }
+    },
+    "tx.womb.one_more_plate.say": {
+      "en": {
+        "text": "One plate for you, one more for me, Mommy!"
+      },
+      "rw-RW": {
+        "text": "Isahani imwe kuri wowe, indi kuri njye, Mama!"
+      }
+    },
+    "tx.womb.one_more_plate.caption": {
+      "en": {
+        "text": "Eat one extra snack or small meal every day. Add eggs, fish, beans, greens and fruit."
+      },
+      "rw-RW": {
+        "text": "Fata agafunguro kamwe cyangwa ifunguro rito ry'inyongera buri munsi. Ongeraho amagi, amafi, ibishyimbo, imboga n'imbuto."
+      }
+    },
+    "tx.feature_anc_womb_danger_story": {
+      "en": {
+        "text": "Womb with a view: the warning siren"
+      },
+      "rw-RW": {
+        "text": "Womb with a View: impuruza"
+      }
+    },
+    "tx.feature_anc_womb_danger_story_summary": {
+      "en": {
+        "text": "The baby sounds the alarm, and points at the pregnancy danger check."
+      },
+      "rw-RW": {
+        "text": "Umwana avuza impuruza, akerekana aho wareba ibimenyetso by'akaga byo gutwita."
+      }
+    },
+    "tx.womb.danger_signs.say": {
+      "en": {
+        "text": "Mommy, heavy bleeding or a high fever means we go to the clinic now. I am much too young to handle emergencies!"
+      },
+      "rw-RW": {
+        "text": "Mama, kuva amaraso menshi cyangwa umuriro mwinshi bivuze ko tujya ku ivuriro nonaha. Ndi muto cyane ku byihutirwa!"
+      }
+    },
+    "tx.womb.danger_signs.caption": {
+      "en": {
+        "text": "Open the pregnancy danger check to see the signs that mean go to the clinic now."
+      },
+      "rw-RW": {
+        "text": "Fungura isuzuma ry'ibimenyetso by'akaga byo gutwita urebe ibisobanura kujya ku ivuriro nonaha."
+      }
+    },
+    "tx.feature_anc_womb_birth_story": {
+      "en": {
+        "text": "Womb with a view: ready for the day"
+      },
+      "rw-RW": {
+        "text": "Womb with a View: twiteguye umunsi"
+      }
+    },
+    "tx.feature_anc_womb_birth_story_summary": {
+      "en": {
+        "text": "The birth kit, and the first golden milk."
+      },
+      "rw-RW": {
+        "text": "Ibikoresho byo kubyara, n'amashereka ya mbere y'umuhondo."
+      }
+    },
+    "tx.womb.birth_kit.say": {
+      "en": {
+        "text": "Transport plan and money? Birth kit? Baby clothes? Good. I will bring myself."
+      },
+      "rw-RW": {
+        "text": "Uburyo bwo kugenda n'amafaranga? Ibikoresho byo kubyara? Imyenda y'umwana? Byiza. Njye nzizana."
+      }
+    },
+    "tx.womb.birth_kit.caption": {
+      "en": {
+        "text": "Open the birth plan to write down your transport, money and what to pack."
+      },
+      "rw-RW": {
+        "text": "Fungura gahunda yo kubyara wandike uburyo bwo kugenda, amafaranga n'ibyo uzitwaza."
+      }
+    },
+    "tx.womb.first_feed.say": {
+      "en": {
+        "text": "Just so you know, Mommy: within an hour of my arrival I want that first golden milk. Skip the honey - your milk is my favourite!"
+      },
+      "rw-RW": {
+        "text": "Umenye, Mama: mu isaha imwe mvutse nshaka amashereka ya mbere y'umuhondo. Reka ubuki - amashereka yawe ni yo nkunda!"
+      }
+    },
+    "tx.womb.first_feed.caption": {
+      "en": {
+        "text": "Feed the baby your first yellow milk within an hour of birth. Give nothing else."
+      },
+      "rw-RW": {
+        "text": "Onsa umwana amashereka yawe ya mbere y'umuhondo mu isaha ya mbere akimara kuvuka. Ntumuhe ikindi."
+      }
+    },
+    "tx.feature_anc_womb_after_birth_story": {
+      "en": {
+        "text": "Womb with a view: moved out"
+      },
+      "rw-RW": {
+        "text": "Womb with a View: nimutse"
+      }
+    },
+    "tx.feature_anc_womb_after_birth_story_summary": {
+      "en": {
+        "text": "Check-ups after the birth, both alarms, and waiting before the next pregnancy."
+      },
+      "rw-RW": {
+        "text": "Isura nyuma yo kubyara, impuruza zombi, no gutegereza mbere yo kongera gutwita."
+      }
+    },
+    "tx.womb.moved_out.say": {
+      "en": {
+        "text": "I have moved out! Now we both need check-ups, starting today."
+      },
+      "rw-RW": {
+        "text": "Nimutse! Ubu twembi dukeneye kwisuzumisha, guhera uyu munsi."
+      }
+    },
+    "tx.womb.moved_out.caption": {
+      "en": {
+        "text": "Open the check-up reminders to put your visits in the app."
+      },
+      "rw-RW": {
+        "text": "Fungura ibyibutsa by'isura ushyire amatariki yawe muri porogaramu."
+      }
+    },
+    "tx.womb.mothers_alarm.say": {
+      "en": {
+        "text": "Mommy, danger signs do not stop when I arrive. Heavy bleeding or fever means clinic now!"
+      },
+      "rw-RW": {
+        "text": "Mama, ibimenyetso by'akaga ntibihagarara nimara kuvuka. Kuva amaraso menshi cyangwa umuriro bivuze ivuriro nonaha!"
+      }
+    },
+    "tx.womb.mothers_alarm.caption": {
+      "en": {
+        "text": "Open the after-birth check to see the signs that mean go to the clinic now."
+      },
+      "rw-RW": {
+        "text": "Fungura isuzuma ryo nyuma yo kubyara urebe ibimenyetso bisobanura kujya ku ivuriro nonaha."
+      }
+    },
+    "tx.womb.my_own_alarm.say": {
+      "en": {
+        "text": "If I am sick, take me to the clinic. I cannot dial yet!"
+      },
+      "rw-RW": {
+        "text": "Nindwara, unjyane ku ivuriro. Sinshobora guhamagara!"
+      }
+    },
+    "tx.womb.my_own_alarm.caption": {
+      "en": {
+        "text": "Open the newborn check to see the signs that mean go to the clinic now."
+      },
+      "rw-RW": {
+        "text": "Fungura isuzuma ry'uruhinja urebe ibimenyetso bisobanura kujya ku ivuriro nonaha."
+      }
+    },
+    "tx.womb.spacing.say": {
+      "en": {
+        "text": "I have just moved out! This room needs two years of renovation before the next tenant."
+      },
+      "rw-RW": {
+        "text": "Nimutse ubu! Iki cyumba gikeneye imyaka ibiri yo kuvugururwa mbere y'undi mwana."
+      }
+    },
+    "tx.womb.spacing.caption": {
+      "en": {
+        "text": "Wait at least 2 years after a birth before the next pregnancy."
+      },
+      "rw-RW": {
+        "text": "Tegereza nibura imyaka 2 nyuma yo kubyara mbere yo kongera gutwita."
+      }
+    }
+  }
+}
