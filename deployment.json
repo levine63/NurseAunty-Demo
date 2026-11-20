@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0",
+  "publicUrl": "https://hygieneheroes.berkeley.edu/nurseaunty/demo/",
+  "canonicalApp": "apps/pwa-sandbox",
+  "standaloneIncluded": false,
+  "pictures": "both",
+  "orsSlice": {
+    "path": "ors/",
+    "url": "https://hygieneheroes.berkeley.edu/nurseaunty/demo/ors/",
+    "build": "c7c3ef5007"
+  },
+  "demoStoryPacks": [
+    "recovered-pr28-v0.1",
+    "pregnancy-by-month-v0.1",
+    "anc-womb-v0.2"
+  ],
+  "sourceCommit": "0b58c97aee16f574b92dccb7a582c678546bc827",
+  "sourceState": "clean",
+  "buildId": "0b58c97aee16-clean"
+}

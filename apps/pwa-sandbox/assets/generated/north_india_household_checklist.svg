@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">North India household checklist module draft</title>
+<desc id="desc">A North India household checklist with clinic contact, medicines, water, transport, synthetic dashboard, and review marks.</desc>
+<rect width="640" height="360" fill="#f3f5ec"/>
+<rect x="42" y="54" width="556" height="244" rx="8" fill="#fffaf0" stroke="#82965f" stroke-width="4"/>
+<path d="M80 54h480l-34-28H114z" fill="#c45d45"/>
+<rect x="92" y="100" width="176" height="156" rx="10" fill="#fff" stroke="#82965f" stroke-width="4"/>
+<path d="M120 136h106M120 172h106M120 208h106" stroke="#82965f" stroke-width="7" stroke-linecap="round"/>
+<path d="M101 136l10 10 20-25M101 172l10 10 20-25M101 208l10 10 20-25" fill="none" stroke="#2f846d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="316" y="114" width="88" height="110" rx="8" fill="#e8f0f4" stroke="#51758d" stroke-width="4"/>
+<path d="M332 146h56M332 176h56M332 206h36" stroke="#51758d" stroke-width="6" stroke-linecap="round"/>
+<rect x="438" y="134" width="50" height="86" rx="8" fill="#fff" stroke="#9f5a65" stroke-width="4"/>
+<path d="M450 158h26M450 178h26M450 198h26" stroke="#9f5a65" stroke-width="5"/>
+<path d="M300 258h218" stroke="#7d8d64" stroke-width="12" stroke-linecap="round"/>
+<circle cx="334" cy="270" r="14" fill="#263238"/>
+<circle cx="488" cy="270" r="14" fill="#263238"/>
+<circle cx="542" cy="112" r="23" fill="#f1c85e" stroke="#806422" stroke-width="4"/>
+<path d="M532 112l8 8 16-19" fill="none" stroke="#4d3d15" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,181 @@
+{
+  "about": "Prototype predicate table generated from child_injury_first_aid_check screen-card clinicalVariableSet.",
+  "guidelineVersionExpected": "prototype-screen-card",
+  "inputs": {
+    "injury_concern": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "injury concern"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "presenting_symptom"
+      ],
+      "prototypeAssignment": "Codex-generated prototype IR from screen-card clinicalVariableSet; replace with formal clinical pipeline output."
+    },
+    "child_injury_first_aid_check_injuryunconscious": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_unconscious_breathing"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_injury_first_aid_check_injurybleeding": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_bleeding_burn"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_injury_first_aid_check_injuryburn": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_bleeding_burn"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_injury_first_aid_check_injuryhead": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_head_injury"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "general_danger_sign",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_injury_first_aid_check_injurybone": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_injury_body"
+      },
+      "subjectScopes": [
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "injury_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    }
+  },
+  "predicates": [
+    {
+      "id": "presentation_selected",
+      "label": {
+        "en": "Presentation selected"
+      },
+      "source": "Screen-card presentation metadata",
+      "var": "injury_concern",
+      "is": true
+    },
+    {
+      "id": "any_general_danger_sign",
+      "label": {
+        "en": "Any subject-specific general danger sign"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged general_danger_sign",
+      "anyOf": [
+        {
+          "var": "child_injury_first_aid_check_injuryunconscious",
+          "is": true
+        },
+        {
+          "var": "child_injury_first_aid_check_injurybleeding",
+          "is": true
+        },
+        {
+          "var": "child_injury_first_aid_check_injuryburn",
+          "is": true
+        },
+        {
+          "var": "child_injury_first_aid_check_injuryhead",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_followup_finding",
+      "label": {
+        "en": "Any symptom-specific follow-up finding"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged symptom_followup or clinical_finding",
+      "anyOf": [
+        {
+          "var": "child_injury_first_aid_check_injuryunconscious",
+          "is": true
+        },
+        {
+          "var": "child_injury_first_aid_check_injurybleeding",
+          "is": true
+        },
+        {
+          "var": "child_injury_first_aid_check_injuryburn",
+          "is": true
+        },
+        {
+          "var": "child_injury_first_aid_check_injuryhead",
+          "is": true
+        },
+        {
+          "var": "child_injury_first_aid_check_injurybone",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_safety_gate",
+      "label": {
+        "en": "Any safety gate"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged safety_gate",
+      "anyOf": []
+    }
+  ]
+}

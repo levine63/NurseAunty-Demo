@@ -1,0 +1,3609 @@
+{
+  "about": "UNREVIEWED PROTOTYPE. Governance record for the pregnancy-by-month pack: where every card came from, what is still missing, what was left out and why, and what a clinician and RHIYW must check before field use. Reviewer-facing only; nothing here is shown to a caregiver.",
+  "label": "UNREVIEWED PROTOTYPE",
+  "clinicalReviewRequired": true,
+  "fieldUseApproved": false,
+  "contentSource": {
+    "title": "Nurse Aunty - Rwanda pregnancy (ANC): features and screens",
+    "url": "https://docs.google.com/document/d/14d6_GUsZW4IWMVai04VSFhVNwtEWVTuomsCCvxJuOgQ/edit",
+    "tabs": [
+      "Screens (content): Something's wrong (danger, movements, preterm)",
+      "Visits, tests, tablets, tetanus, due date",
+      "Getting ready for the birth (plan, labour)",
+      "Am I pregnant?",
+      "Monthly view",
+      "Something's wrong: go-today and home-care screens"
+    ],
+    "revision": "Draft revised 3 November 2026; read 2026-11-04. Where the scratchpad .py drafts and the doc differed, the doc was used.",
+    "rule": "Each card is one screen's Text, copied unchanged. Screens from the go-today and home-care tab also carry their own 'If it gets worse' line as a second paragraph; the 'Clinician check:' notes inside two of those lines were removed because they are reviewer notes, not caregiver copy."
+  },
+  "monthTable": {
+    "status": "draft - RHIYW to confirm how women and the antenatal card count months",
+    "rule": "month 1 = weeks 1-4, 2 = 5-8, 3 = 9-13, 4 = 14-17, 5 = 18-22, 6 = 23-27, 7 = 28-31, 8 = 32-35, 9 = 36-40 and later",
+    "caregiverWording": "Deck titles say 'about weeks ...' so a range is never shown as settled.",
+    "rwandaVisitWeeks": "12 or earlier, 20, 26, 30, 34, 36, 38, 40"
+  },
+  "noStageIsSaved": "Opening a month deck records nothing and never sets the woman's stage of pregnancy. The decks are read-only story.deck content. The 'I do not know my month' deck uses existing screens only and points her to the health worker and the dates on her card; the app has no due-date or dates tool yet.",
+  "sharedContent": "A screen that appears in several decks uses the same phrase slug everywhere (one text, one translation). Any future topic menu must reuse these slugs, not copy the text.",
+  "placementRules": [
+    "Sections and screen lists follow the doc's Monthly view tab.",
+    "The doc lists any-time screens once, under months 1-3. The any-time danger signs are repeated in every month deck (safety); other any-time screens are not repeated, to keep the decks bounded.",
+    "Learn-surface home-care screens from the go-today tab are placed under 'Common concerns and home care' by their week range; 'Small problems: care at home' opens that section wherever it appears.",
+    "'One tablet every day' is placed before 'How long to take it' in months 8 and 9, so the 'it' has its referent.",
+    "'Choose now who will take you' closes each Danger signs section.",
+    "'Getting ready for the birth' appears from month 7 only."
+  ],
+  "contentNeeded": [
+    {
+      "deck": "Months 1-3",
+      "featureId": "preg_bymonth_m1_3",
+      "sections": [
+        "What is my baby like?",
+        "Changes in my body"
+      ]
+    },
+    {
+      "deck": "Month 4",
+      "featureId": "preg_bymonth_m4",
+      "sections": [
+        "What is my baby like?",
+        "Changes in my body",
+        "Caring for yourself and your baby"
+      ]
+    },
+    {
+      "deck": "Month 5",
+      "featureId": "preg_bymonth_m5",
+      "sections": [
+        "Changes in my body"
+      ]
+    },
+    {
+      "deck": "Month 6",
+      "featureId": "preg_bymonth_m6",
+      "sections": [
+        "Changes in my body"
+      ]
+    },
+    {
+      "deck": "Month 7",
+      "featureId": "preg_bymonth_m7",
+      "sections": [
+        "Changes in my body"
+      ]
+    },
+    {
+      "deck": "Month 8",
+      "featureId": "preg_bymonth_m8",
+      "sections": [
+        "Changes in my body"
+      ]
+    },
+    {
+      "deck": "Month 9",
+      "featureId": "preg_bymonth_m9",
+      "sections": [
+        "Changes in my body"
+      ]
+    }
+  ],
+  "excludedScreens": [
+    {
+      "screen": "Malaria test",
+      "reason": "malaria-area screen; the pack format cannot be restricted by the malariaEndemicRegion switch"
+    },
+    {
+      "screen": "Update your dates",
+      "reason": "promises the app shows the next visit from entered dates; no visit schedule tool exists (App feature: planned)"
+    },
+    {
+      "screen": "Only medicine from the health worker",
+      "reason": "malaria-area screen; the pack format cannot be restricted by the malariaEndemicRegion switch"
+    },
+    {
+      "screen": "Fever? Go now",
+      "reason": "malaria-area screen; the pack format cannot be restricted by the malariaEndemicRegion switch"
+    },
+    {
+      "screen": "Daily reminder",
+      "reason": "promises a daily tablet reminder and tick; no such control exists (App feature: planned)"
+    },
+    {
+      "screen": "Record your doses",
+      "reason": "promises a tetanus dose record in the phone; none exists (App feature: planned)"
+    },
+    {
+      "screen": "Sleep under a net",
+      "reason": "malaria-area screen; the pack format cannot be restricted by the malariaEndemicRegion switch"
+    },
+    {
+      "screen": "Check your net",
+      "reason": "malaria-area screen; the pack format cannot be restricted by the malariaEndemicRegion switch"
+    },
+    {
+      "screen": "Time your pains (optional)",
+      "reason": "promises a pains timer; the labour clock exists only as a separate Tools card and a story card cannot link to it per frame (see Step 1 feature item)"
+    },
+    {
+      "screen": "Tablets to prevent malaria (HIDDEN)",
+      "reason": "Marked HIDDEN in the doc: not used in Rwanda per the national guideline 2020, section 3.5.3."
+    },
+    {
+      "screen": "Ask your net; Wash your net gently; spraying screens (4)",
+      "reason": "Malaria-area screens; the pack format cannot be restricted by the malariaEndemicRegion deployer switch."
+    },
+    {
+      "screen": "Go-today screens whose 'Where it can appear' is Something's wrong only (urine burning, itching or discharge, very tired, swollen feet in the morning, fall or blow, labour before 37 weeks, labour too long, cord showing, a week past the due date)",
+      "reason": "Written for the urgent check, not for Learn pages."
+    },
+    {
+      "screen": "Feelings and safety screens (feeling sad, thoughts of harming yourself, where to get support, is someone hurting you, make a safety plan)",
+      "reason": "Decided by David, 2026-11-04: they stay out of the month pack. \"Triage holds low mood and partner safety as screening questions.\""
+    }
+  ],
+  "malaria": "Left out. Malaria cards are for malaria areas only, and a story pack is loaded for every deployment: neither the pack format nor the loader can gate a deck or card on config/switches.json malariaEndemicRegion. Feature item for a later task: let a pack card declare a deployer-switch condition.",
+  "pictures": {
+    "status": "no artwork exists",
+    "mechanism": "Each frame has empty assetIds, so the trusted player shows its built-in 'Picture description' placeholder with the frame's imageDesc (the doc's Picture line). No image was generated.",
+    "knownIssue": "The placeholder text is English in every locale, which ADR-059 does not allow. Decided by David, 2026-11-04: picture descriptions \"should be cropped or covered with a text box to hold phrase bank phrases\". Task T-085 will implement it (descriptions become phrase slugs; the player hides them or shows them in a manifest-driven text box). Until then this pack still shows English descriptions, flagged here."
+  },
+  "cards": [
+    {
+      "featureId": "preg_bymonth_am_i_pregnant",
+      "frame": 1,
+      "section": "Signs and first steps",
+      "screenTitle": "Could I be pregnant?",
+      "bodySlug": "tx.pbm.could_i_be_pregnant",
+      "source": "WHO PCPNC 2015, section B18 (PDF p. 39); WHO ANC 2016, section D, p. 74 (sickness is common); Rwanda ANC 2020, section 14.2, p. 86",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW writers: which early signs to name, and any local beliefs to address.",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A young woman sits on a doorstep, thinking, with a hand on her stomach; a calendar is not shown.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_am_i_pregnant",
+      "frame": 2,
+      "section": "Signs and first steps",
+      "screenTitle": "A quick test",
+      "bodySlug": "tx.pbm.a_quick_test",
+      "source": "Rwanda ANC 2020, section 14.2, p. 86 (the maternal health worker does a urine test and refers)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW: confirm the health workers in the pilot villages have tests.",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A woman talks quietly with a community health worker at the edge of a banana grove; the worker holds a small test strip.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_am_i_pregnant",
+      "frame": 3,
+      "section": "Signs and first steps",
+      "screenTitle": "Start care early",
+      "bodySlug": "tx.pbm.start_care_early",
+      "source": "Rwanda ANC 2020, Table 1, p. 8 (first contact as soon as she suspects, up to 12 weeks); WHO ANC 2016, Chapter 4, Box 5, p. 105",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman, not yet showing, waits on a bench at the health centre with other women.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_am_i_pregnant",
+      "frame": 4,
+      "section": "Danger signs",
+      "screenTitle": "Bleeding or pain early on: go now",
+      "bodySlug": "tx.pbm.bleeding_or_pain_early_on_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27, and section 9.2, p. 48; WHO PCPNC 2015, section B18 (PDF p. 39)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A woman bent over with one hand on her lower belly is helped along a path by an older woman.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_unsure",
+      "frame": 1,
+      "section": "Your dates",
+      "screenTitle": "Remember your last period",
+      "bodySlug": "tx.pbm.remember_your_last_period",
+      "source": "WHO PCPNC 2015, section C2 (PDF p. 44); Rwanda ANC 2020, section 3.2, p. 16 (clinical estimate of the stage of pregnancy)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "The calculator must accept \"I do not know\" (clinician question 6).",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A woman counts on her fingers while thinking, sitting by a cooking fire.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_unsure",
+      "frame": 2,
+      "section": "Your dates",
+      "screenTitle": "Your due date",
+      "bodySlug": "tx.pbm.your_due_date",
+      "source": "WHO PCPNC 2015, glossary, LMP (PDF p. 182); Rwanda ANC 2020, section 3.2, p. 17 (scan to date the pregnancy)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Rwanda's guideline does not give the counting rule (clinician question 6). RHIYW: how the Rwanda card records the date.",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A woman and a nurse look at a pregnancy card together; the nurse points at a box on the card (no readable writing).",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_unsure",
+      "frame": 3,
+      "section": "Your dates",
+      "screenTitle": "A scan before 6 months",
+      "bodySlug": "tx.pbm.a_scan_before_6_months",
+      "source": "Rwanda ANC 2020, section 3.2, p. 17 (scan for every woman before 24 weeks); WHO ultrasound 2022",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.ultrasound_2022",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW: where women in the pilot districts get a scan, and the cost.",
+      "when": "weeks 1-24 of pregnancy (months 1-6).",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman lies on a clinic bed while a health worker moves a scan probe over her belly; the screen is turned away.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_unsure",
+      "frame": 4,
+      "section": "Your dates",
+      "screenTitle": "It is an estimate",
+      "bodySlug": "tx.pbm.it_is_an_estimate",
+      "source": "WHO PCPNC 2015, glossary, LMP (PDF p. 182); Rwanda ANC 2020, section 9.6 note, p. 59 (early scan is the best way to date a pregnancy)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 28-40+ of pregnancy (months 7-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman folds baby cloths into a bag while her older child watches.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_unsure",
+      "frame": 5,
+      "section": "Your dates",
+      "screenTitle": "It is not too late",
+      "bodySlug": "tx.pbm.it_is_not_too_late",
+      "source": "Rwanda ANC 2020, Table 2, p. 9 (first contact at any stage of pregnancy); WHO PCPNC 2015, section C17 (PDF p. 60)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A heavily pregnant woman steps into the health centre for the first time and a nurse greets her warmly.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 1,
+      "section": "This month's visit",
+      "screenTitle": "Your due date",
+      "bodySlug": "tx.pbm.your_due_date",
+      "source": "WHO PCPNC 2015, glossary, LMP (PDF p. 182); Rwanda ANC 2020, section 3.2, p. 17 (scan to date the pregnancy)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Rwanda's guideline does not give the counting rule (clinician question 6). RHIYW: how the Rwanda card records the date.",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A woman and a nurse look at a pregnancy card together; the nurse points at a box on the card (no readable writing).",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 2,
+      "section": "This month's visit",
+      "screenTitle": "Remember your last period",
+      "bodySlug": "tx.pbm.remember_your_last_period",
+      "source": "WHO PCPNC 2015, section C2 (PDF p. 44); Rwanda ANC 2020, section 3.2, p. 16 (clinical estimate of the stage of pregnancy)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "The calculator must accept \"I do not know\" (clinician question 6).",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A woman counts on her fingers while thinking, sitting by a cooking fire.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 3,
+      "section": "This month's visit",
+      "screenTitle": "A scan before 6 months",
+      "bodySlug": "tx.pbm.a_scan_before_6_months",
+      "source": "Rwanda ANC 2020, section 3.2, p. 17 (scan for every woman before 24 weeks); WHO ultrasound 2022",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.ultrasound_2022",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW: where women in the pilot districts get a scan, and the cost.",
+      "when": "weeks 1-24 of pregnancy (months 1-6).",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman lies on a clinic bed while a health worker moves a scan probe over her belly; the screen is turned away.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 4,
+      "section": "This month's visit",
+      "screenTitle": "Eight visits",
+      "bodySlug": "tx.pbm.eight_visits",
+      "source": "Rwanda ANC 2020, Table 1, p. 8 (eight contacts); WHO ANC 2016, rec. E.7, p. xvi",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW: confirm the pilot health centres follow this schedule today.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "Eight women at different stages of pregnancy stand in a line on a hillside path leading to a health centre.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 5,
+      "section": "This month's visit",
+      "screenTitle": "Visit 1: before 3 months",
+      "bodySlug": "tx.pbm.visit_1_before_3_months",
+      "source": "Rwanda ANC 2020, Table 1, p. 8, and Table 2, pp. 9-10",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A nurse measures a woman's blood pressure while the woman holds a new pregnancy card in her lap.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 6,
+      "section": "This month's visit",
+      "screenTitle": "What happens at a visit",
+      "bodySlug": "tx.pbm.what_happens_at_a_visit",
+      "source": "Rwanda ANC 2020, sections 3.2-3.3, p. 17, and Table 2, pp. 9-15 (heartbeat from 20 weeks)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A nurse weighs a pregnant woman on a standing scale while the woman's card waits on the desk.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 7,
+      "section": "This month's visit",
+      "screenTitle": "Ask your questions",
+      "bodySlug": "tx.pbm.ask_your_questions",
+      "source": "WHO ANC 2016, Table 2, overarching aim, p. 108",
+      "sourceIds": [
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman raises a hand slightly to ask a question while a nurse leans in to listen.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 8,
+      "section": "This month's visit",
+      "screenTitle": "Why blood tests",
+      "bodySlug": "tx.pbm.why_blood_tests",
+      "source": "Rwanda ANC 2020, Table 2, p. 9 (HIV, syphilis, hepatitis B, malaria, blood count, blood group, urine)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A health worker gently pricks a pregnant woman's finger while she looks away calmly.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 9,
+      "section": "This month's visit",
+      "screenTitle": "Anaemia (weak blood)",
+      "bodySlug": "tx.pbm.anaemia_weak_blood",
+      "source": "Rwanda ANC 2020, section 3.4, p. 17, and section 7.6.1, p. 42 (more iron for anaemia)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician question 7 if the pilot uses MMS rather than iron and folic acid.",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A nurse hands a pregnant woman a small packet of tablets and holds up two fingers.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 10,
+      "section": "This month's visit",
+      "screenTitle": "HIV and syphilis tests",
+      "bodySlug": "tx.pbm.hiv_and_syphilis_tests",
+      "source": "Rwanda ANC 2020, Table 2, pp. 9-14 (retest at 20, 30 and 38 weeks if negative), and section 13.6.3, p. 82",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW: how partner testing is offered at the pilot health centres.",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A woman sits in a private room with a counsellor; her partner waits outside on a bench.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 11,
+      "section": "This month's visit",
+      "screenTitle": "Syphilis: your partner too",
+      "bodySlug": "tx.pbm.syphilis_your_partner_too",
+      "source": "Rwanda ANC 2020, section 13.6.4, p. 82 (one or three injections, by stage; partner treatment)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A nurse talks quietly with a pregnant woman alone in a consulting room; a second panel shows a man getting an injection at the health centre.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 12,
+      "section": "This month's visit",
+      "screenTitle": "Hepatitis B",
+      "bodySlug": "tx.pbm.hepatitis_b",
+      "source": "Rwanda ANC 2020, Table 2, p. 9, section 3.4, p. 17, and section 13.7, p. 83; RBC hepatitis B birth dose 2026",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.rw.rbc_hepb_birth_dose_2026",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None. Rwanda refers women who test positive to hospital (section 13.7).",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A newborn wrapped in a kitenge cloth gets a vaccine in the thigh while the mother holds him.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 13,
+      "section": "This month's visit",
+      "screenTitle": "Your results are yours",
+      "bodySlug": "tx.pbm.your_results_are_yours",
+      "source": "App rule set by David",
+      "sourceIds": [
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman puts her pregnancy card safely into a cloth pouch.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 14,
+      "section": "This month's visit",
+      "screenTitle": "It is not too late",
+      "bodySlug": "tx.pbm.it_is_not_too_late",
+      "source": "Rwanda ANC 2020, Table 2, p. 9 (first contact at any stage of pregnancy); WHO PCPNC 2015, section C17 (PDF p. 60)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A heavily pregnant woman steps into the health centre for the first time and a nurse greets her warmly.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 15,
+      "section": "This month's visit",
+      "screenTitle": "Missed a visit? Go back",
+      "bodySlug": "tx.pbm.missed_a_visit_go_back",
+      "source": "WHO PCPNC 2015, sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW: can women come back on any day at the pilot health centres?",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman walks back to the health centre on a weekday morning, carrying her card.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 16,
+      "section": "This month's visit",
+      "screenTitle": "The card shows what is left",
+      "bodySlug": "tx.pbm.the_card_shows_what_is_left",
+      "source": "Rwanda ANC 2020, Table 2, pp. 9-15 (the card is filled at every visit)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A nurse reads a pregnancy card and points to an empty box, smiling.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 17,
+      "section": "This month's visit",
+      "screenTitle": "You will be welcome",
+      "bodySlug": "tx.pbm.you_will_be_welcome",
+      "source": "Rwanda ANC 2020, section 1.2, p. 3 (respect for women's autonomy); WHO ANC 2016, Table 2, overarching aim, p. 108",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A nurse holds the hands of an anxious pregnant woman in a welcoming room.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 18,
+      "section": "Common concerns and home care",
+      "screenTitle": "Small problems: care at home",
+      "bodySlug": "tx.pbm.small_problems_care_at_home",
+      "source": "WHO ANC 2016, section D introduction, p. 74; Rwanda ANC 2020, section 3.6, p. 23",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician check: should every home-care card also say 'go today if it is not better in N days'? No source read gives a number of days for these discomforts.",
+      "when": "Any time in pregnancy.",
+      "level": "CARE AT HOME",
+      "pictureForIllustrator": "A pregnant woman sits in the shade of her doorway with a cup of tea, looking calm, while children play in the yard.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 19,
+      "section": "Common concerns and home care",
+      "screenTitle": "Feeling sick or vomiting early on",
+      "bodySlug": "tx.pbm.feeling_sick_or_vomiting_early_on",
+      "source": "WHO ANC 2016, rec. D.1, p. 74 (ginger, chamomile, vitamin B6; medicines only under a doctor; usually settles in the second half); Rwanda ANC 2020, section 3.6.1, p. 23 (same, and refer if vomiting persists with signs of dehydration)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "WHO also lists vitamin B6 and acupuncture; the draft leaves them to the health worker. Clinician check: should the card name vitamin B6? If the iron tablet causes the sickness, link to the screen 'If it upsets your stomach'. RHIYW: is chamomile known and sold in the pilot areas?",
+      "when": "weeks 4-20 of pregnancy (months 1-5).",
+      "level": "CARE AT HOME",
+      "pictureForIllustrator": "A young pregnant woman sips from a cup while her mother grates fresh ginger root into a small pot over a charcoal stove.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 20,
+      "section": "Common concerns and home care",
+      "screenTitle": "Burning in the chest (heartburn)",
+      "bodySlug": "tx.pbm.burning_in_the_chest_heartburn",
+      "source": "WHO ANC 2016, rec. D.2, p. 77 (diet and lifestyle; antacid if not relieved; antacid not within 2 hours of iron); Rwanda ANC 2020, section 3.6.2, p. 23",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "WHO adds: take any antacid at least 2 hours apart from the iron tablet. Clinician check: should this card warn that strong pain high in the belly can be a sign of high blood pressure in pregnancy? The sources read do not say this for women; it is a common clinical teaching.",
+      "when": "Any time in pregnancy.",
+      "level": "CARE AT HOME",
+      "pictureForIllustrator": "A pregnant woman props a folded blanket under the head end of her sleeping mat while a small plate of food sits nearby.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 21,
+      "section": "Common concerns and home care",
+      "screenTitle": "Leg cramps",
+      "bodySlug": "tx.pbm.leg_cramps",
+      "source": "WHO ANC 2016, rec. D.3, p. 78 (magnesium, calcium or non-drug options; no trial evidence for stretching or massage; low-certainty evidence for magnesium and calcium); Rwanda ANC 2020, section 3.6.3, p. 23 (stretching, foot flexing, relaxation, heat, massage)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician check: the 'worse' line on one swollen, painful leg is a clot warning. The app uses it after birth (pnccalf) but no pregnancy source read lists it for women.",
+      "when": "Any time in pregnancy.",
+      "level": "CARE AT HOME",
+      "pictureForIllustrator": "At night, a pregnant woman sitting on her bed pulls her toes back with one hand while rubbing her calf with the other.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 22,
+      "section": "Common concerns and home care",
+      "screenTitle": "Low back and hip pain",
+      "bodySlug": "tx.pbm.low_back_and_hip_pain",
+      "source": "WHO ANC 2016, rec. D.4, p. 80 (regular exercise; treatment such as physiotherapy or a support belt; may worsen pubic pain; usually improves after birth); Rwanda ANC 2020, section 3.6.4, p. 23 (refer to hospital if exercise does not help)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Rwanda says refer to hospital if exercise does not help; the draft says tell the health worker. Clinician check: at the next visit, or go today? WHO warns exercise can worsen pain at the front of the pelvis; the card does not say this. Clinician check: should it?",
+      "when": "Any time in pregnancy.",
+      "level": "CARE AT HOME",
+      "pictureForIllustrator": "Two pregnant women walk together along a flat path between tea fields in the cool morning.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 23,
+      "section": "Common concerns and home care",
+      "screenTitle": "Hard stools (constipation)",
+      "bodySlug": "tx.pbm.hard_stools_constipation",
+      "source": "WHO ANC 2016, rec. D.5, p. 82 (diet: water and fibre; then wheat bran or fibre supplements); Rwanda ANC 2020, section 3.6.5, p. 23; WHO PCPNC 2015, section F1 (PDF p. 104: if the iron tablet constipates, drink more water; do not stop it)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "WHO suggests fibre supplements or, for stubborn cases, mild laxatives from the health worker; the draft leaves those to the health worker. RHIYW: name local high-fibre foods (for example sorghum, cassava leaves) in place of 'whole grains'.",
+      "when": "Any time in pregnancy.",
+      "level": "CARE AT HOME",
+      "pictureForIllustrator": "A pregnant woman at a market stall chooses avocados, beans and green vegetables while holding a water bottle.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 24,
+      "section": "Common concerns and home care",
+      "screenTitle": "If it upsets your stomach",
+      "bodySlug": "tx.pbm.if_it_upsets_your_stomach",
+      "source": "Rwanda ANC 2020, section 7.6.1, p. 42 (a weekly option if daily tablets are not tolerated)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Do not copy the weekly folic acid amount on p. 42 into the app; it appears to have a unit error.",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A woman with a mild grimace touches her stomach while talking with a nurse.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 25,
+      "section": "Danger signs",
+      "screenTitle": "Learn these signs now",
+      "bodySlug": "tx.pbm.learn_these_signs_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27; WHO Counselling 2013, Session 8, p. 97",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.counselling_2013",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to choose the local words for each sign.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman in a bright wrap sits on a bench outside her brick house on a green hillside, showing her phone to her husband and her mother-in-law.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 26,
+      "section": "Danger signs",
+      "screenTitle": "Bleeding: go now",
+      "bodySlug": "tx.pbm.bleeding_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (vaginal bleeding); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None. Rwanda's list puts bleeding first.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "In daylight, a husband helps his pregnant wife, who holds a cloth, toward an ambulance stopped on the road by their house; a neighbour carries her bag.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 27,
+      "section": "Danger signs",
+      "screenTitle": "Fits or a very bad headache: go now",
+      "bodySlug": "tx.pbm.fits_or_a_very_bad_headache_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (convulsions; severe headache not eased by paracetamol; dizziness and blurred vision); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman sits holding her head with one hand while her sister ties a wrap around her shoulders and points down the path toward the health centre.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 28,
+      "section": "Danger signs",
+      "screenTitle": "Fever and weak, bad belly pain, hard breathing: go now",
+      "bodySlug": "tx.pbm.fever_and_weak_bad_belly_pain_hard_breathing_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (severe or unusual belly pain, chills or fever); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Hard breathing comes from WHO's list, not Rwanda's; keep it.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman lies on a mat inside a simple room while her husband kneels beside her and a community health worker in a vest arrives at the door.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 29,
+      "section": "Danger signs",
+      "screenTitle": "Swelling, vomiting or blurred eyes: go now",
+      "bodySlug": "tx.pbm.swelling_vomiting_or_blurred_eyes_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (swelling of hands or face; sustained vomiting; dizziness and blurred vision); WHO PCPNC 2015, section C15 (PDF p. 58)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinical safety choice to confirm: this draft keeps go now. Rwanda says report these immediately. WHO's 2015 guide puts swelling in its \"as soon as possible\" group. Never move a sign down a level because of the older WHO wording.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman shows her swollen hand and face to her mother, who has put on her headscarf, ready to walk with her to the health centre in daylight.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 30,
+      "section": "Danger signs",
+      "screenTitle": "Water leaking: go now",
+      "bodySlug": "tx.pbm.water_leaking_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (sudden gush or leaking of fluid); Rwanda ANC 2020, section 9.6, pp. 59-62 (care after the waters break); WHO PCPNC 2015, sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinical safety choice to confirm: this draft keeps go now. Rwanda says report leaking immediately at any stage. WHO's sheet M2 lets a woman at term wait up to 6 hours for labour; this draft does not (clinician question 11).",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman standing by a water jerrycan looks down in surprise at a wet patch on her wrap, then (second panel) walks with her sister toward the health centre.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 31,
+      "section": "Danger signs",
+      "screenTitle": "Bleeding or pain early on: go now",
+      "bodySlug": "tx.pbm.bleeding_or_pain_early_on_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27, and section 9.2, p. 48; WHO PCPNC 2015, section B18 (PDF p. 39)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A woman bent over with one hand on her lower belly is helped along a path by an older woman.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 32,
+      "section": "Danger signs",
+      "screenTitle": "Choose now who will take you",
+      "bodySlug": "tx.pbm.choose_now_who_will_take_you",
+      "source": "Rwanda ANC 2020, chapter VI, p. 34 (transport and who will help); WHO PCPNC 2015, section C15 (PDF p. 58)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to supply the health centre and ambulance numbers by district.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman talks with a neighbour who drives a moto-taxi; he nods and saves her number in his phone.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 33,
+      "section": "Caring for yourself and your baby",
+      "screenTitle": "One tablet every day",
+      "bodySlug": "tx.pbm.one_tablet_every_day",
+      "source": "Rwanda ANC 2020, section 7.6.1, p. 42; WHO eLENA MMS 2023",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.elena_mms_2023",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician question 7 (product in the pilot districts).",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A woman takes a tablet with a cup of water at breakfast, sitting on a low stool in her kitchen.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 34,
+      "section": "Caring for yourself and your baby",
+      "screenTitle": "Why it helps",
+      "bodySlug": "tx.pbm.why_it_helps",
+      "source": "Rwanda ANC 2020, section 7.6.1, p. 42; WHO ANC 2016, rec. A.2.1, p. 23",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A healthy pregnant woman carries a basket of beans and greens home from the market.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 35,
+      "section": "Caring for yourself and your baby",
+      "screenTitle": "Keep tablets safe",
+      "bodySlug": "tx.pbm.keep_tablets_safe",
+      "source": "WHO PCPNC 2015, section F2 (PDF p. 105)",
+      "sourceIds": [
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A woman puts a tablet packet into a tin on a high shelf while a toddler plays on the floor.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 36,
+      "section": "Caring for yourself and your baby",
+      "screenTitle": "Tetanus vaccine protects your baby",
+      "bodySlug": "tx.pbm.tetanus_vaccine_protects_your_baby",
+      "source": "Rwanda ANC 2020, section 3.5.2, pp. 18-19; WHO ANC 2016, rec. C.5, p. 70",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW: use the vaccine name women know (Rwanda's guideline says TT and Td).",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A nurse gives a pregnant woman an injection in the upper arm; the woman smiles at the baby on her lap from a previous birth.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 37,
+      "section": "Caring for yourself and your baby",
+      "screenTitle": "Bring your vaccine card",
+      "bodySlug": "tx.pbm.bring_your_vaccine_card",
+      "source": "Rwanda ANC 2020, section 3.5.2, p. 19 (protection depends on past doses)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician question 9 (do childhood and school doses count).",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A woman pulls an old, folded vaccine card from a box of family papers.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 38,
+      "section": "Caring for yourself and your baby",
+      "screenTitle": "Never had it? Two doses",
+      "bodySlug": "tx.pbm.never_had_it_two_doses",
+      "source": "Rwanda ANC 2020, section 3.5.2, p. 19",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "Two small panels: the same woman getting an injection, first with a small bump and then with a bigger bump.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 39,
+      "section": "Caring for yourself and your baby",
+      "screenTitle": "More doses later",
+      "bodySlug": "tx.pbm.more_doses_later",
+      "source": "Rwanda ANC 2020, section 3.5.2 and Figure 3, pp. 19-20",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician question 9 (which rule the app should teach).",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman puts her vaccine card into a plastic sleeve while a nurse nods (no readable writing).",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m1_3",
+      "frame": 40,
+      "section": "Caring for yourself and your baby",
+      "screenTitle": "The vaccine is safe",
+      "bodySlug": "tx.pbm.the_vaccine_is_safe",
+      "source": "WHO PCPNC 2015, section F2 (PDF p. 105)",
+      "sourceIds": [
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A woman rubs her upper arm and laughs with a friend on the walk home.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m4",
+      "frame": 1,
+      "section": "This month's visit",
+      "screenTitle": "A scan before 6 months",
+      "bodySlug": "tx.pbm.a_scan_before_6_months",
+      "source": "Rwanda ANC 2020, section 3.2, p. 17 (scan for every woman before 24 weeks); WHO ultrasound 2022",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.ultrasound_2022",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW: where women in the pilot districts get a scan, and the cost.",
+      "when": "weeks 1-24 of pregnancy (months 1-6).",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman lies on a clinic bed while a health worker moves a scan probe over her belly; the screen is turned away.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m4",
+      "frame": 2,
+      "section": "Common concerns and home care",
+      "screenTitle": "Small problems: care at home",
+      "bodySlug": "tx.pbm.small_problems_care_at_home",
+      "source": "WHO ANC 2016, section D introduction, p. 74; Rwanda ANC 2020, section 3.6, p. 23",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician check: should every home-care card also say 'go today if it is not better in N days'? No source read gives a number of days for these discomforts.",
+      "when": "Any time in pregnancy.",
+      "level": "CARE AT HOME",
+      "pictureForIllustrator": "A pregnant woman sits in the shade of her doorway with a cup of tea, looking calm, while children play in the yard.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m4",
+      "frame": 3,
+      "section": "Common concerns and home care",
+      "screenTitle": "Feeling sick or vomiting early on",
+      "bodySlug": "tx.pbm.feeling_sick_or_vomiting_early_on",
+      "source": "WHO ANC 2016, rec. D.1, p. 74 (ginger, chamomile, vitamin B6; medicines only under a doctor; usually settles in the second half); Rwanda ANC 2020, section 3.6.1, p. 23 (same, and refer if vomiting persists with signs of dehydration)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "WHO also lists vitamin B6 and acupuncture; the draft leaves them to the health worker. Clinician check: should the card name vitamin B6? If the iron tablet causes the sickness, link to the screen 'If it upsets your stomach'. RHIYW: is chamomile known and sold in the pilot areas?",
+      "when": "weeks 4-20 of pregnancy (months 1-5).",
+      "level": "CARE AT HOME",
+      "pictureForIllustrator": "A young pregnant woman sips from a cup while her mother grates fresh ginger root into a small pot over a charcoal stove.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m4",
+      "frame": 4,
+      "section": "Danger signs",
+      "screenTitle": "Learn these signs now",
+      "bodySlug": "tx.pbm.learn_these_signs_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27; WHO Counselling 2013, Session 8, p. 97",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.counselling_2013",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to choose the local words for each sign.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman in a bright wrap sits on a bench outside her brick house on a green hillside, showing her phone to her husband and her mother-in-law.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m4",
+      "frame": 5,
+      "section": "Danger signs",
+      "screenTitle": "Bleeding: go now",
+      "bodySlug": "tx.pbm.bleeding_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (vaginal bleeding); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None. Rwanda's list puts bleeding first.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "In daylight, a husband helps his pregnant wife, who holds a cloth, toward an ambulance stopped on the road by their house; a neighbour carries her bag.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m4",
+      "frame": 6,
+      "section": "Danger signs",
+      "screenTitle": "Fits or a very bad headache: go now",
+      "bodySlug": "tx.pbm.fits_or_a_very_bad_headache_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (convulsions; severe headache not eased by paracetamol; dizziness and blurred vision); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman sits holding her head with one hand while her sister ties a wrap around her shoulders and points down the path toward the health centre.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m4",
+      "frame": 7,
+      "section": "Danger signs",
+      "screenTitle": "Fever and weak, bad belly pain, hard breathing: go now",
+      "bodySlug": "tx.pbm.fever_and_weak_bad_belly_pain_hard_breathing_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (severe or unusual belly pain, chills or fever); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Hard breathing comes from WHO's list, not Rwanda's; keep it.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman lies on a mat inside a simple room while her husband kneels beside her and a community health worker in a vest arrives at the door.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m4",
+      "frame": 8,
+      "section": "Danger signs",
+      "screenTitle": "Swelling, vomiting or blurred eyes: go now",
+      "bodySlug": "tx.pbm.swelling_vomiting_or_blurred_eyes_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (swelling of hands or face; sustained vomiting; dizziness and blurred vision); WHO PCPNC 2015, section C15 (PDF p. 58)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinical safety choice to confirm: this draft keeps go now. Rwanda says report these immediately. WHO's 2015 guide puts swelling in its \"as soon as possible\" group. Never move a sign down a level because of the older WHO wording.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman shows her swollen hand and face to her mother, who has put on her headscarf, ready to walk with her to the health centre in daylight.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m4",
+      "frame": 9,
+      "section": "Danger signs",
+      "screenTitle": "Water leaking: go now",
+      "bodySlug": "tx.pbm.water_leaking_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (sudden gush or leaking of fluid); Rwanda ANC 2020, section 9.6, pp. 59-62 (care after the waters break); WHO PCPNC 2015, sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinical safety choice to confirm: this draft keeps go now. Rwanda says report leaking immediately at any stage. WHO's sheet M2 lets a woman at term wait up to 6 hours for labour; this draft does not (clinician question 11).",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman standing by a water jerrycan looks down in surprise at a wet patch on her wrap, then (second panel) walks with her sister toward the health centre.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m4",
+      "frame": 10,
+      "section": "Danger signs",
+      "screenTitle": "Choose now who will take you",
+      "bodySlug": "tx.pbm.choose_now_who_will_take_you",
+      "source": "Rwanda ANC 2020, chapter VI, p. 34 (transport and who will help); WHO PCPNC 2015, section C15 (PDF p. 58)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to supply the health centre and ambulance numbers by district.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman talks with a neighbour who drives a moto-taxi; he nods and saves her number in his phone.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m5",
+      "frame": 1,
+      "section": "What is my baby like?",
+      "screenTitle": "Feel your baby move",
+      "bodySlug": "tx.pbm.feel_your_baby_move",
+      "source": "Rwanda ANC 2020, sections 3.2-3.3, p. 17 (ask about movement from 20 weeks), and Table 2, p. 10 (ask about first movements); WHO PCPNC 2015, section C2 (PDF p. 44)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 18-26 of pregnancy (months 5-6).",
+      "level": null,
+      "pictureForIllustrator": "A smiling pregnant woman rests on a mat under a tree with both hands on her belly.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m5",
+      "frame": 2,
+      "section": "This month's visit",
+      "screenTitle": "Tell the health worker",
+      "bodySlug": "tx.pbm.tell_the_health_worker",
+      "source": "Rwanda ANC 2020, Table 2, pp. 11-15 (ask about movement at visits 3 to 8)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 20-40+ of pregnancy (months 5-9).",
+      "level": null,
+      "pictureForIllustrator": "In a health centre room, a nurse sits facing a pregnant woman and listens while the woman talks and gestures to her belly.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m5",
+      "frame": 3,
+      "section": "This month's visit",
+      "screenTitle": "A scan before 6 months",
+      "bodySlug": "tx.pbm.a_scan_before_6_months",
+      "source": "Rwanda ANC 2020, section 3.2, p. 17 (scan for every woman before 24 weeks); WHO ultrasound 2022",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.ultrasound_2022",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW: where women in the pilot districts get a scan, and the cost.",
+      "when": "weeks 1-24 of pregnancy (months 1-6).",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman lies on a clinic bed while a health worker moves a scan probe over her belly; the screen is turned away.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m5",
+      "frame": 4,
+      "section": "This month's visit",
+      "screenTitle": "Visits 2 and 3: weeks 20 and 26",
+      "bodySlug": "tx.pbm.visits_2_and_3_weeks_20_and_26",
+      "source": "Rwanda ANC 2020, Table 1, p. 8",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW: check the month words against how women count months.",
+      "when": "weeks 18-27 of pregnancy (months 5-6).",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman with a small bump sits with a nurse who listens to the baby's heart with a simple device.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m5",
+      "frame": 5,
+      "section": "Common concerns and home care",
+      "screenTitle": "Small problems: care at home",
+      "bodySlug": "tx.pbm.small_problems_care_at_home",
+      "source": "WHO ANC 2016, section D introduction, p. 74; Rwanda ANC 2020, section 3.6, p. 23",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician check: should every home-care card also say 'go today if it is not better in N days'? No source read gives a number of days for these discomforts.",
+      "when": "Any time in pregnancy.",
+      "level": "CARE AT HOME",
+      "pictureForIllustrator": "A pregnant woman sits in the shade of her doorway with a cup of tea, looking calm, while children play in the yard.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m5",
+      "frame": 6,
+      "section": "Common concerns and home care",
+      "screenTitle": "Feeling sick or vomiting early on",
+      "bodySlug": "tx.pbm.feeling_sick_or_vomiting_early_on",
+      "source": "WHO ANC 2016, rec. D.1, p. 74 (ginger, chamomile, vitamin B6; medicines only under a doctor; usually settles in the second half); Rwanda ANC 2020, section 3.6.1, p. 23 (same, and refer if vomiting persists with signs of dehydration)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "WHO also lists vitamin B6 and acupuncture; the draft leaves them to the health worker. Clinician check: should the card name vitamin B6? If the iron tablet causes the sickness, link to the screen 'If it upsets your stomach'. RHIYW: is chamomile known and sold in the pilot areas?",
+      "when": "weeks 4-20 of pregnancy (months 1-5).",
+      "level": "CARE AT HOME",
+      "pictureForIllustrator": "A young pregnant woman sips from a cup while her mother grates fresh ginger root into a small pot over a charcoal stove.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m5",
+      "frame": 7,
+      "section": "Common concerns and home care",
+      "screenTitle": "Swollen veins or feet at the end of the day",
+      "bodySlug": "tx.pbm.swollen_veins_or_feet_at_the_end_of_the_day",
+      "source": "WHO ANC 2016, rec. D.6, p. 83 (stockings, raising the legs, water immersion; low cost and unlikely to harm; often worse as pregnancy goes on, better after birth); Rwanda ANC 2020, section 3.6.6, p. 24 (refer if severe)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Compression stockings are in both sources but may not be available; the draft leaves them out. RHIYW: are they sold locally? Links to the go-today screen 'Swollen feet that do not go down'.",
+      "when": "weeks 20-42 of pregnancy (months 5-9).",
+      "level": "CARE AT HOME",
+      "pictureForIllustrator": "In the evening, a pregnant woman sits on a mat with her feet raised on a folded sack while she sorts beans.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m5",
+      "frame": 8,
+      "section": "Danger signs",
+      "screenTitle": "Learn these signs now",
+      "bodySlug": "tx.pbm.learn_these_signs_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27; WHO Counselling 2013, Session 8, p. 97",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.counselling_2013",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to choose the local words for each sign.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman in a bright wrap sits on a bench outside her brick house on a green hillside, showing her phone to her husband and her mother-in-law.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m5",
+      "frame": 9,
+      "section": "Danger signs",
+      "screenTitle": "Bleeding: go now",
+      "bodySlug": "tx.pbm.bleeding_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (vaginal bleeding); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None. Rwanda's list puts bleeding first.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "In daylight, a husband helps his pregnant wife, who holds a cloth, toward an ambulance stopped on the road by their house; a neighbour carries her bag.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m5",
+      "frame": 10,
+      "section": "Danger signs",
+      "screenTitle": "Fits or a very bad headache: go now",
+      "bodySlug": "tx.pbm.fits_or_a_very_bad_headache_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (convulsions; severe headache not eased by paracetamol; dizziness and blurred vision); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman sits holding her head with one hand while her sister ties a wrap around her shoulders and points down the path toward the health centre.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m5",
+      "frame": 11,
+      "section": "Danger signs",
+      "screenTitle": "Fever and weak, bad belly pain, hard breathing: go now",
+      "bodySlug": "tx.pbm.fever_and_weak_bad_belly_pain_hard_breathing_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (severe or unusual belly pain, chills or fever); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Hard breathing comes from WHO's list, not Rwanda's; keep it.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman lies on a mat inside a simple room while her husband kneels beside her and a community health worker in a vest arrives at the door.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m5",
+      "frame": 12,
+      "section": "Danger signs",
+      "screenTitle": "Swelling, vomiting or blurred eyes: go now",
+      "bodySlug": "tx.pbm.swelling_vomiting_or_blurred_eyes_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (swelling of hands or face; sustained vomiting; dizziness and blurred vision); WHO PCPNC 2015, section C15 (PDF p. 58)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinical safety choice to confirm: this draft keeps go now. Rwanda says report these immediately. WHO's 2015 guide puts swelling in its \"as soon as possible\" group. Never move a sign down a level because of the older WHO wording.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman shows her swollen hand and face to her mother, who has put on her headscarf, ready to walk with her to the health centre in daylight.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m5",
+      "frame": 13,
+      "section": "Danger signs",
+      "screenTitle": "Water leaking: go now",
+      "bodySlug": "tx.pbm.water_leaking_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (sudden gush or leaking of fluid); Rwanda ANC 2020, section 9.6, pp. 59-62 (care after the waters break); WHO PCPNC 2015, sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinical safety choice to confirm: this draft keeps go now. Rwanda says report leaking immediately at any stage. WHO's sheet M2 lets a woman at term wait up to 6 hours for labour; this draft does not (clinician question 11).",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman standing by a water jerrycan looks down in surprise at a wet patch on her wrap, then (second panel) walks with her sister toward the health centre.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m5",
+      "frame": 14,
+      "section": "Danger signs",
+      "screenTitle": "Choose now who will take you",
+      "bodySlug": "tx.pbm.choose_now_who_will_take_you",
+      "source": "Rwanda ANC 2020, chapter VI, p. 34 (transport and who will help); WHO PCPNC 2015, section C15 (PDF p. 58)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to supply the health centre and ambulance numbers by district.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman talks with a neighbour who drives a moto-taxi; he nods and saves her number in his phone.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m5",
+      "frame": 15,
+      "section": "Caring for yourself and your baby",
+      "screenTitle": "Calcium, if you are given it",
+      "bodySlug": "tx.pbm.calcium_if_you_are_given_it",
+      "source": "Rwanda ANC 2020, section 7.6.2, pp. 42-43 (with meals; several hours apart from iron), and Table 2, pp. 10-15 (from 20 weeks)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician question 8 (all women, or only women at higher risk).",
+      "when": "weeks 18-40+ of pregnancy (months 5-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman takes a large tablet with her lunch of beans and bananas.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m5",
+      "frame": 16,
+      "section": "Caring for yourself and your baby",
+      "screenTitle": "A worm tablet once",
+      "bodySlug": "tx.pbm.a_worm_tablet_once",
+      "source": "Rwanda ANC 2020, section 3.5.5, p. 21, and Table 2, p. 10 (one dose in the second or third trimester)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 18-27 of pregnancy (months 5-6).",
+      "level": null,
+      "pictureForIllustrator": "A nurse hands a pregnant woman a single tablet and a cup of water at the health centre.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m6",
+      "frame": 1,
+      "section": "What is my baby like?",
+      "screenTitle": "Feel your baby move",
+      "bodySlug": "tx.pbm.feel_your_baby_move",
+      "source": "Rwanda ANC 2020, sections 3.2-3.3, p. 17 (ask about movement from 20 weeks), and Table 2, p. 10 (ask about first movements); WHO PCPNC 2015, section C2 (PDF p. 44)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 18-26 of pregnancy (months 5-6).",
+      "level": null,
+      "pictureForIllustrator": "A smiling pregnant woman rests on a mat under a tree with both hands on her belly.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m6",
+      "frame": 2,
+      "section": "This month's visit",
+      "screenTitle": "Tell the health worker",
+      "bodySlug": "tx.pbm.tell_the_health_worker",
+      "source": "Rwanda ANC 2020, Table 2, pp. 11-15 (ask about movement at visits 3 to 8)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 20-40+ of pregnancy (months 5-9).",
+      "level": null,
+      "pictureForIllustrator": "In a health centre room, a nurse sits facing a pregnant woman and listens while the woman talks and gestures to her belly.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m6",
+      "frame": 3,
+      "section": "This month's visit",
+      "screenTitle": "A scan before 6 months",
+      "bodySlug": "tx.pbm.a_scan_before_6_months",
+      "source": "Rwanda ANC 2020, section 3.2, p. 17 (scan for every woman before 24 weeks); WHO ultrasound 2022",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.ultrasound_2022",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW: where women in the pilot districts get a scan, and the cost.",
+      "when": "weeks 1-24 of pregnancy (months 1-6).",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman lies on a clinic bed while a health worker moves a scan probe over her belly; the screen is turned away.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m6",
+      "frame": 4,
+      "section": "This month's visit",
+      "screenTitle": "Visits 2 and 3: weeks 20 and 26",
+      "bodySlug": "tx.pbm.visits_2_and_3_weeks_20_and_26",
+      "source": "Rwanda ANC 2020, Table 1, p. 8",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW: check the month words against how women count months.",
+      "when": "weeks 18-27 of pregnancy (months 5-6).",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman with a small bump sits with a nurse who listens to the baby's heart with a simple device.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m6",
+      "frame": 5,
+      "section": "Common concerns and home care",
+      "screenTitle": "Small problems: care at home",
+      "bodySlug": "tx.pbm.small_problems_care_at_home",
+      "source": "WHO ANC 2016, section D introduction, p. 74; Rwanda ANC 2020, section 3.6, p. 23",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician check: should every home-care card also say 'go today if it is not better in N days'? No source read gives a number of days for these discomforts.",
+      "when": "Any time in pregnancy.",
+      "level": "CARE AT HOME",
+      "pictureForIllustrator": "A pregnant woman sits in the shade of her doorway with a cup of tea, looking calm, while children play in the yard.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m6",
+      "frame": 6,
+      "section": "Common concerns and home care",
+      "screenTitle": "Swollen veins or feet at the end of the day",
+      "bodySlug": "tx.pbm.swollen_veins_or_feet_at_the_end_of_the_day",
+      "source": "WHO ANC 2016, rec. D.6, p. 83 (stockings, raising the legs, water immersion; low cost and unlikely to harm; often worse as pregnancy goes on, better after birth); Rwanda ANC 2020, section 3.6.6, p. 24 (refer if severe)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Compression stockings are in both sources but may not be available; the draft leaves them out. RHIYW: are they sold locally? Links to the go-today screen 'Swollen feet that do not go down'.",
+      "when": "weeks 20-42 of pregnancy (months 5-9).",
+      "level": "CARE AT HOME",
+      "pictureForIllustrator": "In the evening, a pregnant woman sits on a mat with her feet raised on a folded sack while she sorts beans.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m6",
+      "frame": 7,
+      "section": "Danger signs",
+      "screenTitle": "Learn these signs now",
+      "bodySlug": "tx.pbm.learn_these_signs_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27; WHO Counselling 2013, Session 8, p. 97",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.counselling_2013",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to choose the local words for each sign.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman in a bright wrap sits on a bench outside her brick house on a green hillside, showing her phone to her husband and her mother-in-law.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m6",
+      "frame": 8,
+      "section": "Danger signs",
+      "screenTitle": "Bleeding: go now",
+      "bodySlug": "tx.pbm.bleeding_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (vaginal bleeding); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None. Rwanda's list puts bleeding first.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "In daylight, a husband helps his pregnant wife, who holds a cloth, toward an ambulance stopped on the road by their house; a neighbour carries her bag.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m6",
+      "frame": 9,
+      "section": "Danger signs",
+      "screenTitle": "Fits or a very bad headache: go now",
+      "bodySlug": "tx.pbm.fits_or_a_very_bad_headache_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (convulsions; severe headache not eased by paracetamol; dizziness and blurred vision); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman sits holding her head with one hand while her sister ties a wrap around her shoulders and points down the path toward the health centre.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m6",
+      "frame": 10,
+      "section": "Danger signs",
+      "screenTitle": "Fever and weak, bad belly pain, hard breathing: go now",
+      "bodySlug": "tx.pbm.fever_and_weak_bad_belly_pain_hard_breathing_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (severe or unusual belly pain, chills or fever); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Hard breathing comes from WHO's list, not Rwanda's; keep it.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman lies on a mat inside a simple room while her husband kneels beside her and a community health worker in a vest arrives at the door.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m6",
+      "frame": 11,
+      "section": "Danger signs",
+      "screenTitle": "Swelling, vomiting or blurred eyes: go now",
+      "bodySlug": "tx.pbm.swelling_vomiting_or_blurred_eyes_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (swelling of hands or face; sustained vomiting; dizziness and blurred vision); WHO PCPNC 2015, section C15 (PDF p. 58)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinical safety choice to confirm: this draft keeps go now. Rwanda says report these immediately. WHO's 2015 guide puts swelling in its \"as soon as possible\" group. Never move a sign down a level because of the older WHO wording.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman shows her swollen hand and face to her mother, who has put on her headscarf, ready to walk with her to the health centre in daylight.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m6",
+      "frame": 12,
+      "section": "Danger signs",
+      "screenTitle": "Water leaking: go now",
+      "bodySlug": "tx.pbm.water_leaking_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (sudden gush or leaking of fluid); Rwanda ANC 2020, section 9.6, pp. 59-62 (care after the waters break); WHO PCPNC 2015, sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinical safety choice to confirm: this draft keeps go now. Rwanda says report leaking immediately at any stage. WHO's sheet M2 lets a woman at term wait up to 6 hours for labour; this draft does not (clinician question 11).",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman standing by a water jerrycan looks down in surprise at a wet patch on her wrap, then (second panel) walks with her sister toward the health centre.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m6",
+      "frame": 13,
+      "section": "Danger signs",
+      "screenTitle": "Labour can come too early",
+      "bodySlug": "tx.pbm.labour_can_come_too_early",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (contractions before 37 weeks); WHO PCPNC 2015, section D2 (PDF p. 65)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to test the words \"weeks before your due date\" with women.",
+      "when": "weeks 24-36 of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman, clearly not yet near birth, sits with a community health worker who points to a picture card.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m6",
+      "frame": 14,
+      "section": "Danger signs",
+      "screenTitle": "Signs labour may be starting",
+      "bodySlug": "tx.pbm.signs_labour_may_be_starting",
+      "source": "Rwanda ANC 2020, Table 3, p. 47 (show, pushing pain before 37 weeks); WHO PCPNC 2015, sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 24-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "Three small panels: a woman holding her lower belly in pain; a wet patch on her wrap; a cloth with a small pinkish stain.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m6",
+      "frame": 15,
+      "section": "Danger signs",
+      "screenTitle": "Too early? Go now",
+      "bodySlug": "tx.pbm.too_early_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27; WHO PCPNC 2015, section C7 (PDF p. 50)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Rwanda supports go now. Still open: call the ambulance or go to the health centre first (clinician question 1).",
+      "when": "weeks 24-36 of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A husband calls on his phone while his wife waits at the roadside in daylight; an ambulance comes up the hill.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m6",
+      "frame": 16,
+      "section": "Danger signs",
+      "screenTitle": "Take your pregnancy card",
+      "bodySlug": "tx.pbm.take_your_pregnancy_card",
+      "source": "Rwanda ANC 2020, Table 2, p. 9 (the card is given to the woman) and section 6.2.4, p. 35 (bring the home record)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to use the name women use for the antenatal card.**",
+      "when": "weeks 24-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman's hand takes a folded antenatal card from a cloth bag hanging on a nail by the door.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m6",
+      "frame": 17,
+      "section": "Danger signs",
+      "screenTitle": "Choose now who will take you",
+      "bodySlug": "tx.pbm.choose_now_who_will_take_you",
+      "source": "Rwanda ANC 2020, chapter VI, p. 34 (transport and who will help); WHO PCPNC 2015, section C15 (PDF p. 58)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to supply the health centre and ambulance numbers by district.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman talks with a neighbour who drives a moto-taxi; he nods and saves her number in his phone.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m6",
+      "frame": 18,
+      "section": "Caring for yourself and your baby",
+      "screenTitle": "Calcium, if you are given it",
+      "bodySlug": "tx.pbm.calcium_if_you_are_given_it",
+      "source": "Rwanda ANC 2020, section 7.6.2, pp. 42-43 (with meals; several hours apart from iron), and Table 2, pp. 10-15 (from 20 weeks)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician question 8 (all women, or only women at higher risk).",
+      "when": "weeks 18-40+ of pregnancy (months 5-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman takes a large tablet with her lunch of beans and bananas.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m6",
+      "frame": 19,
+      "section": "Caring for yourself and your baby",
+      "screenTitle": "A worm tablet once",
+      "bodySlug": "tx.pbm.a_worm_tablet_once",
+      "source": "Rwanda ANC 2020, section 3.5.5, p. 21, and Table 2, p. 10 (one dose in the second or third trimester)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 18-27 of pregnancy (months 5-6).",
+      "level": null,
+      "pictureForIllustrator": "A nurse hands a pregnant woman a single tablet and a cup of water at the health centre.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 1,
+      "section": "What is my baby like?",
+      "screenTitle": "Movements show your baby is well",
+      "bodySlug": "tx.pbm.movements_show_your_baby_is_well",
+      "source": "WHO maternal health 2nd ed., fetal movement table; WHO ANC 2016, rec. B.2.1 remarks, p. 54",
+      "sourceIds": [
+        "src.who.anc_2016",
+        "src.who.maternal_health_2nd",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 28-40+ of pregnancy (months 7-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman lying on her side on a bed at night, one hand on her belly, with a calm face.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 2,
+      "section": "What is my baby like?",
+      "screenTitle": "No need to count kicks",
+      "bodySlug": "tx.pbm.no_need_to_count_kicks",
+      "source": "WHO maternal health 2nd ed., fetal movement table; WHO ANC 2016, rec. B.2.1, p. 54",
+      "sourceIds": [
+        "src.who.anc_2016",
+        "src.who.maternal_health_2nd",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None. Design note: the app should not offer a kick counter.",
+      "when": "weeks 28-40+ of pregnancy (months 7-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman sweeps her yard, pausing with one hand on her belly, as if checking in with the baby.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 3,
+      "section": "This month's visit",
+      "screenTitle": "Tell the health worker",
+      "bodySlug": "tx.pbm.tell_the_health_worker",
+      "source": "Rwanda ANC 2020, Table 2, pp. 11-15 (ask about movement at visits 3 to 8)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 20-40+ of pregnancy (months 5-9).",
+      "level": null,
+      "pictureForIllustrator": "In a health centre room, a nurse sits facing a pregnant woman and listens while the woman talks and gestures to her belly.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 4,
+      "section": "This month's visit",
+      "screenTitle": "It is an estimate",
+      "bodySlug": "tx.pbm.it_is_an_estimate",
+      "source": "WHO PCPNC 2015, glossary, LMP (PDF p. 182); Rwanda ANC 2020, section 9.6 note, p. 59 (early scan is the best way to date a pregnancy)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 28-40+ of pregnancy (months 7-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman folds baby cloths into a bag while her older child watches.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 5,
+      "section": "This month's visit",
+      "screenTitle": "Visits 4 to 8: the last months",
+      "bodySlug": "tx.pbm.visits_4_to_8_the_last_months",
+      "source": "Rwanda ANC 2020, Table 1, p. 8; WHO ANC 2016, Chapter 4, p. 105",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 28-40+ of pregnancy (months 7-9).",
+      "level": null,
+      "pictureForIllustrator": "A heavily pregnant woman sits on the health centre bench beside another pregnant woman; both smile.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 6,
+      "section": "Common concerns and home care",
+      "screenTitle": "Small problems: care at home",
+      "bodySlug": "tx.pbm.small_problems_care_at_home",
+      "source": "WHO ANC 2016, section D introduction, p. 74; Rwanda ANC 2020, section 3.6, p. 23",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician check: should every home-care card also say 'go today if it is not better in N days'? No source read gives a number of days for these discomforts.",
+      "when": "Any time in pregnancy.",
+      "level": "CARE AT HOME",
+      "pictureForIllustrator": "A pregnant woman sits in the shade of her doorway with a cup of tea, looking calm, while children play in the yard.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 7,
+      "section": "Common concerns and home care",
+      "screenTitle": "Swollen veins or feet at the end of the day",
+      "bodySlug": "tx.pbm.swollen_veins_or_feet_at_the_end_of_the_day",
+      "source": "WHO ANC 2016, rec. D.6, p. 83 (stockings, raising the legs, water immersion; low cost and unlikely to harm; often worse as pregnancy goes on, better after birth); Rwanda ANC 2020, section 3.6.6, p. 24 (refer if severe)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Compression stockings are in both sources but may not be available; the draft leaves them out. RHIYW: are they sold locally? Links to the go-today screen 'Swollen feet that do not go down'.",
+      "when": "weeks 20-42 of pregnancy (months 5-9).",
+      "level": "CARE AT HOME",
+      "pictureForIllustrator": "In the evening, a pregnant woman sits on a mat with her feet raised on a folded sack while she sorts beans.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 8,
+      "section": "Danger signs",
+      "screenTitle": "Learn these signs now",
+      "bodySlug": "tx.pbm.learn_these_signs_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27; WHO Counselling 2013, Session 8, p. 97",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.counselling_2013",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to choose the local words for each sign.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman in a bright wrap sits on a bench outside her brick house on a green hillside, showing her phone to her husband and her mother-in-law.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 9,
+      "section": "Danger signs",
+      "screenTitle": "Bleeding: go now",
+      "bodySlug": "tx.pbm.bleeding_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (vaginal bleeding); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None. Rwanda's list puts bleeding first.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "In daylight, a husband helps his pregnant wife, who holds a cloth, toward an ambulance stopped on the road by their house; a neighbour carries her bag.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 10,
+      "section": "Danger signs",
+      "screenTitle": "Fits or a very bad headache: go now",
+      "bodySlug": "tx.pbm.fits_or_a_very_bad_headache_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (convulsions; severe headache not eased by paracetamol; dizziness and blurred vision); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman sits holding her head with one hand while her sister ties a wrap around her shoulders and points down the path toward the health centre.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 11,
+      "section": "Danger signs",
+      "screenTitle": "Fever and weak, bad belly pain, hard breathing: go now",
+      "bodySlug": "tx.pbm.fever_and_weak_bad_belly_pain_hard_breathing_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (severe or unusual belly pain, chills or fever); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Hard breathing comes from WHO's list, not Rwanda's; keep it.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman lies on a mat inside a simple room while her husband kneels beside her and a community health worker in a vest arrives at the door.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 12,
+      "section": "Danger signs",
+      "screenTitle": "Swelling, vomiting or blurred eyes: go now",
+      "bodySlug": "tx.pbm.swelling_vomiting_or_blurred_eyes_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (swelling of hands or face; sustained vomiting; dizziness and blurred vision); WHO PCPNC 2015, section C15 (PDF p. 58)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinical safety choice to confirm: this draft keeps go now. Rwanda says report these immediately. WHO's 2015 guide puts swelling in its \"as soon as possible\" group. Never move a sign down a level because of the older WHO wording.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman shows her swollen hand and face to her mother, who has put on her headscarf, ready to walk with her to the health centre in daylight.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 13,
+      "section": "Danger signs",
+      "screenTitle": "Water leaking: go now",
+      "bodySlug": "tx.pbm.water_leaking_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (sudden gush or leaking of fluid); Rwanda ANC 2020, section 9.6, pp. 59-62 (care after the waters break); WHO PCPNC 2015, sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinical safety choice to confirm: this draft keeps go now. Rwanda says report leaking immediately at any stage. WHO's sheet M2 lets a woman at term wait up to 6 hours for labour; this draft does not (clinician question 11).",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman standing by a water jerrycan looks down in surprise at a wet patch on her wrap, then (second panel) walks with her sister toward the health centre.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 14,
+      "section": "Danger signs",
+      "screenTitle": "Moving less? Go now",
+      "bodySlug": "tx.pbm.moving_less_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (less or no movement); Rwanda ANC 2020, Annex 3, p. 98 (no movement: refer to hospital); WHO maternal health 2nd ed., fetal movement table",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.maternal_health_2nd",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Rwanda supports go now. Still open: whether a woman who feels no movement at all should go straight to the hospital (clinician question 1).",
+      "when": "weeks 28-40+ of pregnancy (months 7-9).",
+      "level": null,
+      "pictureForIllustrator": "A worried woman with her hand on her belly walks quickly down a red dirt road with her husband at her side.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 15,
+      "section": "Danger signs",
+      "screenTitle": "Labour can come too early",
+      "bodySlug": "tx.pbm.labour_can_come_too_early",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (contractions before 37 weeks); WHO PCPNC 2015, section D2 (PDF p. 65)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to test the words \"weeks before your due date\" with women.",
+      "when": "weeks 24-36 of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman, clearly not yet near birth, sits with a community health worker who points to a picture card.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 16,
+      "section": "Danger signs",
+      "screenTitle": "Signs labour may be starting",
+      "bodySlug": "tx.pbm.signs_labour_may_be_starting",
+      "source": "Rwanda ANC 2020, Table 3, p. 47 (show, pushing pain before 37 weeks); WHO PCPNC 2015, sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 24-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "Three small panels: a woman holding her lower belly in pain; a wet patch on her wrap; a cloth with a small pinkish stain.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 17,
+      "section": "Danger signs",
+      "screenTitle": "Too early? Go now",
+      "bodySlug": "tx.pbm.too_early_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27; WHO PCPNC 2015, section C7 (PDF p. 50)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Rwanda supports go now. Still open: call the ambulance or go to the health centre first (clinician question 1).",
+      "when": "weeks 24-36 of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A husband calls on his phone while his wife waits at the roadside in daylight; an ambulance comes up the hill.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 18,
+      "section": "Danger signs",
+      "screenTitle": "Take your pregnancy card",
+      "bodySlug": "tx.pbm.take_your_pregnancy_card",
+      "source": "Rwanda ANC 2020, Table 2, p. 9 (the card is given to the woman) and section 6.2.4, p. 35 (bring the home record)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to use the name women use for the antenatal card.**",
+      "when": "weeks 24-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman's hand takes a folded antenatal card from a cloth bag hanging on a nail by the door.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 19,
+      "section": "Danger signs",
+      "screenTitle": "Choose now who will take you",
+      "bodySlug": "tx.pbm.choose_now_who_will_take_you",
+      "source": "Rwanda ANC 2020, chapter VI, p. 34 (transport and who will help); WHO PCPNC 2015, section C15 (PDF p. 58)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to supply the health centre and ambulance numbers by district.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman talks with a neighbour who drives a moto-taxi; he nods and saves her number in his phone.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 20,
+      "section": "Caring for yourself and your baby",
+      "screenTitle": "Calcium, if you are given it",
+      "bodySlug": "tx.pbm.calcium_if_you_are_given_it",
+      "source": "Rwanda ANC 2020, section 7.6.2, pp. 42-43 (with meals; several hours apart from iron), and Table 2, pp. 10-15 (from 20 weeks)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician question 8 (all women, or only women at higher risk).",
+      "when": "weeks 18-40+ of pregnancy (months 5-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman takes a large tablet with her lunch of beans and bananas.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 21,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Choose where to give birth",
+      "bodySlug": "tx.pbm.choose_where_to_give_birth",
+      "source": "Rwanda ANC 2020, section 6.2.1, p. 34",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 23-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A couple stands outside a rural health centre with a maternity sign shown only as a picture of a mother and baby.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 22,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Plan the trip and the money",
+      "bodySlug": "tx.pbm.plan_the_trip_and_the_money",
+      "source": "Rwanda ANC 2020, chapter VI, p. 34 (transport, savings, emergency funds)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW: what birth and transport cost under community health insurance.",
+      "when": "weeks 23-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman puts coins into a small tin box while her husband points to a moto-taxi stand on the road.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 23,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Choose your companion",
+      "bodySlug": "tx.pbm.choose_your_companion",
+      "source": "Rwanda ANC 2020, chapter VI, p. 34, and section 6.2.4, p. 35 (a companion who stays during labour); WHO Intrapartum 2018, rec. 3",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.intrapartum_2018",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW: confirm the pilot health centres let a companion stay.",
+      "when": "weeks 23-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman and her sister walk arm in arm, the sister carrying a bag.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 24,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Who will care for your home",
+      "bodySlug": "tx.pbm.who_will_care_for_your_home",
+      "source": "Rwanda ANC 2020, chapter VI, p. 34",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 23-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A grandmother holds two small children by the hand in a yard while the mother leaves with a bag.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 25,
+      "section": "Getting ready for the birth",
+      "screenTitle": "What to pack",
+      "bodySlug": "tx.pbm.what_to_pack",
+      "source": "Rwanda ANC 2020, section 6.2.4, p. 35",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 28-40+ of pregnancy (months 7-9).",
+      "level": null,
+      "pictureForIllustrator": "A flat-lay of a cloth bag with a pregnancy card, folded cloths, a baby wrap, a water bottle and a small food container.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 26,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Plan for an emergency",
+      "bodySlug": "tx.pbm.plan_for_an_emergency",
+      "source": "Rwanda ANC 2020, section 6.1, p. 34",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to supply numbers by district.",
+      "when": "weeks 23-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A man saves a number in his phone while his pregnant wife watches.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m7",
+      "frame": 27,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Show your plan",
+      "bodySlug": "tx.pbm.show_your_plan",
+      "source": "Rwanda ANC 2020, chapter VI, pp. 33-35",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 23-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman shows her phone to her companion and both nod.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 1,
+      "section": "What is my baby like?",
+      "screenTitle": "Movements show your baby is well",
+      "bodySlug": "tx.pbm.movements_show_your_baby_is_well",
+      "source": "WHO maternal health 2nd ed., fetal movement table; WHO ANC 2016, rec. B.2.1 remarks, p. 54",
+      "sourceIds": [
+        "src.who.anc_2016",
+        "src.who.maternal_health_2nd",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 28-40+ of pregnancy (months 7-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman lying on her side on a bed at night, one hand on her belly, with a calm face.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 2,
+      "section": "What is my baby like?",
+      "screenTitle": "No need to count kicks",
+      "bodySlug": "tx.pbm.no_need_to_count_kicks",
+      "source": "WHO maternal health 2nd ed., fetal movement table; WHO ANC 2016, rec. B.2.1, p. 54",
+      "sourceIds": [
+        "src.who.anc_2016",
+        "src.who.maternal_health_2nd",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None. Design note: the app should not offer a kick counter.",
+      "when": "weeks 28-40+ of pregnancy (months 7-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman sweeps her yard, pausing with one hand on her belly, as if checking in with the baby.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 3,
+      "section": "This month's visit",
+      "screenTitle": "Tell the health worker",
+      "bodySlug": "tx.pbm.tell_the_health_worker",
+      "source": "Rwanda ANC 2020, Table 2, pp. 11-15 (ask about movement at visits 3 to 8)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 20-40+ of pregnancy (months 5-9).",
+      "level": null,
+      "pictureForIllustrator": "In a health centre room, a nurse sits facing a pregnant woman and listens while the woman talks and gestures to her belly.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 4,
+      "section": "This month's visit",
+      "screenTitle": "It is an estimate",
+      "bodySlug": "tx.pbm.it_is_an_estimate",
+      "source": "WHO PCPNC 2015, glossary, LMP (PDF p. 182); Rwanda ANC 2020, section 9.6 note, p. 59 (early scan is the best way to date a pregnancy)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 28-40+ of pregnancy (months 7-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman folds baby cloths into a bag while her older child watches.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 5,
+      "section": "This month's visit",
+      "screenTitle": "Visits 4 to 8: the last months",
+      "bodySlug": "tx.pbm.visits_4_to_8_the_last_months",
+      "source": "Rwanda ANC 2020, Table 1, p. 8; WHO ANC 2016, Chapter 4, p. 105",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 28-40+ of pregnancy (months 7-9).",
+      "level": null,
+      "pictureForIllustrator": "A heavily pregnant woman sits on the health centre bench beside another pregnant woman; both smile.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 6,
+      "section": "Common concerns and home care",
+      "screenTitle": "Small problems: care at home",
+      "bodySlug": "tx.pbm.small_problems_care_at_home",
+      "source": "WHO ANC 2016, section D introduction, p. 74; Rwanda ANC 2020, section 3.6, p. 23",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician check: should every home-care card also say 'go today if it is not better in N days'? No source read gives a number of days for these discomforts.",
+      "when": "Any time in pregnancy.",
+      "level": "CARE AT HOME",
+      "pictureForIllustrator": "A pregnant woman sits in the shade of her doorway with a cup of tea, looking calm, while children play in the yard.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 7,
+      "section": "Common concerns and home care",
+      "screenTitle": "Swollen veins or feet at the end of the day",
+      "bodySlug": "tx.pbm.swollen_veins_or_feet_at_the_end_of_the_day",
+      "source": "WHO ANC 2016, rec. D.6, p. 83 (stockings, raising the legs, water immersion; low cost and unlikely to harm; often worse as pregnancy goes on, better after birth); Rwanda ANC 2020, section 3.6.6, p. 24 (refer if severe)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Compression stockings are in both sources but may not be available; the draft leaves them out. RHIYW: are they sold locally? Links to the go-today screen 'Swollen feet that do not go down'.",
+      "when": "weeks 20-42 of pregnancy (months 5-9).",
+      "level": "CARE AT HOME",
+      "pictureForIllustrator": "In the evening, a pregnant woman sits on a mat with her feet raised on a folded sack while she sorts beans.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 8,
+      "section": "Danger signs",
+      "screenTitle": "Learn these signs now",
+      "bodySlug": "tx.pbm.learn_these_signs_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27; WHO Counselling 2013, Session 8, p. 97",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.counselling_2013",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to choose the local words for each sign.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman in a bright wrap sits on a bench outside her brick house on a green hillside, showing her phone to her husband and her mother-in-law.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 9,
+      "section": "Danger signs",
+      "screenTitle": "Bleeding: go now",
+      "bodySlug": "tx.pbm.bleeding_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (vaginal bleeding); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None. Rwanda's list puts bleeding first.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "In daylight, a husband helps his pregnant wife, who holds a cloth, toward an ambulance stopped on the road by their house; a neighbour carries her bag.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 10,
+      "section": "Danger signs",
+      "screenTitle": "Fits or a very bad headache: go now",
+      "bodySlug": "tx.pbm.fits_or_a_very_bad_headache_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (convulsions; severe headache not eased by paracetamol; dizziness and blurred vision); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman sits holding her head with one hand while her sister ties a wrap around her shoulders and points down the path toward the health centre.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 11,
+      "section": "Danger signs",
+      "screenTitle": "Fever and weak, bad belly pain, hard breathing: go now",
+      "bodySlug": "tx.pbm.fever_and_weak_bad_belly_pain_hard_breathing_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (severe or unusual belly pain, chills or fever); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Hard breathing comes from WHO's list, not Rwanda's; keep it.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman lies on a mat inside a simple room while her husband kneels beside her and a community health worker in a vest arrives at the door.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 12,
+      "section": "Danger signs",
+      "screenTitle": "Swelling, vomiting or blurred eyes: go now",
+      "bodySlug": "tx.pbm.swelling_vomiting_or_blurred_eyes_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (swelling of hands or face; sustained vomiting; dizziness and blurred vision); WHO PCPNC 2015, section C15 (PDF p. 58)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinical safety choice to confirm: this draft keeps go now. Rwanda says report these immediately. WHO's 2015 guide puts swelling in its \"as soon as possible\" group. Never move a sign down a level because of the older WHO wording.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman shows her swollen hand and face to her mother, who has put on her headscarf, ready to walk with her to the health centre in daylight.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 13,
+      "section": "Danger signs",
+      "screenTitle": "Water leaking: go now",
+      "bodySlug": "tx.pbm.water_leaking_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (sudden gush or leaking of fluid); Rwanda ANC 2020, section 9.6, pp. 59-62 (care after the waters break); WHO PCPNC 2015, sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinical safety choice to confirm: this draft keeps go now. Rwanda says report leaking immediately at any stage. WHO's sheet M2 lets a woman at term wait up to 6 hours for labour; this draft does not (clinician question 11).",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman standing by a water jerrycan looks down in surprise at a wet patch on her wrap, then (second panel) walks with her sister toward the health centre.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 14,
+      "section": "Danger signs",
+      "screenTitle": "Moving less? Go now",
+      "bodySlug": "tx.pbm.moving_less_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (less or no movement); Rwanda ANC 2020, Annex 3, p. 98 (no movement: refer to hospital); WHO maternal health 2nd ed., fetal movement table",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.maternal_health_2nd",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Rwanda supports go now. Still open: whether a woman who feels no movement at all should go straight to the hospital (clinician question 1).",
+      "when": "weeks 28-40+ of pregnancy (months 7-9).",
+      "level": null,
+      "pictureForIllustrator": "A worried woman with her hand on her belly walks quickly down a red dirt road with her husband at her side.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 15,
+      "section": "Danger signs",
+      "screenTitle": "Labour can come too early",
+      "bodySlug": "tx.pbm.labour_can_come_too_early",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (contractions before 37 weeks); WHO PCPNC 2015, section D2 (PDF p. 65)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to test the words \"weeks before your due date\" with women.",
+      "when": "weeks 24-36 of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman, clearly not yet near birth, sits with a community health worker who points to a picture card.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 16,
+      "section": "Danger signs",
+      "screenTitle": "Signs labour may be starting",
+      "bodySlug": "tx.pbm.signs_labour_may_be_starting",
+      "source": "Rwanda ANC 2020, Table 3, p. 47 (show, pushing pain before 37 weeks); WHO PCPNC 2015, sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 24-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "Three small panels: a woman holding her lower belly in pain; a wet patch on her wrap; a cloth with a small pinkish stain.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 17,
+      "section": "Danger signs",
+      "screenTitle": "Too early? Go now",
+      "bodySlug": "tx.pbm.too_early_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27; WHO PCPNC 2015, section C7 (PDF p. 50)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Rwanda supports go now. Still open: call the ambulance or go to the health centre first (clinician question 1).",
+      "when": "weeks 24-36 of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A husband calls on his phone while his wife waits at the roadside in daylight; an ambulance comes up the hill.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 18,
+      "section": "Danger signs",
+      "screenTitle": "Take your pregnancy card",
+      "bodySlug": "tx.pbm.take_your_pregnancy_card",
+      "source": "Rwanda ANC 2020, Table 2, p. 9 (the card is given to the woman) and section 6.2.4, p. 35 (bring the home record)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to use the name women use for the antenatal card.**",
+      "when": "weeks 24-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman's hand takes a folded antenatal card from a cloth bag hanging on a nail by the door.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 19,
+      "section": "Danger signs",
+      "screenTitle": "Choose now who will take you",
+      "bodySlug": "tx.pbm.choose_now_who_will_take_you",
+      "source": "Rwanda ANC 2020, chapter VI, p. 34 (transport and who will help); WHO PCPNC 2015, section C15 (PDF p. 58)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to supply the health centre and ambulance numbers by district.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman talks with a neighbour who drives a moto-taxi; he nods and saves her number in his phone.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 20,
+      "section": "Caring for yourself and your baby",
+      "screenTitle": "One tablet every day",
+      "bodySlug": "tx.pbm.one_tablet_every_day",
+      "source": "Rwanda ANC 2020, section 7.6.1, p. 42; WHO eLENA MMS 2023",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.elena_mms_2023",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician question 7 (product in the pilot districts).",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A woman takes a tablet with a cup of water at breakfast, sitting on a low stool in her kitchen.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 21,
+      "section": "Caring for yourself and your baby",
+      "screenTitle": "How long to take it",
+      "bodySlug": "tx.pbm.how_long_to_take_it",
+      "source": "Rwanda ANC 2020, section 7.6.1, p. 42 (the whole pregnancy)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician question 7 (after the birth).",
+      "when": "weeks 32-40+ of pregnancy (months 8-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman with a newborn on her back takes her tablet with water.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 22,
+      "section": "Caring for yourself and your baby",
+      "screenTitle": "Calcium, if you are given it",
+      "bodySlug": "tx.pbm.calcium_if_you_are_given_it",
+      "source": "Rwanda ANC 2020, section 7.6.2, pp. 42-43 (with meals; several hours apart from iron), and Table 2, pp. 10-15 (from 20 weeks)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician question 8 (all women, or only women at higher risk).",
+      "when": "weeks 18-40+ of pregnancy (months 5-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman takes a large tablet with her lunch of beans and bananas.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 23,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Choose where to give birth",
+      "bodySlug": "tx.pbm.choose_where_to_give_birth",
+      "source": "Rwanda ANC 2020, section 6.2.1, p. 34",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 23-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A couple stands outside a rural health centre with a maternity sign shown only as a picture of a mother and baby.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 24,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Plan the trip and the money",
+      "bodySlug": "tx.pbm.plan_the_trip_and_the_money",
+      "source": "Rwanda ANC 2020, chapter VI, p. 34 (transport, savings, emergency funds)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW: what birth and transport cost under community health insurance.",
+      "when": "weeks 23-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman puts coins into a small tin box while her husband points to a moto-taxi stand on the road.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 25,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Choose your companion",
+      "bodySlug": "tx.pbm.choose_your_companion",
+      "source": "Rwanda ANC 2020, chapter VI, p. 34, and section 6.2.4, p. 35 (a companion who stays during labour); WHO Intrapartum 2018, rec. 3",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.intrapartum_2018",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW: confirm the pilot health centres let a companion stay.",
+      "when": "weeks 23-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman and her sister walk arm in arm, the sister carrying a bag.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 26,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Who will care for your home",
+      "bodySlug": "tx.pbm.who_will_care_for_your_home",
+      "source": "Rwanda ANC 2020, chapter VI, p. 34",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 23-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A grandmother holds two small children by the hand in a yard while the mother leaves with a bag.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 27,
+      "section": "Getting ready for the birth",
+      "screenTitle": "What to pack",
+      "bodySlug": "tx.pbm.what_to_pack",
+      "source": "Rwanda ANC 2020, section 6.2.4, p. 35",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 28-40+ of pregnancy (months 7-9).",
+      "level": null,
+      "pictureForIllustrator": "A flat-lay of a cloth bag with a pregnancy card, folded cloths, a baby wrap, a water bottle and a small food container.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 28,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Plan for an emergency",
+      "bodySlug": "tx.pbm.plan_for_an_emergency",
+      "source": "Rwanda ANC 2020, section 6.1, p. 34",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to supply numbers by district.",
+      "when": "weeks 23-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A man saves a number in his phone while his pregnant wife watches.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m8",
+      "frame": 29,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Show your plan",
+      "bodySlug": "tx.pbm.show_your_plan",
+      "source": "Rwanda ANC 2020, chapter VI, pp. 33-35",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 23-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman shows her phone to her companion and both nod.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 1,
+      "section": "What is my baby like?",
+      "screenTitle": "Movements show your baby is well",
+      "bodySlug": "tx.pbm.movements_show_your_baby_is_well",
+      "source": "WHO maternal health 2nd ed., fetal movement table; WHO ANC 2016, rec. B.2.1 remarks, p. 54",
+      "sourceIds": [
+        "src.who.anc_2016",
+        "src.who.maternal_health_2nd",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 28-40+ of pregnancy (months 7-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman lying on her side on a bed at night, one hand on her belly, with a calm face.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 2,
+      "section": "What is my baby like?",
+      "screenTitle": "No need to count kicks",
+      "bodySlug": "tx.pbm.no_need_to_count_kicks",
+      "source": "WHO maternal health 2nd ed., fetal movement table; WHO ANC 2016, rec. B.2.1, p. 54",
+      "sourceIds": [
+        "src.who.anc_2016",
+        "src.who.maternal_health_2nd",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None. Design note: the app should not offer a kick counter.",
+      "when": "weeks 28-40+ of pregnancy (months 7-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman sweeps her yard, pausing with one hand on her belly, as if checking in with the baby.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 3,
+      "section": "This month's visit",
+      "screenTitle": "Tell the health worker",
+      "bodySlug": "tx.pbm.tell_the_health_worker",
+      "source": "Rwanda ANC 2020, Table 2, pp. 11-15 (ask about movement at visits 3 to 8)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 20-40+ of pregnancy (months 5-9).",
+      "level": null,
+      "pictureForIllustrator": "In a health centre room, a nurse sits facing a pregnant woman and listens while the woman talks and gestures to her belly.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 4,
+      "section": "This month's visit",
+      "screenTitle": "It is an estimate",
+      "bodySlug": "tx.pbm.it_is_an_estimate",
+      "source": "WHO PCPNC 2015, glossary, LMP (PDF p. 182); Rwanda ANC 2020, section 9.6 note, p. 59 (early scan is the best way to date a pregnancy)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 28-40+ of pregnancy (months 7-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman folds baby cloths into a bag while her older child watches.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 5,
+      "section": "This month's visit",
+      "screenTitle": "Past your due date",
+      "bodySlug": "tx.pbm.past_your_due_date",
+      "source": "Rwanda ANC 2020, Table 2, contact 8, p. 15 (plan admission at 41 weeks if no labour); WHO ANC 2016, Chapter 4, Box 5, p. 105",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None. Rwanda uses 41 weeks.",
+      "when": "weeks 40-42 of pregnancy (month 9).",
+      "level": null,
+      "pictureForIllustrator": "A heavily pregnant woman walks slowly with her husband toward the health centre in morning light.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 6,
+      "section": "This month's visit",
+      "screenTitle": "Visits 4 to 8: the last months",
+      "bodySlug": "tx.pbm.visits_4_to_8_the_last_months",
+      "source": "Rwanda ANC 2020, Table 1, p. 8; WHO ANC 2016, Chapter 4, p. 105",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 28-40+ of pregnancy (months 7-9).",
+      "level": null,
+      "pictureForIllustrator": "A heavily pregnant woman sits on the health centre bench beside another pregnant woman; both smile.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 7,
+      "section": "Common concerns and home care",
+      "screenTitle": "Small problems: care at home",
+      "bodySlug": "tx.pbm.small_problems_care_at_home",
+      "source": "WHO ANC 2016, section D introduction, p. 74; Rwanda ANC 2020, section 3.6, p. 23",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician check: should every home-care card also say 'go today if it is not better in N days'? No source read gives a number of days for these discomforts.",
+      "when": "Any time in pregnancy.",
+      "level": "CARE AT HOME",
+      "pictureForIllustrator": "A pregnant woman sits in the shade of her doorway with a cup of tea, looking calm, while children play in the yard.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 8,
+      "section": "Common concerns and home care",
+      "screenTitle": "Swollen veins or feet at the end of the day",
+      "bodySlug": "tx.pbm.swollen_veins_or_feet_at_the_end_of_the_day",
+      "source": "WHO ANC 2016, rec. D.6, p. 83 (stockings, raising the legs, water immersion; low cost and unlikely to harm; often worse as pregnancy goes on, better after birth); Rwanda ANC 2020, section 3.6.6, p. 24 (refer if severe)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.anc_2016",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Compression stockings are in both sources but may not be available; the draft leaves them out. RHIYW: are they sold locally? Links to the go-today screen 'Swollen feet that do not go down'.",
+      "when": "weeks 20-42 of pregnancy (months 5-9).",
+      "level": "CARE AT HOME",
+      "pictureForIllustrator": "In the evening, a pregnant woman sits on a mat with her feet raised on a folded sack while she sorts beans.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 9,
+      "section": "Danger signs",
+      "screenTitle": "Learn these signs now",
+      "bodySlug": "tx.pbm.learn_these_signs_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27; WHO Counselling 2013, Session 8, p. 97",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.counselling_2013",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to choose the local words for each sign.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman in a bright wrap sits on a bench outside her brick house on a green hillside, showing her phone to her husband and her mother-in-law.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 10,
+      "section": "Danger signs",
+      "screenTitle": "Bleeding: go now",
+      "bodySlug": "tx.pbm.bleeding_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (vaginal bleeding); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None. Rwanda's list puts bleeding first.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "In daylight, a husband helps his pregnant wife, who holds a cloth, toward an ambulance stopped on the road by their house; a neighbour carries her bag.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 11,
+      "section": "Danger signs",
+      "screenTitle": "Fits or a very bad headache: go now",
+      "bodySlug": "tx.pbm.fits_or_a_very_bad_headache_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (convulsions; severe headache not eased by paracetamol; dizziness and blurred vision); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman sits holding her head with one hand while her sister ties a wrap around her shoulders and points down the path toward the health centre.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 12,
+      "section": "Danger signs",
+      "screenTitle": "Fever and weak, bad belly pain, hard breathing: go now",
+      "bodySlug": "tx.pbm.fever_and_weak_bad_belly_pain_hard_breathing_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (severe or unusual belly pain, chills or fever); WHO PCPNC 2015, section C15 (PDF p. 58) and sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Hard breathing comes from WHO's list, not Rwanda's; keep it.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman lies on a mat inside a simple room while her husband kneels beside her and a community health worker in a vest arrives at the door.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 13,
+      "section": "Danger signs",
+      "screenTitle": "Swelling, vomiting or blurred eyes: go now",
+      "bodySlug": "tx.pbm.swelling_vomiting_or_blurred_eyes_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (swelling of hands or face; sustained vomiting; dizziness and blurred vision); WHO PCPNC 2015, section C15 (PDF p. 58)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinical safety choice to confirm: this draft keeps go now. Rwanda says report these immediately. WHO's 2015 guide puts swelling in its \"as soon as possible\" group. Never move a sign down a level because of the older WHO wording.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman shows her swollen hand and face to her mother, who has put on her headscarf, ready to walk with her to the health centre in daylight.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 14,
+      "section": "Danger signs",
+      "screenTitle": "Water leaking: go now",
+      "bodySlug": "tx.pbm.water_leaking_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (sudden gush or leaking of fluid); Rwanda ANC 2020, section 9.6, pp. 59-62 (care after the waters break); WHO PCPNC 2015, sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinical safety choice to confirm: this draft keeps go now. Rwanda says report leaking immediately at any stage. WHO's sheet M2 lets a woman at term wait up to 6 hours for labour; this draft does not (clinician question 11).",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A woman standing by a water jerrycan looks down in surprise at a wet patch on her wrap, then (second panel) walks with her sister toward the health centre.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 15,
+      "section": "Danger signs",
+      "screenTitle": "Moving less? Go now",
+      "bodySlug": "tx.pbm.moving_less_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (less or no movement); Rwanda ANC 2020, Annex 3, p. 98 (no movement: refer to hospital); WHO maternal health 2nd ed., fetal movement table",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.maternal_health_2nd",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Rwanda supports go now. Still open: whether a woman who feels no movement at all should go straight to the hospital (clinician question 1).",
+      "when": "weeks 28-40+ of pregnancy (months 7-9).",
+      "level": null,
+      "pictureForIllustrator": "A worried woman with her hand on her belly walks quickly down a red dirt road with her husband at her side.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 16,
+      "section": "Danger signs",
+      "screenTitle": "Labour can come too early",
+      "bodySlug": "tx.pbm.labour_can_come_too_early",
+      "source": "Rwanda ANC 2020, danger signs, p. 27 (contractions before 37 weeks); WHO PCPNC 2015, section D2 (PDF p. 65)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to test the words \"weeks before your due date\" with women.",
+      "when": "weeks 24-36 of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman, clearly not yet near birth, sits with a community health worker who points to a picture card.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 17,
+      "section": "Danger signs",
+      "screenTitle": "Signs labour may be starting",
+      "bodySlug": "tx.pbm.signs_labour_may_be_starting",
+      "source": "Rwanda ANC 2020, Table 3, p. 47 (show, pushing pain before 37 weeks); WHO PCPNC 2015, sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 24-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "Three small panels: a woman holding her lower belly in pain; a wet patch on her wrap; a cloth with a small pinkish stain.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 18,
+      "section": "Danger signs",
+      "screenTitle": "Too early? Go now",
+      "bodySlug": "tx.pbm.too_early_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27; WHO PCPNC 2015, section C7 (PDF p. 50)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Rwanda supports go now. Still open: call the ambulance or go to the health centre first (clinician question 1).",
+      "when": "weeks 24-36 of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A husband calls on his phone while his wife waits at the roadside in daylight; an ambulance comes up the hill.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 19,
+      "section": "Danger signs",
+      "screenTitle": "Take your pregnancy card",
+      "bodySlug": "tx.pbm.take_your_pregnancy_card",
+      "source": "Rwanda ANC 2020, Table 2, p. 9 (the card is given to the woman) and section 6.2.4, p. 35 (bring the home record)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to use the name women use for the antenatal card.**",
+      "when": "weeks 24-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman's hand takes a folded antenatal card from a cloth bag hanging on a nail by the door.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 20,
+      "section": "Danger signs",
+      "screenTitle": "Danger sign in labour: go now",
+      "bodySlug": "tx.pbm.danger_sign_in_labour_go_now",
+      "source": "Rwanda ANC 2020, danger signs, p. 27; WHO PCPNC 2015, sheet M2 (PDF p. 163) and section C15 (PDF p. 58)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 36-40+ of pregnancy (month 9).",
+      "level": null,
+      "pictureForIllustrator": "A family helps a woman in labour into a vehicle at dusk while a neighbour carries her bag.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 21,
+      "section": "Danger signs",
+      "screenTitle": "Choose now who will take you",
+      "bodySlug": "tx.pbm.choose_now_who_will_take_you",
+      "source": "Rwanda ANC 2020, chapter VI, p. 34 (transport and who will help); WHO PCPNC 2015, section C15 (PDF p. 58)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to supply the health centre and ambulance numbers by district.",
+      "when": "Any time in pregnancy.",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman talks with a neighbour who drives a moto-taxi; he nods and saves her number in his phone.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 22,
+      "section": "Caring for yourself and your baby",
+      "screenTitle": "One tablet every day",
+      "bodySlug": "tx.pbm.one_tablet_every_day",
+      "source": "Rwanda ANC 2020, section 7.6.1, p. 42; WHO eLENA MMS 2023",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.elena_mms_2023",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician question 7 (product in the pilot districts).",
+      "when": "weeks 1-13 of pregnancy (months 1-3).",
+      "level": null,
+      "pictureForIllustrator": "A woman takes a tablet with a cup of water at breakfast, sitting on a low stool in her kitchen.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 23,
+      "section": "Caring for yourself and your baby",
+      "screenTitle": "How long to take it",
+      "bodySlug": "tx.pbm.how_long_to_take_it",
+      "source": "Rwanda ANC 2020, section 7.6.1, p. 42 (the whole pregnancy)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician question 7 (after the birth).",
+      "when": "weeks 32-40+ of pregnancy (months 8-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman with a newborn on her back takes her tablet with water.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 24,
+      "section": "Caring for yourself and your baby",
+      "screenTitle": "Calcium, if you are given it",
+      "bodySlug": "tx.pbm.calcium_if_you_are_given_it",
+      "source": "Rwanda ANC 2020, section 7.6.2, pp. 42-43 (with meals; several hours apart from iron), and Table 2, pp. 10-15 (from 20 weeks)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "Clinician question 8 (all women, or only women at higher risk).",
+      "when": "weeks 18-40+ of pregnancy (months 5-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman takes a large tablet with her lunch of beans and bananas.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 25,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Signs that labour has started",
+      "bodySlug": "tx.pbm.signs_that_labour_has_started",
+      "source": "Rwanda ANC 2020, section 6.2.3, p. 34; WHO PCPNC 2015, sheet M2 (PDF p. 163)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "The number of minutes between pains is not in Rwanda's guideline (clinician question 5).",
+      "when": "weeks 36-40+ of pregnancy (month 9).",
+      "level": null,
+      "pictureForIllustrator": "A woman holds the doorframe of her house during a pain while her companion picks up a packed bag.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 26,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Live far away? Move close early",
+      "bodySlug": "tx.pbm.live_far_away_move_close_early",
+      "source": "Rwanda ANC 2020, section 6.2.3, p. 34 (1 to 2 weeks; WHO's 2015 guide says 2 to 3)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW: are there waiting homes near the pilot health centres, who pays, and is this advice realistic for families? If not, what should the app say instead?",
+      "when": "weeks 36-40+ of pregnancy (month 9).",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman with a bundle on her head walks with her husband along a long hill road toward a small town with a health centre.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 27,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Live near? Go at the first signs",
+      "bodySlug": "tx.pbm.live_near_go_at_the_first_signs",
+      "source": "Rwanda ANC 2020, section 6.2.3, p. 34; WHO PCPNC 2015, section C14 (PDF p. 57)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.pcpnc_2015",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW: confirm current practice at the pilot health centres when a woman arrives in early labour.",
+      "when": "weeks 36-40+ of pregnancy (month 9).",
+      "level": null,
+      "pictureForIllustrator": "A woman and her companion arrive at a health centre entrance in daylight and a midwife welcomes them.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 28,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Choose where to give birth",
+      "bodySlug": "tx.pbm.choose_where_to_give_birth",
+      "source": "Rwanda ANC 2020, section 6.2.1, p. 34",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 23-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A couple stands outside a rural health centre with a maternity sign shown only as a picture of a mother and baby.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 29,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Plan the trip and the money",
+      "bodySlug": "tx.pbm.plan_the_trip_and_the_money",
+      "source": "Rwanda ANC 2020, chapter VI, p. 34 (transport, savings, emergency funds)",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW: what birth and transport cost under community health insurance.",
+      "when": "weeks 23-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman puts coins into a small tin box while her husband points to a moto-taxi stand on the road.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 30,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Choose your companion",
+      "bodySlug": "tx.pbm.choose_your_companion",
+      "source": "Rwanda ANC 2020, chapter VI, p. 34, and section 6.2.4, p. 35 (a companion who stays during labour); WHO Intrapartum 2018, rec. 3",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.who.intrapartum_2018",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW: confirm the pilot health centres let a companion stay.",
+      "when": "weeks 23-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A pregnant woman and her sister walk arm in arm, the sister carrying a bag.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 31,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Who will care for your home",
+      "bodySlug": "tx.pbm.who_will_care_for_your_home",
+      "source": "Rwanda ANC 2020, chapter VI, p. 34",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 23-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A grandmother holds two small children by the hand in a yard while the mother leaves with a bag.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 32,
+      "section": "Getting ready for the birth",
+      "screenTitle": "What to pack",
+      "bodySlug": "tx.pbm.what_to_pack",
+      "source": "Rwanda ANC 2020, section 6.2.4, p. 35",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 28-40+ of pregnancy (months 7-9).",
+      "level": null,
+      "pictureForIllustrator": "A flat-lay of a cloth bag with a pregnancy card, folded cloths, a baby wrap, a water bottle and a small food container.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 33,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Plan for an emergency",
+      "bodySlug": "tx.pbm.plan_for_an_emergency",
+      "source": "Rwanda ANC 2020, section 6.1, p. 34",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "RHIYW to supply numbers by district.",
+      "when": "weeks 23-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A man saves a number in his phone while his pregnant wife watches.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    },
+    {
+      "featureId": "preg_bymonth_m9",
+      "frame": 34,
+      "section": "Getting ready for the birth",
+      "screenTitle": "Show your plan",
+      "bodySlug": "tx.pbm.show_your_plan",
+      "source": "Rwanda ANC 2020, chapter VI, pp. 33-35",
+      "sourceIds": [
+        "src.rw.anc_2020",
+        "src.na.rwanda_anc_screens_doc"
+      ],
+      "rwandaCheck": "None.",
+      "when": "weeks 23-40+ of pregnancy (months 6-9).",
+      "level": null,
+      "pictureForIllustrator": "A woman shows her phone to her companion and both nod.",
+      "clinicalReviewRequired": true,
+      "fieldUseApproved": false
+    }
+  ],
+  "decisions": [
+    {
+      "on": "2026-11-04",
+      "by": "David Levine",
+      "topic": "feelings and partner-safety screens",
+      "ruling": "Triage holds low mood and partner safety as screening questions.",
+      "effect": "Kept out of the month pack; not an open question."
+    },
+    {
+      "on": "2026-11-04",
+      "by": "David Levine",
+      "topic": "English picture descriptions",
+      "ruling": "should be cropped or covered with a text box to hold phrase bank phrases",
+      "effect": "Implemented by T-085, not in this pack."
+    }
+  ]
+}

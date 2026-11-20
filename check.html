@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>NurseAunty demo - deployment self-check</title>
+<style>
+  :root { color-scheme: light; }
+  body { font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; margin: 0; padding: 24px;
+         background: #f6f4ef; color: #17212e; }
+  main { max-width: 900px; margin: 0 auto; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  p.sub { color: #5b6673; margin: 0 0 20px; }
+  button { font: inherit; font-weight: 700; padding: 12px 20px; border-radius: 8px; cursor: pointer;
+           border: 1px solid #0b6b5b; background: #0b6b5b; color: #fff; min-height: 48px; }
+  button[disabled] { opacity: .55; cursor: default; }
+  #verdict { margin: 20px 0; padding: 16px; border-radius: 10px; border: 2px solid #cfd8dc;
+             background: #fff; font-weight: 700; }
+  #verdict.good { border-color: #0b6b5b; background: #e3f0ec; color: #0b3d35; }
+  #verdict.bad  { border-color: #a4271d; background: #fbe9e6; color: #7d1d16; }
+  #verdict.busy { border-color: #b26b00; background: #fdf0d9; color: #6b4100; }
+  table { border-collapse: collapse; width: 100%; margin-top: 16px; background: #fff; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e2e8ec; font-size: 14px;
+           vertical-align: top; }
+  th { background: #eef2f4; }
+  td.path { font-family: ui-monospace, Menlo, Consolas, monospace; word-break: break-all; }
+  .scroll { overflow-x: auto; }
+  dl { background: #fff; border: 1px solid #e2e8ec; border-radius: 10px; padding: 16px; margin-top: 20px; }
+  dt { font-weight: 700; margin-top: 10px; }
+  dt:first-child { margin-top: 0; }
+  dd { margin: 4px 0 0; color: #3d4855; }
+</style>
+</head>
+<body>
+<main>
+<h1>Deployment self-check</h1>
+<p class="sub">This page is for whoever published the demo, not for reviewers. It asks this server for
+every file the package contains and reports what is missing.</p>
+
+<button id="run" type="button">Check this deployment</button>
+<div id="verdict" hidden></div>
+<div class="scroll"><table id="failures" hidden>
+  <thead><tr><th>File</th><th>What happened</th></tr></thead>
+  <tbody></tbody>
+</table></div>
+<dl id="facts" hidden></dl>
+
+<script>
+(function () {
+  var run = document.getElementById("run");
+  var verdict = document.getElementById("verdict");
+  var table = document.getElementById("failures");
+  var facts = document.getElementById("facts");
+
+  function say(text, cls) {
+    verdict.hidden = false;
+    verdict.className = cls || "";
+    verdict.textContent = text;
+  }
+  function fact(term, detail) {
+    facts.hidden = false;
+    var dt = document.createElement("dt"); dt.textContent = term;
+    var dd = document.createElement("dd"); dd.textContent = detail;
+    facts.appendChild(dt); facts.appendChild(dd);
+  }
+  function row(path, what) {
+    table.hidden = false;
+    var tr = document.createElement("tr");
+    var a = document.createElement("td"); a.className = "path"; a.textContent = path;
+    var b = document.createElement("td"); b.textContent = what;
+    tr.appendChild(a); tr.appendChild(b);
+    table.tBodies[0].appendChild(tr);
+  }
+
+  async function check(entry) {
+    var url = entry.path.split("/").map(encodeURIComponent).join("/");
+    var response;
+    try {
+      response = await fetch(url, { method: "GET", cache: "no-store" });
+    } catch (error) {
+      return "the request failed outright (" + (error && error.message ? error.message : error) + ")";
+    }
+    if (!response.ok) return "server answered " + response.status + " " + response.statusText;
+    var bytes;
+    try {
+      bytes = (await response.arrayBuffer()).byteLength;
+    } catch (error) {
+      return "the server answered but the body could not be read";
+    }
+    if (bytes !== entry.bytes) {
+      return "arrived as " + bytes + " bytes, but the package shipped " + entry.bytes;
+    }
+    return null;
+  }
+
+  run.addEventListener("click", async function () {
+    run.disabled = true;
+    table.hidden = true; table.tBodies[0].textContent = "";
+    facts.hidden = true; facts.textContent = "";
+    say("Reading the package inventory...", "busy");
+
+    var inventory;
+    try {
+      var response = await fetch("package-files.json", { cache: "no-store" });
+      if (!response.ok) throw new Error("server answered " + response.status);
+      inventory = await response.json();
+    } catch (error) {
+      say("Could not read package-files.json from this server (" +
+          (error && error.message ? error.message : error) +
+          "). That file ships with the package, so if it is missing the copy did not complete at all.", "bad");
+      run.disabled = false;
+      return;
+    }
+
+    var all = inventory.files || [];
+    // A few files are in the package but are not meant to come back over HTTP: the publisher's
+    // marker, and web.config / .htaccess, which IIS and Apache both refuse to serve by design.
+    // Counting them as failures would mean "complete" could never be reported.
+    var files = all.filter(function (entry) { return entry.servedOverHttp !== false; });
+    var problems = [];
+    for (var i = 0; i < files.length; i++) {
+      say("Checking file " + (i + 1) + " of " + files.length + "...", "busy");
+      var trouble = await check(files[i]);
+      if (trouble) { problems.push(files[i]); row(files[i].path, trouble); }
+    }
+
+    // Name what actually failed, rather than a count. 136 .webp and nothing else is a server with no
+    // MIME type for .webp; a scatter across every folder is a copy that stopped early. Those need
+    // opposite responses, and the count alone does not tell them apart.
+    var byExtension = {};
+    problems.forEach(function (entry) {
+      var at = entry.path.lastIndexOf("."), slash = entry.path.lastIndexOf("/");
+      var ext = at > slash ? entry.path.slice(at).toLowerCase() : "(no extension)";
+      byExtension[ext] = (byExtension[ext] || 0) + 1;
+    });
+    var extensions = Object.keys(byExtension);
+
+    fact("Package built from", inventory.sourceCommit || "(not recorded)");
+    fact("Files that should be served", String(files.length));
+    fact("Files this server could not deliver", String(problems.length));
+    if (extensions.length) {
+      fact("Which kinds of file", extensions.map(function (ext) { return byExtension[ext] + " x " + ext; }).join(", "));
+    }
+
+    if (problems.length === 0) {
+      say("All " + files.length + " files arrived intact. This deployment is complete.", "good");
+    } else if (extensions.length <= 2) {
+      say(problems.length + " files did not arrive intact, and they are all " + extensions.join(" and ") +
+          " files. That pattern is a server with no MIME type for those extensions, not a bad copy - " +
+          "the files are almost certainly present. The package ships web.config and .htaccess to " +
+          "declare them; if this persists, the host is ignoring both and needs its MIME types set.", "bad");
+    } else {
+      say(problems.length + " of " + files.length + " files did not arrive intact, across " +
+          extensions.length + " different file types. That spread is a copy that stopped early. " +
+          "Re-publish rather than patching the files listed below.", "bad");
+    }
+    run.disabled = false;
+  });
+})();
+</script>
+</main>
+</body>
+</html>

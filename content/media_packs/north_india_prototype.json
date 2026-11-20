@@ -1,0 +1,789 @@
+{
+  "packId": "north_india.prototype.v1",
+  "regionFocus": "North India prototype draft",
+  "language": "en",
+  "prototypeOnly": true,
+  "reviewStatus": "CODEX Decision - media pack needs clinical, local, and localization review before field use",
+  "reusableAssets": [
+    {
+      "assetId": "img.reusable.family_art_sheet_v1",
+      "roles": [
+        "caregiver",
+        "health_worker",
+        "happy_baby",
+        "sad_toddler",
+        "mug",
+        "ors_sachet",
+        "bottle_mark"
+      ],
+      "prototypeOnly": true,
+      "approvalStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "assetId": "img.reusable.home_background_v1",
+      "roles": [
+        "household_background",
+        "wash_background",
+        "family_preparedness_background"
+      ],
+      "prototypeOnly": true,
+      "approvalStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "assetId": "img.reusable.caregiver_v1",
+      "roles": [
+        "caregiver"
+      ],
+      "prototypeOnly": true,
+      "approvalStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "assetId": "img.reusable.health_worker_v1",
+      "roles": [
+        "health_worker",
+        "chw",
+        "clinic_helper"
+      ],
+      "prototypeOnly": true,
+      "approvalStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "assetId": "img.reusable.happy_baby_v1",
+      "roles": [
+        "happy_baby"
+      ],
+      "prototypeOnly": true,
+      "approvalStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "assetId": "img.reusable.sad_toddler_v1",
+      "roles": [
+        "sad_toddler",
+        "worried_child"
+      ],
+      "prototypeOnly": true,
+      "approvalStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "assetId": "img.reusable.mug_200ml_v1",
+      "roles": [
+        "mug",
+        "cup_200ml"
+      ],
+      "prototypeOnly": true,
+      "approvalStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "assetId": "img.reusable.ors_sachet_v1",
+      "roles": [
+        "ors_sachet"
+      ],
+      "prototypeOnly": true,
+      "approvalStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "assetId": "img.reusable.bottle_1l_mark_v1",
+      "roles": [
+        "bottle_mark",
+        "one_litre_mark"
+      ],
+      "prototypeOnly": true,
+      "approvalStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "assetId": "img.reusable.clinic_background_v1",
+      "roles": [
+        "clinic_background",
+        "referral_background"
+      ],
+      "prototypeOnly": true,
+      "approvalStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "assetId": "img.reusable.private_corner_background_v1",
+      "roles": [
+        "private_background",
+        "sensitive_background"
+      ],
+      "prototypeOnly": true,
+      "approvalStatus": "CODEX Decision - needs approval"
+    },
+    {
+      "assetId": "img.reusable.wash_background_v1",
+      "roles": [
+        "wash_background",
+        "water_background"
+      ],
+      "prototypeOnly": true,
+      "approvalStatus": "CODEX Decision - needs approval"
+    }
+  ],
+  "features": [
+    {
+      "featureId": "ors_slideshow",
+      "title": "ORS mixing visual with neutral labels",
+      "layers": [
+        {
+          "layerId": "base.ors_selected",
+          "role": "base",
+          "source": "selected_feature_asset",
+          "required": true,
+          "placeholderDescription": "ORS mixing visual placeholder.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 50,
+            "yPercent": 50,
+            "widthPercent": 100,
+            "anchor": "center"
+          }
+        },
+        {
+          "layerId": "label.prototype_status",
+          "role": "label",
+          "source": "text",
+          "text": "Prototype image - product label pending local review"
+        },
+        {
+          "layerId": "overlay.measurement_cue",
+          "role": "overlay",
+          "source": "pack_asset",
+          "assetRole": "ors_sachet",
+          "placeholderDescription": "Reusable ORS sachet, mug, and bottle measurement art sheet.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 78,
+            "yPercent": 82,
+            "widthPercent": 18,
+            "anchor": "bottom_center"
+          }
+        }
+      ]
+    },
+    {
+      "featureId": "dental_brushing",
+      "title": "Toothbrushing coach visual",
+      "layers": [
+        {
+          "layerId": "base.dental_selected",
+          "role": "base",
+          "source": "selected_feature_asset",
+          "required": true,
+          "placeholderDescription": "Toothbrushing coach visual placeholder.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 50,
+            "yPercent": 50,
+            "widthPercent": 100,
+            "anchor": "center"
+          }
+        },
+        {
+          "layerId": "label.brushing_zones",
+          "role": "label",
+          "source": "text",
+          "textSlug": "tx.tool_dental_brushing_body"
+        },
+        {
+          "layerId": "overlay.family_art",
+          "role": "overlay",
+          "source": "pack_asset",
+          "assetRole": "sad_toddler",
+          "placeholderDescription": "Reusable child and toothbrushing art sheet.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 28,
+            "yPercent": 78,
+            "widthPercent": 20,
+            "anchor": "bottom_center"
+          }
+        }
+      ]
+    },
+    {
+      "featureId": "kmc_timer",
+      "title": "Kangaroo mother care visual",
+      "layers": [
+        {
+          "layerId": "base.kmc_selected",
+          "role": "base",
+          "source": "selected_feature_asset",
+          "required": true,
+          "placeholderDescription": "KMC caregiver and baby visual placeholder.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 50,
+            "yPercent": 50,
+            "widthPercent": 100,
+            "anchor": "center"
+          }
+        },
+        {
+          "layerId": "crop.phone_safe",
+          "role": "crop",
+          "source": "pack_asset",
+          "assetId": "img.reusable.family_art_sheet_v1",
+          "placeholderDescription": "Future crop metadata for low-memory phone layout.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 50,
+            "yPercent": 50,
+            "widthPercent": 100,
+            "anchor": "center"
+          }
+        }
+      ]
+    },
+    {
+      "featureId": "dehydration_visual_guide",
+      "title": "Dehydration sample visual",
+      "layers": [
+        {
+          "layerId": "base.prototype_sample",
+          "role": "base",
+          "source": "pack_asset",
+          "assetId": "img.prototype.dehydration_signs_v1",
+          "required": true,
+          "placeholderDescription": "Prototype dehydration concern sample.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 50,
+            "yPercent": 50,
+            "widthPercent": 100,
+            "anchor": "center"
+          }
+        },
+        {
+          "layerId": "label.prototype_status",
+          "role": "label",
+          "source": "text",
+          "text": "Prototype sample - not a diagnostic reference image"
+        }
+      ]
+    },
+    {
+      "featureId": "child_measles_rash_check",
+      "title": "Rash sample visual",
+      "layers": [
+        {
+          "layerId": "base.prototype_sample",
+          "role": "base",
+          "source": "pack_asset",
+          "assetId": "img.prototype.measles_rash_v1",
+          "required": true,
+          "placeholderDescription": "Prototype rash concern sample.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 50,
+            "yPercent": 50,
+            "widthPercent": 100,
+            "anchor": "center"
+          }
+        },
+        {
+          "layerId": "label.prototype_status",
+          "role": "label",
+          "source": "text",
+          "text": "Prototype sample - not a diagnostic reference image"
+        }
+      ]
+    },
+    {
+      "featureId": "child_muac_malnutrition_screen",
+      "title": "MUAC and swelling sample visual",
+      "layers": [
+        {
+          "layerId": "base.prototype_sample",
+          "role": "base",
+          "source": "pack_asset",
+          "assetId": "img.prototype.muac_swelling_v1",
+          "required": true,
+          "placeholderDescription": "Prototype nutrition concern sample.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 50,
+            "yPercent": 50,
+            "widthPercent": 100,
+            "anchor": "center"
+          }
+        },
+        {
+          "layerId": "label.prototype_status",
+          "role": "label",
+          "source": "text",
+          "text": "Prototype sample - not a diagnostic reference image"
+        }
+      ]
+    },
+    {
+      "featureId": "dental_triage",
+      "title": "Dental swelling sample visual",
+      "layers": [
+        {
+          "layerId": "base.prototype_sample",
+          "role": "base",
+          "source": "pack_asset",
+          "assetId": "img.prototype.dental_swelling_v1",
+          "required": true,
+          "placeholderDescription": "Prototype dental swelling sample.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 50,
+            "yPercent": 50,
+            "widthPercent": 100,
+            "anchor": "center"
+          }
+        },
+        {
+          "layerId": "label.prototype_status",
+          "role": "label",
+          "source": "text",
+          "text": "Prototype sample - not a diagnostic reference image"
+        }
+      ]
+    },
+    {
+      "featureId": "u5_triage",
+      "title": "Under-5 triage intake visual",
+      "layers": [
+        {
+          "layerId": "base.selected_or_placeholder",
+          "role": "base",
+          "source": "selected_feature_asset",
+          "required": true,
+          "placeholderDescription": "Under-5 triage intake visual placeholder.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 50,
+            "yPercent": 50,
+            "widthPercent": 100,
+            "anchor": "center"
+          }
+        },
+        {
+          "layerId": "label.prototype_status",
+          "role": "label",
+          "source": "text",
+          "text": "Prototype clinical screen - not a diagnostic reference image"
+        },
+        {
+          "layerId": "overlay.reusable_context",
+          "role": "overlay",
+          "source": "pack_asset",
+          "assetRole": "sad_toddler",
+          "placeholderDescription": "Reusable context art for prototype clinical screen.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 22,
+            "yPercent": 80,
+            "widthPercent": 18,
+            "anchor": "bottom_center"
+          }
+        }
+      ]
+    },
+    {
+      "featureId": "newborn_triage",
+      "title": "Newborn danger visual",
+      "layers": [
+        {
+          "layerId": "base.selected_or_placeholder",
+          "role": "base",
+          "source": "selected_feature_asset",
+          "required": true,
+          "placeholderDescription": "Newborn danger visual placeholder.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 50,
+            "yPercent": 50,
+            "widthPercent": 100,
+            "anchor": "center"
+          }
+        },
+        {
+          "layerId": "label.prototype_status",
+          "role": "label",
+          "source": "text",
+          "text": "Prototype clinical screen - not a diagnostic reference image"
+        },
+        {
+          "layerId": "overlay.reusable_context",
+          "role": "overlay",
+          "source": "pack_asset",
+          "assetRole": "happy_baby",
+          "placeholderDescription": "Reusable context art for prototype clinical screen.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 22,
+            "yPercent": 80,
+            "widthPercent": 18,
+            "anchor": "bottom_center"
+          }
+        }
+      ]
+    },
+    {
+      "featureId": "anc_triage",
+      "title": "Pregnancy danger visual",
+      "layers": [
+        {
+          "layerId": "base.selected_or_placeholder",
+          "role": "base",
+          "source": "selected_feature_asset",
+          "required": true,
+          "placeholderDescription": "Pregnancy danger visual placeholder.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 50,
+            "yPercent": 50,
+            "widthPercent": 100,
+            "anchor": "center"
+          }
+        },
+        {
+          "layerId": "label.prototype_status",
+          "role": "label",
+          "source": "text",
+          "text": "Prototype clinical screen - not a diagnostic reference image"
+        },
+        {
+          "layerId": "overlay.reusable_context",
+          "role": "overlay",
+          "source": "pack_asset",
+          "assetRole": "caregiver",
+          "placeholderDescription": "Reusable context art for prototype clinical screen.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 22,
+            "yPercent": 80,
+            "widthPercent": 18,
+            "anchor": "bottom_center"
+          }
+        }
+      ]
+    },
+    {
+      "featureId": "pnc_lactation",
+      "title": "Postpartum and lactation danger visual",
+      "layers": [
+        {
+          "layerId": "base.selected_or_placeholder",
+          "role": "base",
+          "source": "selected_feature_asset",
+          "required": true,
+          "placeholderDescription": "Postpartum and lactation danger visual placeholder.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 50,
+            "yPercent": 50,
+            "widthPercent": 100,
+            "anchor": "center"
+          }
+        },
+        {
+          "layerId": "label.prototype_status",
+          "role": "label",
+          "source": "text",
+          "text": "Prototype clinical screen - not a diagnostic reference image"
+        },
+        {
+          "layerId": "overlay.reusable_context",
+          "role": "overlay",
+          "source": "pack_asset",
+          "assetRole": "caregiver",
+          "placeholderDescription": "Reusable context art for prototype clinical screen.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 22,
+            "yPercent": 80,
+            "widthPercent": 18,
+            "anchor": "bottom_center"
+          }
+        }
+      ]
+    },
+    {
+      "featureId": "kohl_lead_screen",
+      "title": "Kohl lead-risk visual",
+      "layers": [
+        {
+          "layerId": "base.selected_or_placeholder",
+          "role": "base",
+          "source": "selected_feature_asset",
+          "required": true,
+          "placeholderDescription": "Kohl lead-risk visual placeholder.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 50,
+            "yPercent": 50,
+            "widthPercent": 100,
+            "anchor": "center"
+          }
+        },
+        {
+          "layerId": "label.prototype_status",
+          "role": "label",
+          "source": "text",
+          "text": "Prototype clinical screen - not a diagnostic reference image"
+        },
+        {
+          "layerId": "overlay.reusable_context",
+          "role": "overlay",
+          "source": "pack_asset",
+          "assetRole": "caregiver",
+          "placeholderDescription": "Reusable context art for prototype clinical screen.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 22,
+            "yPercent": 80,
+            "widthPercent": 18,
+            "anchor": "bottom_center"
+          }
+        }
+      ]
+    },
+    {
+      "featureId": "child_vision_screen",
+      "title": "Child vision concern visual",
+      "layers": [
+        {
+          "layerId": "base.selected_or_placeholder",
+          "role": "base",
+          "source": "selected_feature_asset",
+          "required": true,
+          "placeholderDescription": "Child vision concern visual placeholder.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 50,
+            "yPercent": 50,
+            "widthPercent": 100,
+            "anchor": "center"
+          }
+        },
+        {
+          "layerId": "label.prototype_status",
+          "role": "label",
+          "source": "text",
+          "text": "Prototype clinical screen - not a diagnostic reference image"
+        },
+        {
+          "layerId": "overlay.reusable_context",
+          "role": "overlay",
+          "source": "pack_asset",
+          "assetRole": "sad_toddler",
+          "placeholderDescription": "Reusable context art for prototype clinical screen.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 22,
+            "yPercent": 80,
+            "widthPercent": 18,
+            "anchor": "bottom_center"
+          }
+        }
+      ]
+    },
+    {
+      "featureId": "child_hearing_screen",
+      "title": "Child hearing concern visual",
+      "layers": [
+        {
+          "layerId": "base.selected_or_placeholder",
+          "role": "base",
+          "source": "selected_feature_asset",
+          "required": true,
+          "placeholderDescription": "Child hearing concern visual placeholder.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 50,
+            "yPercent": 50,
+            "widthPercent": 100,
+            "anchor": "center"
+          }
+        },
+        {
+          "layerId": "label.prototype_status",
+          "role": "label",
+          "source": "text",
+          "text": "Prototype clinical screen - not a diagnostic reference image"
+        },
+        {
+          "layerId": "overlay.reusable_context",
+          "role": "overlay",
+          "source": "pack_asset",
+          "assetRole": "sad_toddler",
+          "placeholderDescription": "Reusable context art for prototype clinical screen.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 22,
+            "yPercent": 80,
+            "widthPercent": 18,
+            "anchor": "bottom_center"
+          }
+        }
+      ]
+    },
+    {
+      "featureId": "child_ear_check",
+      "title": "Child ear concern visual",
+      "layers": [
+        {
+          "layerId": "base.selected_or_placeholder",
+          "role": "base",
+          "source": "selected_feature_asset",
+          "required": true,
+          "placeholderDescription": "Child ear concern visual placeholder.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 50,
+            "yPercent": 50,
+            "widthPercent": 100,
+            "anchor": "center"
+          }
+        },
+        {
+          "layerId": "label.prototype_status",
+          "role": "label",
+          "source": "text",
+          "text": "Prototype clinical screen - not a diagnostic reference image"
+        },
+        {
+          "layerId": "overlay.reusable_context",
+          "role": "overlay",
+          "source": "pack_asset",
+          "assetRole": "sad_toddler",
+          "placeholderDescription": "Reusable context art for prototype clinical screen.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 22,
+            "yPercent": 80,
+            "widthPercent": 18,
+            "anchor": "bottom_center"
+          }
+        }
+      ]
+    },
+    {
+      "featureId": "child_injury_first_aid_check",
+      "title": "Child injury first-aid concern visual",
+      "layers": [
+        {
+          "layerId": "base.selected_or_placeholder",
+          "role": "base",
+          "source": "selected_feature_asset",
+          "required": true,
+          "placeholderDescription": "Child injury first-aid concern visual placeholder.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 50,
+            "yPercent": 50,
+            "widthPercent": 100,
+            "anchor": "center"
+          }
+        },
+        {
+          "layerId": "label.prototype_status",
+          "role": "label",
+          "source": "text",
+          "text": "Prototype clinical screen - not a diagnostic reference image"
+        },
+        {
+          "layerId": "overlay.reusable_context",
+          "role": "overlay",
+          "source": "pack_asset",
+          "assetRole": "sad_toddler",
+          "placeholderDescription": "Reusable context art for prototype clinical screen.",
+          "placement": {
+            "canvas": {
+              "width": 1000,
+              "height": 1000
+            },
+            "xPercent": 22,
+            "yPercent": 80,
+            "widthPercent": 18,
+            "anchor": "bottom_center"
+          }
+        }
+      ]
+    }
+  ]
+}

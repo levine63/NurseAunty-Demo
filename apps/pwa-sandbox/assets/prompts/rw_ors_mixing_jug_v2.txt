@@ -1,0 +1,139 @@
+Painted ORS set for Rwanda, mixing pictures redrawn with a jug - how the three pictures were asked for
+
+Made 2026-11-12 with Google's Gemini picture model (gemini-nano-banana-2.1), by the same method as
+the first set (rw_ors_painted_set_v1.txt, ADR-075): the people and the things they touch were drawn
+on a flat magenta background, cut out, and laid over the one stored picture of the room.
+
+Why they were redrawn: the first set's pictures for adding the sachet, mixing and covering show a
+plain plastic water bottle with no one-litre line. Under the measuring sentence for a half-litre
+bottle ("Fill it 2 times. Pour each fill into a clean mixing container.") a sachet going into a
+water bottle can be read as "put the sachet in this bottle", which is ORS at twice the strength
+(ADR-080). David, 2026-11-12, asked which container the Rwandan mixing pictures should show:
+"Mixing container option A", a container nobody could take for a small bottle (ADR-081).
+
+The three bottle pictures they replace (06 pour sachet, 07 shake, 13 cover it) left the app's
+picture folder the same day; they are in the repository's history and on David's laptop.
+
+The app keeps the new ones as WebP files in apps/pwa-sandbox/assets/generated/:
+  generated_rw_ors_06_pour_sachet_v2.webp   (request 06_pour_sachet_jug1l)
+  generated_rw_ors_07_stir_v1.webp          (request 07_stir_jug1l)
+  generated_rw_ors_13_cover_it_v2.webp      (request 13_cover_jug1l_b)
+
+Two rounds, nine requests
+-------------------------
+Round one (four requests: a sheet of a big jug, then the three scenes) is NOT in the app. It asked
+for "a big, wide, clear plastic jug ... as tall as the mother's forearm ... filled up to its one
+bold dark line". The independent review measured what came back: a jug of two to three litres,
+about two-thirds full, with no line on it, and drawn at about twice the volume in the first
+picture as in the second. A caregiver who copied it would make ORS that is too weak. Lesson: say
+the size against something in the picture, and do not ask for "big".
+
+Round two (four requests: a sheet of a one-litre jug beside the cup, then the three scenes) asked
+for a small one-litre jug, one and a half times as tall as the metal cup, nearly full, with a
+thick black line painted round it at the water's surface, and the cup beside it in every scene so
+that its size is fixed. Its first drawing of the covering scene let the background colour show
+through the top of the clear jug, left out the line and drew a darker table, so that scene was
+asked for once more with those three things said (the ninth request).
+
+Every request was answered at the first attempt. What they cost was not recorded; they were
+charged to David's own key. The script, every picture of both rounds and the logs are on David's
+laptop in Claude/nurseaunty-consistency-trial (ors_jug.py and the folder ors_jug).
+
+They are prototype drafts. Rwandan reviewers check each one (ADR-077): does it look like Rwanda,
+and does it show the right action and amount. Known already: the jug's size is fixed only against
+the cup beside it, and measured on the three pictures it is 1.55 to 1.75 times the cup's height
+and about one and a half times its width, so the cup is about a third of the jug: that fits a mug
+and not the five small tea cups of the measuring picture; the covering picture shows an empty cup
+and a spoon beside the covered jug and nothing being thrown away; a clear plastic measuring jug
+may not be what a Rwandan household has; and pictures 03,
+04, 05, 08, 17 and 23 of the first set still show the bottle. None of those six is shown in an
+app, and they would need the jug before they are.
+
+Reference pictures
+------------------
+mother: the Rwanda master picture of the mother (rw-caregiver-baby-v1.png).
+things: the sheet of household things drawn for the first set (see rw_ors_painted_set_v1.txt).
+jug1l:  the sheet drawn by the first request below.
+
+The four requests whose pictures are used, printed in full as they were sent
+-----------------------------------------------------------------------------
+jug1l (the reference sheet); reference pictures in order: things
+  Reference picture A shows the illustration style to match, and one family's household things.
+  Draw a clean reference sheet of four things from the same household, each drawn once and
+  separately, standing side by side on a plain white background, all at the same scale: first, the
+  same small plain metal cup as in the reference picture; second, standing right beside the cup, a
+  small clear plastic ONE-LITRE measuring jug: straight sides, a handle on one side, a pouring
+  lip, open at the top, with no cap and no neck. The jug is small: only one and a half times as
+  tall as the cup and one and a half times as wide as the cup. A thick black line is painted right
+  round the outside of the jug, two finger-widths below its rim, and the jug is filled with clean
+  water exactly up to that black line, so that it is nearly full. The jug has no other marks on
+  it; third, a round flat plastic lid that fits the top of the jug; fourth, a metal stirring
+  spoon, a little longer than the jug is tall. Same warm, clean illustration style and line
+  quality as the reference pictures. No words, letters or numbers anywhere. Square picture.
+
+06_pour_sachet_jug1l; share of the picture height the people fill 0.74; reference pictures in order: mother, things, jug1l
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal
+  top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby.
+  Reference picture B shows the family's HOUSEHOLD THINGS: use these exact things wherever the
+  scene needs them and do not invent different ones. Reference picture C shows the family's ONE-
+  LITRE MIXING JUG, with the small metal cup beside it to show its size, its lid and the spoon:
+  use this exact jug at this exact size. It is a SMALL clear plastic jug with a handle and a
+  pouring lip, open at the top, with no cap and no neck. Standing on the table it is only one and
+  a half times as tall as the metal cup, and shorter than the mother's hand is long from wrist to
+  fingertips. A thick black line is painted right round the jug just below its rim, and the jug is
+  filled with clean water exactly up to that black line, so it is nearly full. There is NO bottle
+  anywhere in the picture. Only the mother, no child. She stands at the low wooden table. On the
+  table stand the jug and, beside it, the small metal cup, empty. She tips the one opened sachet
+  fully upside down over the open top of the jug, so that all of the white powder falls into the
+  water. Only one sachet in the picture. Her other hand holds the jug's handle to steady it. Draw
+  ONLY the people and the things they are touching or using, complete from head to feet, small
+  enough to leave a clear margin on every side. The background must be one completely flat, plain,
+  bright magenta colour (pure #FF00FF) everywhere: no room, no floor, no wall, no ground line, no
+  shadow, no gradient. Use no pink or purple anywhere on the people or the things. Same warm,
+  clean illustration style and line quality as the reference pictures. No words, letters or
+  numbers anywhere. Square picture.
+
+07_stir_jug1l; 0.74; reference pictures in order: mother, things, jug1l
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal
+  top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby.
+  Reference picture B shows the family's HOUSEHOLD THINGS: use these exact things wherever the
+  scene needs them and do not invent different ones. Reference picture C shows the family's ONE-
+  LITRE MIXING JUG, with the small metal cup beside it to show its size, its lid and the spoon:
+  use this exact jug at this exact size. It is a SMALL clear plastic jug with a handle and a
+  pouring lip, open at the top, with no cap and no neck. Standing on the table it is only one and
+  a half times as tall as the metal cup, and shorter than the mother's hand is long from wrist to
+  fingertips. A thick black line is painted right round the jug just below its rim, and the jug is
+  filled with clean water exactly up to that black line, so it is nearly full. There is NO bottle
+  anywhere in the picture. Only the mother, no child. She stands at the low wooden table. On the
+  table stand the jug and, beside it, the small metal cup, empty. She stirs the water in the jug
+  with the metal spoon, holding the jug's handle with her other hand. The water is clear, with no
+  powder left at the bottom. Draw ONLY the people and the things they are touching or using,
+  complete from head to feet, small enough to leave a clear margin on every side. The background
+  must be one completely flat, plain, bright magenta colour (pure #FF00FF) everywhere: no room, no
+  floor, no wall, no ground line, no shadow, no gradient. Use no pink or purple anywhere on the
+  people or the things. Same warm, clean illustration style and line quality as the reference
+  pictures. No words, letters or numbers anywhere. Square picture.
+
+13_cover_jug1l_b; 0.74; reference pictures in order: mother, things, jug1l
+  Reference picture A is the MOTHER: keep her face, skin tone, green patterned head wrap, teal
+  top, patterned wrapper skirt and sandals exactly. She is NOT holding a baby; ignore the baby.
+  Reference picture B shows the family's HOUSEHOLD THINGS: use these exact things wherever the
+  scene needs them and do not invent different ones. Reference picture C shows the family's ONE-
+  LITRE MIXING JUG, with the small metal cup beside it to show its size, its lid and the spoon:
+  use this exact jug at this exact size. It is a SMALL clear plastic jug with a handle and a
+  pouring lip, open at the top, with no cap and no neck. Standing on the table it is only one and
+  a half times as tall as the metal cup, and shorter than the mother's hand is long from wrist to
+  fingertips. A thick black line is painted right round the jug just below its rim, and the jug is
+  filled with clean water exactly up to that black line, so it is nearly full. There is NO bottle
+  anywhere in the picture. Only the mother, no child. She stands at the low wooden table. On the
+  table stand the jug and, beside it, the small metal cup, empty. With both hands she places the
+  round flat lid on the top of the jug. The table is the same light-brown low wooden table as in
+  reference picture B. The jug's clear plastic is drawn in pale blue and white all over, and the
+  background colour never shows through it. Its thick black line and the water filled up to that
+  line are clearly visible. Draw ONLY the people and the things they are touching or using,
+  complete from head to feet, small enough to leave a clear margin on every side. The background
+  must be one completely flat, plain, bright magenta colour (pure #FF00FF) everywhere: no room, no
+  floor, no wall, no ground line, no shadow, no gradient. Use no pink or purple anywhere on the
+  people or the things. Same warm, clean illustration style and line quality as the reference
+  pictures. No words, letters or numbers anywhere. Square picture.
+

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Pregnancy danger signs</title>
+  <desc id="desc">A pregnant woman beside a clinic card marked with a red cross, and five signs to check for: bleeding, headache, trouble breathing, pain, and the baby's movements.</desc>
+  <rect width="640" height="360" fill="#f7f5ef"/>
+
+  <!-- The woman and the clinic card share the upper band; the signs have a row of their own.
+       In the first version with icons they shared one band and the first sign sat on her dress. -->
+  <circle cx="178" cy="78" r="40" fill="#8b5a3c"/>
+  <path d="M122 246c10-92 42-138 94-138s86 46 96 138z" fill="#b8ddd6" stroke="#0b6b5b" stroke-width="9"/>
+  <circle cx="226" cy="196" r="40" fill="#eff8f4" stroke="#0b6b5b" stroke-width="8"/>
+
+  <rect x="412" y="56" width="118" height="106" rx="16" fill="#ffffff" stroke="#d9d9e3" stroke-width="8"/>
+  <path d="M471 78v62M440 109h62" stroke="#b3261e" stroke-width="15" stroke-linecap="round"/>
+
+  <path d="M92 258h456" stroke="#e1d6c0" stroke-width="18" stroke-linecap="round"/>
+
+  <!-- THE FIVE SIGNS. These rings held nothing until 2026-11-15: three empty circles, while the
+       picture's own description promised icons for bleeding, headache, breathing, pain and the
+       baby's movements. A caregiver using a screen reader heard five signs that were not drawn.
+       David ruled on 2026-11-15 to draw them rather than shorten the words.
+       Every ring is the same size and the same colour, so no one sign reads as more urgent than
+       another; the screen's own text says which is which, because an icon is never the only
+       carrier of meaning (UI-STANDARDS 11.2). -->
+  <g stroke="#b26a00" stroke-width="7" fill="#fff4e5">
+    <circle cx="128" cy="310" r="28"/>
+    <circle cx="232" cy="310" r="28"/>
+    <circle cx="336" cy="310" r="28"/>
+    <circle cx="440" cy="310" r="28"/>
+    <circle cx="544" cy="310" r="28"/>
+  </g>
+
+  <!-- Bleeding: a drop. -->
+  <path d="M128 295c-9 12-12 21 0 27 12-6 9-15 0-27z" fill="#b3261e"/>
+
+  <!-- Headache: a head, with the ache coming off it. -->
+  <circle cx="232" cy="316" r="10" fill="#8b5a3c"/>
+  <path d="M232 298v-8M220 302l-6-6M244 302l6-6" stroke="#b26a00" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <!-- Trouble breathing: short, fast breaths. -->
+  <path d="M324 306q12-10 24 0M324 320q12-10 24 0" stroke="#0b6b5b" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Pain. -->
+  <path d="M445 292l-13 21h9l-5 16 14-22h-9l7-15z" fill="#b3261e"/>
+
+  <!-- The baby's movements: a small foot. -->
+  <ellipse cx="544" cy="317" rx="8" ry="11" fill="#8b5a3c"/>
+  <circle cx="537" cy="303" r="2.8" fill="#8b5a3c"/>
+  <circle cx="544" cy="301" r="2.8" fill="#8b5a3c"/>
+  <circle cx="551" cy="303" r="2.8" fill="#8b5a3c"/>
+</svg>

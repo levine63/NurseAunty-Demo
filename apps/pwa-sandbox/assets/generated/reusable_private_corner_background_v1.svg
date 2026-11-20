@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Prototype private corner background</title>
+  <desc id="desc">Generic private indoor corner for sensitive modules, with privacy screen and simple storage shelf.</desc>
+  <rect width="1200" height="720" fill="#f1efe7"/>
+  <rect y="475" width="1200" height="245" fill="#d9c9ab"/>
+  <rect x="150" y="120" width="900" height="400" rx="18" fill="#fff8e9"/>
+  <path d="M258 170h210v350H258z" fill="#4c9289" opacity=".28"/>
+  <path d="M468 170h220v350H468z" fill="#287a78" opacity=".22"/>
+  <path d="M258 170v350M468 170v350M688 170v350" stroke="#6f776f" stroke-width="5"/>
+  <rect x="770" y="278" width="150" height="210" rx="10" fill="#c7b08d"/>
+  <path d="M790 328h110M790 388h110M790 448h110" stroke="#7f5946" stroke-width="7" stroke-linecap="round"/>
+  <text x="76" y="664" font-family="Arial, sans-serif" font-size="26" fill="#24302f">Prototype private background - replace/local-review before field use</text>
+</svg>

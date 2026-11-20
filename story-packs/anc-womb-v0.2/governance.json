@@ -1,0 +1,573 @@
+{
+  "about": "One row per comic panel: where it came from, what its picture must show, how its caption was handled, and what still needs a human.",
+  "label": "UNREVIEWED PROTOTYPE",
+  "fieldUseApproved": false,
+  "clinicalReviewRequired": true,
+  "sourceDocument": {
+    "title": "Womb with a view",
+    "url": "https://docs.google.com/document/d/1h4a4rTmIuyqCvO0OVqu4WrisYmj-XfR9n5P7cht7ado/edit",
+    "readOn": "2026-11-09",
+    "note": "The doc also holds a 'Lower priority' set and an explicitly unused set of proposals; neither is in this pack."
+  },
+  "artStatus": "All 18 images from the source document are in assets/stories/womb/. EVERY ONE has English lettered into the artwork - a title bar, a drawn speech bubble and a caption bar baked into the PNG - so the panels mask that text with opaque boxes fed from slugs (David, 2026-11-09: 'The goal is to put text boxes over text. You might block out the entire checksheet in this specific comic. Later we can redraw sans words, as well.'). Full inventory of what each picture shows and what text is drawn in: docs/reviews/WOMB_ART_REVIEW_2026-11-09.md.",
+  "cards": [
+    {
+      "panelId": "anc_visits",
+      "strip": "anc_womb_visits_story",
+      "docSection": "Routine ANC checks",
+      "speechSlug": "tx.womb.anc_visits.say",
+      "captionSlug": "tx.womb.anc_visits.caption",
+      "imageDescription": "The baby marks off a tiny calendar inside the womb with a pencil. Visits 1 to 8 carry happy star stickers. The baby is on the phone, pointing at the calendar.",
+      "artExists": false,
+      "captionHandling": "The doc's caption, shortened for plain language.",
+      "docCaption": "Complete All ANC Visits: Attend at least 8 ANC visits throughout your pregnancy to monitor your and your baby's health and prevent complications.",
+      "duplicatesGoverned": null,
+      "reviewNote": null
+    },
+    {
+      "panelId": "blood_tests",
+      "strip": "anc_womb_visits_story",
+      "docSection": "Supply line",
+      "speechSlug": "tx.womb.blood_tests.say",
+      "captionSlug": "tx.womb.blood_tests.caption",
+      "imageDescription": "The baby stands beside a tiny pipe labelled 'Mommy's blood' and inspects the flow with a magnifying glass.",
+      "artExists": false,
+      "captionHandling": "The doc's caption, shortened for plain language.",
+      "docCaption": "Nov 2 edit kept. The earlier wording said 'It's free and private (verify for each country)'; the edit says to add that only where verified, so it is left out.",
+      "duplicatesGoverned": null,
+      "reviewNote": "Deliberately omits 'free and private', per the doc's own Nov 2 instruction. Do not restore it without country confirmation."
+    },
+    {
+      "panelId": "tetanus",
+      "strip": "anc_womb_visits_story",
+      "docSection": "Shield for two",
+      "speechSlug": "tx.womb.tetanus.say",
+      "captionSlug": "tx.womb.tetanus.caption",
+      "imageDescription": "The baby wears tiny knight's armour. A glowing shield appears as a nurse outside gives Mommy an injection in the arm.",
+      "artExists": false,
+      "captionHandling": "The doc's caption, shortened for plain language.",
+      "docCaption": "Nov 2 edit kept; it adds 'Bring your card and ask which doses you need.'",
+      "duplicatesGoverned": null,
+      "reviewNote": null
+    },
+    {
+      "panelId": "mms",
+      "strip": "anc_womb_visits_story",
+      "docSection": "The daily pill",
+      "speechSlug": "tx.womb.mms.say",
+      "captionSlug": "tx.womb.mms.caption",
+      "imageDescription": "The baby in a tiny yellow hard hat holds a clipboard beside a stack of glowing MMS bricks.",
+      "artExists": false,
+      "captionHandling": "The doc's caption, shortened for plain language.",
+      "docCaption": "MMS (Multiple Micronutrient Supplementation): One pill daily gives your baby the vitamins and minerals they need to grow strong. If pills make your stomach upset, take them with evening meals before sleep. Do not stop without asking your nurse.",
+      "duplicatesGoverned": null,
+      "reviewNote": "RW-G11 flags missing iron/folate/calcium adherence teaching. 'MMS' is a clinical abbreviation and must not reach a caregiver screen untranslated."
+    },
+    {
+      "panelId": "bednet",
+      "strip": "anc_womb_protect_story",
+      "docSection": "The malaria shield",
+      "speechSlug": "tx.womb.bednet.say",
+      "captionSlug": "tx.womb.bednet.caption",
+      "imageDescription": "A frustrated mosquito has its stinger comically bent sideways against a glowing grid - the bed net - over Mom's bed. Doc image note: bend the mosquito's nose; can the baby be under the net?",
+      "artExists": false,
+      "captionHandling": "The doc's caption, shortened for plain language.",
+      "docCaption": "Sleep Under an ITN (Insecticide Treated Bed Nets) every night: Protecting yourself from malaria is vital for preventing anemia and low birth weight.",
+      "duplicatesGoverned": "bednet_hanging_reminder",
+      "reviewNote": null
+    },
+    {
+      "panelId": "no_smoking",
+      "strip": "anc_womb_protect_story",
+      "docSection": "No smoking",
+      "speechSlug": "tx.womb.no_smoking.say",
+      "captionSlug": "tx.womb.no_smoking.caption",
+      "imageDescription": "The baby holds its nose and gestures with the phone at a no-smoke sign on the womb wall. Faint dark fumes try to seep in from outside and are blocked.",
+      "artExists": false,
+      "captionHandling": "The doc's caption, shortened for plain language.",
+      "docCaption": "Avoid Harmful Substances: Stay away from tobacco smoke, alcohol, and indoor cooking smoke to protect your baby's developing brain and lungs.",
+      "duplicatesGoverned": null,
+      "reviewNote": null
+    },
+    {
+      "panelId": "rest",
+      "strip": "anc_womb_protect_story",
+      "docSection": "Shaken up",
+      "speechSlug": "tx.womb.rest.say",
+      "captionSlug": "tx.womb.rest.caption",
+      "imageDescription": "The baby is tossed about inside the womb, clinging to a tiny phone, motion blur all around. Outside, Mommy carries a very big jug of water.",
+      "artExists": false,
+      "captionHandling": "The doc's caption, shortened for plain language.",
+      "docCaption": "Avoid Heavy Labor & Get Rest: Rest is essential. Avoid heavy lifting and intense physical strain to prevent complications and exhaustion.",
+      "duplicatesGoverned": null,
+      "reviewNote": null
+    },
+    {
+      "panelId": "partner_support",
+      "strip": "anc_womb_protect_story",
+      "docSection": "Household support",
+      "speechSlug": "tx.womb.partner_support.say",
+      "captionSlug": "tx.womb.partner_support.caption",
+      "imageDescription": "The baby in a tiny general's hat points to a to-do list on the womb wall - wash dishes, fetch water, cook dinner - with a big tick beside a picture of Dad, not Mom. Doc image note: add the umbilical cord; the checklist is unclear, decide which items are ticked.",
+      "artExists": false,
+      "captionHandling": "The doc's caption, shortened for plain language.",
+      "docCaption": "Involve Your Partner: A supportive partner and family are crucial. Family members should help with heavy chores to give you the rest you and your baby need.",
+      "duplicatesGoverned": null,
+      "reviewNote": null
+    },
+    {
+      "panelId": "one_more_plate",
+      "strip": "anc_womb_eating_story",
+      "docSection": "One more plate",
+      "speechSlug": "tx.womb.one_more_plate.say",
+      "captionSlug": "tx.womb.one_more_plate.caption",
+      "imageDescription": "The baby holds up an empty plate and taps it with a spoon while talking on the phone.",
+      "artExists": false,
+      "captionHandling": "The doc's caption, shortened for plain language.",
+      "docCaption": "Nov 2 edit kept; the earlier wording said 'dal' rather than 'beans'.",
+      "duplicatesGoverned": null,
+      "reviewNote": null
+    },
+    {
+      "panelId": "danger_signs",
+      "strip": "anc_womb_danger_story",
+      "docSection": "The danger signals",
+      "speechSlug": "tx.womb.danger_signs.say",
+      "captionSlug": "tx.womb.danger_signs.caption",
+      "imageDescription": "The baby in a doctor's outfit holds a phone with an alarmed expression. Beside it a tiny glowing red warning siren and a checklist: bleeding? severe headache? fever? Doc image note: the cord should go into the uterine wall, not the bed or the siren.",
+      "artExists": false,
+      "captionHandling": "Pointer only. The doc's own caption (\"Recognize Danger Signs: vaginal bleeding, severe headaches, high fever, reduced fetal movements (third trimester), sudden swelling of the face feet or hands, severe belly pain, fluid leaking before labor.\") restates clinical advice that anc_triage already governs, so it is NOT copied here.",
+      "docCaption": "Recognize Danger Signs: vaginal bleeding, severe headaches, high fever, reduced fetal movements (third trimester), sudden swelling of the face feet or hands, severe belly pain, fluid leaking before labor.",
+      "duplicatesGoverned": "anc_triage",
+      "reviewNote": "The doc's caption is a second copy of the pregnancy danger-sign list that anc_triage and tx.clinical_screen.pregnancy.* already govern, and it is NOT the same list - it omits convulsions, which RW-G05 in the Rwanda memo already flags as a coverage gap. A comic that restates danger signs in its own words is a second clinical source that will drift from the first. Needs David's ruling."
+    },
+    {
+      "panelId": "birth_kit",
+      "strip": "anc_womb_birth_story",
+      "docSection": "Ready for birth",
+      "speechSlug": "tx.womb.birth_kit.say",
+      "captionSlug": "tx.womb.birth_kit.caption",
+      "imageDescription": "The baby peers through a tiny magnifying glass at a birth-kit bag labelled MONEY, CLOTHES packed inside the womb, phone in hand, looking satisfied.",
+      "artExists": false,
+      "captionHandling": "Pointer only. The doc's own caption lists the birth-kit contents that anc_birth_plan already governs, so it is NOT copied here. NOTE 2026-11-09: the first version of this row shipped the authoring marker 'GOVERNED ELSEWHERE - link to the birth plan.' as the caregiver caption, because the panel was missing from the pointer map and fell through to the transcription note. test/demo-story-packs.test.mjs now refuses that class of text in any pack.",
+      "docCaption": "Prepare for Birth: Have your birth plan ready, including savings, transport, a clean delivery kit, and baby clothes, well before your due date.",
+      "duplicatesGoverned": "anc_birth_plan",
+      "reviewNote": null
+    },
+    {
+      "panelId": "first_feed",
+      "strip": "anc_womb_birth_story",
+      "docSection": "First breastfeeding plan",
+      "speechSlug": "tx.womb.first_feed.say",
+      "captionSlug": "tx.womb.first_feed.caption",
+      "imageDescription": "The baby in a tiny chef's hat points at a feeding plan on the wall and a sign reading 'Golden milk (colostrum) - first hour!'",
+      "artExists": false,
+      "captionHandling": "The doc's caption, shortened for plain language.",
+      "docCaption": "Early Initiation of Breastfeeding: Plan to breastfeed your baby within the first hour of birth. The first yellow milk (colostrum) is packed with natural defenses.",
+      "duplicatesGoverned": null,
+      "reviewNote": "RW-G11 in the Rwanda memo says the bank has no explicit first-hour breastfeeding teaching. This panel would be the first."
+    },
+    {
+      "panelId": "moved_out",
+      "strip": "anc_womb_after_birth_story",
+      "docSection": "Moved out",
+      "speechSlug": "tx.womb.moved_out.say",
+      "captionSlug": "tx.womb.moved_out.caption",
+      "imageDescription": "The baby sits swaddled beside a moving box marked WOMB, phone in hand, with a calendar showing check-up stickers.",
+      "artExists": false,
+      "captionHandling": "Pointer only. The doc's own caption (\"Nov 2 edit kept. Both versions carry '(verify)' and the two disagree on the later visits; the 6-week visit in the earlier version is left out as unverified.\") restates clinical advice that pnc_reminders already governs, so it is NOT copied here.",
+      "docCaption": "Nov 2 edit kept. Both versions carry '(verify)' and the two disagree on the later visits; the 6-week visit in the earlier version is left out as unverified.",
+      "duplicatesGoverned": "pnc_reminders",
+      "reviewNote": "The schedule is marked (verify) in the doc and the two versions disagree. RW-G10 in the Rwanda memo gives the Rwanda contacts as 24h, CHW day 3, days 7-14, facility at six weeks. Not safe to ship until a clinician rules."
+    },
+    {
+      "panelId": "mothers_alarm",
+      "strip": "anc_womb_after_birth_story",
+      "docSection": "Mommy's alarm",
+      "speechSlug": "tx.womb.mothers_alarm.say",
+      "captionSlug": "tx.womb.mothers_alarm.caption",
+      "imageDescription": "A sequel to the danger-signals panel, reusing its red siren. The baby sounds the alarm while Mommy rests.",
+      "artExists": false,
+      "captionHandling": "Pointer only. The doc's own caption (\"Go now for heavy bleeding, bleeding with dizziness or fainting, fever, foul-smelling discharge, severe headache or blurred vision, fits, chest pain or difficulty breathing (verify).\") restates clinical advice that pnc_lactation already governs, so it is NOT copied here.",
+      "docCaption": "Go now for heavy bleeding, bleeding with dizziness or fainting, fever, foul-smelling discharge, severe headache or blurred vision, fits, chest pain or difficulty breathing (verify).",
+      "duplicatesGoverned": "pnc_lactation",
+      "reviewNote": "Same problem as anc_visits' danger panel: a second copy of a governed danger-sign list, marked (verify) in the doc."
+    },
+    {
+      "panelId": "my_own_alarm",
+      "strip": "anc_womb_after_birth_story",
+      "docSection": "My own alarm",
+      "speechSlug": "tx.womb.my_own_alarm.say",
+      "captionSlug": "tx.womb.my_own_alarm.caption",
+      "imageDescription": "The baby holds the phone awkwardly and points at a checklist about itself.",
+      "artExists": false,
+      "captionHandling": "Pointer only. The doc's own caption (\"Go now if your baby feeds poorly or can't feed, has fits, breathes fast or with chest pulling in, feels too hot or too cold, is very still or moves only when touched, has any yellow skin on day 1 or yellow palms or soles at any age, or has a red or pus-filled cord (verify against WHO young-infant danger signs).\") restates clinical advice that newborn_triage already governs, so it is NOT copied here.",
+      "docCaption": "Go now if your baby feeds poorly or can't feed, has fits, breathes fast or with chest pulling in, feels too hot or too cold, is very still or moves only when touched, has any yellow skin on day 1 or yellow palms or soles at any age, or has a red or pus-filled cord (verify against WHO young-infant danger signs).",
+      "duplicatesGoverned": "newborn_triage",
+      "reviewNote": "The Nov 2 wording ADDS 'any yellow skin on day 1', which is exactly the gap RW-G04 flags in newborn_triage. The comic would be ahead of the governed screen - which is the wrong way round. Fix the screen first."
+    },
+    {
+      "panelId": "spacing",
+      "strip": "anc_womb_after_birth_story",
+      "docSection": "Room reserved",
+      "speechSlug": "tx.womb.spacing.say",
+      "captionSlug": "tx.womb.spacing.caption",
+      "imageDescription": "The newborn hangs a sign on the womb door reading 'Renovating: closed 2 years'.",
+      "artExists": false,
+      "captionHandling": "The doc's caption, shortened for plain language.",
+      "docCaption": "Nov 2 edit kept.",
+      "duplicatesGoverned": null,
+      "reviewNote": "The doc says: pretest with women and husbands; spacing can touch religious and family sensitivities."
+    }
+  ],
+  "translation": {
+    "round": "WOMB-RW1",
+    "locale": "rw-RW",
+    "on": "2026-11-09",
+    "by": "Claude (Opus 5)",
+    "about": "Model-authored Kinyarwanda drafts, built from wording already in i18n/phrase_bank.json where one exists. No native speaker has read any of them. A back-translation can catch a line that means the wrong thing; it cannot show that a caregiver understands it.",
+    "outsideVendorReview": "none - ChatGPT and Gemini need the API key on David's laptop, which a cloud container cannot reach",
+    "lines": [
+      {
+        "slug": "tx.feature_anc_womb_visits_story",
+        "en": "Womb with a view: at the clinic",
+        "rw": "Womb with a View: ku ivuriro",
+        "confidence": "low",
+        "note": "Series title kept as a proper name, as RW1 did for tx.anc_comic.title. Rwanda should decide whether to give it a local name."
+      },
+      {
+        "slug": "tx.feature_anc_womb_visits_story_summary",
+        "en": "The baby checks the visits, the tests, the injection and the daily pill.",
+        "rw": "Umwana areba isura, ibipimo, urushinge n'ikinini cya buri munsi.",
+        "confidence": "low",
+        "note": "'isura' is the bank's word for a care visit (tx.pnc_reminders.use_the_visit_date_from). 'urushinge' for an injection has no precedent in the bank; confirm it reads as the vaccination, not a needle in general."
+      },
+      {
+        "slug": "tx.womb.anc_visits.say",
+        "en": "Another check-up, Mommy. Ask if I am growing properly. We already know I am adorable.",
+        "rw": "Irindi sura, Mama. Baza niba ndimo gukura neza. Ko tuzi ko ndi mwiza!",
+        "confidence": "low",
+        "note": "Concord fixed: the draft said 'Indi sura' (class 9) while the same word takes class 5 agreement in the captions ('amasura', 'ryawe rya'). Read back as 'Another visit, Mama. Ask whether I'm growing well. Since we know I'm good-looking!' - the joke lands.",
+        "rewrittenAfterBackTranslation": true
+      },
+      {
+        "slug": "tx.womb.anc_visits.caption",
+        "en": "Go to all your antenatal visits - at least eight - so the nurse can check you and the baby.",
+        "rw": "Jya mu masura yose yo gusuzumisha inda - nibura umunani - kugira ngo umukozi w'ubuzima akurebe wowe n'umwana.",
+        "confidence": "low",
+        "note": "Subjunctive fixed: 'kugira ngo' takes 'akurebe', not the indicative 'akureba'. Otherwise read back exactly as the English.",
+        "rewrittenAfterBackTranslation": true
+      },
+      {
+        "slug": "tx.womb.blood_tests.say",
+        "en": "Everything I get comes through your blood, Mommy. Let the nurse check it is good!",
+        "rw": "Ibyo mpabwa byose binyura mu maraso yawe, Mama. Reka umukozi w'ubuzima arebe ko ameze neza!",
+        "confidence": "low",
+        "note": "REWRITTEN. The draft's 'Ibyo mbona byose' read back as 'everything I SEE passes through your blood', which is not what the English says. 'mpabwa' (am given) replaces it, and 'ameze neza' makes the blood the thing being checked rather than the baby.",
+        "rewrittenAfterBackTranslation": true
+      },
+      {
+        "slug": "tx.womb.blood_tests.caption",
+        "en": "Some infections and low blood have no signs. Get tested at your first visit.",
+        "rw": "Zimwe mu ndwara n'amaraso make ntibigaragaza ibimenyetso. Ipimishe ku isura ryawe rya mbere.",
+        "confidence": "low",
+        "note": "'amaraso make' for anaemia follows the bank's plain-language habit rather than a clinical term. The English deliberately omits 'free and private', per the source document's own Nov 2 instruction."
+      },
+      {
+        "slug": "tx.womb.tetanus.say",
+        "en": "Tetanus? Not today. Mommy's injection is my shield.",
+        "rw": "Tetanosi? Si uyu munsi. Urushinge rwa Mama ni ingabo yanjye.",
+        "confidence": "low",
+        "note": "'Tetanosi' is kept as the name a nurse would say; the bank has no tetanus word. Ask whether a familiar local name exists and whether 'ingabo' (shield) carries the joke."
+      },
+      {
+        "slug": "tx.womb.tetanus.caption",
+        "en": "The tetanus injection is safe in pregnancy and protects you and the new baby. Bring your card and ask which doses you need.",
+        "rw": "Urushinge rwa tetanosi nta kibazo rutera ku batwite kandi rurinda wowe n'uruhinja. Zana ikarita yawe ubaze inshinge ukeneye.",
+        "confidence": "low",
+        "note": "'ikarita' from tx.immunization.plan.confirm_with_card. Confirm 'nta kibazo rutera' reads as 'is safe' and not as 'causes no trouble' in a dismissive sense."
+      },
+      {
+        "slug": "tx.womb.mms.say",
+        "en": "Do you take the pill the nurse gave you every day, Mommy? These fine toes do not build themselves.",
+        "rw": "Ese ufata ikinini umukozi w'ubuzima yaguhaye buri munsi, Mama? Sinshobora kwiyubaka njyenyine.",
+        "confidence": "low",
+        "note": "REWRITTEN. The draft's 'my nice feet do not build themselves' read back as a strange image with an unclear punchline. This keeps the English joke's sense - the baby cannot build itself - without an anatomy word that does not carry.",
+        "rewrittenAfterBackTranslation": true
+      },
+      {
+        "slug": "tx.womb.mms.caption",
+        "en": "Take one supplement pill every day. If it upsets your stomach, take it with the evening meal. Do not stop without asking the nurse.",
+        "rw": "Fata ikinini kimwe cy'inyongera buri munsi. Niba gitera kubabara mu nda, gifate ku mafunguro ya nimugoroba. Ntugahagarike utabajije umukozi w'ubuzima.",
+        "confidence": "low",
+        "note": "SAFETY WORDING. The draft's 'gitera inda kubabara' was read as possibly 'makes the PREGNANCY hurt' rather than 'upsets your stomach' - 'inda' is both. 'kubabara mu nda' puts it in the belly. This is a side-effect instruction, so the ambiguity mattered.",
+        "rewrittenAfterBackTranslation": true
+      },
+      {
+        "slug": "tx.feature_anc_womb_protect_story",
+        "en": "Womb with a view: keeping my room safe",
+        "rw": "Womb with a View: kurinda icyumba cyanjye",
+        "confidence": "low",
+        "note": "Series title kept as a proper name."
+      },
+      {
+        "slug": "tx.feature_anc_womb_protect_story_summary",
+        "en": "Bed nets, smoke, heavy loads, and who else can do the chores.",
+        "rw": "Inzitiramubu, umwotsi, imizigo iremereye, n'abandi bashobora gukora imirimo yo mu rugo.",
+        "confidence": "standard",
+        "note": "'inzitiramubu' is the bank's bed net (tx.bednet.*); the rest is ordinary vocabulary."
+      },
+      {
+        "slug": "tx.womb.bednet.say",
+        "en": "Sorry, mosquito. This room is occupied. No visitors!",
+        "rw": "Mbabarira, mubu. Iki cyumba kirimo umuntu. Nta bashyitsi!",
+        "confidence": "low",
+        "note": "Composed. The joke is the baby turning a mosquito away like a guest; check 'nta bashyitsi' is funny rather than rude."
+      },
+      {
+        "slug": "tx.womb.bednet.caption",
+        "en": "Sleep under a treated bed net every night.",
+        "rw": "Ryama mu nzitiramubu ifite umuti buri joro.",
+        "confidence": "standard",
+        "note": "'inzitiramubu' from tx.bednet.*; 'ifite umuti' for treated, as the bank describes chlorine-treated water."
+      },
+      {
+        "slug": "tx.womb.no_smoking.say",
+        "en": "Cough, cough! Mommy, somebody is smoking. Tell them my room has a strict no-smoking rule!",
+        "rw": "Inkorora, inkorora! Mama, hari unywa itabi. Babwire ko mu cyumba cyanjye bibujijwe kunywa itabi!",
+        "confidence": "low",
+        "note": "'inkorora' is the bank's cough. Composed otherwise."
+      },
+      {
+        "slug": "tx.womb.no_smoking.caption",
+        "en": "Keep away from tobacco smoke, alcohol and cooking smoke.",
+        "rw": "Irinde umwotsi w'itabi, umwotsi wo guteka, n'inzoga.",
+        "confidence": "low",
+        "note": "Reordered: the draft put alcohol between two kinds of smoke, which the back-translation said could be misparsed. The two smokes are now together.",
+        "rewrittenAfterBackTranslation": true
+      },
+      {
+        "slug": "tx.womb.rest.say",
+        "en": "Hello Daddy! Could you carry that? Mommy is already carrying me.",
+        "rw": "Muraho Papa! Ese wowe wagitwara? Mama asanzwe antwaye.",
+        "confidence": "low",
+        "note": "REWRITTEN. The draft's 'Wakwikorera icyo?' read back as 'would you do that for yourself?', which is not the English. 'wagitwara' is carry, and it now echoes 'antwaye' (is carrying me) the way the English echoes carry/carrying.",
+        "rewrittenAfterBackTranslation": true
+      },
+      {
+        "slug": "tx.womb.rest.caption",
+        "en": "Rest, and let someone else lift the heavy things.",
+        "rw": "Ruhuka, kandi ureke undi muntu aterure ibiremereye.",
+        "confidence": "low",
+        "note": "Composed."
+      },
+      {
+        "slug": "tx.womb.partner_support.say",
+        "en": "Hi Daddy. Mommy is making a whole person. You can make dinner.",
+        "rw": "Muraho Papa. Mama ari gukora umuntu wuzuye. Wowe ushobora guteka ifunguro rya nimugoroba.",
+        "confidence": "low",
+        "note": "'kurema' replaced by 'gukora'. The back-translation warned that 'kurema' is the verb used of God creating and could read as irreverent in Rwanda. 'gukora' is also closer to the English 'making'. Still ask whether telling Papa to cook lands as warm rather than sharp.",
+        "rewrittenAfterBackTranslation": true
+      },
+      {
+        "slug": "tx.womb.partner_support.caption",
+        "en": "Ask your partner and family to take the heavy chores so you can rest.",
+        "rw": "Saba uwo mubana n'umuryango gukora imirimo iremereye kugira ngo uruhuke.",
+        "confidence": "low",
+        "note": "'uwo mubana' was chosen over 'umugabo wawe' so the line does not assume a husband. Confirm it is natural."
+      },
+      {
+        "slug": "tx.feature_anc_womb_eating_story",
+        "en": "Womb with a view: one more plate",
+        "rw": "Womb with a View: indi sahani",
+        "confidence": "low",
+        "note": "Series title kept as a proper name."
+      },
+      {
+        "slug": "tx.feature_anc_womb_eating_story_summary",
+        "en": "The baby asks for one extra meal a day.",
+        "rw": "Umwana asaba irindi funguro rimwe ku munsi.",
+        "confidence": "standard",
+        "note": "Ordinary vocabulary."
+      },
+      {
+        "slug": "tx.womb.one_more_plate.say",
+        "en": "One plate for you, one more for me, Mommy!",
+        "rw": "Isahani imwe kuri wowe, indi kuri njye, Mama!",
+        "confidence": "standard",
+        "note": "Ordinary vocabulary; the English is as plain."
+      },
+      {
+        "slug": "tx.womb.one_more_plate.caption",
+        "en": "Eat one extra snack or small meal every day. Add eggs, fish, beans, greens and fruit.",
+        "rw": "Fata agafunguro kamwe cyangwa ifunguro rito ry'inyongera buri munsi. Ongeraho amagi, amafi, ibishyimbo, imboga n'imbuto.",
+        "confidence": "low",
+        "note": "Food names are ordinary, but the list should be checked against what is actually eaten and affordable in Rwanda; the English list came from a document written for several countries."
+      },
+      {
+        "slug": "tx.feature_anc_womb_danger_story",
+        "en": "Womb with a view: the warning siren",
+        "rw": "Womb with a View: impuruza",
+        "confidence": "standard",
+        "note": "'impuruza' is the bank's alarm (tx.feature_cholera_hotspot_alert)."
+      },
+      {
+        "slug": "tx.feature_anc_womb_danger_story_summary",
+        "en": "The baby sounds the alarm, and points at the pregnancy danger check.",
+        "rw": "Umwana avuza impuruza, akerekana aho wareba ibimenyetso by'akaga byo gutwita.",
+        "confidence": "low",
+        "note": "'ibimenyetso by'akaga' is the bank's danger signs. Composed otherwise."
+      },
+      {
+        "slug": "tx.womb.danger_signs.say",
+        "en": "Mommy, heavy bleeding or a high fever means we go to the clinic now. I am much too young to handle emergencies!",
+        "rw": "Mama, kuva amaraso menshi cyangwa umuriro mwinshi bivuze ko tujya ku ivuriro nonaha. Ndi muto cyane ku byihutirwa!",
+        "confidence": "low",
+        "note": "'kuva amaraso menshi' and 'umuriro' are the bank's own danger wording; 'ivuriro' is its clinic. CLINICAL: this line names two danger signs in a joke. A reviewer should confirm the joke does not soften them."
+      },
+      {
+        "slug": "tx.womb.danger_signs.caption",
+        "en": "Open the pregnancy danger check to see the signs that mean go to the clinic now.",
+        "rw": "Fungura isuzuma ry'ibimenyetso by'akaga byo gutwita urebe ibisobanura kujya ku ivuriro nonaha.",
+        "confidence": "low",
+        "note": "'ibivuze' replaced by 'ibisobanura', which the back-translation called more natural. CLINICAL: this is an emergency entry point, so the wording is worth a native reading even though it only points.",
+        "rewrittenAfterBackTranslation": true
+      },
+      {
+        "slug": "tx.feature_anc_womb_birth_story",
+        "en": "Womb with a view: ready for the day",
+        "rw": "Womb with a View: twiteguye umunsi",
+        "confidence": "low",
+        "note": "Series title kept as a proper name."
+      },
+      {
+        "slug": "tx.feature_anc_womb_birth_story_summary",
+        "en": "The birth kit, and the first golden milk.",
+        "rw": "Ibikoresho byo kubyara, n'amashereka ya mbere y'umuhondo.",
+        "confidence": "standard",
+        "note": "'amashereka ya mbere ... y'umuhondo' is the bank's colostrum (tx.bf.q.*)."
+      },
+      {
+        "slug": "tx.womb.birth_kit.say",
+        "en": "Transport plan and money? Birth kit? Baby clothes? Good. I will bring myself.",
+        "rw": "Uburyo bwo kugenda n'amafaranga? Ibikoresho byo kubyara? Imyenda y'umwana? Byiza. Njye nzizana.",
+        "confidence": "low",
+        "note": "'uburyo bwo kugenda' and 'amafaranga' are the bank's transport and money (tx.feature_family_preparedness_summary)."
+      },
+      {
+        "slug": "tx.womb.birth_kit.caption",
+        "en": "Open the birth plan to write down your transport, money and what to pack.",
+        "rw": "Fungura gahunda yo kubyara wandike uburyo bwo kugenda, amafaranga n'ibyo uzitwaza.",
+        "confidence": "low",
+        "note": "'gahunda yo kubyara' is the bank's birth plan (tx.anc_plan.change_plan)."
+      },
+      {
+        "slug": "tx.womb.first_feed.say",
+        "en": "Just so you know, Mommy: within an hour of my arrival I want that first golden milk. Skip the honey - your milk is my favourite!",
+        "rw": "Umenye, Mama: mu isaha imwe mvutse nshaka amashereka ya mbere y'umuhondo. Reka ubuki - amashereka yawe ni yo nkunda!",
+        "confidence": "low",
+        "note": "'ubuki' is the bank's honey (tx.bf.q.water), where giving it to a newborn is already named as a thing not to do. CLINICAL: first-hour feeding has no governed twin in the bank; RW-G11."
+      },
+      {
+        "slug": "tx.womb.first_feed.caption",
+        "en": "Feed the baby your first yellow milk within an hour of birth. Give nothing else.",
+        "rw": "Onsa umwana amashereka yawe ya mbere y'umuhondo mu isaha ya mbere akimara kuvuka. Ntumuhe ikindi.",
+        "confidence": "low",
+        "note": "REWRITTEN. The draft's 'mu isaha imwe avutse' was called awkward for 'within an hour of birth'. CLINICAL and new teaching (RW-G11): confirm this is unambiguously the first hour after birth.",
+        "rewrittenAfterBackTranslation": true
+      },
+      {
+        "slug": "tx.feature_anc_womb_after_birth_story",
+        "en": "Womb with a view: moved out",
+        "rw": "Womb with a View: nimutse",
+        "confidence": "low",
+        "note": "REWRITTEN. The back-translation could not parse 'nimukiye' - the prefix looks like 'you (plural)' while the sense is first person. 'nimutse' is I have moved. Check it carries the womb-as-a-room joke.",
+        "rewrittenAfterBackTranslation": true
+      },
+      {
+        "slug": "tx.feature_anc_womb_after_birth_story_summary",
+        "en": "Check-ups after the birth, both alarms, and waiting before the next pregnancy.",
+        "rw": "Isura nyuma yo kubyara, impuruza zombi, no gutegereza mbere yo kongera gutwita.",
+        "confidence": "low",
+        "note": "Composed from the bank's 'nyuma yo kubyara' and 'gutwita'."
+      },
+      {
+        "slug": "tx.womb.moved_out.say",
+        "en": "I have moved out! Now we both need check-ups, starting today.",
+        "rw": "Nimutse! Ubu twembi dukeneye kwisuzumisha, guhera uyu munsi.",
+        "confidence": "low",
+        "note": "REWRITTEN for the same reason as the title above.",
+        "rewrittenAfterBackTranslation": true
+      },
+      {
+        "slug": "tx.womb.moved_out.caption",
+        "en": "Open the check-up reminders to put your visits in the app.",
+        "rw": "Fungura ibyibutsa by'isura ushyire amatariki yawe muri porogaramu.",
+        "confidence": "low",
+        "note": "'icyibutsa' is the bank's reminder; 'porogaramu' its word for the app. A pointer, not a schedule: the doc's own schedule is marked (verify) and its two versions disagree."
+      },
+      {
+        "slug": "tx.womb.mothers_alarm.say",
+        "en": "Mommy, danger signs do not stop when I arrive. Heavy bleeding or fever means clinic now!",
+        "rw": "Mama, ibimenyetso by'akaga ntibihagarara nimara kuvuka. Kuva amaraso menshi cyangwa umuriro bivuze ivuriro nonaha!",
+        "confidence": "low",
+        "note": "REWRITTEN. The draft's bare 'nvutse' read as elliptical, missing the 'when'. CLINICAL: names two danger signs inside a joke; a reviewer should confirm the joke does not soften them.",
+        "rewrittenAfterBackTranslation": true
+      },
+      {
+        "slug": "tx.womb.mothers_alarm.caption",
+        "en": "Open the after-birth check to see the signs that mean go to the clinic now.",
+        "rw": "Fungura isuzuma ryo nyuma yo kubyara urebe ibimenyetso bisobanura kujya ku ivuriro nonaha.",
+        "confidence": "low",
+        "note": "'bivuze' replaced by 'bisobanura'. CLINICAL: emergency entry point.",
+        "rewrittenAfterBackTranslation": true
+      },
+      {
+        "slug": "tx.womb.my_own_alarm.say",
+        "en": "If I am sick, take me to the clinic. I cannot dial yet!",
+        "rw": "Nindwara, unjyane ku ivuriro. Sinshobora guhamagara!",
+        "confidence": "low",
+        "note": "Composed. The joke is that the baby cannot use the phone it is always holding; check it reads."
+      },
+      {
+        "slug": "tx.womb.my_own_alarm.caption",
+        "en": "Open the newborn check to see the signs that mean go to the clinic now.",
+        "rw": "Fungura isuzuma ry'uruhinja urebe ibimenyetso bisobanura kujya ku ivuriro nonaha.",
+        "confidence": "low",
+        "note": "'bivuze' replaced by 'bisobanura'. CLINICAL: emergency entry point.",
+        "rewrittenAfterBackTranslation": true
+      },
+      {
+        "slug": "tx.womb.spacing.say",
+        "en": "I have just moved out! This room needs two years of renovation before the next tenant.",
+        "rw": "Nimutse ubu! Iki cyumba gikeneye imyaka ibiri yo kuvugururwa mbere y'undi mwana.",
+        "confidence": "low",
+        "note": "REWRITTEN twice over: 'nimukiye' as above, and the bare 'undi' which the back-translation read as class 1 - 'before another [person]' - with no agreement with 'icyumba'. Naming the child makes the birth-spacing point explicit, which is what the caption says anyway. The source document warns this subject can touch religious and family sensitivities, so it needs pretesting, not only a translation check.",
+        "rewrittenAfterBackTranslation": true
+      },
+      {
+        "slug": "tx.womb.spacing.caption",
+        "en": "Wait at least 2 years after a birth before the next pregnancy.",
+        "rw": "Tegereza nibura imyaka 2 nyuma yo kubyara mbere yo kongera gutwita.",
+        "confidence": "low",
+        "note": "The English uses the numeral 2, so this does too. Same sensitivity note as the line above."
+      }
+    ],
+    "backTranslation": {
+      "on": "2026-11-09",
+      "by": "Claude (Sonnet 5.5) subagent",
+      "method": "Blind: it saw only the Kinyarwanda under opaque line ids, with no English, no slug names and no pictures.",
+      "linesRewritten": 16,
+      "outsideVendor": "none - ChatGPT and Gemini need the API key on David's laptop, which a cloud container cannot reach. The second reader here is a sibling Claude, whose errors correlate with the translator's (ADR-064 point 3).",
+      "bankWideFinding": "The back-translator said 'isura' normally means face or appearance, not a care visit, and called it the single highest risk here because it is a core clinical term. That word is NOT this round's: it comes from the RW1 pass and runs through tx.pnc_reminders, tx.anc_comic and tx.immunization in the main bank. RW1's own memo already asks the same question about it. Two independent blind readers have now raised it. It needs one ruling for the whole bank, not a change here, which would desync these 44 lines from main's 1,505.",
+      "notFunnyFlags": "The back-translator was asked which lines would not read as funny or warm even if the words are correct. It named the daily-pill joke, the carry-that joke and the making-a-whole-person joke; the first two are rewritten above, the third keeps its joke with a safer verb. It found the tetanus, one-more-plate, danger-signs, birth-kit, honey and I-cannot-dial lines warm and likely funny."
+    }
+  },
+  "ancContactTarget": {
+    "value": 8,
+    "source": "WHO 2016 antenatal care model: a minimum of eight antenatal contacts.",
+    "drawnBy": "The chart mask on the first frame of anc_womb_visits_story renders this many cells.",
+    "statedBy": "tx.womb.anc_visits.caption, which says the same number in words.",
+    "note": "The original artwork lettered 'Visit 1' to 'Visit 8' into the picture, which no translation round could reach and no contract could govern. The cells are now drawn by the app from this one value, with no words and no numerals in them, so they read the same in every language. test/story-packs-chart.test.mjs fails if the frame and this value disagree."
+  }
+}

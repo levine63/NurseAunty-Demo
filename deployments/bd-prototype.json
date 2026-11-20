@@ -1,0 +1,8 @@
+{
+  "$schema": "../schemas/validation/deployment.schema.json",
+  "deploymentId": "bd-prototype",
+  "country": "BD",
+  "phase": "prototype",
+  "guidelinePackId": "bd-2012",
+  "guidelinePackVersion": "bd-2012.0-draft"
+}

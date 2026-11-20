@@ -1,0 +1,171 @@
+{
+  "about": "Prototype predicate table generated from child_hearing_screen screen-card clinicalVariableSet.",
+  "guidelineVersionExpected": "prototype-screen-card",
+  "inputs": {
+    "hearing_concern": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "hearing concern"
+      },
+      "subjectScopes": [
+        "school_child",
+        "child_under5"
+      ],
+      "clinicalVariableRoles": [
+        "presenting_symptom"
+      ],
+      "prototypeAssignment": "Codex-generated prototype IR from screen-card clinicalVariableSet; replace with formal clinical pipeline output."
+    },
+    "child_hearing_screen_hearingconcern": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_hearing_concern"
+      },
+      "subjectScopes": [
+        "school_child",
+        "child_under5"
+      ],
+      "clinicalVariableRoles": [
+        "presenting_symptom",
+        "clinical_finding"
+      ],
+      "followupFor": [],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_hearing_screen_hearingspeech": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_speech_delay"
+      },
+      "subjectScopes": [
+        "school_child",
+        "child_under5"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "hearing_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_hearing_screen_hearingfailed": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_failed_hearing_screen"
+      },
+      "subjectScopes": [
+        "school_child",
+        "child_under5"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "hearing_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_hearing_screen_hearingspecialist": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_sign_hearing_specialist"
+      },
+      "subjectScopes": [
+        "school_child",
+        "child_under5"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "hearing_concern"
+      ],
+      "prototypeAssignment": "Codex prototype clinical-variable screen flag; replace with formal clinical pipeline output."
+    },
+    "child_hearing_screen_hearinginfant": {
+      "type": "boolean",
+      "kind": "question",
+      "label": {
+        "en": "tx.screen_hearing_body"
+      },
+      "subjectScopes": [
+        "newborn",
+        "child_under5",
+        "school_child"
+      ],
+      "clinicalVariableRoles": [
+        "symptom_followup",
+        "clinical_finding"
+      ],
+      "followupFor": [
+        "hearing_concern"
+      ],
+      "prototypeAssignment": "Codex prototype triage-orchestration flag; replace with formal clinical pipeline output."
+    }
+  },
+  "predicates": [
+    {
+      "id": "presentation_selected",
+      "label": {
+        "en": "Presentation selected"
+      },
+      "source": "Screen-card presentation metadata",
+      "var": "hearing_concern",
+      "is": true
+    },
+    {
+      "id": "any_general_danger_sign",
+      "label": {
+        "en": "Any subject-specific general danger sign"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged general_danger_sign",
+      "anyOf": []
+    },
+    {
+      "id": "any_followup_finding",
+      "label": {
+        "en": "Any symptom-specific follow-up finding"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged symptom_followup or clinical_finding",
+      "anyOf": [
+        {
+          "var": "child_hearing_screen_hearingconcern",
+          "is": true
+        },
+        {
+          "var": "child_hearing_screen_hearingspeech",
+          "is": true
+        },
+        {
+          "var": "child_hearing_screen_hearingfailed",
+          "is": true
+        },
+        {
+          "var": "child_hearing_screen_hearingspecialist",
+          "is": true
+        },
+        {
+          "var": "child_hearing_screen_hearinginfant",
+          "is": true
+        }
+      ]
+    },
+    {
+      "id": "any_safety_gate",
+      "label": {
+        "en": "Any safety gate"
+      },
+      "source": "Screen-card clinicalVariableSet variables tagged safety_gate",
+      "anyOf": []
+    }
+  ]
+}

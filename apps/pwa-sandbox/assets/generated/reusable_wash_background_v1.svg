@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Prototype WASH background</title>
+  <desc id="desc">Generic handwashing and water area background for WASH modules, not approved for field use.</desc>
+  <rect width="1200" height="720" fill="#eaf4f2"/>
+  <rect y="500" width="1200" height="220" fill="#d8c7aa"/>
+  <path d="M110 478h980" stroke="#c7b08d" stroke-width="18" stroke-linecap="round"/>
+  <g transform="translate(190 210)">
+    <rect x="0" y="180" width="240" height="32" rx="16" fill="#a66b48"/>
+    <path d="M75 30h72v145H75z" fill="#d7edf2" stroke="#53636a" stroke-width="6"/>
+    <path d="M52 70h116" stroke="#287a78" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="113" cy="98" r="13" fill="#287a78"/>
+  </g>
+  <g transform="translate(700 270)">
+    <path d="M48 168h92v-100c0-22-18-40-40-40h-12c-22 0-40 18-40 40z" fill="#d7edf2" stroke="#53636a" stroke-width="6"/>
+    <path d="M48 100h92" stroke="#287a78" stroke-width="8"/>
+    <rect x="170" y="105" width="82" height="65" rx="10" fill="#f4efe3" stroke="#6f776f" stroke-width="6"/>
+  </g>
+  <text x="76" y="664" font-family="Arial, sans-serif" font-size="26" fill="#24302f">Prototype WASH background - replace/local-review before field use</text>
+</svg>

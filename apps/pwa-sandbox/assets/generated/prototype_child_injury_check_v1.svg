@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="Generated prototype child injury concern visual with bandage and urgent-care arrow.">
+  <rect width="1000" height="1000" rx="56" fill="#f6f6f6"/>
+  <rect x="80" y="80" width="840" height="840" rx="42" fill="#fff" stroke="#e57373" stroke-width="18"/>
+  <circle cx="245" cy="285" r="110" fill="#e57373" opacity="0.28"/>
+  <rect x="355" y="210" width="360" height="80" rx="22" fill="#e57373" opacity="0.38"/>
+  <rect x="355" y="330" width="460" height="58" rx="20" fill="#e57373" opacity="0.24"/>
+  <path d="M220 680 C320 585 420 585 520 680 S720 775 820 680" fill="none" stroke="#4b4b4b" stroke-width="34" stroke-linecap="round" opacity="0.78"/>
+  <circle cx="245" cy="285" r="52" fill="#4b4b4b" opacity="0.82"/>
+  <path d="M190 455 Q245 390 300 455 L335 580 Q245 640 155 580 Z" fill="#4b4b4b" opacity="0.72"/>
+  <text x="500" y="520" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="700" fill="#4b4b4b">injury</text>
+  <text x="500" y="620" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700" fill="#4b4b4b" opacity="0.86">danger</text>
+  <text x="500" y="715" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="#4b4b4b" opacity="0.72">care</text>
+  <text x="500" y="875" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#555">PROTOTYPE GENERATED SAMPLE</text>
+</svg>

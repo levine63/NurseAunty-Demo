@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="Reusable prototype food bowl">
+  <rect width="1000" height="1000" fill="none"/>
+  <ellipse cx="500" cy="720" rx="310" ry="62" fill="#2e3b41" opacity="0.12"/>
+  <path d="M220 410h560c-18 238-128 350-280 350S238 648 220 410Z" fill="#d66b4a" stroke="#8a3d2d" stroke-width="14"/>
+  <ellipse cx="500" cy="410" rx="292" ry="88" fill="#f2d9ac" stroke="#8a3d2d" stroke-width="14"/>
+  <circle cx="394" cy="393" r="34" fill="#6aa84f"/>
+  <circle cx="481" cy="370" r="38" fill="#f3b34d"/>
+  <circle cx="557" cy="402" r="34" fill="#79a85c"/>
+  <circle cx="622" cy="374" r="28" fill="#c75b4a"/>
+  <path d="M662 313c90-48 151-58 185-30 21 17 11 39-22 50-42 14-95 13-155 3Z" fill="#b9d5d0" stroke="#567c7a" stroke-width="10"/>
+  <path d="M303 463c92 48 302 52 394 0" fill="none" stroke="#a94c37" stroke-width="9" opacity="0.55"/>
+</svg>

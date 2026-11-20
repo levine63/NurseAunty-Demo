@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="Reusable prototype soap and chlorine bottle">
+  <rect width="1000" height="1000" fill="none"/>
+  <ellipse cx="500" cy="830" rx="285" ry="48" fill="#2e3b41" opacity="0.12"/>
+  <rect x="235" y="545" width="260" height="190" rx="52" fill="#f0c44c" stroke="#8d6521" stroke-width="12"/>
+  <path d="M274 590h182M274 645h140" stroke="#fff3bb" stroke-width="18" stroke-linecap="round" opacity="0.72"/>
+  <path d="M610 245h115v110h-115z" fill="#7bb6c4" stroke="#315d66" stroke-width="12"/>
+  <path d="M583 351h170l36 120v305c0 31-25 56-56 56H603c-31 0-56-25-56-56V471Z" fill="#d8f2f4" stroke="#315d66" stroke-width="14"/>
+  <path d="M581 514h174v166H581z" fill="#ffffff" stroke="#7bb6c4" stroke-width="10"/>
+  <path d="M625 570h86M625 625h54" stroke="#315d66" stroke-width="15" stroke-linecap="round"/>
+  <path d="M668 244v-62h116" fill="none" stroke="#315d66" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="565" cy="304" r="17" fill="#79c6d0" opacity="0.75"/>
+  <circle cx="790" cy="398" r="23" fill="#79c6d0" opacity="0.75"/>
+</svg>
